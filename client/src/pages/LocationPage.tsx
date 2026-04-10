@@ -8,6 +8,7 @@
 
 import { useEffect } from "react";
 import { useParams, Link } from "wouter";
+import { useHead } from "@/hooks/useHead";
 import { motion } from "framer-motion";
 import { MapPin, ArrowRight, ArrowLeft, ExternalLink } from "lucide-react";
 import { getLocationPage, locationPages } from "@/data/locationPages";
@@ -80,6 +81,8 @@ export default function LocationPage() {
   const params = useParams<{ slug: string }>();
   const slug = params.slug || '';
   const page = getLocationPage(slug);
+
+  useHead(page?.title || '', page?.metaDescription);
 
   useEffect(() => {
     window.scrollTo(0, 0);

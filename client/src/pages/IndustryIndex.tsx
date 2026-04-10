@@ -13,6 +13,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { industryPages } from '@/data/industryPages';
+import { useHead } from "@/hooks/useHead";
 
 const BASE_URL = 'https://ikramrana.com';
 
@@ -125,6 +126,8 @@ const cardVariants = {
 };
 
 export default function IndustryIndex() {
+  useHead("AI Automation by Industry", "Industry-specific guides on AI automation for small and medium businesses. How AI improves operations in law, healthcare, real estate, and more.");
+
   return (
     <>
       <script

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Send } from "lucide-react";
 import { toast } from "sonner";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -38,6 +39,7 @@ const faqs = [
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  useHead("Contact Ikram Rana", "Get in touch for speaking inquiries, AI automation consulting, or questions about decision architecture in AI adoption.");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

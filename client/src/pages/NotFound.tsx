@@ -2,9 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Home } from "lucide-react";
 import { useLocation } from "wouter";
+import { useHead } from "@/hooks/useHead";
 
 export default function NotFound() {
   const [, setLocation] = useLocation();
+  useHead("Page Not Found");
 
   const handleGoHome = () => {
     setLocation("/");

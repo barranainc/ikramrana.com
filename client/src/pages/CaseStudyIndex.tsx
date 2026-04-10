@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, TrendingUp } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 18 },
@@ -45,6 +46,8 @@ const industryColors: Record<string, string> = {
 };
 
 export default function CaseStudyIndex() {
+  useHead("AI Automation Case Studies by Industry", "Case studies documenting AI automation for small and medium businesses. Operational problems, automation approach, and measurable outcomes.");
+
   return (
     <div className="bg-background min-h-screen">
       <script

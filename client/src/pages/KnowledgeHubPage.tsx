@@ -17,6 +17,7 @@ import { motion } from 'framer-motion';
 import { Link, useParams } from 'wouter';
 import { ChevronRight, ArrowRight } from 'lucide-react';
 import { hubPages, getHubPage } from '@/data/hubPages';
+import { useHead } from '@/hooks/useHead';
 import NotFound from './NotFound';
 import HubFrameworkDiagram from '@/components/hub/HubFrameworkDiagram';
 import HubMistakesDiagram from '@/components/hub/HubMistakesDiagram';
@@ -179,6 +180,8 @@ function SectionBody({ content, heading }: { content: string; heading: string })
 export default function KnowledgeHubPage() {
   const params = useParams<{ slug: string }>();
   const page = getHubPage(params.slug || '');
+
+  useHead(page?.title || '', page?.metaDescription);
 
   if (!page) return <NotFound />;
 

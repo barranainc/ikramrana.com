@@ -17,6 +17,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { ArrowRight } from 'lucide-react';
 import { blogPosts } from '@/data/blogPosts';
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -40,6 +41,7 @@ const allTags = ['All', ...Array.from(new Set(blogPosts.flatMap(p => p.tags)))];
 
 export default function BlogIndex() {
   const [activeTag, setActiveTag] = useState('All');
+  useHead("AI Automation Blog", "Practical thinking on AI adoption and operations. Articles on decision architecture, automation, governance, and judgment for business operators.");
 
   const filtered = activeTag === 'All'
     ? blogPosts

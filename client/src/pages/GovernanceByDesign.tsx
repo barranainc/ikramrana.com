@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import GovernanceSpectrumDiagram from "@/components/diagrams/GovernanceSpectrumDiagram";
 import ComplianceDebtDiagram from "@/components/diagrams/ComplianceDebtDiagram";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -15,6 +16,8 @@ const fadeUp = {
 };
 
 export default function GovernanceByDesign() {
+  useHead("Governance-by-Design", "Governance is not paperwork after deployment. It is a design property of the system itself. How to embed compliance as architecture.");
+
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

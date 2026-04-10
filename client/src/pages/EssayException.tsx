@@ -5,6 +5,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -14,6 +15,7 @@ const fadeUp = {
 };
 
 export default function EssayException() {
+  useHead("The Exception That Proves the System", "Exceptions reveal whether your AI system was designed for reality or for a demo. How a system handles the unexpected defines its true capability.");
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

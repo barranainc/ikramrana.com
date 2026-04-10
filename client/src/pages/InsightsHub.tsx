@@ -8,6 +8,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, PenLine, Lightbulb } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -58,6 +59,8 @@ const insightTypes = [
 ];
 
 export default function InsightsHub() {
+  useHead("Insights on AI Adoption", "Essays and shorter observations on AI adoption, decision architecture, and governance. Written for operators who need clarity, not content.");
+
   return (
     <div>
       {/* Header */}

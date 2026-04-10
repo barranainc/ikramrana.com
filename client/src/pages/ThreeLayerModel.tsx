@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import ThreeLayerDiagram from "@/components/diagrams/ThreeLayerDiagram";
 import LayerBleedDiagram from "@/components/diagrams/LayerBleedDiagram";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -15,6 +16,8 @@ const fadeUp = {
 };
 
 export default function ThreeLayerModel() {
+  useHead("The Three-Layer Model", "A decision-systems framework for AI adoption: automate execution, protect judgment, embed compliance as architectural foundation.");
+
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

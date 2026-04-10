@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { BookOpen, ArrowRight } from "lucide-react";
 import { dictionaryTerms } from "@/data/dictionaryTerms";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 18 },
@@ -43,6 +44,8 @@ const schemaData = {
 };
 
 export default function DictionaryIndex() {
+  useHead("AI Dictionary: Essential Terms for Business", "Plain-language definitions of AI concepts for business leaders and operators. Written by Ikram Rana, founder of Barrana.ai.");
+
   return (
     <div className="bg-background min-h-screen">
       <script

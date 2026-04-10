@@ -9,6 +9,7 @@
 
 import { useEffect } from "react";
 import { useParams, Link } from "wouter";
+import { useHead } from "@/hooks/useHead";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, TrendingUp, ExternalLink } from "lucide-react";
 import { getCaseStudy, caseStudies } from "@/data/caseStudies";
@@ -52,6 +53,8 @@ export default function CaseStudyPage() {
   const params = useParams<{ slug: string }>();
   const slug = params.slug || '';
   const cs = getCaseStudy(slug);
+
+  useHead(cs?.title || '', cs?.metaDescription);
 
   useEffect(() => {
     window.scrollTo(0, 0);

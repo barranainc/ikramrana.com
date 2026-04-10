@@ -6,6 +6,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -43,6 +44,8 @@ const related = [
 ];
 
 export default function SolutionAutomation() {
+  useHead("Automation and Efficiency Solutions", "Remove workflow friction with structured AI automation. Identify bottlenecks, build systems, and recover operational capacity.");
+
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

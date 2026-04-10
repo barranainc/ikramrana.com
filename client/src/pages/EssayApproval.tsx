@@ -5,6 +5,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -14,6 +15,7 @@ const fadeUp = {
 };
 
 export default function EssayApproval() {
+  useHead("The Approval That Isn't", "Most approval workflows create the appearance of oversight without the substance. When approvals become rubber stamps, your governance is decorative.");
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

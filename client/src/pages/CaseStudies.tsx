@@ -6,6 +6,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -61,6 +62,8 @@ const cases = [
 ];
 
 export default function CaseStudies() {
+  useHead("AI Automation Case Studies", "Real results from AI automation implementations. Each engagement focuses on measurable structural change, not tool installation.");
+
   return (
     <div className="py-16 md:py-24">
       <div className="container max-w-4xl">

@@ -15,6 +15,7 @@
  */
 
 import { useEffect } from 'react';
+import { useHead } from '@/hooks/useHead';
 import { motion } from 'framer-motion';
 import { Link, useParams } from 'wouter';
 import { ArrowLeft, ArrowRight, ChevronRight } from 'lucide-react';
@@ -82,6 +83,8 @@ export default function BlogPost() {
   const params = useParams<{ slug: string }>();
   const slug = params.slug;
   const post = getBlogPost(slug);
+
+  useHead(post?.title || '', post?.metaDescription);
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -5,6 +5,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -14,6 +15,7 @@ const fadeUp = {
 };
 
 export default function EssayClarity() {
+  useHead("Clarity as a Design Requirement", "Clarity is not a nice-to-have in AI systems. It is a structural requirement. Without it, your team cannot trust, verify, or improve what you build.");
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

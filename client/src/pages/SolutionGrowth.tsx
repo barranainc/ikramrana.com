@@ -6,6 +6,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -42,6 +43,8 @@ const related = [
 ];
 
 export default function SolutionGrowth() {
+  useHead("AI for Business Growth", "Increase pipeline velocity with AI. Structured systems for lead management, client communication, and revenue operations.");
+
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

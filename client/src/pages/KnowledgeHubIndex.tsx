@@ -14,6 +14,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { hubPages } from '@/data/hubPages';
+import { useHead } from "@/hooks/useHead";
 
 const BASE_URL = 'https://ikramrana.com';
 
@@ -51,6 +52,8 @@ const stagger = {
 const PAGE_ICONS = ['⚙', '◎', '⇌', '◈', '▣', '◉', '⊞'];
 
 export default function KnowledgeHubIndex() {
+  useHead("AI Knowledge Hub", "Authoritative guides on AI automation, adoption, agents, and governance for small and medium businesses. Written by Ikram Rana of Barrana.ai.");
+
   return (
     <>
       <script

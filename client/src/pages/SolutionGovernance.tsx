@@ -6,6 +6,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -34,6 +35,8 @@ const related = [
 ];
 
 export default function SolutionGovernance() {
+  useHead("AI Governance and Decision Architecture", "Design AI systems that withstand scrutiny. If you cannot reconstruct a decision in under five minutes, your system is fragile.");
+
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

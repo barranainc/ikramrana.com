@@ -4,6 +4,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -13,6 +14,8 @@ const fadeUp = {
 };
 
 export default function About() {
+  useHead("About Ikram Rana", "AI automation strategist focused on decision architecture and governance. Helping businesses implement AI that works in practice, not theory.");
+
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

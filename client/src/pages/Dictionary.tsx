@@ -3,6 +3,7 @@
  */
 import { Link } from "wouter";
 import { motion } from "framer-motion";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -35,6 +36,8 @@ const definitions: { term: string; text: string[] }[] = [
 ];
 
 export default function Dictionary() {
+  useHead("The Dictionary of AI Architecture", "Key terms for thinking clearly about decision systems in AI adoption. Definitions you can use, cite, and build on.");
+
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

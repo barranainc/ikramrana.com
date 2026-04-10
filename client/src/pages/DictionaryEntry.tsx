@@ -9,6 +9,7 @@
 
 import { useEffect } from "react";
 import { useParams, Link } from "wouter";
+import { useHead } from "@/hooks/useHead";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, BookOpen, ExternalLink } from "lucide-react";
 import { getDictionaryTerm, dictionaryTerms, termSlugMap } from "@/data/dictionaryTerms";
@@ -44,6 +45,11 @@ export default function DictionaryEntry() {
   const params = useParams<{ slug: string }>();
   const slug = params.slug || '';
   const term = getDictionaryTerm(slug);
+
+  useHead(
+    term ? `${term.term}: AI Dictionary` : '',
+    term?.simpleExplanation
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);

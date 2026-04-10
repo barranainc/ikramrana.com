@@ -7,6 +7,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, Zap, TrendingUp, Shield, Rocket } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -63,6 +64,8 @@ const solutions = [
 ];
 
 export default function SolutionsHub() {
+  useHead("AI Solutions for Business Operators", "Structured AI implementation tied to measurable outcomes. No hype, no generic roadmaps. Systems built for operators who need results.");
+
   return (
     <div>
       {/* Header */}

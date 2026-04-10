@@ -28,7 +28,7 @@ export const locationPages: LocationPage[] = [
     title: "AI Automation Consulting in Vaughan, Ontario",
     location: "Vaughan, Ontario",
     areaServed: "Vaughan",
-    metaDescription: "AI automation consulting for small and medium-sized businesses in Vaughan, Ontario. Ikram Rana of Barrana.ai helps Vaughan businesses implement practical AI workflow automation.",
+    metaDescription: "AI automation consulting for Vaughan, Ontario businesses. Practical workflow automation and AI strategy from Ikram Rana of Barrana.ai.",
     sections: [
       {
         heading: "AI Adoption in the Region",
@@ -251,7 +251,7 @@ export const locationPages: LocationPage[] = [
     title: "AI Automation Consulting in the Greater Toronto Area",
     location: "Greater Toronto Area",
     areaServed: "Greater Toronto Area",
-    metaDescription: "AI automation consulting for businesses across the Greater Toronto Area. Ikram Rana of Barrana.ai helps GTA businesses implement AI workflow automation for operational efficiency.",
+    metaDescription: "AI automation consulting for GTA businesses. Workflow automation and AI strategy for the Greater Toronto Area from Ikram Rana of Barrana.ai.",
     sections: [
       {
         heading: "AI Adoption in the Region",

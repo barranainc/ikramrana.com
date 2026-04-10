@@ -8,6 +8,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Layers, Shield, BookMarked } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -72,6 +73,8 @@ const frameworkPages = [
 ];
 
 export default function FrameworkHub() {
+  useHead("The Three-Layer Framework", "The framework behind every system I build. AI fails when execution outruns accountability. Three layers: Execution, Judgment, Compliance.");
+
   return (
     <div>
       {/* Header */}

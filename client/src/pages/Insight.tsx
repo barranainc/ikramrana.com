@@ -8,6 +8,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -98,6 +99,8 @@ const tagColors: Record<string, string> = {
 };
 
 export default function Insight() {
+  useHead("Observations from the Work", "Shorter observations, patterns, and practical notes on AI adoption. Less structured than essays, more immediate. Things worth saying early.");
+
   return (
     <div>
       {/* Header */}

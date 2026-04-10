@@ -4,6 +4,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, Mic } from "lucide-react";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -32,6 +33,8 @@ const topics = [
 ];
 
 export default function Speaking() {
+  useHead("Speaking: AI Decision Architecture", "Ikram Rana speaks about what breaks when organisations adopt AI without decision architecture, and how to see those breaks early.");
+
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

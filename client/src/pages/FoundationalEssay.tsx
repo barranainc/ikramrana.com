@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import AutomationCreepDiagram from "@/components/diagrams/AutomationCreepDiagram";
 import DecisionFlowDiagram from "@/components/diagrams/DecisionFlowDiagram";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -17,6 +18,8 @@ const fadeUp = {
 };
 
 export default function FoundationalEssay() {
+  useHead("Foundational Essay: Where I Stand on AI", "AI adoption is not a software project. It is a structural reorganisation of decision systems. Most focus on capability. I focus on architecture.");
+
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">

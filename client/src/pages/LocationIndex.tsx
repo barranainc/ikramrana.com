@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { MapPin, ArrowRight, Globe } from "lucide-react";
 import { locationPages } from "@/data/locationPages";
+import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -46,6 +47,8 @@ const schemaData = {
 };
 
 export default function LocationIndex() {
+  useHead("AI Automation Consulting by Location", "AI automation consulting across the Greater Toronto Area, Canada, and the United States. Ikram Rana of Barrana.ai serves businesses wherever they operate.");
+
   return (
     <div className="bg-background min-h-screen">
       <script

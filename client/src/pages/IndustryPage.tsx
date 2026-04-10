@@ -15,6 +15,7 @@ import { motion } from 'framer-motion';
 import { Link, useParams } from 'wouter';
 import { ChevronRight, ArrowRight } from 'lucide-react';
 import { industryPages, getIndustryPage } from '@/data/industryPages';
+import { useHead } from '@/hooks/useHead';
 import NotFound from './NotFound';
 import IndustryOpportunitiesDiagram from '@/components/industry/IndustryOpportunitiesDiagram';
 import IndustryFrameworkDiagram from '@/components/industry/IndustryFrameworkDiagram';
@@ -199,6 +200,8 @@ function SectionBody({ content, heading }: { content: string; heading: string })
 export default function IndustryPage() {
   const params = useParams<{ slug: string }>();
   const page = getIndustryPage(params.slug || '');
+
+  useHead(page?.title || '', page?.metaDescription);
 
   if (!page) return <NotFound />;
 
