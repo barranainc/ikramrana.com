@@ -14,7 +14,6 @@ import Speaking from "./pages/Speaking";
 
 // Hub pages
 import SolutionsHub from "./pages/SolutionsHub";
-import CaseStudies from "./pages/CaseStudies";
 import FrameworkHub from "./pages/FrameworkHub";
 import InsightsHub from "./pages/InsightsHub";
 
@@ -80,7 +79,6 @@ function Router() {
 
         {/* Hub pages */}
         <Route path="/solutions" component={SolutionsHub} />
-        <Route path="/case-studies" component={CaseStudies} />
         <Route path="/framework" component={FrameworkHub} />
         <Route path="/insights" component={InsightsHub} />
 
