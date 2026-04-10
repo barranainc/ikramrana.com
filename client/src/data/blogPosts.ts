@@ -236,6 +236,7 @@ export const blogPosts: BlogPost[] = [
     { label: 'AI Does Not Save Time If You Still Have to Decide Everything', href: '/blog/ai-saves-time-myth' },
     { label: 'Why Faster Workflows Often Feel More Exhausting', href: '/blog/faster-workflows-exhausting' },
     { label: 'Ai resources, checklists, and templates for businesses', href: '/ai-resources-for-businesses' },
+    { label: 'Solutions: remove workflow friction', href: '/solutions' },
   ],
 },
   {
@@ -789,6 +790,8 @@ export const blogPosts: BlogPost[] = [
     { label: 'Why Systems Calm People Down and Tools Do Not', href: '/blog/systems-vs-tools' },
     { label: 'The Hidden Cost of Switching Between AI Tools', href: '/blog/ai-tool-switching-cost' },
     { label: 'How a property management firm eliminated 62% of no-shows', href: '/case-studies/ai-automation-case-study-property-management' },
+    { label: 'AI automation for business: a complete guide', href: '/ai-automation-for-business' },
+    { label: 'Solutions: AI workflow systems', href: '/solutions/automation-efficiency' },
   ],
 },
   {
@@ -998,6 +1001,8 @@ export const blogPosts: BlogPost[] = [
     { label: 'AI Does Not Save Time If You Still Have to Decide Everything', href: '/blog/ai-saves-time-myth' },
     { label: 'Judgment Is the Only Non-Scalable Advantage', href: '/blog/judgment-non-scalable' },
     { label: 'The Long Term Cost of Outsourcing Thinking to AI', href: '/blog/outsourcing-thinking-ai' },
+    { label: 'AI automation implementation for business', href: '/ai-automation-for-business' },
+    { label: 'Solutions: structured AI implementation', href: '/solutions' },
   ],
 },
   {
@@ -1067,6 +1072,7 @@ export const blogPosts: BlogPost[] = [
     { label: 'Judgment Is the Only Non-Scalable Advantage', href: '/blog/judgment-non-scalable' },
     { label: 'The Real Risk of AI Is Decision Avoidance', href: '/blog/ai-decision-avoidance' },
     { label: 'AI Should Reduce Thinking Not Replace It', href: '/blog/ai-reduce-thinking' },
+    { label: 'Solutions: governance and decision architecture', href: '/solutions/governance-decision-architecture' },
   ],
 },
   {
@@ -1613,6 +1619,7 @@ export const blogPosts: BlogPost[] = [
     { label: 'AI at Home Needs Stronger Boundaries Than AI at Work', href: '/blog/ai-home-boundaries' },
     { label: 'Technology That Saves Time but Costs Attention Is a Bad Trade', href: '/blog/time-vs-attention-tradeoff' },
     { label: 'Raising Humans in an AI Saturated Environment', href: '/blog/raising-humans-ai-environment' },
+    { label: 'AI automation for business: a practical guide', href: '/ai-automation-for-business' },
   ],
 },
   {
@@ -1678,6 +1685,7 @@ export const blogPosts: BlogPost[] = [
     { label: 'Cognitive Load Is the Real Productivity Tax', href: '/blog/cognitive-load-productivity' },
     { label: 'Why Faster Workflows Often Feel More Exhausting', href: '/blog/faster-workflows-exhausting' },
     { label: 'Why Convenience Is Not a Neutral Value', href: '/blog/convenience-not-neutral' },
+    { label: 'AI automation for business: implementation guide', href: '/ai-automation-for-business' },
   ],
 },
   {
