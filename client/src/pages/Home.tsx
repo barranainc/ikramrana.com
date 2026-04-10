@@ -118,6 +118,29 @@ const orgSchema = {
   ],
 };
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "AI Automation Consulting",
+  description:
+    "Structured AI automation implementation for small and medium-sized businesses. Process documentation, workflow automation, and governance design.",
+  provider: {
+    "@type": "Organization",
+    name: "Barrana.ai",
+    url: "https://barrana.ai",
+  },
+  areaServed: [
+    { "@type": "Country", name: "Canada" },
+    { "@type": "Country", name: "United States" },
+  ],
+  serviceType: "AI Automation Consulting",
+  offers: {
+    "@type": "Offer",
+    url: "https://ikramrana.com/solutions",
+    description: "AI automation strategy, implementation, and governance for SMBs.",
+  },
+};
+
 export default function Home() {
   useEffect(() => {
     document.title = "Ikram Rana — AI Automation Strategist for Businesses";
@@ -138,6 +161,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
       {/* ── SECTION 1: HERO ────────────────────────────────────────── */}

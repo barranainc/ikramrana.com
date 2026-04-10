@@ -2,7 +2,7 @@ import FaqAuthorityPage, { FaqPageConfig } from "./FaqAuthorityPage";
 
 const config: FaqPageConfig = {
   slug: "ai-for-small-business-faq",
-  title: "AI for Small Business FAQ: 22 Questions Answered",
+  title: "AI for Small Business FAQ: 22 Answers",
   headline: "AI for Small Business FAQ",
   subheadline: "22 questions about AI for small businesses answered with direct, practical responses. Can small businesses use AI, is it expensive, where should they start, and do they need a consultant.",
   metaDescription: "22 questions about AI for small businesses answered by Ikram Rana of Barrana.ai. Can small businesses use AI, is it expensive, where should they start, and do they need an AI consultant.",

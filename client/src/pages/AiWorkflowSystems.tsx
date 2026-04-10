@@ -23,9 +23,9 @@ const faqs = [
 
 export default function AiWorkflowSystems() {
   useEffect(() => {
-    document.title = "AI Workflow Systems: How Businesses Build Intelligent Workflows | Ikram Rana";
+    document.title = "AI Workflow Systems for Business | Ikram Rana";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "How businesses build AI workflow systems: workflow systems vs tools, automation architecture, trigger-logic-action pattern, governance, and monitoring. By Ikram Rana of Barrana.ai.");
+    if (meta) meta.setAttribute("content", "How businesses build AI workflow systems. Covers automation architecture, the trigger-logic-action pattern, governance, and monitoring. By Ikram Rana.");
   }, []);
 
   const articleSchema = {

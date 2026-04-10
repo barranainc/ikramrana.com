@@ -13,11 +13,45 @@ const fadeUp = {
   transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as const },
 };
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ikram Rana",
+  url: "https://ikramrana.com",
+  jobTitle: "AI Automation Strategist",
+  description:
+    "Ikram Rana helps businesses implement AI automation, workflow systems, and AI adoption frameworks. Founder of Barrana.ai, based in Vaughan, Ontario.",
+  sameAs: ["https://barrana.ai", "https://www.linkedin.com/in/ikramrana"],
+  worksFor: {
+    "@type": "Organization",
+    name: "Barrana.ai",
+    url: "https://barrana.ai",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Vaughan",
+      addressRegion: "Ontario",
+      addressCountry: "CA",
+    },
+  },
+  knowsAbout: [
+    "AI adoption",
+    "AI automation",
+    "workflow systems",
+    "decision architecture",
+    "AI governance",
+  ],
+  areaServed: ["Canada", "United States", "Greater Toronto Area"],
+};
+
 export default function About() {
   useHead("About Ikram Rana", "AI automation strategist focused on decision architecture and governance. Helping businesses implement AI that works in practice, not theory.");
 
   return (
     <div className="py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-electric block mb-4">About</span>
