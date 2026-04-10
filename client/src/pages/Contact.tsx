@@ -3,6 +3,7 @@
  */
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "wouter";
 import { Send } from "lucide-react";
 import { toast } from "sonner";
 import { useHead } from "@/hooks/useHead";
@@ -114,6 +115,19 @@ export default function Contact() {
               Send Message
             </button>
           </form>
+        </motion.div>
+
+        {/* Before you reach out */}
+        <div className="rule-divider my-14" />
+        <motion.div {...fadeUp}>
+          <span className="font-mono text-xs tracking-[0.2em] uppercase text-electric block mb-4">Before You Reach Out</span>
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5">Helpful starting points</h2>
+          <p className="text-foreground/85 leading-relaxed mb-5">
+            If you want to understand how I work, start with the <Link href="/about" className="text-electric hover:underline">about page</Link> or
+            browse the <Link href="/solutions" className="text-electric hover:underline">solutions I offer</Link> for
+            businesses implementing AI. For a structured overview of the approach, see
+            the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline">AI Adoption Framework for Small Businesses</Link>.
+          </p>
         </motion.div>
 
         {/* FAQ */}
