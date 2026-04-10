@@ -96,7 +96,7 @@ export default function GovernanceByDesign() {
 
         <div className="rule-divider my-14" />
         <motion.div {...fadeUp} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <Link href="/model" className="block p-7 rounded-2xl border border-border bg-card hover:border-electric/30 hover:translate-y-[-2px] transition-all no-underline group">
+          <Link href="/the-model" className="block p-7 rounded-2xl border border-border bg-card hover:border-electric/30 hover:translate-y-[-2px] transition-all no-underline group">
             <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric block mb-2">Framework</span>
             <h3 className="font-serif text-lg font-semibold text-foreground mb-2">The Three-Layer Model</h3>
             <p className="text-sm text-slate-text mb-3">Governance maps to the compliance foundation layer.</p>

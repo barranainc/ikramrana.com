@@ -179,8 +179,31 @@ export default function FoundationalEssay() {
         </motion.div>
 
         <div className="rule-divider my-14" />
+
+        {/* CTA Bridge */}
+        <motion.div {...fadeUp} className="mb-10 rounded-2xl border border-electric/20 bg-electric/5 p-7">
+          <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Ready to apply this?</h3>
+          <p className="text-sm text-slate-text leading-relaxed mb-5">
+            If this essay describes a problem you recognize in your own organization, the next step is a structured conversation about your specific workflow.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/solutions"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-electric text-white font-semibold text-sm no-underline hover:translate-y-[-2px] hover:shadow-md transition-all"
+            >
+              See Solutions <ArrowRight size={13} />
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-electric/30 text-electric font-semibold text-sm no-underline hover:bg-electric/5 transition-all"
+            >
+              Start a Conversation <ArrowRight size={13} />
+            </Link>
+          </div>
+        </motion.div>
+
         <motion.div {...fadeUp} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <Link href="/model" className="block p-7 rounded-2xl border border-border bg-card hover:border-electric/30 hover:translate-y-[-2px] transition-all no-underline group">
+          <Link href="/the-model" className="block p-7 rounded-2xl border border-border bg-card hover:border-electric/30 hover:translate-y-[-2px] transition-all no-underline group">
             <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric block mb-2">Framework</span>
             <h3 className="font-serif text-lg font-semibold text-foreground mb-2">The Three-Layer Model</h3>
             <p className="text-sm text-slate-text mb-3">Deep dive into each layer with implementation guidance.</p>

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const stages = [
   { phase: "Phase 1", label: "AI Drafts", desc: "Human creates, AI assists", risk: "low", color: "#059669", bg: "#ecfdf5" },
   { phase: "Phase 2", label: "AI Recommends", desc: "AI proposes, human decides", risk: "moderate", color: "#d97706", bg: "#fffbeb" },
-  { phase: "Phase 3", label: "AI Decides", desc: "AI acts, human rubber-stamps", risk: "high", color: "#dc2626", bg: "#fef2f2" },
+  { phase: "Phase 3", label: "AI Decides", desc: "AI proposes and executes decisions with limited human oversight", risk: "high", color: "#dc2626", bg: "#fef2f2" },
   { phase: "Phase 4", label: "AI Operates", desc: "AI acts, no meaningful oversight", risk: "critical", color: "#991b1b", bg: "#fef2f2" },
 ];
 

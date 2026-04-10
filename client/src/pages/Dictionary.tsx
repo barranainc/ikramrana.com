@@ -68,7 +68,7 @@ export default function Dictionary() {
         <div className="rule-divider my-14" />
         <motion.div {...fadeUp} className="p-7 rounded-2xl border border-border bg-card">
           <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-slate-dim block mb-3">Citation</span>
-          <p className="text-foreground/85 leading-relaxed">These definitions represent my specific usage. For context and application, see the <Link href="/essay" className="text-electric hover:underline">Foundational Essay</Link> and <Link href="/model" className="text-electric hover:underline">Three-Layer Model</Link>.</p>
+          <p className="text-foreground/85 leading-relaxed">These definitions represent my specific usage. For context and application, see the <Link href="/foundational-essay" className="text-electric hover:underline">Foundational Essay</Link> and <Link href="/the-model" className="text-electric hover:underline">Three-Layer Model</Link>.</p>
         </motion.div>
       </div>
     </div>

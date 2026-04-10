@@ -1,7 +1,8 @@
 /*
  * DESIGN: The Architect's Blueprint — Light Theme
  * Layout wrapper with persistent top navigation and footer.
- * Navigation: horizontal top bar, left-anchored brand, right-aligned links.
+ * Nav: Home / Solutions / Case Studies / Framework / Insights / About / Contact
+ * All legacy content pages remain at their own URLs — nav points to hubs.
  */
 
 import { Link, useLocation } from "wouter";
@@ -10,14 +11,41 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { href: "/essay", label: "Foundational Essay" },
-  { href: "/model", label: "The Model" },
-  { href: "/governance", label: "Governance" },
-  { href: "/dictionary", label: "Dictionary" },
-  { href: "/essays", label: "Essays" },
-  { href: "/speaking", label: "Speaking" },
+  { href: "/solutions", label: "Solutions" },
+  { href: "/case-studies", label: "Case Studies" },
+  { href: "/framework", label: "Framework" },
+  { href: "/insights", label: "Insights" },
   { href: "/about", label: "About" },
 ];
+
+// Helper: check if a link is "active" given the current location
+function isActive(href: string, location: string): boolean {
+  if (href === "/") return location === "/";
+  // Framework hub is active when on /framework or any framework sub-page
+  if (href === "/framework") {
+    return (
+      location === "/framework" ||
+      location === "/foundational-essay" ||
+      location === "/the-model" ||
+      location === "/governance" ||
+      location === "/dictionary"
+    );
+  }
+  // Insights hub is active when on /insights, /essays/*, or /insight
+  if (href === "/insights") {
+    return (
+      location === "/insights" ||
+      location === "/essays" ||
+      location.startsWith("/essays/") ||
+      location === "/insight"
+    );
+  }
+  // Solutions hub is active when on /solutions or any solution sub-page
+  if (href === "/solutions") {
+    return location === "/solutions" || location.startsWith("/solutions/");
+  }
+  return location === href || location.startsWith(href + "/");
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
@@ -53,7 +81,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 key={link.href}
                 href={link.href}
                 className={`px-3 py-1.5 text-[13px] font-sans rounded-lg transition-colors duration-200 no-underline ${
-                  location === link.href || (link.href === "/essays" && location.startsWith("/essays/"))
+                  isActive(link.href, location)
                     ? "text-electric bg-electric/10"
                     : "text-slate-text hover:text-foreground hover:bg-foreground/5"
                 }`}
@@ -110,7 +138,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     key={link.href}
                     href={link.href}
                     className={`px-3 py-2 text-sm font-sans no-underline transition-colors rounded-lg ${
-                      location === link.href
+                      isActive(link.href, location)
                         ? "text-electric bg-electric/10"
                         : "text-slate-text hover:text-foreground"
                     }`}
@@ -151,10 +179,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Decision architecture, governance-by-design, and operational coherence in AI adoption.
               </p>
               <div className="flex gap-3 mt-4">
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-xs text-slate-dim px-3 py-1.5 border border-border rounded-md hover:border-electric hover:text-electric transition-colors no-underline">
+                <a
+                  href="https://linkedin.com/in/yourprofile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-slate-dim px-3 py-1.5 border border-border rounded-md hover:border-electric hover:text-electric transition-colors no-underline"
+                >
                   LinkedIn
                 </a>
-                <a href="https://ikramrana.substack.com" target="_blank" rel="noopener noreferrer" className="text-xs text-slate-dim px-3 py-1.5 border border-border rounded-md hover:border-electric hover:text-electric transition-colors no-underline">
+                <a
+                  href="https://ikramrana.substack.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-slate-dim px-3 py-1.5 border border-border rounded-md hover:border-electric hover:text-electric transition-colors no-underline"
+                >
                   Substack
                 </a>
               </div>
@@ -163,9 +201,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <p className="font-mono text-[11px] tracking-wider text-slate-dim">
                 &copy; {new Date().getFullYear()} Ikram Rana
               </p>
-              <div className="flex gap-4 mt-2">
-                <Link href="/dictionary" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Dictionary</Link>
-                <Link href="/contact" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Contact</Link>
+              <p className="font-mono text-[10px] tracking-wide text-slate-dim/60 mt-0.5 italic">
+                Built for operators. Not for everyone.
+              </p>
+              <div className="flex gap-4 mt-2 justify-end">
+                <Link href="/framework" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">
+                  Framework
+                </Link>
+                <Link href="/insights" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">
+                  Insights
+                </Link>
+                <Link href="/contact" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">
+                  Contact
+                </Link>
               </div>
             </div>
           </div>

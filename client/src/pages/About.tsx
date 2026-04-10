@@ -51,18 +51,18 @@ export default function About() {
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">This Site</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">This site is the canonical source for my work on decision architecture in AI adoption. It's designed to be citeable and searchable—a resource that organizations can reference.</p>
-          <p className="text-foreground/85 leading-relaxed mb-5">The <Link href="/essay" className="text-electric hover:underline">Foundational Essay</Link> presents my complete position. The <Link href="/model" className="text-electric hover:underline">Three-Layer Model</Link> provides the framework. The <Link href="/dictionary" className="text-electric hover:underline">Dictionary</Link> defines key terms. The <Link href="/essays" className="text-electric hover:underline">Essays</Link> develop specific aspects in depth.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5">The <Link href="/foundational-essay" className="text-electric hover:underline">Foundational Essay</Link> presents my complete position. The <Link href="/the-model" className="text-electric hover:underline">Three-Layer Model</Link> provides the framework. The <Link href="/dictionary" className="text-electric hover:underline">Dictionary</Link> defines key terms. The <Link href="/essays" className="text-electric hover:underline">Essays</Link> develop specific aspects in depth.</p>
         </motion.div>
 
         <div className="rule-divider my-14" />
         <motion.div {...fadeUp} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <Link href="/essay" className="block p-7 rounded-2xl border border-border bg-card hover:border-electric/30 hover:translate-y-[-2px] transition-all no-underline group">
+          <Link href="/foundational-essay" className="block p-7 rounded-2xl border border-border bg-card hover:border-electric/30 hover:translate-y-[-2px] transition-all no-underline group">
             <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric block mb-2">Start Here</span>
             <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Foundational Essay</h3>
             <p className="text-sm text-slate-text mb-3">My complete position on AI adoption, operational excellence, and regulatory integrity.</p>
             <span className="text-sm text-electric inline-flex items-center gap-1 group-hover:gap-2 transition-all">Read <ArrowRight size={14} /></span>
           </Link>
-          <Link href="/model" className="block p-7 rounded-2xl border border-border bg-card hover:border-electric/30 hover:translate-y-[-2px] transition-all no-underline group">
+          <Link href="/the-model" className="block p-7 rounded-2xl border border-border bg-card hover:border-electric/30 hover:translate-y-[-2px] transition-all no-underline group">
             <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric block mb-2">Framework</span>
             <h3 className="font-serif text-lg font-semibold text-foreground mb-2">The Three-Layer Model</h3>
             <p className="text-sm text-slate-text mb-3">Execution, judgment, compliance—the architecture that matters.</p>
