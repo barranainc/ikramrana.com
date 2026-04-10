@@ -239,9 +239,9 @@ function renderContent(text: string) {
 
 export default function PillarPage() {
   useEffect(() => {
-    document.title = "The AI Adoption Framework for Small Businesses | Ikram Rana";
+    document.title = "AI Adoption Framework: 4 Phases to Get AI Right | Ikram Rana";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "A structured 4-phase approach to implementing AI automation for small businesses — from Process Clarity through Governance. By Ikram Rana, founder of Barrana.ai.");
+    if (meta) meta.setAttribute("content", "Most AI adoption fails because businesses start with tools. This 4-phase framework fixes that. Process clarity, pilot, scale, governance. Used by 50+ SMBs.");
   }, []);
 
   // Triple schema: Article + HowTo + FAQPage

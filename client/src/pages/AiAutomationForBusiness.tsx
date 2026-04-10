@@ -35,9 +35,9 @@ const roadmapSteps = [
 
 export default function AiAutomationForBusiness() {
   useEffect(() => {
-    document.title = "AI Automation for Business: A Complete Implementation Guide | Ikram Rana";
+    document.title = "AI Automation for Business: Full Guide | Ikram Rana";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "A complete guide to AI automation for business: what it means, what to automate, ROI, implementation roadmap, and common mistakes. By Ikram Rana of Barrana.ai.");
+    if (meta) meta.setAttribute("content", "What to automate, expected ROI, an 8-step implementation roadmap, and the mistakes that derail most projects. A practical guide by Ikram Rana.");
   }, []);
 
   const articleSchema = {
