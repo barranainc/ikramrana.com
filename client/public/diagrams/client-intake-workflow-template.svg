@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0066cc"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d97706"/>
+    </marker>
+  </defs>
+  
+  <rect width="900" height="680" rx="12" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <rect width="900" height="55" rx="12" fill="#0a1628"/>
+  <rect y="43" width="900" height="12" fill="#0a1628"/>
+  <text x="450" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">Client Intake Workflow Template — Automated End-to-End</text>
+  
+  <!-- TRIGGER -->
+  <rect x="340" y="80" width="220" height="50" rx="25" fill="#0066cc" filter="url(#shadow)"/>
+  <text x="450" y="110" text-anchor="middle" fill="white" font-size="14" font-weight="700">TRIGGER: Client Inquiry</text>
+  
+  <!-- Arrow down -->
+  <line x1="450" y1="130" x2="450" y2="160" stroke="#0066cc" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 1: Capture -->
+  <rect x="300" y="165" width="300" height="55" rx="8" fill="white" stroke="#0066cc" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="188" text-anchor="middle" fill="#0a1628" font-size="13" font-weight="700">Step 1: Multi-Channel Capture</text>
+  <text x="450" y="206" text-anchor="middle" fill="#64748b" font-size="10">Email, phone, web form, chat → unified inbox</text>
+  <circle cx="285" cy="192" r="14" fill="#eff6ff" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="285" y="197" text-anchor="middle" fill="#0066cc" font-size="11" font-weight="700">AI</text>
+  
+  <!-- Arrow down -->
+  <line x1="450" y1="220" x2="450" y2="250" stroke="#0066cc" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2: Qualify -->
+  <rect x="300" y="255" width="300" height="55" rx="8" fill="white" stroke="#0066cc" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="278" text-anchor="middle" fill="#0a1628" font-size="13" font-weight="700">Step 2: Qualification Questions</text>
+  <text x="450" y="296" text-anchor="middle" fill="#64748b" font-size="10">AI asks budget, timeline, needs, preferences</text>
+  <circle cx="285" cy="282" r="14" fill="#eff6ff" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="285" y="287" text-anchor="middle" fill="#0066cc" font-size="11" font-weight="700">AI</text>
+  
+  <!-- Arrow down -->
+  <line x1="450" y1="310" x2="450" y2="340" stroke="#0066cc" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Decision diamond -->
+  <polygon points="450,345 540,385 450,425 360,385" fill="white" stroke="#d97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="382" text-anchor="middle" fill="#0a1628" font-size="12" font-weight="700">Qualified?</text>
+  <text x="450" y="398" text-anchor="middle" fill="#64748b" font-size="10">Score ≥ threshold</text>
+  
+  <!-- NO branch (left) -->
+  <line x1="360" y1="385" x2="140" y2="385" stroke="#dc2626" stroke-width="2"/>
+  <line x1="140" y1="385" x2="140" y2="415" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <text x="245" y="375" text-anchor="middle" fill="#dc2626" font-size="12" font-weight="600">NO</text>
+  
+  <rect x="50" y="420" width="180" height="55" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="140" y="443" text-anchor="middle" fill="#991b1b" font-size="12" font-weight="600">Polite Decline</text>
+  <text x="140" y="461" text-anchor="middle" fill="#991b1b" font-size="10">Auto-send helpful resources</text>
+  <circle cx="35" cy="447" r="14" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="35" y="452" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="700">AI</text>
+  
+  <!-- YES branch (right) -->
+  <line x1="540" y1="385" x2="450" y2="385" stroke="none"/>
+  <line x1="450" y1="425" x2="450" y2="460" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="465" y="445" fill="#16a34a" font-size="12" font-weight="600">YES</text>
+  
+  <!-- Step 3: Record Creation -->
+  <rect x="300" y="465" width="300" height="55" rx="8" fill="white" stroke="#16a34a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="488" text-anchor="middle" fill="#0a1628" font-size="13" font-weight="700">Step 3: Create Client Record</text>
+  <text x="450" y="506" text-anchor="middle" fill="#64748b" font-size="10">Auto-populate CRM from collected data</text>
+  <circle cx="285" cy="492" r="14" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="285" y="497" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="700">AI</text>
+  
+  <!-- Arrow down -->
+  <line x1="450" y1="520" x2="450" y2="550" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Step 4: Route -->
+  <rect x="300" y="555" width="300" height="55" rx="8" fill="white" stroke="#16a34a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="578" text-anchor="middle" fill="#0a1628" font-size="13" font-weight="700">Step 4: Route to Team Member</text>
+  <text x="450" y="596" text-anchor="middle" fill="#64748b" font-size="10">Match to expertise, capacity, availability</text>
+  <circle cx="285" cy="582" r="14" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="285" y="587" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="700">AI</text>
+  
+  <!-- Right side: parallel actions -->
+  <line x1="600" y1="492" x2="680" y2="492" stroke="#0066cc" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <rect x="680" y="470" width="190" height="45" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="775" y="491" text-anchor="middle" fill="#0066cc" font-size="11" font-weight="600">Send confirmation to client</text>
+  <text x="775" y="505" text-anchor="middle" fill="#64748b" font-size="9">Preferred channel • Instant</text>
+  
+  <line x1="600" y1="582" x2="680" y2="582" stroke="#0066cc" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <rect x="680" y="560" width="190" height="45" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="775" y="581" text-anchor="middle" fill="#0066cc" font-size="11" font-weight="600">Notify team member</text>
+  <text x="775" y="595" text-anchor="middle" fill="#64748b" font-size="9">Full context summary attached</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="625" width="840" height="40" rx="6" fill="#f1f5f9"/>
+  <circle cx="60" cy="645" r="10" fill="#eff6ff" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="60" y="649" text-anchor="middle" fill="#0066cc" font-size="9" font-weight="700">AI</text>
+  <text x="110" y="649" fill="#475569" font-size="11">= Fully automated step</text>
+  
+  <polygon points="280,645 300,635 320,645 300,655" fill="white" stroke="#d97706" stroke-width="1.5"/>
+  <text x="360" y="649" fill="#475569" font-size="11">= Decision point</text>
+  
+  <text x="540" y="649" fill="#475569" font-size="11">Adapt this template for: intake, onboarding, lead qualification, patient registration</text>
+  <text x="450" y="675" text-anchor="middle" fill="#0066cc" font-size="11" font-weight="600">Ikram Rana | Barrana.ai | ikramrana.com</text>
+</svg>

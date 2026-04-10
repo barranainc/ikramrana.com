@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a1628"/><stop offset="100%" stop-color="#1a3a5c"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0066cc"/><stop offset="100%" stop-color="#004a99"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="520" rx="12" fill="#f8fafc"/>
+  
+  <!-- Title bar -->
+  <rect width="1000" height="60" rx="12" fill="url(#g1)"/>
+  <rect y="48" width="1000" height="12" fill="url(#g1)"/>
+  <text x="500" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="700">The AI Adoption Framework — Ikram Rana | Barrana.ai</text>
+  
+  <!-- Phase boxes -->
+  <!-- Phase 1 -->
+  <rect x="30" y="90" width="220" height="280" rx="10" fill="white" stroke="#0066cc" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="30" y="90" width="220" height="50" rx="10" fill="#0066cc"/>
+  <rect x="30" y="130" width="220" height="10" fill="#0066cc"/>
+  <text x="140" y="122" text-anchor="middle" fill="white" font-size="15" font-weight="700">PHASE 1</text>
+  <text x="140" y="165" text-anchor="middle" fill="#0a1628" font-size="16" font-weight="700">Process Clarity</text>
+  <line x1="80" y1="180" x2="200" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="140" y="205" text-anchor="middle" fill="#475569" font-size="11">Map top 10 workflows</text>
+  <text x="140" y="225" text-anchor="middle" fill="#475569" font-size="11">Document every step</text>
+  <text x="140" y="245" text-anchor="middle" fill="#475569" font-size="11">Identify decision points</text>
+  <text x="140" y="265" text-anchor="middle" fill="#475569" font-size="11">Find exceptions</text>
+  <text x="140" y="285" text-anchor="middle" fill="#475569" font-size="11">Resolve inconsistencies</text>
+  <text x="140" y="305" text-anchor="middle" fill="#475569" font-size="11">Eliminate unnecessary steps</text>
+  <rect x="55" y="335" width="170" height="26" rx="4" fill="#eff6ff"/>
+  <text x="140" y="353" text-anchor="middle" fill="#0066cc" font-size="10" font-weight="600">Duration: 2–4 weeks</text>
+  
+  <!-- Arrow 1→2 -->
+  <path d="M250,230 L280,230" fill="none" stroke="#0066cc" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <polygon id="arrowhead" points="276,225 286,230 276,235" fill="#0066cc"/>
+  
+  <!-- Phase 2 -->
+  <rect x="280" y="90" width="220" height="280" rx="10" fill="white" stroke="#0e9f6e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="280" y="90" width="220" height="50" rx="10" fill="#0e9f6e"/>
+  <rect x="280" y="130" width="220" height="10" fill="#0e9f6e"/>
+  <text x="390" y="122" text-anchor="middle" fill="white" font-size="15" font-weight="700">PHASE 2</text>
+  <text x="390" y="165" text-anchor="middle" fill="#0a1628" font-size="16" font-weight="700">Automation Layer</text>
+  <line x1="330" y1="180" x2="450" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="390" y="205" text-anchor="middle" fill="#475569" font-size="11">Score &amp; prioritize processes</text>
+  <text x="390" y="225" text-anchor="middle" fill="#475569" font-size="11">L1: Task automation</text>
+  <text x="390" y="245" text-anchor="middle" fill="#475569" font-size="11">L2: Sequence automation</text>
+  <text x="390" y="265" text-anchor="middle" fill="#475569" font-size="11">L3: Conditional automation</text>
+  <text x="390" y="285" text-anchor="middle" fill="#475569" font-size="11">L4: Exception-based</text>
+  <text x="390" y="305" text-anchor="middle" fill="#475569" font-size="11">Pilot → Deploy</text>
+  <rect x="305" y="335" width="170" height="26" rx="4" fill="#f0fdf4"/>
+  <text x="390" y="353" text-anchor="middle" fill="#0e9f6e" font-size="10" font-weight="600">Duration: 2–4 months</text>
+  
+  <!-- Arrow 2→3 -->
+  <polygon points="526,225 536,230 526,235" fill="#0e9f6e"/>
+  <path d="M500,230 L530,230" fill="none" stroke="#0e9f6e" stroke-width="2"/>
+  
+  <!-- Phase 3 -->
+  <rect x="530" y="90" width="220" height="280" rx="10" fill="white" stroke="#d97706" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="530" y="90" width="220" height="50" rx="10" fill="#d97706"/>
+  <rect x="530" y="130" width="220" height="10" fill="#d97706"/>
+  <text x="640" y="122" text-anchor="middle" fill="white" font-size="15" font-weight="700">PHASE 3</text>
+  <text x="640" y="165" text-anchor="middle" fill="#0a1628" font-size="16" font-weight="700">Decision Systems</text>
+  <line x1="580" y1="180" x2="700" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="640" y="205" text-anchor="middle" fill="#475569" font-size="11">Classify all decisions (A–D)</text>
+  <text x="640" y="225" text-anchor="middle" fill="#475569" font-size="11">A: Automate fully</text>
+  <text x="640" y="245" text-anchor="middle" fill="#475569" font-size="11">B: AI recommends, human decides</text>
+  <text x="640" y="265" text-anchor="middle" fill="#475569" font-size="11">C: AI prepares, human decides</text>
+  <text x="640" y="285" text-anchor="middle" fill="#475569" font-size="11">D: Human only</text>
+  <text x="640" y="305" text-anchor="middle" fill="#475569" font-size="11">Add decision forcing mechanisms</text>
+  <rect x="555" y="335" width="170" height="26" rx="4" fill="#fffbeb"/>
+  <text x="640" y="353" text-anchor="middle" fill="#d97706" font-size="10" font-weight="600">Duration: Ongoing</text>
+  
+  <!-- Arrow 3→4 -->
+  <polygon points="776,225 786,230 776,235" fill="#d97706"/>
+  <path d="M750,230 L780,230" fill="none" stroke="#d97706" stroke-width="2"/>
+  
+  <!-- Phase 4 -->
+  <rect x="780" y="90" width="190" height="280" rx="10" fill="white" stroke="#7c3aed" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="780" y="90" width="190" height="50" rx="10" fill="#7c3aed"/>
+  <rect x="780" y="130" width="190" height="10" fill="#7c3aed"/>
+  <text x="875" y="122" text-anchor="middle" fill="white" font-size="15" font-weight="700">PHASE 4</text>
+  <text x="875" y="165" text-anchor="middle" fill="#0a1628" font-size="14" font-weight="700">Governance &amp;</text>
+  <text x="875" y="182" text-anchor="middle" fill="#0a1628" font-size="14" font-weight="700">Optimization</text>
+  <line x1="810" y1="195" x2="940" y2="195" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="875" y="215" text-anchor="middle" fill="#475569" font-size="11">Accountability</text>
+  <text x="875" y="235" text-anchor="middle" fill="#475569" font-size="11">Transparency</text>
+  <text x="875" y="255" text-anchor="middle" fill="#475569" font-size="11">Boundaries</text>
+  <text x="875" y="275" text-anchor="middle" fill="#475569" font-size="11">Monitoring</text>
+  <text x="875" y="295" text-anchor="middle" fill="#475569" font-size="11">Remediation</text>
+  <text x="875" y="315" text-anchor="middle" fill="#475569" font-size="11">Quarterly optimization</text>
+  <rect x="795" y="335" width="160" height="26" rx="4" fill="#f5f3ff"/>
+  <text x="875" y="353" text-anchor="middle" fill="#7c3aed" font-size="10" font-weight="600">Duration: Continuous</text>
+  
+  <!-- Bottom bar -->
+  <rect y="400" width="1000" height="120" rx="0" fill="#f1f5f9"/>
+  <rect y="508" width="1000" height="12" rx="12" fill="#f1f5f9"/>
+  <text x="500" y="430" text-anchor="middle" fill="#0a1628" font-size="14" font-weight="700">KEY PRINCIPLE: Each phase builds on the previous. Skipping phases is the #1 cause of AI adoption failure.</text>
+  <text x="500" y="460" text-anchor="middle" fill="#475569" font-size="12">Phase 1 delivers: Process understanding → Phase 2 delivers: Time recovery → Phase 3 delivers: Decision quality → Phase 4 delivers: Sustained value</text>
+  <text x="500" y="490" text-anchor="middle" fill="#0066cc" font-size="12" font-weight="600">Developed by Ikram Rana, Founder of Barrana.ai | ikramrana.com</text>
+</svg>

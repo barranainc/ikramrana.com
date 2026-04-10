@@ -1,7 +1,7 @@
 /*
  * DESIGN: The Architect's Blueprint — Light Theme
  * Layout wrapper with persistent top navigation and footer.
- * Nav: Home / Solutions / Case Studies / Framework / Insights / About / Contact
+ * Nav: Home / Solutions / Case Studies / Framework / Insights / Blog / AI Knowledge Hub / About / Contact
  * All legacy content pages remain at their own URLs — nav points to hubs.
  */
 
@@ -11,10 +11,12 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
+  { href: "/ai-adoption-framework-for-small-businesses", label: "AI Framework" },
   { href: "/solutions", label: "Solutions" },
   { href: "/case-studies", label: "Case Studies" },
-  { href: "/framework", label: "Framework" },
-  { href: "/insights", label: "Insights" },
+  { href: "/blog", label: "Blog" },
+  { href: "/ai-knowledge-hub", label: "AI Knowledge Hub" },
+  { href: "/industries", label: "Industries" },
   { href: "/about", label: "About" },
 ];
 
@@ -40,9 +42,29 @@ function isActive(href: string, location: string): boolean {
       location === "/insight"
     );
   }
+  // Blog is active when on /blog or any blog post
+  if (href === "/blog") {
+    return location === "/blog" || location.startsWith("/blog/");
+  }
+  // AI Knowledge Hub is active when on /ai-knowledge-hub or any hub page
+  if (href === "/ai-knowledge-hub") {
+    return location === "/ai-knowledge-hub" || location.startsWith("/ai-knowledge-hub/");
+  }
+  // Industries is active when on /industries or any industry page
+  if (href === "/industries") {
+    return location === "/industries" || location.startsWith("/industries/");
+  }
   // Solutions hub is active when on /solutions or any solution sub-page
   if (href === "/solutions") {
     return location === "/solutions" || location.startsWith("/solutions/");
+  }
+  // Case Studies is active when on /case-studies or any case study page
+  if (href === "/case-studies") {
+    return location === "/case-studies" || location.startsWith("/case-studies/");
+  }
+  // AI Adoption Framework pillar page
+  if (href === "/ai-adoption-framework-for-small-businesses") {
+    return location === "/ai-adoption-framework-for-small-businesses";
   }
   return location === href || location.startsWith(href + "/");
 }
@@ -172,15 +194,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Footer */}
       <footer className="border-t border-border/40 bg-navy">
         <div className="container py-12">
-          <div className="flex flex-col sm:flex-row items-start justify-between gap-8">
-            <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8">
+            {/* Brand column */}
+            <div className="sm:col-span-1">
               <h4 className="font-serif text-base font-semibold text-foreground">Ikram Rana</h4>
               <p className="text-sm text-slate-dim mt-1 leading-relaxed max-w-sm">
                 Decision architecture, governance-by-design, and operational coherence in AI adoption.
               </p>
               <div className="flex gap-3 mt-4">
                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/ikramrana/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-slate-dim px-3 py-1.5 border border-border rounded-md hover:border-electric hover:text-electric transition-colors no-underline"
@@ -197,25 +220,107 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </a>
               </div>
             </div>
-            <div className="text-right">
-              <p className="font-mono text-[11px] tracking-wider text-slate-dim">
-                &copy; {new Date().getFullYear()} Ikram Rana
-              </p>
-              <p className="font-mono text-[10px] tracking-wide text-slate-dim/60 mt-0.5 italic">
-                Built for operators. Not for everyone.
-              </p>
-              <div className="flex gap-4 mt-2 justify-end">
-                <Link href="/framework" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">
-                  Framework
-                </Link>
-                <Link href="/insights" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">
-                  Insights
-                </Link>
-                <Link href="/contact" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">
-                  Contact
-                </Link>
+
+            {/* Site links */}
+            <div>
+              <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric mb-4">Site</p>
+              <div className="flex flex-col gap-2">
+                <Link href="/ai-adoption-framework-for-small-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">AI Adoption Framework</Link>
+                <Link href="/framework" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Framework</Link>
+                <Link href="/insights" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Insights</Link>
+                <Link href="/blog" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Blog</Link>
+                <Link href="/case-studies" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Case Studies</Link>
+                <Link href="/contact" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Contact</Link>
               </div>
             </div>
+
+            {/* AI Knowledge Hub links */}
+            <div>
+              <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric mb-4">
+                <Link href="/ai-knowledge-hub" className="hover:text-electric/80 transition-colors no-underline">AI Knowledge Hub</Link>
+              </p>
+              <div className="flex flex-col gap-2">
+                <Link href="/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Automation</Link>
+                <Link href="/ai-knowledge-hub/what-is-ai-adoption-for-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Adoption</Link>
+                <Link href="/ai-knowledge-hub/what-is-ai-workflow-automation" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Workflow Automation</Link>
+                <Link href="/ai-knowledge-hub/what-are-ai-agents-for-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Agents</Link>
+                <Link href="/ai-knowledge-hub/ai-for-small-businesses-guide" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI for Small Businesses</Link>
+                <Link href="/ai-knowledge-hub/ai-decision-systems-for-business" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Decision Systems</Link>
+                <Link href="/ai-knowledge-hub/ai-governance-for-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Governance</Link>
+              </div>
+            </div>
+
+            {/* Industries links */}
+            <div>
+              <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric mb-4">
+                <Link href="/industries" className="hover:text-electric/80 transition-colors no-underline">Industries</Link>
+              </p>
+              <div className="flex flex-col gap-2">
+                <Link href="/industries/ai-automation-for-law-firms" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Law Firms</Link>
+                <Link href="/industries/ai-automation-for-immigration-consultants" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Immigration Consultants</Link>
+                <Link href="/industries/ai-automation-for-physiotherapy-clinics" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Physiotherapy Clinics</Link>
+                <Link href="/industries/ai-automation-for-accounting-firms" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Accounting Firms</Link>
+                <Link href="/industries/ai-automation-for-real-estate-agents" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Real Estate Agents</Link>
+                <Link href="/industries/ai-automation-for-dental-clinics" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Dental Clinics</Link>
+                <Link href="/industries/ai-automation-for-construction-companies" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Construction Companies</Link>
+                <Link href="/industries/ai-automation-for-ecommerce-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">E-Commerce Businesses</Link>
+              </div>
+            </div>
+
+            {/* Case Studies links */}
+            <div>
+              <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric mb-4">
+                <Link href="/case-studies" className="hover:text-electric/80 transition-colors no-underline">Case Studies</Link>
+              </p>
+              <div className="flex flex-col gap-2">
+                <Link href="/case-studies/ai-automation-case-study-insurance-brokerage" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Insurance Brokerage</Link>
+                <Link href="/case-studies/ai-automation-case-study-property-management" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Property Management</Link>
+                <Link href="/case-studies/ai-automation-case-study-recruitment-agency" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Recruitment Agency</Link>
+                <Link href="/case-studies/ai-automation-case-study-veterinary-clinic" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Veterinary Clinic</Link>
+                <Link href="/case-studies/ai-automation-case-study-marketing-agency" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Marketing Agency</Link>
+                <Link href="/case-studies/ai-automation-case-study-logistics-company" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Logistics Company</Link>
+                <Link href="/case-studies/ai-automation-case-study-financial-advisory" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Financial Advisory</Link>
+                <Link href="/case-studies/ai-automation-case-study-management-consulting" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Management Consulting</Link>
+              </div>
+            </div>
+
+            {/* Locations links */}
+            <div>
+              <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric mb-4">
+                <Link href="/locations" className="hover:text-electric/80 transition-colors no-underline">Locations</Link>
+              </p>
+              <div className="flex flex-col gap-2">
+                <Link href="/locations/ai-automation-consulting-vaughan-ontario" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Vaughan, Ontario</Link>
+                <Link href="/locations/ai-automation-consulting-toronto" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Toronto</Link>
+                <Link href="/locations/ai-automation-consulting-greater-toronto-area" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Greater Toronto Area</Link>
+                <Link href="/locations/ai-automation-consulting-canada" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Canada</Link>
+                <Link href="/locations/ai-automation-consulting-united-states" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">United States</Link>
+              </div>
+            </div>
+
+            {/* Resources links */}
+            <div>
+              <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric mb-4">Resources</p>
+              <div className="flex flex-col gap-2">
+                <Link href="/ai-resources-for-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Resources</Link>
+                <Link href="/ai-dictionary" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Dictionary</Link>
+                <Link href="/blog" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Blog</Link>
+                <Link href="/ai-dictionary/ai-automation" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Automation</Link>
+                <Link href="/ai-dictionary/ai-adoption" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Adoption</Link>
+                <Link href="/ai-dictionary/ai-agents" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Agents</Link>
+                <Link href="/ai-dictionary/ai-governance" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Governance</Link>
+                <Link href="/ai-dictionary/ai-strategy" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Strategy</Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 pt-6 border-t border-border/30 flex items-center justify-between">
+            <p className="font-mono text-[11px] tracking-wider text-slate-dim">
+              &copy; {new Date().getFullYear()} Ikram Rana
+            </p>
+            <p className="font-mono text-[10px] tracking-wide text-slate-dim/60 italic">
+              Built for operators. Not for everyone.
+            </p>
           </div>
         </div>
       </footer>

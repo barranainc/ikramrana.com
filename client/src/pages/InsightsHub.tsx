@@ -39,9 +39,9 @@ const insightTypes = [
   {
     icon: Lightbulb,
     label: "Insight",
-    meta: "Shorter observations · Coming soon",
+    meta: "Shorter observations",
     title: "Insight",
-    desc: "Shorter observations, patterns, and practical notes from the work. Less structured than essays — more immediate. These are the things worth saying before they become a full argument. This section is currently being built.",
+    desc: "Shorter observations, patterns, and practical notes from the work. Less structured than essays — more immediate. These are the things worth saying before they become a full argument.",
     href: "/insight",
     highlights: [
       "Operational patterns in AI adoption",

@@ -153,7 +153,7 @@ export default function CaseStudies() {
               Ready to build a system that holds under pressure?
             </p>
             <a
-              href="https://calendly.com/ikramrana"
+              href="https://calendly.com/ikramrana15"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-electric text-white font-semibold text-sm no-underline hover:translate-y-[-2px] hover:shadow-lg transition-all"
