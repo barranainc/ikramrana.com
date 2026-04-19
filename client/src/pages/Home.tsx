@@ -341,7 +341,7 @@ export default function Home() {
                 <div className="absolute inset-0 blur-3xl bg-electric/8 scale-110" />
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032635202/6MeXVwmXXP9dCLsRyeqL5e/ikram_hero_fa300380.webp"
-                  alt="Ikram Rana — AI Systems Consultant and Licensed Lawyer"
+                  alt="Ikram Rana — AI Systems Consultant"
                   className="relative w-full max-w-[380px] h-auto object-cover rounded-xl"
                   style={{
                     filter: "contrast(1.05) brightness(0.95)",
