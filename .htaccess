@@ -1,0 +1,11 @@
+# SPA fallback for ikramrana.com (Vite single-page app on Hostinger/LiteSpeed)
+# Serves real files (assets, sitemap.xml, robots.txt) directly;
+# every other path falls back to index.html so client-side routes resolve.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
