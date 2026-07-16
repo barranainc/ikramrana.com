@@ -319,6 +319,28 @@ export default function LocationPage() {
               </motion.div>
             )}
 
+            {/* Official Sources */}
+            <motion.section {...fadeUp} className="border-t border-border/40 pt-8">
+              <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric mb-4">
+                Official Sources
+              </div>
+              <ul className="space-y-3">
+                {page.sources.map(source => (
+                  <li key={source.href}>
+                    <a
+                      href={source.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-start gap-2 text-sm text-slate-text hover:text-electric transition-colors"
+                    >
+                      <ExternalLink size={13} className="mt-1 flex-shrink-0" />
+                      {source.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </motion.section>
+
             {/* CTA Block */}
             <motion.div
               {...fadeUp}
@@ -328,10 +350,10 @@ export default function LocationPage() {
                 Work with Ikram Rana
               </div>
               <h3 className="font-serif text-xl md:text-2xl font-bold text-white mb-3 leading-snug">
-                Ready to automate your workflows in {page.location}?
+                Find the Workflow AI Should Fix First in {page.location}
               </h3>
               <p className="text-sm text-white/60 leading-relaxed mb-5 max-w-xl">
-                Find the Workflow AI Should Fix First with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan for your business.
+                Begin with discovery to determine whether AI belongs in the workflow, what must remain human, which controls are required, and what implementation would need to prove.
               </p>
               <a
                 href="https://calendly.com/ikramrana15"
@@ -415,10 +437,10 @@ export default function LocationPage() {
               {/* Mini CTA */}
               <div className="border border-electric/25 p-5 bg-[#070f1e]">
                 <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric mb-3">
-                  Book a call
+                  Start with the workflow
                 </div>
                 <p className="text-xs text-white/55 leading-relaxed mb-4">
-                  Strategy call with Ikram Rana: evaluate your workflows and build a structured AI implementation plan.
+                  Use the Discovery Stage to examine one recurring workflow before deciding whether to implement AI.
                 </p>
                 <a
                   href="https://calendly.com/ikramrana15"
@@ -426,7 +448,7 @@ export default function LocationPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 font-mono text-[11px] text-electric hover:underline"
                 >
-                  Book now <ArrowRight size={11} />
+                  Find the Workflow AI Should Fix First <ArrowRight size={11} />
                 </a>
               </div>
 
