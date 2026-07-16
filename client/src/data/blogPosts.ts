@@ -107,13 +107,13 @@ export const blogPosts: BlogPost[] = [
     tags: ["AI Adoption", "AI Productivity"],
     intro: [
       "Businesses do not struggle because they lack options. They struggle because they have too many. Every additional choice consumes attention, requires evaluation, and delays action. The best AI tools are not the ones that generate the most output. They are the ones that narrow the field to the single best action.",
-      "Illustrative scenario. A small accounting firm adopts an AI tool for client communication. The tool generates three draft emails for every client interaction. The accountant now reads three versions, compares tone and accuracy, selects one, and edits it. What should have been a two-minute task becomes a ten-minute evaluation exercise.",
+      "Illustrative scenario. An accounting firm adopts an AI tool for client communication. The tool generates three draft emails for every client interaction. The accountant now reads three versions, compares tone and accuracy, selects one, and edits it. What should have been a two-minute task becomes a ten-minute evaluation exercise.",
       "This pattern repeats across industries. Legal teams using AI for contract review receive highlighted sections with multiple suggested revisions. Sales teams using AI for lead scoring get ranked lists that still require manual filtering. The AI did work, but it created a new category of work for the human: evaluation work.",
     ],
     sections: [
       {
         heading: "The Problem In Practice",
-        content: "Illustrative scenario. A small accounting firm adopts an AI tool for client communication. The tool generates three draft emails for every client interaction. The accountant now reads three versions, compares tone and accuracy, selects one, and edits it. What should have been a two-minute task becomes a ten-minute evaluation exercise. This pattern repeats across industries. Legal teams using AI for contract review receive highlighted sections with multiple suggested revisions. Sales teams using AI for lead scoring get ranked lists that still require manual filtering. The AI did work, but it created a new category of work for the human: evaluation work.",
+        content: "Illustrative scenario. An accounting firm adopts an AI tool for client communication. The tool generates three draft emails for every client interaction. The accountant now reads three versions, compares tone and accuracy, selects one, and edits it. What should have been a two-minute task becomes a ten-minute evaluation exercise. This pattern repeats across industries. Legal teams using AI for contract review receive highlighted sections with multiple suggested revisions. Sales teams using AI for lead scoring get ranked lists that still require manual filtering. The AI did work, but it created a new category of work for the human: evaluation work.",
       },
       {
         heading: "The Framework: Choice Elimination Over Choice Generation",
@@ -271,7 +271,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What is Pace-Adjusted Automation?",
-        answer: "Pace-Adjusted Automation is a framework from Ikram Rana of Barrana.ai that matches AI output speed to human capacity for quality oversight. Instead of maximizing throughput, it ensures AI handles cognitive work, not just mechanical work.",
+        answer: "Pace-Adjusted Automation is a practical framework described in this article that matches AI output speed to human capacity for quality oversight. Instead of maximizing throughput, it ensures AI handles cognitive work, not just mechanical work.",
       },
       {
         question: "How should businesses set AI throughput limits?",
@@ -336,7 +336,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What is the Automation-Delegation Spectrum?",
-        answer: "The Automation-Delegation Spectrum is a framework from Ikram Rana of Barrana.ai that helps businesses categorize tasks before selecting AI solutions. Tasks range from pure automation with clear rules to pure delegation requiring judgment and context.",
+        answer: "The Automation-Delegation Spectrum is a practical framework described in this article that helps businesses categorize tasks before selecting AI solutions. Tasks range from pure automation with clear rules to pure delegation requiring judgment and context.",
       },
       {
         question: "How do businesses identify automation candidates for AI?",
@@ -532,7 +532,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What is a Tool Abstraction Layer in AI?",
-        answer: "A Tool Abstraction Layer is a design approach from Ikram Rana of Barrana.ai where workflows are built around defined inputs, processes, and outputs rather than specific tools. AI tools plug into this framework as interchangeable components.",
+        answer: "A Tool Abstraction Layer is a practical design approach described in this article where workflows are built around defined inputs, processes, and outputs rather than specific tools. AI tools plug into this framework as interchangeable components.",
       },
       {
         question: "How do businesses avoid AI tool lock-in?",
@@ -648,7 +648,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "The Framework: The Consolidation Principle",
-        content: "Ikram Rana applies the Consolidation Principle to AI implementation: every function that can be served from a single interface should be. This does not mean using one tool for everything. It means building an orchestration layer that presents multiple AI capabilities through a unified workflow. The Consolidation Principle evaluates AI architecture across three dimensions. Interface consolidation means reducing the number of screens your team interacts with. Data consolidation means ensuring information flows between functions without manual transfer. Context consolidation means maintaining situational awareness across tasks without requiring humans to rebuild context at each step.",
+        content: "Ikram Rana applies the Consolidation Principle to AI implementation: functions should be consolidated when doing so reduces switching without creating operational or governance risk. This does not mean using one tool for everything. It means building an orchestration layer that presents multiple AI capabilities through a unified workflow. The Consolidation Principle evaluates AI architecture across three dimensions. Interface consolidation means reducing the number of screens your team interacts with. Data consolidation means ensuring information flows between functions without manual transfer. Context consolidation means maintaining situational awareness across tasks without requiring humans to rebuild context at each step.",
       },
       {
         heading: "Tactical Advice For Businesses",
@@ -713,7 +713,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "The Framework: The Invisibility Threshold",
-        content: "Ikram Rana defines the Invisibility Threshold as the point at which an AI system operates with sufficient reliability that human oversight becomes optional for routine operations. Reaching this threshold requires three conditions. First, a task-specific accuracy threshold supported by testing in the actual operating context. Second, exception handling that routes genuine anomalies to humans without routing false positives. Third, audit trails that allow periodic review without requiring constant monitoring. Below the Invisibility Threshold, AI requires supervision and adds cognitive load. Above it, AI disappears into the workflow and genuinely reduces workload. The goal should be to reduce unnecessary supervision only when testing, monitoring, and exception handling support it.",
+        content: "Ikram Rana defines the Invisibility Threshold as the point at which an AI system operates with sufficient reliability that continuous human supervision can be reduced for tested, low-consequence routine operations. Reaching this threshold requires three conditions. First, a task-specific accuracy threshold supported by testing in the actual operating context. Second, exception handling that routes genuine anomalies to humans without routing false positives. Third, audit trails that allow periodic review without requiring constant monitoring. Below the Invisibility Threshold, AI requires supervision and adds cognitive load. Above it, AI disappears into the workflow and genuinely reduces workload. The goal should be to reduce unnecessary supervision only when testing, monitoring, and exception handling support it.",
       },
       {
         heading: "Tactical Advice For Businesses",
@@ -723,7 +723,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       {
         question: "What makes AI invisible in business operations?",
-        answer: "Invisible AI operates autonomously with sufficient reliability that human oversight becomes optional for routine operations. It handles tasks in the background, surfaces only genuine exceptions, and maintains audit trails for periodic review.",
+        answer: "Invisible AI operates autonomously with sufficient reliability that continuous human supervision can be reduced for tested, low-consequence routine operations. It handles tasks in the background, surfaces only genuine exceptions, and maintains audit trails for periodic review.",
       },
       {
         question: "What is the Invisibility Threshold for AI?",
@@ -979,7 +979,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "The Framework: Judgment Quality Auditing",
-        content: "Ikram Rana requires a Judgment Quality Audit before any AI system goes live. This audit examines every rule, criterion, and assumption embedded in the AI system and tests each one against edge cases, ethical considerations, and contextual variations. The audit asks three questions for every embedded judgment. First, is this judgment accurate in the typical case? Second, are there scenarios where this judgment fails, and what is the potential damage in those scenarios? Third, does the system have safeguards for scenarios where this judgment should not apply? Only judgments that pass all three questions should be automated. Judgments that fail any question need human oversight.",
+        content: "Ikram Rana uses a Judgment Quality Audit before consequential AI workflows go live. This audit examines every rule, criterion, and assumption embedded in the AI system and tests each one against edge cases, ethical considerations, and contextual variations. The audit asks three questions for every embedded judgment. First, is this judgment accurate in the typical case? Second, are there scenarios where this judgment fails, and what is the potential damage in those scenarios? Third, does the system have safeguards for scenarios where this judgment should not apply? Only judgments that pass all three questions should be automated. Judgments that fail any question need human oversight.",
       },
       {
         heading: "Tactical Advice For Businesses",
@@ -1175,7 +1175,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "The Framework: Accountability Architecture",
-        content: "Ikram Rana builds what he calls Accountability Architecture into every AI automation system. This framework assigns clear ownership at three levels. The system owner is responsible for overall performance and accuracy. The process owner is responsible for the business rules embedded in the system. The exception owner is responsible for handling cases the system escalates. Each level has defined monitoring responsibilities, response protocols for failures, and regular review cadences. When something goes wrong, there is no ambiguity about who investigates, who communicates, and who fixes it.",
+        content: "Ikram Rana uses the term Accountability Architecture for a method that makes ownership, escalation, and correction responsibilities explicit. This framework assigns clear ownership at three levels. The system owner is responsible for overall performance and accuracy. The process owner is responsible for the business rules embedded in the system. The exception owner is responsible for handling cases the system escalates. Each level has defined monitoring responsibilities, response protocols for failures, and regular review cadences. When something goes wrong, there is no ambiguity about who investigates, who communicates, and who fixes it.",
       },
       {
         heading: "Tactical Advice For Businesses",
@@ -1748,7 +1748,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "The Framework: Incentive-Aligned Ai Adoption",
-        content: "Ikram Rana implements Incentive-Aligned AI Adoption, which requires modifying incentive structures before or simultaneously with AI deployment. The framework examines three alignment areas. Compensation alignment ensures that pay structures reward the behaviors AI is designed to enable. Measurement alignment ensures that performance metrics reflect AI-optimized outcomes rather than legacy processes. Recognition alignment ensures that the organization celebrates AI-supported results rather than traditional effort metrics.",
+        content: "Ikram Rana uses the term Incentive-Aligned AI Adoption for examining whether compensation, performance measures, and recognition support the intended workflow change. The framework examines three alignment areas. Compensation alignment ensures that pay structures reward the behaviors AI is designed to enable. Measurement alignment ensures that performance metrics reflect AI-optimized outcomes rather than legacy processes. Recognition alignment ensures that the organization celebrates AI-supported results rather than traditional effort metrics.",
       },
       {
         heading: "Tactical Advice For Businesses",
@@ -1762,7 +1762,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What is Incentive-Aligned AI Adoption?",
-        answer: "A framework from Ikram Rana of Barrana.ai requiring modification of incentive structures before or during AI deployment, covering compensation alignment, measurement alignment, and recognition alignment.",
+        answer: "A practical framework described in this article examines whether incentive structures should change before or during AI deployment, covering compensation alignment, measurement alignment, and recognition alignment.",
       },
       {
         question: "What should businesses do before deploying AI?",
@@ -1809,7 +1809,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "The Framework: Second-Order Thinking For Ai",
-        content: "Ikram Rana applies Second-Order Thinking to every AI implementation. This involves asking three questions beyond the immediate benefit. What behavior changes will this create in our team? What will happen to our customer experience? What skills or capabilities will atrophy because AI is handling them? These questions reveal the downstream consequences that determine long-term ROI. A positive first-order effect with a negative second-order effect often produces a net negative outcome over time.",
+        content: "Ikram Rana applies Second-Order Thinking during AI planning to examine consequences beyond the immediate task. This involves asking three questions beyond the immediate benefit. What behavior changes will this create in our team? What will happen to our customer experience? What skills or capabilities will atrophy because AI is handling them? These questions reveal the downstream consequences that determine long-term ROI. A positive first-order effect with a negative second-order effect often produces a net negative outcome over time.",
       },
       {
         heading: "Tactical Advice For Businesses",
@@ -1870,7 +1870,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "The Framework: Context-Adapted Ai Strategy",
-        content: "Ikram Rana develops Context-Adapted AI Strategy for each client rather than applying standardized best practices. This approach starts with the specific conditions of the business, including data state, team capability, client expectations, and competitive environment, and builds AI solutions that fit those conditions. The framework follows four steps. Assess current state including data quality, process maturity, and team readiness. Identify high-value, low-risk automation opportunities specific to this business. Build and test small implementations with real data and real users. Scale what works and abandon what does not.",
+        content: "Ikram Rana favours context-adapted AI strategy rather than applying standardized best practices without examining the business. This approach starts with the specific conditions of the business, including data state, team capability, client expectations, and competitive environment, and builds AI solutions that fit those conditions. The framework follows four steps. Assess current state including data quality, process maturity, and team readiness. Identify high-value, low-risk automation opportunities specific to this business. Build and test small implementations with real data and real users. Scale what works and abandon what does not.",
       },
       {
         heading: "Tactical Advice For Businesses",
@@ -1931,7 +1931,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "The Framework: The Capability Preservation Principle",
-        content: "Ikram Rana applies the Capability Preservation Principle to every AI implementation. This principle states that AI should never fully replace a thinking capability that the business needs. Even when AI handles the primary workload, humans must regularly practice the underlying thinking skill to prevent atrophy. The principle requires three practices. Regular manual exercises where team members perform AI-handled tasks without AI assistance. Verification rotations where different team members critically evaluate AI outputs using independent analysis. Skill maintenance allocations where training budgets include time for practicing skills that AI has partially automated.",
+        content: "Ikram Rana applies the Capability Preservation Principle when automation could weaken a capability the business still needs. This principle states that AI should never fully replace a thinking capability that the business needs. Even when AI handles the primary workload, humans must regularly practice the underlying thinking skill to prevent atrophy. The principle requires three practices. Regular manual exercises where team members perform AI-handled tasks without AI assistance. Verification rotations where different team members critically evaluate AI outputs using independent analysis. Skill maintenance allocations where training budgets include time for practicing skills that AI has partially automated.",
       },
       {
         heading: "Tactical Advice For Businesses",
