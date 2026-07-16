@@ -36,7 +36,7 @@ const frameworkPages = [
     label: "The Three-Layer Model",
     meta: "§02: Framework",
     title: "Execution · Judgment · Compliance",
-    desc: "A decision-systems framework for AI adoption. Automate execution, protect judgment, embed compliance as the architectural foundation: not the audit.",
+    desc: "A decision-systems framework for AI adoption. Automate execution, protect judgment, embed compliance-supporting controls in the architecture: not the audit.",
     href: "/the-model",
     readTime: "18 min read",
     accent: "text-electric",
