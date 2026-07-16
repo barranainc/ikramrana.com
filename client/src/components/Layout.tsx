@@ -1,8 +1,8 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint , Light Theme
  * Layout wrapper with persistent top navigation and footer.
  * Nav: Home / Solutions / Case Studies / Framework / Insights / Blog / AI Knowledge Hub / About / Contact
- * All legacy content pages remain at their own URLs — nav points to hubs.
+ * All legacy content pages remain at their own URLs , nav points to hubs.
  */
 
 import { Link, useLocation } from "wouter";
@@ -13,7 +13,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { href: "/ai-adoption-framework-for-small-businesses", label: "AI Framework" },
   { href: "/solutions", label: "Solutions" },
-  { href: "/case-studies", label: "Case Studies" },
+  { href: "/case-studies", label: "Use Cases" },
   { href: "/blog", label: "Blog" },
   { href: "/ai-knowledge-hub", label: "AI Knowledge Hub" },
   { href: "/industries", label: "Industries" },
@@ -91,7 +91,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Ikram Rana
               </span>
               <span className="hidden sm:inline text-[11px] text-slate-dim tracking-wide leading-tight">
-                Decision Architecture in AI Adoption
+                Practical AI Adoption for Businesses
               </span>
             </div>
           </Link>
@@ -199,7 +199,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="sm:col-span-1">
               <h4 className="font-serif text-base font-semibold text-foreground">Ikram Rana</h4>
               <p className="text-sm text-slate-dim mt-1 leading-relaxed max-w-sm">
-                Decision architecture, governance-by-design, and operational coherence in AI adoption.
+                Critical, practical guidance on where AI helps businesses, where it does not, and how to implement it responsibly.
               </p>
               <div className="flex gap-3 mt-4">
                 <a
@@ -229,7 +229,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link href="/framework" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Framework</Link>
                 <Link href="/insights" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Insights</Link>
                 <Link href="/blog" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Blog</Link>
-                <Link href="/case-studies" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Case Studies</Link>
+                <Link href="/case-studies" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Illustrative Use Cases</Link>
                 <Link href="/contact" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Contact</Link>
               </div>
             </div>
