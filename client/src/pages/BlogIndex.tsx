@@ -184,7 +184,7 @@ export default function BlogIndex() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-electric text-white px-8 py-3 font-sans font-medium text-sm hover:bg-electric-dim transition-colors"
             >
-              Book a Strategy Call
+              Find the Workflow AI Should Fix First
               <ArrowRight size={16} />
             </a>
           </motion.div>
