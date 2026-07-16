@@ -102,7 +102,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ai-tools-add-choices",
     title: "Most AI Tools Fail Because They Add Choices Instead of Removing Them",
-    metaDescription: "The default design pattern for most AI tools is to give you more. More suggestions. More drafts. More variations. More data points. This design pattern is fundamentally wrong for business productivity.",
+    metaDescription: "Why AI tools that add more choices can increase cognitive load, and how businesses can design workflows that remove avoidable decisions instead.",
     publishDate: "2026-02-05",
     tags: ["AI Adoption", "AI Productivity"],
     intro: [
@@ -381,7 +381,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "systems-vs-tools",
     title: "Why Systems Calm People Down and Tools Do Not",
-    metaDescription: "There is a noticeable difference between businesses that feel calm and businesses that feel chaotic, even when both are equally busy. The difference is almost always systems versus tools.",
+    metaDescription: "Why connected workflow systems reduce operational uncertainty while disconnected AI tools can create more checking, switching, and cognitive load.",
     publishDate: "2026-02-09",
     tags: ["AI Workflow Systems", "AI Strategy"],
     intro: [
@@ -588,7 +588,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "copying-ai-stack-fails",
     title: "Why Copying Someone Else's AI Stack Rarely Works for Your Business",
-    metaDescription: "Learn about why copying someone else's ai stack rarely works for your business and its impact on business AI strategy.",
+    metaDescription: "Why copying another company’s AI stack often fails, and how businesses can select tools only after understanding their own workflows and constraints.'s ai stack rarely works for your business and its impact on business AI strategy.",
     publishDate: "2026-02-12",
     tags: ["AI Strategy", "AI Adoption"],
     intro: [
@@ -797,7 +797,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "automate-wrong-step",
     title: "Why Most People Automate the Wrong Step in Their Workflow",
-    metaDescription: "When businesses decide to automate, they almost always start with the most visible task. The task that takes the most time. The task everyone complains about. This instinct is understandable and almost always wrong.",
+    metaDescription: "Why the most visible task is not always the real workflow bottleneck, and how businesses can identify the step that automation should address first.",
     publishDate: "2026-02-15",
     tags: ["AI Automation", "Business Automation"],
     intro: [
@@ -1078,7 +1078,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "use-less-ai",
     title: "Most Professionals Should Use Less AI Not More",
-    metaDescription: "The consultant was less productive than before AI adoption because the aggregate management cost exceeded the aggregate time savings. The tools that individually made sense collectively made no sense.",
+    metaDescription: "Why using fewer, better-integrated AI tools can produce more value than adopting many disconnected tools that require constant switching and review.",
     publishDate: "2026-02-19",
     tags: ["AI Adoption", "AI Strategy"],
     intro: [
@@ -1147,7 +1147,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "smart-people-misuse-ai",
     title: "Why Smart People Misuse AI More Than Beginners Do",
-    metaDescription: "The analyst's expertise becomes a liability because it creates false confidence in AI's ability to replicate expert-level judgment.",
+    metaDescription: "Why expertise can create false confidence in polished AI output, and how experienced professionals can preserve verification and independent judgment.'s expertise becomes a liability because it creates false confidence in AI's ability to replicate expert-level judgment.",
     publishDate: "2026-02-20",
     tags: ["AI Leadership", "AI Strategy"],
     intro: [
@@ -1354,7 +1354,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ai-decision-avoidance",
     title: "The Real Risk of AI Is Decision Avoidance Not Decision Error",
-    metaDescription: "Most discussions about AI risk focus on AI making wrong decisions. This is a real concern, but it is not the biggest one. The biggest risk of AI in business is that it enables humans to avoid making decisions at all.",
+    metaDescription: "How AI can enable decision avoidance by producing endless analysis, and why businesses still need clear human ownership, deadlines, and accountability.",
     publishDate: "2026-02-23",
     tags: ["AI Decision Systems", "AI Leadership"],
     intro: [
@@ -1423,7 +1423,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "when-not-to-use-ai",
     title: "When Not to Use AI Is a Leadership Skill Your Business Needs",
-    metaDescription: "The cost of AI errors in complex litigation far exceeds the time savings in routine contracts. The leadership failure was not in adopting AI. It was in failing to define where AI should and should not be applied.",
+    metaDescription: "Why deciding where AI should not be used is a leadership responsibility, especially when errors affect rights, relationships, trust, or professional duties.",
     publishDate: "2026-02-24",
     tags: ["AI Leadership", "AI Strategy"],
     intro: [
@@ -1625,7 +1625,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "time-vs-attention-tradeoff",
     title: "Technology That Saves Time but Costs Attention Is a Bad Trade",
-    metaDescription: "The AI tool saved time but consumed attention. The net productivity change was negative because the strategic work that suffered was more valuable than the monitoring that was automated.",
+    metaDescription: "Why businesses should measure the attention and monitoring required by AI, not only the time saved by an individual automated step.",
     publishDate: "2026-02-27",
     tags: ["AI For Families", "Cognitive Load"],
     intro: [
@@ -1691,7 +1691,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "raising-humans-ai-environment",
     title: "Raising Humans in an AI Saturated Environment",
-    metaDescription: "The student's parents celebrated the grades without noticing that the learning behind them was absent. AI created the appearance of education while undermining its substance.",
+    metaDescription: "How families and educators can protect independent thinking, writing, judgment, and human development while setting practical boundaries around AI use.'s parents celebrated the grades without noticing that the learning behind them was absent. AI created the appearance of education while undermining its substance.",
     publishDate: "2026-02-28",
     tags: ["AI For Families", "AI Adoption"],
     intro: [
@@ -1821,7 +1821,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ai-incentives-behaviour",
     title: "AI Does Not Change Behaviour but Incentives Do",
-    metaDescription: "This is not a technology problem. It is a management problem. AI adoption fails not because the technology does not work but because the organizational incentives are not aligned with the desired change.",
+    metaDescription: "Why incentives, ownership, and performance measures shape AI adoption behaviour more strongly than tool capability, training, or management announcements.",
     publishDate: "2026-03-02",
     tags: ["AI Adoption", "AI Strategy"],
     intro: [
