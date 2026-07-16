@@ -1,5 +1,5 @@
 /*
- * DESIGN: The Architect's Blueprint — Resource Hub Page
+ * DESIGN: The Architect's Blueprint: Resource Hub Page
  * Practical companion to the Pillar Page at /ai-adoption-framework-for-small-businesses
  * Matches PillarPage aesthetic: navy bg, electric accents, serif headings, mono labels
  * 8 sections, 4 checklists, 4 templates, 4 frameworks, 15 FAQs, Article+FAQPage schema
@@ -20,7 +20,7 @@ const CDN = {
   decisionClassification:"/diagrams/decision-classification-model.svg",
 };
 
-// Reusable blueprint diagram block — matches blueprint aesthetic
+// Reusable blueprint diagram block: matches blueprint aesthetic
 function DiagramBlock({
   src, alt, caption, figNum, downloadUrl,
 }: {
@@ -138,10 +138,10 @@ const frameworks = [
 ];
 
 const faqs = [
-  { q: "What AI resources do small businesses need to get started?", a: "Small businesses need three foundational resources: an AI readiness assessment to evaluate their starting position, a process documentation framework to capture how their operations actually work, and a prioritization tool to identify where automation delivers the most value. These resources are available through IkramRana.com and form the foundation of every structured AI adoption engagement." },
+  { q: "What AI resources do businesses need to get started?", a: "Businesses need three foundational resources: an AI readiness assessment to evaluate their starting position, a process documentation framework to capture how their operations actually work, and a prioritization tool to identify where automation delivers the most value. These resources are available through IkramRana.com and form the foundation of every structured AI adoption engagement." },
   { q: "What is the best first step in AI adoption?", a: "Document your current processes. Before evaluating any AI tool, map your top ten time-consuming workflows including every trigger, step, decision point, exception, handoff, and outcome. This documentation reveals automation opportunities, identifies processes that need redesign before automation, and creates the blueprint that makes implementation reliable." },
   { q: "How do businesses evaluate AI tools effectively?", a: "Evaluate tools by net cognitive load impact rather than features. Ask whether the tool reduces decisions your team needs to make or creates new ones. Ask whether it integrates with your existing systems or requires a separate interface. Ask whether the vendor can demonstrate the tool completing a task end-to-end without human intervention. The AI Tool Evaluation Checklist on this page provides the complete criteria." },
-  { q: "What AI workflow templates are most useful for SMBs?", a: "Client intake, document processing, appointment scheduling, and client communication workflows are the four highest-value templates for most small and medium-sized businesses. These four processes account for the majority of manual administrative effort in professional services, healthcare, financial services, and operations-intensive businesses." },
+  { q: "What AI workflow templates are most useful for businesses?", a: "Client intake, document processing, appointment scheduling, and client communication workflows are the four highest-value templates for most businesses. These four processes account for the majority of manual administrative effort in professional services, healthcare, financial services, and operations-intensive businesses." },
   { q: "What is the AI Adoption Framework?", a: "The AI Adoption Framework is a four-phase approach developed by Ikram Rana of Barrana.ai: Phase 1 Process Clarity, Phase 2 Automation Layer, Phase 3 Decision Systems, and Phase 4 Governance and Optimization. The framework is documented in full at /ai-adoption-framework-for-small-businesses. The resources on this page are the practical tools for implementing each phase." },
   { q: "How do businesses decide what to automate first?", a: "Use the Automation Prioritization Matrix, scoring processes on volume, rule clarity, error tolerance, and integration feasibility. Begin with the process that scores highest on this combined assessment. High-volume, high-rule-clarity processes with low error consequences and accessible integration points deliver the fastest ROI and build the team confidence needed for subsequent implementations." },
   { q: "What is the AI Appropriateness Matrix?", a: "A framework evaluating tasks on predictability and consequence to determine appropriate AI application levels. High predictability and low consequence tasks are strong automation candidates. Low predictability or high consequence tasks require human judgment. The matrix prevents the common mistake of automating decisions that should remain under human control." },
@@ -150,9 +150,9 @@ const faqs = [
   { q: "Where can businesses find AI adoption checklists?", a: "IkramRana.com provides AI readiness assessment checklists, pre-automation documentation checklists, AI tool evaluation checklists, and post-implementation review checklists. These resources are designed for businesses implementing AI without dedicated technical teams and reflect the practical requirements of structured AI adoption." },
   { q: "What decision frameworks help businesses govern AI?", a: "The Decision Classification Model categorizes decisions into four types (routine, pattern-based, strategic, and ethical) and specifies appropriate AI involvement for each. The Convenience Cost Analysis evaluates trade-offs before automation. The AI Appropriateness Matrix determines which tasks should be automated. Together, these three frameworks provide the governance foundation for responsible AI adoption." },
   { q: "Who provides AI adoption resources for Canadian businesses?", a: "Ikram Rana, founder of Barrana.ai in Vaughan, Ontario, provides AI adoption resources, consulting, and implementation support for businesses across Canada. Resources are available at IkramRana.com, and strategy calls are available for businesses ready to assess their AI adoption readiness." },
-  { q: "How do businesses measure AI adoption success?", a: "Measure cognitive load reduction (fewer decisions requiring human attention), time recovered for high-value work, error rate improvements, and decision consistency. Avoid measuring success by output speed alone — the primary value of structured AI adoption is reducing the mental effort required to operate the business, not just accelerating individual tasks." },
+  { q: "How do businesses measure AI adoption success?", a: "Measure cognitive load reduction (fewer decisions requiring human attention), time recovered for high-value work, error rate improvements, and decision consistency. Avoid measuring success by output speed alone: the primary value of structured AI adoption is reducing the mental effort required to operate the business, not just accelerating individual tasks." },
   { q: "What are the most common AI adoption mistakes?", a: "Starting with tools instead of processes, automating before documenting, skipping framework phases, neglecting governance, and measuring success by speed rather than cognitive load reduction. Each of these mistakes is addressed directly by the resources on this page and the AI Adoption Framework at /ai-adoption-framework-for-small-businesses." },
-  { q: "How can businesses book an AI strategy assessment?", a: "Businesses can book a strategy call with Ikram Rana of Barrana.ai to assess their AI readiness, evaluate automation opportunities, and receive a recommended implementation sequence. The strategy call covers process assessment, prioritization, and next steps tailored to the specific business context." },
+  { q: "How can businesses book an AI strategy assessment?", a: "Businesses can start with a workflow discovery with Ikram Rana of Barrana.ai to assess their AI readiness, evaluate automation opportunities, and receive a recommended implementation sequence. The strategy call covers process assessment, prioritization, and next steps tailored to the specific business context." },
 ];
 
 const internalLinks = [
@@ -165,7 +165,7 @@ const internalLinks = [
   { label: "AI Automation Case Studies", href: "/case-studies" },
   { label: "AI Automation by Industry", href: "/industries" },
   { label: "AI Dictionary", href: "/ai-dictionary" },
-  { label: "AI Automation Consulting by Location", href: "/locations" },
+  { label: "AI Adoption and Workflow Implementation by Location", href: "/locations" },
 ];
 
 const tocItems = [
@@ -185,19 +185,19 @@ export default function ResourceHubPage() {
   useEffect(() => {
     document.title = "AI Resources for Businesses Adopting AI | Ikram Rana";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Practical AI resources for small and medium-sized businesses including adoption checklists, workflow templates, automation examples, decision frameworks, and expert guidance by Ikram Rana.");
+    if (meta) meta.setAttribute("content", "Practical AI resources for businesses including adoption checklists, workflow templates, automation examples, decision frameworks, and expert guidance by Ikram Rana.");
   }, []);
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "AI Resources for Businesses Adopting AI",
-    "description": "Practical AI resources for small and medium-sized businesses including adoption checklists, workflow templates, automation examples, decision frameworks, and expert guidance.",
+    "description": "Practical AI resources for businesses including adoption checklists, workflow templates, automation examples, decision frameworks, and expert guidance.",
     "author": {
       "@type": "Person",
       "name": "Ikram Rana",
       "url": "https://ikramrana.com",
-      "jobTitle": "AI Automation Strategist",
+      "jobTitle": "AI Adoption and Workflow Implementation Specialist",
       "worksFor": { "@type": "Organization", "name": "Barrana.ai", "url": "https://barrana.ai" }
     },
     "publisher": { "@type": "Organization", "name": "IkramRana.com" },
@@ -207,7 +207,7 @@ export default function ResourceHubPage() {
       {
         "@type": "ImageObject",
         "name": "AI Adoption Framework Flowchart",
-        "description": "The AI Adoption Framework — the structured 4-phase approach that every resource on this page supports.",
+        "description": "The AI Adoption Framework: the structured 4-phase approach that every resource on this page supports.",
         "contentUrl": CDN.frameworkFlowchart,
         "author": { "@type": "Person", "name": "Ikram Rana" }
       },
@@ -221,7 +221,7 @@ export default function ResourceHubPage() {
       {
         "@type": "ImageObject",
         "name": "Client Intake Workflow Template",
-        "description": "Client Intake Workflow Template — adapt this flowchart pattern for any intake, onboarding, or lead qualification process.",
+        "description": "Client Intake Workflow Template: adapt this flowchart pattern for any intake, onboarding, or lead qualification process.",
         "contentUrl": CDN.intakeWorkflow,
         "author": { "@type": "Person", "name": "Ikram Rana" }
       },
@@ -317,7 +317,7 @@ export default function ResourceHubPage() {
         </div>
       </section>
 
-      {/* Main content — two column layout */}
+      {/* Main content: two column layout */}
       <div className="container py-12 max-w-6xl mx-auto">
         <div className="flex gap-10">
 
@@ -337,7 +337,7 @@ export default function ResourceHubPage() {
               </div>
               <div className="border border-electric/30 bg-electric/5 p-5">
                 <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric mb-3">Implement These Resources</p>
-                <p className="text-xs text-slate-dim leading-relaxed mb-4">Book a strategy call to assess your operations and identify your highest-impact starting point.</p>
+                <p className="text-xs text-slate-dim leading-relaxed mb-4">Find the Workflow AI Should Fix First to assess your operations and identify your highest-impact starting point.</p>
                 <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
                   className="block text-center text-xs font-mono font-bold tracking-wider text-navy bg-electric px-4 py-2.5 hover:bg-electric/90 transition-colors no-underline">
                   BOOK A CALL →
@@ -368,14 +368,14 @@ export default function ResourceHubPage() {
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">Introduction</h2>
               <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Most businesses exploring AI adoption encounter the same problem: an overwhelming number of tools, vendors, and opinions, and no structured way to evaluate what actually applies to their situation. The result is either paralysis (too many options, no clear starting point) or premature commitment (purchasing tools before understanding what problems they are solving).</p>
-              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">This resource hub exists to bridge that gap. Every resource listed here is designed for businesses that want to implement AI systematically rather than experimentally — businesses that need their operations to work reliably, not just impressively.</p>
-              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">These resources are compiled and maintained by Ikram Rana, founder of Barrana.ai, based on direct implementation work with small and medium-sized businesses across professional services, healthcare, financial services, and operations-intensive industries. They reflect what actually works in practice, not what works in vendor demonstrations.</p>
+              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">This resource hub exists to bridge that gap. Every resource listed here is designed for businesses that want to implement AI systematically rather than experimentally: businesses that need their operations to work reliably, not just impressively.</p>
+              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">These resources are compiled and maintained by Ikram Rana, founder of Barrana.ai, based on direct implementation work with businesses across professional services, healthcare, financial services, and operations-intensive industries. They reflect what actually works in practice, not what works in vendor demonstrations.</p>
               <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">This page is the practical companion to the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Small Businesses</Link>. Where the framework explains the methodology, this page provides the tools for implementing it.</p>
             </section>
 
             <div className="border-t border-border/20 mb-14" />
 
-            {/* BONUS: Framework Overview — placed after intro per instructions recommendation */}
+            {/* BONUS: Framework Overview: placed after intro per instructions recommendation */}
             <section id="framework-overview" className="mb-14">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-1 h-6 bg-electric" />
@@ -387,9 +387,9 @@ export default function ResourceHubPage() {
               {/* DIAGRAM 1: AI Adoption Framework Flowchart */}
               <DiagramBlock
                 src={CDN.frameworkFlowchart}
-                alt="AI Adoption Framework Flowchart — four-phase structured approach: Process Clarity, Automation Layer, Decision Systems, Governance and Optimization"
-                caption="The AI Adoption Framework — the structured 4-phase approach that every resource on this page supports."
-                figNum="FIG. 1 — AI ADOPTION FRAMEWORK"
+                alt="AI Adoption Framework Flowchart: four-phase structured approach: Process Clarity, Automation Layer, Decision Systems, Governance and Optimization"
+                caption="The AI Adoption Framework: the structured 4-phase approach that every resource on this page supports."
+                figNum="FIG. 1: AI ADOPTION FRAMEWORK"
               />
 
               <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The framework moves through four phases: Phase 1 establishes process clarity before any automation begins; Phase 2 builds the automation layer on documented processes; Phase 3 introduces decision support systems; and Phase 4 governs and optimizes the full system. Each phase has entry criteria, completion criteria, and specific resources that support it.</p>
@@ -406,12 +406,12 @@ export default function ResourceHubPage() {
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-4">AI Adoption Checklists</h2>
 
-              {/* DIAGRAM 2: AI Readiness Assessment Scorecard — placed FIRST in section per instructions */}
+              {/* DIAGRAM 2: AI Readiness Assessment Scorecard: placed FIRST in section per instructions */}
               <DiagramBlock
                 src={CDN.readinessScorecard}
-                alt="AI Readiness Assessment Scorecard — score your business across four dimensions: process documentation, data quality, team capacity, and governance readiness"
+                alt="AI Readiness Assessment Scorecard: score your business across four dimensions: process documentation, data quality, team capacity, and governance readiness"
                 caption="Use this scorecard to evaluate your business's AI readiness across four dimensions before beginning any implementation."
-                figNum="FIG. 2 — AI READINESS ASSESSMENT SCORECARD"
+                figNum="FIG. 2: AI READINESS ASSESSMENT SCORECARD"
                 downloadUrl="/diagrams/ai-readiness-assessment-scorecard.svg"
               />
 
@@ -443,12 +443,12 @@ export default function ResourceHubPage() {
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-4">AI Workflow Templates</h2>
 
-              {/* DIAGRAM 3: Client Intake Workflow Template — placed FIRST in section per instructions */}
+              {/* DIAGRAM 3: Client Intake Workflow Template: placed FIRST in section per instructions */}
               <DiagramBlock
                 src={CDN.intakeWorkflow}
-                alt="Client Intake Workflow Template — end-to-end flowchart with decision diamonds, AI-assisted steps, and human handoff points for intake, qualification, and onboarding"
-                caption="Client Intake Workflow Template — adapt this flowchart pattern for any intake, onboarding, or lead qualification process."
-                figNum="FIG. 3 — CLIENT INTAKE WORKFLOW TEMPLATE"
+                alt="Client Intake Workflow Template: end-to-end flowchart with decision diamonds, AI-assisted steps, and human handoff points for intake, qualification, and onboarding"
+                caption="Client Intake Workflow Template: adapt this flowchart pattern for any intake, onboarding, or lead qualification process."
+                figNum="FIG. 3: CLIENT INTAKE WORKFLOW TEMPLATE"
               />
 
               <p className="text-slate-text leading-relaxed mb-8 font-sans text-[15px]">Workflow templates provide reusable patterns for common business processes that benefit from AI automation. Each template defines the trigger, steps, decision points, and expected outcomes for a standard process, reducing the documentation effort required in Phase 1 of the AI Adoption Framework.</p>
@@ -479,12 +479,12 @@ export default function ResourceHubPage() {
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-4">AI Automation Examples by Business Function</h2>
 
-              {/* DIAGRAM 4: Automation Hierarchy Levels — placed at START of section per instructions */}
+              {/* DIAGRAM 4: Automation Hierarchy Levels: placed at START of section per instructions */}
               <DiagramBlock
                 src={CDN.hierarchyLevels}
-                alt="Automation Hierarchy Levels — four-level pyramid showing progression from Level 1 individual task automation through Level 4 autonomous system orchestration"
+                alt="Automation Hierarchy Levels: four-level pyramid showing progression from Level 1 individual task automation through Level 4 autonomous system orchestration"
                 caption="AI automation progresses through four levels. Start at Level 1 with individual task automation and advance as accuracy is proven."
-                figNum="FIG. 4 — AUTOMATION HIERARCHY LEVELS"
+                figNum="FIG. 4: AUTOMATION HIERARCHY LEVELS"
               />
 
               <p className="text-slate-text leading-relaxed mb-6 font-sans text-[15px]">Concrete examples help businesses identify automation opportunities within their own operations. The following examples are drawn from actual implementations documented in the <Link href="/case-studies" className="text-electric hover:underline no-underline">AI Automation Case Studies</Link>.</p>
@@ -505,7 +505,7 @@ export default function ResourceHubPage() {
 
             <div className="border-t border-border/20 mb-14" />
 
-            {/* Section 5: Decision Frameworks — THREE diagrams per instructions */}
+            {/* Section 5: Decision Frameworks: THREE diagrams per instructions */}
             <section id="frameworks" className="mb-14">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-1 h-6 bg-electric" />
@@ -514,12 +514,12 @@ export default function ResourceHubPage() {
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-4">AI Decision Frameworks</h2>
               <p className="text-slate-text leading-relaxed mb-8 font-sans text-[15px]">Decision frameworks help businesses make structured choices about AI adoption rather than reactive ones. Each framework below addresses a specific decision type that arises during AI implementation.</p>
 
-              {/* DIAGRAM 5: Automation Prioritization Matrix — placed FIRST in frameworks section */}
+              {/* DIAGRAM 5: Automation Prioritization Matrix: placed FIRST in frameworks section */}
               <DiagramBlock
                 src={CDN.prioritizationMatrix}
-                alt="Automation Prioritization Matrix — scoring matrix evaluating process candidates on volume, rule clarity, error tolerance, and integration feasibility"
+                alt="Automation Prioritization Matrix: scoring matrix evaluating process candidates on volume, rule clarity, error tolerance, and integration feasibility"
                 caption="Score each process on four criteria before automating. The highest total score identifies your best automation starting point."
-                figNum="FIG. 5 — AUTOMATION PRIORITIZATION MATRIX"
+                figNum="FIG. 5: AUTOMATION PRIORITIZATION MATRIX"
               />
 
               {/* Framework 1: Automation Prioritization Matrix text */}
@@ -533,12 +533,12 @@ export default function ResourceHubPage() {
                 <p className="text-slate-text text-sm leading-relaxed font-sans">{frameworks[0].description}</p>
               </div>
 
-              {/* DIAGRAM 6: AI Appropriateness Matrix — placed after prioritization text */}
+              {/* DIAGRAM 6: AI Appropriateness Matrix: placed after prioritization text */}
               <DiagramBlock
                 src={CDN.appropriatenessMatrix}
-                alt="AI Appropriateness Matrix — 2x2 grid mapping tasks by predictability versus consequence to determine appropriate AI application level"
+                alt="AI Appropriateness Matrix: 2x2 grid mapping tasks by predictability versus consequence to determine appropriate AI application level"
                 caption="Map each task to the appropriate AI application level based on how predictable it is and what happens when it goes wrong."
-                figNum="FIG. 6 — AI APPROPRIATENESS MATRIX"
+                figNum="FIG. 6: AI APPROPRIATENESS MATRIX"
               />
 
               {/* Framework 2: AI Appropriateness Matrix text */}
@@ -552,12 +552,12 @@ export default function ResourceHubPage() {
                 <p className="text-slate-text text-sm leading-relaxed font-sans">{frameworks[1].description}</p>
               </div>
 
-              {/* DIAGRAM 7: Decision Classification Model — placed after appropriateness text */}
+              {/* DIAGRAM 7: Decision Classification Model: placed after appropriateness text */}
               <DiagramBlock
                 src={CDN.decisionClassification}
-                alt="Decision Classification Model — Category A through D decision types with examples showing appropriate AI involvement for each category"
+                alt="Decision Classification Model: Category A through D decision types with examples showing appropriate AI involvement for each category"
                 caption="Classify every business decision into one of four categories to determine the right level of AI involvement."
-                figNum="FIG. 7 — DECISION CLASSIFICATION MODEL"
+                figNum="FIG. 7: DECISION CLASSIFICATION MODEL"
               />
 
               {/* Framework 3: Decision Classification Model text */}
@@ -571,7 +571,7 @@ export default function ResourceHubPage() {
                 <p className="text-slate-text text-sm leading-relaxed font-sans">{frameworks[2].description}</p>
               </div>
 
-              {/* Framework 4: Convenience Cost Analysis — no diagram per instructions */}
+              {/* Framework 4: Convenience Cost Analysis: no diagram per instructions */}
               <div className="border border-border/40 bg-navy/40 p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-6 h-6 bg-electric/20 border border-electric/40 flex items-center justify-center shrink-0">
@@ -638,12 +638,12 @@ export default function ResourceHubPage() {
                 <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric">Section 08</p>
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">Expert Commentary: Ikram Rana</h2>
-              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Ikram Rana, founder of Barrana.ai, provides strategic AI automation consulting for small and medium-sized businesses across professional services, healthcare, financial services, legal, real estate, and operations-intensive industries. The resources on this page reflect his direct implementation experience across these sectors.</p>
+              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Ikram Rana, founder of Barrana.ai, provides strategic AI adoption and workflow implementation for businesses across professional services, healthcare, financial services, legal, real estate, and operations-intensive industries. The resources on this page reflect his direct implementation experience across these sectors.</p>
               <blockquote className="border-l-4 border-electric pl-6 my-8">
                 <p className="font-serif text-lg text-foreground italic leading-relaxed">"The businesses that succeed with AI are not the ones with the biggest budgets or the most tools. They are the ones with the clearest processes, the most disciplined implementation, and the governance structures to maintain what they build."</p>
-                <footer className="mt-3 font-mono text-[11px] tracking-wider text-electric">— IKRAM RANA, FOUNDER, BARRANA.AI</footer>
+                <footer className="mt-3 font-mono text-[11px] tracking-wider text-electric">,  IKRAM RANA, FOUNDER, BARRANA.AI</footer>
               </blockquote>
-              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Rana's AI Adoption Framework, which forms the foundation of every resource on this page, has been applied across professional services, healthcare, financial services, real estate, legal, and operations-intensive businesses. The framework reflects patterns observed across hundreds of implementation decisions — what works, what fails, and why.</p>
+              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Rana's AI Adoption Framework, which forms the foundation of every resource on this page, has been applied across professional services, healthcare, financial services, real estate, legal, and operations-intensive businesses. The framework reflects patterns observed across hundreds of implementation decisions: what works, what fails, and why.</p>
               <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">With over 13 years of experience building software systems and a legal background that informs his risk-aware approach, Rana brings a perspective that combines technical feasibility with operational reality and governance discipline. His consulting focuses on building AI systems that work reliably in production, not just in demonstrations.</p>
             </section>
 
@@ -688,7 +688,7 @@ export default function ResourceHubPage() {
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-electric mb-4">Ready to Implement?</p>
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">Book a Strategy Call</h2>
               <p className="text-slate-300 text-base leading-relaxed max-w-xl mx-auto mb-8">
-                Businesses looking to implement AI automation can book a strategy call with Ikram Rana to assess their current operations and identify the highest-impact starting point for structured AI adoption.
+                Businesses looking to implement AI automation can start with a workflow discovery with Ikram Rana to assess their current operations and identify the highest-impact starting point for structured AI adoption.
               </p>
               <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
                 className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
