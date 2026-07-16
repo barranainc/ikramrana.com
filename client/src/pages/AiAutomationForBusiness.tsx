@@ -4,7 +4,7 @@
  * Navy bg, electric accents, serif headings, mono labels
  */
 
-import { useEffect } from "react";
+import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 
 const PAGE_URL = "https://ikramrana.com/ai-automation-for-business";
@@ -34,11 +34,7 @@ const roadmapSteps = [
 ];
 
 export default function AiAutomationForBusiness() {
-  useEffect(() => {
-    document.title = "AI Automation for Business: Full Guide | Ikram Rana";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "What to automate, expected ROI, an 8-step implementation roadmap, and the mistakes that derail most projects. A practical guide by Ikram Rana.");
-  }, []);
+  useHead("AI Automation for Business: Full Guide", "What to automate, how to measure value, an implementation roadmap, and the mistakes that derail AI projects. A practical guide by Ikram Rana.");
 
   const articleSchema = {
     "@context": "https://schema.org",
