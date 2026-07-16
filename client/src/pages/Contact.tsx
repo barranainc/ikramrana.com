@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "What is governance-by-design?",
-    a: "Governance-by-design is the principle that governance constraints should be embedded in system architecture rather than documented in policies. The system enforces compliance, not just describes it.",
+    a: "Governance-by-design is the principle that governance constraints should be embedded in system architecture rather than documented in policies. The system enforces defined controls, not just describes it.",
   },
   {
     q: "What is the Tuesday Morning Test?",
