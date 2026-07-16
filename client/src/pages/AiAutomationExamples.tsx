@@ -1,6 +1,6 @@
 /*
- * DESIGN: The Architect's Blueprint — Resource Page
- * /ai-automation-examples — 5 categories, case study links, internal linking
+ * DESIGN: The Architect's Blueprint: Resource Page
+ * /ai-automation-examples: 5 categories, case study links, internal linking
  */
 
 import { useEffect } from "react";
@@ -37,7 +37,7 @@ const categories = [
     id: "document-processing",
     num: "03",
     title: "Document processing automation",
-    desc: "Document processing automation extracts structured information from unstructured documents — invoices, contracts, forms, and reports — and routes the extracted data to downstream systems.",
+    desc: "Document processing automation extracts structured information from unstructured documents: invoices, contracts, forms, and reports: and routes the extracted data to downstream systems.",
     trigger: "Document received via email, uploaded to designated folder, or submitted through client portal",
     logic: "Classify document type, extract relevant fields using AI document processing, validate extracted data against defined rules, flag exceptions for human review, route validated data to appropriate system.",
     action: "Populate accounting software with invoice data, update contract management system with extracted terms, create CRM record from intake form, generate summary report for review.",
@@ -122,7 +122,7 @@ export default function AiAutomationExamples() {
         {/* Intro */}
         <section className="mb-14">
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">These five automation categories represent the highest-value automation targets for most small and medium-sized service businesses. Each example includes the trigger that initiates the automation, the logic that governs its decisions, the actions it executes, and the business impact reported by businesses that have implemented it.</p>
-          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The examples are structured using the trigger-logic-action pattern described in the <Link href="/ai-workflow-systems" className="text-electric hover:underline no-underline">AI Workflow Systems</Link> guide. Every automation, regardless of complexity, can be decomposed into this pattern — it is the framework that makes automation design systematic rather than ad hoc.</p>
+          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The examples are structured using the trigger-logic-action pattern described in the <Link href="/ai-workflow-systems" className="text-electric hover:underline no-underline">AI Workflow Systems</Link> guide. Every automation, regardless of complexity, can be decomposed into this pattern: it is the framework that makes automation design systematic rather than ad hoc.</p>
           <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the implementation methodology that governs these examples, see the <Link href="/ai-automation-for-business" className="text-electric hover:underline no-underline">AI Automation for Business</Link> complete guide. For the prioritization framework that determines which automation to implement first, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Small Businesses</Link>.</p>
         </section>
 
@@ -181,7 +181,7 @@ export default function AiAutomationExamples() {
           <h2 className="font-serif text-xl font-bold text-foreground mb-6">Continue Your Research</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
-              { label: "AI Automation for Business — Complete Guide", href: "/ai-automation-for-business" },
+              { label: "AI Automation for Business: Complete Guide", href: "/ai-automation-for-business" },
               { label: "AI Workflow Systems", href: "/ai-workflow-systems" },
               { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
               { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
@@ -203,7 +203,7 @@ export default function AiAutomationExamples() {
         <section className="bg-gradient-to-br from-[#020b18] to-[#0a1628] border border-electric/30 p-10 text-center">
           <h2 className="font-serif text-2xl font-bold text-white mb-4">Identify Your Highest-Value Automation</h2>
           <p className="text-slate-300 text-base leading-relaxed max-w-xl mx-auto mb-8">
-            Book a strategy call with Ikram Rana of Barrana.ai to assess which of these automation categories applies to your business and prioritize your implementation roadmap.
+            Find the Workflow AI Should Fix First with Ikram Rana of Barrana.ai to assess which of these automation categories applies to your business and prioritize your implementation roadmap.
           </p>
           <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
