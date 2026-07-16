@@ -1,6 +1,6 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
- * INSIGHT PAGE — /insight/
+ * DESIGN: The Architect's Blueprint: Light Theme
+ * INSIGHT PAGE: /insight/
  * Short-form observations, patterns, and practical notes from the work.
  * Different format from essays: more immediate, less structured, more frequent.
  */
@@ -23,28 +23,28 @@ const insights = [
     date: "Feb 2026",
     tag: "Governance",
     title: "The approval that isn't",
-    body: "Most AI approval workflows aren't approvals. They're acknowledgements. The human clicks a button that says 'Approve' but has no mechanism to actually evaluate what they're approving. The system records a human decision. No human decision was made. This distinction matters enormously when something goes wrong — and it will go wrong.",
+    body: "Most AI approval workflows aren't approvals. They're acknowledgements. The human clicks a button that says 'Approve' but has no mechanism to actually evaluate what they're approving. The system records a human decision. No human decision was made. This distinction matters enormously when something goes wrong: and it will go wrong.",
   },
   {
     id: "002",
     date: "Feb 2026",
     tag: "Decision Architecture",
     title: "Speed is not the problem. Clarity is.",
-    body: "Every operator I talk to says the same thing: 'We need to move faster.' But when I map their workflows, speed isn't the bottleneck. Clarity is. Decisions stall because nobody knows who owns them. Tasks repeat because nobody knows what 'done' means. AI makes this worse, not better — it executes faster on top of the same underlying ambiguity.",
+    body: "Every operator I talk to says the same thing: 'We need to move faster.' But when I map their workflows, speed isn't the bottleneck. Clarity is. Decisions stall because nobody knows who owns them. Tasks repeat because nobody knows what 'done' means. AI makes this worse, not better: it executes faster on top of the same underlying ambiguity.",
   },
   {
     id: "003",
     date: "Feb 2026",
     tag: "Automation",
     title: "The 80% trap",
-    body: "AI handles 80% of cases well. The remaining 20% are the ones that matter most — edge cases, exceptions, high-stakes decisions. Organizations automate the 80% and assume the 20% will sort itself out. It doesn't. The 20% now arrives without context, without the human judgment that used to catch it before it became a problem.",
+    body: "AI handles 80% of cases well. The remaining 20% are the ones that matter most: edge cases, exceptions, high-stakes decisions. Organizations automate the 80% and assume the 20% will sort itself out. It doesn't. The 20% now arrives without context, without the human judgment that used to catch it before it became a problem.",
   },
   {
     id: "004",
     date: "Jan 2026",
     tag: "Compliance",
     title: "Compliance debt compounds",
-    body: "Every shortcut in governance architecture is a loan. You borrow time now and pay it back later — with interest. The interest is paid in audit failures, regulatory scrutiny, client disputes, and staff time spent reconstructing decisions that should have been logged automatically. Organizations that skip governance architecture don't avoid the cost. They defer it.",
+    body: "Every shortcut in governance architecture is a loan. You borrow time now and pay it back later: with interest. The interest is paid in audit failures, regulatory scrutiny, client disputes, and staff time spent reconstructing decisions that should have been logged automatically. Organizations that skip governance architecture don't avoid the cost. They defer it.",
   },
   {
     id: "005",
@@ -58,14 +58,14 @@ const insights = [
     date: "Jan 2026",
     tag: "Decision Architecture",
     title: "Who owns the exception?",
-    body: "Every workflow has exceptions. The question isn't whether exceptions will occur — it's whether your system has a defined path for them. Most AI workflows handle the standard case well and route exceptions to 'someone will deal with it.' That someone is usually the most senior person available, which means your most expensive resource is spending their time on unstructured edge cases that a well-designed escalation path would have handled.",
+    body: "Every workflow has exceptions. The question isn't whether exceptions will occur: it's whether your system has a defined path for them. Most AI workflows handle the standard case well and route exceptions to 'someone will deal with it.' That someone is usually the most senior person available, which means your most expensive resource is spending their time on unstructured edge cases that a well-designed escalation path would have handled.",
   },
   {
     id: "007",
     date: "Dec 2025",
     tag: "Governance",
     title: "Policy is not architecture",
-    body: "A policy document that says 'humans must review all AI outputs' is not a governance system. It's a statement of intent. Governance is what happens in the system — the checkpoints that cannot be bypassed, the logs that are automatically created, the escalation paths that are structurally enforced. If non-compliant behavior is possible in your system, it will occur. Policy doesn't prevent it. Architecture does.",
+    body: "A policy document that says 'humans must review all AI outputs' is not a governance system. It's a statement of intent. Governance is what happens in the system: the checkpoints that cannot be bypassed, the logs that are automatically created, the escalation paths that are structurally enforced. If non-compliant behavior is possible in your system, it will occur. Policy doesn't prevent it. Architecture does.",
   },
   {
     id: "008",
@@ -86,7 +86,7 @@ const insights = [
     date: "Nov 2025",
     tag: "Decision Architecture",
     title: "Judgment is not a backup system",
-    body: "Organizations often treat human judgment as the fallback when AI fails. This is backwards. Human judgment should be the primary system for decisions that require it — not a safety net for when automation breaks down. When judgment is positioned as a backup, it atrophies. People stop exercising it because the system rarely asks for it. Then, when it's genuinely needed, the capacity isn't there.",
+    body: "Organizations often treat human judgment as the fallback when AI fails. This is backwards. Human judgment should be the primary system for decisions that require it: not a safety net for when automation breaks down. When judgment is positioned as a backup, it atrophies. People stop exercising it because the system rarely asks for it. Then, when it's genuinely needed, the capacity isn't there.",
   },
 ];
 
@@ -119,7 +119,7 @@ export default function Insight() {
               Observations from the Work
             </h1>
             <p className="text-lg text-slate-text leading-relaxed">
-              Shorter observations, patterns, and practical notes. Less structured than essays — more immediate. These are the things worth saying before they become a full argument.
+              Shorter observations, patterns, and practical notes. Less structured than essays: more immediate. These are the things worth saying before they become a full argument.
             </p>
           </motion.div>
         </div>
@@ -175,7 +175,7 @@ export default function Insight() {
               Want the full argument?
             </h3>
             <p className="text-slate-text text-sm leading-relaxed mb-6">
-              Each of these observations is developed into a full essay. Ten essays, each taking a single idea from premise to implication — with the evidence, the failure modes, and the design principles.
+              Each of these observations is developed into a full essay. Ten essays, each taking a single idea from premise to implication: with the evidence, the failure modes, and the design principles.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
