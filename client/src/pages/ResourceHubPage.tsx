@@ -6,7 +6,7 @@
  * V2.6: 7 CDN-hosted SVG diagrams embedded inline at section-specific positions per instructions
  */
 
-import { useEffect } from "react";
+import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 
 // CDN URLs for the 7 blueprint SVG diagrams (uploaded 2026-03-09)
@@ -182,11 +182,7 @@ const tocItems = [
 ];
 
 export default function ResourceHubPage() {
-  useEffect(() => {
-    document.title = "AI Resources for Businesses Adopting AI | Ikram Rana";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Practical AI resources for businesses including adoption checklists, workflow templates, automation examples, decision frameworks, and expert guidance by Ikram Rana.");
-  }, []);
+  useHead("AI Resources for Businesses Adopting AI", "Practical AI resources for businesses including adoption checklists, workflow templates, automation examples, decision frameworks, and critical guidance by Ikram Rana.");
 
   const articleSchema = {
     "@context": "https://schema.org",
