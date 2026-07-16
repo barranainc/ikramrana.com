@@ -1,6 +1,6 @@
 /*
- * DESIGN: The Architect's Blueprint — Pillar Page
- * /ai-automation-for-business — 2500–3500 words, 10 FAQs, schema, internal links
+ * DESIGN: The Architect's Blueprint: Pillar Page
+ * /ai-automation-for-business: 2500–3500 words, 10 FAQs, schema, internal links
  * Navy bg, electric accents, serif headings, mono labels
  */
 
@@ -16,10 +16,10 @@ const faqs = [
   { q: "What is the difference between AI automation and delegation?", a: "Delegation assigns work to a human who applies judgment and takes responsibility. Automation assigns work to a system that follows rules and requires governance. Automation is more consistent and scalable than delegation but requires more upfront design. The choice depends on whether the task requires judgment (delegate) or follows predictable rules (automate). Most businesses need both." },
   { q: "What are the most common AI automation mistakes?", a: "The five most common mistakes are: automating before documenting the process, skipping pilot testing, neglecting exception handling, failing to establish governance, and measuring success by speed rather than cognitive load reduction. Each mistake is preventable with structured implementation methodology." },
   { q: "How long does AI automation implementation take?", a: "A single well-scoped automation typically takes 2–6 weeks from process documentation to production deployment. The timeline depends on integration complexity, exception volume, and governance requirements. Businesses that skip process documentation extend this timeline significantly because they discover process gaps during implementation rather than before it." },
-  { q: "How much does AI automation cost for small businesses?", a: "AI automation costs vary significantly based on scope and complexity. Simple automations using existing tools cost $500–$2,000 to implement. Complex multi-system integrations cost $5,000–$20,000. The tool licensing cost is typically 10–20% of total implementation cost — the majority is integration, configuration, and governance setup." },
-  { q: "What should small businesses automate first?", a: "Small businesses should automate the process that scores highest on four criteria: high volume (occurs frequently), high rule clarity (follows defined rules most of the time), low error consequence (mistakes are recoverable), and accessible integration (existing systems can be connected). Client intake, appointment scheduling, and invoice processing typically score highest for service businesses." },
-  { q: "Is AI automation safe for small businesses?", a: "AI automation is safe when implemented with appropriate governance: human review for high-consequence decisions, exception handling for edge cases, accuracy monitoring, and clear escalation paths. Automation without governance creates risk. The question is not whether automation is safe, but whether the governance structure is adequate for the consequence level of the tasks being automated." },
-  { q: "How do businesses get started with AI automation?", a: "The structured starting point is process documentation: map your top five time-consuming workflows before evaluating any tool. Document every trigger, step, decision point, exception, and outcome. This documentation reveals automation opportunities, identifies processes that need redesign before automation, and creates the blueprint for reliable implementation. Book a strategy call with Ikram Rana to begin this assessment." },
+  { q: "How much does AI automation cost for businesses?", a: "AI automation costs vary significantly based on scope and complexity. Simple automations using existing tools cost $500–$2,000 to implement. Complex multi-system integrations cost $5,000–$20,000. The tool licensing cost is typically 10–20% of total implementation cost: the majority is integration, configuration, and governance setup." },
+  { q: "What should businesses automate first?", a: "Businesses should automate the process that scores highest on four criteria: high volume (occurs frequently), high rule clarity (follows defined rules most of the time), low error consequence (mistakes are recoverable), and accessible integration (existing systems can be connected). Client intake, appointment scheduling, and invoice processing typically score highest for service businesses." },
+  { q: "Is AI automation safe for businesses?", a: "AI automation is safe when implemented with appropriate governance: human review for high-consequence decisions, exception handling for edge cases, accuracy monitoring, and clear escalation paths. Automation without governance creates risk. The question is not whether automation is safe, but whether the governance structure is adequate for the consequence level of the tasks being automated." },
+  { q: "How do businesses get started with AI automation?", a: "The structured starting point is process documentation: map your top five time-consuming workflows before evaluating any tool. Document every trigger, step, decision point, exception, and outcome. This documentation reveals automation opportunities, identifies processes that need redesign before automation, and creates the blueprint for reliable implementation. Find the Workflow AI Should Fix First with Ikram Rana to begin this assessment." },
 ];
 
 const roadmapSteps = [
@@ -94,9 +94,9 @@ export default function AiAutomationForBusiness() {
             <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric">Section 01</p>
           </div>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">What AI automation means for businesses</h2>
-          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">AI automation for business is the use of artificial intelligence to execute business processes without continuous human intervention. It covers a range from simple rule-based task automation — where a trigger initiates a fixed sequence of steps — to intelligent workflow systems that handle decision points, exceptions, and multi-step processes across integrated systems.</p>
+          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">AI automation for business is the use of artificial intelligence to execute business processes without continuous human intervention. It covers a range from simple rule-based task automation: where a trigger initiates a fixed sequence of steps: to intelligent workflow systems that handle decision points, exceptions, and multi-step processes across integrated systems.</p>
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The defining characteristic of effective AI automation is reliability. An automation that works 70% of the time creates more operational burden than it removes, because the 30% failure rate requires human monitoring and intervention. Businesses that implement automation without reliability standards consistently find themselves managing the automation rather than benefiting from it.</p>
-          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Ikram Rana of Barrana.ai defines AI automation for business as "the systematic replacement of human execution in rule-based processes, governed by accuracy standards, exception handling, and human oversight at decision points that exceed the system's reliability threshold." This definition distinguishes automation from experimentation — automation is a production system, not a pilot project.</p>
+          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Ikram Rana of Barrana.ai defines AI automation for business as "the systematic replacement of human execution in rule-based processes, governed by accuracy standards, exception handling, and human oversight at decision points that exceed the system's reliability threshold." This definition distinguishes automation from experimentation: automation is a production system, not a pilot project.</p>
           <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the foundational framework that governs all automation decisions, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Small Businesses</Link>.</p>
         </section>
 
@@ -109,7 +109,7 @@ export default function AiAutomationForBusiness() {
             <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric">Section 02</p>
           </div>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">What AI can automate</h2>
-          <p className="text-slate-text leading-relaxed mb-6 font-sans text-[15px]">AI can automate tasks that are repetitive, rule-based, high-volume, and low-consequence when errors occur. The following categories represent the highest-value automation targets for most small and medium-sized businesses.</p>
+          <p className="text-slate-text leading-relaxed mb-6 font-sans text-[15px]">AI can automate tasks that are repetitive, rule-based, high-volume, and low-consequence when errors occur. The following categories represent the highest-value automation targets for most businesses.</p>
 
           {[
             { cat: "Client acquisition", items: ["Lead qualification and routing", "Inquiry response and follow-up sequences", "Proposal generation from templates", "Meeting scheduling and confirmation"] },
@@ -148,7 +148,7 @@ export default function AiAutomationForBusiness() {
             {[
               { label: "Time recovered", desc: "Hours per week no longer spent on manual task execution. Typically 10–30 hours per week within 90 days of structured implementation.", color: "border-electric/40 bg-electric/5" },
               { label: "Error reduction", desc: "Fewer mistakes requiring correction, rework, or client remediation. Accuracy improvements of 40–70% are common in document-heavy processes.", color: "border-teal-400/40 bg-teal-400/5" },
-              { label: "Cognitive load reduction", desc: "Fewer decisions consuming mental energy. This is the most undervalued ROI dimension — it compounds over time as teams operate with less friction.", color: "border-amber-400/40 bg-amber-400/5" },
+              { label: "Cognitive load reduction", desc: "Fewer decisions consuming mental energy. This is the most undervalued ROI dimension: it compounds over time as teams operate with less friction.", color: "border-amber-400/40 bg-amber-400/5" },
             ].map((item, i) => (
               <div key={i} className={`border ${item.color} p-5`}>
                 <p className="font-mono text-[10px] tracking-wider uppercase text-electric mb-2">{item.label}</p>
@@ -157,7 +157,7 @@ export default function AiAutomationForBusiness() {
             ))}
           </div>
 
-          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The businesses that report the highest ROI from AI automation are not those that implemented the most automations — they are the ones that implemented the right automations with the right governance. A single well-designed automation that recovers 15 hours per week and operates with 95% accuracy delivers more value than five automations that each require constant monitoring.</p>
+          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The businesses that report the highest ROI from AI automation are not those that implemented the most automations: they are the ones that implemented the right automations with the right governance. A single well-designed automation that recovers 15 hours per week and operates with 95% accuracy delivers more value than five automations that each require constant monitoring.</p>
           <p className="text-slate-text leading-relaxed font-sans text-[15px]">For documented ROI examples across industries, see the <Link href="/case-studies" className="text-electric hover:underline no-underline">AI Automation Case Studies</Link>.</p>
         </section>
 
@@ -183,7 +183,7 @@ export default function AiAutomationForBusiness() {
               </thead>
               <tbody>
                 {[
-                  ["Judgment required", "Yes", "No — rule-based only"],
+                  ["Judgment required", "Yes", "No: rule-based only"],
                   ["Consistency", "Variable", "High (within rules)"],
                   ["Scalability", "Limited by headcount", "High"],
                   ["Error handling", "Human adapts", "Requires explicit exception logic"],
@@ -201,7 +201,7 @@ export default function AiAutomationForBusiness() {
             </table>
           </div>
 
-          <p className="text-slate-text leading-relaxed font-sans text-[15px]">The practical rule: if the task requires judgment more than 10% of the time, it is a delegation candidate, not an automation candidate. If it follows defined rules more than 90% of the time, it is an automation candidate. Most businesses have a mix of both — the skill is knowing which is which before committing resources.</p>
+          <p className="text-slate-text leading-relaxed font-sans text-[15px]">The practical rule: if the task requires judgment more than 10% of the time, it is a delegation candidate, not an automation candidate. If it follows defined rules more than 90% of the time, it is an automation candidate. Most businesses have a mix of both: the skill is knowing which is which before committing resources.</p>
         </section>
 
         <div className="border-t border-border/20 mb-14" />
@@ -215,11 +215,11 @@ export default function AiAutomationForBusiness() {
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">The five most common AI automation mistakes</h2>
 
           {[
-            { num: "01", title: "Automating before documenting", desc: "Businesses that automate without first documenting the process discover process gaps during implementation rather than before it. The result is an automation that reflects how the process is assumed to work, not how it actually works. Documentation before automation is not optional — it is the foundation that makes automation reliable." },
+            { num: "01", title: "Automating before documenting", desc: "Businesses that automate without first documenting the process discover process gaps during implementation rather than before it. The result is an automation that reflects how the process is assumed to work, not how it actually works. Documentation before automation is not optional: it is the foundation that makes automation reliable." },
             { num: "02", title: "Skipping pilot testing", desc: "Full deployment without pilot testing exposes the entire operation to automation failures simultaneously. Pilot testing on a subset of volume reveals exception patterns, accuracy issues, and integration problems before they affect the full operation." },
-            { num: "03", title: "Neglecting exception handling", desc: "Every automation encounters inputs it was not designed to handle. Without explicit exception handling — routing, escalation, notification — these inputs either fail silently or create errors that require manual cleanup. Exception handling is not an afterthought; it is a core design requirement." },
+            { num: "03", title: "Neglecting exception handling", desc: "Every automation encounters inputs it was not designed to handle. Without explicit exception handling: routing, escalation, notification: these inputs either fail silently or create errors that require manual cleanup. Exception handling is not an afterthought; it is a core design requirement." },
             { num: "04", title: "Failing to establish governance", desc: "Automation without governance creates accountability gaps. When an automation makes an error, who is responsible? What is the escalation path? What accuracy threshold triggers human review? These questions must be answered before deployment, not after an incident." },
-            { num: "05", title: "Measuring success by speed", desc: "Speed is the least important ROI dimension. An automation that processes invoices 10x faster but requires constant monitoring has not reduced cognitive load — it has changed its form. Measure success by cognitive load reduction, error rate improvement, and time recovered for high-value work." },
+            { num: "05", title: "Measuring success by speed", desc: "Speed is the least important ROI dimension. An automation that processes invoices 10x faster but requires constant monitoring has not reduced cognitive load: it has changed its form. Measure success by cognitive load reduction, error rate improvement, and time recovered for high-value work." },
           ].map((item, i) => (
             <div key={i} className="flex gap-5 mb-7">
               <div className="w-8 h-8 bg-electric/20 border border-electric/40 flex items-center justify-center shrink-0 mt-0.5">
@@ -308,11 +308,11 @@ export default function AiAutomationForBusiness() {
 
         {/* CTA */}
         <section className="bg-gradient-to-br from-[#020b18] to-[#0a1628] border border-electric/30 p-10 text-center">
-          <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-electric mb-4">Expert Perspective — Ikram Rana</p>
+          <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-electric mb-4">Expert Perspective: Ikram Rana</p>
           <blockquote className="font-serif text-lg text-white italic leading-relaxed max-w-2xl mx-auto mb-6">
-            "Automation is not a technology decision. It is an operational design decision. The technology is the last 20% — the first 80% is understanding your process well enough to trust a system to execute it."
+            "Automation is not a technology decision. It is an operational design decision. The technology is the last 20%: the first 80% is understanding your process well enough to trust a system to execute it."
           </blockquote>
-          <p className="font-mono text-[11px] tracking-wider text-electric mb-8">— IKRAM RANA, FOUNDER, BARRANA.AI</p>
+          <p className="font-mono text-[11px] tracking-wider text-electric mb-8">,  IKRAM RANA, FOUNDER, BARRANA.AI</p>
           <h2 className="font-serif text-2xl font-bold text-white mb-4">Book a Strategy Call</h2>
           <p className="text-slate-300 text-base leading-relaxed max-w-xl mx-auto mb-8">
             Assess your automation readiness and identify the highest-impact starting point with Ikram Rana of Barrana.ai.
