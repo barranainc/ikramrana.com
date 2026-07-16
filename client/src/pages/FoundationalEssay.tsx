@@ -87,7 +87,7 @@ export default function FoundationalEssay() {
             <div className="flex"><div className="w-12 flex items-center justify-center font-mono text-xs font-bold rounded-l-lg bg-burgundy/20 text-burgundy">02</div><div className="flex-1 p-5 rounded-r-lg bg-burgundy/8 border border-burgundy/20 border-l-0"><p className="font-bold text-[15px] text-burgundy mb-1">Judgment Layer</p><p className="font-mono text-[13px] text-slate-text/75">Humans own this → Decisions, exceptions, professional discretion</p></div></div>
             <div className="flex"><div className="w-12 flex items-center justify-center font-mono text-xs font-bold rounded-l-lg bg-emerald-500/20 text-emerald-600">03</div><div className="flex-1 p-5 rounded-r-lg bg-emerald-500/8 border border-emerald-500/20 border-l-0"><p className="font-bold text-[15px] text-emerald-600 mb-1">Compliance Foundation</p><p className="font-mono text-[13px] text-slate-text/75">Embedded by design → Traceability, audit trails, escalation paths</p></div></div>
           </div>
-          <div className="text-center mt-7 pt-6 border-t border-border"><p className="text-[13px] text-slate-dim">Compliance is the foundation that constrains the entire system, not a check you add at the end.</p></div>
+          <div className="text-center mt-7 pt-6 border-t border-border"><p className="text-[13px] text-slate-dim">Compliance-supporting controls form the foundation that constrains the entire system, not a check you add at the end.</p></div>
         </motion.div>
 
         <motion.div {...fadeUp}>
@@ -117,7 +117,7 @@ export default function FoundationalEssay() {
         <motion.div {...fadeUp}>
           <h3 className="font-serif text-xl font-semibold text-foreground mb-4 mt-10">Layer 3: Compliance Foundation</h3>
           <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">What it is:</strong> The system properties that preserve regulatory integrity, traceability, auditability, decision rights, and escalation paths. This is not a "layer" in the workflow sense. It is the <em>foundation</em> that constrains how the other two layers operate.</p>
-          <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">Compliance is architecture, not audit.</strong> If you think of compliance as something you check at the end, a quarterly review, an annual audit, you have already failed. Compliance must be embedded in the system from the start.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">Compliance support is architectural, not an after-the-fact audit.</strong> If you think of compliance as something you check at the end, a quarterly review, an annual audit, you have already failed. Compliance-supporting controls must be embedded in the system from the start.</p>
         </motion.div>
 
         <motion.div {...fadeUp}>
@@ -215,7 +215,7 @@ export default function FoundationalEssay() {
           <Link href="/governance" className="block p-7 rounded-2xl border border-border bg-card hover:border-electric/30 hover:translate-y-[-2px] transition-all no-underline group">
             <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric block mb-2">Application</span>
             <h3 className="font-serif text-lg font-semibold text-foreground mb-2">Governance-by-Design</h3>
-            <p className="text-sm text-slate-text mb-3">How to embed compliance as architecture.</p>
+            <p className="text-sm text-slate-text mb-3">How to embed compliance-supporting controls in the architecture.</p>
             <span className="text-sm text-electric inline-flex items-center gap-1 group-hover:gap-2 transition-all">Read <ArrowRight size={14} /></span>
           </Link>
         </motion.div>
