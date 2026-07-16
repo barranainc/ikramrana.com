@@ -182,7 +182,7 @@ export default function LocationIndex() {
         <div className="container">
           <motion.div {...fadeUp} className="max-w-2xl">
             <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-electric block mb-4">
-              Book a consultation
+              Find the Workflow AI Should Fix First
             </span>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
               Ready to discuss your business workflows?
