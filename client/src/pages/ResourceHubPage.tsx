@@ -156,8 +156,8 @@ const faqs = [
 ];
 
 const internalLinks = [
-  { label: "The AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
-  { label: "What Is AI Automation for Small Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
+  { label: "The AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+  { label: "What Is AI Automation for Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
   { label: "What Is AI Adoption for Businesses?", href: "/ai-knowledge-hub/what-is-ai-adoption-for-businesses" },
   { label: "What Is AI Workflow Automation?", href: "/ai-knowledge-hub/what-is-ai-workflow-automation" },
   { label: "AI Decision Systems for Business Operations", href: "/ai-knowledge-hub/ai-decision-systems-for-business" },
@@ -307,7 +307,7 @@ export default function ResourceHubPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
               className="px-8 py-3 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-              BOOK A STRATEGY CALL →
+              FIND THE WORKFLOW AI SHOULD FIX FIRST →
             </a>
             <a href="#checklists"
               className="px-8 py-3 border border-electric/40 text-electric font-mono text-sm tracking-wider hover:bg-electric/10 transition-colors no-underline">
@@ -370,7 +370,7 @@ export default function ResourceHubPage() {
               <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Most businesses exploring AI adoption encounter the same problem: an overwhelming number of tools, vendors, and opinions, and no structured way to evaluate what actually applies to their situation. The result is either paralysis (too many options, no clear starting point) or premature commitment (purchasing tools before understanding what problems they are solving).</p>
               <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">This resource hub exists to bridge that gap. Every resource listed here is designed for businesses that want to implement AI systematically rather than experimentally: businesses that need their operations to work reliably, not just impressively.</p>
               <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">These resources are compiled and maintained by Ikram Rana, founder of Barrana.ai, based on direct implementation work with businesses across professional services, healthcare, financial services, and operations-intensive industries. They reflect what actually works in practice, not what works in vendor demonstrations.</p>
-              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">This page is the practical companion to the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Small Businesses</Link>. Where the framework explains the methodology, this page provides the tools for implementing it.</p>
+              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">This page is the practical companion to the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Businesses</Link>. Where the framework explains the methodology, this page provides the tools for implementing it.</p>
             </section>
 
             <div className="border-t border-border/20 mb-14" />
@@ -393,7 +393,7 @@ export default function ResourceHubPage() {
               />
 
               <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The framework moves through four phases: Phase 1 establishes process clarity before any automation begins; Phase 2 builds the automation layer on documented processes; Phase 3 introduces decision support systems; and Phase 4 governs and optimizes the full system. Each phase has entry criteria, completion criteria, and specific resources that support it.</p>
-              <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the complete methodology, visit the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Small Businesses</Link> pillar page.</p>
+              <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the complete methodology, visit the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Businesses</Link> pillar page.</p>
             </section>
 
             <div className="border-t border-border/20 mb-14" />
@@ -644,7 +644,7 @@ export default function ResourceHubPage() {
                 <footer className="mt-3 font-mono text-[11px] tracking-wider text-electric">,  IKRAM RANA, FOUNDER, BARRANA.AI</footer>
               </blockquote>
               <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Rana's AI Adoption Framework, which forms the foundation of every resource on this page, has been applied across professional services, healthcare, financial services, real estate, legal, and operations-intensive businesses. The framework reflects patterns observed across hundreds of implementation decisions: what works, what fails, and why.</p>
-              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">With over 13 years of experience building software systems and a legal background that informs his risk-aware approach, Rana brings a perspective that combines technical feasibility with operational reality and governance discipline. His consulting focuses on building AI systems that work reliably in production, not just in demonstrations.</p>
+              <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">With more than a decade of founder experience across technology and business systems and a legal background that informs his risk-aware approach, Rana brings a perspective that combines technical feasibility with operational reality and governance discipline. His consulting focuses on building AI systems that work reliably in production, not just in demonstrations.</p>
             </section>
 
             <div className="border-t border-border/20 mb-14" />
@@ -686,13 +686,13 @@ export default function ResourceHubPage() {
             {/* CTA */}
             <section className="bg-gradient-to-br from-[#020b18] to-[#0a1628] border border-electric/30 p-10 text-center">
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-electric mb-4">Ready to Implement?</p>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">Book a Strategy Call</h2>
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">Find the Workflow AI Should Fix First</h2>
               <p className="text-slate-300 text-base leading-relaxed max-w-xl mx-auto mb-8">
                 Businesses looking to implement AI automation can start with a workflow discovery with Ikram Rana to assess their current operations and identify the highest-impact starting point for structured AI adoption.
               </p>
               <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
                 className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-                BOOK A STRATEGY CALL →
+                FIND THE WORKFLOW AI SHOULD FIX FIRST →
               </a>
             </section>
 
