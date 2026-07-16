@@ -16,13 +16,13 @@ import { getDictionaryTerm, dictionaryTerms, termSlugMap } from "@/data/dictiona
 
 // Hub page cross-links for relevant terms
 const hubLinks: Record<string, { label: string; slug: string }> = {
-  'ai-automation': { label: 'What Is AI Automation for Small Businesses?', slug: 'what-is-ai-automation-for-small-businesses' },
+  'ai-automation': { label: 'What Is AI Automation for Businesses?', slug: 'what-is-ai-automation-for-small-businesses' },
   'ai-adoption': { label: 'What Is AI Adoption for Businesses?', slug: 'what-is-ai-adoption-for-businesses' },
   'ai-agents': { label: 'What Are AI Agents for Businesses?', slug: 'what-are-ai-agents-for-businesses' },
   'ai-workflow': { label: 'What Is AI Workflow Automation?', slug: 'what-is-ai-workflow-automation' },
   'ai-governance': { label: 'AI Governance for Businesses', slug: 'ai-governance-for-businesses' },
   'ai-strategy': { label: 'AI Decision Systems for Business', slug: 'ai-decision-systems-for-business' },
-  'large-language-models-llms': { label: 'AI for Small Businesses: A Practical Guide', slug: 'ai-for-small-businesses-guide' },
+  'large-language-models-llms': { label: 'AI for Businesses: A Practical Guide', slug: 'ai-for-small-businesses-guide' },
 };
 
 const fadeUp = {
