@@ -77,7 +77,8 @@ A passing build does not mean this objective is complete.
 - Internal-link comparison against actual static and dynamic routes
 - Sitemap comparison against routes and data slugs
 - TypeScript and production-build validation through GitHub Actions
-- Latest successful validation run: https://github.com/barranainc/ikramrana.com/actions/runs/29469975744
+- Page-content validation run: https://github.com/barranainc/ikramrana.com/actions/runs/29469975744
+- A subsequent report-only commit also passed: https://github.com/barranainc/ikramrana.com/actions/runs/29470022870
 - Static preview artifact generated successfully for commit `1b9eeda76a5bda35767f9a232f30d4bc01044d45`
 
 The browser-based visual review of that artifact is still incomplete.
