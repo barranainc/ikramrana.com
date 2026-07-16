@@ -242,7 +242,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "faster-workflows-exhausting",
     title: "Why Faster Workflows Often Feel More Exhausting Than Slower Ones",
-    metaDescription: "Learn about why faster workflows often feel more exhausting than slower ones and its impact on business AI strategy.",
+    metaDescription: "Why faster output can increase checking, switching, and decision fatigue, and how businesses can design workflows that reduce attention demands.",
     publishDate: "2026-02-07",
     tags: ["AI Productivity", "Cognitive Load"],
     intro: [
@@ -311,7 +311,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "automation-vs-delegation",
     title: "The Difference Between Automation and Delegation in AI Systems",
-    metaDescription: "Learn about the difference between automation and delegation in ai systems and its impact on business AI strategy.",
+    metaDescription: "A practical distinction between automating a defined task and delegating judgment to AI, including where human review and accountability still belong.",
     publishDate: "2026-02-08",
     tags: ["AI Automation", "AI Workflow Systems"],
     intro: [
@@ -450,7 +450,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ai-anxiety-bad-design",
     title: "If AI Increases Anxiety It Is Badly Designed",
-    metaDescription: "Learn about if ai increases anxiety it is badly designed and its impact on business AI strategy.",
+    metaDescription: "How unclear status, unresolved exceptions, and constant AI notifications create anxiety, and what calmer workflow design should make visible.",
     publishDate: "2026-02-10",
     tags: ["AI Adoption", "AI Strategy"],
     intro: [
@@ -657,7 +657,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ai-tool-switching-cost",
     title: "The Hidden Cost of Switching Between AI Tools Throughout the Day",
-    metaDescription: "Learn about the hidden cost of switching between ai tools throughout the day and its impact on business AI strategy.",
+    metaDescription: "Why switching among disconnected AI tools consumes attention, fragments context, and creates hidden operational work for business teams.",
     publishDate: "2026-02-13",
     tags: ["AI Productivity", "AI Workflow Systems"],
     intro: [
@@ -726,7 +726,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "invisible-ai-workflow",
     title: "AI Is Most Useful When It Disappears from Your Workflow",
-    metaDescription: "Learn about ai is most useful when it disappears from your workflow and its impact on business AI strategy.",
+    metaDescription: "Why useful AI should support routine work in the background while keeping exceptions, consequential decisions, and accountability visible to people.",
     publishDate: "2026-02-14",
     tags: ["AI Automation", "AI Workflow Systems"],
     intro: [
@@ -867,7 +867,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "automate-before-understanding",
     title: "What Happens When You Automate Before Understanding Your Workflow",
-    metaDescription: "The agency did not have a screening problem. They had a criteria problem. Automating screening without first auditing and correcting the criteria automated the wrong thing.",
+    metaDescription: "Why automating an unclear workflow can scale bad rules and hidden exceptions, and what businesses should understand before selecting tools.",
     publishDate: "2026-02-16",
     tags: ["AI Automation", "AI Workflow Systems"],
     intro: [
@@ -1008,7 +1008,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ai-amplifies-judgment",
     title: "AI Amplifies Bad Judgment Faster Than Good Judgment",
-    metaDescription: "Learn about ai amplifies bad judgment faster than good judgment and its impact on business AI strategy.",
+    metaDescription: "Why AI can scale weak criteria as easily as sound judgment, and how businesses can test rules, exceptions, and safeguards before automation.",
     publishDate: "2026-02-18",
     tags: ["AI Decision Systems", "AI Leadership"],
     intro: [
@@ -1216,7 +1216,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "automation-accountability",
     title: "Automation Without Accountability Is a Liability for Your Business",
-    metaDescription: "Learn about automation without accountability is a liability for your business and its impact on business AI strategy.",
+    metaDescription: "Why every automated workflow still needs a human owner, clear escalation, auditability, and a process for correcting errors.",
     publishDate: "2026-02-21",
     tags: ["AI Automation", "Business Automation"],
     intro: [
@@ -1285,7 +1285,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "judgment-non-scalable",
     title: "Judgment Is the Only Non-Scalable Advantage in the Age of AI",
-    metaDescription: "Learn about judgment is the only non-scalable advantage in the age of ai and its impact on business AI strategy.",
+    metaDescription: "Why human judgment remains essential when context, ethics, relationships, and consequences cannot be reduced to reliable rules.",
     publishDate: "2026-02-22",
     tags: ["AI Decision Systems", "AI Leadership"],
     intro: [
@@ -1492,7 +1492,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ai-home-boundaries",
     title: "AI at Home Needs Stronger Boundaries Than AI at Work",
-    metaDescription: "Learn about ai at home needs stronger boundaries than ai at work and its impact on business AI strategy.",
+    metaDescription: "Why household AI use needs clear boundaries around privacy, development, relationships, and decisions that should remain human.",
     publishDate: "2026-02-25",
     tags: ["AI For Families", "AI Adoption"],
     intro: [
@@ -1557,7 +1557,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "families-ai-calm",
     title: "Why Families Should Optimise for Calm Not Efficiency with AI",
-    metaDescription: "Learn about why families should optimise for calm not efficiency with ai and its impact on business AI strategy.",
+    metaDescription: "A practical case for using AI at home only when it reduces strain without weakening attention, capability, privacy, or family relationships.",
     publishDate: "2026-02-26",
     tags: ["AI For Families", "AI Productivity"],
     intro: [
@@ -1951,7 +1951,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "biggest-ai-mistake",
     title: "The Biggest AI Mistake Is Copying Best Practices from Other Businesses",
-    metaDescription: "Learn about the biggest ai mistake is copying best practices from other businesses and its impact on business AI strategy.",
+    metaDescription: "Why copying another business’s AI practices can fail when workflows, data, people, risks, and operating constraints are different.",
     publishDate: "2026-03-04",
     tags: ["AI Strategy", "AI Adoption"],
     intro: [
@@ -2016,7 +2016,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "outsourcing-thinking-ai",
     title: "The Long Term Cost of Outsourcing Thinking to AI",
-    metaDescription: "Learn about the long term cost of outsourcing thinking to ai and its impact on business AI strategy.",
+    metaDescription: "How habitual reliance on AI can weaken independent analysis, and how businesses can preserve the human capabilities they still need.",
     publishDate: "2026-03-05",
     tags: ["AI Decision Systems", "AI Leadership"],
     intro: [
