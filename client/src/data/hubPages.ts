@@ -618,7 +618,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Expert Perspective: Ikram Rana",
-        content: "Ikram Rana, founder of Barrana.ai, builds AI governance frameworks into every implementation for businesses across the Greater Toronto Area, Canada, and the United States. With a legal background that informs his risk-aware approach, Rana ensures that AI delivers value while maintaining compliance and accountability.\n\"AI governance is not optional,\" Rana states. \"It is the difference between AI that strengthens your business and AI that creates liabilities. For businesses, governance does not need to be complex. It needs to be present. Accountability, transparency, boundaries, monitoring, and remediation. Five pillars that protect your business while allowing AI to deliver its full value.\"",
+        content: "Ikram Rana, founder of Barrana.ai, builds AI governance frameworks into every implementation for businesses across the Greater Toronto Area, Canada, and the United States. With a legal background that informs his risk-aware approach, Rana designs implementations to support accountability and the compliance requirements identified for each system.\n\"AI governance is not optional,\" Rana states. \"It is the difference between AI that strengthens your business and AI that creates liabilities. For businesses, governance does not need to be complex. It needs to be present. Accountability, transparency, boundaries, monitoring, and remediation. Five pillars that protect your business while allowing AI to deliver its full value.\"",
       },
     ],
     faqs: [
