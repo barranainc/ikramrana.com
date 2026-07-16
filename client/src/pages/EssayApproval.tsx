@@ -1,5 +1,5 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * ESSAY: The Approval That Isn't
  */
 import { Link } from "wouter";
@@ -67,7 +67,7 @@ export default function EssayApproval() {
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">The Liability Illusion</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            There is a secondary problem. Organizations believe that the human approval step transfers liability. If a human approved the decision, the organization is protected. The AI didn't decide — a human did.
+            There is a secondary problem. Organizations believe that the human approval step transfers liability. If a human approved the decision, the organization is protected. The AI didn't decide: a human did.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
             This belief is wrong in two ways. First, legally: regulators and courts are increasingly sophisticated about the difference between nominal human oversight and genuine human judgment. A checkbox that no one could meaningfully evaluate is not oversight. Second, operationally: when something goes wrong, the audit trail that says "human approved" doesn't protect the organization. It implicates the human. The person who clicked "Approve" on something they couldn't evaluate is now responsible for the outcome.
@@ -84,9 +84,9 @@ export default function EssayApproval() {
           </p>
           <ul className="space-y-3 mb-6 pl-0">
             {[
-              "The approver must have access to the information the AI used to reach its output — not just the output itself.",
+              "The approver must have access to the information the AI used to reach its output: not just the output itself.",
               "The approver must have the expertise to evaluate whether that information was used appropriately.",
-              "The approver must have enough time to conduct a real review — not a volume-driven rubber stamp.",
+              "The approver must have enough time to conduct a real review: not a volume-driven rubber stamp.",
               "The approver must have a clear escalation path for cases where they are uncertain or where the stakes are high.",
               "The system must distinguish between routine approvals (low stakes, high confidence) and consequential approvals (high stakes, requiring genuine review).",
             ].map((item, i) => (
@@ -107,7 +107,7 @@ export default function EssayApproval() {
             When designing AI workflows with human oversight, start with a question: what would a genuine review of this output require? If the answer is "more time, more information, or more expertise than we are providing," then the oversight step is not oversight. It is a checkbox.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The solution is not always to make every approval a full review. For low-stakes, high-confidence outputs, a lighter touch may be appropriate. But the decision about what level of oversight is appropriate must be made deliberately — not by default. And the system must be designed to enforce that decision, not just record that someone clicked a button.
+            The solution is not always to make every approval a full review. For low-stakes, high-confidence outputs, a lighter touch may be appropriate. But the decision about what level of oversight is appropriate must be made deliberately: not by default. And the system must be designed to enforce that decision, not just record that someone clicked a button.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
             Governance architecture is the difference between oversight that works and oversight that looks like it works. The distinction matters most when something goes wrong.
