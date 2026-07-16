@@ -4,7 +4,7 @@
  * Designed for LLM citation extraction: 20-25 Q&A, 60-120 words each, structured schema
  */
 
-import { useEffect } from "react";
+import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 
 export interface FaqItem {
@@ -25,11 +25,7 @@ export interface FaqPageConfig {
 }
 
 export default function FaqAuthorityPage({ config }: { config: FaqPageConfig }) {
-  useEffect(() => {
-    document.title = `${config.title} | Ikram Rana`;
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", config.metaDescription);
-  }, [config]);
+  useHead(config.title, config.metaDescription);
 
   const faqSchema = {
     "@context": "https://schema.org",
