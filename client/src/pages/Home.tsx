@@ -7,7 +7,7 @@
  * No self-wrapping Layout , wrapped by App.tsx
  */
 
-import { useEffect } from "react";
+import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, Zap, TrendingUp, Shield, CheckCircle2, Quote } from "lucide-react";
@@ -142,15 +142,10 @@ const serviceSchema = {
 };
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "Ikram Rana | AI Adoption and Workflow Implementation";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Helping businesses move from scattered AI experiments to working systems their teams actually use. Critical, practical guidance from Ikram Rana."
-      );
-  }, []);
+  useHead(
+    "Ikram Rana | AI Adoption and Workflow Implementation",
+    "Helping businesses move from scattered AI experiments to working systems their teams actually use. Critical, practical guidance from Ikram Rana."
+  );
 
   return (
     <div>
