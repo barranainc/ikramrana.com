@@ -300,7 +300,7 @@ export default function CaseStudyPage() {
               className="p-6 md:p-8 border border-electric/25 bg-[#070f1e]"
             >
               <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric mb-3">
-                Book a strategy call
+                Find the Workflow AI Should Fix First
               </div>
               <h3 className="font-serif text-xl md:text-2xl font-bold text-white mb-3 leading-snug">
                 Find the workflow AI should improve first
@@ -380,7 +380,7 @@ export default function CaseStudyPage() {
                   Get started
                 </div>
                 <p className="text-xs text-white/50 leading-relaxed mb-4">
-                  Book a strategy call to evaluate your workflows.
+                  Find the Workflow AI Should Fix First to evaluate your workflows.
                 </p>
                 <a
                   href="https://calendly.com/ikramrana15"
