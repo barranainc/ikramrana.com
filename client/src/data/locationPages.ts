@@ -75,7 +75,7 @@ export const locationPages: LocationPage[] = [
         paragraphs: [
           "Ikram Rana, founder of Barrana.ai, is based in Vaughan, Ontario, and works directly with businesses throughout the city and the Greater Toronto Area to implement AI automation that reduces operational overhead and recovers staff capacity for high-value work.",
           "\"Vaughan's business community is at an inflection point with AI,\" Rana explains. \"The businesses here are growing fast, but they are hitting operational ceilings because their processes are still manual. AI automation breaks through that ceiling without requiring proportional hiring. A five-person firm that automates its administrative workflows can operate with the efficiency of a ten-person firm, and that is a transformative advantage in a competitive market.\"",
-          "With over 13 years of experience building software systems and a legal background that informs his risk-aware approach to automation, Rana focuses on practical AI adoption that delivers measurable results. His approach starts with understanding each business's specific workflows before recommending any technology, ensuring that automation addresses real operational problems rather than adding new complexity.",
+          "With more than a decade of founder experience across technology and business systems and a legal background that informs his risk-aware approach to automation, Rana focuses on practical AI adoption that delivers measurable results. His approach starts with understanding each business's specific workflows before recommending any technology, ensuring that automation addresses real operational problems rather than adding new complexity.",
         ],
       },
     ],
@@ -122,9 +122,9 @@ export const locationPages: LocationPage[] = [
       },
     ],
   relatedLinks: [
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
-    { label: 'AI for Small Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'AI for Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
     { label: 'AI automation for dental clinics', href: '/industries/ai-automation-for-dental-clinics' },
     { label: 'AI automation for physiotherapy clinics', href: '/industries/ai-automation-for-physiotherapy-clinics' },
     { label: 'AI automation for law firms', href: '/industries/ai-automation-for-law-firms' },
@@ -146,7 +146,7 @@ export const locationPages: LocationPage[] = [
         paragraphs: [
           "Toronto is Canada's largest business center, with a diverse economy that includes financial services, technology, professional services, healthcare, real estate, legal services, and creative industries. The city's businesses compete in one of the country's most demanding markets, where operational efficiency directly determines competitiveness.",
           "AI adoption among Toronto's business community is growing rapidly as business owners recognize that manual processes are the largest barrier to scaling. Toronto businesses face high operating costs including office space, salaries, and compliance requirements that make operational efficiency essential rather than optional.",
-          "The city's position as a technology hub means Toronto businesses have access to AI capabilities, but many small business owners struggle to identify which applications deliver genuine value versus which add complexity. The gap between AI availability and practical AI implementation is where most Toronto businesses need guidance.",
+          "The city's position as a technology hub means Toronto businesses have access to AI capabilities, but many business owners struggle to identify which applications deliver genuine value versus which add complexity. The gap between AI availability and practical AI implementation is where most Toronto businesses need guidance.",
         ],
       
 },
@@ -234,8 +234,8 @@ export const locationPages: LocationPage[] = [
       },
     ],
   relatedLinks: [
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
     { label: 'AI Governance for Businesses', href: '/ai-knowledge-hub/ai-governance-for-businesses' },
     { label: 'AI automation for law firms', href: '/industries/ai-automation-for-law-firms' },
     { label: 'AI automation for accounting firms', href: '/industries/ai-automation-for-accounting-firms' },
@@ -345,9 +345,9 @@ export const locationPages: LocationPage[] = [
       },
     ],
   relatedLinks: [
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
-    { label: 'AI for Small Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'AI for Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
     { label: 'AI automation for dental clinics', href: '/industries/ai-automation-for-dental-clinics' },
     { label: 'AI automation for physiotherapy clinics', href: '/industries/ai-automation-for-physiotherapy-clinics' },
     { label: 'AI automation for real estate agents', href: '/industries/ai-automation-for-real-estate-agents' },
@@ -379,7 +379,7 @@ export const locationPages: LocationPage[] = [
           "Canadian businesses face specific challenges that AI automation addresses.",
           "Labor market tightness across most Canadian provinces means businesses cannot always hire to solve capacity problems. AI automation provides an alternative by recovering capacity from existing staff through the elimination of manual administrative tasks.",
           "Geographic distribution of clients and operations across Canada's vast territory creates communication and coordination overhead. AI automation manages this coordination efficiently, maintaining consistent service quality regardless of distance.",
-          "Regulatory compliance under PIPEDA and provincial privacy legislation requires careful data handling and documentation. AI automation maintains compliance records consistently while reducing the staff time required for regulatory management.",
+          "Regulatory compliance under PIPEDA and provincial privacy legislation requires careful data handling and documentation. AI automation can support more consistent compliance records while reducing the staff time required for regulatory administration.",
           "Seasonal business patterns affect many Canadian industries, from accounting's tax season to construction's weather-dependent scheduling. AI automation helps businesses manage seasonal peaks without the expensive cycle of hiring and releasing seasonal staff.",
           "Currency and cross-border considerations for businesses operating in both Canadian and U.S. markets add complexity to financial processing, client management, and regulatory compliance that AI automation can systematize.",
         ],
@@ -412,7 +412,7 @@ export const locationPages: LocationPage[] = [
         paragraphs: [
           "Ikram Rana, founder of Barrana.ai, serves Canadian businesses from his base in the Greater Toronto Area, providing AI adoption and workflow implementation that accounts for Canada's specific business, regulatory, and market conditions.",
           "\"Canadian businesses face a particular set of challenges that AI automation is uniquely suited to address,\" Rana explains. \"The tight labor market, geographic distribution, regulatory complexity, and seasonal patterns all create operational overhead that manual processes cannot efficiently manage. AI automation does not just save time in the Canadian context. It solves structural business challenges that hiring alone cannot fix.\"",
-          "With over 13 years of experience building software systems and a focus on practical implementation, Rana works with Canadian businesses across all provinces to implement AI automation that delivers measurable operational improvements within the country's specific regulatory and market framework.",
+          "With more than a decade of founder experience across technology and business systems and a focus on practical implementation, Rana works with Canadian businesses across all provinces to implement AI automation that delivers measurable operational improvements within the country's specific regulatory and market framework.",
         ],
       },
     ],
@@ -427,7 +427,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "Is AI automation compliant with Canadian privacy laws?",
-        a: "When properly implemented, AI automation operates within PIPEDA requirements and provincial privacy legislation. Ikram Rana of Barrana.ai ensures all implementations meet Canadian regulatory standards.",
+        a: "AI automation can be designed around PIPEDA requirements and applicable provincial privacy legislation. Barrana uses PIPEDA-aware controls and validates the requirements that apply to each implementation.",
       },
       {
         q: "What Canadian industries benefit most from AI automation?",
@@ -459,7 +459,7 @@ export const locationPages: LocationPage[] = [
       },
     ],
   relatedLinks: [
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
     { label: 'What Is AI Adoption for Businesses', href: '/ai-knowledge-hub/what-is-ai-adoption-for-businesses' },
     { label: 'AI Governance for Businesses', href: '/ai-knowledge-hub/ai-governance-for-businesses' },
     { label: 'AI automation for accounting firms', href: '/industries/ai-automation-for-accounting-firms' },
@@ -575,7 +575,7 @@ export const locationPages: LocationPage[] = [
       },
     ],
   relatedLinks: [
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
     { label: 'What Is AI Adoption for Businesses', href: '/ai-knowledge-hub/what-is-ai-adoption-for-businesses' },
     { label: 'AI Governance for Businesses', href: '/ai-knowledge-hub/ai-governance-for-businesses' },
     { label: 'AI automation for e-commerce businesses', href: '/industries/ai-automation-for-ecommerce-businesses' },
