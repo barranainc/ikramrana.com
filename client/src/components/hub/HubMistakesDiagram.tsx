@@ -65,7 +65,7 @@ export default function HubMistakesDiagram({ content }: { content: string }) {
           className="font-mono text-[10px] tracking-[0.18em] uppercase px-2.5 py-1 border"
           style={{ color: '#f87171', borderColor: 'rgba(248,113,113,0.35)', background: 'rgba(248,113,113,0.08)' }}
         >
-          FIG. — FAILURE PATTERNS
+          FIG.: FAILURE PATTERNS
         </span>
         <div className="h-px flex-1" style={{ background: 'rgba(248,113,113,0.2)' }} />
       </div>

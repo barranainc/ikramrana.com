@@ -1,6 +1,6 @@
 /*
- * DESIGN: The Architect's Blueprint — LIGHT THEME
- * Operational System Diagrams — Fragmented vs Coherent
+ * DESIGN: The Architect's Blueprint: LIGHT THEME
+ * Operational System Diagrams: Fragmented vs Coherent
  * Used in the "Why Most AI Implementations Break Operations" section on Home.tsx
  * Style: Blueprint / technical diagram aesthetic, flat nodes with connectors
  */
@@ -22,27 +22,27 @@ export function FragmentedSystemDiagram() {
       </text>
 
       {/* ── Scattered tool nodes ── */}
-      {/* CRM — top left */}
+      {/* CRM: top left */}
       <rect x="24" y="44" width="72" height="36" rx="6" fill="#fff" stroke="#fca5a5" strokeWidth="1.5" />
       <text x="60" y="58" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#dc2626" fontWeight="700">CRM</text>
       <text x="60" y="71" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fill="#ef4444">contacts</text>
 
-      {/* AI Tool — top right */}
+      {/* AI Tool: top right */}
       <rect x="304" y="44" width="72" height="36" rx="6" fill="#fff" stroke="#fca5a5" strokeWidth="1.5" />
       <text x="340" y="58" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#dc2626" fontWeight="700">AI TOOL</text>
       <text x="340" y="71" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fill="#ef4444">outputs</text>
 
-      {/* Sheets — middle left */}
+      {/* Sheets: middle left */}
       <rect x="24" y="138" width="72" height="36" rx="6" fill="#fff" stroke="#fca5a5" strokeWidth="1.5" />
       <text x="60" y="152" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#dc2626" fontWeight="700">SHEETS</text>
       <text x="60" y="165" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fill="#ef4444">manual data</text>
 
-      {/* Email — middle right */}
+      {/* Email: middle right */}
       <rect x="304" y="138" width="72" height="36" rx="6" fill="#fff" stroke="#fca5a5" strokeWidth="1.5" />
       <text x="340" y="152" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#dc2626" fontWeight="700">EMAIL</text>
       <text x="340" y="165" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fill="#ef4444">untracked</text>
 
-      {/* Dashboard — bottom center */}
+      {/* Dashboard: bottom center */}
       <rect x="164" y="230" width="72" height="36" rx="6" fill="#fff" stroke="#fca5a5" strokeWidth="1.5" />
       <text x="200" y="244" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#dc2626" fontWeight="700">DASHBOARD</text>
       <text x="200" y="257" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fill="#ef4444">stale data</text>
@@ -95,7 +95,7 @@ export function CoherentSystemDiagram() {
 
       {/* ── Vertical flow layout ── */}
       {/* Node dimensions */}
-      {/* Layer 1: Decision Hub — top center */}
+      {/* Layer 1: Decision Hub: top center */}
       <rect x="134" y="40" width="132" height="40" rx="8" fill="#1d4ed8" stroke="#1d4ed8" strokeWidth="0" />
       <text x="200" y="57" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#fff" fontWeight="700" letterSpacing="1">DECISION HUB</text>
       <text x="200" y="71" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fill="#bfdbfe">central orchestration</text>
@@ -104,7 +104,7 @@ export function CoherentSystemDiagram() {
       <line x1="200" y1="80" x2="200" y2="104" stroke="#3b82f6" strokeWidth="2" />
       <polygon points="194,100 200,112 206,100" fill="#3b82f6" />
 
-      {/* Layer 2: AI Layer — center */}
+      {/* Layer 2: AI Layer: center */}
       <rect x="134" y="112" width="132" height="40" rx="8" fill="#fff" stroke="#3b82f6" strokeWidth="1.5" />
       <text x="200" y="129" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#1d4ed8" fontWeight="700" letterSpacing="1">AI LAYER</text>
       <text x="200" y="143" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fill="#3b82f6">automated execution</text>
@@ -113,7 +113,7 @@ export function CoherentSystemDiagram() {
       <line x1="200" y1="152" x2="200" y2="172" stroke="#3b82f6" strokeWidth="2" />
       <polygon points="194,168 200,180 206,168" fill="#3b82f6" />
 
-      {/* Layer 3: Human Review — center */}
+      {/* Layer 3: Human Review: center */}
       <rect x="134" y="180" width="132" height="40" rx="8" fill="#fff" stroke="#3b82f6" strokeWidth="1.5" />
       <text x="200" y="197" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#1d4ed8" fontWeight="700" letterSpacing="1">HUMAN REVIEW</text>
       <text x="200" y="211" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fill="#3b82f6">judgment preserved</text>
@@ -122,12 +122,12 @@ export function CoherentSystemDiagram() {
       <line x1="200" y1="220" x2="200" y2="240" stroke="#3b82f6" strokeWidth="2" />
       <polygon points="194,236 200,248 206,236" fill="#3b82f6" />
 
-      {/* Layer 4: Compliance Validation — bottom left */}
+      {/* Layer 4: Compliance Validation: bottom left */}
       <rect x="30" y="248" width="130" height="40" rx="8" fill="#fff" stroke="#6366f1" strokeWidth="1.5" />
       <text x="95" y="265" textAnchor="middle" fontFamily="monospace" fontSize="8" fill="#4f46e5" fontWeight="700" letterSpacing="1">COMPLIANCE</text>
       <text x="95" y="279" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fill="#6366f1">validation enforced</text>
 
-      {/* Layer 5: Audit Trail — bottom right */}
+      {/* Layer 5: Audit Trail: bottom right */}
       <rect x="240" y="248" width="130" height="40" rx="8" fill="#fff" stroke="#6366f1" strokeWidth="1.5" />
       <text x="305" y="265" textAnchor="middle" fontFamily="monospace" fontSize="8" fill="#4f46e5" fontWeight="700" letterSpacing="1">AUDIT TRAIL</text>
       <text x="305" y="279" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fill="#6366f1">every decision logged</text>

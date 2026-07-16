@@ -2,7 +2,7 @@
  * IndustryOpportunitiesDiagram
  * Blueprint-style visual showing 4 key automation opportunities per industry.
  * Appears after "AI Automation Opportunities" section.
- * Design: dark navy bg, teal accents, mono labels — matches hub diagram aesthetic.
+ * Design: dark navy bg, teal accents, mono labels: matches hub diagram aesthetic.
  */
 
 interface OpportunityItem {
@@ -74,7 +74,7 @@ export default function IndustryOpportunitiesDiagram({ slug }: { slug: string })
           className="font-mono text-[10px] tracking-[0.18em] uppercase px-2.5 py-1 border"
           style={{ color: '#2dd4bf', borderColor: 'rgba(45,212,191,0.3)', background: 'rgba(45,212,191,0.06)' }}
         >
-          FIG. — AUTOMATION OPPORTUNITIES
+          FIG.: AUTOMATION OPPORTUNITIES
         </span>
         <div className="h-px flex-1" style={{ background: 'rgba(45,212,191,0.2)' }} />
       </div>

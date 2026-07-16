@@ -119,7 +119,7 @@ export default function CoherenceDiagram() {
       </div>
 
       <p className="text-center font-mono text-[10px] text-slate-dim tracking-wider mt-5 uppercase">
-        Operational Coherence — Unified system vs. scattered tools
+        Operational Coherence: Unified system vs. scattered tools
       </p>
     </motion.div>
   );

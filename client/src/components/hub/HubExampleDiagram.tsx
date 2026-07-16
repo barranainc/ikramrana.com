@@ -5,7 +5,7 @@
  * Blueprint aesthetic: dark background, electric flow arrows.
  */
 
-// Static process flows per page — derived from document examples
+// Static process flows per page: derived from document examples
 const FLOW_MAP: Record<string, { title: string; before: string[]; after: string[]; outcome: string }> = {
   'what-is-ai-automation-for-small-businesses': {
     title: 'Immigration Consulting Firm',
@@ -63,7 +63,7 @@ export default function HubExampleDiagram({ slug }: { slug: string }) {
           className="font-mono text-[10px] tracking-[0.18em] uppercase px-2.5 py-1 border"
           style={{ color: '#34d399', borderColor: 'rgba(52,211,153,0.3)', background: 'rgba(52,211,153,0.06)' }}
         >
-          FIG. — PROCESS FLOW
+          FIG.: PROCESS FLOW
         </span>
         <div className="h-px flex-1" style={{ background: 'rgba(52,211,153,0.2)' }} />
       </div>

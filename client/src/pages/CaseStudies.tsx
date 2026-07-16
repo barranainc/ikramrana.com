@@ -1,5 +1,5 @@
 /*
- * CASE STUDIES — /case-studies/
+ * CASE STUDIES: /case-studies/
  * Three anonymized case studies per master implementation prompt Part 2
  */
 

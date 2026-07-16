@@ -1,5 +1,5 @@
 /*
- * BlogFrameworkDiagram — Blueprint-style visual for "The Framework" section
+ * BlogFrameworkDiagram: Blueprint-style visual for "The Framework" section
  *
  * Design: Architect's Blueprint, Light Theme
  * Shows a three-level principle stack: Principle → Application → Outcome.
@@ -154,14 +154,14 @@ export default function BlogFrameworkDiagram({
             </svg>
           </div>
           <p className="font-mono text-[10px] text-slate-dim tracking-wider mt-1 uppercase">
-            Applied in sequence — each tier depends on the one above
+            Applied in sequence: each tier depends on the one above
           </p>
         </div>
       </div>
 
       {/* Footer caption */}
       <p className="font-mono text-[10px] text-slate-dim tracking-wider mt-2 text-right uppercase">
-        Decision Architecture Framework — Ikram Rana / Barrana.ai
+        Decision Architecture Framework: Ikram Rana / Barrana.ai
       </p>
     </motion.div>
   );

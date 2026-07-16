@@ -1,6 +1,6 @@
 # Full-Site Review Status
 
-Last updated: 2026-07-15  
+Last updated: 2026-07-16
 Branch: `codex/phase-2-authority-content-system`  
 Pull request: https://github.com/barranainc/ikramrana.com/pull/4  
 Status: Draft. Not approved for merge or deployment.
@@ -35,6 +35,11 @@ A passing build does not mean this objective is complete.
 - No em dashes remain in the current reviewed website, metadata, data, crawl, template, and operating files.
 - Barrana is described as a Canadian AI automation and implementation company.
 - The critical and pragmatic position on AI is explicit.
+- The owner-approved method register is now applied to the article library.
+- `Operational Reliability Threshold` replaces `Invisibility Threshold`.
+- `Decision Commitment System` replaces `Decision Forcing Systems`.
+- Merged and established concepts are no longer presented as standalone proprietary Ikram Rana frameworks.
+- Family and home-AI articles are organized under the Real Life AI article concept `Family AI Boundaries`.
 
 ### Claims and examples
 
@@ -112,7 +117,7 @@ Private evidence was not inspected in this source review.
 
 All routed components and libraries were fetched and scanned. The blog and knowledge hub received a targeted high-risk editorial pass covering promotional repetition, fabricated quotation framing, illustrative examples, unsupported numbers, timelines, affordability, legal-readiness language, and universal claims. This does not mean every qualitative statement has independent external sourcing. The dictionary passed structural and risk-language review, but Ikram's named methods and positions still need final owner approval.
 
-The remaining editorial task is source support for qualitative claims that are intended to be presented as researched fact rather than Ikram's analysis or practical position.
+The remaining editorial task is source support for qualitative claims that are intended to be presented as researched fact rather than Ikram's analysis or practical position. The method ownership and naming review is complete.
 
 ### Evidence and citations
 
@@ -128,7 +133,7 @@ Older conceptual articles still need a source-by-source review for statements pr
 
 ### Strategic content fit
 
-Several blog articles focus on families, parenting, and home AI use. Their relationship to the main business AI-adoption authority strategy needs an explicit decision. They may support Real Life AI but can dilute the commercial authority category on IkramRana.com if they are not organized carefully.
+Family, parenting, and home-AI articles remain available as a secondary editorial category connected to Real Life AI. They are now organized under `Family AI Boundaries`, an article concept rather than a proprietary commercial method. Calm and capability development are boundary tests inside that umbrella. These articles must remain clearly separated from the primary business AI-adoption authority category in navigation, metadata, related links, and future publishing.
 
 ### Credentials and proof
 
@@ -156,17 +161,14 @@ Do not mark this pull request ready or deploy it until all of the following are 
 - Mobile review passes
 - Primary navigation and CTA links pass
 - Remaining qualitative claims are reviewed for evidence
-- The family and parenting content decision is recorded
 - The owner reviews the principal positioning, About, Barrana, Discovery Stage, testimonial, and illustrative-use-case pages
 - Hostinger deployment and rollback steps are confirmed
 
 ## Next work order
 
-1. Review and approve the named methods and practical positions attributed to Ikram Rana.
-2. Add sources where older qualitative claims should be presented as researched fact.
-3. Resolve the family and parenting content strategy.
-4. Complete desktop and mobile visual review.
-5. Recheck LinkedIn, Calendly, forms, navigation, and primary calls to action in a browser.
-6. Present the final owner review list.
-7. Confirm Hostinger deployment and rollback steps.
-8. Only then consider marking the pull request ready.
+1. Add sources where older qualitative claims should be presented as researched fact.
+2. Complete desktop and mobile visual review.
+3. Recheck LinkedIn, Calendly, forms, navigation, and primary calls to action in a browser.
+4. Present the final owner review list.
+5. Confirm Hostinger deployment and rollback steps.
+6. Only then consider marking the pull request ready.
