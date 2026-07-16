@@ -22,10 +22,10 @@ export default function AuthorAuthorityCard() {
         <Link href="/about" className="font-mono text-[11px] uppercase tracking-[0.08em] text-electric hover:text-electric-dim">
           About Ikram
         </Link>
-        <Link href="/ai-consultant-vaughan" className="font-mono text-[11px] uppercase tracking-[0.08em] text-electric hover:text-electric-dim">
+        <Link href="/locations/ai-automation-consulting-vaughan-ontario" className="font-mono text-[11px] uppercase tracking-[0.08em] text-electric hover:text-electric-dim">
           Vaughan
         </Link>
-        <Link href="/ai-consultant-gta" className="font-mono text-[11px] uppercase tracking-[0.08em] text-electric hover:text-electric-dim">
+        <Link href="/locations/ai-automation-consulting-greater-toronto-area" className="font-mono text-[11px] uppercase tracking-[0.08em] text-electric hover:text-electric-dim">
           Greater Toronto Area
         </Link>
       </div>
