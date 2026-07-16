@@ -1,5 +1,5 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * ESSAY: Judgment Is Not a Backup System
  */
 import { Link } from "wouter";
@@ -23,7 +23,7 @@ export default function EssayJudgmentBackup() {
             Judgment Is Not a Backup System
           </h1>
           <p className="text-lg text-slate-text leading-relaxed mb-2">
-            Organizations often treat human judgment as the fallback when AI fails. This is backwards. Human judgment should be the primary system for decisions that require it — not a safety net for when automation breaks down.
+            Organizations often treat human judgment as the fallback when AI fails. This is backwards. Human judgment should be the primary system for decisions that require it: not a safety net for when automation breaks down.
           </p>
           <span className="font-mono text-xs text-slate-dim">8 min read</span>
         </motion.div>
@@ -39,7 +39,7 @@ export default function EssayJudgmentBackup() {
             This model is intuitive. It reflects the efficiency logic that drives most AI adoption: automate what can be automated, reserve human time for what can't. But it contains a structural error that becomes visible over time.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            When judgment is positioned as a backup, it atrophies. People stop exercising it because the system rarely asks for it. The skills that make human judgment valuable — the ability to recognize novel situations, to weigh competing considerations, to make decisions under genuine uncertainty — are skills that require regular practice to maintain. When the system handles 95% of cases automatically, the humans in the system get very little practice.
+            When judgment is positioned as a backup, it atrophies. People stop exercising it because the system rarely asks for it. The skills that make human judgment valuable: the ability to recognize novel situations, to weigh competing considerations, to make decisions under genuine uncertainty: are skills that require regular practice to maintain. When the system handles 95% of cases automatically, the humans in the system get very little practice.
           </p>
         </motion.div>
 
@@ -52,7 +52,7 @@ export default function EssayJudgmentBackup() {
             Over the following year, the volume of manual work decreases. The reviewers handle fewer cases. Their calibration drifts. They become less confident in their own judgment because they exercise it less frequently. They begin to defer to the AI's outputs even when they have doubts, because the AI has been right so often that questioning it feels presumptuous.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            By year two, the humans in the system are no longer functioning as genuine reviewers. They are functioning as approvers — clicking through the AI's outputs with a speed and confidence that has no basis in actual evaluation. The backup system has degraded to the point where it can no longer perform its backup function.
+            By year two, the humans in the system are no longer functioning as genuine reviewers. They are functioning as approvers: clicking through the AI's outputs with a speed and confidence that has no basis in actual evaluation. The backup system has degraded to the point where it can no longer perform its backup function.
           </p>
         </motion.div>
 
@@ -70,9 +70,9 @@ export default function EssayJudgmentBackup() {
           <p className="text-foreground/85 leading-relaxed mb-4">Judgment preservation requires several design choices:</p>
           <ul className="space-y-3 mb-6 pl-0">
             {[
-              "Deliberate exposure: humans should regularly encounter the full range of case types, including the easy ones, to maintain calibration — not just the exceptions.",
+              "Deliberate exposure: humans should regularly encounter the full range of case types, including the easy ones, to maintain calibration: not just the exceptions.",
               "Explanation requirements: for consequential decisions, humans should be required to articulate their reasoning, not just click approve. This forces genuine engagement.",
-              "Disagreement mechanisms: the system should make it easy — and safe — for humans to disagree with AI outputs. Disagreement data is valuable for system improvement.",
+              "Disagreement mechanisms: the system should make it easy: and safe: for humans to disagree with AI outputs. Disagreement data is valuable for system improvement.",
               "Skill development: organizations should invest in developing the specific judgment skills that AI cannot replicate, not just the operational skills that AI is replacing.",
               "Volume calibration: the volume of cases routed to human review should be calibrated to maintain skill, not minimized to reduce cost.",
             ].map((item, i) => (
@@ -87,10 +87,10 @@ export default function EssayJudgmentBackup() {
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">The Long-Term Argument</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            Organizations that preserve human judgment alongside AI automation build a compounding advantage. Their humans get better at the decisions that matter most — the novel situations, the high-stakes calls, the cases where pattern matching is insufficient. Their AI systems get better because they receive high-quality feedback from humans who are genuinely engaged.
+            Organizations that preserve human judgment alongside AI automation build a compounding advantage. Their humans get better at the decisions that matter most: the novel situations, the high-stakes calls, the cases where pattern matching is insufficient. Their AI systems get better because they receive high-quality feedback from humans who are genuinely engaged.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            Organizations that treat judgment as a backup system accumulate a compounding liability. Their humans get worse at the decisions that matter most. Their AI systems receive low-quality feedback from humans who are rubber-stamping. When the system encounters a genuinely novel situation — a regulatory change, a market disruption, a crisis — the organization discovers that neither the AI nor the humans are equipped to handle it well.
+            Organizations that treat judgment as a backup system accumulate a compounding liability. Their humans get worse at the decisions that matter most. Their AI systems receive low-quality feedback from humans who are rubber-stamping. When the system encounters a genuinely novel situation: a regulatory change, a market disruption, a crisis: the organization discovers that neither the AI nor the humans are equipped to handle it well.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
             Judgment is not a backup system. It is the primary system for the decisions that define organizational quality. AI should be designed to support it, not to replace it.
