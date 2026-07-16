@@ -244,7 +244,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link href="/ai-knowledge-hub/what-is-ai-adoption-for-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Adoption</Link>
                 <Link href="/ai-knowledge-hub/what-is-ai-workflow-automation" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Workflow Automation</Link>
                 <Link href="/ai-knowledge-hub/what-are-ai-agents-for-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Agents</Link>
-                <Link href="/ai-knowledge-hub/ai-for-small-businesses-guide" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI for Small Businesses</Link>
+                <Link href="/ai-knowledge-hub/ai-for-small-businesses-guide" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI for Businesses</Link>
                 <Link href="/ai-knowledge-hub/ai-decision-systems-for-business" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Decision Systems</Link>
                 <Link href="/ai-knowledge-hub/ai-governance-for-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Governance</Link>
               </div>
