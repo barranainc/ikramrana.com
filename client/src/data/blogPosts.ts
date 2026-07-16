@@ -161,7 +161,7 @@ export const blogPosts: BlogPost[] = [
   
   relatedLinks: [
     { label: 'structured AI adoption approach', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
     { label: 'Cognitive load', href: '/ai-dictionary/cognitive-load' },
     { label: 'Why Systems Calm People Down and Tools Do Not', href: '/blog/systems-vs-tools' },
     { label: 'Tools Expire but Systems Compound', href: '/blog/tools-expire-systems-compound' },
@@ -300,7 +300,7 @@ export const blogPosts: BlogPost[] = [
     ],
   
   relatedLinks: [
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
     { label: 'What Is AI Workflow Automation', href: '/ai-knowledge-hub/what-is-ai-workflow-automation' },
     { label: 'Cognitive load', href: '/ai-dictionary/cognitive-load' },
     { label: 'Cognitive Load Is the Real Productivity Tax', href: '/blog/cognitive-load-productivity' },
@@ -370,7 +370,7 @@ export const blogPosts: BlogPost[] = [
   
   relatedLinks: [
     { label: 'Ikram Rana\'s AI adoption methodology', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
     { label: 'Ai automation', href: '/ai-dictionary/ai-automation' },
     { label: 'Process automation', href: '/ai-dictionary/process-automation' },
     { label: 'Why Most People Automate the Wrong Step', href: '/blog/automate-wrong-step' },
@@ -440,7 +440,7 @@ export const blogPosts: BlogPost[] = [
   
   relatedLinks: [
     { label: 'a structured approach to implementing AI', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'AI for Small Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
+    { label: 'AI for Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
     { label: 'Ai strategy', href: '/ai-dictionary/ai-strategy' },
     { label: 'Tools Expire but Systems Compound', href: '/blog/tools-expire-systems-compound' },
     { label: 'Most AI Tools Fail Because They Add Choices', href: '/blog/ai-tools-add-choices' },
@@ -578,7 +578,7 @@ export const blogPosts: BlogPost[] = [
   
   relatedLinks: [
     { label: 'phased AI implementation strategy', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'AI for Small Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
+    { label: 'AI for Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
     { label: 'Ai strategy', href: '/ai-dictionary/ai-strategy' },
     { label: 'Why Systems Calm People Down and Tools Do Not', href: '/blog/systems-vs-tools' },
     { label: 'Why Copying Someone Else\'s AI Stack Fails', href: '/blog/copying-ai-stack-fails' },
@@ -856,7 +856,7 @@ export const blogPosts: BlogPost[] = [
   
   relatedLinks: [
     { label: 'structured AI implementation framework', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
     { label: 'Process automation', href: '/ai-dictionary/process-automation' },
     { label: 'What Happens When You Automate Before Understanding Your Workflow', href: '/blog/automate-before-understanding' },
     { label: 'The Difference Between Automation and Delegation', href: '/blog/automation-vs-delegation' },
@@ -926,7 +926,7 @@ export const blogPosts: BlogPost[] = [
   
   relatedLinks: [
     { label: 'AI adoption methodology for businesses', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
     { label: 'Ai workflow', href: '/ai-dictionary/ai-workflow' },
     { label: 'Why Most People Automate the Wrong Step', href: '/blog/automate-wrong-step' },
     { label: 'Automation Without Accountability Is a Liability', href: '/blog/automation-accountability' },
@@ -1680,7 +1680,7 @@ export const blogPosts: BlogPost[] = [
   
   relatedLinks: [
     { label: 'structured approach to AI adoption', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'AI for Small Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
+    { label: 'AI for Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
     { label: 'Cognitive load', href: '/ai-dictionary/cognitive-load' },
     { label: 'Cognitive Load Is the Real Productivity Tax', href: '/blog/cognitive-load-productivity' },
     { label: 'Why Faster Workflows Often Feel More Exhausting', href: '/blog/faster-workflows-exhausting' },
@@ -1941,7 +1941,7 @@ export const blogPosts: BlogPost[] = [
   
   relatedLinks: [
     { label: 'AI adoption framework for businesses', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'AI for Small Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
+    { label: 'AI for Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
     { label: 'Ai strategy', href: '/ai-dictionary/ai-strategy' },
     { label: 'The Biggest AI Mistake Is Copying Best Practices', href: '/blog/biggest-ai-mistake' },
     { label: 'AI Does Not Change Behaviour but Incentives Do', href: '/blog/ai-incentives-behaviour' },
