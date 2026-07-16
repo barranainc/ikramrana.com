@@ -3,7 +3,7 @@
  * /ai-adoption-checklist: 20-step checklist, 4 phases, HowTo schema
  */
 
-import { useEffect } from "react";
+import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 
 const PAGE_URL = "https://ikramrana.com/ai-adoption-checklist";
@@ -64,11 +64,7 @@ const phases = [
 ];
 
 export default function AiAdoptionChecklist() {
-  useEffect(() => {
-    document.title = "AI Adoption Checklist: 20 Steps Across 4 Phases | Ikram Rana";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "A 20-step AI adoption checklist across 4 phases: process clarity, automation layer, decision systems, and governance. By Ikram Rana of Barrana.ai.");
-  }, []);
+  useHead("AI Adoption Checklist: 20 Steps Across 4 Phases", "A 20-step AI adoption checklist covering process clarity, automation, decision systems, human oversight, and governance.");
 
   const howToSchema = {
     "@context": "https://schema.org",
