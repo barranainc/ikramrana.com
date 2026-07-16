@@ -128,7 +128,7 @@ export default function LocationPage() {
           },
           "areaServed": page.areaServed
         },
-        "datePublished": "2026-03-01"
+        "dateModified": "2026-07-15"
       },
       {
         "@type": "FAQPage",
