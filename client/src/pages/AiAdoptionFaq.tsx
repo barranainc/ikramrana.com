@@ -99,10 +99,10 @@ const config: FaqPageConfig = {
     },
   ],
   relatedLinks: [
-    { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+    { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
     { label: "AI Automation for Business", href: "/ai-automation-for-business" },
     { label: "AI Automation FAQ", href: "/ai-automation-faq" },
-    { label: "AI for Small Business FAQ", href: "/ai-for-small-business-faq" },
+    { label: "AI for Business FAQ", href: "/ai-for-small-business-faq" },
     { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
     { label: "What Is AI Adoption for Businesses?", href: "/ai-knowledge-hub/what-is-ai-adoption-for-businesses" },
     { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
