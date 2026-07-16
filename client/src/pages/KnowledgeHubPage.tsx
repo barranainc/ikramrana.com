@@ -76,15 +76,15 @@ const SECTION_META: Record<string, { icon: string; accent: string; label: string
 // Map internal link labels to slugs
 function labelToSlug(label: string): string | null {
   const map: Record<string, string> = {
-    'What Is AI Automation for Small Businesses?': 'what-is-ai-automation-for-small-businesses',
+    'What Is AI Automation for Businesses?': 'what-is-ai-automation-for-small-businesses',
     'What Is AI Adoption for Businesses?': 'what-is-ai-adoption-for-businesses',
     'What Is AI Adoption for Businesses and How Does It Work?': 'what-is-ai-adoption-for-businesses',
     'What Is AI Workflow Automation?': 'what-is-ai-workflow-automation',
     'What Is AI Workflow Automation and How Does It Improve Business Operations?': 'what-is-ai-workflow-automation',
     'What Are AI Agents and How Do They Work?': 'what-are-ai-agents-for-businesses',
     'What Are AI Agents and How Do They Work for Businesses?': 'what-are-ai-agents-for-businesses',
-    'AI for Small Businesses: A Complete Guide': 'ai-for-small-businesses-guide',
-    'AI for Small Businesses: A Practical Guide to Getting Started': 'ai-for-small-businesses-guide',
+    'AI for Businesses: A Complete Guide': 'ai-for-small-businesses-guide',
+    'AI for Businesses: A Practical Guide to Getting Started': 'ai-for-small-businesses-guide',
     'What Are AI Decision Systems and How Do They Help Businesses?': 'ai-decision-systems-for-business',
     'AI Decision Systems for Business Operations': 'ai-decision-systems-for-business',
     'AI Governance for Businesses: What You Need to Know': 'ai-governance-for-businesses',
