@@ -99,7 +99,7 @@ export default function DictionaryEntry() {
           "worksFor": { "@type": "Organization", "name": "Barrana.ai", "url": "https://barrana.ai" }
         },
         "publisher": { "@type": "Organization", "name": "IkramRana.com" },
-        "datePublished": "2026-03-01"
+        "dateModified": "2026-07-15"
       }
     ]
   };
