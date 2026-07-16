@@ -24,7 +24,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "Is AI automation safe?",
-      a: "AI automation is safe when implemented with appropriate governance: accuracy standards, exception handling, human review at high-consequence decision points, and performance monitoring. Automation without governance creates accountability gaps and accuracy drift that accumulate until they produce visible failures. The question is not whether automation is safe: it is whether the governance structure is adequate for the consequence level of the tasks being automated."
+      a: "AI automation is not inherently safe or unsafe. Risk depends on the workflow, data, system access, error consequences, monitoring, exception handling, and human oversight. Higher-consequence tasks require stronger controls and may be unsuitable for autonomous execution. Safety claims must be based on testing of the actual implementation."
     },
     {
       q: "Can businesses automate workflows?",
