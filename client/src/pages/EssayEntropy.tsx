@@ -29,7 +29,7 @@ export default function EssayEntropy() {
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5">The Paradox</h2>
-          <p className="text-foreground/85 leading-relaxed mb-5">Your organization bought an AI tool to save time. Then another. Then a third. Each one promised efficiency. Each one delivered it—in isolation. But collectively, your team is drowning.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5">Your organization bought an AI tool to save time. Then another. Then a third. Each one promised efficiency. Each one delivered it, in isolation. But collectively, your team is drowning.</p>
           <p className="text-foreground/85 leading-relaxed mb-5">Every tool adds a dashboard to check, a handoff to manage, a data format to reconcile. The operations manager who used to spend her morning on client work now spends it reconciling outputs across four systems that don't talk to each other.</p>
           <p className="text-foreground/85 leading-relaxed mb-5">This is tool proliferation entropy: the organizational chaos that results from adopting AI tools faster than decision architecture can absorb them.</p>
         </motion.div>
