@@ -47,8 +47,8 @@ const geoLinks: Record<string, { label: string; slug: string }[]> = {
 // Hub pages cross-links per location
 const hubLinks: Record<string, { label: string; slug: string }[]> = {
   'ai-automation-consulting-vaughan-ontario': [
-    { label: 'What Is AI Automation for Small Businesses?', slug: 'what-is-ai-automation-for-small-businesses' },
-    { label: 'AI for Small Businesses: A Practical Guide', slug: 'ai-for-small-businesses-guide' },
+    { label: 'What Is AI Automation for Businesses?', slug: 'what-is-ai-automation-for-small-businesses' },
+    { label: 'AI for Businesses: A Practical Guide', slug: 'ai-for-small-businesses-guide' },
   ],
   'ai-automation-consulting-toronto': [
     { label: 'What Is AI Workflow Automation?', slug: 'what-is-ai-workflow-automation' },
