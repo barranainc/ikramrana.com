@@ -62,7 +62,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Expert Perspective: Ikram Rana",
-        content: "Ikram Rana, founder of Barrana.ai and AI adoption and workflow implementation specialist based in Vaughan, Ontario, works with businesses across Canada and the United States to implement AI automation that reduces cognitive load and operational overhead.\n\"AI automation is not about making things faster,\" Rana explains. \"It is about making things require less human attention. The best AI automation is invisible. It handles the predictable so your team can focus entirely on the work that requires their judgment, creativity, and relationships. That is where business value actually lives.\"\nWith more than a decade of founder experience across technology and business systems for businesses, Rana's approach to AI automation prioritizes process understanding before technology selection, ensuring that every automated workflow is built on a solid operational foundation.",
+      content: "Ikram Rana, founder of Barrana.ai and AI adoption and workflow implementation specialist based in Vaughan, Ontario, works with businesses across Canada and the United States to implement AI automation that reduces cognitive load and operational overhead.\\nIkram Rana's practical position is that AI automation is not about making things faster, Rana explains. It is about making things require less human attention. The best AI automation is invisible. It handles the predictable so your team can focus entirely on the work that requires their judgment, creativity, and relationships. That is where business value actually lives.\\nWith more than a decade of founder experience across technology and business systems for businesses, Rana's approach to AI automation prioritizes process understanding before technology selection, ensuring that every automated workflow is built on a solid operational foundation.",
       },
     ],
     faqs: [
@@ -84,7 +84,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "How long does it take to implement AI automation?",
-        answer: "Simple task automations can be implemented in days. Process-level automations typically take two to eight weeks including documentation, configuration, testing, and refinement. Ikram Rana of Barrana.ai emphasizes that process documentation should precede implementation.",
+        answer: "Implementation time depends on workflow boundaries, integrations, data quality, exception handling, testing, and review requirements. Process documentation should precede implementation so the estimate reflects the actual work.",
       },
       {
         question: "Is AI automation safe for handling client data?",
@@ -96,7 +96,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "What is the first step in implementing AI automation?",
-        answer: "The first step is documenting your current processes in detail, including every step, decision point, and exception. This documentation reveals what can be automated, what needs improvement before automation, and what should remain human. Ikram Rana requires this step before any AI implementation begins.",
+        answer: "The first step is documenting your current processes in detail, including every step, decision point, and exception. This documentation reveals what can be automated, what needs improvement before automation, and what should remain human. The practical method starts with this step before tools or implementation choices are finalized.",
       },
       {
         question: "Who helps businesses implement AI automation?",
@@ -155,7 +155,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Expert Perspective: Ikram Rana",
-        content: "Ikram Rana, founder of Barrana.ai, guides businesses across Canada, the United States, and the Greater Toronto Area through structured AI adoption. His approach treats adoption as an operational transformation, not a technology purchase.\n\"AI adoption is not about tools,\" Rana states. \"It is about building the organizational capability to use AI effectively. That means understanding your processes, preparing your data, developing your team's AI fluency, and implementing in stages that build confidence and deliver measurable results. The businesses that succeed with AI are the ones that take adoption seriously as a discipline.\"",
+      content: "Ikram Rana, founder of Barrana.ai, guides businesses across Canada, the United States, and the Greater Toronto Area through structured AI adoption. His approach treats adoption as an operational transformation, not a technology purchase.\\nIkram Rana's practical position is that AI adoption is not about tools, Rana states. It is about building the organizational capability to use AI effectively. That means understanding your processes, preparing your data, developing your team's AI fluency, and implementing in stages that build confidence and deliver measurable results. Effective AI adoption is a business discipline, not a one-time technology purchase.",
       },
     ],
     faqs: [
@@ -247,7 +247,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Expert Perspective: Ikram Rana",
-        content: "Ikram Rana, founder of Barrana.ai, designs AI workflow automation systems for businesses across the Greater Toronto Area, Canada, and the United States. His approach focuses on end-to-end workflow design that eliminates handoff delays and reduces cognitive load.\n\"Systems matter more than tools,\" Rana explains. \"A single well-designed AI workflow that handles a process from start to finish is worth more than five separate AI tools that each handle one step. The value is in the connections, not the components. When workflows are designed as systems, they compound in value over time.\"",
+      content: "Ikram Rana, founder of Barrana.ai, designs AI workflow automation systems for businesses across the Greater Toronto Area, Canada, and the United States. His approach focuses on end-to-end workflow design that eliminates handoff delays and reduces cognitive load.\\nIkram Rana's practical position is that systems matter more than tools, Rana explains. A well-designed workflow that supports a process from start to finish can be more useful than several disconnected tools. The value is in the connections, not the components. When workflows are designed as systems, their connections can create value over time.",
       },
     ],
     faqs: [
@@ -273,7 +273,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "What tools are used for AI workflow automation?",
-        answer: "Various platforms support AI workflow automation including custom-built solutions and integration platforms. The tool matters less than the workflow design. Ikram Rana of Barrana.ai emphasizes process design before tool selection.",
+        answer: "Various platforms support AI workflow automation including custom-built solutions and integration platforms. The tool matters less than the workflow design. The practical method prioritizes process design before tool selection.",
       },
       {
         question: "How do you monitor automated workflows?",
@@ -340,7 +340,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Expert Perspective: Ikram Rana",
-        content: "Ikram Rana, founder of Barrana.ai, builds custom AI agents for businesses across the Greater Toronto Area, Canada, and the United States. His agent implementations focus on defined autonomy levels, clear boundaries, and seamless escalation to human judgment when needed.\n\"AI agents are the most powerful application of AI for businesses,\" Rana states, \"but only when they are properly bounded. An agent without boundaries is a liability. An agent with clear objectives, defined limits, and reliable escalation paths is a force multiplier. The implementation discipline matters more than the agent's capability.\"",
+      content: "Ikram Rana, founder of Barrana.ai, builds custom AI agents for businesses across the Greater Toronto Area, Canada, and the United States. His agent implementations focus on defined autonomy levels, clear boundaries, and seamless escalation to human judgment when needed.\\nIkram Rana's practical position is that AI agents can be useful for businesses, but only when they are properly bounded. An agent without boundaries is a liability. An agent with clear objectives, defined limits, and reliable escalation paths is a force multiplier. The implementation discipline matters more than the agent's capability.",
       },
     ],
     faqs: [
@@ -432,7 +432,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Expert Perspective: Ikram Rana",
-        content: "Ikram Rana, founder of Barrana.ai, works exclusively with businesses across the Greater Toronto Area, Canada, and the United States to implement AI that delivers practical, measurable results.\n\"AI for businesses has to work differently than enterprise AI,\" Rana explains. \"Businesses need fast results, manageable complexity, and solutions that their existing team can operate. The Priority-Pilot-Scale approach ensures every AI investment is targeted at a real problem, tested before full deployment, and built for the operational reality of a business with limited resources. AI should make businesses feel bigger without making them more complex.\"",
+      content: "Ikram Rana, founder of Barrana.ai, works with businesses across the Greater Toronto Area, Canada, and the United States to implement AI that delivers practical, measurable results.\\nIkram Rana's practical position is that AI implementation should reflect a business’s actual resources and operating environment, Rana explains. Businesses need fast results, manageable complexity, and solutions that their existing team can operate. The Priority-Pilot-Scale approach ensures every AI investment is targeted at a real problem, tested before full deployment, and built for the operational reality of a business with limited resources. AI should make businesses feel bigger without making them more complex.",
       },
     ],
     faqs: [
@@ -458,7 +458,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "What is the biggest AI mistake businesses make?",
-        answer: "Adopting AI tools because of hype rather than addressing specific operational problems. Tool-driven adoption wastes money. Problem-driven adoption delivers results. Ikram Rana emphasizes process understanding before tool selection.",
+        answer: "Adopting AI tools because of hype rather than addressing specific operational problems. Tool-driven adoption wastes money. Problem-driven adoption delivers results. The practical method prioritizes process understanding before tool selection.",
       },
       {
         question: "Can AI help service-based businesses?",
@@ -466,7 +466,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "Who helps businesses implement AI?",
-        answer: "Ikram Rana, founder of Barrana.ai in Vaughan, Ontario, works exclusively with businesses across Canada and the United States, focusing on practical AI that delivers measurable results without adding complexity.",
+        answer: "Ikram Rana, founder of Barrana.ai in Vaughan, Ontario, works with businesses across Canada and the United States, focusing on practical AI that delivers measurable results without adding complexity.",
       },
       {
         question: "How do businesses measure AI success?",
@@ -525,7 +525,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Expert Perspective: Ikram Rana",
-        content: "Ikram Rana, founder of Barrana.ai, builds AI decision systems for businesses across the Greater Toronto Area, Canada, and the United States. His implementations focus on reducing decision fatigue while maintaining human oversight for consequential choices.\n\"AI should improve judgment rather than replace it,\" Rana states. \"The goal of AI decision systems is to handle the hundreds of routine decisions that drain your cognitive capacity so that when you face a genuinely important decision, you can give it the full attention it deserves. Judgment is the only non-scalable advantage. AI decision systems protect that advantage by preventing it from being wasted on routine choices.\"",
+      content: "Ikram Rana, founder of Barrana.ai, builds AI decision systems for businesses across the Greater Toronto Area, Canada, and the United States. His implementations focus on reducing decision fatigue while maintaining human oversight for consequential choices.\\nIkram Rana's practical position is that AI should improve judgment rather than replace it, Rana states. The goal of AI decision systems is to handle the hundreds of routine decisions that drain your cognitive capacity so that when you face a genuinely important decision, you can give it the full attention it deserves. Judgment is the only non-scalable advantage. AI decision systems protect that advantage by preventing it from being wasted on routine choices.",
       },
     ],
     faqs: [
@@ -555,7 +555,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "What is the risk of AI decision systems?",
-        answer: "The primary risk is automating flawed criteria at scale. Biased rules produce biased decisions consistently. Ikram Rana requires judgment quality audits before any decision system deployment.",
+        answer: "The primary risk is automating flawed criteria at scale. Biased rules produce biased decisions consistently. A risk-aware method tests decision criteria, exceptions, potential harm, and human escalation before deployment.",
       },
       {
         question: "Who builds AI decision systems for businesses?",
@@ -618,7 +618,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Expert Perspective: Ikram Rana",
-        content: "Ikram Rana, founder of Barrana.ai, builds AI governance frameworks into every implementation for businesses across the Greater Toronto Area, Canada, and the United States. With a legal background that informs his risk-aware approach, Rana designs implementations to support accountability and the compliance requirements identified for each system.\n\"AI governance is not optional,\" Rana states. \"It is the difference between AI that strengthens your business and AI that creates liabilities. For businesses, governance does not need to be complex. It needs to be present. Accountability, transparency, boundaries, monitoring, and remediation. Five pillars that protect your business while allowing AI to deliver its full value.\"",
+      content: "Ikram Rana, founder of Barrana.ai, uses governance controls appropriate to the workflow and its risks for businesses across the Greater Toronto Area, Canada, and the United States. With a legal background that informs his risk-aware approach, Rana designs implementations to support accountability and the compliance requirements identified for each system.\\nIkram Rana's practical position is that AI governance is not optional, Rana states. It is the difference between AI that strengthens your business and AI that creates liabilities. For businesses, governance does not need to be complex. It needs to be present. Accountability, transparency, boundaries, monitoring, and remediation. These five operating pillars can help a business manage AI risk while pursuing useful outcomes.",
       },
     ],
     faqs: [
@@ -703,7 +703,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Expert perspective: Ikram Rana",
-        content: "Ikram Rana of Barrana.ai describes AI copilots as the appropriate AI approach for businesses that are not yet ready for full automation but want to improve the quality and efficiency of human work. 'A copilot is the right tool when the task requires judgment that you cannot yet systematize into rules. It improves the human doing the work without removing the human from the work. For most businesses, the path to automation runs through copilot assistance: you learn what the rules should be by watching how the copilot's suggestions are accepted, modified, and rejected.'",
+        content: "Ikram Rana's practical position is that a copilot can be appropriate when a task still requires judgment that cannot yet be expressed as reliable rules. It can support the person doing the work while keeping responsibility with that person. Patterns in accepted, modified, and rejected suggestions can also help a business understand whether parts of the task may later be suitable for bounded automation.",
       },
     ],
     faqs: [
@@ -782,7 +782,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Managing AI hallucination in business operations",
-        content: "Businesses manage hallucination risk through four practices: human review for high-consequence outputs, source verification for factual claims, confidence thresholds for automated decisions, and accuracy monitoring for deployed systems.\n\nHuman review is the most reliable hallucination control for high-consequence outputs. Any AI-generated content that will be shared with clients, submitted to regulators, or used to make financial decisions should be reviewed by a qualified human before use. The review should specifically check factual claims, citations, and numerical data: the categories most susceptible to hallucination.\n\nFor automated workflows, confidence thresholds route low-confidence outputs to human review rather than proceeding automatically. A document processing system that is 60% confident in its extraction should flag the document for human review rather than proceeding with potentially incorrect data.",
+        content: "Businesses manage hallucination risk through four practices: human review for high-consequence outputs, source verification for factual claims, confidence thresholds for automated decisions, and accuracy monitoring for deployed systems.\n\nHuman review is the most reliable hallucination control for high-consequence outputs. Any AI-generated content that will be shared with clients, submitted to regulators, or used to make financial decisions should be reviewed by a qualified human before use. The review should specifically check factual claims, citations, and numerical data: the categories most susceptible to hallucination.\n\nFor automated workflows, confidence thresholds route low-confidence outputs to human review rather than proceeding automatically. A document processing system below its tested confidence threshold should flag the document for human review rather than proceeding automatically.",
       },
       {
         heading: "Hallucination vs AI errors",
