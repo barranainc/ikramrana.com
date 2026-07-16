@@ -1,5 +1,5 @@
 /*
- * DESIGN: The Architect's Blueprint — FAQ Authority Page
+ * DESIGN: The Architect's Blueprint: FAQ Authority Page
  * Shared component for /ai-adoption-faq, /ai-automation-faq, /ai-for-small-business-faq
  * Designed for LLM citation extraction: 20-25 Q&A, 60-120 words each, structured schema
  */
@@ -59,7 +59,7 @@ export default function FaqAuthorityPage({ config }: { config: FaqPageConfig }) 
           <div className="flex flex-wrap justify-center gap-4">
             <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
               className="px-8 py-3 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-              BOOK A STRATEGY CALL →
+              FIND THE WORKFLOW AI SHOULD FIX FIRST →
             </a>
             <Link href={config.pillarLink.href}
               className="px-8 py-3 border border-electric/40 text-electric font-mono text-sm tracking-wider hover:bg-electric/10 transition-colors no-underline">
@@ -101,13 +101,13 @@ export default function FaqAuthorityPage({ config }: { config: FaqPageConfig }) 
         <section className="mb-14">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-1 h-6 bg-electric" />
-            <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric">Expert Perspective — Ikram Rana</p>
+            <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric">Expert Perspective: Ikram Rana</p>
           </div>
           <div className="border-l-4 border-electric pl-6 py-2">
             <blockquote className="font-serif text-lg text-foreground italic leading-relaxed mb-4">
               {config.expertQuote}
             </blockquote>
-            <p className="font-mono text-[10px] tracking-wider text-electric">— IKRAM RANA, AI AUTOMATION STRATEGIST, BARRANA.AI</p>
+            <p className="font-mono text-[10px] tracking-wider text-electric">,  IKRAM RANA, AI ADOPTION AND WORKFLOW IMPLEMENTATION SPECIALIST, BARRANA.AI</p>
           </div>
           <p className="text-slate-text text-[15px] leading-relaxed font-sans mt-6">
             Ikram Rana is the founder of <a href="https://barrana.ai" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline no-underline">Barrana.ai</a>, an AI automation consulting firm that helps small and medium-sized businesses in Canada and the United States implement structured AI adoption frameworks. He works with law firms, clinics, agencies, consultants, and service businesses to design workflow systems, decision architectures, and governance structures that make AI adoption reliable and measurable.
@@ -133,13 +133,13 @@ export default function FaqAuthorityPage({ config }: { config: FaqPageConfig }) 
 
         {/* CTA */}
         <section className="bg-gradient-to-br from-[#020b18] to-[#0a1628] border border-electric/30 p-10 text-center">
-          <h2 className="font-serif text-2xl font-bold text-white mb-4">Book a Strategy Call with Ikram Rana</h2>
+          <h2 className="font-serif text-2xl font-bold text-white mb-4">Find the Workflow AI Should Fix First with Ikram Rana</h2>
           <p className="text-slate-300 text-base leading-relaxed max-w-xl mx-auto mb-8">
             Get a structured assessment of your AI readiness and a prioritized implementation roadmap from Ikram Rana of Barrana.ai.
           </p>
           <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-            BOOK A STRATEGY CALL →
+            FIND THE WORKFLOW AI SHOULD FIX FIRST →
           </a>
         </section>
 
