@@ -6,7 +6,7 @@
  * Color: navy bg, electric accents, serif headings, mono labels
  */
 
-import { useEffect } from "react";
+import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 
 const PILLAR_URL = "https://ikramrana.com/ai-adoption-framework-for-small-businesses";
@@ -238,11 +238,7 @@ function renderContent(text: string) {
 }
 
 export default function PillarPage() {
-  useEffect(() => {
-    document.title = "AI Adoption Framework: 4 Phases to Get AI Right | Ikram Rana";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Most AI adoption fails because businesses start with tools. This 4-phase framework fixes that. Process clarity, pilot, scale, governance. Used by 50+ businesses.");
-  }, []);
+  useHead("AI Adoption Framework: 4 Phases to Get AI Right", "A practical four-phase framework for businesses covering process clarity, responsible pilots, implementation, human oversight, and governance.");
 
   // Triple schema: Article + HowTo + FAQPage
   const articleSchema = {
