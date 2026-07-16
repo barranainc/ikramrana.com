@@ -162,7 +162,7 @@ export default function AiWorkflowSystems() {
 
           <div className="space-y-5 mb-6">
             {[
-              { title: "Accuracy standards", desc: "Define what percentage of workflow completions must produce the correct output before the system is considered production-ready. For most business workflows, 95% accuracy is the minimum acceptable threshold. Below this level, the error rate generates more remediation work than the automation saves." },
+              { title: "Accuracy standards", desc: "Define the required accuracy for the specific workflow before production. The threshold should reflect error consequences, review capacity, legal or contractual obligations, and the cost of remediation. A single universal percentage is not responsible for every task." },
               { title: "Exception handling policy", desc: "Define what constitutes an exception, where exceptions are routed, who is responsible for reviewing them, and what the resolution timeline is. Exception policies must be documented and tested before deployment." },
               { title: "Human oversight checkpoints", desc: "Identify the decision points in each workflow where human review is required regardless of the system's confidence level. High-consequence decisions: those affecting client relationships, financial commitments, or compliance obligations: should always include a human checkpoint." },
               { title: "Performance monitoring", desc: "Define what metrics are tracked, how frequently they are reviewed, what thresholds trigger alerts, and who is responsible for responding to alerts. Monitoring without defined response protocols is not governance." },
@@ -199,9 +199,9 @@ export default function AiWorkflowSystems() {
               </thead>
               <tbody>
                 {[
-                  ["Completion rate", "% of triggered workflows that complete without error", "< 95%"],
-                  ["Accuracy rate", "% of completions that produce the correct output", "< 95%"],
-                  ["Exception rate", "% of workflows requiring human intervention", "> 10%"],
+                  ["Completion rate", "% of triggered workflows that complete without error", "Below the approved workflow threshold"],
+                  ["Accuracy rate", "% of completions that produce the correct output", "Below the approved risk-based threshold"],
+                  ["Exception rate", "% of workflows requiring human intervention", "Above available human review capacity"],
                   ["Latency", "Time from trigger to completion", "2× baseline"],
                 ].map((row, i) => (
                   <tr key={i} className="border-b border-border/20 hover:bg-navy/20">
