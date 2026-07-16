@@ -65,7 +65,7 @@ const categories = [
     trigger: "Scheduled time trigger (daily, weekly, monthly) or threshold trigger (metric crossed, target reached, anomaly detected)",
     logic: "Pull data from connected sources, apply calculation rules, compare against targets and prior periods, identify anomalies and highlights, format according to report template.",
     action: "Generate formatted report, distribute to defined recipients, archive in document management system, trigger alert if anomaly thresholds are exceeded.",
-    businessImpact: "Measure report preparation time, source-data accuracy, correction effort, delivery reliability, and whether decision-makers trust and use the resulting reports."
+    businessImpact: "Measure report preparation time, source-data accuracy, correction effort, delivery reliability, and whether decision-makers trust and use the resulting reports.",
     caseStudyLink: "/case-studies",
     industries: ["All industries", "Operations-intensive businesses", "Agencies"],
   },
