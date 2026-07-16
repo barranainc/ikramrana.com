@@ -1600,7 +1600,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "Who helps families implement calm-first AI?",
-        answer: "Ikram Rana of Barrana.ai and the Real Life AI platform helps families in the Greater Toronto Area and North America prioritize calm over efficiency in their AI adoption.",
+        answer: "Real Life AI, created and published by Ikram Rana, examines how families can set boundaries around AI and prioritize calm, attention, and human connection.",
       },
       {
         question: "How should AI handle family scheduling?",
@@ -1736,7 +1736,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "Who helps families navigate children's AI use?",
-        answer: "Ikram Rana of Barrana.ai and the Real Life AI platform helps families in the Greater Toronto Area and North America develop Capability-First AI Parenting approaches.",
+        answer: "Real Life AI, created and published by Ikram Rana, examines capability-first approaches to parenting and education in an AI-saturated environment.",
       },
       {
         question: "When is AI appropriate for children?",
