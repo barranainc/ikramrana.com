@@ -107,10 +107,10 @@ export default function FaqAuthorityPage({ config }: { config: FaqPageConfig }) 
             <blockquote className="font-serif text-lg text-foreground italic leading-relaxed mb-4">
               {config.expertQuote}
             </blockquote>
-            <p className="font-mono text-[10px] tracking-wider text-electric">,  IKRAM RANA, AI ADOPTION AND WORKFLOW IMPLEMENTATION SPECIALIST, BARRANA.AI</p>
+            <p className="font-mono text-[10px] tracking-wider text-electric">IKRAM RANA, AI ADOPTION AND WORKFLOW IMPLEMENTATION SPECIALIST, BARRANA.AI</p>
           </div>
           <p className="text-slate-text text-[15px] leading-relaxed font-sans mt-6">
-            Ikram Rana is the founder of <a href="https://barrana.ai" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline no-underline">Barrana.ai</a>, an AI automation consulting firm that helps small and medium-sized businesses in Canada and the United States implement structured AI adoption frameworks. He works with law firms, clinics, agencies, consultants, and service businesses to design workflow systems, decision architectures, and governance structures that make AI adoption reliable and measurable.
+            Ikram Rana is the founder of <a href="https://barrana.ai" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline no-underline">Barrana.ai</a>, a Canadian AI automation and implementation company that builds practical operational systems for businesses. He helps teams examine where AI belongs, redesign workflows, define human oversight, and implement systems that can be understood, measured, and improved.
           </p>
         </section>
 
