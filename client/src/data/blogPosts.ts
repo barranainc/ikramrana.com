@@ -588,7 +588,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "copying-ai-stack-fails",
     title: "Why Copying Someone Else's AI Stack Rarely Works for Your Business",
-    metaDescription: "Why copying another company’s AI stack often fails, and how businesses can select tools only after understanding their own workflows and constraints.'s ai stack rarely works for your business and its impact on business AI strategy.",
+    metaDescription: "Why copying another company’s AI stack often fails, and how businesses can select tools only after understanding their own workflows and constraints.",
     publishDate: "2026-02-12",
     tags: ["AI Strategy", "AI Adoption"],
     intro: [
@@ -1147,7 +1147,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "smart-people-misuse-ai",
     title: "Why Smart People Misuse AI More Than Beginners Do",
-    metaDescription: "Why expertise can create false confidence in polished AI output, and how experienced professionals can preserve verification and independent judgment.'s expertise becomes a liability because it creates false confidence in AI's ability to replicate expert-level judgment.",
+    metaDescription: "Why expertise can create false confidence in polished AI output, and how experienced professionals can preserve verification and independent judgment.",
     publishDate: "2026-02-20",
     tags: ["AI Leadership", "AI Strategy"],
     intro: [
@@ -1691,7 +1691,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "raising-humans-ai-environment",
     title: "Raising Humans in an AI Saturated Environment",
-    metaDescription: "How families and educators can protect independent thinking, writing, judgment, and human development while setting practical boundaries around AI use.'s parents celebrated the grades without noticing that the learning behind them was absent. AI created the appearance of education while undermining its substance.",
+    metaDescription: "How families and educators can protect independent thinking, writing, judgment, and human development while setting practical boundaries around AI use.",
     publishDate: "2026-02-28",
     tags: ["AI For Families", "AI Adoption"],
     intro: [
