@@ -25,7 +25,7 @@ import HubExampleDiagram from '@/components/hub/HubExampleDiagram';
 import HubBusinessImpactDiagram from '@/components/hub/HubBusinessImpactDiagram';
 
 const BASE_URL = 'https://ikramrana.com';
-const TODAY = '2026-03-06';
+const LAST_REVIEWED = '2026-07-15';
 
 // Section metadata: icon, accent colour, label
 const SECTION_META: Record<string, { icon: string; accent: string; label: string; border: string }> = {
@@ -205,8 +205,7 @@ export default function KnowledgeHubPage() {
       name: 'IkramRana.com',
       url: BASE_URL,
     },
-    datePublished: TODAY,
-    dateModified: TODAY,
+    dateModified: LAST_REVIEWED,
   };
 
   const faqSchema = {
