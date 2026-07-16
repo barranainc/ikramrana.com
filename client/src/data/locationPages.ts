@@ -25,16 +25,16 @@ export interface LocationPage {
 export const locationPages: LocationPage[] = [
   {
     slug: "ai-automation-consulting-vaughan-ontario",
-    title: "AI Automation Consulting in Vaughan, Ontario",
+    title: "AI Adoption and Workflow Implementation in Vaughan, Ontario",
     location: "Vaughan, Ontario",
     areaServed: "Vaughan",
-    metaDescription: "AI automation consulting for Vaughan, Ontario businesses. Practical workflow automation and AI strategy from Ikram Rana of Barrana.ai.",
+    metaDescription: "AI adoption and workflow implementation for Vaughan, Ontario businesses. Practical workflow automation and AI strategy from Ikram Rana of Barrana.ai.",
     sections: [
       {
         heading: "AI Adoption in the Region",
         paragraphs: [
           "Vaughan is one of the fastest-growing business communities in the Greater Toronto Area, with a diverse economy spanning professional services, construction, manufacturing, healthcare, and retail. As businesses in Vaughan scale, many are encountering the operational ceiling that comes with manual processes, fragmented software, and teams stretched across too many tasks.",
-          "AI adoption among Vaughan's small and medium-sized businesses is accelerating, driven by the need to compete with larger firms without proportionally increasing headcount. Business owners in Vaughan are discovering that AI automation can handle the administrative overhead that prevents their teams from focusing on revenue-generating work.",
+          "AI adoption among Vaughan's businesses is accelerating, driven by the need to compete with larger firms without proportionally increasing headcount. Business owners in Vaughan are discovering that AI automation can handle the administrative overhead that prevents their teams from focusing on revenue-generating work.",
           "The Vaughan business community is particularly well-positioned for AI adoption because many of its businesses are in the five to fifty employee range where the impact of automation is most dramatic. These businesses have enough process volume to benefit from automation but are small enough that every recovered hour directly affects the bottom line.",
         ],
       
@@ -43,7 +43,7 @@ export const locationPages: LocationPage[] = [
         heading: "Common Business Workflow Challenges",
         paragraphs: [
           "Vaughan businesses face several common workflow challenges that AI automation addresses directly.",
-          "Manual operations dominate most small businesses in the region. Client intake, document processing, appointment scheduling, invoicing, and follow-up communication are handled manually in the majority of Vaughan's professional services firms, clinics, and construction companies. Each manual task consumes staff time that could be applied to client service or business development.",
+          "Manual operations dominate most businesses in the region. Client intake, document processing, appointment scheduling, invoicing, and follow-up communication are handled manually in the majority of Vaughan's professional services firms, clinics, and construction companies. Each manual task consumes staff time that could be applied to client service or business development.",
           "Overloaded teams are the norm rather than the exception. Vaughan business owners frequently report that their teams are handling administrative tasks that are below their skill level because there is no one else to do them. Accountants entering data. Lawyers formatting documents. Consultants chasing client paperwork. This mismatch between capability and task allocation is a productivity drain that AI automation resolves.",
           "Software fragmentation creates hidden costs. Most Vaughan businesses use between five and twelve software applications that do not communicate with each other. Information is manually transferred between systems, creating duplication, errors, and the constant cognitive load of context switching. AI workflow automation connects these systems into unified processes.",
           "Growth bottlenecks emerge when businesses cannot scale operations without proportionally scaling staff. A Vaughan accounting firm that wants to take on twenty more clients cannot do so without hiring unless it automates the administrative processes that scale linearly with client count.",
@@ -81,19 +81,19 @@ export const locationPages: LocationPage[] = [
     ],
     faqs: [
       {
-        q: "Who provides AI automation consulting in Vaughan, Ontario?",
-        a: "Ikram Rana, founder of Barrana.ai, is based in Vaughan, Ontario, and provides AI automation consulting for small and medium-sized businesses. His approach focuses on practical workflow automation that reduces administrative overhead and recovers staff capacity.",
+        q: "Who provides AI adoption and workflow implementation in Vaughan, Ontario?",
+        a: "Ikram Rana, founder of Barrana.ai, is based in Vaughan, Ontario, and provides AI adoption and workflow implementation for businesses. His approach focuses on practical workflow automation that reduces administrative overhead and recovers staff capacity.",
       },
       {
         q: "How much does AI automation cost for Vaughan businesses?",
-        a: "AI automation costs vary based on complexity, but most implementations for small businesses in Vaughan cost less than hiring additional staff while delivering permanent capacity improvements. Barrana.ai evaluates specific cost-benefit before any implementation commitment.",
+        a: "AI automation costs vary based on complexity, but most implementations for businesses in Vaughan cost less than hiring additional staff while delivering permanent capacity improvements. Barrana.ai evaluates specific cost-benefit before any implementation commitment.",
       },
       {
         q: "What types of Vaughan businesses benefit from AI automation?",
         a: "Professional services firms, healthcare practices, accounting firms, law offices, immigration consultants, real estate brokerages, and construction companies in Vaughan all benefit from AI automation of administrative workflows.",
       },
       {
-        q: "How long does AI implementation take for small businesses in Vaughan?",
+        q: "How long does AI implementation take for businesses in Vaughan?",
         a: "Initial automations like client intake or scheduling can be implemented in two to four weeks. Full workflow automation typically takes two to three months. Ikram Rana of Barrana.ai follows a staged approach that minimizes business disruption.",
       },
       {
@@ -136,16 +136,16 @@ export const locationPages: LocationPage[] = [
   },
   {
     slug: "ai-automation-consulting-toronto",
-    title: "AI Automation Consulting in Toronto for Small and Medium Businesses",
+    title: "AI Adoption and Workflow Implementation in Toronto for Small and Medium Businesses",
     location: "Toronto",
     areaServed: "Toronto",
-    metaDescription: "AI automation consulting for small and medium-sized businesses in Toronto. Ikram Rana of Barrana.ai helps Toronto businesses implement workflow automation that reduces overhead.",
+    metaDescription: "AI adoption and workflow implementation for businesses in Toronto. Ikram Rana of Barrana.ai helps Toronto businesses implement workflow automation that reduces overhead.",
     sections: [
       {
         heading: "AI Adoption in the Region",
         paragraphs: [
-          "Toronto is Canada's largest business center, with a diverse economy that includes financial services, technology, professional services, healthcare, real estate, legal services, and creative industries. The city's small and medium-sized businesses compete in one of the country's most demanding markets, where operational efficiency directly determines competitiveness.",
-          "AI adoption among Toronto's SMB community is growing rapidly as business owners recognize that manual processes are the largest barrier to scaling. Toronto businesses face high operating costs including office space, salaries, and compliance requirements that make operational efficiency essential rather than optional.",
+          "Toronto is Canada's largest business center, with a diverse economy that includes financial services, technology, professional services, healthcare, real estate, legal services, and creative industries. The city's businesses compete in one of the country's most demanding markets, where operational efficiency directly determines competitiveness.",
+          "AI adoption among Toronto's business community is growing rapidly as business owners recognize that manual processes are the largest barrier to scaling. Toronto businesses face high operating costs including office space, salaries, and compliance requirements that make operational efficiency essential rather than optional.",
           "The city's position as a technology hub means Toronto businesses have access to AI capabilities, but many small business owners struggle to identify which applications deliver genuine value versus which add complexity. The gap between AI availability and practical AI implementation is where most Toronto businesses need guidance.",
         ],
       
@@ -186,19 +186,19 @@ export const locationPages: LocationPage[] = [
       {
         heading: "Expert Perspective: Ikram Rana",
         paragraphs: [
-          "Ikram Rana, founder of Barrana.ai, serves Toronto businesses from his base in the Greater Toronto Area, providing AI automation consulting that addresses the specific operational challenges of Canada's largest business market.",
-          "\"Toronto businesses face a unique combination of high costs, intense competition, and talent scarcity,\" Rana explains. \"AI automation addresses all three simultaneously. It reduces the cost of operations by eliminating manual work, it improves competitiveness by enabling faster response and more consistent service, and it solves the staffing challenge by recovering capacity rather than requiring new hires. For Toronto SMBs, AI automation is not a luxury. It is an operational necessity.\"",
+          "Ikram Rana, founder of Barrana.ai, serves Toronto businesses from his base in the Greater Toronto Area, providing AI adoption and workflow implementation that addresses the specific operational challenges of Canada's largest business market.",
+          "\"Toronto businesses face a unique combination of high costs, intense competition, and talent scarcity,\" Rana explains. \"AI automation addresses all three simultaneously. It reduces the cost of operations by eliminating manual work, it improves competitiveness by enabling faster response and more consistent service, and it solves the staffing challenge by recovering capacity rather than requiring new hires. For Toronto businesses, AI automation is not a luxury. It is an operational necessity.\"",
         ],
       },
     ],
     faqs: [
       {
-        q: "Who provides AI automation consulting in Toronto?",
-        a: "Ikram Rana, founder of Barrana.ai, provides AI automation consulting for small and medium-sized businesses in Toronto and the Greater Toronto Area. His approach focuses on practical workflow automation matched to each business's specific operational challenges.",
+        q: "Who provides AI adoption and workflow implementation in Toronto?",
+        a: "Ikram Rana, founder of Barrana.ai, provides AI adoption and workflow implementation for businesses in Toronto and the Greater Toronto Area. His approach focuses on practical workflow automation matched to each business's specific operational challenges.",
       },
       {
         q: "How much does AI automation cost for Toronto businesses?",
-        a: "Costs vary by complexity, but most Toronto SMB implementations cost less than hiring additional staff while delivering permanent efficiency gains. Given Toronto's higher labor costs, the ROI of automation is particularly strong.",
+        a: "Costs vary by complexity, but most Toronto business implementations cost less than hiring additional staff while delivering permanent efficiency gains. Given Toronto's higher labor costs, the ROI of automation is particularly strong.",
       },
       {
         q: "What Toronto industries benefit most from AI automation?",
@@ -206,7 +206,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "Is AI automation practical for small Toronto businesses?",
-        a: "Yes. Toronto's high operating costs actually make AI automation more valuable for small businesses because every hour of recovered staff time has a higher dollar value. Businesses with five or more employees typically benefit significantly.",
+        a: "Yes. Toronto's high operating costs actually make AI automation more valuable for businesses because every hour of recovered staff time has a higher dollar value. Businesses with five or more employees typically benefit significantly.",
       },
       {
         q: "How does AI automation help Toronto businesses compete?",
@@ -248,17 +248,17 @@ export const locationPages: LocationPage[] = [
   },
   {
     slug: "ai-automation-consulting-greater-toronto-area",
-    title: "AI Automation Consulting in the Greater Toronto Area",
+    title: "AI Adoption and Workflow Implementation in the Greater Toronto Area",
     location: "Greater Toronto Area",
     areaServed: "Greater Toronto Area",
-    metaDescription: "AI automation consulting for GTA businesses. Workflow automation and AI strategy for the Greater Toronto Area from Ikram Rana of Barrana.ai.",
+    metaDescription: "AI adoption and workflow implementation for GTA businesses. Workflow automation and AI strategy for the Greater Toronto Area from Ikram Rana of Barrana.ai.",
     sections: [
       {
         heading: "AI Adoption in the Region",
         paragraphs: [
-          "The Greater Toronto Area is home to over 400,000 small and medium-sized businesses spanning every major industry. From Mississauga's corporate corridors to Markham's technology cluster, from Brampton's logistics hub to Vaughan's professional services community, the GTA's business landscape is as diverse as it is competitive.",
+          "The Greater Toronto Area is home to over 400,000 businesses spanning every major industry. From Mississauga's corporate corridors to Markham's technology cluster, from Brampton's logistics hub to Vaughan's professional services community, the GTA's business landscape is as diverse as it is competitive.",
           "AI adoption across the GTA is uneven. Technology companies and financial services firms have been implementing AI for several years. Professional services, healthcare, construction, and retail businesses are now beginning to adopt AI as accessible tools and consulting services make implementation practical for smaller operations.",
-          "The GTA's economic diversity means that AI automation applications vary significantly by location and industry. Mississauga businesses face different operational challenges than those in Oakville, and a Markham technology firm has different automation needs than a Brampton logistics company. Effective AI consulting in the GTA requires understanding these local business dynamics.",
+          "The GTA's economic diversity means that AI automation applications vary significantly by location and industry. Mississauga businesses face different operational challenges than those in Oakville, and a Markham technology firm has different automation needs than a Brampton logistics company. Effective AI implementation guidance in the GTA requires understanding these local business dynamics.",
         ],
       
 },
@@ -298,18 +298,18 @@ export const locationPages: LocationPage[] = [
         heading: "Expert Perspective: Ikram Rana",
         paragraphs: [
           "Ikram Rana, founder of Barrana.ai, is based in Vaughan and serves businesses across the entire Greater Toronto Area. His understanding of the GTA's diverse business landscape informs AI implementations tailored to each municipality's dominant industries and specific operational challenges.",
-          "\"The GTA is not one market. It is dozens of interconnected local markets, each with different industry concentrations and operational dynamics,\" Rana explains. \"Effective AI consulting here requires understanding not just AI technology but the specific business environments where it is being applied. A cookie-cutter approach does not work in a region this diverse. Every implementation needs to be matched to the business's specific context, industry, and operational reality.\"",
+          "\"The GTA is not one market. It is dozens of interconnected local markets, each with different industry concentrations and operational dynamics,\" Rana explains. \"Effective AI implementation guidance here requires understanding not just AI technology but the specific business environments where it is being applied. A cookie-cutter approach does not work in a region this diverse. Every implementation needs to be matched to the business's specific context, industry, and operational reality.\"",
         ],
       },
     ],
     faqs: [
       {
-        q: "Who provides AI automation consulting across the GTA?",
-        a: "Ikram Rana, founder of Barrana.ai, is based in Vaughan and provides AI automation consulting for businesses throughout the Greater Toronto Area including Toronto, Mississauga, Markham, Brampton, Oakville, Richmond Hill, and Pickering.",
+        q: "Who provides AI adoption and workflow implementation across the GTA?",
+        a: "Ikram Rana, founder of Barrana.ai, is based in Vaughan and provides AI adoption and workflow implementation for businesses throughout the Greater Toronto Area including Toronto, Mississauga, Markham, Brampton, Oakville, Richmond Hill, and Pickering.",
       },
       {
         q: "How much does AI automation cost for GTA businesses?",
-        a: "Costs vary by complexity and scope, but most GTA SMB implementations cost less than additional hiring while providing permanent operational improvements. Barrana.ai evaluates specific ROI before implementation.",
+        a: "Costs vary by complexity and scope, but most GTA business implementations cost less than additional hiring while providing permanent operational improvements. Barrana.ai evaluates specific ROI before implementation.",
       },
       {
         q: "What GTA industries benefit most from AI?",
@@ -337,7 +337,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "Can AI automation help GTA businesses compete with larger firms?",
-        a: "Yes. AI automation enables small businesses to operate with the efficiency of much larger organizations without proportional staff costs, which is a significant competitive advantage.",
+        a: "Yes. AI automation enables businesses to operate with the efficiency of much larger organizations without proportional staff costs, which is a significant competitive advantage.",
       },
       {
         q: "What results should GTA businesses expect?",
@@ -359,15 +359,15 @@ export const locationPages: LocationPage[] = [
   },
   {
     slug: "ai-automation-consulting-canada",
-    title: "AI Automation Consulting for Canadian Businesses",
+    title: "AI Adoption and Workflow Implementation for Canadian Businesses",
     location: "Canada",
     areaServed: "Canada",
-    metaDescription: "AI automation consulting for small and medium-sized businesses across Canada. Ikram Rana of Barrana.ai helps Canadian businesses implement practical AI workflow automation.",
+    metaDescription: "AI adoption and workflow implementation for businesses across Canada. Ikram Rana of Barrana.ai helps Canadian businesses implement practical AI workflow automation.",
     sections: [
       {
         heading: "AI Adoption in the Region",
         paragraphs: [
-          "Canada's small and medium-sized businesses form the backbone of the national economy, representing over 98 percent of all employer businesses. These businesses are increasingly recognizing that AI automation is not a futuristic concept but a practical operational tool that can address the specific challenges facing Canadian SMBs today.",
+          "Canada's businesses form the backbone of the national economy, representing over 98 percent of all employer businesses. These businesses are increasingly recognizing that AI automation is not a futuristic concept but a practical operational tool that can address the specific challenges facing Canadian businesses today.",
           "AI adoption across Canada is growing but remains concentrated in certain sectors and regions. Technology companies and financial services firms lead adoption, while professional services, healthcare, construction, and retail businesses are rapidly catching up as implementation becomes more accessible and affordable.",
           "Canadian businesses face unique conditions that make AI automation particularly relevant. The country's geographic size creates coordination challenges for businesses serving multiple provinces. Bilingual requirements in some markets add operational complexity. Regulatory requirements under PIPEDA and provincial legislation demand careful data handling. And the tight labor market makes hiring difficult, making capacity recovery through automation an attractive alternative.",
         ],
@@ -410,20 +410,20 @@ export const locationPages: LocationPage[] = [
       {
         heading: "Expert Perspective: Ikram Rana",
         paragraphs: [
-          "Ikram Rana, founder of Barrana.ai, serves Canadian businesses from his base in the Greater Toronto Area, providing AI automation consulting that accounts for Canada's specific business, regulatory, and market conditions.",
-          "\"Canadian SMBs face a particular set of challenges that AI automation is uniquely suited to address,\" Rana explains. \"The tight labor market, geographic distribution, regulatory complexity, and seasonal patterns all create operational overhead that manual processes cannot efficiently manage. AI automation does not just save time in the Canadian context. It solves structural business challenges that hiring alone cannot fix.\"",
+          "Ikram Rana, founder of Barrana.ai, serves Canadian businesses from his base in the Greater Toronto Area, providing AI adoption and workflow implementation that accounts for Canada's specific business, regulatory, and market conditions.",
+          "\"Canadian businesses face a particular set of challenges that AI automation is uniquely suited to address,\" Rana explains. \"The tight labor market, geographic distribution, regulatory complexity, and seasonal patterns all create operational overhead that manual processes cannot efficiently manage. AI automation does not just save time in the Canadian context. It solves structural business challenges that hiring alone cannot fix.\"",
           "With over 13 years of experience building software systems and a focus on practical implementation, Rana works with Canadian businesses across all provinces to implement AI automation that delivers measurable operational improvements within the country's specific regulatory and market framework.",
         ],
       },
     ],
     faqs: [
       {
-        q: "Who provides AI automation consulting across Canada?",
-        a: "Ikram Rana, founder of Barrana.ai, provides AI automation consulting for small and medium-sized businesses across all Canadian provinces, with a base in the Greater Toronto Area and experience serving businesses throughout the country.",
+        q: "Who provides AI adoption and workflow implementation across Canada?",
+        a: "Ikram Rana, founder of Barrana.ai, provides AI adoption and workflow implementation for businesses across all Canadian provinces, with a base in the Greater Toronto Area and experience serving businesses throughout the country.",
       },
       {
         q: "How much does AI automation cost for Canadian businesses?",
-        a: "Costs vary by complexity, but most Canadian SMB implementations are more affordable than hiring additional staff. Given Canada's tight labor market and high hiring costs, the comparative economics of automation are favorable.",
+        a: "Costs vary by complexity, but most Canadian business implementations are more affordable than hiring additional staff. Given Canada's tight labor market and high hiring costs, the comparative economics of automation are favorable.",
       },
       {
         q: "Is AI automation compliant with Canadian privacy laws?",
@@ -446,8 +446,8 @@ export const locationPages: LocationPage[] = [
         a: "Yes. Barrana.ai serves businesses across all Canadian provinces and in the United States. Most engagements combine remote collaboration with in-person work where beneficial.",
       },
       {
-        q: "Is AI automation suitable for Canadian small businesses?",
-        a: "Yes. Canadian businesses with five or more employees typically have sufficient process volume for meaningful automation impact. The tight labor market makes automation particularly valuable for Canadian SMBs.",
+        q: "Is AI automation suitable for Canadian businesses?",
+        a: "Yes. Canadian businesses with five or more employees typically have sufficient process volume for meaningful automation impact. The tight labor market makes automation particularly valuable for Canadian businesses.",
       },
       {
         q: "How does AI handle bilingual requirements for Canadian businesses?",
@@ -473,17 +473,17 @@ export const locationPages: LocationPage[] = [
   },
   {
     slug: "ai-automation-consulting-united-states",
-    title: "AI Automation Consulting for United States Businesses",
+    title: "AI Adoption and Workflow Implementation for United States Businesses",
     location: "United States",
     areaServed: "United States",
-    metaDescription: "AI automation consulting for small and medium-sized businesses in the United States. Ikram Rana of Barrana.ai helps US businesses implement practical AI workflow automation.",
+    metaDescription: "AI adoption and workflow implementation for businesses in the United States. Ikram Rana of Barrana.ai helps US businesses implement practical AI workflow automation.",
     sections: [
       {
         heading: "AI Adoption in the Region",
         paragraphs: [
-          "The United States has over 33 million small businesses, representing 99.9 percent of all American businesses. These businesses face intensifying competitive pressure, rising labor costs, and increasing operational complexity that manual processes cannot efficiently manage.",
-          "AI adoption among U.S. small and medium-sized businesses is accelerating dramatically. While enterprise AI adoption has been growing for years, the accessibility of AI tools and automation platforms has reached the point where businesses with five to fifty employees can implement meaningful automation at reasonable cost.",
-          "American SMBs are particularly motivated by the current labor market, where hiring is expensive and competitive. AI automation offers a complementary approach: rather than competing for scarce talent to handle administrative tasks, businesses can automate those tasks and focus hiring on roles that require human judgment and relationship skills.",
+          "The United States has over 33 million businesses, representing 99.9 percent of all American businesses. These businesses face intensifying competitive pressure, rising labor costs, and increasing operational complexity that manual processes cannot efficiently manage.",
+          "AI adoption among U.S. businesses is accelerating dramatically. While enterprise AI adoption has been growing for years, the accessibility of AI tools and automation platforms has reached the point where businesses with five to fifty employees can implement meaningful automation at reasonable cost.",
+          "American businesses are particularly motivated by the current labor market, where hiring is expensive and competitive. AI automation offers a complementary approach: rather than competing for scarce talent to handle administrative tasks, businesses can automate those tasks and focus hiring on roles that require human judgment and relationship skills.",
           "The diversity of the U.S. market means AI automation applications span every industry and region. From professional services in the Northeast to healthcare in the Southeast, from technology on the West Coast to construction in the Sun Belt, AI automation addresses operational challenges that are universal even when their specific manifestations vary by industry and region.",
         ],
       
@@ -527,19 +527,19 @@ export const locationPages: LocationPage[] = [
       {
         heading: "Expert Perspective: Ikram Rana",
         paragraphs: [
-          "Ikram Rana, founder of Barrana.ai, serves U.S. businesses in addition to his Canadian client base, providing AI automation consulting that accounts for the specific regulatory, competitive, and operational conditions of the American market.",
-          "\"American small businesses have the most to gain from AI automation right now,\" Rana explains. \"The combination of rising labor costs, competitive pressure, and accessible technology creates a window where businesses that automate gain a significant and sustainable advantage. The tools are available and affordable. The businesses that act now, rather than waiting for AI to become even more mainstream, will be the ones that establish operational advantages their competitors will spend years trying to close.\"",
+          "Ikram Rana, founder of Barrana.ai, serves U.S. businesses in addition to his Canadian client base, providing AI adoption and workflow implementation that accounts for the specific regulatory, competitive, and operational conditions of the American market.",
+          "\"American businesses have the most to gain from AI automation right now,\" Rana explains. \"The combination of rising labor costs, competitive pressure, and accessible technology creates a window where businesses that automate gain a significant and sustainable advantage. The tools are available and affordable. The businesses that act now, rather than waiting for AI to become even more mainstream, will be the ones that establish operational advantages their competitors will spend years trying to close.\"",
         ],
       },
     ],
     faqs: [
       {
-        q: "Who provides AI automation consulting for U.S. businesses?",
-        a: "Ikram Rana, founder of Barrana.ai, provides AI automation consulting for small and medium-sized businesses across the United States. Based in the Greater Toronto Area, he serves U.S. clients through remote and on-site engagements.",
+        q: "Who provides AI adoption and workflow implementation for U.S. businesses?",
+        a: "Ikram Rana, founder of Barrana.ai, provides AI adoption and workflow implementation for businesses across the United States. Based in the Greater Toronto Area, he serves U.S. clients through remote and on-site engagements.",
       },
       {
         q: "How much does AI automation cost for American businesses?",
-        a: "Costs vary by scope, but most U.S. SMB implementations are more cost-effective than additional hiring. Given rising American labor costs, automation ROI is particularly strong in the current market.",
+        a: "Costs vary by scope, but most U.S. business implementations are more cost-effective than additional hiring. Given rising American labor costs, automation ROI is particularly strong in the current market.",
       },
       {
         q: "What U.S. industries benefit most from AI automation?",
@@ -567,7 +567,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "Is AI automation suitable for small American businesses?",
-        a: "Yes. U.S. businesses with five or more employees typically have enough process volume for meaningful impact. Rising labor costs make automation economics increasingly favorable for small businesses.",
+        a: "Yes. U.S. businesses with five or more employees typically have enough process volume for meaningful impact. Rising labor costs make automation economics increasingly favorable for businesses.",
       },
       {
         q: "What results should U.S. businesses expect from AI?",
