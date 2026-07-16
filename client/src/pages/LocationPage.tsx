@@ -1,6 +1,6 @@
 /**
- * DESIGN: The Architect's Blueprint — LIGHT THEME
- * LOCATION PAGE TEMPLATE — /locations/:slug
+ * DESIGN: The Architect's Blueprint: LIGHT THEME
+ * LOCATION PAGE TEMPLATE: /locations/:slug
  * Blueprint aesthetic: dark navy bg, electric blue accents, mono labels, serif headings
  * Matches: KnowledgeHubPage, IndustryPage
  * Schema: Article + ProfessionalService + FAQPage
@@ -114,7 +114,7 @@ export default function LocationPage() {
           "@type": "Person",
           "name": "Ikram Rana",
           "url": "https://ikramrana.com",
-          "jobTitle": "AI Automation Strategist"
+          "jobTitle": "AI Adoption and Workflow Implementation Specialist"
         },
         "provider": {
           "@type": "Organization",
@@ -322,7 +322,7 @@ export default function LocationPage() {
                 Ready to automate your workflows in {page.location}?
               </h3>
               <p className="text-sm text-white/60 leading-relaxed mb-5 max-w-xl">
-                Book a strategy call with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan for your business.
+                Find the Workflow AI Should Fix First with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan for your business.
               </p>
               <a
                 href="https://calendly.com/ikramrana15"
@@ -330,7 +330,7 @@ export default function LocationPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-electric text-white font-mono text-xs tracking-wide hover:opacity-90 transition-opacity"
               >
-                Book a strategy call <ArrowRight size={12} />
+                Find the Workflow AI Should Fix First <ArrowRight size={12} />
               </a>
             </motion.div>
           </div>
@@ -409,7 +409,7 @@ export default function LocationPage() {
                   Book a call
                 </div>
                 <p className="text-xs text-white/55 leading-relaxed mb-4">
-                  Strategy call with Ikram Rana — evaluate your workflows and build a structured AI implementation plan.
+                  Strategy call with Ikram Rana: evaluate your workflows and build a structured AI implementation plan.
                 </p>
                 <a
                   href="https://calendly.com/ikramrana15"
