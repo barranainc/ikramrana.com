@@ -10,7 +10,7 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 
 const PILLAR_URL = "https://ikramrana.com/ai-adoption-framework-for-small-businesses";
-const TODAY = "2025-03-09";
+const LAST_REVIEWED = "2026-07-15";
 
 const phases = [
   {
@@ -258,7 +258,7 @@ export default function PillarPage() {
       "worksFor": { "@type": "Organization", "name": "Barrana.ai", "url": "https://barrana.ai" }
     },
     "publisher": { "@type": "Organization", "name": "IkramRana.com" },
-    "datePublished": TODAY,
+    "dateModified": LAST_REVIEWED,
     "url": PILLAR_URL,
     "about": [
       { "@type": "Thing", "name": "AI Adoption" },
