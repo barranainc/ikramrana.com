@@ -15,8 +15,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "Is AI expensive for businesses?",
-      a: "The cost depends on the workflow, existing systems, data, integrations, security requirements, and level of human oversight. Barrana's Discovery Stage is q: "Is AI expensive for businesses?",
-      a: ,500 CAD. If the client proceeds, that fee is credited toward the implementation price, which is quoted after discovery. Tool subscriptions are only one part of the total cost."
+      a: "The cost depends on the workflow, existing systems, data, integrations, security requirements, and level of human oversight. Barrana's Discovery Stage is $1,500 CAD. If the client proceeds, that fee is credited toward the implementation price, which is quoted after discovery. Tool subscriptions are only one part of the total cost."
     },
     {
       q: "Where should businesses start with AI?",
