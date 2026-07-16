@@ -756,15 +756,15 @@ export const industryPages: IndustryPage[] = [
       },
       {
         heading: `Implementation Approach`,
-        content: `Marketing agency AI automation is most effective when implemented in three phases. Phase one addresses reporting automation: connect all client platforms, configure automated data pulls, build report templates, and deploy automated delivery. This phase increases content production capacity without adding headcount.\nPhase three addresses campaign management: implement performance monitoring automation, threshold-based alerting, and routine optimization automation. This phase reduces the reactive time spent monitoring campaigns and increases the proactive time spent on strategy.\nThe sequencing matters. Reporting automation has the clearest ROI and the lowest implementation risk, making it the right starting point. Content and campaign automation require more configuration and testing before they deliver reliable results. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.`,
+        content: `Begin by documenting the workflow, its inputs, decisions, exceptions, systems, and owners. Establish a baseline for time, correction work, delays, and service quality. Test one limited workflow with representative cases and clear human review. Expand only when the system meets approved risk-based criteria and the people responsible can operate and monitor it.`,
       },
       {
-        heading: `Results Marketing Agencies Achieve`,
-        content: `Marketing agencies that implement AI automation systematically achieve measurable results across three dimensions. Margin improvement: the ratio of revenue to headcount improves as operational tasks are automated, increasing profitability per engagement.\nAgencies also report improved client satisfaction from faster reporting delivery and more consistent communication. Automated reporting systems deliver reports on schedule regardless of team workload, eliminating the delays that occur when manual reporting competes with campaign work during busy periods. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.`,
+        heading: `What to Measure`,
+        content: `Measure the complete workflow rather than the speed of one automated step. Useful measures for Marketing Agencies include staff time, correction effort, missed handoffs, response quality, adoption, exceptions, operating cost, and client impact. Results should be compared with the organization’s own baseline and should include monitoring and maintenance effort.`,
       },
       {
         heading: `Working with Barrana.ai`,
-        content: `Ikram Rana of Barrana.ai has implemented AI automation for marketing agencies across Canada and the United States. The implementation approach begins with a workflow audit to identify the highest-value automation opportunities, followed by a phased implementation that starts with reporting automation and expands to content and campaign management.\nBarrana.ai's implementation methodology ensures that automation is built on documented processes with explicit exception handling, so the systems operate reliably without constant maintenance. Agencies receive training on managing and extending their automation systems, building internal capability rather than creating ongoing dependency.`,
+        content: `Barrana offers discovery, workflow analysis, implementation design, and practical governance support for Marketing Agencies. The work begins by determining whether AI belongs in the workflow, what must remain human, which controls are required, and how value will be measured before an implementation scope is proposed.`,
       },
     ],
     faqs: [
@@ -803,15 +803,15 @@ export const industryPages: IndustryPage[] = [
       },
       {
         heading: `Implementation Approach`,
-        content: `Consultant AI automation is most effective when built around a knowledge base: a structured repository of the consultant's frameworks, case studies, credentials, and methodology. This knowledge base becomes the foundation for proposal generation, research synthesis, and client communication automation.\nPhase one builds the knowledge base and implements proposal generation automation. The consultant documents their core frameworks, case studies, and credentials in a structured format. AI automation uses this knowledge base to generate proposal first drafts from brief inputs. Phase three implements client communication automation: routine touchpoints, status updates, and follow-up sequences are handled automatically within defined parameters. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.`,
+        content: `Begin by documenting the workflow, its inputs, decisions, exceptions, systems, and owners. Establish a baseline for time, correction work, delays, and service quality. Test one limited workflow with representative cases and clear human review. Expand only when the system meets approved risk-based criteria and the people responsible can operate and monitor it.`,
       },
       {
-        heading: `Results Consultants Achieve`,
-        content: `Consultants that implement AI automation systematically achieve measurable results. The automation handles the consistency; the consultant handles the judgment. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.`,
+        heading: `What to Measure`,
+        content: `Measure the complete workflow rather than the speed of one automated step. Useful measures for Consultants include staff time, correction effort, missed handoffs, response quality, adoption, exceptions, operating cost, and client impact. Results should be compared with the organization’s own baseline and should include monitoring and maintenance effort.`,
       },
       {
         heading: `Working with Barrana.ai`,
-        content: `Ikram Rana of Barrana.ai works with independent consultants and small consulting practices to implement AI automation that increases billable capacity and improves deliverable quality. The implementation begins with a practice audit to identify the highest-value automation opportunities, followed by knowledge base development and phased automation implementation.\nThe approach is designed for consultants who want to build internal capability rather than create ongoing dependency. After implementation, consultants can extend and maintain their automation systems independently.`,
+        content: `Barrana offers discovery, workflow analysis, implementation design, and practical governance support for Consultants. The work begins by determining whether AI belongs in the workflow, what must remain human, which controls are required, and how value will be measured before an implementation scope is proposed.`,
       },
     ],
     faqs: [
@@ -847,15 +847,15 @@ export const industryPages: IndustryPage[] = [
       },
       {
         heading: `Implementation Approach`,
-        content: `Coach AI automation is most effective when built around the client journey: the sequence of touchpoints from initial inquiry through program completion. Mapping this journey is the first step in implementation.\nPhase one implements onboarding automation: intake forms, file creation, scheduling, and welcome sequence. This phase recovers the most time immediately and improves the first impression clients have of the practice.\nPhase two implements between-session support automation: check-in sequences, resource delivery, and accountability tracking. This phase improves client outcomes by ensuring consistent support between sessions without consuming coach capacity.\nPhase three implements session preparation automation: briefing document generation, progress tracking, and renewal sequence automation. This phase reduces the administrative time around each session and improves session quality through better preparation.`,
+        content: `Begin by documenting the workflow, its inputs, decisions, exceptions, systems, and owners. Establish a baseline for time, correction work, delays, and service quality. Test one limited workflow with representative cases and clear human review. Expand only when the system meets approved risk-based criteria and the people responsible can operate and monitor it.`,
       },
       {
-        heading: `Results Coaches Achieve`,
-        content: `Coaches that implement AI automation systematically achieve measurable results. Between-session support: consistent touchpoints delivered to all clients without additional coach time. The automation handles the consistency; the coach handles the transformation. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.`,
+        heading: `What to Measure`,
+        content: `Measure the complete workflow rather than the speed of one automated step. Useful measures for Coaches include staff time, correction effort, missed handoffs, response quality, adoption, exceptions, operating cost, and client impact. Results should be compared with the organization’s own baseline and should include monitoring and maintenance effort.`,
       },
       {
         heading: `Working with Barrana.ai`,
-        content: `Ikram Rana of Barrana.ai works with coaches across specializations to implement AI automation that increases client capacity and improves client experience. The implementation begins with a client journey audit to identify the highest-value automation opportunities.\nThe approach is designed for coaches who want to serve more clients without burning out. After implementation, coaches have systems that handle the operational work automatically, freeing their energy for the coaching relationships that create transformation.`,
+        content: `Barrana offers discovery, workflow analysis, implementation design, and practical governance support for Coaches. The work begins by determining whether AI belongs in the workflow, what must remain human, which controls are required, and how value will be measured before an implementation scope is proposed.`,
       },
     ],
     faqs: [
