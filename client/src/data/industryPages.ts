@@ -216,7 +216,7 @@ export const industryPages: IndustryPage[] = [
     sections: [
       {
         heading: `Industry Workflow Overview`,
-        content: `Physiotherapy clinics operate on appointment-based revenue models where every unfilled slot represents lost income. Improving utilization by even 10 percentage points can significantly increase revenue without adding clinicians or expanding space. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.`,
+        content: `Physiotherapy clinics operate on appointment-based revenue models where every unfilled slot represents lost income. Improving appropriate appointment utilization can support revenue without automatically requiring more clinicians or space, but the effect must be measured against the clinic’s own baseline. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.`,
       },
       {
         heading: `Operational Problems`,
@@ -288,7 +288,7 @@ export const industryPages: IndustryPage[] = [
     { label: 'process automation', href: '/ai-dictionary/process-automation' },
     { label: 'AI workflow', href: '/ai-dictionary/ai-workflow' },
     { label: 'Illustrative AI use case: property management workflow', href: '/case-studies/ai-automation-case-study-property-management' },
-    { label: 'How a veterinary clinic reduced admin by 18 hours per week', href: '/case-studies/ai-automation-case-study-veterinary-clinic' },
+    { label: 'Illustrative AI use case: veterinary clinic workflow', href: '/case-studies/ai-automation-case-study-veterinary-clinic' },
     { label: 'AI automation for dental clinics', href: '/industries/ai-automation-for-dental-clinics' },
     { label: 'AI for businesses in Vaughan, Ontario', href: '/locations/ai-automation-consulting-vaughan-ontario' },
     { label: 'AI for businesses in the Greater Toronto Area', href: '/locations/ai-automation-consulting-greater-toronto-area' },
@@ -554,7 +554,7 @@ export const industryPages: IndustryPage[] = [
     { label: 'process automation', href: '/ai-dictionary/process-automation' },
     { label: 'AI workflow', href: '/ai-dictionary/ai-workflow' },
     { label: 'Illustrative AI use case: property management workflow', href: '/case-studies/ai-automation-case-study-property-management' },
-    { label: 'How a veterinary clinic reduced admin by 18 hours per week', href: '/case-studies/ai-automation-case-study-veterinary-clinic' },
+    { label: 'Illustrative AI use case: veterinary clinic workflow', href: '/case-studies/ai-automation-case-study-veterinary-clinic' },
     { label: 'AI automation for physiotherapy clinics', href: '/industries/ai-automation-for-physiotherapy-clinics' },
     { label: 'AI for businesses in Vaughan, Ontario', href: '/locations/ai-automation-consulting-vaughan-ontario' },
     { label: 'AI for businesses in the Greater Toronto Area', href: '/locations/ai-automation-consulting-greater-toronto-area' },
