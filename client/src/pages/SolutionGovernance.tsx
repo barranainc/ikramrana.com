@@ -103,18 +103,18 @@ export default function SolutionGovernance() {
 
         {/* Example Implementation */}
         <motion.div {...fadeUp} className="mb-12">
-          <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">Example Implementation</h2>
+          <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">Illustrative Governance Scenario</h2>
           <div className="rounded-2xl border border-border bg-card p-7">
             <p className="text-foreground/85 leading-relaxed mb-5">
-              A regulated advisory firm used AI to draft client recommendations but had no override logging.
+              Consider a hypothetical regulated advisory firm using AI-assisted drafting without reliable override logging.
             </p>
             <p className="text-foreground/85 leading-relaxed mb-6">
-              We implemented decision ownership mapping, escalation triggers, and automated audit logs.
+              A possible design would map decision ownership, define escalation triggers, and create audit logs for review and reconstruction.
             </p>
             <div>
-              <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-burgundy block mb-3">Result</span>
+              <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-burgundy block mb-3">Measures to Establish</span>
               <ul className="space-y-2">
-                {["Full reconstruction of any decision in under 3 minutes", "Clear accountability trail", "Reduced internal review time by 28 percent"].map((r, i) => (
+                {["Time required to reconstruct a decision", "Completeness of ownership and override records", "Internal review effort before and after implementation"].map((r, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-foreground/85">
                     <span className="w-1 h-1 rounded-full bg-burgundy mt-2 shrink-0" />
                     {r}
