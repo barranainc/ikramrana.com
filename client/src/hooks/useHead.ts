@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
 const BRAND_SUFFIX = " | Ikram Rana";
-const DEFAULT_TITLE = "Ikram Rana — AI Automation Strategist for Businesses";
+const DEFAULT_TITLE = "Ikram Rana | AI Adoption and Workflow Implementation";
 const DEFAULT_DESCRIPTION =
-  "Helping businesses implement AI automation, workflow systems, and AI adoption frameworks. Practical guidance and implementation support from Ikram Rana of Barrana.ai.";
+  "Helping businesses move from scattered AI experiments to working systems their teams actually use. Critical, practical guidance from Ikram Rana.";
 
 /**
  * Sets document.title and meta description on mount.
