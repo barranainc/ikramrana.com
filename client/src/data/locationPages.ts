@@ -55,7 +55,7 @@ export const locationPages: LocationPage[] = [
           "AI automation helps Vaughan businesses by eliminating the administrative work that consumes the most staff time while delivering the least business value.",
           "Professional services firms in Vaughan can use AI for intake, document preparation, scheduling, and billing support. Any claimed capacity recovery should be measured from the firm’s own baseline and should include review, correction, and exception-handling time.",
           "Healthcare practices including physiotherapy clinics and dental offices in the Vaughan area implement AI for patient scheduling, intake processing, insurance verification, and recall management. These automations directly increase chair or treatment room utilization, which is the primary revenue driver for clinical practices.",
-          "Construction companies operating from Vaughan use AI automation for estimating support, document management, change order tracking, and subcontractor coordination. The construction industry in the GTA generates enormous paperwork volume, and AI automation reduces project administrative overhead by 30 to 50 percent.",
+          "Construction companies operating from Vaughan use AI automation for estimating support, document management, change order tracking, and subcontractor coordination. Construction work generates substantial documentation, but any reduction in administrative overhead depends on process design, adoption, integrations, and the project baseline.",
           "Real estate professionals in Vaughan's active market use AI for lead qualification, showing scheduling, transaction document tracking, and client communication management. In a market where speed to lead determines conversion, automated lead response provides a measurable competitive advantage.",
         ],
       },
@@ -118,7 +118,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "What results should Vaughan businesses expect from AI automation?",
-        a: "Businesses typically see 30 to 60 percent reduction in administrative time, faster client response, fewer errors, and the ability to handle more clients or patients without proportional staff increases.",
+        a: "Possible outcomes include less administrative handling, faster response, fewer avoidable errors, and additional operating capacity. Each result must be measured against the business’s own baseline.",
       },
     ],
   relatedLinks: [
@@ -230,7 +230,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "What results should Toronto businesses expect from AI?",
-        a: "30 to 60 percent reduction in administrative time, faster client response, more consistent compliance processes, and ability to handle more business without proportional staff increases.",
+        a: "Possible outcomes include less administrative handling, faster response, more consistent records, and additional operating capacity. No universal result should be promised without a documented baseline.",
       },
     ],
   relatedLinks: [
@@ -341,7 +341,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "What results should GTA businesses expect?",
-        a: "30 to 60 percent reduction in administrative time, faster client service, fewer operational errors, and the capacity to grow without proportional hiring.",
+        a: "Possible outcomes include less administrative handling, faster client service, fewer avoidable errors, and additional capacity. Results depend on the workflow and must be measured after implementation.",
       },
     ],
   relatedLinks: [
@@ -455,7 +455,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "What results should Canadian businesses expect from AI?",
-        a: "30 to 60 percent reduction in administrative time, more consistent regulatory processes consistency, ability to manage seasonal peaks without hiring, and capacity to grow without proportional staff increases.",
+        a: "Possible outcomes include less administrative handling, more consistent records, and better management of seasonal workload. Results depend on the workflow, controls, and actual adoption.",
       },
     ],
   relatedLinks: [
