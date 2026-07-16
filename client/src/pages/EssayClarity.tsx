@@ -1,5 +1,5 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * ESSAY: Speed Is Not the Problem. Clarity Is.
  */
 import { Link } from "wouter";
@@ -52,8 +52,8 @@ export default function EssayClarity() {
           </p>
           <ul className="space-y-4 mb-6 pl-0">
             {[
-              { title: "Decision clarity", body: "For every decision that needs to be made, there is a defined owner — a specific person or role, not a team or committee — who has the authority and the information to make it." },
-              { title: "Completion clarity", body: "For every task, there is a defined standard for what 'done' means. Not 'done enough' or 'done for now' — a specific, verifiable state that both the task owner and the task recipient can agree on." },
+              { title: "Decision clarity", body: "For every decision that needs to be made, there is a defined owner: a specific person or role, not a team or committee: who has the authority and the information to make it." },
+              { title: "Completion clarity", body: "For every task, there is a defined standard for what 'done' means. Not 'done enough' or 'done for now': a specific, verifiable state that both the task owner and the task recipient can agree on." },
               { title: "Handoff clarity", body: "For every transition between people, teams, or systems, there is a defined protocol: what information transfers, in what format, to whom, by when, and what happens if the handoff fails." },
             ].map((item, i) => (
               <li key={i} className="flex gap-3 text-foreground/85 leading-relaxed list-none">
@@ -95,7 +95,7 @@ export default function EssayClarity() {
             This work is not glamorous. It involves difficult conversations about ownership, accountability, and standards. It surfaces disagreements that have been avoided. It requires decisions that people have been deferring.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            But organizations that do this work before implementing AI find that the AI implementation is faster, smoother, and more effective than those that skip it. And they often find that the clarity work alone — before any AI is involved — has already made them significantly faster. The speed problem, it turns out, was a clarity problem all along.
+            But organizations that do this work before implementing AI find that the AI implementation is faster, smoother, and more effective than those that skip it. And they often find that the clarity work alone: before any AI is involved: has already made them significantly faster. The speed problem, it turns out, was a clarity problem all along.
           </p>
         </motion.div>
 
