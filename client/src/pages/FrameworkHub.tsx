@@ -1,8 +1,8 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
- * FRAMEWORK HUB PAGE — /framework/
+ * DESIGN: The Architect's Blueprint: Light Theme
+ * FRAMEWORK HUB PAGE: /framework/
  * Hub linking to: Foundational Essay, The Model, Governance, Dictionary
- * Each has its own layout and URL — this page just routes users cleanly.
+ * Each has its own layout and URL: this page just routes users cleanly.
  */
 
 import { Link } from "wouter";
@@ -21,7 +21,7 @@ const frameworkPages = [
   {
     icon: BookOpen,
     label: "Foundational Essay",
-    meta: "§01 — Where I Stand",
+    meta: "§01: Where I Stand",
     title: "Where I Stand on AI Adoption, Operational Excellence, and Regulatory Integrity",
     desc: "The canonical statement of my position. Start here if you are new to this work. Covers why AI is fundamentally a governance problem, not a software purchase.",
     href: "/foundational-essay",
@@ -34,9 +34,9 @@ const frameworkPages = [
   {
     icon: Layers,
     label: "The Three-Layer Model",
-    meta: "§02 — Framework",
+    meta: "§02: Framework",
     title: "Execution · Judgment · Compliance",
-    desc: "A decision-systems framework for AI adoption. Automate execution, protect judgment, embed compliance as the architectural foundation — not the audit.",
+    desc: "A decision-systems framework for AI adoption. Automate execution, protect judgment, embed compliance as the architectural foundation: not the audit.",
     href: "/the-model",
     readTime: "18 min read",
     accent: "text-electric",
@@ -47,9 +47,9 @@ const frameworkPages = [
   {
     icon: Shield,
     label: "Governance-by-Design",
-    meta: "§03 — Application",
+    meta: "§03: Application",
     title: "Governance is Architecture, Not Paperwork",
-    desc: "How to embed compliance as a design property of the system itself — so your system is compliant by construction, not just by intention.",
+    desc: "How to embed compliance as a design property of the system itself: so your system is compliant by construction, not just by intention.",
     href: "/governance",
     readTime: "12 min read",
     accent: "text-burgundy",
@@ -60,7 +60,7 @@ const frameworkPages = [
   {
     icon: BookMarked,
     label: "Dictionary",
-    meta: "§04 — Definitions",
+    meta: "§04: Definitions",
     title: "Key Terms in AI Decision Systems",
     desc: "Precise definitions for the vocabulary used across this framework: Judgment Gap, Compliance Debt, Layer Bleed, Automation Creep, and 16 more.",
     href: "/dictionary",
@@ -97,9 +97,9 @@ export default function FrameworkHub() {
               <p>AI fails when execution outruns accountability.</p>
               <p>Every system I build follows three layers:</p>
               <div className="pl-4 border-l-2 border-electric/30 space-y-2 my-4">
-                <p className="text-foreground"><span className="font-semibold text-electric">Execution</span> — what AI automates</p>
-                <p className="text-foreground"><span className="font-semibold text-burgundy">Judgment</span> — what humans must own</p>
-                <p className="text-foreground"><span className="font-semibold text-emerald-600">Compliance</span> — what the system enforces</p>
+                <p className="text-foreground"><span className="font-semibold text-electric">Execution</span>: what AI automates</p>
+                <p className="text-foreground"><span className="font-semibold text-burgundy">Judgment</span>: what humans must own</p>
+                <p className="text-foreground"><span className="font-semibold text-emerald-600">Compliance</span>: what the system enforces</p>
               </div>
               <p>If those layers blur, risk increases.</p>
             </div>
