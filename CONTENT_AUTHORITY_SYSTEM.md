@@ -109,7 +109,7 @@ Before publication:
 - Blog articles: `client/src/data/blogPosts.ts`
 - Industry guides: `client/src/data/industryPages.ts`
 - Illustrative use cases: `client/src/data/caseStudies.ts`
-- Knowledge pages: `client/src/data/knowledgeHub.ts`
+- Knowledge pages: `client/src/data/hubPages.ts`
 - Routes: `client/src/App.tsx`
 - Sitemap: `client/public/sitemap.xml`
 - Machine-readable guide: `client/public/llms.txt`
