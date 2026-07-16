@@ -64,7 +64,7 @@ export default function AiWorkflowSystems() {
           <div className="flex flex-wrap justify-center gap-4">
             <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
               className="px-8 py-3 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-              BOOK A STRATEGY CALL →
+              FIND THE WORKFLOW AI SHOULD FIX FIRST →
             </a>
             <a href="#architecture" className="px-8 py-3 border border-electric/40 text-electric font-mono text-sm tracking-wider hover:bg-electric/10 transition-colors no-underline">
               VIEW ARCHITECTURE
@@ -85,7 +85,7 @@ export default function AiWorkflowSystems() {
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Most businesses that struggle with AI adoption have the same problem: they have tools without systems. They have a chatbot that handles inquiries, a scheduling tool that books appointments, and a document processor that extracts data: but these tools operate independently, require separate interfaces, and create more coordination work than they eliminate.</p>
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">An AI workflow system connects these capabilities into a coherent process. When a client submits an inquiry, the system qualifies the lead, creates a CRM record, schedules a consultation, sends a confirmation, and routes the case file to the appropriate team member: without human intervention at any step. The tools are the same; the system is what makes them work together.</p>
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Ikram Rana of Barrana.ai describes the distinction this way: "A tool handles a task. A system handles a process. Most businesses buy tools when they need systems. The result is a collection of capabilities that require more coordination than they eliminate."</p>
-          <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the foundational framework that governs workflow system design, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Small Businesses</Link>.</p>
+          <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the foundational framework that governs workflow system design, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Businesses</Link>.</p>
         </section>
 
         <div className="border-t border-border/20 mb-14" />
@@ -244,7 +244,7 @@ export default function AiWorkflowSystems() {
           <h2 className="font-serif text-xl font-bold text-foreground mb-6">Continue Your Research</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
-              { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+              { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
               { label: "AI Automation for Business", href: "/ai-automation-for-business" },
               { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
               { label: "AI Workflow Automation: Knowledge Hub", href: "/ai-knowledge-hub/what-is-ai-workflow-automation" },
@@ -269,13 +269,13 @@ export default function AiWorkflowSystems() {
             "Most businesses buy tools when they need systems. A tool handles a task. A system handles a process. The difference is architecture: and architecture is what makes automation scale."
           </blockquote>
           <p className="font-mono text-[11px] tracking-wider text-electric mb-8">,  IKRAM RANA, FOUNDER, BARRANA.AI</p>
-          <h2 className="font-serif text-2xl font-bold text-white mb-4">Book a Strategy Call</h2>
+          <h2 className="font-serif text-2xl font-bold text-white mb-4">Find the Workflow AI Should Fix First</h2>
           <p className="text-slate-300 text-base leading-relaxed max-w-xl mx-auto mb-8">
             Design your AI workflow architecture with Ikram Rana of Barrana.ai. Assess your current processes and identify the system design that will deliver the most reliable results.
           </p>
           <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-            BOOK A STRATEGY CALL →
+            FIND THE WORKFLOW AI SHOULD FIX FIRST →
           </a>
         </section>
 
