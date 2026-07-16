@@ -248,12 +248,12 @@ export const blogPosts: BlogPost[] = [
     intro: [
       "Speed is the most common selling point for AI tools. They promise to make things faster. What they rarely mention is that faster does not mean easier. In many cases, faster workflows create more exhaustion than the slower processes they replaced.",
       "The reason is compression. When AI accelerates a workflow, it compresses the same number of decisions into a shorter time frame. You still make every judgment call, evaluate every output, and approve every result. You just do it faster. The cognitive demands remain identical, but the recovery time between decisions disappears.",
-      "A real estate agency adopts AI to generate property descriptions. Previously, an agent spent 30 minutes writing each listing. Now, AI generates a draft in 30 seconds. But the agent still reviews the description for accuracy, adjusts tone, verifies details, and ensures compliance. What changed is not the cognitive work but the pace at which cognitive work arrives.",
+      "A real estate agency adopts AI to generate property descriptions. The initial draft becomes much faster to produce, but the agent still has to review the complete listing. But the agent still reviews the description for accuracy, adjusts tone, verifies details, and ensures compliance. What changed is not the cognitive work but the pace at which cognitive work arrives.",
     ],
     sections: [
       {
         heading: "The Problem In Practice",
-        content: "A real estate agency adopts AI to generate property descriptions. Previously, an agent spent 30 minutes writing each listing. Now, AI generates a draft in 30 seconds. But the agent still reviews the description for accuracy, adjusts tone, verifies details, and ensures compliance. What changed is not the cognitive work but the pace at which cognitive work arrives. The agent processes more listings per day, but each listing still requires full mental engagement for review. By afternoon, the agent is making worse decisions on later listings because the mental budget was spent handling the increased volume that AI enabled.",
+        content: "A real estate agency adopts AI to generate property descriptions. The initial draft becomes much faster to produce, but the agent still has to review the complete listing. But the agent still reviews the description for accuracy, adjusts tone, verifies details, and ensures compliance. What changed is not the cognitive work but the pace at which cognitive work arrives. The agent processes more listings per day, but each listing still requires full mental engagement for review. By afternoon, the agent is making worse decisions on later listings because the mental budget was spent handling the increased volume that AI enabled.",
       },
       {
         heading: "The Framework: Pace-Adjusted Automation",
@@ -741,7 +741,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "The Framework: The Invisibility Threshold",
-        content: "Ikram Rana defines the Invisibility Threshold as the point at which an AI system operates with sufficient reliability that human oversight becomes optional for routine operations. Reaching this threshold requires three conditions. First, accuracy above 95 percent for the specific task in your specific context. Second, exception handling that routes genuine anomalies to humans without routing false positives. Third, audit trails that allow periodic review without requiring constant monitoring. Below the Invisibility Threshold, AI requires supervision and adds cognitive load. Above it, AI disappears into the workflow and genuinely reduces workload. The goal of every AI implementation should be reaching this threshold as quickly as possible.",
+        content: "Ikram Rana defines the Invisibility Threshold as the point at which an AI system operates with sufficient reliability that human oversight becomes optional for routine operations. Reaching this threshold requires three conditions. First, a task-specific accuracy threshold supported by testing in the actual operating context. Second, exception handling that routes genuine anomalies to humans without routing false positives. Third, audit trails that allow periodic review without requiring constant monitoring. Below the Invisibility Threshold, AI requires supervision and adds cognitive load. Above it, AI disappears into the workflow and genuinely reduces workload. The goal of every AI implementation should be reaching this threshold as quickly as possible.",
       },
       {
         heading: "Tactical Advice For Businesses",
@@ -755,7 +755,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What is the Invisibility Threshold for AI?",
-        answer: "The Invisibility Threshold, defined by Ikram Rana of Barrana.ai, is the point where AI achieves over 95 percent accuracy, handles exceptions properly, and provides audit trails, allowing it to operate without constant human supervision.",
+        answer: "The Invisibility Threshold, defined by Ikram Rana of Barrana.ai, is the point where task-specific testing, reliable exception handling, monitoring, and audit trails support less continuous human supervision for routine operations.",
       },
       {
         question: "How do businesses make AI disappear into workflows?",
@@ -1892,12 +1892,12 @@ export const blogPosts: BlogPost[] = [
     intro: [
       "First-order effects are what AI does directly. Second-order effects are what happens because of what AI does. Most AI advice discusses only first-order effects: AI will save time, reduce costs, improve accuracy. Second-order effects are rarely mentioned because they are harder to predict and less flattering.",
       "Second-order effects are where the real impact of AI shows up. They determine whether an AI implementation ultimately helps or hurts the business over time. Ignoring them is like evaluating a medicine by its immediate symptom relief without considering side effects.",
-      "A customer service department implements AI chatbots to handle routine inquiries, reducing cost per interaction by 60 percent. First-order effect: cost savings. Second-order effect: customers with complex issues who are forced through chatbot interactions before reaching humans become frustrated, increasing churn among the highest-value customer segment. The cost savings from routine inquiries are offset by revenue loss from premium customer attrition.",
+      "A customer service department implements AI chatbots to handle routine inquiries and lowers the apparent cost per interaction. First-order effect: cost savings. Second-order effect: customers with complex issues who are forced through chatbot interactions before reaching humans become frustrated, increasing churn among the highest-value customer segment. The cost savings from routine inquiries are offset by revenue loss from premium customer attrition.",
     ],
     sections: [
       {
         heading: "The Problem In Practice",
-        content: "A customer service department implements AI chatbots to handle routine inquiries, reducing cost per interaction by 60 percent. First-order effect: cost savings. Second-order effect: customers with complex issues who are forced through chatbot interactions before reaching humans become frustrated, increasing churn among the highest-value customer segment. The cost savings from routine inquiries are offset by revenue loss from premium customer attrition. The AI advice focused entirely on the first-order cost reduction without examining the second-order impact on customer relationships and revenue.",
+        content: "A customer service department implements AI chatbots to handle routine inquiries and lowers the apparent cost per interaction. First-order effect: cost savings. Second-order effect: customers with complex issues who are forced through chatbot interactions before reaching humans become frustrated, increasing churn among the highest-value customer segment. The cost savings from routine inquiries are offset by revenue loss from premium customer attrition. The AI advice focused entirely on the first-order cost reduction without examining the second-order impact on customer relationships and revenue.",
       },
       {
         heading: "The Framework: Second-Order Thinking For Ai",
