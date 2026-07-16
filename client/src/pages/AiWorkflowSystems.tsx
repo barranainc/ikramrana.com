@@ -3,7 +3,7 @@
  * /ai-workflow-systems: 2500–3500 words, 10 FAQs, schema, internal links
  */
 
-import { useEffect } from "react";
+import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 
 const PAGE_URL = "https://ikramrana.com/ai-workflow-systems";
@@ -22,11 +22,7 @@ const faqs = [
 ];
 
 export default function AiWorkflowSystems() {
-  useEffect(() => {
-    document.title = "AI Workflow Systems for Business | Ikram Rana";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "How businesses build AI workflow systems. Covers automation architecture, the trigger-logic-action pattern, governance, and monitoring. By Ikram Rana.");
-  }, []);
+  useHead("AI Workflow Systems for Business", "How businesses build AI workflow systems, including automation architecture, trigger-logic-action design, exception handling, governance, and monitoring.");
 
   const articleSchema = {
     "@context": "https://schema.org",
