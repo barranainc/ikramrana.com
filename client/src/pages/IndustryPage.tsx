@@ -22,7 +22,7 @@ import IndustryFrameworkDiagram from '@/components/industry/IndustryFrameworkDia
 import IndustryExpectationsDiagram from '@/components/industry/IndustryExpectationsDiagram';
 
 const BASE_URL = 'https://ikramrana.com';
-const TODAY = '2026-03-06';
+const LAST_REVIEWED = '2026-07-15';
 
 // Section metadata
 const SECTION_META: Record<string, { label: string; accent: string; border: string }> = {
@@ -222,8 +222,7 @@ export default function IndustryPage() {
     },
     publisher: { '@type': 'Organization', name: 'IkramRana.com', url: BASE_URL },
     about: { '@type': 'Thing', name: `${page.shortTitle} AI Automation` },
-    datePublished: TODAY,
-    dateModified: TODAY,
+    dateModified: LAST_REVIEWED,
   };
 
   const faqSchema = {
