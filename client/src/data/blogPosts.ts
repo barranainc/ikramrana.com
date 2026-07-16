@@ -96,7 +96,7 @@ export const blogPosts: BlogPost[] = [
     { label: 'AI Should Reduce Thinking Not Replace It', href: '/blog/ai-reduce-thinking' },
     { label: 'The Real Risk of AI Is Decision Avoidance', href: '/blog/ai-decision-avoidance' },
     { label: 'Why Faster Workflows Often Feel More Exhausting', href: '/blog/faster-workflows-exhausting' },
-    { label: 'How an insurance brokerage recovered 22 hours per week', href: '/case-studies/ai-automation-case-study-insurance-brokerage' },
+    { label: 'Illustrative AI use case: insurance brokerage workflow', href: '/case-studies/ai-automation-case-study-insurance-brokerage' },
   ],
 },
   {
@@ -155,7 +155,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What makes an AI tool invisible in business operations?",
-        answer: "An invisible AI tool handles tasks completely without requiring human attention. It processes, decides, and executes based on established business rules, only surfacing exceptions that genuinely require human judgment. INTERNAL LINK SUGGESTIONS \u2192 AI Does Not Save Time If You Still Have to Decide Everything \u2192 Cognitive Load Is the Real Productivity Tax \u2192 The Hidden Cost of Switching Between AI Tools \u2192 Tools Expire Systems Compound SUGGESTED SCHEMA MARKUP",
+        answer: "An invisible AI tool handles tasks completely without requiring human attention. It processes, decides, and executes based on established business rules, only surfacing exceptions that genuinely require human judgment.",
       },
     ],
   
@@ -190,7 +190,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "Tactical Advice For Businesses",
-        content: "Map your team's daily workflow and count the number of context switches. Every switch between tools, tasks, or communication channels costs approximately 23 minutes of refocused attention according to productivity research. If your AI implementation adds even one additional context switch per hour, you have likely erased its productivity gains. Consolidate AI functions into as few interfaces as possible. Instead of using separate AI tools for email, scheduling, writing, and data analysis, look for integrated solutions or build custom workflows that centralize AI interactions. Establish cognitive load metrics. Track error rates, rework frequency, and decision speed alongside traditional productivity measures. When cognitive load increases, these metrics deteriorate before output volume does.",
+        content: "Map your team's daily workflow and count the number of context switches. Frequent switching between tools, tasks, and communication channels creates resumption time and mental reorientation. If an AI implementation adds more switching than it removes, its tool-level speed may not produce a net workflow benefit. Consolidate AI functions into as few interfaces as possible. Instead of using separate AI tools for email, scheduling, writing, and data analysis, look for integrated solutions or build custom workflows that centralize AI interactions. Establish cognitive load metrics. Track error rates, rework frequency, and decision speed alongside traditional productivity measures. When cognitive load increases, these metrics deteriorate before output volume does.",
       },
     ],
     faqs: [
@@ -208,7 +208,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How do context switches affect AI productivity?",
-        answer: "Each context switch between tools, tasks, or channels costs approximately 23 minutes of refocused attention. AI tools that add context switches can erase their own productivity gains even if they speed up individual tasks.",
+        answer: "Context switching creates resumption time and mental reorientation. AI tools that add more switching than they remove can erase their own productivity gains even when an individual step becomes faster.",
       },
       {
         question: "How should businesses measure cognitive load?",
@@ -375,7 +375,7 @@ export const blogPosts: BlogPost[] = [
     { label: 'Process automation', href: '/ai-dictionary/process-automation' },
     { label: 'Why Most People Automate the Wrong Step', href: '/blog/automate-wrong-step' },
     { label: 'Automation Without Accountability Is a Liability', href: '/blog/automation-accountability' },
-    { label: 'How an insurance brokerage recovered 22 hours per week', href: '/case-studies/ai-automation-case-study-insurance-brokerage' },
+    { label: 'Illustrative AI use case: insurance brokerage workflow', href: '/case-studies/ai-automation-case-study-insurance-brokerage' },
   ],
 },
   {
@@ -661,14 +661,14 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-02-13",
     tags: ["AI Productivity", "AI Workflow Systems"],
     intro: [
-      "Every time you switch between AI tools, you lose more than time. You lose context, focus, and mental momentum. Research on context switching shows that transitioning between tasks costs approximately 23 minutes of refocused attention. When the switch involves different AI tools with different interfaces, logic, and outputs, the cost is even higher.",
+      "Every time you switch between AI tools, you lose more than time. You lose context, focus, and mental momentum. Research on interruptions and task switching shows that people need time and mental effort to resume focused work. Different AI tools can add further reorientation when their interfaces, logic, and outputs do not connect.",
       "Most businesses undercount their daily tool switches because each one feels trivial in isolation. Check the AI writing tool. Switch to the AI image generator. Move to the AI analytics dashboard. Return to the AI email assistant. Four switches in thirty minutes, each one draining cognitive resources that could be applied to actual business decisions.",
-      "An operations manager at a distribution company uses seven different AI tools daily. Each tool has its own login, interface, and interaction pattern. The manager spends an estimated 90 minutes per day on transitions, not including the mental recovery time from each switch. That is over seven hours per week lost to the mechanics of using AI, not to the work AI is supposed to support.",
+      "Consider an operations manager who uses several disconnected AI tools each day. Each tool has its own login, interface, interaction pattern, and output format. The cumulative transitions and manual transfers can consume meaningful time and attention that should be included in any productivity assessment.",
     ],
     sections: [
       {
         heading: "The Problem In Practice",
-        content: "An operations manager at a distribution company uses seven different AI tools daily. Each tool has its own login, interface, and interaction pattern. The manager spends an estimated 90 minutes per day on transitions, not including the mental recovery time from each switch. That is over seven hours per week lost to the mechanics of using AI, not to the work AI is supposed to support. The hidden cost compounds further because each AI tool has its own output format. Data from one tool must be manually formatted for input into another. Insights from the analytics tool must be translated into action items in the project management tool. Each translation step introduces potential errors and additional cognitive load.",
+        content: "Consider an operations manager who uses several disconnected AI tools each day. Each tool has its own login, interface, interaction pattern, and output format. The cumulative transitions and manual transfers can consume meaningful time and attention that should be included in any productivity assessment. The hidden cost compounds further because each AI tool has its own output format. Data from one tool must be manually formatted for input into another. Insights from the analytics tool must be translated into action items in the project management tool. Each translation step introduces potential errors and additional cognitive load.",
       },
       {
         heading: "The Framework: The Consolidation Principle",
@@ -682,7 +682,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       {
         question: "How much time do businesses lose switching between AI tools?",
-        answer: "Each context switch costs approximately 23 minutes of refocused attention. Teams using multiple AI tools daily can lose 90 minutes or more to transitions alone, not including mental recovery time, totaling over seven hours per week.",
+        answer: "There is no universal time penalty for every context switch. The responsible approach is to observe the actual workflow, count transitions, measure resumption and transfer time, and compare that cost with the time recovered by the tools.",
       },
       {
         question: "What is the Consolidation Principle in AI?",
@@ -789,7 +789,7 @@ export const blogPosts: BlogPost[] = [
     { label: 'Workflow orchestration', href: '/ai-dictionary/workflow-orchestration' },
     { label: 'Why Systems Calm People Down and Tools Do Not', href: '/blog/systems-vs-tools' },
     { label: 'The Hidden Cost of Switching Between AI Tools', href: '/blog/ai-tool-switching-cost' },
-    { label: 'How a property management firm eliminated 62% of no-shows', href: '/case-studies/ai-automation-case-study-property-management' },
+    { label: 'Illustrative AI use case: property management workflow', href: '/case-studies/ai-automation-case-study-property-management' },
     { label: 'AI automation for business: a complete guide', href: '/ai-automation-for-business' },
     { label: 'Solutions: AI workflow systems', href: '/solutions/automation-efficiency' },
   ],
@@ -1131,7 +1131,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What is the right amount of AI for most professionals?",
-        answer: "Two to three deeply used tools that address genuine bottlenecks. Deep expertise in fewer tools consistently produces better results than shallow use of many tools across all tasks. INTERNAL LINK SUGGESTIONS \u2192 The Hidden Cost of Switching Between AI Tools \u2192 Why Copying Someone Else's AI Stack Rarely Works \u2192 Why Smart People Misuse AI More Than Beginners \u2192 AI Does Not Save Time If You Still Have to Decide Everything SUGGESTED SCHEMA MARKUP",
+        answer: "Two to three deeply used tools that address genuine bottlenecks. Deep expertise in fewer tools consistently produces better results than shallow use of many tools across all tasks.",
       },
     ],
   
@@ -1200,7 +1200,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How should experts verify AI outputs?",
-        answer: "Focus verification on domain-specific areas where AI commonly fails rather than general accuracy checks. Train on known AI failure modes in your field, and have a different expert review AI-generated work specifically for contextual errors. INTERNAL LINK SUGGESTIONS \u2192 Most Professionals Should Use Less AI Not More \u2192 AI Amplifies Bad Judgment Faster Than Good Judgment \u2192 AI Should Reduce Thinking Not Replace It \u2192 The Long Term Cost of Outsourcing Thinking SUGGESTED SCHEMA MARKUP",
+        answer: "Focus verification on domain-specific areas where AI commonly fails rather than general accuracy checks. Train on known AI failure modes in your field, and have a different expert review AI-generated work specifically for contextual errors.",
       },
     ],
   
@@ -1269,7 +1269,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What happens when AI accountability is unclear?",
-        answer: "Problems scale undetected because nobody is clearly responsible for monitoring, investigating, or fixing errors. This leads to larger incidents, higher correction costs, and damaged client relationships. INTERNAL LINK SUGGESTIONS \u2192 AI Amplifies Bad Judgment Faster Than Good Judgment \u2192 What Happens When You Automate Before Understanding \u2192 The Difference Between Automation and Delegation \u2192 The Real Risk of AI Is Decision Avoidance SUGGESTED SCHEMA MARKUP",
+        answer: "Problems scale undetected because nobody is clearly responsible for monitoring, investigating, or fixing errors. This leads to larger incidents, higher correction costs, and damaged client relationships.",
       },
     ],
   
@@ -1279,7 +1279,7 @@ export const blogPosts: BlogPost[] = [
     { label: 'Ai governance', href: '/ai-dictionary/ai-governance' },
     { label: 'The Difference Between Automation and Delegation', href: '/blog/automation-vs-delegation' },
     { label: 'What Happens When You Automate Before Understanding Your Workflow', href: '/blog/automate-before-understanding' },
-    { label: 'How a logistics company reduced dispatch errors by 71%', href: '/case-studies/ai-automation-case-study-logistics-company' },
+    { label: 'Illustrative AI use case: logistics workflow', href: '/case-studies/ai-automation-case-study-logistics-company' },
   ],
 },
   {
@@ -1338,7 +1338,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How do structured reflection processes improve judgment?",
-        answer: "Regular review of AI-assisted decisions and their outcomes creates feedback loops that improve judgment quality over time. This ensures competitive advantage strengthens rather than atrophies. INTERNAL LINK SUGGESTIONS \u2192 AI Should Reduce Thinking Not Replace It \u2192 The Real Risk of AI Is Decision Avoidance \u2192 The Long Term Cost of Outsourcing Thinking \u2192 AI Amplifies Bad Judgment Faster Than Good Judgment SUGGESTED SCHEMA MARKUP",
+        answer: "Regular review of AI-assisted decisions and their outcomes creates feedback loops that improve judgment quality over time. This ensures competitive advantage strengthens rather than atrophies.",
       },
     ],
   
@@ -1407,7 +1407,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How should AI reports be structured to drive decisions?",
-        answer: "Every AI-generated report should end with a specific decision request and deadline, not just findings and recommendations. This transforms analysis from an end product into a decision tool. INTERNAL LINK SUGGESTIONS \u2192 Judgment Is the Only Non-Scalable Advantage \u2192 AI Should Reduce Thinking Not Replace It \u2192 When Not to Use AI Is a Leadership Skill \u2192 The Long Term Cost of Outsourcing Thinking SUGGESTED SCHEMA MARKUP",
+        answer: "Every AI-generated report should end with a specific decision request and deadline, not just findings and recommendations. This transforms analysis from an end product into a decision tool.",
       },
     ],
   
@@ -1476,7 +1476,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What is the mark of sophisticated AI adoption?",
-        answer: "Having clearly defined boundaries for where AI does not belong, not how much AI is used. Selective automation concentrates AI where it delivers value and protects businesses where it creates risk. INTERNAL LINK SUGGESTIONS \u2192 The Real Risk of AI Is Decision Avoidance \u2192 Judgment Is the Only Non-Scalable Advantage \u2192 The Difference Between Automation and Delegation \u2192 Most Professionals Should Use Less AI Not More SUGGESTED SCHEMA MARKUP",
+        answer: "Having clearly defined boundaries for where AI does not belong, not how much AI is used. Selective automation concentrates AI where it delivers value and protects businesses where it creates risk.",
       },
     ],
   
@@ -1541,7 +1541,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "Why is efficiency not the right AI goal for families?",
-        answer: "Families' primary values are presence and connection. Optimizing for efficiency at their expense is a trade most families would reject if they saw it clearly. Home AI boundaries make this trade visible. INTERNAL LINK SUGGESTIONS \u2192 Why Families Should Optimise for Calm Not Efficiency \u2192 Technology That Saves Time but Costs Attention Is a Bad Trade \u2192 Raising Humans in an AI Saturated Environment \u2192 Why Convenience Is Not a Neutral Value SUGGESTED SCHEMA MARKUP",
+        answer: "Families' primary values are presence and connection. Optimizing for efficiency at their expense is a trade most families would reject if they saw it clearly. Home AI boundaries make this trade visible.",
       },
     ],
   
@@ -1608,7 +1608,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What is the right incentive for family AI?",
-        answer: "Reduction of stress, not maximization of throughput. Family AI should be measured by how much less the household thinks about logistics, not by how many tasks are completed. INTERNAL LINK SUGGESTIONS \u2192 AI at Home Needs Stronger Boundaries Than AI at Work \u2192 Technology That Saves Time but Costs Attention Is a Bad Trade \u2192 Why Convenience Is Not a Neutral Value \u2192 Cognitive Load Is the Real Productivity Tax SUGGESTED SCHEMA MARKUP",
+        answer: "Reduction of stress, not maximization of throughput. Family AI should be measured by how much less the household thinks about logistics, not by how many tasks are completed.",
       },
     ],
   
@@ -1674,7 +1674,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What is the right model for AI information delivery?",
-        answer: "Silent operation with consolidated insights at scheduled intervals. This saves time without consuming attention, respecting attention as a scarce resource rather than treating it as unlimited. INTERNAL LINK SUGGESTIONS \u2192 Cognitive Load Is the Real Productivity Tax \u2192 AI at Home Needs Stronger Boundaries Than AI at Work \u2192 Why Faster Workflows Often Feel More Exhausting \u2192 The Hidden Cost of Switching Between AI Tools SUGGESTED SCHEMA MARKUP",
+        answer: "Silent operation with consolidated insights at scheduled intervals. This saves time without consuming attention, respecting attention as a scarce resource rather than treating it as unlimited.",
       },
     ],
   
@@ -1740,7 +1740,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "When is AI appropriate for children?",
-        answer: "When it extends capabilities children have already developed. A student who can write well using AI to explore styles is extending capability. A student who cannot write using AI to produce essays is replacing capability. INTERNAL LINK SUGGESTIONS \u2192 AI at Home Needs Stronger Boundaries Than AI at Work \u2192 Why Families Should Optimise for Calm Not Efficiency \u2192 Why Convenience Is Not a Neutral Value \u2192 The Long Term Cost of Outsourcing Thinking SUGGESTED SCHEMA MARKUP",
+        answer: "When it extends capabilities children have already developed. A student who can write well using AI to explore styles is extending capability. A student who cannot write using AI to produce essays is replacing capability.",
       },
     ],
   
@@ -1805,7 +1805,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How do businesses maintain skills that AI convenience erodes?",
-        answer: "Periodically remove AI from high-value tasks and complete them manually. This maintains thinking depth and reveals whether AI versions produce equivalent quality. INTERNAL LINK SUGGESTIONS \u2192 Technology That Saves Time but Costs Attention Is a Bad Trade \u2192 AI Should Reduce Thinking Not Replace It \u2192 The Long Term Cost of Outsourcing Thinking \u2192 Most AI Advice Ignores Second Order Effects SUGGESTED SCHEMA MARKUP",
+        answer: "Periodically remove AI from high-value tasks and complete them manually. This maintains thinking depth and reveals whether AI versions produce equivalent quality.",
       },
     ],
   
@@ -1870,7 +1870,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How should teams be involved in incentive redesign?",
-        answer: "People who understand both their current work and new AI capabilities should help design incentive structures that reward AI-supported workflows rather than legacy processes. INTERNAL LINK SUGGESTIONS \u2192 The Biggest AI Mistake Is Copying Best Practices \u2192 Most AI Advice Ignores Second Order Effects \u2192 Why Copying Someone Else's AI Stack Rarely Works \u2192 What Happens When You Automate Before Understanding SUGGESTED SCHEMA MARKUP",
+        answer: "People who understand both their current work and new AI capabilities should help design incentive structures that reward AI-supported workflows rather than legacy processes.",
       },
     ],
   
@@ -1935,7 +1935,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "When are AI second-order effects positive?",
-        answer: "When AI handles genuinely low-value tasks, frees humans for higher-value work, and the transition between AI and human handling is seamless for all stakeholders. INTERNAL LINK SUGGESTIONS \u2192 The Biggest AI Mistake Is Copying Best Practices \u2192 AI Does Not Change Behaviour Incentives Do \u2192 Why Convenience Is Not a Neutral Value \u2192 AI Amplifies Bad Judgment Faster Than Good Judgment SUGGESTED SCHEMA MARKUP",
+        answer: "When AI handles genuinely low-value tasks, frees humans for higher-value work, and the transition between AI and human handling is seamless for all stakeholders.",
       },
     ],
   
@@ -2000,7 +2000,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "Why do generic AI implementations produce poor results?",
-        answer: "Because AI effectiveness depends on specific data quality, process maturity, team capability, and integration landscape. Solutions designed for generic conditions miss the specific factors that determine success. INTERNAL LINK SUGGESTIONS \u2192 Why Copying Someone Else's AI Stack Rarely Works \u2192 What Happens When You Automate Before Understanding \u2192 AI Does Not Change Behaviour Incentives Do \u2192 Most AI Advice Ignores Second Order Effects SUGGESTED SCHEMA MARKUP",
+        answer: "Because AI effectiveness depends on specific data quality, process maturity, team capability, and integration landscape. Solutions designed for generic conditions miss the specific factors that determine success.",
       },
     ],
   
@@ -2069,7 +2069,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "Why should businesses evaluate hires for independent thinking?",
-        answer: "A team that can only work with AI is fragile. A team with both AI proficiency and independent thinking capability is resilient and can function even when AI tools change, fail, or prove inappropriate for specific situations. INTERNAL LINK SUGGESTIONS \u2192 AI Should Reduce Thinking Not Replace It \u2192 Judgment Is the Only Non-Scalable Advantage \u2192 Why Convenience Is Not a Neutral Value \u2192 The Real Risk of AI Is Decision Avoidance SUGGESTED SCHEMA MARKUP",
+        answer: "A team that can only work with AI is fragile. A team with both AI proficiency and independent thinking capability is resilient and can function even when AI tools change, fail, or prove inappropriate for specific situations.",
       },
     ],
   
