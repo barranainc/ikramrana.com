@@ -708,7 +708,7 @@ export default function Home() {
 
             <motion.div {...fadeUp} className="mt-10 text-center">
               <Link
-                href="/ai-knowledge-hub/what-is-ai-governance-for-businesses"
+                href="/ai-knowledge-hub/ai-governance-for-businesses"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-electric no-underline hover:gap-3 transition-all"
               >
                 Learn about AI governance <ArrowRight size={14} />
