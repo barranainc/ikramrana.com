@@ -1,9 +1,9 @@
 /**
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * Individual AI Knowledge Hub reference page template
  *
  * Design philosophy: Authoritative reference page, NOT a blog post.
- * - No publication dates — evergreen content
+ * - No publication dates: evergreen content
  * - Definition box is visually prominent for AEO extraction
  * - JSON-LD Article + FAQPage schema in <head>
  * - Blueprint aesthetic: mono labels, electric accents, navy sections
@@ -27,7 +27,7 @@ import HubBusinessImpactDiagram from '@/components/hub/HubBusinessImpactDiagram'
 const BASE_URL = 'https://ikramrana.com';
 const TODAY = '2026-03-06';
 
-// Section metadata — icon, accent colour, label
+// Section metadata: icon, accent colour, label
 const SECTION_META: Record<string, { icon: string; accent: string; label: string; border: string }> = {
   'Definition': {
     icon: '◎',
@@ -197,7 +197,7 @@ export default function KnowledgeHubPage() {
       '@type': 'Person',
       name: 'Ikram Rana',
       url: BASE_URL,
-      jobTitle: 'AI Automation Strategist',
+      jobTitle: 'AI Adoption and Workflow Implementation Specialist',
       worksFor: { '@type': 'Organization', name: 'Barrana.ai', url: 'https://barrana.ai' },
     },
     publisher: {
@@ -303,7 +303,7 @@ export default function KnowledgeHubPage() {
               <Link href="/about" className="text-electric hover:text-electric/80 transition-colors no-underline">
                 Ikram Rana
               </Link>
-              {' '}· AI Automation Strategist, Barrana.ai
+              {' '}· AI Adoption and Workflow Implementation Specialist, Barrana.ai
             </p>
           </motion.div>
         </div>
@@ -521,13 +521,13 @@ export default function KnowledgeHubPage() {
                   Ready to implement AI in your business?
                 </h3>
                 <p className="font-sans text-[14px] text-slate-text leading-relaxed mb-6 max-w-lg">
-                  Book a strategy call with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan.
+                  Find the Workflow AI Should Fix First with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan.
                 </p>
                 <Link
                   href="https://calendly.com/ikramrana15"
                   className="inline-flex items-center gap-2 bg-electric text-white px-6 py-3 font-sans font-medium text-sm hover:bg-electric/90 transition-colors no-underline"
                 >
-                  Book a strategy call
+                  Find the Workflow AI Should Fix First
                   <ArrowRight size={14} />
                 </Link>
               </div>
