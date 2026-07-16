@@ -1,5 +1,5 @@
 /*
- * SOLUTION PAGE — /solutions/ai-for-growth/
+ * SOLUTION PAGE: /solutions/ai-for-growth/
  * Exact content per master implementation prompt
  */
 
