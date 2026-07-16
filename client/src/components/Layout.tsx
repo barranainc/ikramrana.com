@@ -76,6 +76,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
     setMobileOpen(false);
+
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    const normalizedPath = location === "/" ? "/" : location.replace(/\/$/, "");
+    canonical.href = `https://ikramrana.com${normalizedPath}`;
   }, [location]);
 
   return (
