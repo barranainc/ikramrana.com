@@ -102,6 +102,7 @@ A passing build does not mean this objective is complete.
 - Local production build passed after the qualitative-claim audit on 2026-07-16.
 - Route audit found 50 route patterns, 106 literal internal links, and no broken literal internal routes.
 - The editable client sitemap contains 129 URLs and covers all literal internal destinations found by the audit.
+- GitHub Site checks passed for qualitative-claim audit commit `450bac486f429af67d227ecfc25ef7566056ebcd`: https://github.com/barranainc/ikramrana.com/actions/runs/29537752407
 
 The browser-based visual review of that artifact is still incomplete.
 
@@ -164,7 +165,7 @@ Do not mark this pull request ready or deploy it until all of the following are 
 - Desktop review passes
 - Mobile review passes
 - Primary navigation and CTA links pass
-- Remaining researched-fact claims are sourced or reframed. Passed locally 2026-07-16, pending GitHub check on the new commit.
+- Remaining researched-fact claims are sourced or reframed. Passed locally and in GitHub Site checks on 2026-07-16.
 - The owner reviews the principal positioning, About, Barrana, Discovery Stage, testimonial, and illustrative-use-case pages
 - Hostinger deployment and rollback steps are confirmed
 
