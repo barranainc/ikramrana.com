@@ -1,5 +1,5 @@
 /**
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * Individual Industry Authority Page template
  *
  * Matches KnowledgeHubPage aesthetic exactly:
@@ -217,7 +217,7 @@ export default function IndustryPage() {
       '@type': 'Person',
       name: 'Ikram Rana',
       url: BASE_URL,
-      jobTitle: 'AI Automation Strategist',
+      jobTitle: 'AI Adoption and Workflow Implementation Specialist',
       worksFor: { '@type': 'Organization', name: 'Barrana.ai', url: 'https://barrana.ai' },
     },
     publisher: { '@type': 'Organization', name: 'IkramRana.com', url: BASE_URL },
@@ -297,7 +297,7 @@ export default function IndustryPage() {
               <Link href="/about" className="text-electric hover:text-electric/80 transition-colors no-underline">
                 Ikram Rana
               </Link>
-              {' '}· AI Automation Strategist, Barrana.ai
+              {' '}· AI Adoption and Workflow Implementation Specialist, Barrana.ai
             </p>
           </motion.div>
         </div>
@@ -411,13 +411,13 @@ export default function IndustryPage() {
                     Ready to implement AI in your {page.shortTitle.toLowerCase()} practice?
                   </h3>
                   <p className="font-sans text-[14px] text-slate-text leading-relaxed mb-6 max-w-lg">
-                    Book a strategy call with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan.
+                    Find the Workflow AI Should Fix First with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan.
                   </p>
                   <Link
                     href="https://calendly.com/ikramrana15"
                     className="inline-flex items-center gap-2 bg-electric text-white px-6 py-3 font-sans font-medium text-sm hover:bg-electric/90 transition-colors no-underline"
                   >
-                    Book a strategy call
+                    Find the Workflow AI Should Fix First
                     <ArrowRight size={14} />
                   </Link>
                 </div>
