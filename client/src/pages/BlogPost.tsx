@@ -1,5 +1,5 @@
 /**
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * Individual Blog Post template at /blog/:slug
  *
  * Design philosophy: Matches the site's architectural blueprint aesthetic exactly.
@@ -74,8 +74,8 @@ function firstSentence(text: string, maxLen = 72): string {
  */
 function extractFrameworkName(heading: string): string {
   return heading
-    .replace(/^The Framework[:\s—–-]+/i, '')
-    .replace(/^Framework[:\s—–-]+/i, '')
+    .replace(/^The Framework[:\s, –-]+/i, '')
+    .replace(/^Framework[:\s, –-]+/i, '')
     .trim();
 }
 
@@ -106,7 +106,7 @@ export default function BlogPost() {
       '@type': 'Person',
       name: 'Ikram Rana',
       url: 'https://ikramrana.com',
-      jobTitle: 'AI Automation Strategist',
+      jobTitle: 'AI Adoption and Workflow Implementation Specialist',
       worksFor: { '@type': 'Organization', name: 'Barrana.ai', url: 'https://barrana.ai' },
     },
     publisher: { '@type': 'Organization', name: 'IkramRana.com', url: 'https://ikramrana.com' },
@@ -129,7 +129,7 @@ export default function BlogPost() {
   const s1 = post.sections[1];
   const s2 = post.sections[2];
 
-  // Problem diagram props — expectation vs reality
+  // Problem diagram props: expectation vs reality
   const problemProps = s0 ? {
     expectLabel: 'Expected Outcome',
     expectSub: firstSentence(post.intro[0] ?? '', 80),
@@ -138,7 +138,7 @@ export default function BlogPost() {
     gapLabel: 'The Gap',
   } : undefined;
 
-  // Framework diagram props — three-tier principle stack
+  // Framework diagram props: three-tier principle stack
   const fwName = s1 ? extractFrameworkName(s1.heading) : 'The Framework';
   const fwSentences = s1 ? s1.content.split(/[.!?]/).filter(s => s.trim()).slice(0, 3) : [];
   const frameworkProps = s1 ? {
@@ -165,7 +165,7 @@ export default function BlogPost() {
     ],
   } : undefined;
 
-  // Tactics diagram props — three-step action sequence
+  // Tactics diagram props: three-step action sequence
   const tacSentences = s2 ? s2.content.split(/[.!?]/).filter(s => s.trim()) : [];
   const tacticSteps = [
     {
@@ -268,7 +268,7 @@ export default function BlogPost() {
               ))}
             </motion.div>
 
-            {/* Sections — with diagrams injected after each */}
+            {/* Sections: with diagrams injected after each */}
             {post.sections.map((section, i) => (
               <div key={i}>
                 <motion.section
@@ -330,7 +330,7 @@ export default function BlogPost() {
                 Book a Strategy Call
               </h3>
               <p className="text-slate-text leading-relaxed text-[15px] mb-6">
-                Businesses looking to implement AI automation or structured AI adoption can book a strategy call with Ikram Rana to evaluate their workflows and identify the right automation opportunities.
+                Businesses looking to implement AI automation or structured AI adoption can start with a workflow discovery with Ikram Rana to evaluate their workflows and identify the right automation opportunities.
               </p>
               <a
                 href="https://calendly.com/ikramrana15"
