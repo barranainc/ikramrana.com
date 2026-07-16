@@ -24,7 +24,7 @@ export default function ThreeLayerModel() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-electric block mb-4">Framework</span>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.15] tracking-tight mb-6">The Three-Layer Model</h1>
-          <p className="text-lg text-slate-text leading-relaxed mb-2">A decision-systems framework for AI adoption: automate execution, protect judgment, embed compliance as the architectural foundation. This page explains each layer in depth, with implementation guidance and failure patterns to watch.</p>
+          <p className="text-lg text-slate-text leading-relaxed mb-2">A decision-systems framework for AI adoption: automate execution, protect judgment, embed compliance-supporting controls in the architecture. This page explains each layer in depth, with implementation guidance and failure patterns to watch.</p>
           <span className="font-mono text-xs text-slate-dim">18 min read · 3,800 words</span>
         </motion.div>
 
@@ -47,7 +47,7 @@ export default function ThreeLayerModel() {
             <div className="flex"><div className="w-12 flex items-center justify-center font-mono text-xs font-bold rounded-l-lg bg-burgundy/20 text-burgundy">02</div><div className="flex-1 p-5 rounded-r-lg bg-burgundy/8 border border-burgundy/20 border-l-0"><p className="font-bold text-[15px] text-burgundy mb-1">Judgment Layer</p><p className="font-mono text-[13px] text-slate-text/75">Humans own this → Decisions, exceptions, professional discretion</p></div></div>
             <div className="flex"><div className="w-12 flex items-center justify-center font-mono text-xs font-bold rounded-l-lg bg-emerald-500/20 text-emerald-600">03</div><div className="flex-1 p-5 rounded-r-lg bg-emerald-500/8 border border-emerald-500/20 border-l-0"><p className="font-bold text-[15px] text-emerald-600 mb-1">Compliance Foundation</p><p className="font-mono text-[13px] text-slate-text/75">Embedded by design → Traceability, audit trails, escalation paths</p></div></div>
           </div>
-          <div className="text-center mt-7 pt-6 border-t border-border"><p className="text-[13px] text-slate-dim">Compliance is the foundation that constrains the entire system, not a check you add at the end.</p></div>
+          <div className="text-center mt-7 pt-6 border-t border-border"><p className="text-[13px] text-slate-dim">Compliance-supporting controls form the foundation that constrains the entire system, not a check you add at the end.</p></div>
         </motion.div>
 
         <motion.div {...fadeUp}>
@@ -127,7 +127,7 @@ export default function ThreeLayerModel() {
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Implementation Principles</h2>
-          {[["Principle 1: Map Before You Automate","Before introducing AI to any workflow, map it explicitly. Identify which tasks are execution and which are judgment."],["Principle 2: Automate Execution First","Start with pure execution tasks. Get the automation working well. Build confidence."],["Principle 3: Protect Judgment Explicitly","When AI enters judgment-adjacent territory, add explicit protections: clear labeling, required human decisions, logging."],["Principle 4: Embed Compliance from Day One","Build logging, audit trails, and escalation triggers from the start. Retrofitting compliance is expensive and incomplete."],["Principle 5: Monitor and Audit Continuously","Track human override rates. Monitor review times. Test reconstruction capability. The system will drift if you don't watch it."]].map(([t,d],i)=>(<div key={i} className="mb-6"><h4 className="font-serif text-lg font-semibold text-foreground mb-2">{t}</h4><p className="text-foreground/85 leading-relaxed">{d}</p></div>))}
+          {[["Principle 1: Map Before You Automate","Before introducing AI to any workflow, map it explicitly. Identify which tasks are execution and which are judgment."],["Principle 2: Automate Execution First","Start with pure execution tasks. Get the automation working well. Build confidence."],["Principle 3: Protect Judgment Explicitly","When AI enters judgment-adjacent territory, add explicit protections: clear labeling, required human decisions, logging."],["Principle 4: Embed Compliance-Supporting Controls from Day One","Build logging, audit trails, and escalation triggers from the start. Retrofitting compliance is expensive and incomplete."],["Principle 5: Monitor and Audit Continuously","Track human override rates. Monitor review times. Test reconstruction capability. The system will drift if you don't watch it."]].map(([t,d],i)=>(<div key={i} className="mb-6"><h4 className="font-serif text-lg font-semibold text-foreground mb-2">{t}</h4><p className="text-foreground/85 leading-relaxed">{d}</p></div>))}
         </motion.div>
 
         <div className="rule-divider my-14" />
