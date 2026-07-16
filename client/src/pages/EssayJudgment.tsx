@@ -21,7 +21,7 @@ export default function EssayJudgment() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-electric block mb-4">Essay</span>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.15] tracking-tight mb-6">The Judgment Preservation Imperative</h1>
-          <p className="text-lg text-slate-text leading-relaxed mb-2">Why "human in the loop" isn't a solution—it's a question. The real challenge isn't keeping humans involved. It's defining what their involvement actually means.</p>
+          <p className="text-lg text-slate-text leading-relaxed mb-2">Why "human in the loop" isn't a solution, it's a question. The real challenge isn't keeping humans involved. It's defining what their involvement actually means.</p>
           <span className="font-mono text-xs text-slate-dim">8 min read</span>
         </motion.div>
 
@@ -29,7 +29,7 @@ export default function EssayJudgment() {
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5">The Comfortable Lie</h2>
-          <p className="text-foreground/85 leading-relaxed mb-5">"Don't worry—there's always a human in the loop." This is the most common reassurance in AI adoption. It's also the most dangerous.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5">"Don't worry, there's always a human in the loop." This is the most common reassurance in AI adoption. It's also the most dangerous.</p>
           <p className="text-foreground/85 leading-relaxed mb-5">The phrase implies that human oversight is functioning. That someone is genuinely evaluating AI outputs. That professional judgment is being exercised. That accountability is maintained.</p>
           <p className="text-foreground/85 leading-relaxed mb-5">In practice, "human in the loop" often means: a human exists somewhere in the workflow who could theoretically intervene but has no defined criteria for intervention, no structured evaluation process, no minimum engagement requirements, and no way to demonstrate what they actually reviewed.</p>
         </motion.div>
@@ -37,19 +37,19 @@ export default function EssayJudgment() {
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">What Judgment Actually Requires</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">Professional judgment isn't just "looking at something." It's a structured cognitive process that requires:</p>
-          <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Context:</strong> Understanding the specific circumstances of this case—not just the data, but the situation around the data.</p>
+          <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Context:</strong> Understanding the specific circumstances of this case, not just the data, but the situation around the data.</p>
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Criteria:</strong> Knowing what to evaluate and what "good" looks like for this type of decision.</p>
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Time:</strong> Sufficient time to actually think, not just glance. Complex decisions require proportional attention.</p>
-          <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">Authority:</strong> The power to change the outcome. If the human can't meaningfully alter the AI's recommendation, they're not exercising judgment—they're performing a ritual.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">Authority:</strong> The power to change the outcome. If the human can't meaningfully alter the AI's recommendation, they're not exercising judgment, they're performing a ritual.</p>
         </motion.div>
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">The Erosion Pattern</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">Judgment doesn't disappear overnight. It erodes through a predictable pattern:</p>
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Stage 1: Genuine Review.</strong> The AI is new. Humans carefully evaluate every output. Override rates are meaningful. Judgment is real.</p>
-          <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Stage 2: Calibrated Trust.</strong> The AI proves reliable. Humans review less carefully. This is rational—but the system doesn't adjust its oversight requirements.</p>
+          <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Stage 2: Calibrated Trust.</strong> The AI proves reliable. Humans review less carefully. This is rational, but the system doesn't adjust its oversight requirements.</p>
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Stage 3: Rubber Stamping.</strong> Review becomes perfunctory. Humans approve in seconds what should take minutes. The "loop" exists but judgment doesn't.</p>
-          <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">Stage 4: Invisible Automation.</strong> The approval step remains but nobody pretends it's review. The human is in the loop the way a speed bump is in the road—present but not meaningfully affecting the journey.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">Stage 4: Invisible Automation.</strong> The approval step remains but nobody pretends it's review. The human is in the loop the way a speed bump is in the road, present but not meaningfully affecting the journey.</p>
         </motion.div>
 
         <motion.div {...fadeUp}>
@@ -59,7 +59,7 @@ export default function EssayJudgment() {
             {[
               "Define what the human is supposed to evaluate for each decision type",
               "Set minimum engagement thresholds appropriate to decision complexity",
-              "Log what humans actually do—not just that they clicked 'approve'",
+              "Log what humans actually do, not just that they clicked 'approve'",
               "Monitor override rates and review times as governance metrics",
               "Require documented reasoning for high-stakes decisions",
               "Test judgment quality through periodic case reviews",
