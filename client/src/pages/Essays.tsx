@@ -1,5 +1,5 @@
 /*
- * ESSAYS HUB — Links to all 10 individual essays
+ * ESSAYS HUB: Links to all 10 individual essays
  */
 import { Link } from "wouter";
 import { motion } from "framer-motion";
@@ -18,7 +18,7 @@ const essays = [
     slug: "/essays/judgment",
     tag: "Decision Architecture",
     title: "The Judgment Preservation Imperative",
-    desc: "Why \"human in the loop\" isn't a solution — it's a question. The real challenge isn't keeping humans involved. It's defining what their involvement actually means.",
+    desc: "Why \"human in the loop\" isn't a solution: it's a question. The real challenge isn't keeping humans involved. It's defining what their involvement actually means.",
     time: "8 min read",
   },
   {
