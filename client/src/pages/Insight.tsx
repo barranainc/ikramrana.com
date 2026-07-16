@@ -51,7 +51,7 @@ const insights = [
     date: "Jan 2026",
     tag: "Operations",
     title: "The integration that creates more work",
-    body: "A client added an AI tool to their CRM to automate follow-up emails. The tool worked. But the output needed to be reviewed before sending, logged in a separate system, and reconciled with the main client record manually. Net result: the task that took 2 minutes now takes 6. The tool is 'saving time' according to the vendor's metrics. It is not saving time.",
+    body: "Consider a team that adds an AI tool to its CRM for follow-up emails. The output still needs review, separate logging, and manual reconciliation with the main client record. The individual generation step becomes faster, but the complete workflow can take longer. Tool-level speed is not the same as operational improvement.",
   },
   {
     id: "006",
