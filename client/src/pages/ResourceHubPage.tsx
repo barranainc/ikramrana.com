@@ -62,7 +62,7 @@ function DiagramBlock({
 }
 
 const PAGE_URL = "https://ikramrana.com/ai-resources-for-businesses";
-const TODAY = "2025-03-09";
+const LAST_REVIEWED = "2026-07-15";
 
 const checklists = [
   {
@@ -201,7 +201,7 @@ export default function ResourceHubPage() {
       "worksFor": { "@type": "Organization", "name": "Barrana.ai", "url": "https://barrana.ai" }
     },
     "publisher": { "@type": "Organization", "name": "IkramRana.com" },
-    "datePublished": TODAY,
+    "dateModified": LAST_REVIEWED,
     "url": PAGE_URL,
     "image": [
       {
