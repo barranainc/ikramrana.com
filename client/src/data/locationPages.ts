@@ -321,7 +321,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "How do GTA businesses start with AI automation?",
-        a: "Start with a workflow assessment that identifies the highest-impact automation opportunities for your specific business. Ikram Rana of Barrana.ai conducts these assessments as the first step for every GTA engagement.",
+        a: "Start by identifying a workflow that is repeatedly delayed, copied, chased, checked, or corrected. Barrana’s Discovery Stage examines the workflow, risks, people, data, and practical fit before an implementation is proposed.",
       },
       {
         q: "Is AI automation suitable for small GTA businesses?",
@@ -439,7 +439,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "How do Canadian businesses start with AI automation?",
-        a: "Begin with a workflow assessment identifying repetitive, rule-based tasks consuming the most staff time. Barrana.ai conducts this assessment as the starting point for every Canadian business engagement.",
+        a: "Begin by documenting a recurring workflow, including its trigger, decisions, exceptions, systems, owners, and desired outcome. Barrana’s Discovery Stage determines whether AI belongs in that workflow and what responsible implementation would require.",
       },
       {
         q: "Does Barrana.ai serve businesses outside Ontario?",
@@ -555,7 +555,7 @@ export const locationPages: LocationPage[] = [
       },
       {
         q: "How do U.S. businesses start with AI automation?",
-        a: "Begin with a workflow assessment identifying the highest-impact automation opportunities. Barrana.ai conducts remote assessments for U.S. businesses as the first step in every engagement.",
+        a: "Begin with a clearly defined workflow and a baseline for time, errors, delays, and review effort. Barrana’s Discovery Stage can be conducted remotely and determines whether AI is appropriate before an implementation scope is proposed.",
       },
       {
         q: "Does Barrana.ai work with businesses across all U.S. states?",
