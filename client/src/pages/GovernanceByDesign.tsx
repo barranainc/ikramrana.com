@@ -1,5 +1,5 @@
 /*
- * GOVERNANCE-BY-DESIGN — Updated content
+ * GOVERNANCE-BY-DESIGN: Updated content
  */
 import { Link } from "wouter";
 import { motion } from "framer-motion";
@@ -24,7 +24,7 @@ export default function GovernanceByDesign() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-electric block mb-4">Application</span>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.15] tracking-tight mb-6">Governance-by-Design</h1>
-          <p className="text-lg text-slate-text leading-relaxed mb-2">Governance is not paperwork after deployment. It is a design property of the system itself. This page explains how to embed compliance as architecture—so your system is compliant by construction, not just by intention.</p>
+          <p className="text-lg text-slate-text leading-relaxed mb-2">Governance is not paperwork after deployment. It is a design property of the system itself. This page explains how to embed compliance as architecture, so your system is compliant by construction, not just by intention.</p>
           <span className="font-mono text-xs text-slate-dim">12 min read · 2,400 words</span>
         </motion.div>
 
@@ -51,9 +51,9 @@ export default function GovernanceByDesign() {
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Governance as Architecture</h2>
-          <p className="text-foreground/85 leading-relaxed mb-5">Governance-by-design means building constraints and accountability into the system itself. The system doesn't just document what should happen—it enforces what must happen.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5">Governance-by-design means building constraints and accountability into the system itself. The system doesn't just document what should happen, it enforces what must happen.</p>
           <h3 className="font-serif text-xl font-semibold text-foreground mb-4 mt-8">The Four Pillars</h3>
-          {[["1. Decision Rights","The system knows who is authorized to do what—and enforces it. This isn't just access control. It's decision authorization: who can approve, who can override, who can escalate, who can finalize."],["2. Traceability","Every significant action creates a record: what happened, when, by whom, based on what information. The record is created automatically—logging doesn't depend on humans remembering."],["3. Auditability","The trace record is structured for review. You can query it. You can reconstruct sequences of events. Logs are immutable—once recorded, they cannot be altered."],["4. Escalation","The system routes uncertainty to appropriate decision-makers automatically. Escalation triggers are defined and enforced."]].map(([t,d],i)=>(<div key={i} className="mb-6"><h4 className="font-serif text-lg font-semibold text-foreground mb-2">{t}</h4><p className="text-foreground/85 leading-relaxed">{d}</p></div>))}
+          {[["1. Decision Rights","The system knows who is authorized to do what, and enforces it. This isn't just access control. It's decision authorization: who can approve, who can override, who can escalate, who can finalize."],["2. Traceability","Every significant action creates a record: what happened, when, by whom, based on what information. The record is created automatically, logging doesn't depend on humans remembering."],["3. Auditability","The trace record is structured for review. You can query it. You can reconstruct sequences of events. Logs are immutable, once recorded, they cannot be altered."],["4. Escalation","The system routes uncertainty to appropriate decision-makers automatically. Escalation triggers are defined and enforced."]].map(([t,d],i)=>(<div key={i} className="mb-6"><h4 className="font-serif text-lg font-semibold text-foreground mb-2">{t}</h4><p className="text-foreground/85 leading-relaxed">{d}</p></div>))}
         </motion.div>
 
         <motion.div {...fadeUp}>
@@ -78,7 +78,7 @@ export default function GovernanceByDesign() {
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Recognizing Policy Theater</h2>
-          {[["Warning Sign 1: Governance Exists Only in Documents","You have policies and procedures—but when you look at the actual system, none of it is enforced."],["Warning Sign 2: Logging is Incomplete","You can't reconstruct decisions because the logs don't exist or don't capture enough information."],["Warning Sign 3: Escalation Depends on Human Attention","Complex cases should be routed differently, but the system doesn't do this automatically."],["Warning Sign 4: Approval is a Checkbox","The system requires \"approval,\" but approval is clicking a button with no criteria, no verification, no meaningful engagement."]].map(([t,d],i)=>(<div key={i} className="mb-6"><h4 className="font-serif text-lg font-semibold text-foreground mb-2">{t}</h4><p className="text-foreground/85 leading-relaxed">{d}</p></div>))}
+          {[["Warning Sign 1: Governance Exists Only in Documents","You have policies and procedures, but when you look at the actual system, none of it is enforced."],["Warning Sign 2: Logging is Incomplete","You can't reconstruct decisions because the logs don't exist or don't capture enough information."],["Warning Sign 3: Escalation Depends on Human Attention","Complex cases should be routed differently, but the system doesn't do this automatically."],["Warning Sign 4: Approval is a Checkbox","The system requires \"approval,\" but approval is clicking a button with no criteria, no verification, no meaningful engagement."]].map(([t,d],i)=>(<div key={i} className="mb-6"><h4 className="font-serif text-lg font-semibold text-foreground mb-2">{t}</h4><p className="text-foreground/85 leading-relaxed">{d}</p></div>))}
         </motion.div>
 
         {/* COMPLIANCE DEBT DIAGRAM */}
