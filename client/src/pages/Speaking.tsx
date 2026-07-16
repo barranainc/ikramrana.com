@@ -20,7 +20,7 @@ const topics = [
   },
   {
     title: "Governance-by-Design",
-    desc: "Why compliance must be engineered into system structure, not documented after deployment. What structural governance actually looks like.",
+    desc: "Why compliance-supporting controls must be built into system structure, not documented after deployment. What structural governance actually looks like.",
   },
   {
     title: "The Judgment Preservation Imperative",
@@ -89,7 +89,7 @@ export default function Speaking() {
                   Ikram Rana is a writer and thinker focused on decision architecture in AI adoption. His work examines how authority, accountability, and validation get structured when AI enters an organization's operating system, and what breaks when that structure is missing.
                 </p>
                 <p>
-                  His Three-Layer Model separates execution, judgment, and compliance as distinct structural layers, providing organizations with a framework for understanding where AI helps, where it creates risk, and where the boundaries must be explicit. He advocates for governance-by-design, the principle that compliance must be engineered into system architecture rather than documented after deployment.
+                  His Three-Layer Model separates execution, judgment, and compliance as distinct structural layers, providing organizations with a framework for understanding where AI helps, where it creates risk, and where the boundaries must be explicit. He advocates for governance-by-design, the principle that compliance-supporting controls must be built into system architecture rather than documented after deployment.
                 </p>
                 <p>
                   With More than a decade of founder experience across AI implementation, software development, and cybersecurity, Rana brings both technical depth and strategic perspective to the question of how organizations can adopt AI without losing accountability.
