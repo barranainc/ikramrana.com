@@ -858,7 +858,7 @@ export default function Home() {
                 </span>
                 <ul className="space-y-0">
                   {[
-                    { title: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+                    { title: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
                     { title: "AI Knowledge Hub", href: "/ai-knowledge-hub" },
                     { title: "AI Dictionary", href: "/ai-dictionary" },
                     { title: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
