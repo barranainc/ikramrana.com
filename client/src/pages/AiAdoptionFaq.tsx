@@ -15,11 +15,12 @@ const config: FaqPageConfig = {
     },
     {
       q: "How long does AI adoption take?",
-      a: "A single well-scoped AI automation typically takes 2–6 weeks from process documentation to production deployment. A full AI adoption program: covering multiple workflows, governance structures, and team capability development: typically takes 3–12 months depending on scope and organizational complexity. Businesses that skip process documentation extend these timelines significantly because they discover process gaps during implementation rather than before it."
+      a: "There is no standard timeline. It depends on workflow scope, process clarity, data quality, integration access, security review, exception handling, testing, and staff adoption. A narrow pilot can move faster than a multi-workflow program, but the schedule should be defined only after discovery."
     },
     {
       q: "How much does AI adoption cost?",
-      a: "AI adoption costs vary by scope. A single automation using existing tools costs $500–$2,000 to implement. A comprehensive AI adoption program covering multiple workflows, integrations, and governance structures costs $10,000–$50,000 or more. Tool licensing is typically 10–20% of total cost: the majority is process documentation, integration, configuration, and governance setup. Businesses that evaluate AI adoption by tool cost alone consistently underestimate total investment."
+      a: "Cost depends on the workflow, current systems, data, integrations, security, governance, training, and support requirements. Barrana's Discovery Stage is q: "How much does AI adoption cost?",
+      a: ,500 CAD and is credited toward implementation if the client proceeds. The implementation scope and fixed quote are prepared after discovery."
     },
     {
       q: "What should businesses automate first?",
@@ -27,7 +28,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "What industries benefit most from AI adoption?",
-      a: "Industries with high-volume, rule-based processes benefit most from AI adoption. Professional services (law, accounting, consulting), healthcare (clinics, physiotherapy, dental), financial services, real estate, and operations-intensive service businesses consistently report the highest ROI from structured AI adoption. The common factor is not industry: it is process volume and rule clarity. Any business with high-volume, rule-based workflows is a strong AI adoption candidate."
+      a: "Industry alone does not determine suitability. AI is more promising where a workflow has sufficient volume, clear rules, accessible data, manageable exceptions, and a measurable business problem. High-consequence work, unclear processes, poor data, or trust-sensitive relationships may require a narrower role for AI or no AI at all."
     },
     {
       q: "What is the difference between AI adoption and digital transformation?",
@@ -39,7 +40,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "What is AI readiness?",
-      a: "AI readiness is the degree to which a business is prepared to implement AI reliably. It encompasses four dimensions: process clarity (are processes documented and rule-based), data quality (is the data AI will use accurate and accessible), integration feasibility (can existing systems connect to AI tools), and governance readiness (does the organization have the capacity to monitor and govern AI systems). Businesses with low readiness that implement AI anyway consistently encounter reliability problems."
+      a: "AI readiness is the degree to which a business can implement and operate AI responsibly. It includes process clarity, data quality, integration feasibility, security, governance capacity, staff adoption, and the consequences of failure. Low readiness does not mean AI is impossible, but it usually means foundational work should come first."
     },
     {
       q: "How do businesses measure AI adoption success?",
@@ -55,7 +56,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "Can businesses adopt AI?",
-      a: "Yes. Businesses are often better positioned for AI adoption than large enterprises because they have simpler processes, fewer legacy systems, and faster decision-making. The most effective AI adoptions in professional services, healthcare, and consulting have been in businesses with 5–50 employees. The key is scope discipline: businesses that try to automate everything simultaneously fail; those that automate one well-scoped process at a time succeed."
+      a: "Yes, but business size does not determine success. Readiness depends on the workflow, data, systems, people, risks, and ability to monitor performance. Scope discipline matters: begin with one well-understood problem and expand only after the first implementation is stable and useful."
     },
     {
       q: "Do businesses need an AI adoption and workflow implementation specialist?",
@@ -63,7 +64,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "What AI tools should businesses use?",
-      a: "Tool selection should follow process documentation, not precede it. Businesses that select tools before documenting their processes consistently choose tools that do not fit their actual workflows. The right tool is the one that best integrates with your existing systems, handles your specific exception patterns, and can be governed with your available resources. Tool selection is the last step in AI adoption planning, not the first."
+      a: "Tool selection should follow process documentation. The right tool must fit the existing systems, handle important exceptions, meet security and privacy requirements, remain affordable to operate, and be understandable to the people responsible for it. Tool selection is an implementation decision, not the starting point."
     },
     {
       q: "What is the difference between AI automation and AI augmentation?",
@@ -71,7 +72,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "How do businesses avoid AI adoption failure?",
-      a: "The five practices that prevent AI adoption failure are: document processes before automating them, pilot test before full deployment, design explicit exception handling, establish governance before going live, and measure cognitive load reduction rather than speed. Businesses that follow these practices consistently report successful adoption; those that skip them consistently encounter reliability problems that require more remediation effort than the automation saved."
+      a: "Reduce failure risk by documenting the process, testing with representative data, defining exception paths, assigning ownership, establishing monitoring, and measuring the whole workflow rather than output speed alone. These practices do not guarantee success, but they expose problems earlier and make corrective action possible."
     },
     {
       q: "What is a workflow system in AI adoption?",
@@ -83,11 +84,11 @@ const config: FaqPageConfig = {
     },
     {
       q: "How does AI adoption affect employees?",
-      a: "AI adoption affects employees by changing which tasks they perform, not typically by eliminating their roles. Employees whose work is automated shift from execution tasks to oversight, exception handling, and higher-value work. Businesses that communicate this shift clearly before implementation report higher adoption success rates. The most common employee concern: job elimination: is addressed by showing specifically which tasks will be automated and what employees will do with the recovered time."
+      a: "AI adoption can change tasks, responsibilities, workload, review obligations, and the skills a role requires. It may remove some routine work, create new oversight work, or change staffing needs. Leaders should discuss these effects honestly, involve affected employees in workflow design, and avoid promising that roles will never change."
     },
     {
       q: "What is the AI adoption timeline for a service business?",
-      a: "A typical service business AI adoption timeline: weeks 1–2 process documentation and readiness assessment; weeks 3–4 prioritization and tool selection; weeks 5–8 pilot implementation of the first automation; weeks 9–12 governance setup and full deployment; months 4–6 optimization and second automation implementation. Businesses that follow this sequence consistently complete their first automation within 90 days and report measurable ROI within 120 days."
+      a: "A service business should move through discovery, process documentation, readiness assessment, prioritization, pilot design, testing, governance, deployment, and review. The duration of each stage depends on the workflow and risk. Progress should be controlled by readiness evidence, not an arbitrary calendar."
     },
     {
       q: "How does Ikram Rana help businesses with AI adoption?",
