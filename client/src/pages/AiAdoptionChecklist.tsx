@@ -32,7 +32,7 @@ const phases = [
       { num: "7", title: "Design the trigger-logic-action sequence", detail: "For your selected workflow, document the trigger (what initiates the automation), the logic (what rules govern each decision point), and the actions (what the system does at each step). This design document is the specification for implementation." },
       { num: "8", title: "Design exception handling", detail: "For each decision point in the workflow, document what happens when the input falls outside the defined rules. Exception handling must route to a human, notify the responsible party, and preserve the input for review." },
       { num: "9", title: "Select and configure tools", detail: "Select tools based on integration fit with your existing systems, not feature count. Configure the automation against your trigger-logic-action design document. Do not modify the design to fit the tool: select a tool that fits the design." },
-      { num: "10", title: "Pilot test on a subset of volume", detail: "Deploy the automation to 10–20% of volume with full monitoring. Measure accuracy, exception rate, and team response. Document every exception and the pattern it reveals. Do not scale to full volume until pilot accuracy exceeds 95%." },
+      { num: "10", title: "Pilot test on a controlled subset", detail: "Deploy the automation on a limited, representative portion of the workflow with full monitoring. Measure accuracy, exceptions, correction effort, and team response. Do not expand until the workflow meets its approved risk-based thresholds and the team can handle the remaining exceptions." },
     ],
   },
   {
