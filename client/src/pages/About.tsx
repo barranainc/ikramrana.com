@@ -13,34 +13,47 @@ const fadeUp = {
   transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] as const },
 };
 
-const personSchema = {
+const profileSchema = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Ikram Rana",
-  url: "https://ikramrana.com",
-  jobTitle: "AI Adoption and Workflow Implementation Specialist",
-  description:
-    "Ikram Rana helps businesses move from scattered AI experiments to working systems their teams actually use. Founder of Barrana, based in Vaughan, Ontario.",
-  sameAs: ["https://barrana.ai", "https://www.linkedin.com/in/ikramrana"],
-  worksFor: {
-    "@type": "Organization",
-    name: "Barrana.ai",
-    url: "https://barrana.ai",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Vaughan",
-      addressRegion: "Ontario",
-      addressCountry: "CA",
+  "@type": "ProfilePage",
+  dateModified: "2026-07-16",
+  mainEntity: {
+    "@id": "https://ikramrana.com/about#ikram-rana",
+    "@type": "Person",
+    name: "Ikram Rana",
+    url: "https://ikramrana.com/about",
+    jobTitle: "AI Adoption and Workflow Implementation Specialist",
+    description:
+      "Ikram Rana helps businesses move from scattered AI experiments to working systems their teams actually use. Founder of Barrana, based in Vaughan, Ontario.",
+    homeLocation: {
+      "@type": "Place",
+      name: "Vaughan, Ontario, Canada",
     },
+    sameAs: [
+      "https://www.linkedin.com/in/ikramrana",
+      "https://ikramrana.substack.com",
+    ],
+    worksFor: {
+      "@id": "https://barrana.ai/#organization",
+      "@type": "Organization",
+      name: "Barrana",
+      url: "https://barrana.ai",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Vaughan",
+        addressRegion: "Ontario",
+        addressCountry: "CA",
+      },
+    },
+    knowsAbout: [
+      "AI adoption",
+      "AI automation",
+      "workflow systems",
+      "decision architecture",
+      "AI governance",
+    ],
+    areaServed: ["Vaughan", "Greater Toronto Area", "Canada", "United States"],
   },
-  knowsAbout: [
-    "AI adoption",
-    "AI automation",
-    "workflow systems",
-    "decision architecture",
-    "AI governance",
-  ],
-  areaServed: ["Canada", "United States", "Greater Toronto Area"],
 };
 
 export default function About() {
@@ -50,7 +63,7 @@ export default function About() {
     <div className="py-16 md:py-24">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileSchema) }}
       />
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
