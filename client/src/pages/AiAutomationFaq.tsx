@@ -11,15 +11,16 @@ const config: FaqPageConfig = {
   faqs: [
     {
       q: "What is AI automation?",
-      a: "AI automation is the use of artificial intelligence to execute business processes without continuous human intervention. It combines rule-based workflow automation with AI capabilities: natural language processing, document understanding, pattern recognition: to handle tasks that previously required human attention at every step. The result is a system that completes work reliably, consistently, and at scale without requiring a human to initiate or monitor each execution."
+      a: "AI automation uses artificial intelligence within a workflow to process information, apply defined logic, recommend or take actions, and route exceptions. It can reduce continuous manual handling, but reliability depends on data, system design, monitoring, and clear human ownership."
     },
     {
       q: "What tasks can AI automate?",
-      a: "AI can automate tasks that are repetitive, rule-based, high-volume, and low-consequence when errors occur. This includes lead qualification, appointment scheduling, document processing, invoice handling, status updates, data entry, report generation, and client communication sequences. Tasks requiring judgment, relationship management, or ethical decisions should remain under human control. The practical test: if a task follows defined rules more than 90% of the time, it is an automation candidate."
+      a: "AI is more suitable for repetitive, sufficiently frequent tasks with clear inputs, manageable exceptions, and recoverable errors. Possible examples include routing, document extraction, scheduling support, status updates, and data entry. Judgment-intensive, ethical, relationship-sensitive, or high-consequence decisions require human control. No percentage threshold makes a task automatically safe to automate."
     },
     {
       q: "How much does AI automation cost?",
-      a: "AI automation costs vary by scope. A single automation using existing tools costs $500–$2,000 to implement. Complex multi-system integrations cost $5,000–$20,000. Tool licensing is typically 10–20% of total cost: the majority is process documentation, integration, configuration, and governance setup. Businesses that evaluate automation by tool cost alone consistently underestimate total investment and are surprised by implementation complexity."
+      a: "Cost varies with workflow complexity, integrations, data, security requirements, exception handling, monitoring, training, and support. Barrana's Discovery Stage is q: "How much does AI automation cost?",
+      a: ,500 CAD and is credited toward implementation if the client proceeds. The implementation price is quoted after discovery."
     },
     {
       q: "Is AI automation safe?",
@@ -27,7 +28,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "Can businesses automate workflows?",
-      a: "Yes. Businesses are often better positioned for workflow automation than large enterprises because they have simpler processes, fewer legacy systems, and faster decision-making. The most effective automations in professional services, healthcare, and consulting have been in businesses with 5–50 employees. The key is scope discipline: businesses that automate one well-scoped process at a time consistently succeed; those that try to automate everything simultaneously consistently fail."
+      a: "Yes, when the workflow is understood and the operating conditions support it. Simpler processes may be easier to automate, but unclear ownership, poor data, high-risk exceptions, or weak integrations can make even a small workflow unsuitable. Start narrowly and expand only after the system is stable and adopted."
     },
     {
       q: "What is the difference between AI automation and traditional automation?",
@@ -43,7 +44,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "How do businesses implement AI automation?",
-      a: "The structured implementation sequence is: document the process, assess readiness, prioritize automation candidates, select tools based on integration fit, pilot test on a subset of volume, establish governance, deploy to full volume, and review at 30/60/90 days. Businesses that skip process documentation consistently encounter implementation failures because they discover process gaps during deployment rather than before it. See the full 8-step roadmap at /ai-automation-for-business."
+      a: "A responsible sequence is to document the process, assess readiness, prioritize a narrow candidate, select tools based on fit, test with representative data, define exception handling, assign ownership, deploy gradually, and review performance. The cadence should reflect the workflow's risk and complexity rather than a fixed schedule."
     },
     {
       q: "What is exception handling in AI automation?",
@@ -71,7 +72,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "How does AI automation handle document processing?",
-      a: "AI document processing uses natural language processing and computer vision to extract structured information from unstructured documents: invoices, contracts, forms, emails, and reports. The system identifies document type, extracts relevant fields, validates extracted data against defined rules, and routes the structured output to the appropriate downstream process. Accuracy rates for well-trained document processing systems typically exceed 95% for standard document types."
+      a: "AI document processing can classify documents, extract fields, validate information against rules, and route results to another system. Accuracy varies by document quality, layout variation, language, handwriting, field complexity, and model configuration. Every implementation needs testing on representative documents, confidence thresholds, and human review for exceptions."
     },
     {
       q: "What is intelligent process automation (IPA)?",
