@@ -1,6 +1,6 @@
 /**
  * DESIGN: The Architect's Blueprint
- * AI DICTIONARY INDEX — /ai-dictionary
+ * AI DICTIONARY INDEX: /ai-dictionary
  * Blueprint aesthetic: dark navy bg, electric blue accents, mono labels, serif headings
  * Schema: DefinedTermSet
  */
@@ -104,7 +104,7 @@ export default function DictionaryIndex() {
         </div>
       </section>
 
-      {/* Term grid — alphabetical groups */}
+      {/* Term grid: alphabetical groups */}
       <section className="py-14 md:py-18">
         <div className="container">
           <div className="space-y-12">
@@ -167,7 +167,7 @@ export default function DictionaryIndex() {
               Ready to apply these concepts to your business?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Understanding AI terminology is the first step. Book a strategy call with Ikram Rana to evaluate your specific workflows and build a structured AI implementation plan.
+              Understanding AI terminology is the first step. Find the Workflow AI Should Fix First with Ikram Rana to evaluate your specific workflows and build a structured AI implementation plan.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -176,7 +176,7 @@ export default function DictionaryIndex() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-electric text-white font-mono text-xs tracking-wide hover:opacity-90 transition-opacity"
               >
-                Book a strategy call <ArrowRight size={13} />
+                Find the Workflow AI Should Fix First <ArrowRight size={13} />
               </a>
               <Link
                 href="/ai-knowledge-hub"
