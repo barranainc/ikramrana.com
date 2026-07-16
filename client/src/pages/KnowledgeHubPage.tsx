@@ -23,6 +23,7 @@ import HubFrameworkDiagram from '@/components/hub/HubFrameworkDiagram';
 import HubMistakesDiagram from '@/components/hub/HubMistakesDiagram';
 import HubExampleDiagram from '@/components/hub/HubExampleDiagram';
 import HubBusinessImpactDiagram from '@/components/hub/HubBusinessImpactDiagram';
+import AuthorAuthorityCard from '@/components/AuthorAuthorityCard';
 
 const BASE_URL = 'https://ikramrana.com';
 const LAST_REVIEWED = '2026-07-15';
@@ -194,11 +195,31 @@ export default function KnowledgeHubPage() {
     description: page.metaDescription,
     url: pageUrl,
     author: {
+      '@id': `${BASE_URL}/about#ikram-rana`,
       '@type': 'Person',
       name: 'Ikram Rana',
-      url: BASE_URL,
+      url: `${BASE_URL}/about`,
       jobTitle: 'AI Adoption and Workflow Implementation Specialist',
-      worksFor: { '@type': 'Organization', name: 'Barrana.ai', url: 'https://barrana.ai' },
+      homeLocation: {
+        '@type': 'Place',
+        name: 'Vaughan, Ontario, Canada',
+      },
+      sameAs: [
+        'https://www.linkedin.com/in/ikramrana/',
+        'https://ikramrana.substack.com',
+      ],
+      worksFor: {
+        '@id': 'https://barrana.ai/#organization',
+        '@type': 'Organization',
+        name: 'Barrana',
+        url: 'https://barrana.ai',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Vaughan',
+          addressRegion: 'Ontario',
+          addressCountry: 'CA',
+        },
+      },
     },
     publisher: {
       '@type': 'Organization',
@@ -430,7 +451,9 @@ export default function KnowledgeHubPage() {
               })}
             </div>
 
-            {/* ── FAQ Section ───────────────────────────────────────── */}
+            <AuthorAuthorityCard />
+
+            {/* FAQ Section */}
             {page.faqs.length > 0 && (
               <motion.section
                 id="faq"
