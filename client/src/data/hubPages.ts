@@ -33,7 +33,7 @@ export const hubPages: HubPage[] = [
   {
     slug: "what-is-ai-automation-for-small-businesses",
     title: "What Is AI Automation for Businesses?",
-    metaDescription: "AI automation uses artificial intelligence to execute business tasks without manual intervention. Learn what AI automation means for businesses, how it works, and how to implement it.",
+    metaDescription: "A plain-language guide to AI automation for businesses, including suitable workflows, exceptions, human oversight, implementation risks, and measurement.",
     definition: "AI automation is the use of artificial intelligence to execute repeatable business tasks without manual intervention. Unlike traditional automation that follows rigid rules, AI automation can interpret unstructured data, adapt to variations in input, and make rule-based decisions that previously required a human. For businesses, AI automation typically targets operations like document processing, client communication, scheduling, data entry, and workflow routing.",
     sections: [
       {
@@ -682,7 +682,7 @@ export const hubPages: HubPage[] = [
   {
     slug: "what-is-ai-copilot",
     title: "What Is an AI Copilot?",
-    metaDescription: "An AI copilot is an AI system that works alongside humans to assist with tasks, surface information, and improve decision quality. Learn how AI copilots work in business operations.",
+    metaDescription: "A plain-language guide to AI copilots, including where they assist people, what still requires human judgment, and how businesses should measure value and risk.",
     definition: "An AI copilot is an AI-powered assistant that works alongside a human operator to surface relevant information, generate suggestions, and reduce the cognitive load of complex tasks: without replacing the human's judgment or decision-making authority. Unlike fully automated systems that execute tasks independently, an AI copilot operates in a collaborative mode: the human retains control and makes final decisions, while the AI improves the quality and speed of those decisions.",
     sections: [
       {
@@ -726,7 +726,7 @@ export const hubPages: HubPage[] = [
   {
     slug: "what-is-prompt-engineering",
     title: "What Is Prompt Engineering?",
-    metaDescription: "Prompt engineering is the practice of designing inputs to AI language models to produce reliable, accurate, and useful outputs. Learn how prompt engineering works for business applications.",
+    metaDescription: "A practical guide to prompt engineering for businesses, including context, constraints, testing, verification, reusable prompts, and the limits of prompt-only solutions.",
     definition: "Prompt engineering is the practice of designing, structuring, and refining the inputs given to AI language models to produce outputs that are accurate, relevant, and useful for a specific purpose. A prompt is the instruction or query given to an AI model; prompt engineering is the systematic process of designing prompts that reliably produce the desired output. For businesses, prompt engineering is the skill that determines whether AI tools produce reliable, actionable results or inconsistent, unreliable outputs.",
     sections: [
       {
@@ -769,7 +769,7 @@ export const hubPages: HubPage[] = [
   {
     slug: "what-is-ai-hallucination",
     title: "What Is AI Hallucination?",
-    metaDescription: "AI hallucination is when an AI model generates confident, plausible-sounding outputs that are factually incorrect. Learn what causes AI hallucination and how businesses can manage it.",
+    metaDescription: "A practical guide to AI hallucination, including why plausible errors occur, which workflows face greater risk, and how human review and source checks help.",
     definition: "AI hallucination is the phenomenon where an AI language model generates outputs that are confident, coherent, and plausible-sounding but factually incorrect. The model does not know it is wrong: it produces the output that is most statistically consistent with its training data and the prompt it received, regardless of factual accuracy. For businesses using AI tools, hallucination is the primary accuracy risk that requires governance structures to manage.",
     sections: [
       {
