@@ -19,8 +19,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "How much does AI adoption cost?",
-      a: "Cost depends on the workflow, current systems, data, integrations, security, governance, training, and support requirements. Barrana's Discovery Stage is q: "How much does AI adoption cost?",
-      a: ,500 CAD and is credited toward implementation if the client proceeds. The implementation scope and fixed quote are prepared after discovery."
+      a: "Cost depends on the workflow, current systems, data, integrations, security, governance, training, and support requirements. Barrana's Discovery Stage is $1,500 CAD and is credited toward implementation if the client proceeds. The implementation scope and fixed quote are prepared after discovery."
     },
     {
       q: "What should businesses automate first?",
