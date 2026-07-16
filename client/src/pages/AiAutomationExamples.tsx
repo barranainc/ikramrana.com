@@ -107,7 +107,7 @@ export default function AiAutomationExamples() {
           <div className="flex flex-wrap justify-center gap-4">
             <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
               className="px-8 py-3 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-              BOOK A STRATEGY CALL →
+              FIND THE WORKFLOW AI SHOULD FIX FIRST →
             </a>
             <Link href="/ai-automation-for-business"
               className="px-8 py-3 border border-electric/40 text-electric font-mono text-sm tracking-wider hover:bg-electric/10 transition-colors no-underline">
@@ -123,7 +123,7 @@ export default function AiAutomationExamples() {
         <section className="mb-14">
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">These five automation categories represent the highest-value automation targets for most small and medium-sized service businesses. Each example includes the trigger that initiates the automation, the logic that governs its decisions, the actions it executes, and the business impact reported by businesses that have implemented it.</p>
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The examples are structured using the trigger-logic-action pattern described in the <Link href="/ai-workflow-systems" className="text-electric hover:underline no-underline">AI Workflow Systems</Link> guide. Every automation, regardless of complexity, can be decomposed into this pattern: it is the framework that makes automation design systematic rather than ad hoc.</p>
-          <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the implementation methodology that governs these examples, see the <Link href="/ai-automation-for-business" className="text-electric hover:underline no-underline">AI Automation for Business</Link> complete guide. For the prioritization framework that determines which automation to implement first, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Small Businesses</Link>.</p>
+          <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the implementation methodology that governs these examples, see the <Link href="/ai-automation-for-business" className="text-electric hover:underline no-underline">AI Automation for Business</Link> complete guide. For the prioritization framework that determines which automation to implement first, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Businesses</Link>.</p>
         </section>
 
         <div className="border-t border-border/20 mb-14" />
@@ -183,12 +183,12 @@ export default function AiAutomationExamples() {
             {[
               { label: "AI Automation for Business: Complete Guide", href: "/ai-automation-for-business" },
               { label: "AI Workflow Systems", href: "/ai-workflow-systems" },
-              { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+              { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
               { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
               { label: "AI Automation FAQ", href: "/ai-automation-faq" },
               { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
               { label: "AI Automation Case Studies", href: "/case-studies" },
-              { label: "What Is AI Automation for Small Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
+              { label: "What Is AI Automation for Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
             ].map((link) => (
               <Link key={link.href} href={link.href}
                 className="flex items-center gap-3 border border-border/40 bg-navy/40 p-4 hover:border-electric/40 hover:bg-navy/60 transition-colors no-underline group">
@@ -207,7 +207,7 @@ export default function AiAutomationExamples() {
           </p>
           <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-            BOOK A STRATEGY CALL →
+            FIND THE WORKFLOW AI SHOULD FIX FIRST →
           </a>
         </section>
 
