@@ -44,9 +44,9 @@ const hubSlugMap: Record<string, string> = {
 
 // Blog cross-link mapping
 const blogSlugMap: Record<string, string> = {
-  'Cognitive Load Is the Real Productivity Tax': 'cognitive-load-productivity-tax',
+  'Cognitive Load Is the Real Productivity Tax': 'cognitive-load-productivity',
   'Why Most People Automate the Wrong Step': 'automate-wrong-step',
-  'The Hidden Cost of Manual Processes': 'hidden-cost-manual-processes',
+  'The Hidden Cost of Manual Processes': 'automate-before-understanding',
 };
 
 export default function CaseStudyPage() {
@@ -91,7 +91,7 @@ export default function CaseStudyPage() {
     },
     "publisher": { "@type": "Organization", "name": "IkramRana.com" },
     "about": { "@type": "Thing", "name": `AI Automation for ${cs.industry}` },
-    "datePublished": "2026-03-01"
+    "dateModified": "2026-07-15"
   };
 
   // TOC entries
