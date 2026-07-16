@@ -55,9 +55,13 @@ A passing build does not mean this objective is complete.
 - Sitemap modification dates were refreshed after the source review.
 - Shared metadata defaults were aligned with the approved positioning.
 - Route-aware canonical URLs were added.
+- A reusable author authority card now connects every blog article and knowledge guide to Ikram Rana, Vaughan, the Greater Toronto Area, Barrana, and the dedicated location guides.
+- Article author schema now points to a dedicated About profile, and the About page uses ProfilePage and Person markup with consistent location and identity links.
 - Default Open Graph and X/Twitter metadata were added.
 - Fabricated or undocumented publication dates were removed from generated evergreen pages and replaced with an accurate review date.
 - All 30 blog metadata descriptions were reviewed. Generic, malformed, and overlong descriptions were replaced with specific page summaries.
+- All 30 blog articles received a high-risk body-copy pass. Twenty-six repetitive promotional Who helps FAQs were removed, twenty-six business and family scenarios were labelled illustrative, literal encoded dash characters were removed, and unsupported universal claims were qualified.
+- All 10 knowledge-hub pages received a high-risk body-copy pass. Seven promotional Who helps FAQs were removed, six business examples were labelled illustrative, and unsupported cost, affordability, implementation-time, performance, legal-readiness, and hallucination-control claims were rewritten.
 - Direct quotation framing that was not supported by a supplied quotation was removed from the knowledge hub and dictionary. These passages are now presented as Ikram Rana's practical positions.
 - All 22 dictionary entries passed structural checks for required fields and unique slugs. Exact illustrative performance figures, universal review schedules, and first-week payback language were removed or qualified.
 
@@ -79,6 +83,7 @@ A passing build does not mean this objective is complete.
 - TypeScript and production-build validation through GitHub Actions
 - Page-content validation run: https://github.com/barranainc/ikramrana.com/actions/runs/29469975744
 - A subsequent report-only commit also passed: https://github.com/barranainc/ikramrana.com/actions/runs/29470022870
+- Blog, knowledge-hub, and author-entity validation run: https://github.com/barranainc/ikramrana.com/actions/runs/29472844959
 - Static preview artifact generated successfully for commit `1b9eeda76a5bda35767f9a232f30d4bc01044d45`
 
 The browser-based visual review of that artifact is still incomplete.
@@ -105,9 +110,9 @@ Private evidence was not inspected in this source review.
 
 ### Detailed editorial review
 
-All routed components and libraries were fetched and scanned, and high-risk areas received targeted editorial review. Blog metadata, knowledge-hub quotation framing, and dictionary structure and high-risk claims received an additional editorial pass. However, every paragraph of all 30 blog articles and 10 knowledge pages has not yet received an individual source-by-source editorial sign-off. The dictionary passed structural and risk-language review, but it still needs final owner review for Ikram's named positions.
+All routed components and libraries were fetched and scanned. The blog and knowledge hub received a targeted high-risk editorial pass covering promotional repetition, fabricated quotation framing, illustrative examples, unsupported numbers, timelines, affordability, legal-readiness language, and universal claims. This does not mean every qualitative statement has independent external sourcing. The dictionary passed structural and risk-language review, but Ikram's named methods and positions still need final owner approval.
 
-The older blog and knowledge-hub body copy is the largest remaining content task.
+The remaining editorial task is source support for qualitative claims that are intended to be presented as researched fact rather than Ikram's analysis or practical position.
 
 ### Evidence and citations
 
@@ -157,10 +162,11 @@ Do not mark this pull request ready or deploy it until all of the following are 
 
 ## Next work order
 
-1. Complete the source-by-source editorial review of older blog and knowledge-hub body copy.
-2. Resolve the family and parenting content strategy.
-3. Complete desktop and mobile visual review.
-4. Recheck LinkedIn, Calendly, forms, navigation, and primary calls to action in a browser.
-5. Present the final owner review list.
-6. Confirm Hostinger deployment and rollback steps.
-7. Only then consider marking the pull request ready.
+1. Review and approve the named methods and practical positions attributed to Ikram Rana.
+2. Add sources where older qualitative claims should be presented as researched fact.
+3. Resolve the family and parenting content strategy.
+4. Complete desktop and mobile visual review.
+5. Recheck LinkedIn, Calendly, forms, navigation, and primary calls to action in a browser.
+6. Present the final owner review list.
+7. Confirm Hostinger deployment and rollback steps.
+8. Only then consider marking the pull request ready.
