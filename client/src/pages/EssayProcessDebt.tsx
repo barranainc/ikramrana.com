@@ -1,5 +1,5 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * ESSAY: Automation Reveals Process Debt
  */
 import { Link } from "wouter";
@@ -25,7 +25,7 @@ export default function EssayProcessDebt() {
             Automation Reveals Process Debt
           </h1>
           <p className="text-lg text-slate-text leading-relaxed mb-2">
-            When you automate a broken process, you get a faster broken process. The most common outcome of AI implementation is that organizations discover how much process debt they've accumulated — and how much of their operation depended on informal human judgment to compensate for it.
+            When you automate a broken process, you get a faster broken process. The most common outcome of AI implementation is that organizations discover how much process debt they've accumulated: and how much of their operation depended on informal human judgment to compensate for it.
           </p>
           <span className="font-mono text-xs text-slate-dim">7 min read</span>
         </motion.div>
@@ -38,23 +38,23 @@ export default function EssayProcessDebt() {
             Process debt is the accumulated gap between how an organization's processes are documented and how they actually work. It builds up over time as organizations grow, adapt, and improvise. Exceptions become standard practice. Workarounds become permanent. Informal knowledge fills gaps that formal documentation doesn't cover.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            In a human-operated workflow, process debt is often invisible. Experienced staff know the workarounds. They know which edge cases need special handling. They know who to call when the documented process doesn't cover the situation. The process works — not because it's well-designed, but because the humans running it are compensating for its gaps.
+            In a human-operated workflow, process debt is often invisible. Experienced staff know the workarounds. They know which edge cases need special handling. They know who to call when the documented process doesn't cover the situation. The process works: not because it's well-designed, but because the humans running it are compensating for its gaps.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            When you introduce AI, the compensation disappears. The AI follows the documented process. It doesn't know the workarounds. It doesn't know the edge cases. It doesn't know who to call. The process debt becomes visible — suddenly, urgently, and at scale.
+            When you introduce AI, the compensation disappears. The AI follows the documented process. It doesn't know the workarounds. It doesn't know the edge cases. It doesn't know who to call. The process debt becomes visible: suddenly, urgently, and at scale.
           </p>
         </motion.div>
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">The Discovery Moment</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The discovery moment typically arrives a few weeks into an AI implementation. The system is processing volume. The metrics look reasonable. Then the exceptions start accumulating. Cases that experienced staff would have handled without a second thought are being routed for human review — because the AI correctly identifies that the documented process doesn't cover them.
+            The discovery moment typically arrives a few weeks into an AI implementation. The system is processing volume. The metrics look reasonable. Then the exceptions start accumulating. Cases that experienced staff would have handled without a second thought are being routed for human review: because the AI correctly identifies that the documented process doesn't cover them.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The organization's response is usually to add more exceptions to the AI's handling rules. This is the wrong response. It treats the symptom — the AI's inability to handle the exception — rather than the cause — the undocumented process that the exception represents.
+            The organization's response is usually to add more exceptions to the AI's handling rules. This is the wrong response. It treats the symptom: the AI's inability to handle the exception: rather than the cause: the undocumented process that the exception represents.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The right response is to use the exception as a signal. Every exception the AI can't handle is a piece of process debt that has been made visible. It is an opportunity to document, standardize, and improve the process — not just to patch the AI's rules.
+            The right response is to use the exception as a signal. Every exception the AI can't handle is a piece of process debt that has been made visible. It is an opportunity to document, standardize, and improve the process: not just to patch the AI's rules.
           </p>
         </motion.div>
 
@@ -67,14 +67,14 @@ export default function EssayProcessDebt() {
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Using Automation as a Process Audit</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The most effective approach treats AI implementation as a process audit. Before the system goes live, map the process in detail — not as it's documented, but as it actually works. Interview the people who run it. Ask about the exceptions. Ask about the workarounds. Ask about the cases that don't fit the standard flow.
+            The most effective approach treats AI implementation as a process audit. Before the system goes live, map the process in detail: not as it's documented, but as it actually works. Interview the people who run it. Ask about the exceptions. Ask about the workarounds. Ask about the cases that don't fit the standard flow.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-4">This audit will reveal three categories of process debt:</p>
           <ul className="space-y-3 mb-6 pl-0">
             {[
               "Documentable debt: exceptions and workarounds that can be formalized and built into the automated process.",
-              "Judgment debt: cases that require genuine human judgment and should be explicitly routed to human review — not as failures, but as designed escalations.",
-              "Structural debt: process gaps that reveal underlying organizational problems — unclear ownership, conflicting policies, missing data — that need to be resolved before automation can work.",
+              "Judgment debt: cases that require genuine human judgment and should be explicitly routed to human review: not as failures, but as designed escalations.",
+              "Structural debt: process gaps that reveal underlying organizational problems: unclear ownership, conflicting policies, missing data: that need to be resolved before automation can work.",
             ].map((item, i) => (
               <li key={i} className="flex gap-3 text-foreground/85 leading-relaxed">
                 <span className="w-1.5 h-1.5 rounded-sm bg-electric mt-2.5 shrink-0" />
