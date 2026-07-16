@@ -1,5 +1,5 @@
 /**
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint , Light Theme
  * Blog Index page at /blog
  *
  * Design philosophy: Matches the site's architectural blueprint aesthetic exactly.
@@ -8,7 +8,7 @@
  * - bg-navy / bg-navy-deep alternating sections
  * - text-electric for accents, text-foreground for headings, text-slate-text for body
  * - Left-border electric accent on hover cards
- * - No rounded-full pill tags — use sharp-edged mono labels
+ * - No rounded-full pill tags , use sharp-edged mono labels
  * - Asymmetric layout: wide article list with left-anchored number annotations
  */
 
@@ -41,7 +41,7 @@ const allTags = ['All', ...Array.from(new Set(blogPosts.flatMap(p => p.tags)))];
 
 export default function BlogIndex() {
   const [activeTag, setActiveTag] = useState('All');
-  useHead("AI Automation Blog", "Practical thinking on AI adoption and operations. Articles on decision architecture, automation, governance, and judgment for business operators.");
+  useHead("Critical and Practical AI Adoption Analysis", "Independent analysis of where AI helps businesses, where it fails, what adoption is missing, and how to implement it with human judgment intact.");
 
   const filtered = activeTag === 'All'
     ? blogPosts
@@ -49,7 +49,7 @@ export default function BlogIndex() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <title>Blog — AI Strategy & Decision Architecture | Ikram Rana</title>
+      <title>Critical AI Adoption Analysis | Ikram Rana</title>
 
       {/* ── Page Header ─────────────────────────────────────────────── */}
       <section className="bg-navy border-b border-border pt-24 pb-16">
@@ -61,13 +61,13 @@ export default function BlogIndex() {
             className="max-w-3xl"
           >
             <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-electric mb-5">
-              §06 — BLOG
+              §06 · AI ADOPTION ANALYSIS
             </p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight mb-5">
-              Practical thinking on AI<br className="hidden md:block" /> adoption and operations.
+              Critical thinking on AI<br className="hidden md:block" /> adoption in business.
             </h1>
             <p className="text-slate-text text-lg leading-relaxed max-w-xl">
-              Written for operators who need structure, not hype. {blogPosts.length} articles on decision architecture, automation, governance, and judgment.
+              Written for business owners and decision-makers who need useful answers, not automatic enthusiasm. These articles examine where AI helps, where it adds new problems, what adoption is missing, and what must remain human.
             </p>
           </motion.div>
         </div>
