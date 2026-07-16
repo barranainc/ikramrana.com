@@ -92,7 +92,7 @@ export default function Speaking() {
                   His Three-Layer Model separates execution, judgment, and compliance as distinct structural layers, providing organizations with a framework for understanding where AI helps, where it creates risk, and where the boundaries must be explicit. He advocates for governance-by-design, the principle that compliance-supporting controls must be built into system architecture rather than documented after deployment.
                 </p>
                 <p>
-                  With More than a decade of founder experience across AI implementation, software development, and cybersecurity, Rana brings both technical depth and strategic perspective to the question of how organizations can adopt AI without losing accountability.
+                  With more than a decade of founder experience across AI implementation, software development, and cybersecurity, Rana brings both technical depth and strategic perspective to the question of how organizations can adopt AI without losing accountability.
                 </p>
               </div>
             </div>
