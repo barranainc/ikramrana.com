@@ -106,7 +106,7 @@ const collectionSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'AI Automation by Industry',
-  description: 'Industry-specific guides on how AI automation improves operations for businesses. Written by Ikram Rana, founder of Barrana.ai.',
+  description: 'Industry-specific guides on where AI automation may support business operations, where human judgment must remain, and what each organization should measure. Written by Ikram Rana, founder of Barrana.ai.',
   url: `${BASE_URL}/industries`,
   author: { '@type': 'Person', name: 'Ikram Rana', url: BASE_URL },
   hasPart: industryPages.map(p => ({
@@ -172,7 +172,7 @@ export default function IndustryIndex() {
               AI Automation by Industry
             </h1>
             <p className="font-sans text-[15px] text-slate-text leading-relaxed mb-6 max-w-xl">
-              Industry-specific guides on how AI automation improves operations for businesses. Written by Ikram Rana, founder of Barrana.ai.
+              Industry-specific guides on where AI automation may support business operations, where human judgment must remain, and what each organization should measure. Written by Ikram Rana, founder of Barrana.ai.
             </p>
             <p className="font-mono text-[11px] text-slate-dim tracking-wide">
               By{' '}
