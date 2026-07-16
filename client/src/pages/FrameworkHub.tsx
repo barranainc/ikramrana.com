@@ -49,7 +49,7 @@ const frameworkPages = [
     label: "Governance-by-Design",
     meta: "§03: Application",
     title: "Governance is Architecture, Not Paperwork",
-    desc: "How to embed compliance as a design property of the system itself: so your system is compliant by construction, not just by intention.",
+    desc: "How to embed compliance as a design property of the system itself: so your system is designed to support compliance through embedded controls, not just by intention.",
     href: "/governance",
     readTime: "12 min read",
     accent: "text-burgundy",
