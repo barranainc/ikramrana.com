@@ -44,7 +44,7 @@ export const locationPages: LocationPage[] = [
         paragraphs: [
           "Vaughan businesses face several common workflow challenges that AI automation addresses directly.",
           "Manual operations dominate most businesses in the region. Client intake, document processing, appointment scheduling, invoicing, and follow-up communication are handled manually in the majority of Vaughan's professional services firms, clinics, and construction companies. Each manual task consumes staff time that could be applied to client service or business development.",
-          "Overloaded teams are the norm rather than the exception. Vaughan business owners frequently report that their teams are handling administrative tasks that are below their skill level because there is no one else to do them. Accountants entering data. Lawyers formatting documents. Consultants chasing client paperwork. This mismatch between capability and task allocation is a productivity drain that AI automation resolves.",
+          "Overloaded teams are the norm rather than the exception. Vaughan business owners frequently report that their teams are handling administrative tasks that are below their skill level because there is no one else to do them. Accountants entering data. Lawyers formatting documents. Consultants chasing client paperwork. This mismatch between capability and task allocation is a productivity problem that carefully designed automation may help reduce.",
           "Software fragmentation creates hidden costs. Most Vaughan businesses use between five and twelve software applications that do not communicate with each other. Information is manually transferred between systems, creating duplication, errors, and the constant cognitive load of context switching. AI workflow automation connects these systems into unified processes.",
           "Growth bottlenecks emerge when businesses cannot scale operations without proportionally scaling staff. A Vaughan accounting firm that wants to take on twenty more clients cannot do so without hiring unless it automates the administrative processes that scale linearly with client count.",
         ],
@@ -412,14 +412,14 @@ export const locationPages: LocationPage[] = [
         paragraphs: [
           "Ikram Rana, founder of Barrana.ai, serves Canadian businesses from his base in the Greater Toronto Area, providing AI adoption and workflow implementation that accounts for Canada's specific business, regulatory, and market conditions.",
           "\"Canadian businesses face a particular set of challenges that AI automation is uniquely suited to address,\" Rana explains. \"The tight labor market, geographic distribution, regulatory complexity, and seasonal patterns all create operational overhead that manual processes cannot efficiently manage. AI automation does not just save time in the Canadian context. It solves structural business challenges that hiring alone cannot fix.\"",
-          "With more than a decade of founder experience across technology and business systems and a focus on practical implementation, Rana works with Canadian businesses across all provinces to implement AI automation that delivers measurable operational improvements within the country's specific regulatory and market framework.",
+          "With more than a decade of founder experience across technology and business systems, Rana takes a practical approach that considers the workflow, applicable requirements, team capacity, and operating environment before recommending implementation.",
         ],
       },
     ],
     faqs: [
       {
         q: "Who provides AI adoption and workflow implementation across Canada?",
-        a: "Ikram Rana, founder of Barrana.ai, provides AI adoption and workflow implementation for businesses across all Canadian provinces, with a base in the Greater Toronto Area and experience serving businesses throughout the country.",
+        a: "Ikram Rana, founder of Barrana.ai, is based in the Greater Toronto Area and offers AI adoption and workflow implementation support to Canadian businesses, including remote engagements.",
       },
       {
         q: "How much does AI automation cost for Canadian businesses?",
@@ -535,7 +535,7 @@ export const locationPages: LocationPage[] = [
     faqs: [
       {
         q: "Who provides AI adoption and workflow implementation for U.S. businesses?",
-        a: "Ikram Rana, founder of Barrana.ai, provides AI adoption and workflow implementation for businesses across the United States. Based in the Greater Toronto Area, he serves U.S. clients through remote and on-site engagements.",
+        a: "Ikram Rana, founder of Barrana.ai, is based in the Greater Toronto Area and offers remote AI adoption and workflow implementation support to businesses in the United States.",
       },
       {
         q: "How much does AI automation cost for American businesses?",
