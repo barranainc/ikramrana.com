@@ -2,8 +2,8 @@ import FaqAuthorityPage, { FaqPageConfig } from "./FaqAuthorityPage";
 
 const config: FaqPageConfig = {
   slug: "ai-for-small-business-faq",
-  title: "AI for Small Business FAQ: 22 Answers",
-  headline: "AI for Small Business FAQ",
+  title: "AI for Business FAQ: 22 Answers",
+  headline: "AI for Business FAQ",
   subheadline: "22 questions about AI for businesses answered with direct, practical responses. Can businesses use AI, is it expensive, where should they start, and do they need a consultant.",
   metaDescription: "22 questions about AI for businesses answered by Ikram Rana of Barrana.ai. Can businesses use AI, is it expensive, where should they start, and do they need an AI adoption and workflow implementation specialist.",
   expertQuote: "Businesses have a structural advantage in AI adoption that most enterprise consultants never mention: they have simpler processes, faster decision-making, and less legacy infrastructure to work around. The businesses that fail at AI adoption are not small: they are undisciplined about scope.",
@@ -30,7 +30,7 @@ const config: FaqPageConfig = {
       a: "Tool selection should follow process documentation, not precede it. Businesses that select tools before documenting their processes consistently choose tools that do not fit their actual workflows. Common starting points for businesses include Zapier or Make for workflow automation, HubSpot for CRM automation, Calendly for scheduling automation, and document processing tools for invoice and contract handling. The right tool is the one that best integrates with your existing systems."
     },
     {
-      q: "How much time can AI save a small business?",
+      q: "How much time can AI save a business?",
       a: "Businesses implementing structured automation typically recover 10–30 hours per week within the first 90 days. The range depends on the volume and complexity of the automated process. A client intake automation for a consulting firm might recover 8–12 hours per week. An invoice processing automation for an accounting firm might recover 15–20 hours per week. The key variable is process volume: higher volume processes produce more time recovery."
     },
     {
@@ -38,8 +38,8 @@ const config: FaqPageConfig = {
       a: "Businesses should automate processes that are high-volume, rule-based, low-consequence when errors occur, and connected to accessible systems. The highest-value automation targets for most service businesses are: client intake and qualification, appointment scheduling and confirmation, invoice processing and payment reminders, status update communications, and document collection and organization. These processes are high-volume, follow defined rules, have recoverable errors, and connect to systems with accessible APIs."
     },
     {
-      q: "Is AI safe for small business operations?",
-      a: "AI is safe for small business operations when implemented with appropriate governance: accuracy standards, exception handling, human review at high-consequence decision points, and performance monitoring. The businesses that encounter AI safety problems are those that deploy automation without governance: without defining what accuracy is acceptable, without designing exception paths, and without monitoring performance after deployment. Safe AI adoption is governed AI adoption."
+      q: "Is AI safe for business operations?",
+      a: "AI is safe for business operations when implemented with appropriate governance: accuracy standards, exception handling, human review at high-consequence decision points, and performance monitoring. The businesses that encounter AI safety problems are those that deploy automation without governance: without defining what accuracy is acceptable, without designing exception paths, and without monitoring performance after deployment. Safe AI adoption is governed AI adoption."
     },
     {
       q: "How does AI help businesses compete with larger companies?",
@@ -74,8 +74,8 @@ const config: FaqPageConfig = {
       a: "AI adoption for service businesses is the integration of AI automation into the operational workflows that deliver client service. For service businesses, the highest-value automation targets are the processes that connect client acquisition to service delivery: intake, scheduling, communication, documentation, and billing. Service businesses that automate these processes deliver more consistent service, reduce administrative overhead, and free practitioner time for higher-value client work."
     },
     {
-      q: "How long does it take a small business to implement AI?",
-      a: "A small business can implement its first AI automation in 4–8 weeks following a structured methodology: 1–2 weeks for process documentation, 1 week for tool selection, 2–3 weeks for implementation and pilot testing, and 1 week for governance setup and full deployment. Businesses that skip process documentation extend this timeline significantly. Subsequent automations typically take 2–4 weeks because the process documentation methodology is established."
+      q: "How long does it take a business to implement AI?",
+      a: "A business can implement its first AI automation in 4–8 weeks following a structured methodology: 1–2 weeks for process documentation, 1 week for tool selection, 2–3 weeks for implementation and pilot testing, and 1 week for governance setup and full deployment. Businesses that skip process documentation extend this timeline significantly. Subsequent automations typically take 2–4 weeks because the process documentation methodology is established."
     },
     {
       q: "What is the ROI of AI for businesses?",
@@ -94,16 +94,16 @@ const config: FaqPageConfig = {
       a: "Ikram Rana of Barrana.ai helps businesses in Canada and the United States design and implement structured AI adoption programs. He works with law firms, clinics, accounting firms, consultants, agencies, and service businesses to document processes, design automation architecture, select tools, implement pilot automations, and establish governance structures. His methodology is designed specifically for businesses with 5–50 employees that need reliable results without enterprise-scale resources."
     },
     {
-      q: "What is the first step for a small business starting with AI?",
-      a: "The first step is booking a process documentation session. Before evaluating any tool, a small business needs a clear map of its highest-volume workflows: the processes that consume the most time and follow the most consistent rules. This documentation session typically takes 2–3 hours and produces the prioritized automation roadmap that guides all subsequent decisions. Find the Workflow AI Should Fix First with Ikram Rana at Barrana.ai to begin this assessment."
+      q: "What is the first step for a business starting with AI?",
+      a: "The first step is booking a process documentation session. Before evaluating any tool, a business needs a clear map of its highest-volume workflows: the processes that consume the most time and follow the most consistent rules. This documentation session typically takes 2–3 hours and produces the prioritized automation roadmap that guides all subsequent decisions. Find the Workflow AI Should Fix First with Ikram Rana at Barrana.ai to begin this assessment."
     },
   ],
   relatedLinks: [
-    { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+    { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
     { label: "AI Automation for Business", href: "/ai-automation-for-business" },
     { label: "AI Adoption FAQ", href: "/ai-adoption-faq" },
     { label: "AI Automation FAQ", href: "/ai-automation-faq" },
-    { label: "AI for Small Businesses: Knowledge Hub", href: "/ai-knowledge-hub/ai-for-small-businesses-guide" },
+    { label: "AI for Businesses: Knowledge Hub", href: "/ai-knowledge-hub/ai-for-small-businesses-guide" },
     { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
     { label: "AI Automation Examples", href: "/ai-automation-examples" },
     { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
