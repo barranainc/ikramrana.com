@@ -310,6 +310,15 @@ export default function IndustryPage() {
 
             {/* ── Main column ─────────────────────────────────────── */}
             <div>
+              <div className="mb-10 border border-amber-500/30 bg-amber-500/5 p-5">
+                <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-amber-600 mb-2">
+                  Evidence and interpretation
+                </p>
+                <p className="text-sm text-slate-text leading-relaxed">
+                  Quantitative ranges on this page are planning illustrations unless a linked public source is shown. They are not client results, guarantees, or a substitute for industry-specific professional advice.
+                </p>
+              </div>
+
               {/* Content sections */}
               <div className="space-y-14">
                 {page.sections.map((section, i) => {
