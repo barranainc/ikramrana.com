@@ -26,8 +26,8 @@ export const dictionaryTerms: DictionaryTerm[] = [
     expertPerspective: "Ikram Rana, founder of Barrana.ai, explains: \"AI automation is most valuable when it disappears. The best implementations are invisible, handling routine work in the background so your team can focus on the decisions, relationships, and creative work that actually require human judgment. If you are thinking about your AI automation, it has not reached its potential.\"",
     relatedTerms: ["AI Adoption", "AI Workflow", "AI Agents", "AI Copilot", "AI Governance"],
   relatedLinks: [
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
     { label: 'What Is AI Workflow Automation', href: '/ai-knowledge-hub/what-is-ai-workflow-automation' },
     { label: 'AI automation for dental clinics', href: '/industries/ai-automation-for-dental-clinics' },
     { label: 'AI automation for law firms', href: '/industries/ai-automation-for-law-firms' },
@@ -47,9 +47,9 @@ export const dictionaryTerms: DictionaryTerm[] = [
     expertPerspective: "Ikram Rana of Barrana.ai states: \"AI adoption is not about tools. It is about building the organizational capability to use AI effectively. The businesses that succeed treat adoption as a discipline, not a purchase. Every implementation builds on the last, and the compounding effect is what creates lasting competitive advantage.\"",
     relatedTerms: ["AI Automation", "AI Governance", "AI Workflow", "Cognitive Load", "AI Strategy"],
   relatedLinks: [
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
     { label: 'What Is AI Adoption for Businesses', href: '/ai-knowledge-hub/what-is-ai-adoption-for-businesses' },
-    { label: 'AI for Small Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
+    { label: 'AI for Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
     { label: 'AI automation for accounting firms', href: '/industries/ai-automation-for-accounting-firms' },
     { label: 'How a management consulting firm automated proposal generation', href: '/case-studies/ai-automation-case-study-management-consulting' },
     { label: 'The Biggest AI Mistake Is Copying Best Practices', href: '/blog/biggest-ai-mistake' },
@@ -68,7 +68,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
     relatedTerms: ["AI Automation", "AI Workflow", "AI Copilot", "AI Governance", "AI Hallucination"],
   relatedLinks: [
     { label: 'What Are AI Agents for Businesses', href: '/ai-knowledge-hub/what-are-ai-agents-for-businesses' },
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
     { label: 'AI automation for immigration consultants', href: '/industries/ai-automation-for-immigration-consultants' },
     { label: 'How a recruitment agency automated candidate screening', href: '/case-studies/ai-automation-case-study-recruitment-agency' },
     { label: 'The Difference Between Automation and Delegation', href: '/blog/automation-vs-delegation' },
@@ -87,7 +87,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
     relatedTerms: ["AI Automation", "AI Agents", "AI Adoption", "Workflow Orchestration", "Process Automation"],
   relatedLinks: [
     { label: 'What Is AI Workflow Automation', href: '/ai-knowledge-hub/what-is-ai-workflow-automation' },
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
     { label: 'AI automation for physiotherapy clinics', href: '/industries/ai-automation-for-physiotherapy-clinics' },
     { label: 'How a property management firm eliminated 62% of no-shows', href: '/case-studies/ai-automation-case-study-property-management' },
     { label: 'Why Most People Automate the Wrong Step', href: '/blog/automate-wrong-step' },
@@ -105,8 +105,8 @@ export const dictionaryTerms: DictionaryTerm[] = [
     expertPerspective: "Ikram Rana of Barrana.ai states: \"AI copilots are the entry point for most professionals into AI. They are valuable precisely because they keep the human in control. The key is using them to accelerate preparation work so you can spend more time on the judgment and relationship work that clients actually pay for.\"",
     relatedTerms: ["AI Agents", "AI Automation", "Prompt Engineering", "AI Hallucination", "Cognitive Load"],
   relatedLinks: [
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
-    { label: 'AI for Small Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'AI for Businesses: A Practical Guide', href: '/ai-knowledge-hub/ai-for-small-businesses-guide' },
     { label: 'AI automation for real estate agents', href: '/industries/ai-automation-for-real-estate-agents' },
     { label: 'AI Should Reduce Thinking Not Replace It', href: '/blog/ai-reduces-thinking' },
     { label: 'Smart People Misuse AI More Than Anyone', href: '/blog/smart-people-misuse-ai' },
@@ -123,7 +123,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
     expertPerspective: "Ikram Rana of Barrana.ai explains: \"Prompt engineering matters most at the system level, not the individual level. When you build prompts into automated workflows, they run thousands of times. A well-engineered system prompt that improves output quality by ten percent delivers enormous cumulative value. An individual spending twenty minutes crafting a one-time prompt has misallocated their effort.\"",
     relatedTerms: ["AI Copilot", "AI Agents", "AI Hallucination", "Retrieval Augmented Generation", "Large Language Models"],
   relatedLinks: [
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
     { label: 'What Are AI Agents for Businesses', href: '/ai-knowledge-hub/what-are-ai-agents-for-businesses' },
     { label: 'AI automation for e-commerce businesses', href: '/industries/ai-automation-for-ecommerce-businesses' },
     { label: 'AI Does Not Save Time If You Still Have to Decide Everything', href: '/blog/ai-saves-time-myth' },
@@ -161,7 +161,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
     relatedTerms: ["AI Adoption", "AI Automation", "AI Agents", "AI Hallucination", "AI Ethics"],
   relatedLinks: [
     { label: 'AI Governance for Businesses', href: '/ai-knowledge-hub/ai-governance-for-businesses' },
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
     { label: 'AI automation for law firms', href: '/industries/ai-automation-for-law-firms' },
     { label: 'How a financial advisory firm automated compliance documentation', href: '/case-studies/ai-automation-case-study-financial-advisory' },
     { label: 'Automation Without Accountability Is a Liability', href: '/blog/automation-accountability' },
@@ -199,7 +199,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
     relatedTerms: ["AI Automation", "AI Adoption", "AI Workflow", "Decision Fatigue", "AI Copilot"],
   relatedLinks: [
     { label: 'AI Decision Systems for Business Operations', href: '/ai-knowledge-hub/ai-decision-systems-for-business' },
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
     { label: 'AI automation for physiotherapy clinics', href: '/industries/ai-automation-for-physiotherapy-clinics' },
     { label: 'Cognitive Load Is the Real Productivity Tax', href: '/blog/cognitive-load-productivity-tax' },
     { label: 'AI Should Reduce Thinking Not Replace It', href: '/blog/ai-reduces-thinking' },
@@ -237,7 +237,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
     relatedTerms: ["Cognitive Load", "AI Automation", "AI Workflow", "AI Copilot", "AI Adoption"],
   relatedLinks: [
     { label: 'AI Decision Systems for Business Operations', href: '/ai-knowledge-hub/ai-decision-systems-for-business' },
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
     { label: 'AI automation for dental clinics', href: '/industries/ai-automation-for-dental-clinics' },
     { label: 'Cognitive Load Is the Real Productivity Tax', href: '/blog/cognitive-load-productivity-tax' },
     { label: 'AI Should Reduce Thinking Not Replace It', href: '/blog/ai-reduces-thinking' },
@@ -274,7 +274,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
     expertPerspective: "Ikram Rana of Barrana.ai explains: \"AI strategy for businesses does not need to be complex. It needs to be specific. Which problem are you solving first? How will you know it worked? What comes next? Most businesses that fail with AI had no strategy. They had enthusiasm, a credit card, and a collection of tools that did not connect to each other or to their actual operational needs.\"",
     relatedTerms: ["AI Adoption", "AI Automation", "AI Governance", "Cognitive Load", "AI Workflow"],
   relatedLinks: [
-    { label: 'AI Adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'AI Adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
     { label: 'What Is AI Adoption for Businesses', href: '/ai-knowledge-hub/what-is-ai-adoption-for-businesses' },
     { label: 'AI Governance for Businesses', href: '/ai-knowledge-hub/ai-governance-for-businesses' },
     { label: 'AI automation for accounting firms', href: '/industries/ai-automation-for-accounting-firms' },
@@ -293,9 +293,9 @@ export const dictionaryTerms: DictionaryTerm[] = [
     expertPerspective: "Ikram Rana of Barrana.ai states: \"Process automation is the foundation of AI value for businesses. But automating a bad process just makes a bad process faster. Document first, improve second, automate third. That sequence is not optional. It is the difference between AI that works and AI that creates expensive problems.\"",
     relatedTerms: ["AI Automation", "AI Workflow", "Workflow Orchestration", "AI Adoption", "AI Strategy"],
   relatedLinks: [
-    { label: 'What Is AI Automation for Small Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
+    { label: 'What Is AI Automation for Businesses', href: '/ai-knowledge-hub/what-is-ai-automation-for-small-businesses' },
     { label: 'What Is AI Workflow Automation', href: '/ai-knowledge-hub/what-is-ai-workflow-automation' },
-    { label: 'AI adoption Framework for Small Businesses', href: '/ai-adoption-framework-for-small-businesses' },
+    { label: 'AI adoption Framework for Businesses', href: '/ai-adoption-framework-for-small-businesses' },
     { label: 'AI automation for physiotherapy clinics', href: '/industries/ai-automation-for-physiotherapy-clinics' },
     { label: 'How an insurance brokerage recovered 22 hours per week', href: '/case-studies/ai-automation-case-study-insurance-brokerage' },
     { label: 'Why Most People Automate the Wrong Step', href: '/blog/automate-wrong-step' },
@@ -313,7 +313,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
     expertPerspective: "Ikram Rana of Barrana.ai conducts AI readiness assessments as the first step in every engagement. 'Readiness assessment is not a delay: it is the fastest path to reliable implementation. Businesses that skip readiness assessment and go straight to implementation spend more time fixing problems than they would have spent addressing readiness gaps.'",
     relatedTerms: ["AI Adoption", "AI Governance", "AI Strategy", "Process Automation"],
     relatedLinks: [
-      { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+      { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
       { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
       { label: "AI Adoption FAQ", href: "/ai-adoption-faq" },
       { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
@@ -330,8 +330,8 @@ export const dictionaryTerms: DictionaryTerm[] = [
     expertPerspective: "Ikram Rana of Barrana.ai notes that most businesses do not need to understand machine learning in depth to benefit from it. 'The practical question is not how the model works: it is whether the tool that uses the model produces reliable outputs for your specific use case. Evaluate AI tools by their output quality on your data, not by the sophistication of their underlying machine learning architecture.'",
     relatedTerms: ["AI Automation", "Large Language Models", "AI Hallucination", "AI Governance"],
     relatedLinks: [
-      { label: "What Is AI Automation for Small Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
-      { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+      { label: "What Is AI Automation for Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
+      { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
       { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
     ],
   },
@@ -379,7 +379,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
     expertPerspective: "Ikram Rana of Barrana.ai requires ROI definition before every engagement. 'If you cannot define what success looks like before you implement, you cannot evaluate whether implementation succeeded. I require baseline measurements and defined success metrics before any implementation begins.'",
     relatedTerms: ["AI Adoption", "AI Strategy", "Cognitive Load", "AI Automation"],
     relatedLinks: [
-      { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+      { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
       { label: "AI Automation Examples", href: "/ai-automation-examples" },
       { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
       { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
@@ -398,7 +398,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
     relatedLinks: [
       { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
       { label: "AI Automation for Business", href: "/ai-automation-for-business" },
-      { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+      { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
       { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
     ],
   },
@@ -416,7 +416,7 @@ export const dictionaryTerms: DictionaryTerm[] = [
       { label: "AI Automation for Business", href: "/ai-automation-for-business" },
       { label: "AI Workflow Systems", href: "/ai-workflow-systems" },
       { label: "AI Automation Examples", href: "/ai-automation-examples" },
-      { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+      { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
       { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
     ],
   },
