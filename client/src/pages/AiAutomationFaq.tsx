@@ -104,7 +104,7 @@ const config: FaqPageConfig = {
     { label: "AI Adoption FAQ", href: "/ai-adoption-faq" },
     { label: "AI Automation Examples", href: "/ai-automation-examples" },
     { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
-    { label: "What Is AI Automation for Small Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
+    { label: "What Is AI Automation for Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
     { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
     { label: "AI Automation Case Studies", href: "/case-studies" },
   ],
