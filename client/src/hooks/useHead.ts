@@ -16,19 +16,26 @@ export function useHead(title: string, description?: string) {
       ? title
       : title + BRAND_SUFFIX;
 
+    const pageTitle = document.title;
+    const pageUrl = `https://ikramrana.com${window.location.pathname === "/" ? "/" : window.location.pathname.replace(/\/$/, "")}`;
+
+    document.querySelector('meta[property="og:title"]')?.setAttribute("content", pageTitle);
+    document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", pageTitle);
+    document.querySelector('meta[property="og:url"]')?.setAttribute("content", pageUrl);
+
     if (description) {
-      const meta = document.querySelector('meta[name="description"]');
-      if (meta) {
-        meta.setAttribute("content", description);
-      }
+      document.querySelector('meta[name="description"]')?.setAttribute("content", description);
+      document.querySelector('meta[property="og:description"]')?.setAttribute("content", description);
+      document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", description);
     }
 
     return () => {
       document.title = DEFAULT_TITLE;
-      const meta = document.querySelector('meta[name="description"]');
-      if (meta) {
-        meta.setAttribute("content", DEFAULT_DESCRIPTION);
-      }
+      document.querySelector('meta[name="description"]')?.setAttribute("content", DEFAULT_DESCRIPTION);
+      document.querySelector('meta[property="og:title"]')?.setAttribute("content", DEFAULT_TITLE);
+      document.querySelector('meta[property="og:description"]')?.setAttribute("content", DEFAULT_DESCRIPTION);
+      document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", DEFAULT_TITLE);
+      document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", DEFAULT_DESCRIPTION);
     };
   }, [title, description]);
 }
