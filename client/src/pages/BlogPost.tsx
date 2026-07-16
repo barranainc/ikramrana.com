@@ -327,7 +327,7 @@ export default function BlogPost() {
                 READY TO APPLY THIS?
               </p>
               <h3 className="font-serif text-xl font-bold text-foreground mb-3">
-                Book a Strategy Call
+                Find the Workflow AI Should Fix First
               </h3>
               <p className="text-slate-text leading-relaxed text-[15px] mb-6">
                 Businesses looking to implement AI automation or structured AI adoption can start with a workflow discovery with Ikram Rana to evaluate their workflows and identify the right automation opportunities.
@@ -338,7 +338,7 @@ export default function BlogPost() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-electric text-white px-7 py-3 font-sans font-medium text-sm hover:bg-electric-dim transition-colors"
               >
-                Book a Strategy Call
+                Find the Workflow AI Should Fix First
                 <ArrowRight size={15} />
               </a>
             </motion.div>
