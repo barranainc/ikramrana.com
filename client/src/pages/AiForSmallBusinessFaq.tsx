@@ -40,7 +40,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "Is AI safe for business operations?",
-      a: "AI is safe for business operations when implemented with appropriate governance: accuracy standards, exception handling, human review at high-consequence decision points, and performance monitoring. The businesses that encounter AI safety problems are those that deploy automation without governance: without defining what accuracy is acceptable, without designing exception paths, and without monitoring performance after deployment. Safe AI adoption is governed AI adoption."
+      a: "AI introduces risks as well as potential benefits. Safety depends on the task, data, model behaviour, access controls, security, privacy, monitoring, exception handling, and consequences of failure. High-impact decisions require qualified human review. No implementation should be described as safe until its specific risks and controls have been tested."
     },
     {
       q: "How does AI help businesses compete with larger companies?",
