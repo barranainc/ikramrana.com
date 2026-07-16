@@ -1,6 +1,6 @@
 /*
- * DESIGN: The Architect's Blueprint — Resource Page
- * /ai-adoption-checklist — 20-step checklist, 4 phases, HowTo schema
+ * DESIGN: The Architect's Blueprint: Resource Page
+ * /ai-adoption-checklist: 20-step checklist, 4 phases, HowTo schema
  */
 
 import { useEffect } from "react";
@@ -15,10 +15,10 @@ const phases = [
     color: "border-electric",
     desc: "Before any AI tool is evaluated or selected, the business must have documented clarity on its processes. This phase establishes the foundation that makes all subsequent automation reliable.",
     steps: [
-      { num: "1", title: "Map your top 5 time-consuming workflows", detail: "Document every trigger, step, decision point, exception, and outcome for each workflow. This is the most important step in the entire checklist — businesses that skip it consistently encounter implementation failures." },
+      { num: "1", title: "Map your top 5 time-consuming workflows", detail: "Document every trigger, step, decision point, exception, and outcome for each workflow. This is the most important step in the entire checklist: businesses that skip it consistently encounter implementation failures." },
       { num: "2", title: "Identify decision points in each workflow", detail: "Mark every point in the workflow where a human makes a judgment call. These are the points that require either explicit rules (for automation) or human oversight checkpoints (for governance)." },
       { num: "3", title: "Document exception patterns", detail: "For each workflow, document the cases that do not follow the standard path. What percentage of volume do exceptions represent? What triggers them? Where do they currently go?" },
-      { num: "4", title: "Assess data quality for each workflow", detail: "Identify what data each workflow requires and evaluate its current quality. AI automation is only as reliable as the data it processes — poor data quality is the most common cause of automation accuracy problems." },
+      { num: "4", title: "Assess data quality for each workflow", detail: "Identify what data each workflow requires and evaluate its current quality. AI automation is only as reliable as the data it processes: poor data quality is the most common cause of automation accuracy problems." },
       { num: "5", title: "Score each workflow on automation readiness", detail: "Rate each workflow on four criteria: volume (1–5), rule clarity (1–5), error consequence (1–5, where 5 = low consequence), and integration feasibility (1–5). The highest-scoring workflow is your first automation candidate." },
     ],
   },
@@ -28,10 +28,10 @@ const phases = [
     color: "border-teal-400",
     desc: "With process clarity established, this phase designs and implements the first automation. The goal is a single, well-scoped automation that operates reliably in production.",
     steps: [
-      { num: "6", title: "Select your first automation candidate", detail: "Choose the workflow with the highest readiness score from Phase 1. Resist the temptation to automate multiple workflows simultaneously — the first automation establishes the patterns that make subsequent automations faster and more reliable." },
+      { num: "6", title: "Select your first automation candidate", detail: "Choose the workflow with the highest readiness score from Phase 1. Resist the temptation to automate multiple workflows simultaneously: the first automation establishes the patterns that make subsequent automations faster and more reliable." },
       { num: "7", title: "Design the trigger-logic-action sequence", detail: "For your selected workflow, document the trigger (what initiates the automation), the logic (what rules govern each decision point), and the actions (what the system does at each step). This design document is the specification for implementation." },
       { num: "8", title: "Design exception handling", detail: "For each decision point in the workflow, document what happens when the input falls outside the defined rules. Exception handling must route to a human, notify the responsible party, and preserve the input for review." },
-      { num: "9", title: "Select and configure tools", detail: "Select tools based on integration fit with your existing systems, not feature count. Configure the automation against your trigger-logic-action design document. Do not modify the design to fit the tool — select a tool that fits the design." },
+      { num: "9", title: "Select and configure tools", detail: "Select tools based on integration fit with your existing systems, not feature count. Configure the automation against your trigger-logic-action design document. Do not modify the design to fit the tool: select a tool that fits the design." },
       { num: "10", title: "Pilot test on a subset of volume", detail: "Deploy the automation to 10–20% of volume with full monitoring. Measure accuracy, exception rate, and team response. Document every exception and the pattern it reveals. Do not scale to full volume until pilot accuracy exceeds 95%." },
     ],
   },
@@ -39,7 +39,7 @@ const phases = [
     num: "03",
     title: "Decision systems",
     color: "border-amber-400",
-    desc: "This phase extends automation to include AI-powered decision support — systems that improve the quality and consistency of human decisions, not just the execution of rule-based tasks.",
+    desc: "This phase extends automation to include AI-powered decision support: systems that improve the quality and consistency of human decisions, not just the execution of rule-based tasks.",
     steps: [
       { num: "11", title: "Identify high-volume decision points", detail: "Map the decisions your team makes most frequently. Which decisions follow patterns that could be supported by AI analysis? Which decisions require judgment that cannot be systematized? This distinction determines where decision support adds value." },
       { num: "12", title: "Design decision support for qualifying decisions", detail: "For decisions that follow patterns, design AI-powered decision support: what data should be surfaced, what analysis should be performed, what recommendations should be generated. The human retains the decision; the AI improves the information available." },
@@ -55,7 +55,7 @@ const phases = [
     desc: "Governance is the structure that makes AI adoption sustainable. This phase establishes the monitoring, accountability, and review systems that ensure AI systems continue to perform as designed.",
     steps: [
       { num: "16", title: "Define accuracy standards for each automation", detail: "Establish the minimum acceptable accuracy rate for each automation in production. For most business workflows, 95% is the minimum threshold. Below this level, the error rate generates more remediation work than the automation saves." },
-      { num: "17", title: "Assign governance ownership", detail: "Designate a specific person responsible for monitoring each automation's performance, reviewing exceptions, and escalating issues. Governance without clear ownership defaults to no governance — problems accumulate until they produce visible failures." },
+      { num: "17", title: "Assign governance ownership", detail: "Designate a specific person responsible for monitoring each automation's performance, reviewing exceptions, and escalating issues. Governance without clear ownership defaults to no governance: problems accumulate until they produce visible failures." },
       { num: "18", title: "Establish monitoring cadence", detail: "Define how frequently performance metrics are reviewed: daily for high-volume automations, weekly for moderate-volume, monthly for low-volume. Monitoring cadence should match the speed at which accuracy problems can accumulate to visible impact." },
       { num: "19", title: "Create an exception review process", detail: "Establish a structured process for reviewing exceptions: who reviews them, how frequently, what documentation is required, and how patterns are identified and addressed. Exception patterns reveal process gaps that should be addressed in the automation design." },
       { num: "20", title: "Schedule 30/60/90-day performance reviews", detail: "Conduct structured performance reviews at 30, 60, and 90 days post-deployment. Review accuracy rates, exception patterns, team feedback, and business impact. Document findings and apply them to the next automation implementation." },
@@ -131,7 +131,7 @@ export default function AiAdoptionChecklist() {
 
         {/* Intro */}
         <section className="mb-14">
-          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">This checklist reflects the implementation methodology developed by Ikram Rana of Barrana.ai across professional services, healthcare, financial services, and operations-intensive businesses. Each step has a specific purpose in the adoption sequence — skipping steps does not accelerate implementation, it creates the conditions for failure.</p>
+          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">This checklist reflects the implementation methodology developed by Ikram Rana of Barrana.ai across professional services, healthcare, financial services, and operations-intensive businesses. Each step has a specific purpose in the adoption sequence: skipping steps does not accelerate implementation, it creates the conditions for failure.</p>
           <p className="text-slate-text leading-relaxed font-sans text-[15px]">The four phases are sequential: process clarity must precede automation layer, automation layer must precede decision systems, and governance must be established before full deployment. Businesses that attempt to implement later phases without completing earlier ones consistently encounter reliability problems that require remediation work exceeding the effort they saved by skipping steps.</p>
         </section>
 
@@ -174,7 +174,7 @@ export default function AiAdoptionChecklist() {
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
-              { label: "AI Automation for Business — Complete Guide", href: "/ai-automation-for-business" },
+              { label: "AI Automation for Business: Complete Guide", href: "/ai-automation-for-business" },
               { label: "AI Workflow Systems", href: "/ai-workflow-systems" },
               { label: "AI Automation Examples", href: "/ai-automation-examples" },
               { label: "AI Adoption FAQ", href: "/ai-adoption-faq" },
@@ -195,7 +195,7 @@ export default function AiAdoptionChecklist() {
         <section className="bg-gradient-to-br from-[#020b18] to-[#0a1628] border border-electric/30 p-10 text-center">
           <h2 className="font-serif text-2xl font-bold text-white mb-4">Work Through This Checklist with Ikram Rana</h2>
           <p className="text-slate-300 text-base leading-relaxed max-w-xl mx-auto mb-8">
-            Book a strategy call to complete Phase 1 (process clarity) with a structured methodology and leave with a prioritized automation roadmap.
+            Find the Workflow AI Should Fix First to complete Phase 1 (process clarity) with a structured methodology and leave with a prioritized automation roadmap.
           </p>
           <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
