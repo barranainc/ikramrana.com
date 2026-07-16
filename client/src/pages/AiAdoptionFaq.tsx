@@ -43,7 +43,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "How do businesses measure AI adoption success?",
-      a: "AI adoption success is measured in three dimensions: time recovered (hours per week no longer spent on manual tasks), error reduction (fewer mistakes requiring correction or remediation), and cognitive load reduction (fewer decisions consuming mental energy). Most businesses measure only time, which understates the value of adoption and leads to poor prioritization. Cognitive load reduction compounds over time: it is the most important long-term metric."
+      a: "This framework examines time recovered, errors and correction work, and cognitive load such as avoidable decisions and interruptions. A complete assessment should also include implementation cost, adoption, review effort, maintenance, client impact, and residual risk. No single metric is universally the most important."
     },
     {
       q: "What is responsible AI adoption?",
@@ -106,7 +106,7 @@ const config: FaqPageConfig = {
     { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
     { label: "What Is AI Adoption for Businesses?", href: "/ai-knowledge-hub/what-is-ai-adoption-for-businesses" },
     { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
-    { label: "AI Automation Case Studies", href: "/case-studies" },
+    { label: "Illustrative AI Use Cases", href: "/case-studies" },
   ],
 };
 

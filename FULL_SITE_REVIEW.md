@@ -45,6 +45,9 @@ A passing build does not mean this objective is complete.
 
 - Eight demo case studies are visibly labelled as illustrative AI use cases.
 - Case-study metadata, schema, context, problems, designs, outcomes, and lessons identify the material as hypothetical.
+- Fictional-result quotations were removed from all eight use cases. Ikram Rana's commentary now explains what the hypothetical model would need to measure rather than confirming invented outcomes.
+- Use-case section headings now say Possible Workflow Design, Illustrative Outcome, and Scenario Design Lessons.
+- The stale, unrouted `CaseStudies.tsx` component that presented invented work as real client results was removed.
 - Three solution-page examples were changed from apparent client results to illustrative workflow scenarios.
 - Unsupported universal ROI, time-saving, cost, implementation-time, accuracy, and capacity ranges were removed from the principal authority pages.
 - Industry pages were rebuilt after the earlier library was found to contain damaged prose and duplicated answer fields.
@@ -66,7 +69,12 @@ A passing build does not mean this objective is complete.
 - Fabricated or undocumented publication dates were removed from generated evergreen pages and replaced with an accurate review date.
 - All 30 blog metadata descriptions were reviewed. Generic, malformed, and overlong descriptions were replaced with specific page summaries.
 - All 30 blog articles received a high-risk body-copy pass. Twenty-six repetitive promotional Who helps FAQs were removed, twenty-six business and family scenarios were labelled illustrative, literal encoded dash characters were removed, and unsupported universal claims were qualified.
+- All 30 blog articles now display an editorial-standard notice identifying the content as Ikram Rana's analysis and practical position. Generalizations are presented as arguments to test, not universal statistics.
 - All 10 knowledge-hub pages received a high-risk body-copy pass. Seven promotional Who helps FAQs were removed, six business examples were labelled illustrative, and unsupported cost, affordability, implementation-time, performance, legal-readiness, and hallucination-control claims were rewritten.
+- Knowledge-hub pages now explicitly distinguish common technical definitions from Ikram Rana's recommendations, rankings, and generalizations.
+- Unsupported universal language about two-to-four-week results, fixed automation thresholds, guaranteed capacity, decision-fatigue effects, and industry-wide benefit was removed or reframed.
+- The resource hub now identifies its evidence standard, displays current primary sources from Statistics Canada, NIST, the Government of Canada, and the Office of the Privacy Commissioner of Canada, and includes those sources in Article schema.
+- Unsupported resource-hub claims about actual implementations, hundreds of implementation decisions, universal learning outcomes, fastest ROI, and typical cost proportions were removed.
 - Direct quotation framing that was not supported by a supplied quotation was removed from the knowledge hub and dictionary. These passages are now presented as Ikram Rana's practical positions.
 - All 22 dictionary entries passed structural checks for required fields and unique slugs. Exact illustrative performance figures, universal review schedules, and first-week payback language were removed or qualified.
 
@@ -90,6 +98,10 @@ A passing build does not mean this objective is complete.
 - A subsequent report-only commit also passed: https://github.com/barranainc/ikramrana.com/actions/runs/29470022870
 - Blog, knowledge-hub, and author-entity validation run: https://github.com/barranainc/ikramrana.com/actions/runs/29472844959
 - Static preview artifact generated successfully for commit `1b9eeda76a5bda35767f9a232f30d4bc01044d45`
+- Local TypeScript check passed after the qualitative-claim audit on 2026-07-16.
+- Local production build passed after the qualitative-claim audit on 2026-07-16.
+- Route audit found 50 route patterns, 106 literal internal links, and no broken literal internal routes.
+- The editable client sitemap contains 129 URLs and covers all literal internal destinations found by the audit.
 
 The browser-based visual review of that artifact is still incomplete.
 
@@ -112,16 +124,6 @@ These may be used only with wording proportionate to the available evidence:
 Private evidence was not inspected in this source review.
 
 ## Not complete
-
-### Detailed editorial review
-
-All routed components and libraries were fetched and scanned. The blog and knowledge hub received a targeted high-risk editorial pass covering promotional repetition, fabricated quotation framing, illustrative examples, unsupported numbers, timelines, affordability, legal-readiness language, and universal claims. This does not mean every qualitative statement has independent external sourcing. The dictionary passed structural and risk-language review, but Ikram's named methods and positions still need final owner approval.
-
-The remaining editorial task is source support for qualitative claims that are intended to be presented as researched fact rather than Ikram's analysis or practical position. The method ownership and naming review is complete.
-
-### Evidence and citations
-
-Older conceptual articles still need a source-by-source review for statements presented as research, common outcomes, market behaviour, or industry fact. Removing unsupported numerical ranges reduced risk, but it did not automatically make every qualitative statement authoritative.
 
 ### Location-page quality
 
@@ -151,6 +153,8 @@ The live domain, Barrana, and Real Life AI resolved during the review. LinkedIn 
 
 The live website still showed the previous "AI Automation Strategist for Businesses" title when checked. This confirms that the draft branch is not deployed. Merging GitHub changes and publishing through Hostinger are separate operations.
 
+The editable sitemap at `client/public/sitemap.xml` contains 129 URLs. The root static export sitemap contains 128 URLs and is not identical. This is part of the known stale-root-export risk and must be reconciled only after the Hostinger deployment path is confirmed.
+
 ## Merge gate
 
 Do not mark this pull request ready or deploy it until all of the following are complete:
@@ -160,15 +164,15 @@ Do not mark this pull request ready or deploy it until all of the following are 
 - Desktop review passes
 - Mobile review passes
 - Primary navigation and CTA links pass
-- Remaining qualitative claims are reviewed for evidence
+- Remaining researched-fact claims are sourced or reframed. Passed locally 2026-07-16, pending GitHub check on the new commit.
 - The owner reviews the principal positioning, About, Barrana, Discovery Stage, testimonial, and illustrative-use-case pages
 - Hostinger deployment and rollback steps are confirmed
 
 ## Next work order
 
-1. Add sources where older qualitative claims should be presented as researched fact.
-2. Complete desktop and mobile visual review.
-3. Recheck LinkedIn, Calendly, forms, navigation, and primary calls to action in a browser.
-4. Present the final owner review list.
-5. Confirm Hostinger deployment and rollback steps.
+1. Complete desktop and mobile visual review.
+2. Recheck LinkedIn, Calendly, forms, navigation, and primary calls to action in a browser.
+3. Present the final owner review list.
+4. Confirm Hostinger deployment and rollback steps.
+5. Reconcile the stale root static export with the confirmed deployment path.
 6. Only then consider marking the pull request ready.

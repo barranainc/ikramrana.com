@@ -176,7 +176,7 @@ export default function AiAdoptionChecklist() {
               { label: "AI Adoption FAQ", href: "/ai-adoption-faq" },
               { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
               { label: "Governance by Design", href: "/governance" },
-              { label: "AI Automation Case Studies", href: "/case-studies" },
+              { label: "Illustrative AI Use Cases", href: "/case-studies" },
             ].map((link) => (
               <Link key={link.href} href={link.href}
                 className="flex items-center gap-3 border border-border/40 bg-navy/40 p-4 hover:border-electric/40 hover:bg-navy/60 transition-colors no-underline group">

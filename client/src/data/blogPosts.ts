@@ -388,7 +388,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "Article Concept: Tool Debt Versus System Investment",
-        content: "Ikram Rana describes this as Tool Debt, the accumulated complexity that comes from adding tools without integrating them into a coherent system. Every tool added without system integration increases operational overhead, creates new failure points, and adds cognitive load. The alternative is System Investment, where each AI capability is integrated into a unified workflow that operates with minimal human intervention. Instead of twelve separate tools, a system approach connects inputs to outputs through a defined pipeline. Data flows in, gets processed according to rules, and results flow out. The emotional difference is significant. People working with tools feel like they are constantly managing. People working with systems feel like they are occasionally reviewing. The stress difference is measurable.",
+        content: "Ikram Rana describes this as Tool Debt, the accumulated complexity that can come from adding tools without integrating them into a coherent system. Each tool may add operational overhead, failure points, switching, and review work. The alternative is System Investment, where capabilities are connected through a defined workflow. Inputs, rules, outputs, exceptions, and human ownership can then be assessed as one system. Whether this reduces effort or stress must be measured with the people using the actual workflow.",
       },
       {
         heading: "Tactical Advice For Businesses",
@@ -453,7 +453,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "Article Concept: Anxiety-Aware AI Design",
-        content: "Effective AI systems are designed with human emotional states in mind. Ikram Rana uses Anxiety-Aware AI Design principles that address the psychological impact of AI on its users. These principles include completeness, which means AI should present situations with enough context for confident action. Prioritization means AI should rank items so humans address the most important things first. Resolution clarity means AI should define what done looks like for every task. Progress visibility means AI should show what has been handled, what remains, and what is on track. When these elements are missing, AI creates uncertainty. Uncertainty creates anxiety. Anxiety degrades performance.",
+        content: "Ikram Rana uses Anxiety-Aware AI Design as a practical article concept for examining how a system affects the people operating it. The design questions include completeness, meaning whether the user has enough context to act; prioritization, meaning whether important items are distinguishable; resolution clarity, meaning whether done is defined; and progress visibility, meaning whether handled and remaining work are visible. Missing information may increase uncertainty, but the effect on anxiety or performance should be assessed with users rather than assumed.",
       },
       {
         heading: "Tactical Advice For Businesses",
@@ -479,7 +479,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "Why is anxiety a business performance metric?",
-        answer: "Anxious teams make worse decisions, avoid necessary actions, and default to busywork over meaningful work. Anxiety is a leading indicator of system failure that precedes measurable performance decline.",
+        answer: "Anxiety or uncertainty may affect attention, trust, and adoption, but the effect varies by person and context. Treat user reports as diagnostic evidence to investigate alongside errors, delays, avoidance, rework, and system-use data rather than as proof of a universal causal relationship.",
       },
       {
         question: "How does batch processing reduce AI anxiety?",

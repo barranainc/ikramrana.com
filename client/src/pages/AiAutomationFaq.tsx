@@ -55,7 +55,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "How do businesses measure automation ROI?",
-      a: "Automation ROI is measured in three dimensions: time recovered (hours per week no longer spent on manual task execution), error reduction (fewer mistakes requiring correction or remediation), and cognitive load reduction (fewer decisions consuming mental energy). Most businesses measure only time, which understates the value of automation. Cognitive load reduction is the most important long-term metric: it compounds as teams operate with less friction and redirect attention to higher-value work."
+      a: "This framework examines time recovered, error and correction work, and cognitive load such as avoidable decisions and interruptions. Financial ROI must also include implementation, software, training, review, maintenance, and residual risk. The importance of each measure depends on the workflow and should not be assumed."
     },
     {
       q: "What is an automation trigger?",
@@ -106,7 +106,7 @@ const config: FaqPageConfig = {
     { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
     { label: "What Is AI Automation for Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
     { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
-    { label: "AI Automation Case Studies", href: "/case-studies" },
+    { label: "Illustrative AI Use Cases", href: "/case-studies" },
   ],
 };
 

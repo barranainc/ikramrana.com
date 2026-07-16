@@ -138,13 +138,13 @@ export default function AiAutomationForBusiness() {
             <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric">Section 03</p>
           </div>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">ROI of AI automation</h2>
-          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">ROI of AI automation is measured in three dimensions: time recovered, error reduction, and cognitive load reduction. Most ROI calculations focus only on time, which understates the value of automation and leads to poor prioritization decisions.</p>
+          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">This guide recommends examining AI automation through three dimensions: time recovered, error reduction, and cognitive load reduction. A business should establish its own baseline and include implementation cost, review effort, maintenance, adoption, and residual risk before describing the result as ROI.</p>
 
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             {[
               { label: "Time recovered", desc: "Measure staff time across the complete workflow before and after implementation, including review, corrections, and exception handling.", color: "border-electric/40 bg-electric/5" },
               { label: "Error reduction", desc: "Measure mistakes, correction effort, rework, and client remediation against a documented baseline for the same workflow.", color: "border-teal-400/40 bg-teal-400/5" },
-              { label: "Cognitive load reduction", desc: "Fewer decisions consuming mental energy. This is the most undervalued ROI dimension: it compounds over time as teams operate with less friction.", color: "border-amber-400/40 bg-amber-400/5" },
+              { label: "Cognitive load reduction", desc: "Measure avoidable decisions, interruptions, review effort, and reported mental overhead. Treat this as an operational indicator, not a financial return unless the business can connect it to measured value.", color: "border-amber-400/40 bg-amber-400/5" },
             ].map((item, i) => (
               <div key={i} className={`border ${item.color} p-5`}>
                 <p className="font-mono text-[10px] tracking-wider uppercase text-electric mb-2">{item.label}</p>
@@ -153,8 +153,8 @@ export default function AiAutomationForBusiness() {
             ))}
           </div>
 
-          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The businesses that report the highest ROI from AI automation are not those that implemented the most automations: they are the ones that implemented the right automations with the right governance. A single well-designed automation that recovers 15 hours per week and operates with 95% accuracy delivers more value than five automations that each require constant monitoring.</p>
-          <p className="text-slate-text leading-relaxed font-sans text-[15px]">For documented ROI examples across industries, see the <Link href="/case-studies" className="text-electric hover:underline no-underline">AI Automation Case Studies</Link>.</p>
+          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">More automations do not automatically create more value. Compare each workflow against its baseline and measure accuracy by task, exception volume, correction effort, human review, adoption, operating cost, and business impact. Do not treat example hours or accuracy percentages as a forecast.</p>
+          <p className="text-slate-text leading-relaxed font-sans text-[15px]">For hypothetical measurement models across industries, see the <Link href="/case-studies" className="text-electric hover:underline no-underline">Illustrative AI Use Cases</Link>.</p>
         </section>
 
         <div className="border-t border-border/20 mb-14" />
@@ -290,7 +290,7 @@ export default function AiAutomationForBusiness() {
               { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
               { label: "AI Automation FAQ", href: "/ai-automation-faq" },
               { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
-              { label: "AI Automation Case Studies", href: "/case-studies" },
+              { label: "Illustrative AI Use Cases", href: "/case-studies" },
               { label: "What Is AI Automation for Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
             ].map((link) => (
               <Link key={link.href} href={link.href}

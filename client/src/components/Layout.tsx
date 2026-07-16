@@ -1,7 +1,7 @@
 /*
  * DESIGN: The Architect's Blueprint , Light Theme
  * Layout wrapper with persistent top navigation and footer.
- * Nav: Home / Solutions / Case Studies / Framework / Insights / Blog / AI Knowledge Hub / About / Contact
+ * Nav: Home / Solutions / Illustrative Use Cases / Framework / Insights / Blog / AI Knowledge Hub / About / Contact
  * All legacy content pages remain at their own URLs , nav points to hubs.
  */
 
@@ -58,7 +58,7 @@ function isActive(href: string, location: string): boolean {
   if (href === "/solutions") {
     return location === "/solutions" || location.startsWith("/solutions/");
   }
-  // Case Studies is active when on /case-studies or any case study page
+  // Illustrative Use Cases is active on the use-case index and detail pages
   if (href === "/case-studies") {
     return location === "/case-studies" || location.startsWith("/case-studies/");
   }
@@ -276,10 +276,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
 
-            {/* Case Studies links */}
+            {/* Illustrative use-case links */}
             <div>
               <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric mb-4">
-                <Link href="/case-studies" className="hover:text-electric/80 transition-colors no-underline">Case Studies</Link>
+                <Link href="/case-studies" className="hover:text-electric/80 transition-colors no-underline">Illustrative Use Cases</Link>
               </p>
               <div className="flex flex-col gap-2">
                 <Link href="/case-studies/ai-automation-case-study-insurance-brokerage" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Insurance Brokerage</Link>

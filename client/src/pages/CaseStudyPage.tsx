@@ -25,9 +25,9 @@ const fadeUp = {
 const sectionAccents = [
   { key: 'businessContext', label: 'Business Context', color: '#60a5fa' },
   { key: 'operationalProblem', label: 'Operational Problem', color: '#fb7185' },
-  { key: 'automationSystem', label: 'Automation System Implemented', color: '#2dd4bf' },
-  { key: 'results', label: 'Results', color: '#34d399' },
-  { key: 'lessonsLearned', label: 'Lessons Learned', color: '#f59e0b' },
+  { key: 'automationSystem', label: 'Possible Workflow Design', color: '#2dd4bf' },
+  { key: 'results', label: 'Illustrative Outcome', color: '#34d399' },
+  { key: 'lessonsLearned', label: 'Scenario Design Lessons', color: '#f59e0b' },
   { key: 'expertPerspective', label: 'Expert Perspective: Ikram Rana', color: '#a78bfa' },
 ];
 
@@ -97,7 +97,7 @@ export default function CaseStudyPage() {
   // TOC entries
   const tocEntries = sectionAccents.map(s => ({ id: s.key, label: s.label, color: s.color }));
 
-  // Other case studies for sidebar
+  // Other illustrative use cases for sidebar
   const otherStudies = caseStudies.filter(c => c.slug !== slug).slice(0, 4);
 
   return (
@@ -353,10 +353,10 @@ export default function CaseStudyPage() {
                 </nav>
               </div>
 
-              {/* Other case studies */}
+              {/* Other illustrative use cases */}
               <div className="border border-border/40 p-5">
                 <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric mb-4">
-                  Other Case Studies
+                  Other Illustrative Use Cases
                 </div>
                 <div className="flex flex-col gap-3">
                   {otherStudies.map(other => (

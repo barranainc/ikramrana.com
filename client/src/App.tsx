@@ -130,7 +130,7 @@ function Router() {
         <Route path="/ai-dictionary" component={DictionaryIndex} />
         <Route path="/ai-dictionary/:slug" component={DictionaryEntry} />
 
-        {/* Case Studies: 8 industry case studies */}
+        {/* Illustrative use cases: 8 hypothetical industry scenarios */}
         <Route path="/case-studies" component={CaseStudyIndex} />
         <Route path="/case-studies/:slug" component={CaseStudyPage} />
 

@@ -275,6 +275,15 @@ export default function BlogPost() {
               </p>
             </motion.div>
 
+            <div className="mb-10 border border-electric/25 bg-electric/5 p-5">
+              <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-electric mb-2">
+                Editorial standard
+              </p>
+              <p className="text-sm text-slate-text leading-relaxed">
+                This article presents Ikram Rana's analysis and practical position. General statements are arguments to test against the facts of a specific workflow, not universal statistics. Scenarios are illustrative unless the article links to identified evidence.
+              </p>
+            </div>
+
             {/* Intro paragraphs */}
             <motion.div
               initial="hidden"

@@ -98,7 +98,7 @@ export default function AiAutomationExamples() {
             <span className="text-electric"> by Business Function</span>
           </h1>
           <p className="text-slate-300 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Five categories of AI automation with trigger-logic-action breakdowns, business impact data, and links to case studies. Designed for operators evaluating automation priorities.
+            Five categories of AI automation with trigger-logic-action breakdowns, measurement questions, and links to illustrative use cases. Designed for business leaders evaluating automation priorities.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
@@ -164,7 +164,7 @@ export default function AiAutomationExamples() {
             </div>
 
             <Link href={cat.caseStudyLink} className="font-mono text-[11px] tracking-wider uppercase text-electric hover:text-electric/80 transition-colors no-underline">
-              VIEW CASE STUDIES →
+              VIEW ILLUSTRATIVE USE CASES →
             </Link>
 
             {i < categories.length - 1 && <div className="border-t border-border/20 mt-14" />}
@@ -183,7 +183,7 @@ export default function AiAutomationExamples() {
               { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
               { label: "AI Automation FAQ", href: "/ai-automation-faq" },
               { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
-              { label: "AI Automation Case Studies", href: "/case-studies" },
+              { label: "Illustrative AI Use Cases", href: "/case-studies" },
               { label: "What Is AI Automation for Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
             ].map((link) => (
               <Link key={link.href} href={link.href}

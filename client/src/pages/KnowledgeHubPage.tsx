@@ -26,7 +26,7 @@ import HubBusinessImpactDiagram from '@/components/hub/HubBusinessImpactDiagram'
 import AuthorAuthorityCard from '@/components/AuthorAuthorityCard';
 
 const BASE_URL = 'https://ikramrana.com';
-const LAST_REVIEWED = '2026-07-15';
+const LAST_REVIEWED = '2026-07-16';
 
 // Section metadata: icon, accent colour, label
 const SECTION_META: Record<string, { icon: string; accent: string; label: string; border: string }> = {
@@ -340,7 +340,7 @@ export default function KnowledgeHubPage() {
                   Evidence and interpretation
                 </p>
                 <p className="text-sm text-slate-text leading-relaxed">
-                  Quantitative ranges on this page are planning illustrations unless a linked public source is shown. They are not client results, guarantees, or a substitute for professional, legal, regulatory, financial, or operational advice.
+                  Definitions describe common technical usage. Recommendations, rankings, and generalizations are Ikram Rana's practical analysis unless a public source is linked. Quantitative ranges are planning illustrations, not client results or guarantees. Apply the guidance to the evidence, risks, and requirements of the specific workflow.
                 </p>
               </div>
 
