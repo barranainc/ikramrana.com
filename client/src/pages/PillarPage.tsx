@@ -1,6 +1,6 @@
 /*
  * DESIGN: The Architect's Blueprint: Pillar Page
- * Premium cornerstone content page for "The AI Adoption Framework for Small Businesses"
+ * Premium cornerstone content page for "The AI Adoption Framework for Businesses"
  * This is the most important page on the site: elevated hero, framework summary box,
  * phase sections with completion criteria callouts, 15 FAQs, triple schema.
  * Color: navy bg, electric accents, serif headings, mono labels
@@ -166,11 +166,11 @@ const faqs = [
 ];
 
 const internalLinks = [
-  { label: "What Is AI Automation for Small Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
+  { label: "What Is AI Automation for Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
   { label: "What Is AI Adoption for Businesses?", href: "/ai-knowledge-hub/what-is-ai-adoption-for-businesses" },
   { label: "What Is AI Workflow Automation?", href: "/ai-knowledge-hub/what-is-ai-workflow-automation" },
   { label: "What Are AI Agents and How Do They Work?", href: "/ai-knowledge-hub/what-are-ai-agents-for-businesses" },
-  { label: "AI for Small Businesses: A Practical Guide", href: "/ai-knowledge-hub/ai-for-small-businesses-guide" },
+  { label: "AI for Businesses: A Practical Guide", href: "/ai-knowledge-hub/ai-for-small-businesses-guide" },
   { label: "AI Decision Systems for Business Operations", href: "/ai-knowledge-hub/ai-decision-systems-for-business" },
   { label: "AI Governance for Businesses", href: "/ai-knowledge-hub/ai-governance-for-businesses" },
   { label: "AI Automation by Industry", href: "/industries" },
@@ -248,7 +248,7 @@ export default function PillarPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "The AI Adoption Framework for Small Businesses",
+    "headline": "The AI Adoption Framework for Businesses",
     "description": "Most AI adoption fails because businesses start with tools instead of strategy. The AI Adoption Framework provides a structured 4-phase approach to implementing AI automation for businesses.",
     "author": {
       "@type": "Person",
@@ -263,14 +263,14 @@ export default function PillarPage() {
     "about": [
       { "@type": "Thing", "name": "AI Adoption" },
       { "@type": "Thing", "name": "AI Automation" },
-      { "@type": "Thing", "name": "Small Business Technology" }
+      { "@type": "Thing", "name": "Business Technology" }
     ]
   };
 
   const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "The AI Adoption Framework for Small Businesses",
+    "name": "The AI Adoption Framework for Businesses",
     "description": "A structured 4-phase approach to implementing AI automation.",
     "step": [
       { "@type": "HowToStep", "name": "Phase 1: Process Clarity", "text": "Document your operations: every process, decision point, exception, and handoff: to create the blueprint for automation decisions." },
@@ -330,7 +330,7 @@ export default function PillarPage() {
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             The AI Adoption Framework<br className="hidden sm:block" />
-            <span className="text-electric"> for Small Businesses</span>
+            <span className="text-electric"> for Businesses</span>
           </h1>
           <p className="text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
             A structured 4-phase approach to implementing AI automation: from process clarity through governance. By Ikram Rana, founder of Barrana.ai.
@@ -348,7 +348,7 @@ export default function PillarPage() {
               rel="noopener noreferrer"
               className="px-8 py-3 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline"
             >
-              BOOK A STRATEGY CALL →
+              FIND THE WORKFLOW AI SHOULD FIX FIRST →
             </a>
             <a
               href="#framework-overview"
@@ -625,7 +625,7 @@ export default function PillarPage() {
                 rel="noopener noreferrer"
                 className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline"
               >
-                BOOK A STRATEGY CALL →
+                FIND THE WORKFLOW AI SHOULD FIX FIRST →
               </a>
             </section>
 
