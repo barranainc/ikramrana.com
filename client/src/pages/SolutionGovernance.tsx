@@ -1,5 +1,5 @@
 /*
- * SOLUTION PAGE — /solutions/governance-decision-architecture/
+ * SOLUTION PAGE: /solutions/governance-decision-architecture/
  * Exact content per master implementation prompt
  */
 
