@@ -16,7 +16,7 @@ const fadeUp = {
 };
 
 export default function GovernanceByDesign() {
-  useHead("Governance-by-Design", "Governance is not paperwork after deployment. It is a design property of the system itself. How to embed compliance as architecture.");
+  useHead("Governance-by-Design", "Governance is not paperwork after deployment. It is a design property of the system itself. How to embed compliance-supporting controls in the architecture.");
 
   return (
     <div className="py-16 md:py-24">
@@ -24,7 +24,7 @@ export default function GovernanceByDesign() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-electric block mb-4">Application</span>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.15] tracking-tight mb-6">Governance-by-Design</h1>
-          <p className="text-lg text-slate-text leading-relaxed mb-2">Governance is not paperwork after deployment. It is a design property of the system itself. This page explains how to embed compliance as architecture, so your system is designed to support compliance through embedded controls, not just by intention.</p>
+          <p className="text-lg text-slate-text leading-relaxed mb-2">Governance is not paperwork after deployment. It is a design property of the system itself. This page explains how to embed compliance-supporting controls in the architecture, so your system is designed to support compliance through embedded controls, not just by intention.</p>
           <span className="font-mono text-xs text-slate-dim">12 min read · 2,400 words</span>
         </motion.div>
 
