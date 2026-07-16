@@ -74,8 +74,10 @@ A passing build does not mean this objective is complete.
 - Internal-link comparison against actual static and dynamic routes
 - Sitemap comparison against routes and data slugs
 - TypeScript and production-build validation through GitHub Actions
+- Latest successful validation run: https://github.com/barranainc/ikramrana.com/actions/runs/29469644769
+- Static preview artifact generated successfully for commit `59a913b0bc5d6bc0c5ce92f74c6f6c2e8d4cb671`
 
-The latest build result must be checked again after the final branch commit. A previous successful build does not validate later edits.
+The browser-based visual review of that artifact is still incomplete.
 
 ## Owner-confirmed but not independently verified in this review
 
@@ -109,7 +111,11 @@ Older conceptual articles still need a source-by-source review for statements pr
 
 ### Location-page quality
 
-The five location pages still need a source-backed review for local differentiation, regulatory wording, service-area claims, and the risk of repetitive location content.
+- The five location guides were rebuilt with distinct operating context and conservative service language.
+- Official sources are displayed on the pages.
+- Canadian privacy wording is tied to guidance from the Office of the Privacy Commissioner of Canada.
+- U.S. privacy and AI-risk wording is tied to FTC and NIST guidance.
+- Unsupported local business counts, employee ranges, and promised automation outcomes were removed.
 
 ### Strategic content fit
 
@@ -141,7 +147,6 @@ Do not mark this pull request ready or deploy it until all of the following are 
 - Mobile review passes
 - Primary navigation and CTA links pass
 - Remaining qualitative claims are reviewed for evidence
-- Location pages receive source-backed review
 - The family and parenting content decision is recorded
 - The owner reviews the principal positioning, About, Barrana, Discovery Stage, testimonial, and illustrative-use-case pages
 - Hostinger deployment and rollback steps are confirmed
