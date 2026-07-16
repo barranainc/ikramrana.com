@@ -76,7 +76,7 @@ export default function AiAutomationForBusiness() {
           <div className="flex flex-wrap justify-center gap-4">
             <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
               className="px-8 py-3 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-              BOOK A STRATEGY CALL →
+              FIND THE WORKFLOW AI SHOULD FIX FIRST →
             </a>
             <a href="#roadmap" className="px-8 py-3 border border-electric/40 text-electric font-mono text-sm tracking-wider hover:bg-electric/10 transition-colors no-underline">
               VIEW ROADMAP
@@ -97,7 +97,7 @@ export default function AiAutomationForBusiness() {
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">AI automation for business is the use of artificial intelligence to execute business processes without continuous human intervention. It covers a range from simple rule-based task automation: where a trigger initiates a fixed sequence of steps: to intelligent workflow systems that handle decision points, exceptions, and multi-step processes across integrated systems.</p>
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The defining characteristic of effective AI automation is reliability. An automation that works 70% of the time creates more operational burden than it removes, because the 30% failure rate requires human monitoring and intervention. Businesses that implement automation without reliability standards consistently find themselves managing the automation rather than benefiting from it.</p>
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">Ikram Rana of Barrana.ai defines AI automation for business as "the systematic replacement of human execution in rule-based processes, governed by accuracy standards, exception handling, and human oversight at decision points that exceed the system's reliability threshold." This definition distinguishes automation from experimentation: automation is a production system, not a pilot project.</p>
-          <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the foundational framework that governs all automation decisions, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Small Businesses</Link>.</p>
+          <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the foundational framework that governs all automation decisions, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Businesses</Link>.</p>
         </section>
 
         <div className="border-t border-border/20 mb-14" />
@@ -258,7 +258,7 @@ export default function AiAutomationForBusiness() {
             ))}
           </div>
 
-          <p className="text-slate-text leading-relaxed mt-6 font-sans text-[15px]">For the complete framework that governs this roadmap, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Small Businesses</Link>. For workflow-specific implementation patterns, see <Link href="/ai-workflow-systems" className="text-electric hover:underline no-underline">AI Workflow Systems</Link>.</p>
+          <p className="text-slate-text leading-relaxed mt-6 font-sans text-[15px]">For the complete framework that governs this roadmap, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Businesses</Link>. For workflow-specific implementation patterns, see <Link href="/ai-workflow-systems" className="text-electric hover:underline no-underline">AI Workflow Systems</Link>.</p>
         </section>
 
         <div className="border-t border-border/20 mb-14" />
@@ -288,14 +288,14 @@ export default function AiAutomationForBusiness() {
           <h2 className="font-serif text-xl font-bold text-foreground mb-6">Continue Your Research</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
-              { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+              { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
               { label: "AI Workflow Systems", href: "/ai-workflow-systems" },
               { label: "AI Automation Examples by Business Function", href: "/ai-automation-examples" },
               { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
               { label: "AI Automation FAQ", href: "/ai-automation-faq" },
               { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
               { label: "AI Automation Case Studies", href: "/case-studies" },
-              { label: "What Is AI Automation for Small Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
+              { label: "What Is AI Automation for Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
             ].map((link) => (
               <Link key={link.href} href={link.href}
                 className="flex items-center gap-3 border border-border/40 bg-navy/40 p-4 hover:border-electric/40 hover:bg-navy/60 transition-colors no-underline group">
@@ -313,13 +313,13 @@ export default function AiAutomationForBusiness() {
             "Automation is not a technology decision. It is an operational design decision. The technology is the last 20%: the first 80% is understanding your process well enough to trust a system to execute it."
           </blockquote>
           <p className="font-mono text-[11px] tracking-wider text-electric mb-8">,  IKRAM RANA, FOUNDER, BARRANA.AI</p>
-          <h2 className="font-serif text-2xl font-bold text-white mb-4">Book a Strategy Call</h2>
+          <h2 className="font-serif text-2xl font-bold text-white mb-4">Find the Workflow AI Should Fix First</h2>
           <p className="text-slate-300 text-base leading-relaxed max-w-xl mx-auto mb-8">
             Assess your automation readiness and identify the highest-impact starting point with Ikram Rana of Barrana.ai.
           </p>
           <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-            BOOK A STRATEGY CALL →
+            FIND THE WORKFLOW AI SHOULD FIX FIRST →
           </a>
         </section>
 
