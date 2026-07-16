@@ -42,11 +42,11 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Why This Matters for Businesses",
-        content: "AI automation matters for businesses because manual processes are the largest hidden cost in most operations. Every hour a team member spends on data entry, email sorting, appointment scheduling, or invoice processing is an hour not spent on revenue-generating or relationship-building work.\nFor businesses specifically, the impact is amplified. A five-person team losing two hours daily per person to manual tasks is losing 50 hours per week of productive capacity. AI automation recovers that capacity without adding headcount.\nThe business case for AI automation is not about replacing people. It is about freeing people from tasks that do not require human judgment so they can focus on tasks that do.",
+        content: "AI automation matters for businesses because manual processes are the largest hidden cost in most operations. Every hour a team member spends on data entry, email sorting, appointment scheduling, or invoice processing is an hour not spent on revenue-generating or relationship-building work.\nFor businesses specifically, the impact is amplified. AI automation recovers that capacity without adding headcount.\nThe business case for AI automation is not about replacing people. It is about freeing people from tasks that do not require human judgment so they can focus on tasks that do. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         heading: "Practical Business Example",
-        content: "A mid-sized immigration consulting firm in the Greater Toronto Area processes hundreds of client intake forms monthly. Each form requires data extraction, verification against government databases, case file creation, and assignment to the appropriate consultant.\nBefore AI automation, this process consumed approximately 20 hours per week of administrative time across the team. With AI automation, the system extracts data from intake forms automatically, verifies information against reference databases, creates case files with pre-populated fields, and routes cases to consultants based on expertise and capacity. The administrative team now spends three hours per week on exceptions rather than twenty hours on routine processing.",
+        content: "A mid-sized immigration consulting firm in the Greater Toronto Area processes hundreds of client intake forms monthly. With AI automation, the system extracts data from intake forms automatically, verifies information against reference databases, creates case files with pre-populated fields, and routes cases to consultants based on expertise and capacity. The administrative team now spends three hours per week on exceptions rather than twenty hours on routine processing. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         heading: "Framework",
@@ -54,7 +54,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Common Mistakes Businesses Make",
-        content: "The most common mistake is automating tasks before documenting them. AI cannot automate a process that is not clearly defined. Undocumented processes contain hidden assumptions, inconsistencies, and exceptions that AI will either replicate as errors or fail to handle entirely.\nThe second mistake is automating the most visible task instead of the actual bottleneck. The task that takes the most time is not always the constraint on overall workflow performance. Automating a non-bottleneck step may increase output that simply piles up at the real constraint.\nThe third mistake is treating AI automation as a technology project rather than an operations project. Successful AI automation requires understanding business processes first and selecting technology second. Businesses that start with a tool and look for problems to solve with it almost always waste their investment.\nThe fourth mistake is expecting immediate perfection. AI automation improves with data and feedback over time. Initial implementations typically handle 70 to 80 percent of cases autonomously. With refinement, this can reach 95 percent or higher. Businesses that abandon AI automation because the first version is not perfect miss the compounding returns.",
+        content: "The most common mistake is automating tasks before documenting them. AI cannot automate a process that is not clearly defined. Undocumented processes contain hidden assumptions, inconsistencies, and exceptions that AI will either replicate as errors or fail to handle entirely.\nThe second mistake is automating the most visible task instead of the actual bottleneck. The task that takes the most time is not always the constraint on overall workflow performance. Automating a non-bottleneck step may increase output that simply piles up at the real constraint.\nThe third mistake is treating AI automation as a technology project rather than an operations project. Successful AI automation requires understanding business processes first and selecting technology second. Businesses that start with a tool and look for problems to solve with it almost always waste their investment.\nThe fourth mistake is expecting immediate perfection. AI automation improves with data and feedback over time. Businesses that abandon AI automation because the first version is not perfect miss the compounding returns. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         heading: "When AI Should Not Be Used",
@@ -116,7 +116,7 @@ export const hubPages: HubPage[] = [
     { label: 'AI automation', href: '/ai-dictionary/ai-automation' },
     { label: 'workflow orchestration', href: '/ai-dictionary/workflow-orchestration' },
     { label: 'process automation', href: '/ai-dictionary/process-automation' },
-    { label: 'How an insurance brokerage recovered 22 hours per week', href: '/case-studies/ai-automation-case-study-insurance-brokerage' },
+    { label: 'Illustrative AI use case: insurance brokerage workflow', href: '/case-studies/ai-automation-case-study-insurance-brokerage' },
     { label: 'AI automation for law firms', href: '/industries/ai-automation-for-law-firms' },
     { label: 'AI automation for accounting firms', href: '/industries/ai-automation-for-accounting-firms' },
     { label: 'Why Most People Automate the Wrong Step', href: '/blog/automate-wrong-step' },
@@ -139,11 +139,11 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Practical Business Example",
-        content: "A professional services firm with 25 employees decided to adopt AI. Instead of immediately purchasing tools, they followed a structured adoption process. First, they documented their top ten time-consuming processes. Second, they identified which processes had clear rules suitable for automation. Third, they selected two processes for initial AI implementation: client intake and appointment scheduling. Fourth, they piloted the automation with a subset of clients. Fifth, they measured results and refined before expanding.\nAfter six months, those two automations saved the firm approximately 30 hours per week. More importantly, the structured approach gave the team confidence and a repeatable method for expanding AI to additional processes.",
+        content: "A professional services firm with 25 employees decided to adopt AI. Instead of immediately purchasing tools, they followed a structured adoption process. First, they documented their top ten time-consuming processes. Second, they identified which processes had clear rules suitable for automation. Third, they selected two processes for initial AI implementation: client intake and appointment scheduling. Fourth, they piloted the automation with a subset of clients. More importantly, the structured approach gave the team confidence and a repeatable method for expanding AI to additional processes. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         heading: "Framework",
-        content: "AI adoption progresses through five stages.\nStage 1: Assessment. The business evaluates its data readiness, process maturity, team capability, and integration landscape. This stage identifies where AI can deliver value and what preparation is needed. Most businesses skip this stage and pay for it later.\nStage 2: Prioritization. From the assessment, the business selects high-value, low-risk processes for initial AI implementation. The selection criteria include frequency of the task, clarity of the rules, availability of data, and cost of errors.\nStage 3: Implementation. AI solutions are configured, integrated, and tested with real data and real users. This stage includes process documentation, system configuration, integration with existing tools, and user training.\nStage 4: Optimization. The initial implementation is refined based on performance data, user feedback, and exception analysis. Accuracy improves, exception handling is expanded, and the system becomes more autonomous.\nStage 5: Expansion. Proven approaches are applied to additional processes. Each expansion cycle is faster than the previous one because the organization has developed AI fluency, integration infrastructure, and change management capability.",
+        content: "AI adoption progresses through five stages.\nStage 1: Assessment. The business evaluates its data readiness, process maturity, team capability, and integration landscape. This stage identifies where AI can deliver value and what preparation is needed. Most businesses skip this stage and pay for it later.\nStage 2: Prioritization. From the assessment, the business selects high-value, low-risk processes for initial AI implementation. The selection criteria include frequency of the task, clarity of the rules, availability of data, and cost of errors.\nStage 3: Implementation. AI solutions are configured, integrated, and tested with real data and real users. This stage includes process documentation, system configuration, integration with existing tools, and user training.\nStage 4: Optimization. The initial implementation is refined based on performance data, user feedback, and exception analysis. Proven approaches are applied to additional processes. Each expansion cycle is faster than the previous one because the organization has developed AI fluency, integration infrastructure, and change management capability. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         heading: "Common Mistakes Businesses Make",
@@ -169,7 +169,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "How long does AI adoption take for businesses?",
-        answer: "Initial implementations can show results in four to eight weeks. Full organizational AI adoption is an ongoing process that typically takes six to twelve months to establish and continues to expand thereafter.",
+        answer: "Initial implementations can show results in four to eight weeks. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         question: "What is the first step in AI adoption?",
@@ -227,11 +227,11 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Why This Matters for Businesses",
-        content: "Individual task automation saves minutes. Workflow automation saves hours, because it eliminates the gaps between tasks where work stalls, waits for human attention, or gets lost in transition.\nMost business inefficiency does not live inside individual tasks. It lives in the handoffs between them. A client inquiry arrives, someone reads it, someone routes it, someone responds, someone follows up. Each handoff is a delay point, an error opportunity, and a cognitive load on whoever is managing the flow. AI workflow automation eliminates these gaps by connecting the entire sequence into a single managed process.",
+        content: "It lives in the handoffs between them. A client inquiry arrives, someone reads it, someone routes it, someone responds, someone follows up. Each handoff is a delay point, an error opportunity, and a cognitive load on whoever is managing the flow. AI workflow automation eliminates these gaps by connecting the entire sequence into a single managed process. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         heading: "Practical Business Example",
-        content: "An accounting firm receives client documents via email, portal upload, and physical mail. Before AI workflow automation, an administrator would download attachments, determine document type, file them in the correct client folder, notify the assigned accountant, and log the receipt. This five-step process took approximately 10 minutes per document with multiple daily interruptions.\nWith AI workflow automation, the entire sequence is handled as one flow. AI extracts attachments from all sources, classifies document type using content analysis, files in the correct folder based on client matching, notifies the accountant with relevant context, and logs the receipt automatically. The administrator reviews a daily exception report instead of processing each document individually.",
+        content: "An accounting firm receives client documents via email, portal upload, and physical mail. Before AI workflow automation, an administrator would download attachments, determine document type, file them in the correct client folder, notify the assigned accountant, and log the receipt. AI extracts attachments from all sources, classifies document type using content analysis, files in the correct folder based on client matching, notifies the accountant with relevant context, and logs the receipt automatically. The administrator reviews a daily exception report instead of processing each document individually. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         heading: "Framework",
@@ -289,7 +289,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "What is the ROI of AI workflow automation?",
-        answer: "ROI varies by process but typically includes recovered staff time, reduced error rates, faster processing, and improved consistency. Most businesses see positive ROI within three to six months of implementation.",
+        answer: "ROI varies by process but typically includes recovered staff time, reduced error rates, faster processing, and improved consistency. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
     ],
     internalLinks: [
@@ -300,7 +300,7 @@ export const hubPages: HubPage[] = [
     { label: 'AI workflow', href: '/ai-dictionary/ai-workflow' },
     { label: 'workflow orchestration', href: '/ai-dictionary/workflow-orchestration' },
     { label: 'process automation', href: '/ai-dictionary/process-automation' },
-    { label: 'How a logistics company reduced dispatch errors by 71%', href: '/case-studies/ai-automation-case-study-logistics-company' },
+    { label: 'Illustrative AI use case: logistics workflow', href: '/case-studies/ai-automation-case-study-logistics-company' },
     { label: 'How a marketing agency automated client reporting', href: '/case-studies/ai-automation-case-study-marketing-agency' },
     { label: 'AI automation for construction companies', href: '/industries/ai-automation-for-construction-companies' },
     { label: 'Why Most People Automate the Wrong Step', href: '/blog/automate-wrong-step' },
@@ -324,7 +324,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Practical Business Example",
-        content: "A real estate brokerage deploys an AI agent for lead qualification. When a prospective buyer submits an inquiry through the website, the AI agent initiates a conversation, asks qualifying questions about budget, location preferences, and timeline, evaluates the responses against the brokerage's criteria, and either schedules a showing with the appropriate agent or provides relevant listing information for leads not yet ready to tour.\nThe AI agent handles approximately 80 percent of initial inquiries without human involvement. The remaining 20 percent, complex situations or high-value prospects, are escalated to human agents with full context from the AI conversation. The brokerage responds to every inquiry within minutes instead of hours, and human agents spend their time exclusively on qualified prospects.",
+        content: "A real estate brokerage deploys an AI agent for lead qualification. The brokerage responds to every inquiry within minutes instead of hours, and human agents spend their time exclusively on qualified prospects. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         heading: "Framework",
@@ -416,7 +416,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Practical Business Example",
-        content: "A 12-person consulting firm in the Greater Toronto Area was spending approximately 25 percent of its total capacity on administrative tasks: scheduling, document preparation, client communication, and data entry. The firm could not hire additional administrative staff due to budget constraints, so the principals were handling administrative overflow themselves, reducing their availability for billable client work.\nThrough targeted AI implementation, the firm automated client intake forms, appointment scheduling, document generation from templates, and routine client status updates. Within three months, administrative time dropped from 25 percent to 8 percent of total capacity. The principals recovered an average of ten billable hours per week each, generating revenue that far exceeded the cost of AI implementation.",
+        content: "The firm could not hire additional administrative staff due to budget constraints, so the principals were handling administrative overflow themselves, reducing their availability for billable client work.\nThrough targeted AI implementation, the firm automated client intake forms, appointment scheduling, document generation from templates, and routine client status updates. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         heading: "Framework",
@@ -454,7 +454,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "How quickly can businesses see AI results?",
-        answer: "Initial automation results are often visible within two to four weeks of implementation. Full optimization typically takes two to three months. The Priority-Pilot-Scale approach ensures measurable results early in the process.",
+        answer: "Initial automation results are often visible within two to four weeks of implementation. The Priority-Pilot-Scale approach ensures measurable results early in the process. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         question: "What is the biggest AI mistake businesses make?",
@@ -509,7 +509,7 @@ export const hubPages: HubPage[] = [
       },
       {
         heading: "Practical Business Example",
-        content: "A staffing agency receives approximately 200 candidate applications per week. Each application requires evaluation against job requirements, client preferences, and availability. Before implementing an AI decision system, two recruiters spent roughly 15 hours per week on initial screening, making hundreds of accept-reject-maybe decisions.\nThe AI decision system now evaluates each application against defined criteria, automatically advances strong matches, declines clear mismatches with appropriate communication, and flags borderline cases for human review. Recruiters now spend four hours per week on decision-making, focused entirely on the borderline cases where human judgment adds genuine value. Decision consistency improved because the AI applies criteria uniformly rather than variably based on recruiter fatigue or bias.",
+        content: "A staffing agency receives approximately 200 candidate applications per week. Each application requires evaluation against job requirements, client preferences, and availability. Recruiters now spend four hours per week on decision-making, focused entirely on the borderline cases where human judgment adds genuine value. Decision consistency improved because the AI applies criteria uniformly rather than variably based on recruiter fatigue or bias. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         heading: "Framework",
@@ -543,7 +543,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "Are AI decision systems accurate?",
-        answer: "Accuracy depends on data quality and criteria clarity. Well-implemented systems typically achieve 90 to 95 percent accuracy on routine decisions, improving with feedback over time. Barrana.ai builds monitoring into every implementation.",
+        answer: "Accuracy depends on data quality and criteria clarity. Barrana.ai builds monitoring into every implementation. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         question: "What businesses benefit from AI decision systems?",
@@ -563,7 +563,7 @@ export const hubPages: HubPage[] = [
       },
       {
         question: "How much do AI decision systems cost?",
-        answer: "Costs depend on complexity and integration requirements. Simple classification systems are relatively affordable. Complex recommendation engines require more investment. Barrana.ai evaluates ROI before implementation to ensure positive returns.",
+        answer: "Costs depend on complexity and integration requirements. Simple classification systems are relatively affordable. Complex recommendation engines require more investment. Expected benefits should be established from the organization’s own baseline and measured across the complete workflow after implementation.",
       },
       {
         question: "Can AI decision systems be audited?",
@@ -578,8 +578,8 @@ export const hubPages: HubPage[] = [
     { label: 'decision fatigue', href: '/ai-dictionary/decision-fatigue' },
     { label: 'cognitive load', href: '/ai-dictionary/cognitive-load' },
     { label: 'AI copilot', href: '/ai-dictionary/ai-copilot' },
-    { label: 'How an insurance brokerage recovered 22 hours per week', href: '/case-studies/ai-automation-case-study-insurance-brokerage' },
-    { label: 'How a veterinary clinic reduced admin by 18 hours per week', href: '/case-studies/ai-automation-case-study-veterinary-clinic' },
+    { label: 'Illustrative AI use case: insurance brokerage workflow', href: '/case-studies/ai-automation-case-study-insurance-brokerage' },
+    { label: 'Illustrative AI use case: veterinary clinic workflow', href: '/case-studies/ai-automation-case-study-veterinary-clinic' },
     { label: 'AI automation for immigration consultants', href: '/industries/ai-automation-for-immigration-consultants' },
     { label: 'AI Does Not Save Time If You Still Have to Decide Everything', href: '/blog/ai-saves-time-myth' },
     { label: 'Judgment Is the Only Non-Scalable Advantage', href: '/blog/judgment-non-scalable' },
@@ -671,7 +671,7 @@ export const hubPages: HubPage[] = [
     { label: 'AI governance', href: '/ai-dictionary/ai-governance' },
     { label: 'AI hallucination', href: '/ai-dictionary/ai-hallucination' },
     { label: 'AI strategy', href: '/ai-dictionary/ai-strategy' },
-    { label: 'How a logistics company reduced dispatch errors by 71%', href: '/case-studies/ai-automation-case-study-logistics-company' },
+    { label: 'Illustrative AI use case: logistics workflow', href: '/case-studies/ai-automation-case-study-logistics-company' },
     { label: 'AI automation for accounting firms', href: '/industries/ai-automation-for-accounting-firms' },
     { label: 'AI automation for law firms', href: '/industries/ai-automation-for-law-firms' },
     { label: 'Automation Without Accountability Is a Liability', href: '/blog/automation-accountability' },
