@@ -19,8 +19,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "How much does AI automation cost?",
-      a: "Cost varies with workflow complexity, integrations, data, security requirements, exception handling, monitoring, training, and support. Barrana's Discovery Stage is q: "How much does AI automation cost?",
-      a: ,500 CAD and is credited toward implementation if the client proceeds. The implementation price is quoted after discovery."
+      a: "Cost varies with workflow complexity, integrations, data, security requirements, exception handling, monitoring, training, and support. Barrana's Discovery Stage is $1,500 CAD and is credited toward implementation if the client proceeds. The implementation price is quoted after discovery."
     },
     {
       q: "Is AI automation safe?",
