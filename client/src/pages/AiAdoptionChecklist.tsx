@@ -106,7 +106,7 @@ export default function AiAdoptionChecklist() {
           <div className="flex flex-wrap justify-center gap-4">
             <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
               className="px-8 py-3 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-              BOOK A STRATEGY CALL →
+              FIND THE WORKFLOW AI SHOULD FIX FIRST →
             </a>
             <Link href="/ai-automation-for-business"
               className="px-8 py-3 border border-electric/40 text-electric font-mono text-sm tracking-wider hover:bg-electric/10 transition-colors no-underline">
@@ -173,7 +173,7 @@ export default function AiAdoptionChecklist() {
           <h2 className="font-serif text-xl font-bold text-foreground mb-6">Continue Your Research</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
-              { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+              { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
               { label: "AI Automation for Business: Complete Guide", href: "/ai-automation-for-business" },
               { label: "AI Workflow Systems", href: "/ai-workflow-systems" },
               { label: "AI Automation Examples", href: "/ai-automation-examples" },
@@ -199,7 +199,7 @@ export default function AiAdoptionChecklist() {
           </p>
           <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-            BOOK A STRATEGY CALL →
+            FIND THE WORKFLOW AI SHOULD FIX FIRST →
           </a>
         </section>
 
