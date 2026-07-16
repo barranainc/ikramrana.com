@@ -1,5 +1,5 @@
 /*
- * THREE-LAYER MODEL — Updated content
+ * THREE-LAYER MODEL: Updated content
  */
 import { Link } from "wouter";
 import { motion } from "framer-motion";
@@ -47,7 +47,7 @@ export default function ThreeLayerModel() {
             <div className="flex"><div className="w-12 flex items-center justify-center font-mono text-xs font-bold rounded-l-lg bg-burgundy/20 text-burgundy">02</div><div className="flex-1 p-5 rounded-r-lg bg-burgundy/8 border border-burgundy/20 border-l-0"><p className="font-bold text-[15px] text-burgundy mb-1">Judgment Layer</p><p className="font-mono text-[13px] text-slate-text/75">Humans own this → Decisions, exceptions, professional discretion</p></div></div>
             <div className="flex"><div className="w-12 flex items-center justify-center font-mono text-xs font-bold rounded-l-lg bg-emerald-500/20 text-emerald-600">03</div><div className="flex-1 p-5 rounded-r-lg bg-emerald-500/8 border border-emerald-500/20 border-l-0"><p className="font-bold text-[15px] text-emerald-600 mb-1">Compliance Foundation</p><p className="font-mono text-[13px] text-slate-text/75">Embedded by design → Traceability, audit trails, escalation paths</p></div></div>
           </div>
-          <div className="text-center mt-7 pt-6 border-t border-border"><p className="text-[13px] text-slate-dim">Compliance is the foundation that constrains the entire system—not a check you add at the end.</p></div>
+          <div className="text-center mt-7 pt-6 border-t border-border"><p className="text-[13px] text-slate-dim">Compliance is the foundation that constrains the entire system, not a check you add at the end.</p></div>
         </motion.div>
 
         <motion.div {...fadeUp}>
@@ -59,7 +59,7 @@ export default function ThreeLayerModel() {
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Layer 1: Execution</h2>
-          <p className="text-foreground/85 leading-relaxed mb-5">The execution layer is where AI genuinely shines. These are tasks that are <em>repeatable</em>, <em>definable</em>, and <em>verifiable</em>—where the goal is throughput and consistency rather than judgment and creativity.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5">The execution layer is where AI genuinely shines. These are tasks that are <em>repeatable</em>, <em>definable</em>, and <em>verifiable</em>, where the goal is throughput and consistency rather than judgment and creativity.</p>
           <h3 className="font-serif text-xl font-semibold text-foreground mb-4 mt-8">Characteristics</h3>
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Definable:</strong> You can specify what "correct" looks like before the task runs.</p>
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Repeatable:</strong> The task is performed frequently, with similar inputs producing similar outputs.</p>
@@ -97,7 +97,7 @@ export default function ThreeLayerModel() {
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Layer 3: Compliance Foundation</h2>
-          <p className="text-foreground/85 leading-relaxed mb-5">The compliance layer is fundamentally different. It's not a set of tasks—it's a set of <em>properties</em> that the system must have.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5">The compliance layer is fundamentally different. It's not a set of tasks, it's a set of <em>properties</em> that the system must have.</p>
           <h3 className="font-serif text-xl font-semibold text-foreground mb-4 mt-8">Core Properties</h3>
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Traceability:</strong> Every significant action can be traced to its source.</p>
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Auditability:</strong> The trace record is structured for review. Logs are immutable.</p>
@@ -105,7 +105,7 @@ export default function ThreeLayerModel() {
           <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">Escalation Paths:</strong> When the system encounters uncertainty, it routes to human judgment.</p>
           <h3 className="font-serif text-xl font-semibold text-foreground mb-4 mt-8">Minimum Viable Compliance Controls</h3>
           <ul className="space-y-3 mb-6 pl-0">
-            {[["Decision Logging:","Every decision logged with timestamp, actor, inputs, and outcome"],["AI Output Tracking:","Every AI-generated output tagged with model/version and confidence score"],["Human Override Recording:","When humans modify AI outputs, changes logged with reasons"],["Approval Gates:","Judgment-layer decisions pass through explicit approval with verified identity"],["Escalation Triggers:","System automatically escalates when defined conditions are met"],["Reconstruction Capability:","Any significant decision can be fully reconstructed within 24 hours"],["Immutable Logs:","Audit logs are tamper-evident—cannot be modified after the fact"]].map(([b,r],i)=>(<li key={i} className="flex gap-3 text-foreground/85 leading-relaxed"><span className="w-1.5 h-1.5 rounded-sm bg-emerald-500 mt-2.5 shrink-0"/><span><strong className="text-foreground">{b}</strong> {r}</span></li>))}
+            {[["Decision Logging:","Every decision logged with timestamp, actor, inputs, and outcome"],["AI Output Tracking:","Every AI-generated output tagged with model/version and confidence score"],["Human Override Recording:","When humans modify AI outputs, changes logged with reasons"],["Approval Gates:","Judgment-layer decisions pass through explicit approval with verified identity"],["Escalation Triggers:","System automatically escalates when defined conditions are met"],["Reconstruction Capability:","Any significant decision can be fully reconstructed within 24 hours"],["Immutable Logs:","Audit logs are tamper-evident, cannot be modified after the fact"]].map(([b,r],i)=>(<li key={i} className="flex gap-3 text-foreground/85 leading-relaxed"><span className="w-1.5 h-1.5 rounded-sm bg-emerald-500 mt-2.5 shrink-0"/><span><strong className="text-foreground">{b}</strong> {r}</span></li>))}
           </ul>
         </motion.div>
 
@@ -117,7 +117,7 @@ export default function ThreeLayerModel() {
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">Judgment:</strong> Professional reviews the case for complexity indicators. Decides whether to accept engagement.</p>
           <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">Compliance (throughout):</strong> System logs intake receipt, routing decision, professional review with timestamp and identity, accept/reject decision with reasoning.</p>
           <h3 className="font-serif text-xl font-semibold text-foreground mb-4 mt-8">Layer Bleed: The Primary Risk</h3>
-          <p className="text-foreground/85 leading-relaxed mb-5">The biggest risk is "layer bleed"—when execution activities silently expand into judgment territory without anyone adjusting the compliance constraints. For example: An AI that "extracts data from forms" starts to "assess case complexity" because complexity indicators are extractable. A judgment function has been embedded in an execution wrapper.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5">The biggest risk is "layer bleed", when execution activities silently expand into judgment territory without anyone adjusting the compliance constraints. For example: An AI that "extracts data from forms" starts to "assess case complexity" because complexity indicators are extractable. A judgment function has been embedded in an execution wrapper.</p>
 
           {/* LAYER BLEED DIAGRAM */}
           <div className="my-8">
