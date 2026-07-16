@@ -87,7 +87,7 @@ export const industryPages: IndustryPage[] = [
       },
       {
         question: `Is AI safe for handling confidential legal information?`,
-        answer: `AI systems can be implemented with enterprise-grade security including encryption, access controls, and compliance with professional conduct requirements. Data security and client confidentiality should be primary considerations in any law firm AI implementation.`,
+        answer: `AI systems can be implemented with appropriate security controls including encryption, access controls, and compliance with professional conduct requirements. Data security and client confidentiality should be primary considerations in any law firm AI implementation.`,
       },
       {
         question: `Will AI replace lawyers?`,
@@ -254,7 +254,7 @@ export const industryPages: IndustryPage[] = [
       },
       {
         question: `Is AI safe for handling patient health information?`,
-        answer: `AI systems can comply with PHIPA in Ontario, provincial health privacy legislation across Canada, and HIPAA in the United States. Data security and privacy compliance are essential requirements for any healthcare AI implementation.`,
+        answer: `Healthcare AI systems must be designed with controls mapped to applicable requirements, which may include PHIPA in Ontario, other provincial health privacy laws in Canada, or HIPAA in the United States. The applicable requirements must be validated for each implementation.`,
       },
       {
         question: `How does AI improve physio clinic billing?`,
