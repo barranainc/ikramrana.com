@@ -508,7 +508,7 @@ export default function IndustryPage() {
                     {[
                       { label: 'What Is AI Automation?', slug: 'what-is-ai-automation-for-small-businesses' },
                       { label: 'AI Workflow Automation', slug: 'what-is-ai-workflow-automation' },
-                      { label: 'AI for Small Businesses', slug: 'ai-for-small-businesses-guide' },
+                      { label: 'AI for Businesses', slug: 'ai-for-small-businesses-guide' },
                     ].map(link => (
                       <Link
                         key={link.slug}
