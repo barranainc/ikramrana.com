@@ -1,5 +1,5 @@
 /*
- * SOLUTION PAGE — /solutions/automation-efficiency/
+ * SOLUTION PAGE: /solutions/automation-efficiency/
  * Exact content per master implementation prompt
  */
 
