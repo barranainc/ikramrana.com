@@ -4,9 +4,9 @@ const config: FaqPageConfig = {
   slug: "ai-for-small-business-faq",
   title: "AI for Business FAQ: 22 Answers",
   headline: "AI for Business FAQ",
-  subheadline: "22 questions about AI for businesses answered with direct, practical responses. Can businesses use AI, is it expensive, where should they start, and do they need a consultant.",
+  subheadline: "22 questions about AI for businesses answered with direct, practical responses. Can businesses use AI, what does responsible implementation cost, where should they start, and when is outside support useful.",
   metaDescription: "22 questions about AI for businesses answered by Ikram Rana of Barrana.ai. Can businesses use AI, is it expensive, where should they start, and do they need an AI adoption and workflow implementation specialist.",
-  expertQuote: "Businesses have a structural advantage in AI adoption that most enterprise advisers never mention: they have simpler processes, faster decision-making, and less legacy infrastructure to work around. The businesses that fail at AI adoption are not small: they are undisciplined about scope.",
+  expertQuote: "Businesses have a structural advantage in AI adoption that most enterprise advisers never mention: they have simpler processes, faster decision-making, and less legacy infrastructure to work around. Businesses do not fail at AI adoption because of their size. They fail when the workflow, risk, ownership, and adoption requirements are not understood.",
   pillarLink: { label: "AI Adoption Framework", href: "/ai-adoption-framework-for-small-businesses" },
   faqs: [
     {
@@ -43,7 +43,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "How does AI help businesses compete with larger companies?",
-      a: "AI helps businesses compete by enabling them to deliver enterprise-quality operations with small-team resources. A 10-person consulting firm with well-implemented AI automation can handle client intake, scheduling, document processing, and communication at the same quality and speed as a 50-person firm without automation. The competitive advantage is operational consistency: AI-powered businesses deliver predictable, reliable service that builds client trust."
+      a: "AI can help businesses compete when it improves operational consistency without weakening service quality or adding hidden review work. The advantage does not come from replacing headcount comparisons. It comes from responding reliably, keeping records complete, reducing avoidable handoffs, and giving people more capacity for judgment and client relationships."
     },
     {
       q: "What is the biggest AI mistake businesses make?",
@@ -58,15 +58,15 @@ const config: FaqPageConfig = {
       a: "AI workflow automation for businesses is the use of AI-powered tools to execute multi-step business processes without human intervention at each step. It connects triggers (a form submitted, an email received), logic (qualification rules, routing conditions), and actions (CRM record creation, email sending, scheduling) into a coherent process that handles work from initiation to completion. See the complete guide at /ai-workflow-systems."
     },
     {
-      q: "How does AI help small law firms?",
+      q: "How does AI help law firms?",
       a: "For law firms, AI may help with administrative intake, document organization, deadline support, and routine communications. It should not independently make legal judgments or send consequential work without appropriate professional review. Any implementation must account for confidentiality, accuracy, recordkeeping, jurisdictional duties, and clear human ownership."
     },
     {
-      q: "How does AI help small clinics and healthcare practices?",
+      q: "How does AI help clinics and healthcare practices?",
       a: "For clinics and healthcare practices, AI may support scheduling, reminders, intake administration, and document routing. Suitability depends on privacy requirements, clinical risk, integration with existing systems, accessibility, and the need for human review. Clinical judgment and high-impact patient decisions must remain with qualified professionals."
     },
     {
-      q: "How does AI help small accounting firms?",
+      q: "How does AI help accounting firms?",
       a: "For accounting firms, AI may support document collection, data extraction, invoice handling, and routine client follow-up. Extracted data should be validated, exceptions should be routed to a responsible person, and professional judgment should remain with the accountant. The value must be measured against correction time and seasonal workflow demands."
     },
     {
@@ -87,7 +87,7 @@ const config: FaqPageConfig = {
     },
     {
       q: "What is AI governance for businesses?",
-      a: "AI governance for businesses is a lightweight version of enterprise governance scaled to small-team resources. It requires four elements: accuracy standards (what percentage of completions must be correct), exception handling (what happens when the system encounters inputs it cannot process), a designated reviewer (who monitors performance and handles escalations), and a review cadence (how frequently performance is assessed). Small business governance does not require a dedicated team: it requires clear ownership and defined processes."
+      a: "Practical AI governance for businesses requires four elements: workflow-specific accuracy standards, defined exception handling, a designated reviewer, and a regular review cadence. The controls should match the consequences of failure and the business’s actual capacity. Governance does not always require a dedicated team, but it does require clear ownership, records, and escalation rules."
     },
     {
       q: "How does Ikram Rana help businesses with AI?",
