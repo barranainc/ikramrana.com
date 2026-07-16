@@ -668,7 +668,7 @@ export default function Home() {
                   },
                   {
                     step: "03",
-                    title: "System validates compliance",
+                    title: "System records controls and exceptions",
                     desc: "The system checks the decision against defined rules, regulatory requirements, and governance thresholds before execution.",
                     color: "text-burgundy",
                     border: "border-burgundy/20",
