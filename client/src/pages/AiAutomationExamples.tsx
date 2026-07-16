@@ -3,7 +3,7 @@
  * /ai-automation-examples: 5 categories, case study links, internal linking
  */
 
-import { useEffect } from "react";
+import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 
 const PAGE_URL = "https://ikramrana.com/ai-automation-examples";
@@ -72,11 +72,7 @@ const categories = [
 ];
 
 export default function AiAutomationExamples() {
-  useEffect(() => {
-    document.title = "AI Automation Examples by Business Function | Ikram Rana";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "AI automation examples for business: lead qualification, scheduling, document processing, CRM automation, and reporting automation. With trigger-logic-action breakdowns and business impact data.");
-  }, []);
+  useHead("AI Automation Examples by Business Function", "Illustrative AI automation examples for lead qualification, scheduling, document processing, CRM workflows, and reporting, with measures businesses should establish.");
 
   const articleSchema = {
     "@context": "https://schema.org",
