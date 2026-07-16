@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "What is the Tuesday Morning Test?",
-    a: "A practical diagnostic: On any random Tuesday morning, can you explain who made a specific decision, what information they had, and why they decided as they did? If you can't answer this for any decision in your system, you don't have governance,you have hope.",
+    a: "A practical diagnostic: On any random Tuesday morning, can you explain who made a specific decision, what information they had, and why they decided as they did? If you can't answer this for any decision in your system, you do not have governance. You have hope.",
   },
   {
     q: "Who is Ikram Rana?",
