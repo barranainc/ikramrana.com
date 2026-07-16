@@ -24,6 +24,7 @@ import NotFound from './NotFound';
 import BlogProblemDiagram from '@/components/diagrams/BlogProblemDiagram';
 import BlogFrameworkDiagram from '@/components/diagrams/BlogFrameworkDiagram';
 import BlogTacticsDiagram from '@/components/diagrams/BlogTacticsDiagram';
+import AuthorAuthorityCard from '@/components/AuthorAuthorityCard';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
@@ -103,15 +104,35 @@ export default function BlogPost() {
     headline: post.title,
     description: post.metaDescription,
     author: {
+      '@id': 'https://ikramrana.com/about#ikram-rana',
       '@type': 'Person',
       name: 'Ikram Rana',
-      url: 'https://ikramrana.com',
+      url: 'https://ikramrana.com/about',
       jobTitle: 'AI Adoption and Workflow Implementation Specialist',
-      worksFor: { '@type': 'Organization', name: 'Barrana.ai', url: 'https://barrana.ai' },
+      homeLocation: {
+        '@type': 'Place',
+        name: 'Vaughan, Ontario, Canada',
+      },
+      sameAs: [
+        'https://www.linkedin.com/in/ikramrana/',
+        'https://ikramrana.substack.com',
+      ],
+      worksFor: {
+        '@id': 'https://barrana.ai/#organization',
+        '@type': 'Organization',
+        name: 'Barrana',
+        url: 'https://barrana.ai',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Vaughan',
+          addressRegion: 'Ontario',
+          addressCountry: 'CA',
+        },
+      },
     },
     publisher: { '@type': 'Organization', name: 'IkramRana.com', url: 'https://ikramrana.com' },
     datePublished: post.publishDate,
-    dateModified: post.publishDate,
+    dateModified: '2026-07-16',
   };
 
   const faqSchema = {
@@ -315,7 +336,9 @@ export default function BlogPost() {
               </div>
             ))}
 
-            {/* ── CTA Block ─────────────────────────────────────────── */}
+            <AuthorAuthorityCard />
+
+            {/* CTA Block */}
             <motion.div
               initial="hidden"
               whileInView="visible"
