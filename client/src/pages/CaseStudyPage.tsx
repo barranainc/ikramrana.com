@@ -33,13 +33,13 @@ const sectionAccents = [
 
 // Hub cross-link mapping for internal links
 const hubSlugMap: Record<string, string> = {
-  'What Is AI Automation for Small Businesses?': 'what-is-ai-automation-for-small-businesses',
+  'What Is AI Automation for Businesses?': 'what-is-ai-automation-for-small-businesses',
   'What Is AI Workflow Automation?': 'what-is-ai-workflow-automation',
   'What Are AI Agents for Businesses?': 'what-are-ai-agents-for-businesses',
   'What Is AI Adoption for Businesses?': 'what-is-ai-adoption-for-businesses',
   'AI Governance for Businesses': 'ai-governance-for-businesses',
   'AI Decision Systems for Business': 'ai-decision-systems-for-business',
-  'AI for Small Businesses: A Practical Guide': 'ai-for-small-businesses-guide',
+  'AI for Businesses: A Practical Guide': 'ai-for-small-businesses-guide',
 };
 
 // Blog cross-link mapping
