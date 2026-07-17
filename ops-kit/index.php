@@ -124,7 +124,7 @@ if (isset($_COOKIE[ACCESS_COOKIE_NAME])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>The AI Business Ops Kit — Dashboard</title>
+    <title>The AI Business Ops Kit | Dashboard</title>
     
     <!-- Open Graph tags for share protection -->
     <meta property="og:title" content="The AI Business Ops Kit">
