@@ -5,17 +5,18 @@ Last updated: 2026-07-16
 ## Current status
 
 - Pull request: https://github.com/barranainc/ikramrana.com/pull/4
-- Branch: `codex/phase-2-authority-content-system`
-- Pull request state: open and draft
-- GitHub merge status: mergeable
-- Latest inspected GitHub Site check: passed
+- Branch merged into: `main`
+- Pull request state: merged on 2026-07-16
+- Merge commit: `8fb7fdb1f2a448e2315725ed33d3dc0164122fc3`
+- Final GitHub Site check: passed
 - Live deployment: not completed
+- Deployment owner: Ikram Rana's hosting team
 - Hostinger deployment automation: not present in this repository
 - Live platform confirmed from response headers: Hostinger hPanel with hCDN
 - Live asset pattern confirmed: the live site serves the hashed JavaScript and CSS referenced by the repository-root static export
 - Repository-root static export: reconciled with the validated production build, but not uploaded to Hostinger
 
-The website source is ready for final owner review. Merging and deployment remain separate actions and should not occur until the hosting and rollback details below are confirmed.
+The approved website source is merged and ready for the hosting team. The merge did not change the live website.
 
 ## Final owner review
 
