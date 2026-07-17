@@ -4,12 +4,12 @@ Website source and production export for [ikramrana.com](https://ikramrana.com).
 
 ## Repository layout
 
-- `client/src/` — editable React and TypeScript application source
-- `client/public/` — public source assets copied into frontend builds
-- `server/index.ts` — Express production server for the Node deployment option
-- `shared/` — code shared by the client and server
-- `ops-kit/` — PHP-protected digital-product dashboard
-- `assets/`, `index.html`, `robots.txt`, and `sitemap.xml` at the repository root — current static production export
+- `client/src/`: editable React and TypeScript application source
+- `client/public/`: public source assets copied into frontend builds
+- `server/index.ts`: Express production server for the Node deployment option
+- `shared/`: code shared by the client and server
+- `ops-kit/`: PHP-protected digital-product dashboard
+- `assets/`, `index.html`, `robots.txt`, and `sitemap.xml` at the repository root: current static production export
 
 Do not edit minified files under the root `assets/` directory. Make application changes under `client/src/`, then create a new build.
 
@@ -51,8 +51,8 @@ corepack pnpm build
 
 The build command produces:
 
-- `dist/public/` — compiled frontend
-- `dist/index.js` — bundled Express server
+- `dist/public/`: compiled frontend
+- `dist/index.js`: bundled Express server
 
 The `dist/` directory is intentionally ignored by Git.
 
@@ -113,6 +113,14 @@ Document required variable names in a committed `.env.example`, but use placehol
 - Check both desktop and mobile layouts after visual changes.
 - Preserve analytics, SEO metadata, redirects, the sitemap, and the SPA fallback when changing deployment configuration.
 - Treat PDFs, ZIP files, and other downloadable products as potentially sensitive and review whether they should live in Git.
+
+## Authority content program
+
+- Editorial rules and the GitHub intake process: `CONTENT_AUTHORITY_SYSTEM.md`
+- Active 90-day queue, evidence foundation, status, review gates, and measurement plan: `90_DAY_AUTHORITY_CONTENT_PLAN.md`
+- Content request form: `.github/ISSUE_TEMPLATE/website-content.yml`
+
+One approved topic should produce a coordinated LinkedIn post, Substack Note, LinkedIn article with FAQs, and a permanent website article or page update when the subject deserves a canonical source.
 
 ## Source restoration history
 

@@ -46,6 +46,23 @@ Quality takes priority over filling a calendar. Update a strong existing page wh
 
 This keeps the process usable without editing TypeScript files or downloading a document.
 
+There is one canonical GitHub form: `.github/ISSUE_TEMPLATE/website-content.yml`. The earlier duplicate short form was removed so the team does not have to choose between two similar request types.
+
+## 90-day operating plan
+
+The active topic queue, research foundation, production status, review gates, and measurement plan are maintained in `90_DAY_AUTHORITY_CONTENT_PLAN.md`.
+
+The status words in that plan are deliberate:
+
+- **Planned:** The topic is in the queue but no approved brief exists.
+- **Brief ready for issue:** The question, position, evidence basis, and safeguards are defined.
+- **Drafted:** Copy exists but has not completed review.
+- **Approved:** Ikram has approved the facts, position, and public wording.
+- **Merged:** The website source is in GitHub `main`.
+- **Published:** The deployment owner has released it and the live URL has been checked.
+
+Never describe a planned, drafted, approved, or merged item as published until its live URL has been verified.
+
 ## Required point of view
 
 Every substantive page must answer these questions:
