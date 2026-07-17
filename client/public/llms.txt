@@ -14,6 +14,7 @@ Ikram Rana is an AI adoption and workflow implementation specialist and the foun
 - [AI Knowledge Hub](https://ikramrana.com/ai-knowledge-hub)
 - [AI Adoption Analysis](https://ikramrana.com/blog)
 - [Canada's AI Adoption Is Accelerating: 2026 evidence and practical interpretation](https://ikramrana.com/blog/canada-ai-adoption-2026)
+- [The Privacy Review Belongs Before the AI Pilot](https://ikramrana.com/blog/privacy-review-before-ai-pilot-canada)
 - [Industry Guides](https://ikramrana.com/industries)
 - [Illustrative AI Use Cases](https://ikramrana.com/case-studies)
 - [AI Dictionary](https://ikramrana.com/ai-dictionary)
