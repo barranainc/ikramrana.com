@@ -36,7 +36,8 @@ const fadeUp = {
 };
 
 function formatDate(dateStr: string) {
-  return new Date(dateStr).toLocaleDateString('en-US', {
+  const [year, month, day] = dateStr.split('-').map(Number);
+  return new Date(year, month - 1, day).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -132,7 +133,7 @@ export default function BlogPost() {
     },
     publisher: { '@type': 'Organization', name: 'IkramRana.com', url: 'https://ikramrana.com' },
     datePublished: post.publishDate,
-    dateModified: '2026-07-16',
+    dateModified: post.reviewedDate || post.publishDate,
   };
 
   const faqSchema = {
@@ -247,7 +248,13 @@ export default function BlogPost() {
 
               {/* Meta row */}
               <div className="flex items-center gap-4 font-mono text-[12px] text-slate-dim">
-                <span>{formatDate(post.publishDate)}</span>
+                <span>Published {formatDate(post.publishDate)}</span>
+                {post.reviewedDate && (
+                  <>
+                    <span className="text-border">·</span>
+                    <span>Reviewed {formatDate(post.reviewedDate)}</span>
+                  </>
+                )}
                 <span className="text-border">·</span>
                 <span>Ikram Rana</span>
                 <span className="text-border">·</span>
@@ -323,27 +330,59 @@ export default function BlogPost() {
                 </motion.section>
 
                 {/* ── Diagram after section 1: Problem In Practice ── */}
-                {i === 0 && problemProps && (
+                {post.showDiagrams !== false && i === 0 && problemProps && (
                   <div className="pl-0 mb-12">
                     <BlogProblemDiagram {...problemProps} />
                   </div>
                 )}
 
                 {/* ── Diagram after section 2: The Framework ── */}
-                {i === 1 && frameworkProps && (
+                {post.showDiagrams !== false && i === 1 && frameworkProps && (
                   <div className="pl-0 mb-12">
                     <BlogFrameworkDiagram {...frameworkProps} />
                   </div>
                 )}
 
                 {/* ── Diagram after section 3: Tactical Advice ── */}
-                {i === 2 && (
+                {post.showDiagrams !== false && i === 2 && (
                   <div className="pl-0 mb-12">
                     <BlogTacticsDiagram steps={tacticSteps} />
                   </div>
                 )}
               </div>
             ))}
+
+            {post.sources && post.sources.length > 0 && (
+              <motion.section
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeUp}
+                className="mt-14 mb-12 border border-border bg-navy px-6 py-7"
+              >
+                <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-electric mb-2">
+                  Evidence reviewed
+                </p>
+                <h2 className="font-serif text-xl font-bold text-foreground mb-5">
+                  Public sources
+                </h2>
+                <ul className="space-y-3">
+                  {post.sources.map((source, i) => (
+                    <li key={i}>
+                      <a
+                        href={source.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-start gap-3 text-sm text-slate-text hover:text-electric transition-colors"
+                      >
+                        <ArrowRight size={14} className="mt-1 text-electric flex-shrink-0" />
+                        <span>{source.label}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </motion.section>
+            )}
 
             <AuthorAuthorityCard />
 
