@@ -8,7 +8,7 @@
   <!-- Title -->
   <rect width="900" height="55" rx="12" fill="#0a1628"/>
   <rect y="43" width="900" height="12" fill="#0a1628"/>
-  <text x="450" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">Automation Prioritization Matrix — Score Each Process Before Automating</text>
+  <text x="450" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">Automation Prioritization Matrix: Score Each Process Before Automating</text>
   
   <!-- Matrix header -->
   <rect x="40" y="80" width="820" height="40" rx="6" fill="#1a3a5c"/>

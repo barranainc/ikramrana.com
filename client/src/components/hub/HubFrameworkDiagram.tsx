@@ -30,7 +30,7 @@ function parseFrameworkItems(content: string): FrameworkItem[] {
   return items;
 }
 
-// Blueprint color palette — label colours are bright, body text is light
+// Blueprint color palette: label colours are bright, body text is light
 const COLORS = [
   { label: '#60a5fa', num: '#93c5fd' },  // blue
   { label: '#22d3ee', num: '#67e8f9' },  // cyan
@@ -51,7 +51,7 @@ export default function HubFrameworkDiagram({ content, title }: { content: strin
           className="font-mono text-[10px] tracking-[0.18em] uppercase px-2.5 py-1 border"
           style={{ color: '#60a5fa', borderColor: 'rgba(96,165,250,0.35)', background: 'rgba(96,165,250,0.08)' }}
         >
-          FIG. — FRAMEWORK ARCHITECTURE
+          FIG.: FRAMEWORK ARCHITECTURE
         </span>
         <div className="h-px flex-1" style={{ background: 'rgba(96,165,250,0.2)' }} />
       </div>

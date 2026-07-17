@@ -1,9 +1,9 @@
 /*
- * DESIGN: The Architect's Blueprint — Resource Page
- * /ai-automation-examples — 5 categories, case study links, internal linking
+ * DESIGN: The Architect's Blueprint: Resource Page
+ * /ai-automation-examples: 5 categories, case study links, internal linking
  */
 
-import { useEffect } from "react";
+import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 
 const PAGE_URL = "https://ikramrana.com/ai-automation-examples";
@@ -17,7 +17,7 @@ const categories = [
     trigger: "Form submission, email inquiry, or website chat message",
     logic: "Score against qualification criteria (budget, timeline, service fit, geography). Route high-score leads to immediate follow-up; route low-score leads to nurture sequence; route out-of-scope leads to referral response.",
     action: "Create CRM record, assign to appropriate pipeline stage, trigger follow-up sequence, notify relevant team member, schedule consultation if qualified.",
-    businessImpact: "Consulting firms and agencies using lead qualification automation report 60–80% reduction in time spent on unqualified leads and 40% improvement in response time to qualified prospects.",
+    businessImpact: "Measure time spent reviewing unsuitable leads, response time for qualified prospects, conversion quality, and the number of incorrect routing decisions. Results depend on lead quality, rule design, integrations, and staff follow-through.",
     caseStudyLink: "/case-studies",
     industries: ["Consulting", "Law firms", "Agencies", "Financial services"],
   },
@@ -29,7 +29,7 @@ const categories = [
     trigger: "Booking request, consultation completion, or recurring appointment trigger",
     logic: "Check availability against calendar rules, apply booking constraints (buffer time, daily limits, service type), confirm booking, schedule reminder sequence, handle rescheduling requests against availability.",
     action: "Create calendar event, send confirmation with details, trigger reminder sequence (48-hour, 24-hour, 2-hour), update CRM record, notify practitioner.",
-    businessImpact: "Clinics and professional service firms using scheduling automation report 30–50% reduction in no-shows through structured reminder sequences and 8–12 hours per week recovered from manual scheduling coordination.",
+    businessImpact: "Measure no-show patterns, rescheduling success, manual coordination time, accessibility, and inappropriate or duplicate reminders. Results depend on the client population, channels, timing, and system integration.",
     caseStudyLink: "/case-studies",
     industries: ["Clinics", "Physiotherapy", "Dental", "Consulting", "Coaching"],
   },
@@ -37,11 +37,11 @@ const categories = [
     id: "document-processing",
     num: "03",
     title: "Document processing automation",
-    desc: "Document processing automation extracts structured information from unstructured documents — invoices, contracts, forms, and reports — and routes the extracted data to downstream systems.",
+    desc: "Document processing automation extracts structured information from unstructured documents: invoices, contracts, forms, and reports: and routes the extracted data to downstream systems.",
     trigger: "Document received via email, uploaded to designated folder, or submitted through client portal",
     logic: "Classify document type, extract relevant fields using AI document processing, validate extracted data against defined rules, flag exceptions for human review, route validated data to appropriate system.",
     action: "Populate accounting software with invoice data, update contract management system with extracted terms, create CRM record from intake form, generate summary report for review.",
-    businessImpact: "Accounting firms and law firms using document processing automation report 70–90% reduction in manual data entry time and 40–60% reduction in data entry errors that require correction.",
+    businessImpact: "Measure extraction accuracy by document type, correction time, exception volume, confidentiality controls, and whether professionals can trace information back to the source document.",
     caseStudyLink: "/case-studies",
     industries: ["Accounting firms", "Law firms", "Real estate", "Healthcare"],
   },
@@ -53,7 +53,7 @@ const categories = [
     trigger: "Client interaction (email, call, meeting), status change, time elapsed since last contact, or pipeline stage transition",
     logic: "Update record with interaction data, evaluate status against follow-up rules, determine appropriate next action, check for stale records requiring attention, apply segmentation rules for communication targeting.",
     action: "Update contact record, trigger follow-up task or communication, move pipeline stage, notify account owner, generate activity report, flag at-risk relationships for review.",
-    businessImpact: "Service businesses using CRM automation report 25–40% improvement in client retention through consistent follow-up and 15–20 hours per week recovered from manual record maintenance and follow-up coordination.",
+    businessImpact: "Measure record completeness, missed follow-ups, response quality, opt-outs, staff correction time, and client retention against the business’s own baseline.",
     caseStudyLink: "/case-studies",
     industries: ["Consulting", "Agencies", "Financial services", "Real estate"],
   },
@@ -65,18 +65,14 @@ const categories = [
     trigger: "Scheduled time trigger (daily, weekly, monthly) or threshold trigger (metric crossed, target reached, anomaly detected)",
     logic: "Pull data from connected sources, apply calculation rules, compare against targets and prior periods, identify anomalies and highlights, format according to report template.",
     action: "Generate formatted report, distribute to defined recipients, archive in document management system, trigger alert if anomaly thresholds are exceeded.",
-    businessImpact: "Operations-intensive businesses using reporting automation report 10–15 hours per week recovered from manual report compilation and 50–70% improvement in report accuracy through elimination of manual data transfer errors.",
+    businessImpact: "Measure report preparation time, source-data accuracy, correction effort, delivery reliability, and whether decision-makers trust and use the resulting reports.",
     caseStudyLink: "/case-studies",
     industries: ["All industries", "Operations-intensive businesses", "Agencies"],
   },
 ];
 
 export default function AiAutomationExamples() {
-  useEffect(() => {
-    document.title = "AI Automation Examples by Business Function | Ikram Rana";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "AI automation examples for business: lead qualification, scheduling, document processing, CRM automation, and reporting automation. With trigger-logic-action breakdowns and business impact data.");
-  }, []);
+  useHead("AI Automation Examples by Business Function", "Illustrative AI automation examples for lead qualification, scheduling, document processing, CRM workflows, and reporting, with measures businesses should establish.");
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -102,12 +98,12 @@ export default function AiAutomationExamples() {
             <span className="text-electric"> by Business Function</span>
           </h1>
           <p className="text-slate-300 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Five categories of AI automation with trigger-logic-action breakdowns, business impact data, and links to case studies. Designed for operators evaluating automation priorities.
+            Five categories of AI automation with trigger-logic-action breakdowns, measurement questions, and links to illustrative use cases. Designed for business leaders evaluating automation priorities.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
               className="px-8 py-3 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-              BOOK A STRATEGY CALL →
+              FIND THE WORKFLOW AI SHOULD FIX FIRST →
             </a>
             <Link href="/ai-automation-for-business"
               className="px-8 py-3 border border-electric/40 text-electric font-mono text-sm tracking-wider hover:bg-electric/10 transition-colors no-underline">
@@ -122,8 +118,8 @@ export default function AiAutomationExamples() {
         {/* Intro */}
         <section className="mb-14">
           <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">These five automation categories represent the highest-value automation targets for most small and medium-sized service businesses. Each example includes the trigger that initiates the automation, the logic that governs its decisions, the actions it executes, and the business impact reported by businesses that have implemented it.</p>
-          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The examples are structured using the trigger-logic-action pattern described in the <Link href="/ai-workflow-systems" className="text-electric hover:underline no-underline">AI Workflow Systems</Link> guide. Every automation, regardless of complexity, can be decomposed into this pattern — it is the framework that makes automation design systematic rather than ad hoc.</p>
-          <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the implementation methodology that governs these examples, see the <Link href="/ai-automation-for-business" className="text-electric hover:underline no-underline">AI Automation for Business</Link> complete guide. For the prioritization framework that determines which automation to implement first, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Small Businesses</Link>.</p>
+          <p className="text-slate-text leading-relaxed mb-4 font-sans text-[15px]">The examples are structured using the trigger-logic-action pattern described in the <Link href="/ai-workflow-systems" className="text-electric hover:underline no-underline">AI Workflow Systems</Link> guide. Every automation, regardless of complexity, can be decomposed into this pattern: it is the framework that makes automation design systematic rather than ad hoc.</p>
+          <p className="text-slate-text leading-relaxed font-sans text-[15px]">For the implementation methodology that governs these examples, see the <Link href="/ai-automation-for-business" className="text-electric hover:underline no-underline">AI Automation for Business</Link> complete guide. For the prioritization framework that determines which automation to implement first, see the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline no-underline">AI Adoption Framework for Businesses</Link>.</p>
         </section>
 
         <div className="border-t border-border/20 mb-14" />
@@ -168,7 +164,7 @@ export default function AiAutomationExamples() {
             </div>
 
             <Link href={cat.caseStudyLink} className="font-mono text-[11px] tracking-wider uppercase text-electric hover:text-electric/80 transition-colors no-underline">
-              VIEW CASE STUDIES →
+              VIEW ILLUSTRATIVE USE CASES →
             </Link>
 
             {i < categories.length - 1 && <div className="border-t border-border/20 mt-14" />}
@@ -181,14 +177,14 @@ export default function AiAutomationExamples() {
           <h2 className="font-serif text-xl font-bold text-foreground mb-6">Continue Your Research</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
-              { label: "AI Automation for Business — Complete Guide", href: "/ai-automation-for-business" },
+              { label: "AI Automation for Business: Complete Guide", href: "/ai-automation-for-business" },
               { label: "AI Workflow Systems", href: "/ai-workflow-systems" },
-              { label: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+              { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
               { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
               { label: "AI Automation FAQ", href: "/ai-automation-faq" },
               { label: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
-              { label: "AI Automation Case Studies", href: "/case-studies" },
-              { label: "What Is AI Automation for Small Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
+              { label: "Illustrative AI Use Cases", href: "/case-studies" },
+              { label: "What Is AI Automation for Businesses?", href: "/ai-knowledge-hub/what-is-ai-automation-for-small-businesses" },
             ].map((link) => (
               <Link key={link.href} href={link.href}
                 className="flex items-center gap-3 border border-border/40 bg-navy/40 p-4 hover:border-electric/40 hover:bg-navy/60 transition-colors no-underline group">
@@ -203,11 +199,11 @@ export default function AiAutomationExamples() {
         <section className="bg-gradient-to-br from-[#020b18] to-[#0a1628] border border-electric/30 p-10 text-center">
           <h2 className="font-serif text-2xl font-bold text-white mb-4">Identify Your Highest-Value Automation</h2>
           <p className="text-slate-300 text-base leading-relaxed max-w-xl mx-auto mb-8">
-            Book a strategy call with Ikram Rana of Barrana.ai to assess which of these automation categories applies to your business and prioritize your implementation roadmap.
+            Find the Workflow AI Should Fix First with Ikram Rana of Barrana.ai to assess which of these automation categories applies to your business and prioritize your implementation roadmap.
           </p>
           <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-electric text-navy font-mono text-sm font-bold tracking-wider hover:bg-electric/90 transition-colors no-underline">
-            BOOK A STRATEGY CALL →
+            FIND THE WORKFLOW AI SHOULD FIX FIRST →
           </a>
         </section>
 

@@ -23,13 +23,13 @@ import SolutionGrowth from "./pages/SolutionGrowth";
 import SolutionGovernance from "./pages/SolutionGovernance";
 import SolutionSprint from "./pages/SolutionSprint";
 
-// Framework content pages — keep their own URLs and layouts
+// Framework content pages: keep their own URLs and layouts
 import FoundationalEssay from "./pages/FoundationalEssay";
 import ThreeLayerModel from "./pages/ThreeLayerModel";
 import GovernanceByDesign from "./pages/GovernanceByDesign";
 import Dictionary from "./pages/Dictionary";
 
-// Essays — keep their own URLs and layouts
+// Essays: keep their own URLs and layouts
 import Essays from "./pages/Essays";
 import EssayEntropy from "./pages/EssayEntropy";
 import EssayJudgment from "./pages/EssayJudgment";
@@ -88,13 +88,13 @@ function Router() {
         <Route path="/solutions/governance-decision-architecture" component={SolutionGovernance} />
         <Route path="/solutions/ai-sprint" component={SolutionSprint} />
 
-        {/* Framework content pages — keep their own URLs and layouts */}
+        {/* Framework content pages: keep their own URLs and layouts */}
         <Route path="/foundational-essay" component={FoundationalEssay} />
         <Route path="/the-model" component={ThreeLayerModel} />
         <Route path="/governance" component={GovernanceByDesign} />
         <Route path="/dictionary" component={Dictionary} />
 
-        {/* Essays — keep their own URLs and layouts */}
+        {/* Essays: keep their own URLs and layouts */}
         <Route path="/essays" component={Essays} />
         <Route path="/essays/entropy" component={EssayEntropy} />
         <Route path="/essays/judgment" component={EssayJudgment} />
@@ -108,36 +108,36 @@ function Router() {
         <Route path="/essays/judgment-backup" component={EssayJudgmentBackup} />
         <Route path="/essays/clarity" component={EssayClarity} />
 
-        {/* Insight section — separate from /essays/ */}
+        {/* Insight section: separate from /essays/ */}
         <Route path="/insight" component={Insight} />
 
-        {/* Blog — 30 SEO articles */}
+        {/* Blog: 30 SEO articles */}
         <Route path="/blog" component={BlogIndex} />
         <Route path="/blog/:slug" component={BlogPost} />
-        {/* AI Knowledge Hub — 7 authoritative reference pages */}
+        {/* AI Knowledge Hub: 7 authoritative reference pages */}
         <Route path="/ai-knowledge-hub" component={KnowledgeHubIndex} />
         <Route path="/ai-knowledge-hub/:slug" component={KnowledgeHubPage} />
 
-        {/* Industries — 8 industry authority pages */}
+        {/* Industries: 8 industry authority pages */}
         <Route path="/industries" component={IndustryIndex} />
         <Route path="/industries/:slug" component={IndustryPage} />
 
-        {/* Locations — 5 geographic authority pages */}
+        {/* Locations: 5 geographic authority pages */}
         <Route path="/locations" component={LocationIndex} />
         <Route path="/locations/:slug" component={LocationPage} />
 
-        {/* AI Dictionary — 15 term entries */}
+        {/* AI Dictionary: 15 term entries */}
         <Route path="/ai-dictionary" component={DictionaryIndex} />
         <Route path="/ai-dictionary/:slug" component={DictionaryEntry} />
 
-        {/* Case Studies — 8 industry case studies */}
+        {/* Illustrative use cases: 8 hypothetical industry scenarios */}
         <Route path="/case-studies" component={CaseStudyIndex} />
         <Route path="/case-studies/:slug" component={CaseStudyPage} />
 
-        {/* Pillar Page — cornerstone AI Adoption Framework */}
+        {/* Pillar Page: cornerstone AI Adoption Framework */}
         <Route path="/ai-adoption-framework-for-small-businesses" component={PillarPage} />
 
-        {/* Resource Hub — practical companion to Pillar Page */}
+        {/* Resource Hub: practical companion to Pillar Page */}
         <Route path="/ai-resources-for-businesses" component={ResourceHubPage} />
 
         {/* New GEO/AEO authority pages */}

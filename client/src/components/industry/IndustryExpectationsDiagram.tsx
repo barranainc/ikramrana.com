@@ -74,7 +74,7 @@ export default function IndustryExpectationsDiagram({ slug }: { slug: string }) 
           className="font-mono text-[10px] tracking-[0.18em] uppercase px-2.5 py-1 border"
           style={{ color: '#f59e0b', borderColor: 'rgba(245,158,11,0.3)', background: 'rgba(245,158,11,0.06)' }}
         >
-          FIG. — EXPECTED RESULTS
+          FIG.: EXPECTED RESULTS
         </span>
         <div className="h-px flex-1" style={{ background: 'rgba(245,158,11,0.2)' }} />
       </div>

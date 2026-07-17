@@ -1,5 +1,5 @@
 /**
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * Industries index page at /industries
  * Matches KnowledgeHubIndex aesthetic exactly:
  * - Navy hero with blueprint grid
@@ -106,7 +106,7 @@ const collectionSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'AI Automation by Industry',
-  description: 'Industry-specific guides on how AI automation improves operations for small and medium-sized businesses. Written by Ikram Rana, founder of Barrana.ai.',
+  description: 'Industry-specific guides on where AI automation may support business operations, where human judgment must remain, and what each organization should measure. Written by Ikram Rana, founder of Barrana.ai.',
   url: `${BASE_URL}/industries`,
   author: { '@type': 'Person', name: 'Ikram Rana', url: BASE_URL },
   hasPart: industryPages.map(p => ({
@@ -126,7 +126,7 @@ const cardVariants = {
 };
 
 export default function IndustryIndex() {
-  useHead("AI Automation by Industry", "Industry-specific guides on AI automation for small and medium businesses. How AI improves operations in law, healthcare, real estate, and more.");
+  useHead("AI Automation by Industry", "Industry-specific guides on AI automation for businesses. How AI improves operations in law, healthcare, real estate, and more.");
 
   return (
     <>
@@ -172,14 +172,14 @@ export default function IndustryIndex() {
               AI Automation by Industry
             </h1>
             <p className="font-sans text-[15px] text-slate-text leading-relaxed mb-6 max-w-xl">
-              Industry-specific guides on how AI automation improves operations for small and medium-sized businesses. Written by Ikram Rana, founder of Barrana.ai.
+              Industry-specific guides on where AI automation may support business operations, where human judgment must remain, and what each organization should measure. Written by Ikram Rana, founder of Barrana.ai.
             </p>
             <p className="font-mono text-[11px] text-slate-dim tracking-wide">
               By{' '}
               <Link href="/about" className="text-electric hover:text-electric/80 transition-colors no-underline">
                 Ikram Rana
               </Link>
-              {' '}· AI Automation Strategist, Barrana.ai
+              {' '}· AI Adoption and Workflow Implementation Specialist, Barrana.ai
             </p>
           </motion.div>
         </div>
@@ -274,21 +274,23 @@ export default function IndustryIndex() {
             </svg>
             <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <div>
-                <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric mb-2">STRATEGY CALL</p>
+                <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric mb-2">WORKFLOW DISCOVERY</p>
                 <h3 className="font-serif text-xl font-bold text-foreground mb-2">
                   Ready to implement AI in your industry?
                 </h3>
                 <p className="font-sans text-[14px] text-slate-text leading-relaxed max-w-md">
-                  Book a strategy call with Ikram Rana to evaluate your workflows and identify the right automation opportunities for your specific industry.
+                  Find the Workflow AI Should Fix First with Ikram Rana to evaluate your workflows and identify the right automation opportunities for your specific industry.
                 </p>
               </div>
-              <Link
+              <a
                 href="https://calendly.com/ikramrana15"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="shrink-0 inline-flex items-center gap-2 bg-electric text-white px-6 py-3 font-sans font-medium text-sm hover:bg-electric/90 transition-colors no-underline"
               >
-                Book a strategy call
+                Find the Workflow AI Should Fix First
                 <ArrowRight size={14} />
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

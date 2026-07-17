@@ -1,6 +1,6 @@
 /**
- * DESIGN: The Architect's Blueprint — LIGHT THEME
- * LOCATION PAGE TEMPLATE — /locations/:slug
+ * DESIGN: The Architect's Blueprint: LIGHT THEME
+ * LOCATION PAGE TEMPLATE: /locations/:slug
  * Blueprint aesthetic: dark navy bg, electric blue accents, mono labels, serif headings
  * Matches: KnowledgeHubPage, IndustryPage
  * Schema: Article + ProfessionalService + FAQPage
@@ -47,8 +47,8 @@ const geoLinks: Record<string, { label: string; slug: string }[]> = {
 // Hub pages cross-links per location
 const hubLinks: Record<string, { label: string; slug: string }[]> = {
   'ai-automation-consulting-vaughan-ontario': [
-    { label: 'What Is AI Automation for Small Businesses?', slug: 'what-is-ai-automation-for-small-businesses' },
-    { label: 'AI for Small Businesses: A Practical Guide', slug: 'ai-for-small-businesses-guide' },
+    { label: 'What Is AI Automation for Businesses?', slug: 'what-is-ai-automation-for-small-businesses' },
+    { label: 'AI for Businesses: A Practical Guide', slug: 'ai-for-small-businesses-guide' },
   ],
   'ai-automation-consulting-toronto': [
     { label: 'What Is AI Workflow Automation?', slug: 'what-is-ai-workflow-automation' },
@@ -114,7 +114,7 @@ export default function LocationPage() {
           "@type": "Person",
           "name": "Ikram Rana",
           "url": "https://ikramrana.com",
-          "jobTitle": "AI Automation Strategist"
+          "jobTitle": "AI Adoption and Workflow Implementation Specialist"
         },
         "provider": {
           "@type": "Organization",
@@ -128,7 +128,7 @@ export default function LocationPage() {
           },
           "areaServed": page.areaServed
         },
-        "datePublished": "2026-03-01"
+        "dateModified": "2026-07-15"
       },
       {
         "@type": "FAQPage",
@@ -192,6 +192,15 @@ export default function LocationPage() {
           {/* ── Main content ── */}
           <div className="min-w-0">
 
+            <div className="mb-10 border border-amber-500/30 bg-amber-500/5 p-5">
+              <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-amber-600 mb-2">
+                Evidence and interpretation
+              </p>
+              <p className="text-sm text-slate-text leading-relaxed">
+                Quantitative ranges on this page are planning illustrations unless a linked public source is shown. They are not client results, guarantees, or a substitute for industry-specific professional advice.
+              </p>
+            </div>
+
             {/* Sections */}
             {page.sections.map((section, idx) => {
               const accent = sectionAccents[idx] || sectionAccents[0];
@@ -201,7 +210,7 @@ export default function LocationPage() {
                   {...fadeUp}
                   transition={{ ...fadeUp.transition, delay: idx * 0.06 }}
                   id={`section-${idx}`}
-                  className="mb-12"
+                  className="mb-12 scroll-mt-24"
                 >
                   {/* Section label */}
                   <div className="flex items-center gap-3 mb-4">
@@ -263,7 +272,7 @@ export default function LocationPage() {
             )}
 
             {/* FAQ Section */}
-            <motion.div {...fadeUp} className="mb-12">
+            <motion.div id="faq" {...fadeUp} className="mb-12 scroll-mt-24">
               <div className="flex items-center gap-3 mb-6">
                 <span className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric px-2 py-1 border border-electric/30 bg-electric/5">
                   FAQ
@@ -310,6 +319,28 @@ export default function LocationPage() {
               </motion.div>
             )}
 
+            {/* Official Sources */}
+            <motion.section {...fadeUp} className="border-t border-border/40 pt-8">
+              <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric mb-4">
+                Official Sources
+              </div>
+              <ul className="space-y-3">
+                {page.sources.map(source => (
+                  <li key={source.href}>
+                    <a
+                      href={source.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-start gap-2 text-sm text-slate-text hover:text-electric transition-colors"
+                    >
+                      <ExternalLink size={13} className="mt-1 flex-shrink-0" />
+                      {source.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </motion.section>
+
             {/* CTA Block */}
             <motion.div
               {...fadeUp}
@@ -319,10 +350,10 @@ export default function LocationPage() {
                 Work with Ikram Rana
               </div>
               <h3 className="font-serif text-xl md:text-2xl font-bold text-white mb-3 leading-snug">
-                Ready to automate your workflows in {page.location}?
+                Find the Workflow AI Should Fix First in {page.location}
               </h3>
               <p className="text-sm text-white/60 leading-relaxed mb-5 max-w-xl">
-                Book a strategy call with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan for your business.
+                Begin with discovery to determine whether AI belongs in the workflow, what must remain human, which controls are required, and what implementation would need to prove.
               </p>
               <a
                 href="https://calendly.com/ikramrana15"
@@ -330,7 +361,7 @@ export default function LocationPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-electric text-white font-mono text-xs tracking-wide hover:opacity-90 transition-opacity"
               >
-                Book a strategy call <ArrowRight size={12} />
+                Find the Workflow AI Should Fix First <ArrowRight size={12} />
               </a>
             </motion.div>
           </div>
@@ -406,10 +437,10 @@ export default function LocationPage() {
               {/* Mini CTA */}
               <div className="border border-electric/25 p-5 bg-[#070f1e]">
                 <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric mb-3">
-                  Book a call
+                  Start with the workflow
                 </div>
                 <p className="text-xs text-white/55 leading-relaxed mb-4">
-                  Strategy call with Ikram Rana — evaluate your workflows and build a structured AI implementation plan.
+                  Use the Discovery Stage to examine one recurring workflow before deciding whether to implement AI.
                 </p>
                 <a
                   href="https://calendly.com/ikramrana15"
@@ -417,7 +448,7 @@ export default function LocationPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 font-mono text-[11px] text-electric hover:underline"
                 >
-                  Book now <ArrowRight size={11} />
+                  Find the Workflow AI Should Fix First <ArrowRight size={11} />
                 </a>
               </div>
 

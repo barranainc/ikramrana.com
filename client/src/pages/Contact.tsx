@@ -1,11 +1,8 @@
 /*
- * CONTACT — Updated content
+ * CONTACT , Updated content
  */
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { Link } from "wouter";
-import { Send } from "lucide-react";
-import { toast } from "sonner";
 import { useHead } from "@/hooks/useHead";
 
 const fadeUp = {
@@ -26,27 +23,20 @@ const faqs = [
   },
   {
     q: "What is governance-by-design?",
-    a: "Governance-by-design is the principle that governance constraints should be embedded in system architecture rather than documented in policies. The system enforces compliance, not just describes it.",
+    a: "Governance-by-design is the principle that governance constraints should be embedded in system architecture rather than documented in policies. The system enforces defined controls, not just describes it.",
   },
   {
     q: "What is the Tuesday Morning Test?",
-    a: "A practical diagnostic: On any random Tuesday morning, can you explain who made a specific decision, what information they had, and why they decided as they did? If you can't answer this for any decision in your system, you don't have governance—you have hope.",
+    a: "A practical diagnostic: On any random Tuesday morning, can you explain who made a specific decision, what information they had, and why they decided as they did? If you can't answer this for any decision in your system, you do not have governance. You have hope.",
   },
   {
     q: "Who is Ikram Rana?",
-    a: "I write about decision architecture in AI adoption—how organizations structure authority, preserve judgment, and embed compliance when automation enters operational workflows. 15+ years across AI implementation, software development, and cybersecurity.",
+    a: "Ikram Rana is an AI adoption and workflow implementation specialist and the founder of Barrana. He brings more than a decade of founder experience shaped by work across Pakistan, Singapore, Australia, and Canada.",
   },
 ];
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
-  useHead("Contact Ikram Rana", "Get in touch for speaking inquiries, AI automation consulting, or questions about decision architecture in AI adoption.");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("Message sent. Thank you for reaching out.");
-    setForm({ name: "", email: "", subject: "", message: "" });
-  };
+  useHead("Contact Ikram Rana", "Get in touch about AI adoption, workflow implementation, speaking, or collaboration.");
 
   return (
     <div className="py-16 md:py-24">
@@ -54,67 +44,44 @@ export default function Contact() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-electric block mb-4">Connect</span>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.15] tracking-tight mb-6">Contact</h1>
-          <p className="text-lg text-slate-text leading-relaxed">For speaking inquiries, collaboration, or questions about decision architecture in AI adoption.</p>
+          <p className="text-lg text-slate-text leading-relaxed">For AI adoption and workflow implementation, speaking, collaboration, or a practical question about where AI belongs in your business.</p>
         </motion.div>
 
         <div className="rule-divider my-14" />
 
-        <motion.div {...fadeUp}>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
-                <label className="font-mono text-xs tracking-wider uppercase text-slate-dim block mb-2">Name</label>
-                <input
-                  type="text"
-                  required
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="w-full bg-card border border-border text-foreground px-4 py-3 rounded-lg font-sans text-sm focus:border-electric focus:outline-none transition-colors placeholder:text-slate-dim"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label className="font-mono text-xs tracking-wider uppercase text-slate-dim block mb-2">Email</label>
-                <input
-                  type="email"
-                  required
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="w-full bg-card border border-border text-foreground px-4 py-3 rounded-lg font-sans text-sm focus:border-electric focus:outline-none transition-colors placeholder:text-slate-dim"
-                  placeholder="your@email.com"
-                />
-              </div>
-            </div>
-            <div>
-              <label className="font-mono text-xs tracking-wider uppercase text-slate-dim block mb-2">Subject</label>
-              <input
-                type="text"
-                required
-                value={form.subject}
-                onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                className="w-full bg-card border border-border text-foreground px-4 py-3 rounded-lg font-sans text-sm focus:border-electric focus:outline-none transition-colors placeholder:text-slate-dim"
-                placeholder="Speaking inquiry, collaboration, or general question"
-              />
-            </div>
-            <div>
-              <label className="font-mono text-xs tracking-wider uppercase text-slate-dim block mb-2">Message</label>
-              <textarea
-                required
-                rows={6}
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="w-full bg-card border border-border text-foreground px-4 py-3 rounded-lg font-sans text-sm focus:border-electric focus:outline-none transition-colors resize-none placeholder:text-slate-dim"
-                placeholder="Your message..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="inline-flex items-center gap-2 px-8 py-3 bg-electric text-white font-sans font-semibold text-sm tracking-wide rounded-lg hover:opacity-90 transition-opacity"
-            >
-              <Send className="w-4 h-4" />
-              Send Message
-            </button>
-          </form>
+        <motion.div {...fadeUp} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <a
+            href="https://calendly.com/ikramrana15"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block p-7 rounded-2xl border border-electric/25 bg-electric/5 hover:border-electric/50 hover:translate-y-[-2px] transition-all no-underline group"
+          >
+            <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric block mb-2">
+              AI adoption and workflows
+            </span>
+            <h2 className="font-serif text-xl font-semibold text-foreground mb-3">
+              Find the Workflow AI Should Fix First
+            </h2>
+            <p className="text-sm text-slate-text leading-relaxed">
+              Use this option when you want to examine a workflow, understand whether AI belongs there, or discuss the discovery stage.
+            </p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ikramrana/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block p-7 rounded-2xl border border-border bg-card hover:border-electric/30 hover:translate-y-[-2px] transition-all no-underline group"
+          >
+            <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric block mb-2">
+              Speaking and collaboration
+            </span>
+            <h2 className="font-serif text-xl font-semibold text-foreground mb-3">
+              Message Ikram on LinkedIn
+            </h2>
+            <p className="text-sm text-slate-text leading-relaxed">
+              Use LinkedIn for speaking invitations, publication questions, collaboration, or general enquiries.
+            </p>
+          </a>
         </motion.div>
 
         {/* Before you reach out */}
@@ -126,7 +93,7 @@ export default function Contact() {
             If you want to understand how I work, start with the <Link href="/about" className="text-electric hover:underline">about page</Link> or
             browse the <Link href="/solutions" className="text-electric hover:underline">solutions I offer</Link> for
             businesses implementing AI. For a structured overview of the approach, see
-            the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline">AI Adoption Framework for Small Businesses</Link>.
+            the <Link href="/ai-adoption-framework-for-small-businesses" className="text-electric hover:underline">AI Adoption Framework for Businesses</Link>.
           </p>
         </motion.div>
 

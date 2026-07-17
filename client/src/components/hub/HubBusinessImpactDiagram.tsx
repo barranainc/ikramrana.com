@@ -10,7 +10,7 @@ interface ImpactPoint {
   with: string;
 }
 
-// Static impact points per topic — derived from the document content
+// Static impact points per topic: derived from the document content
 const IMPACT_MAP: Record<string, ImpactPoint[]> = {
   'what-is-ai-automation-for-small-businesses': [
     { without: 'Manual data entry consumes 20+ hrs/week', with: 'Automated extraction: 3 hrs/week on exceptions' },
@@ -61,7 +61,7 @@ export default function HubBusinessImpactDiagram({ slug }: { slug: string }) {
           className="font-mono text-[10px] tracking-[0.18em] uppercase px-2.5 py-1 border"
           style={{ color: '#22d3ee', borderColor: 'rgba(34,211,238,0.3)', background: 'rgba(34,211,238,0.06)' }}
         >
-          FIG. — OPERATIONAL IMPACT
+          FIG.: OPERATIONAL IMPACT
         </span>
         <div className="h-px flex-1" style={{ background: 'rgba(34,211,238,0.2)' }} />
       </div>

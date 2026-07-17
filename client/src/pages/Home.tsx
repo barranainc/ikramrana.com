@@ -1,13 +1,13 @@
 /*
- * DESIGN: The Architect's Blueprint — LIGHT THEME
- * HOME PAGE — V2.8
- * Narrative order: Hero → Problem → Framework → Improvements → Decision Flow
- *                  → How I Work → Case Studies → Essay → Testimonials → Final CTA
+ * DESIGN: The Architect's Blueprint , LIGHT THEME
+ * HOME PAGE V2.9
+ * Narrative order: Hero, Problem, Framework, Improvements, Decision Flow
+ *                  How I Work, Use Cases, Essay, Testimonials, Final CTA
  * GEO/AEO: Person + Org schema, entity relationships, internal linking
- * No self-wrapping Layout — wrapped by App.tsx
+ * No self-wrapping Layout , wrapped by App.tsx
  */
 
-import { useEffect } from "react";
+import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, Zap, TrendingUp, Shield, CheckCircle2, Quote } from "lucide-react";
@@ -27,7 +27,7 @@ const fadeUp = {
 const sprintDeliverables = [
   "Workflow audit",
   "Automation opportunity mapping",
-  "One production-grade AI workflow",
+  "One implementation-ready AI workflow",
   "Escalation + logging embedded",
   "Documentation delivered",
 ];
@@ -35,22 +35,22 @@ const sprintDeliverables = [
 const caseStudyPreviews = [
   {
     industry: "Veterinary Clinic",
-    result: "Reduced no-shows by 62% and recovered front desk capacity",
+    result: "How appointment follow-up could reduce avoidable no-shows and front desk workload",
     slug: "ai-automation-case-study-veterinary-clinic",
   },
   {
     industry: "Marketing Agency",
-    result: "Scaled from 12 to 20 clients without hiring additional staff",
+    result: "How reporting and approvals could support more client work without immediate hiring",
     slug: "ai-automation-case-study-marketing-agency",
   },
   {
     industry: "Logistics Company",
-    result: "Cut dispatch coordination time by 55%",
+    result: "How dispatch coordination and delivery updates could reduce manual follow-up",
     slug: "ai-automation-case-study-logistics-company",
   },
   {
     industry: "Financial Advisory",
-    result: "Recovered 35% of advisor time for client relationships",
+    result: "How AI could prepare routine documentation while advisors retain judgment",
     slug: "ai-automation-case-study-financial-advisory",
   },
 ];
@@ -58,7 +58,7 @@ const caseStudyPreviews = [
 const testimonials = [
   {
     quote:
-      "Ikram didn't just automate a few tasks — he rebuilt how our team makes decisions. We went from constant firefighting to a system that actually runs itself.",
+      "Ikram didn't just automate a few tasks. He rebuilt how our team makes decisions. We went from constant firefighting to a system that actually runs itself.",
     name: "Operations Director",
     company: "Professional Services Firm",
   },
@@ -70,7 +70,7 @@ const testimonials = [
   },
   {
     quote:
-      "What I appreciated most was that Ikram protected our judgment. AI handles the routine — our team still owns the decisions that matter.",
+      "What I appreciated most was that Ikram protected our judgment. AI handles the routine, while our team still owns the decisions that matter.",
     name: "Managing Partner",
     company: "Accounting Firm",
   },
@@ -81,15 +81,15 @@ const personSchema = {
   "@type": "Person",
   name: "Ikram Rana",
   url: "https://ikramrana.com",
-  jobTitle: "AI Automation Strategist",
+  jobTitle: "AI Adoption and Workflow Implementation Specialist",
   description:
-    "Ikram Rana helps businesses implement AI automation, workflow systems, and AI adoption frameworks. Founder of Barrana.ai.",
+    "Ikram Rana helps businesses move from scattered AI experiments to working systems their teams actually use. Founder of Barrana.ai.",
   sameAs: ["https://barrana.ai", "https://www.linkedin.com/in/ikramrana"],
   worksFor: {
     "@type": "Organization",
     name: "Barrana.ai",
     url: "https://barrana.ai",
-    description: "AI automation consulting firm for small and medium-sized businesses.",
+    description: "Canadian AI automation company connecting the tools businesses already use so routine work gets done reliably.",
   },
   knowsAbout: [
     "AI adoption",
@@ -97,7 +97,7 @@ const personSchema = {
     "workflow systems",
     "decision systems",
     "AI governance",
-    "SMB operations",
+    "business operations",
   ],
   areaServed: ["Canada", "United States", "Greater Toronto Area"],
 };
@@ -109,10 +109,10 @@ const orgSchema = {
   url: "https://barrana.ai",
   founder: { "@type": "Person", name: "Ikram Rana" },
   description:
-    "AI automation consulting firm helping businesses implement structured AI adoption frameworks.",
+    "Canadian AI automation company connecting existing business tools so routine work gets done reliably.",
   areaServed: ["Canada", "United States"],
   serviceType: [
-    "AI Automation Consulting",
+    "AI Workflow Implementation",
     "AI Adoption Strategy",
     "Workflow Systems Design",
   ],
@@ -121,9 +121,9 @@ const orgSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "AI Automation Consulting",
+  name: "AI Adoption and Workflow Implementation",
   description:
-    "Structured AI automation implementation for small and medium-sized businesses. Process documentation, workflow automation, and governance design.",
+    "Practical AI adoption and workflow implementation for businesses, including process documentation, automation, human oversight, and governance design.",
   provider: {
     "@type": "Organization",
     name: "Barrana.ai",
@@ -133,24 +133,19 @@ const serviceSchema = {
     { "@type": "Country", name: "Canada" },
     { "@type": "Country", name: "United States" },
   ],
-  serviceType: "AI Automation Consulting",
+  serviceType: "AI Adoption and Workflow Implementation",
   offers: {
     "@type": "Offer",
     url: "https://ikramrana.com/solutions",
-    description: "AI automation strategy, implementation, and governance for SMBs.",
+    description: "AI adoption, workflow implementation, and governance for businesses.",
   },
 };
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "Ikram Rana — AI Automation Strategist for Businesses";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Helping businesses implement AI automation, workflow systems, and AI adoption frameworks. Practical guidance and implementation support from Ikram Rana of Barrana.ai."
-      );
-  }, []);
+  useHead(
+    "Ikram Rana | AI Adoption and Workflow Implementation",
+    "Helping businesses move from scattered AI experiments to working systems their teams actually use. Critical, practical guidance from Ikram Rana."
+  );
 
   return (
     <div>
@@ -183,28 +178,28 @@ export default function Home() {
               transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
               <span className="font-mono text-xs tracking-[0.2em] uppercase text-emerald-400 mb-6 block">
-                AI Systems for Operators
+                AI Adoption and Workflow Implementation
               </span>
               <h1 className="font-serif text-4xl sm:text-5xl md:text-[56px] font-bold text-white leading-[1.1] tracking-tight mb-6">
-                Fix Your AI Before It Breaks
+                Turn Scattered AI Experiments Into
                 <br />
-                <span className="text-blue-300">Your Operations.</span>
+                <span className="text-blue-300">Systems Your Team Actually Uses.</span>
               </h1>
               <p className="text-lg md:text-xl text-white/75 leading-relaxed max-w-xl mb-4">
-                I design AI systems that increase speed, protect judgment, and eliminate workflow chaos.
+                I help businesses decide where AI can genuinely improve work, where it should not be used, and how to implement it without adding confusion or risk.
               </p>
               <p className="text-base text-white/55 leading-relaxed max-w-lg mb-3">
-                Most teams add AI on top of broken processes. I rebuild the process first — then layer automation properly. If AI touches decisions in your company, structure matters.
+                Most teams add AI on top of broken processes. I clarify the work first, then implement automation with clear ownership, human oversight, and practical limits.
               </p>
               <p className="text-sm text-white/40 leading-relaxed max-w-lg mb-8 italic">
-                For operators running structured teams where AI is already in production and workflow clarity matters.
+                For business owners, founders, and decision-makers dealing with disconnected workflows, repeated manual work, or AI tools that are not delivering consistent results.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-electric text-white font-semibold text-sm no-underline hover:translate-y-[-2px] hover:shadow-[0_8px_24px_oklch(0.45_0.2_250/0.35)] transition-all duration-200"
                 >
-                  Explore Solutions <ArrowRight size={15} />
+                  Find the Workflow AI Should Fix First <ArrowRight size={15} />
                 </Link>
                 <Link
                   href="/ai-adoption-framework-for-small-businesses"
@@ -232,8 +227,8 @@ export default function Home() {
                 <div className="absolute -bottom-3 -right-3 w-8 h-8 border-b-2 border-r-2 border-electric/60" />
                 <div className="absolute inset-0 blur-3xl bg-electric/10 scale-110" />
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032635202/6MeXVwmXXP9dCLsRyeqL5e/ikram_hero_fa300380.webp"
-                  alt="Ikram Rana — AI Systems Consultant"
+                  src="/images/ikram-rana-hero.webp"
+                  alt="Ikram Rana, AI adoption and workflow implementation specialist"
                   className="relative w-full max-w-[420px] h-auto object-cover"
                   style={{
                     maskImage: "linear-gradient(to bottom, black 60%, transparent 100%)",
@@ -250,7 +245,7 @@ export default function Home() {
                       background: "rgba(7,15,30,0.7)",
                     }}
                   >
-                    Ikram Rana · AI Systems Consultant
+                    Ikram Rana · AI Adoption and Workflow Implementation
                   </span>
                 </div>
               </div>
@@ -270,12 +265,12 @@ export default function Home() {
               Why Most AI Implementations Break Operations
             </h2>
             <p className="text-slate-text leading-relaxed max-w-2xl">
-              Businesses add AI tools one by one — CRM integrations, chatbots, automation scripts — without a coherent system. The result is fragmentation, not efficiency. Ikram Rana of Barrana.ai designs AI adoption frameworks that replace fragmentation with operational clarity.
+              Businesses add AI tools one by one , CRM integrations, chatbots, automation scripts , without a coherent system. The result is fragmentation, not efficiency. Ikram Rana of Barrana.ai designs AI adoption frameworks that replace fragmentation with operational clarity.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
-            {/* Fragmented side — diagram */}
+            {/* Fragmented side , diagram */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -292,7 +287,7 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Coherent side — diagram */}
+            {/* Coherent side , diagram */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -304,7 +299,7 @@ export default function Home() {
               <div className="rounded-xl border border-electric/25 bg-electric/5 px-5 py-4">
                 <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric mb-2">Result</p>
                 <p className="text-sm text-foreground leading-relaxed">
-                  Clear ownership, clean workflows, traceable decisions, and operational clarity — built into the system from day one.
+                  Clear ownership, clean workflows, traceable decisions, and operational clarity , built into the system from day one.
                 </p>
               </div>
             </motion.div>
@@ -341,7 +336,7 @@ export default function Home() {
                 <div className="absolute inset-0 blur-3xl bg-electric/8 scale-110" />
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032635202/6MeXVwmXXP9dCLsRyeqL5e/ikram_hero_fa300380.webp"
-                  alt="Ikram Rana — AI Systems Consultant"
+                  alt="Ikram Rana , AI Adoption and Workflow Implementation Specialist"
                   className="relative w-full max-w-[380px] h-auto object-cover rounded-xl"
                   style={{
                     filter: "contrast(1.05) brightness(0.95)",
@@ -356,7 +351,7 @@ export default function Home() {
                     Ikram Rana
                   </span>
                   <span className="font-mono text-[9px] tracking-[0.12em] uppercase text-white/50">
-                    Licensed Lawyer · Tech Founder · AI Strategist
+                    Tech Founder · AI Adoption Specialist · International Experience
                   </span>
                 </div>
               </div>
@@ -373,24 +368,24 @@ export default function Home() {
                 Who I Am
               </span>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground leading-tight mb-6">
-                A Business Architect,
+                A Practical AI Builder,
                 <br />
-                <span className="text-blue-300">Not Just a Consultant.</span>
+                <span className="text-blue-300">Not an AI Cheerleader.</span>
               </h2>
               <p className="text-slate-text leading-relaxed mb-6">
-                My name is Ikram Rana. I am a licensed lawyer and a tech founder. I don't just advise on technology; I design and direct the implementation of strategic systems that solve critical operational challenges.
+                My name is Ikram Rana. I am a tech founder and AI adoption and workflow implementation specialist. I help businesses turn unclear processes and scattered AI tools into working systems with clear ownership and human judgment built in.
               </p>
               <p className="text-slate-text leading-relaxed mb-8">
-                My work eliminates bottlenecks, unlocks data intelligence, and directly connects technology investment to measurable business outcomes. I operate in both Canada and Pakistan, bringing a global perspective to local business challenges.
+                I am in favour of useful AI, not AI for its own sake. My work asks what should improve, what should remain human, what could fail, and whether the system will actually be used. My perspective is shaped by business and technology work across Pakistan, Singapore, Australia, and Canada.
               </p>
 
               {/* Credential pills */}
               <div className="flex flex-wrap gap-3 mb-8">
                 {[
-                  "Licensed Lawyer",
                   "Tech Founder",
-                  "AI Automation Strategist",
-                  "Canada · Pakistan",
+                  "AI Adoption Specialist",
+                  "Workflow Implementation",
+                  "Pakistan · Singapore · Australia · Canada",
                 ].map((tag) => (
                   <span
                     key={tag}
@@ -439,21 +434,21 @@ export default function Home() {
                 {[
                   {
                     layer: "Execution",
-                    desc: "What AI automates — repetitive tasks, data processing, routing, scheduling.",
+                    desc: "What AI automates , repetitive tasks, data processing, routing, scheduling.",
                     color: "bg-electric",
                     accent: "text-electric",
                     border: "border-electric/20",
                   },
                   {
                     layer: "Judgment",
-                    desc: "What humans must decide — client advice, exceptions, escalations, strategy.",
+                    desc: "What humans must decide , client advice, exceptions, escalations, strategy.",
                     color: "bg-burgundy",
                     accent: "text-burgundy",
                     border: "border-burgundy/20",
                   },
                   {
                     layer: "Compliance",
-                    desc: "What the system enforces — audit trails, override logging, regulatory validation.",
+                    desc: "What the system enforces , audit trails, override logging, regulatory validation.",
                     color: "bg-slate-500",
                     accent: "text-slate-400",
                     border: "border-slate-500/20",
@@ -533,7 +528,7 @@ export default function Home() {
                 number: "02",
                 label: "Grow Revenue",
                 title: "AI-Assisted Sales and Marketing Workflows",
-                tagline: "AI should increase pipeline velocity — not create noise.",
+                tagline: "AI should increase pipeline velocity , not create noise.",
                 items: [
                   "Qualify leads automatically",
                   "Draft intelligent follow-ups",
@@ -555,7 +550,7 @@ export default function Home() {
                 label: "Build It Right",
                 title: "Governance and Decision Architecture",
                 tagline:
-                  "If AI touches client advice, compliance workflows, or regulated processes — you cannot improvise.",
+                  "If AI touches client advice, compliance workflows, or regulated processes , you cannot improvise.",
                 items: [
                   "Decision ownership is explicit",
                   "Escalation is enforced",
@@ -588,7 +583,7 @@ export default function Home() {
                     </div>
                     <div>
                       <span className={`font-mono text-[10px] tracking-[0.15em] uppercase ${seg.accent} block mb-0.5`}>
-                        {seg.number} — {seg.label}
+                        {seg.number} , {seg.label}
                       </span>
                       <h3 className="font-serif text-lg font-semibold text-foreground leading-tight">
                         {seg.title}
@@ -640,7 +635,7 @@ export default function Home() {
                 How AI Decisions Should Flow
               </h2>
               <p className="text-slate-text leading-relaxed">
-                Every AI automation system Ikram Rana builds for businesses follows a structured decision flow. This ensures AI recommendations are evaluated, validated, and logged — protecting human judgment and maintaining operational integrity.
+                Every AI automation system Ikram Rana builds for businesses follows a structured decision flow. This ensures AI recommendations are evaluated, validated, and logged , protecting human judgment and maintaining operational integrity.
               </p>
             </motion.div>
 
@@ -653,7 +648,7 @@ export default function Home() {
                   {
                     step: "01",
                     title: "AI generates recommendation",
-                    desc: "The AI layer processes inputs and produces a structured recommendation — a draft, a route, a classification, or an action proposal.",
+                    desc: "The AI layer processes inputs and produces a structured recommendation , a draft, a route, a classification, or an action proposal.",
                     color: "text-electric",
                     border: "border-electric/20",
                     dot: "bg-electric",
@@ -661,14 +656,14 @@ export default function Home() {
                   {
                     step: "02",
                     title: "Human evaluates decision",
-                    desc: "A designated human reviews the recommendation. Judgment is preserved — the human approves, modifies, or escalates.",
+                    desc: "A designated human reviews the recommendation. Judgment is preserved , the human approves, modifies, or escalates.",
                     color: "text-emerald-500",
                     border: "border-emerald-500/20",
                     dot: "bg-emerald-500",
                   },
                   {
                     step: "03",
-                    title: "System validates compliance",
+                    title: "System records controls and exceptions",
                     desc: "The system checks the decision against defined rules, regulatory requirements, and governance thresholds before execution.",
                     color: "text-burgundy",
                     border: "border-burgundy/20",
@@ -677,7 +672,7 @@ export default function Home() {
                   {
                     step: "04",
                     title: "Decision logged for audit",
-                    desc: "Every decision — including overrides and escalations — is automatically logged with timestamp, actor, and rationale for full auditability.",
+                    desc: "Every decision , including overrides and escalations , is automatically logged with timestamp, actor, and rationale for full auditability.",
                     color: "text-slate-400",
                     border: "border-slate-500/20",
                     dot: "bg-slate-500",
@@ -708,7 +703,7 @@ export default function Home() {
 
             <motion.div {...fadeUp} className="mt-10 text-center">
               <Link
-                href="/ai-knowledge-hub/what-is-ai-governance-for-businesses"
+                href="/ai-knowledge-hub/ai-governance-for-businesses"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-electric no-underline hover:gap-3 transition-all"
               >
                 Learn about AI governance <ArrowRight size={14} />
@@ -718,7 +713,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 6: HOW I WORK — AI IMPLEMENTATION SPRINT ──────── */}
+      {/* ── SECTION 6: HOW I WORK , AI IMPLEMENTATION SPRINT ──────── */}
       <section className="py-20 md:py-28 bg-background border-b border-border">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -730,10 +725,10 @@ export default function Home() {
                 AI Implementation Sprint
               </h2>
               <p className="text-slate-text leading-relaxed mb-6">
-                A focused two-week engagement designed to move from workflow chaos to a working AI system. Not a strategy deck — a production-grade implementation with governance built in from day one.
+                A focused two-week engagement designed to move from workflow chaos to a working AI system. Not a strategy deck , a production-grade implementation with governance built in from day one.
               </p>
               <p className="text-slate-text leading-relaxed mb-8">
-                Ikram Rana of Barrana.ai audits your existing workflows, identifies the highest-impact automation opportunities, and delivers one complete AI workflow system — with escalation logic, logging, and documentation — ready to run.
+                Ikram Rana of Barrana.ai audits your existing workflows, identifies the highest-impact automation opportunities, and delivers one complete AI workflow system , with escalation logic, logging, and documentation , ready to run.
               </p>
               <Link
                 href="/contact"
@@ -765,7 +760,7 @@ export default function Home() {
               </ul>
               <div className="rounded-xl border border-border bg-background px-5 py-4">
                 <p className="text-sm font-semibold text-foreground">
-                  You leave with a working system — built correctly.
+                  You leave with a working system , built correctly.
                 </p>
               </div>
             </motion.div>
@@ -773,23 +768,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 7: CASE STUDIES ────────────────────────────────── */}
+      {/* SECTION 7: ILLUSTRATIVE USE CASES */}
       <section className="py-20 md:py-24 bg-navy border-b border-border">
         <div className="container">
           <motion.div {...fadeUp} className="mb-14 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
               <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-electric block mb-3">
-                Case Studies
+                Illustrative Use Cases
               </span>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground leading-tight">
-                AI Automation in Practice
+                See How AI Could Work in Practice
               </h2>
             </div>
             <Link
               href="/case-studies"
               className="inline-flex items-center gap-2 text-sm font-semibold text-electric no-underline hover:gap-3 transition-all shrink-0"
             >
-              View all case studies <ArrowRight size={14} />
+              View all illustrative scenarios <ArrowRight size={14} />
             </Link>
           </motion.div>
 
@@ -811,7 +806,7 @@ export default function Home() {
                   </span>
                   <p className="text-sm text-foreground leading-relaxed flex-1 mb-4">{cs.result}</p>
                   <div className="flex items-center gap-1.5 font-mono text-[10px] text-electric/60 group-hover:text-electric transition-colors">
-                    <span>Read case study</span>
+                    <span>Explore scenario</span>
                     <ArrowRight size={10} className="group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
@@ -858,7 +853,7 @@ export default function Home() {
                 </span>
                 <ul className="space-y-0">
                   {[
-                    { title: "AI Adoption Framework for Small Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+                    { title: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
                     { title: "AI Knowledge Hub", href: "/ai-knowledge-hub" },
                     { title: "AI Dictionary", href: "/ai-dictionary" },
                     { title: "AI Resources for Businesses", href: "/ai-resources-for-businesses" },
@@ -928,17 +923,17 @@ export default function Home() {
               Start Here
             </span>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground leading-tight mb-5">
-              Build Your AI Advantage
+              Find the Work AI Should Improve First
             </h2>
             <p className="text-slate-text leading-relaxed mb-10">
-              If you want AI systems that improve operations instead of creating chaos, start with a strategy conversation. Ikram Rana of Barrana.ai works with business operators to design AI adoption frameworks, workflow systems, and automation architectures that are built to last.
+              Do not start with another AI tool. Start with the work that is repeatedly delayed, copied, chased, or checked. We will identify whether AI belongs there, what still requires human judgment, and what a practical implementation would involve.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-electric text-white font-semibold text-sm no-underline hover:translate-y-[-2px] hover:shadow-[0_8px_24px_oklch(0.45_0.2_250/0.35)] transition-all duration-200"
               >
-                Start a Consultation <ArrowRight size={15} />
+                Find the Workflow AI Should Fix First <ArrowRight size={15} />
               </Link>
               <a
                 href="https://www.linkedin.com/in/ikramrana/"

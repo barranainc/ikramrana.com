@@ -11,7 +11,7 @@
   <!-- Title bar -->
   <rect width="1000" height="60" rx="12" fill="url(#g1)"/>
   <rect y="48" width="1000" height="12" fill="url(#g1)"/>
-  <text x="500" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="700">The AI Adoption Framework — Ikram Rana | Barrana.ai</text>
+  <text x="500" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="700">The AI Adoption Framework: Ikram Rana | Barrana.ai</text>
   
   <!-- Phase boxes -->
   <!-- Phase 1 -->

@@ -1,9 +1,9 @@
 /**
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * Individual AI Knowledge Hub reference page template
  *
  * Design philosophy: Authoritative reference page, NOT a blog post.
- * - No publication dates — evergreen content
+ * - No publication dates: evergreen content
  * - Definition box is visually prominent for AEO extraction
  * - JSON-LD Article + FAQPage schema in <head>
  * - Blueprint aesthetic: mono labels, electric accents, navy sections
@@ -23,11 +23,12 @@ import HubFrameworkDiagram from '@/components/hub/HubFrameworkDiagram';
 import HubMistakesDiagram from '@/components/hub/HubMistakesDiagram';
 import HubExampleDiagram from '@/components/hub/HubExampleDiagram';
 import HubBusinessImpactDiagram from '@/components/hub/HubBusinessImpactDiagram';
+import AuthorAuthorityCard from '@/components/AuthorAuthorityCard';
 
 const BASE_URL = 'https://ikramrana.com';
-const TODAY = '2026-03-06';
+const LAST_REVIEWED = '2026-07-16';
 
-// Section metadata — icon, accent colour, label
+// Section metadata: icon, accent colour, label
 const SECTION_META: Record<string, { icon: string; accent: string; label: string; border: string }> = {
   'Definition': {
     icon: '◎',
@@ -76,15 +77,15 @@ const SECTION_META: Record<string, { icon: string; accent: string; label: string
 // Map internal link labels to slugs
 function labelToSlug(label: string): string | null {
   const map: Record<string, string> = {
-    'What Is AI Automation for Small Businesses?': 'what-is-ai-automation-for-small-businesses',
+    'What Is AI Automation for Businesses?': 'what-is-ai-automation-for-small-businesses',
     'What Is AI Adoption for Businesses?': 'what-is-ai-adoption-for-businesses',
     'What Is AI Adoption for Businesses and How Does It Work?': 'what-is-ai-adoption-for-businesses',
     'What Is AI Workflow Automation?': 'what-is-ai-workflow-automation',
     'What Is AI Workflow Automation and How Does It Improve Business Operations?': 'what-is-ai-workflow-automation',
     'What Are AI Agents and How Do They Work?': 'what-are-ai-agents-for-businesses',
     'What Are AI Agents and How Do They Work for Businesses?': 'what-are-ai-agents-for-businesses',
-    'AI for Small Businesses: A Complete Guide': 'ai-for-small-businesses-guide',
-    'AI for Small Businesses: A Practical Guide to Getting Started': 'ai-for-small-businesses-guide',
+    'AI for Businesses: A Complete Guide': 'ai-for-small-businesses-guide',
+    'AI for Businesses: A Practical Guide to Getting Started': 'ai-for-small-businesses-guide',
     'What Are AI Decision Systems and How Do They Help Businesses?': 'ai-decision-systems-for-business',
     'AI Decision Systems for Business Operations': 'ai-decision-systems-for-business',
     'AI Governance for Businesses: What You Need to Know': 'ai-governance-for-businesses',
@@ -125,7 +126,7 @@ function FaqItem({ question, answer }: { question: string; answer: string; index
 
 // Renders a section's text content, splitting on \n into paragraphs
 function SectionBody({ content, heading }: { content: string; heading: string }) {
-  const paragraphs = content.split('\\n').filter(Boolean);
+  const paragraphs = content.split(/\\n|\n/).filter(Boolean);
 
   if (heading === 'Expert Perspective: Ikram Rana') {
     return (
@@ -194,19 +195,38 @@ export default function KnowledgeHubPage() {
     description: page.metaDescription,
     url: pageUrl,
     author: {
+      '@id': `${BASE_URL}/about#ikram-rana`,
       '@type': 'Person',
       name: 'Ikram Rana',
-      url: BASE_URL,
-      jobTitle: 'AI Automation Strategist',
-      worksFor: { '@type': 'Organization', name: 'Barrana.ai', url: 'https://barrana.ai' },
+      url: `${BASE_URL}/about`,
+      jobTitle: 'AI Adoption and Workflow Implementation Specialist',
+      homeLocation: {
+        '@type': 'Place',
+        name: 'Vaughan, Ontario, Canada',
+      },
+      sameAs: [
+        'https://www.linkedin.com/in/ikramrana/',
+        'https://ikramrana.substack.com',
+      ],
+      worksFor: {
+        '@id': 'https://barrana.ai/#organization',
+        '@type': 'Organization',
+        name: 'Barrana',
+        url: 'https://barrana.ai',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Vaughan',
+          addressRegion: 'Ontario',
+          addressCountry: 'CA',
+        },
+      },
     },
     publisher: {
       '@type': 'Organization',
       name: 'IkramRana.com',
       url: BASE_URL,
     },
-    datePublished: TODAY,
-    dateModified: TODAY,
+    dateModified: LAST_REVIEWED,
   };
 
   const faqSchema = {
@@ -303,7 +323,7 @@ export default function KnowledgeHubPage() {
               <Link href="/about" className="text-electric hover:text-electric/80 transition-colors no-underline">
                 Ikram Rana
               </Link>
-              {' '}· AI Automation Strategist, Barrana.ai
+              {' '}· AI Adoption and Workflow Implementation Specialist, Barrana.ai
             </p>
           </motion.div>
         </div>
@@ -315,16 +335,24 @@ export default function KnowledgeHubPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-12 items-start">
           <div>
 
+              <div className="mb-10 border border-amber-500/30 bg-amber-500/5 p-5">
+                <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-amber-600 mb-2">
+                  Evidence and interpretation
+                </p>
+                <p className="text-sm text-slate-text leading-relaxed">
+                  Definitions describe common technical usage. Recommendations, rankings, and generalizations are Ikram Rana's practical analysis unless a public source is linked. Quantitative ranges are planning illustrations, not client results or guarantees. Apply the guidance to the evidence, risks, and requirements of the specific workflow.
+                </p>
+              </div>
 
 
-            {/* ── Definition Box (AEO-critical) ─────────────────────── */}
+            {/* Definition Box */}
             {definitionSection && (
               <motion.section
                 id="definition"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.1 }}
-                className="mb-14"
+                className="mb-14 scroll-mt-24"
                 aria-labelledby="definition-heading"
               >
                 {/* Section label */}
@@ -349,7 +377,7 @@ export default function KnowledgeHubPage() {
                     Definition
                   </h2>
 
-                  {definitionSection.content.split('\\n').map((para, i) => (
+                  {definitionSection.content.split(/\\n|\n/).filter(Boolean).map((para, i) => (
                     <p
                       key={i}
                       className={`font-sans leading-relaxed mb-3 last:mb-0 ${
@@ -384,6 +412,7 @@ export default function KnowledgeHubPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
                     aria-labelledby={`${sectionId}-heading`}
+                    className="scroll-mt-24"
                   >
                     {/* Section heading row */}
                     <div className="flex items-center gap-3 mb-6">
@@ -423,14 +452,16 @@ export default function KnowledgeHubPage() {
               })}
             </div>
 
-            {/* ── FAQ Section ───────────────────────────────────────── */}
+            <AuthorAuthorityCard />
+
+            {/* FAQ Section */}
             {page.faqs.length > 0 && (
               <motion.section
                 id="faq"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.4 }}
-                className="mt-14 pt-12 border-t border-border"
+                className="mt-14 pt-12 border-t border-border scroll-mt-24"
                 itemScope
                 itemType="https://schema.org/FAQPage"
                 aria-labelledby="faq-heading"
@@ -513,7 +544,7 @@ export default function KnowledgeHubPage() {
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric">
-                    STRATEGY CALL
+                    WORKFLOW DISCOVERY
                   </span>
                   <div className="h-px flex-1 bg-border/40" />
                 </div>
@@ -521,15 +552,17 @@ export default function KnowledgeHubPage() {
                   Ready to implement AI in your business?
                 </h3>
                 <p className="font-sans text-[14px] text-slate-text leading-relaxed mb-6 max-w-lg">
-                  Book a strategy call with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan.
+                  Find the Workflow AI Should Fix First with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan.
                 </p>
-                <Link
+                <a
                   href="https://calendly.com/ikramrana15"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-electric text-white px-6 py-3 font-sans font-medium text-sm hover:bg-electric/90 transition-colors no-underline"
                 >
-                  Book a strategy call
+                  Find the Workflow AI Should Fix First
                   <ArrowRight size={14} />
-                </Link>
+                </a>
               </div>
             </motion.div>
 
@@ -622,18 +655,20 @@ export default function KnowledgeHubPage() {
               {/* CTA mini */}
               <div className="border border-electric/20 bg-electric/5 p-5">
                 <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric mb-3">
-                  STRATEGY CALL
+                  WORKFLOW DISCOVERY
                 </p>
                 <p className="font-sans text-[12px] text-slate-text leading-relaxed mb-4">
                   Ready to implement AI in your business?
                 </p>
-                <Link
+                <a
                   href="https://calendly.com/ikramrana15"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-electric text-white px-4 py-2 font-sans font-medium text-[12px] hover:bg-electric/90 transition-colors no-underline w-full justify-center"
                 >
-                  Book a call
+                  Find the Workflow AI Should Fix First
                   <ArrowRight size={12} />
-                </Link>
+                </a>
               </div>
 
             </div>

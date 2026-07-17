@@ -1,5 +1,5 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * ESSAY: The 80% Trap
  */
 import { Link } from "wouter";
@@ -25,7 +25,7 @@ export default function EssayEightyPercent() {
             The 80% Trap
           </h1>
           <p className="text-lg text-slate-text leading-relaxed mb-2">
-            AI handles 80% of cases well. The remaining 20% are the ones that matter most — edge cases, exceptions, high-stakes decisions. Organizations automate the 80% and assume the 20% will sort itself out. It doesn't.
+            AI handles 80% of cases well. The remaining 20% are the ones that matter most: edge cases, exceptions, high-stakes decisions. Organizations automate the 80% and assume the 20% will sort itself out. It doesn't.
           </p>
           <span className="font-mono text-xs text-slate-dim">7 min read</span>
         </motion.div>
@@ -38,7 +38,7 @@ export default function EssayEightyPercent() {
             When an AI system handles 80% of cases correctly and efficiently, it feels like a success. And in isolation, it is. Eighty percent of your volume is processed faster, cheaper, and more consistently than before. The metrics look good. The implementation is declared a win.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The trap is in what happens to the remaining 20%. These are the cases the AI flags as uncertain, routes to humans, or — more dangerously — handles incorrectly with high confidence. These are also, almost always, the cases that matter most: the high-value clients, the complex situations, the decisions with significant downstream consequences.
+            The trap is in what happens to the remaining 20%. These are the cases the AI flags as uncertain, routes to humans, or: more dangerously: handles incorrectly with high confidence. These are also, almost always, the cases that matter most: the high-value clients, the complex situations, the decisions with significant downstream consequences.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
             Organizations automate the 80% and assume the 20% will be handled by whoever is available. It won't. The 20% arrives without context, without the human judgment that used to catch it before it became a problem, and without a clear owner.
@@ -72,17 +72,17 @@ export default function EssayEightyPercent() {
 
         <motion.div {...fadeUp} className="border-l-4 border-l-electric pl-6 py-2 my-10">
           <p className="text-foreground font-serif text-lg italic leading-relaxed">
-            Automating the easy cases doesn't reduce complexity. It concentrates complexity. The 20% that remains is harder than the 20% you used to handle — because you've removed the context that used to surround it.
+            Automating the easy cases doesn't reduce complexity. It concentrates complexity. The 20% that remains is harder than the 20% you used to handle: because you've removed the context that used to surround it.
           </p>
         </motion.div>
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">The Context Stripping Problem</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            Before automation, the 20% arrived in context. A human who had been working through a queue of cases would encounter an edge case with the surrounding context still fresh — they knew what came before it, what patterns they'd been seeing, what the client relationship looked like. They could apply judgment informed by that context.
+            Before automation, the 20% arrived in context. A human who had been working through a queue of cases would encounter an edge case with the surrounding context still fresh: they knew what came before it, what patterns they'd been seeing, what the client relationship looked like. They could apply judgment informed by that context.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            After automation, the 20% arrives stripped of context. The AI handled everything else. The human receives only the exceptions — each one isolated, without the surrounding cases that would have provided orientation. The human is now making harder decisions with less context than before.
+            After automation, the 20% arrives stripped of context. The AI handled everything else. The human receives only the exceptions: each one isolated, without the surrounding cases that would have provided orientation. The human is now making harder decisions with less context than before.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
             This is the hidden cost of the 80% win. You've made the easy work faster. You've made the hard work harder.
@@ -92,14 +92,14 @@ export default function EssayEightyPercent() {
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Designing for the 20%</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The solution is not to avoid automation. It is to design the automation with the 20% in mind from the start — not as an afterthought once the 80% is running.
+            The solution is not to avoid automation. It is to design the automation with the 20% in mind from the start: not as an afterthought once the 80% is running.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-4">This requires answering several questions before implementation:</p>
           <ul className="space-y-3 mb-6 pl-0">
             {[
               "What types of cases will the AI route to humans, and why?",
               "What context will the human need to handle each type of exception effectively?",
-              "Who specifically owns each category of exception — not 'whoever is available'?",
+              "Who specifically owns each category of exception: not 'whoever is available'?",
               "What training does the exception handler need to make good decisions quickly?",
               "How do we ensure the exception handler has enough volume to maintain skill, but not so much volume that quality degrades?",
             ].map((item, i) => (
@@ -110,7 +110,7 @@ export default function EssayEightyPercent() {
             ))}
           </ul>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The 80% is the easy part of AI implementation. The 20% is where the real design work happens — and where most organizations stop designing.
+            The 80% is the easy part of AI implementation. The 20% is where the real design work happens: and where most organizations stop designing.
           </p>
         </motion.div>
 

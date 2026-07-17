@@ -1,5 +1,5 @@
 /*
- * BlogProblemDiagram — Blueprint-style visual for "The Problem In Practice" section
+ * BlogProblemDiagram: Blueprint-style visual for "The Problem In Practice" section
  *
  * Design: Architect's Blueprint, Light Theme
  * Shows the core tension: what businesses EXPECT vs what actually HAPPENS.
@@ -149,7 +149,7 @@ export default function BlogProblemDiagram({
 
       {/* Footer caption */}
       <p className="font-mono text-[10px] text-slate-dim tracking-wider mt-2 text-right uppercase">
-        The gap between assumption and outcome — Ikram Rana / Barrana.ai
+        The gap between assumption and outcome: Ikram Rana / Barrana.ai
       </p>
     </motion.div>
   );

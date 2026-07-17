@@ -41,7 +41,7 @@ export default function IndustryFrameworkDiagram({ content }: { content: string 
           className="font-mono text-[10px] tracking-[0.18em] uppercase px-2.5 py-1 border"
           style={{ color: '#60a5fa', borderColor: 'rgba(96,165,250,0.3)', background: 'rgba(96,165,250,0.06)' }}
         >
-          FIG. — ADOPTION FRAMEWORK
+          FIG.: ADOPTION FRAMEWORK
         </span>
         <div className="h-px flex-1" style={{ background: 'rgba(96,165,250,0.2)' }} />
       </div>

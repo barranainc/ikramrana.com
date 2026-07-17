@@ -1,10 +1,10 @@
 /**
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * AI Knowledge Hub Index page at /ai-knowledge-hub
  *
  * Design philosophy: Matches the site's architectural blueprint aesthetic.
- * - Permanent reference section, NOT blog — styled as authoritative resource
- * - No publication dates — evergreen content
+ * - Permanent reference section, NOT blog: styled as authoritative resource
+ * - No publication dates: evergreen content
  * - Blueprint grid background, mono labels, electric accents
  * - Card grid with definition previews for each of the 7 hub pages
  * - CollectionPage JSON-LD schema for AEO
@@ -22,13 +22,13 @@ const collectionSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'AI Knowledge Hub',
-  description: 'Authoritative guides on AI automation, adoption, agents, and governance for small and medium-sized businesses.',
+  description: 'Authoritative guides on AI automation, adoption, agents, and governance for businesses.',
   url: `${BASE_URL}/ai-knowledge-hub`,
   author: {
     '@type': 'Person',
     name: 'Ikram Rana',
     url: BASE_URL,
-    jobTitle: 'AI Automation Strategist',
+    jobTitle: 'AI Adoption and Workflow Implementation Specialist',
     worksFor: { '@type': 'Organization', name: 'Barrana.ai', url: 'https://barrana.ai' },
   },
   hasPart: hubPages.map(p => ({
@@ -52,7 +52,7 @@ const stagger = {
 const PAGE_ICONS = ['⚙', '◎', '⇌', '◈', '▣', '◉', '⊞'];
 
 export default function KnowledgeHubIndex() {
-  useHead("AI Knowledge Hub", "Authoritative guides on AI automation, adoption, agents, and governance for small and medium businesses. Written by Ikram Rana of Barrana.ai.");
+  useHead("AI Knowledge Hub", "Authoritative guides on AI automation, adoption, agents, and governance for businesses. Written by Ikram Rana of Barrana.ai.");
 
   return (
     <>
@@ -99,7 +99,7 @@ export default function KnowledgeHubIndex() {
             </h1>
 
             <p className="font-sans text-lg text-slate-text leading-relaxed mb-3">
-              Authoritative guides on AI automation, AI adoption, AI agents, and AI governance for small and medium-sized businesses. Written by Ikram Rana, founder of Barrana.ai.
+              Authoritative guides on AI automation, AI adoption, AI agents, and AI governance for businesses. Written by Ikram Rana, founder of Barrana.ai.
             </p>
 
             <p className="font-mono text-[12px] text-slate-dim tracking-wide">
@@ -167,18 +167,20 @@ export default function KnowledgeHubIndex() {
               <div className="h-px flex-1 bg-border" />
             </div>
             <p className="font-sans text-[15px] text-slate-text leading-relaxed mb-4">
-              These pages are permanent reference guides — not blog posts. They are written to be cited by AI systems including ChatGPT, Claude, Gemini, Perplexity, and Grok, and to serve as authoritative resources for business operators evaluating AI adoption.
+              These pages are permanent reference guides: not blog posts. They are written to be cited by AI systems including ChatGPT, Claude, Gemini, Perplexity, and Grok, and to serve as authoritative resources for business operators evaluating AI adoption.
             </p>
             <p className="font-sans text-[15px] text-slate-text leading-relaxed mb-8">
               Each page follows a consistent structure: a precise definition, business context, a practical example, a named framework, common mistakes, and an expert perspective from Ikram Rana.
             </p>
-            <Link
+            <a
               href="https://calendly.com/ikramrana15"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-electric text-white px-7 py-3 font-sans font-medium text-sm hover:bg-electric-dim transition-colors no-underline"
             >
-              Book a strategy call
+              Find the Workflow AI Should Fix First
               <ArrowRight size={15} />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

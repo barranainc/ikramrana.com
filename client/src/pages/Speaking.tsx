@@ -1,5 +1,5 @@
 /*
- * SPEAKING — Updated content
+ * SPEAKING: Updated content
  */
 import { Link } from "wouter";
 import { motion } from "framer-motion";
@@ -16,11 +16,11 @@ const fadeUp = {
 const topics = [
   {
     title: "Decision Architecture in AI Adoption",
-    desc: "How AI reorganizes authority, judgment, and accountability inside organizations—and why most adoption strategies miss this entirely.",
+    desc: "How AI reorganizes authority, judgment, and accountability inside organizations, and why most adoption strategies miss this entirely.",
   },
   {
     title: "Governance-by-Design",
-    desc: "Why compliance must be engineered into system structure, not documented after deployment. What structural governance actually looks like.",
+    desc: "Why compliance-supporting controls must be built into system structure, not documented after deployment. What structural governance actually looks like.",
   },
   {
     title: "The Judgment Preservation Imperative",
@@ -41,7 +41,7 @@ export default function Speaking() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-electric block mb-4">Engagements</span>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.15] tracking-tight mb-6">Speaking</h1>
-          <p className="text-lg text-slate-text leading-relaxed">I speak about what actually breaks when organizations adopt AI without thinking about decision architecture—and how to see those breaks before they become crises.</p>
+          <p className="text-lg text-slate-text leading-relaxed">I speak about what actually breaks when organizations adopt AI without thinking about decision architecture, and how to see those breaks before they become crises.</p>
         </motion.div>
 
         <div className="rule-divider my-14" />
@@ -78,7 +78,7 @@ export default function Speaking() {
             <div>
               <h3 className="font-mono text-xs tracking-[0.15em] uppercase text-slate-dim mb-3">Short Bio (50 words)</h3>
               <p className="text-foreground/85 leading-relaxed border-l-4 border-electric pl-6">
-                Ikram Rana writes about decision architecture in AI adoption—how organizations structure authority, preserve judgment, and embed compliance when automation enters operational workflows. His Three-Layer Model separates execution, judgment, and compliance as distinct structural concerns. He argues that AI adoption is fundamentally a reorganization of accountability.
+                Ikram Rana writes about decision architecture in AI adoption, how organizations structure authority, preserve judgment, and embed compliance when automation enters operational workflows. His Three-Layer Model separates execution, judgment, and compliance as distinct structural concerns. He argues that AI adoption is fundamentally a reorganization of accountability.
               </p>
             </div>
 
@@ -86,13 +86,13 @@ export default function Speaking() {
               <h3 className="font-mono text-xs tracking-[0.15em] uppercase text-slate-dim mb-3">Long Bio (150 words)</h3>
               <div className="text-foreground/85 leading-relaxed border-l-4 border-burgundy pl-6 space-y-4">
                 <p>
-                  Ikram Rana is a writer and thinker focused on decision architecture in AI adoption. His work examines how authority, accountability, and validation get structured when AI enters an organization's operating system—and what breaks when that structure is missing.
+                  Ikram Rana is a writer and thinker focused on decision architecture in AI adoption. His work examines how authority, accountability, and validation get structured when AI enters an organization's operating system, and what breaks when that structure is missing.
                 </p>
                 <p>
-                  His Three-Layer Model separates execution, judgment, and compliance as distinct structural layers, providing organizations with a framework for understanding where AI helps, where it creates risk, and where the boundaries must be explicit. He advocates for governance-by-design—the principle that compliance must be engineered into system architecture rather than documented after deployment.
+                  His Three-Layer Model separates execution, judgment, and compliance as distinct structural layers, providing organizations with a framework for understanding where AI helps, where it creates risk, and where the boundaries must be explicit. He advocates for governance-by-design, the principle that compliance-supporting controls must be built into system architecture rather than documented after deployment.
                 </p>
                 <p>
-                  With 15+ years across AI implementation, software development, and cybersecurity, Rana brings both technical depth and strategic perspective to the question of how organizations can adopt AI without losing accountability.
+                  With more than a decade of founder experience across AI implementation, software development, and cybersecurity, Rana brings both technical depth and strategic perspective to the question of how organizations can adopt AI without losing accountability.
                 </p>
               </div>
             </div>

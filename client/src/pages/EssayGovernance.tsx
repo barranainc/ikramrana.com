@@ -31,7 +31,7 @@ export default function EssayGovernance() {
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5">The Document Trap</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">Organizations love governance documents. They're tangible. They're demonstrable. When a regulator asks "do you have governance?", you can hand them a binder. When the board asks about AI risk, you can present a policy.</p>
           <p className="text-foreground/85 leading-relaxed mb-5">The problem is that documents describe intentions. Architecture creates constraints. And in the gap between intention and constraint, risk accumulates.</p>
-          <p className="text-foreground/85 leading-relaxed mb-5">A policy that says "senior staff must review AI outputs" is an intention. A system that routes AI outputs to senior staff, logs their review, tracks review duration, and blocks progression without documented evaluation—that's architecture.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5">A policy that says "senior staff must review AI outputs" is an intention. A system that routes AI outputs to senior staff, logs their review, tracks review duration, and blocks progression without documented evaluation, that's architecture.</p>
         </motion.div>
 
         <motion.div {...fadeUp}>
@@ -49,10 +49,10 @@ export default function EssayGovernance() {
           <ul className="space-y-3 mb-6 pl-0">
             {[
               "Constraints are enforced by the system, not by human compliance with written rules",
-              "Logging happens automatically—it doesn't depend on humans remembering to document",
-              "Approval workflows are structural—they can't be bypassed without leaving a trail",
+              "Logging happens automatically, it doesn't depend on humans remembering to document",
+              "Approval workflows are structural, they can't be bypassed without leaving a trail",
               "Escalation is triggered by conditions, not by human attention",
-              "Audit capability is built in—reconstruction is a feature, not a research project",
+              "Audit capability is built in, reconstruction is a feature, not a research project",
             ].map((item,i)=>(
               <li key={i} className="flex gap-3 text-foreground/85 leading-relaxed"><span className="w-1.5 h-1.5 rounded-sm bg-electric mt-2.5 shrink-0"/><span>{item}</span></li>
             ))}
@@ -61,7 +61,7 @@ export default function EssayGovernance() {
         </motion.div>
 
         <motion.div {...fadeUp} className="border-l-4 border-l-electric pl-6 py-2 my-10">
-          <p className="text-foreground font-serif text-lg italic leading-relaxed">If the system permits non-compliant behavior, non-compliant behavior will occur. Governance that isn't enforced isn't governance—it's documentation of good intentions.</p>
+          <p className="text-foreground font-serif text-lg italic leading-relaxed">If the system permits non-compliant behavior, non-compliant behavior will occur. Governance that isn't enforced isn't governance, it's documentation of good intentions.</p>
         </motion.div>
 
         <div className="rule-divider my-14" />

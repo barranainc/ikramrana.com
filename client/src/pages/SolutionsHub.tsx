@@ -1,5 +1,5 @@
 /*
- * SOLUTIONS HUB — /solutions/
+ * SOLUTIONS HUB: /solutions/
  * Hub linking to 4 solution sub-pages
  * Exact content per master implementation prompt
  */

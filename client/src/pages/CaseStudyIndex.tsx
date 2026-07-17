@@ -1,6 +1,6 @@
 /**
  * DESIGN: The Architect's Blueprint
- * CASE STUDIES INDEX — /case-studies
+ * ILLUSTRATIVE USE CASES INDEX /case-studies
  * Blueprint aesthetic: dark navy bg, electric blue accents, mono labels, serif headings
  * Schema: CollectionPage
  */
@@ -21,12 +21,12 @@ const fadeUp = {
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "AI Automation Case Studies",
-  "description": "Real results from AI automation implementations for small and medium-sized businesses. Each case study documents the operational problem, automation approach, measurable outcomes, and lessons learned.",
+  "name": "Illustrative AI Automation Use Cases",
+  "description": "Illustrative scenarios showing how AI automation could be applied in different businesses. Figures are examples, not measured client results.",
   "url": "https://ikramrana.com/case-studies",
   "author": { "@type": "Person", "name": "Ikram Rana", "url": "https://ikramrana.com" },
   "hasPart": caseStudies.map(cs => ({
-    "@type": "Article",
+    "@type": "CreativeWork",
     "name": cs.title,
     "url": `https://ikramrana.com/case-studies/${cs.slug}`,
     "description": cs.metaDescription,
@@ -46,7 +46,7 @@ const industryColors: Record<string, string> = {
 };
 
 export default function CaseStudyIndex() {
-  useHead("AI Automation Case Studies by Industry", "Case studies documenting AI automation for small and medium businesses. Operational problems, automation approach, and measurable outcomes.");
+  useHead("Illustrative AI Automation Use Cases", "Practical scenarios showing how AI could improve business workflows, where human judgment remains necessary, and what implementation could involve.");
 
   return (
     <div className="bg-background min-h-screen">
@@ -67,19 +67,19 @@ export default function CaseStudyIndex() {
             <div className="flex items-center gap-2 mb-4">
               <TrendingUp size={13} className="text-electric" />
               <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-electric">
-                Implementation Evidence
+                Practical Scenarios
               </span>
               <span className="w-8 h-px bg-electric/40" />
             </div>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.1] tracking-tight mb-5">
-              AI Automation Case Studies
+              Illustrative AI Automation Use Cases
             </h1>
             <p className="text-base md:text-lg text-white/65 leading-relaxed max-w-2xl">
-              Real results from AI automation implementations for small and medium-sized businesses. Each case study documents the operational problem, automation approach, measurable outcomes, and lessons learned.
+              These are demonstration scenarios, not client case studies. They show how AI could be applied, what results a business might measure, and where human judgment and safeguards remain necessary.
             </p>
             <div className="flex items-center gap-4 mt-6">
               <span className="font-mono text-xs text-white/40">
-                {caseStudies.length} industries documented
+                {caseStudies.length} industry scenarios
               </span>
               <span className="w-1 h-1 bg-white/20" />
               <span className="font-mono text-xs text-white/40">
@@ -116,12 +116,12 @@ export default function CaseStudyIndex() {
                           >
                             {cs.industry}
                           </span>
-                          <span className="font-mono text-[10px] text-white/25">
-                            Case Study
+                          <span className="font-mono text-[10px] text-slate-dim">
+                            Illustrative Scenario
                           </span>
                         </div>
 
-                        {/* Headline metric — AEO priority */}
+                        {/* Example outcome for the scenario */}
                         <div
                           className="p-4 mb-4"
                           style={{
@@ -132,8 +132,8 @@ export default function CaseStudyIndex() {
                           <p className="font-serif text-xl font-bold text-foreground leading-snug">
                             {cs.metric}
                           </p>
-                          <p className="font-mono text-[10px] text-white/40 mt-1">
-                            Headline result
+                          <p className="font-mono text-[10px] text-slate-dim mt-1">
+                            Example outcome to measure
                           </p>
                         </div>
 
@@ -149,7 +149,7 @@ export default function CaseStudyIndex() {
 
                         {/* Read link */}
                         <div className="flex items-center gap-1.5 font-mono text-[11px] text-electric/60 group-hover:text-electric transition-colors">
-                          Read case study <ArrowRight size={11} />
+                          Explore scenario <ArrowRight size={11} />
                         </div>
                       </div>
                     </div>
@@ -166,13 +166,13 @@ export default function CaseStudyIndex() {
         <div className="container">
           <motion.div {...fadeUp} className="max-w-2xl">
             <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-electric block mb-4">
-              Your business could be next
+              Start with the real workflow
             </span>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Ready to build your own case study?
+              Which workflow should AI improve first?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Book a strategy call with Ikram Rana to evaluate your specific workflows and identify the automation opportunities that will deliver measurable results for your business.
+              Begin with a discovery stage to examine the work, the risks, the people involved, and whether AI is actually the right intervention. If it is, the implementation scope is defined after discovery.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -181,7 +181,7 @@ export default function CaseStudyIndex() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-electric text-white font-mono text-xs tracking-wide hover:opacity-90 transition-opacity"
               >
-                Book a strategy call <ArrowRight size={13} />
+                Find the Workflow AI Should Fix First <ArrowRight size={13} />
               </a>
               <Link
                 href="/ai-knowledge-hub"

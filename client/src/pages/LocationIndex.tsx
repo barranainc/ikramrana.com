@@ -1,6 +1,6 @@
 /**
- * DESIGN: The Architect's Blueprint — LIGHT THEME
- * LOCATIONS INDEX PAGE — /locations
+ * DESIGN: The Architect's Blueprint: LIGHT THEME
+ * LOCATIONS INDEX PAGE: /locations
  * Blueprint aesthetic: dark navy bg, electric blue accents, mono labels, serif headings
  * Matches: KnowledgeHubIndex, IndustryIndex
  */
@@ -20,18 +20,18 @@ const fadeUp = {
 
 // Geographic hierarchy for visual display
 const geoHierarchy = [
-  { slug: 'ai-automation-consulting-vaughan-ontario', label: 'Vaughan, Ontario', level: 1, desc: 'Local — Ikram\'s home base' },
-  { slug: 'ai-automation-consulting-toronto', label: 'Toronto', level: 2, desc: 'City — Greater downtown core' },
-  { slug: 'ai-automation-consulting-greater-toronto-area', label: 'Greater Toronto Area', level: 3, desc: 'Regional — GTA municipalities' },
-  { slug: 'ai-automation-consulting-canada', label: 'Canada', level: 4, desc: 'National — All Canadian businesses' },
-  { slug: 'ai-automation-consulting-united-states', label: 'United States', level: 5, desc: 'International — US businesses' },
+  { slug: 'ai-automation-consulting-vaughan-ontario', label: 'Vaughan, Ontario', level: 1, desc: 'Local: Ikram\'s home base' },
+  { slug: 'ai-automation-consulting-toronto', label: 'Toronto', level: 2, desc: 'City: Greater downtown core' },
+  { slug: 'ai-automation-consulting-greater-toronto-area', label: 'Greater Toronto Area', level: 3, desc: 'Regional: GTA municipalities' },
+  { slug: 'ai-automation-consulting-canada', label: 'Canada', level: 4, desc: 'National: All Canadian businesses' },
+  { slug: 'ai-automation-consulting-united-states', label: 'United States', level: 5, desc: 'International: US businesses' },
 ];
 
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "AI Automation Consulting by Location",
-  "description": "AI automation consulting for small and medium-sized businesses across the Greater Toronto Area, Canada, and the United States. Ikram Rana, founder of Barrana.ai, serves businesses wherever they operate.",
+  "name": "AI Adoption and Workflow Implementation by Location",
+  "description": "AI adoption and workflow implementation for businesses across the Greater Toronto Area, Canada, and the United States. Ikram Rana, founder of Barrana.ai, serves businesses wherever they operate.",
   "author": { "@type": "Person", "name": "Ikram Rana", "url": "https://ikramrana.com" },
   "provider": {
     "@type": "Organization",
@@ -47,7 +47,7 @@ const schemaData = {
 };
 
 export default function LocationIndex() {
-  useHead("AI Automation Consulting by Location", "AI automation consulting across the Greater Toronto Area, Canada, and the United States. Ikram Rana of Barrana.ai serves businesses wherever they operate.");
+  useHead("AI Adoption and Workflow Implementation by Location", "AI adoption and workflow implementation across the Greater Toronto Area, Canada, and the United States. Ikram Rana of Barrana.ai serves businesses wherever they operate.");
 
   return (
     <div className="bg-background min-h-screen">
@@ -72,10 +72,10 @@ export default function LocationIndex() {
               <span className="w-8 h-px bg-electric/40" />
             </div>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.1] tracking-tight mb-5">
-              AI Automation Consulting by Location
+              AI Adoption and Workflow Implementation by Location
             </h1>
             <p className="text-base md:text-lg text-white/65 leading-relaxed max-w-2xl">
-              AI automation consulting for small and medium-sized businesses across the Greater Toronto Area, Canada, and the United States. Ikram Rana, founder of Barrana.ai, serves businesses wherever they operate.
+              AI adoption and workflow implementation for businesses across the Greater Toronto Area, Canada, and the United States. Ikram Rana, founder of Barrana.ai, serves businesses wherever they operate.
             </p>
           </motion.div>
         </div>
@@ -85,7 +85,7 @@ export default function LocationIndex() {
       <section className="py-12 bg-[#070f1e] border-b border-border/20">
         <div className="container">
           <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-white/40 mb-6">
-            FIG. — Geographic Coverage
+            FIG.: Geographic Coverage
           </div>
           <div className="flex flex-col gap-0 max-w-2xl">
             {geoHierarchy.map((item, i) => (
@@ -182,13 +182,13 @@ export default function LocationIndex() {
         <div className="container">
           <motion.div {...fadeUp} className="max-w-2xl">
             <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-electric block mb-4">
-              Book a consultation
+              Find the Workflow AI Should Fix First
             </span>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
               Ready to discuss your business workflows?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Book a strategy call with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan — wherever your business operates.
+              Find the Workflow AI Should Fix First with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan: wherever your business operates.
             </p>
             <a
               href="https://calendly.com/ikramrana15"
@@ -196,7 +196,7 @@ export default function LocationIndex() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-electric text-white font-mono text-xs tracking-wide hover:opacity-90 transition-opacity"
             >
-              Book a strategy call <ArrowRight size={13} />
+              Find the Workflow AI Should Fix First <ArrowRight size={13} />
             </a>
           </motion.div>
         </div>

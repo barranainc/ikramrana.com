@@ -1,5 +1,5 @@
 /*
- * BlogTacticsDiagram — Blueprint-style visual for "Tactical Advice For Businesses" section
+ * BlogTacticsDiagram: Blueprint-style visual for "Tactical Advice For Businesses" section
  *
  * Design: Architect's Blueprint, Light Theme
  * Shows an ordered action sequence: Audit → Configure → Measure.
@@ -157,7 +157,7 @@ export default function BlogTacticsDiagram({ steps = defaultSteps }: BlogTactics
               <path d="M4 8 L7 11 L12 5" stroke="currentColor" strokeWidth="1.2" fill="none" />
             </svg>
             <p className="font-mono text-[10px] text-slate-dim tracking-wider uppercase">
-              Execute in sequence — each step builds on the previous
+              Execute in sequence: each step builds on the previous
             </p>
           </div>
         </div>
@@ -165,7 +165,7 @@ export default function BlogTacticsDiagram({ steps = defaultSteps }: BlogTactics
 
       {/* Footer caption */}
       <p className="font-mono text-[10px] text-slate-dim tracking-wider mt-2 text-right uppercase">
-        Implementation sequence — Ikram Rana / Barrana.ai
+        Implementation sequence: Ikram Rana / Barrana.ai
       </p>
     </motion.div>
   );

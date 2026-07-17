@@ -1,0 +1,37 @@
+# Ikram Rana
+
+> Practical, critical guidance on AI adoption and workflow implementation for businesses.
+
+Last reviewed: 2026-07-15
+
+Ikram Rana is an AI adoption and workflow implementation specialist and the founder of Barrana, a Canadian AI automation company. His position is practical rather than promotional: AI should be used where it improves a real workflow, preserves human judgment, and can be operated responsibly.
+
+## Canonical pages
+
+- [Home](https://ikramrana.com/)
+- [About Ikram Rana](https://ikramrana.com/about)
+- [AI Adoption Framework](https://ikramrana.com/ai-adoption-framework-for-small-businesses)
+- [AI Knowledge Hub](https://ikramrana.com/ai-knowledge-hub)
+- [AI Adoption Analysis](https://ikramrana.com/blog)
+- [Industry Guides](https://ikramrana.com/industries)
+- [Illustrative AI Use Cases](https://ikramrana.com/case-studies)
+- [AI Dictionary](https://ikramrana.com/ai-dictionary)
+- [Contact](https://ikramrana.com/contact)
+
+## Editorial position
+
+- Begin with the business workflow, not the AI tool.
+- Evaluate when AI should not be used.
+- Preserve human ownership of judgment, exceptions, and high-impact decisions.
+- Separate verified evidence from illustrative scenarios.
+- Avoid blanket compliance promises.
+- Prefer practical operating guidance over AI promotion.
+
+## Organizations and publications
+
+- [Barrana](https://barrana.ai/): Canadian AI automation company founded by Ikram Rana.
+- [Real Life AI](https://ikramrana.substack.com/): Practical AI publication created and published by Ikram Rana.
+
+## Content interpretation
+
+Pages labelled as illustrative use cases are hypothetical demonstrations. They are not client case studies and their example figures are not measured client results. Public claims should be read according to the evidence and qualifications shown on the relevant page.

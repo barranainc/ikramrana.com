@@ -1,10 +1,10 @@
 /**
  * DESIGN: The Architect's Blueprint
- * DICTIONARY ENTRY TEMPLATE — /ai-dictionary/:slug
+ * DICTIONARY ENTRY TEMPLATE: /ai-dictionary/:slug
  * Blueprint aesthetic: dark navy bg, electric blue accents, mono labels, serif headings
  * Schema: DefinedTerm + Article
- * Key: Definition box is the highest-priority AEO element — visually prominent
- * Layout: Full-width content (no sidebar per instructions — "clean and focused")
+ * Key: Definition box is the highest-priority AEO element: visually prominent
+ * Layout: Full-width content (no sidebar per instructions: "clean and focused")
  */
 
 import { useEffect } from "react";
@@ -16,13 +16,13 @@ import { getDictionaryTerm, dictionaryTerms, termSlugMap } from "@/data/dictiona
 
 // Hub page cross-links for relevant terms
 const hubLinks: Record<string, { label: string; slug: string }> = {
-  'ai-automation': { label: 'What Is AI Automation for Small Businesses?', slug: 'what-is-ai-automation-for-small-businesses' },
+  'ai-automation': { label: 'What Is AI Automation for Businesses?', slug: 'what-is-ai-automation-for-small-businesses' },
   'ai-adoption': { label: 'What Is AI Adoption for Businesses?', slug: 'what-is-ai-adoption-for-businesses' },
   'ai-agents': { label: 'What Are AI Agents for Businesses?', slug: 'what-are-ai-agents-for-businesses' },
   'ai-workflow': { label: 'What Is AI Workflow Automation?', slug: 'what-is-ai-workflow-automation' },
   'ai-governance': { label: 'AI Governance for Businesses', slug: 'ai-governance-for-businesses' },
   'ai-strategy': { label: 'AI Decision Systems for Business', slug: 'ai-decision-systems-for-business' },
-  'large-language-models-llms': { label: 'AI for Small Businesses: A Practical Guide', slug: 'ai-for-small-businesses-guide' },
+  'large-language-models-llms': { label: 'AI for Businesses: A Practical Guide', slug: 'ai-for-small-businesses-guide' },
 };
 
 const fadeUp = {
@@ -95,11 +95,11 @@ export default function DictionaryEntry() {
           "@type": "Person",
           "name": "Ikram Rana",
           "url": "https://ikramrana.com",
-          "jobTitle": "AI Automation Strategist",
+          "jobTitle": "AI Adoption and Workflow Implementation Specialist",
           "worksFor": { "@type": "Organization", "name": "Barrana.ai", "url": "https://barrana.ai" }
         },
         "publisher": { "@type": "Organization", "name": "IkramRana.com" },
-        "datePublished": "2026-03-01"
+        "dateModified": "2026-07-15"
       }
     ]
   };
@@ -148,11 +148,11 @@ export default function DictionaryEntry() {
         </div>
       </section>
 
-      {/* Main content — full width, clean and focused */}
+      {/* Main content: full width, clean and focused */}
       <div className="container py-12 md:py-16">
         <div className="max-w-3xl">
 
-          {/* ── DEFINITION BOX — highest priority AEO element ── */}
+          {/* ── DEFINITION BOX: highest priority AEO element ── */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -324,7 +324,7 @@ export default function DictionaryEntry() {
               Ready to implement {term.term.toLowerCase()} in your workflows?
             </h3>
             <p className="text-sm text-white/60 leading-relaxed mb-5 max-w-xl">
-              Book a strategy call with Ikram Rana to evaluate your specific workflows and build a structured AI implementation plan.
+              Find the Workflow AI Should Fix First with Ikram Rana to evaluate your specific workflows and build a structured AI implementation plan.
             </p>
             <div className="flex flex-wrap gap-3">
               <a
@@ -333,7 +333,7 @@ export default function DictionaryEntry() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-electric text-white font-mono text-xs tracking-wide hover:opacity-90 transition-opacity"
               >
-                Book a strategy call <ArrowRight size={12} />
+                Find the Workflow AI Should Fix First <ArrowRight size={12} />
               </a>
               <Link
                 href="/ai-dictionary"

@@ -30,7 +30,7 @@ export default function EssayTuesday() {
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5">The Test</h2>
-          <p className="text-foreground/85 leading-relaxed mb-5">Pick a random case from your system—something from last week that involved AI assistance. Answer these questions:</p>
+          <p className="text-foreground/85 leading-relaxed mb-5">Pick a random case from your system, something from last week that involved AI assistance. Answer these questions:</p>
           <ol className="space-y-3 mb-6 pl-0 list-none counter-reset-none">
             {[
               ["Who made the key decision(s)?","A specific person with a name."],
@@ -55,16 +55,16 @@ export default function EssayTuesday() {
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Why Tuesday Morning</h2>
-          <p className="text-foreground/85 leading-relaxed mb-5">I call it the Tuesday Morning Test because that's when governance gets tested in real life—not during planned audits when everyone's prepared, but on random days when a client calls upset, or a regulator asks questions.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5">I call it the Tuesday Morning Test because that's when governance gets tested in real life, not during planned audits when everyone's prepared, but on random days when a client calls upset, or a regulator asks questions.</p>
           <p className="text-foreground/85 leading-relaxed mb-5">Tuesday morning is arbitrary. It's meant to be arbitrary. Real accountability requires being able to explain yourself on any day, about any case, without warning.</p>
         </motion.div>
 
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Common Failures</h2>
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">The "Someone" Problem:</strong> Decisions were made by "someone on the team" but there's no record of who specifically. Accountability is collective, which means it's nobody's.</p>
-          <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">The "Approved" Problem:</strong> The log shows "Approved by John" but John can't remember this specific case. He approved it—he approves dozens daily—but he didn't document judgment.</p>
+          <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">The "Approved" Problem:</strong> The log shows "Approved by John" but John can't remember this specific case. He approved it, he approves dozens daily, but he didn't document judgment.</p>
           <p className="text-foreground/85 leading-relaxed mb-4"><strong className="text-foreground">The "AI Did It" Problem:</strong> The AI generated the output and a human clicked approve, but there's no record of what the human actually reviewed.</p>
-          <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">The "We Could Probably Find It" Problem:</strong> The information exists somewhere—in emails, in notes, in someone's head—but reconstructing it would take days.</p>
+          <p className="text-foreground/85 leading-relaxed mb-5"><strong className="text-foreground">The "We Could Probably Find It" Problem:</strong> The information exists somewhere, in emails, in notes, in someone's head, but reconstructing it would take days.</p>
         </motion.div>
 
         <motion.div {...fadeUp}>

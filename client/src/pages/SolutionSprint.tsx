@@ -1,6 +1,6 @@
 /*
- * SOLUTION PAGE — /solutions/ai-sprint/
- * AI Implementation Sprint — exact content per master implementation prompt
+ * SOLUTION PAGE , /solutions/ai-sprint/
+ * AI Implementation Sprint , exact content per master implementation prompt
  */
 
 import { Link } from "wouter";
@@ -18,7 +18,7 @@ const fadeUp = {
 const deliverables = [
   "Workflow audit of your highest-impact processes",
   "Automation opportunity map with prioritised recommendations",
-  "One production-grade AI workflow, built and deployed",
+  "One agreed AI workflow, built and deployed when the discovery findings support it",
   "Escalation paths and logging embedded from day one",
   "Full documentation so your team can maintain and extend the system",
 ];
@@ -73,6 +73,17 @@ export default function SolutionSprint() {
             transformation programme. They need one system that works, built properly, so they can see what good looks like
             before committing to more.
           </p>
+          <div className="mt-7 border border-electric/25 bg-electric/5 p-6 rounded-xl">
+            <span className="font-mono text-[10px] tracking-[0.16em] uppercase text-electric block mb-2">
+              Discovery comes first
+            </span>
+            <p className="text-sm text-foreground/85 leading-relaxed mb-2">
+              The Discovery Stage is $1,500 CAD. We examine the workflow, risks, people, data, and practical fit before recommending an implementation.
+            </p>
+            <p className="text-sm text-slate-dim leading-relaxed">
+              If you proceed, the discovery fee is credited toward the implementation price. The implementation scope and fixed quote are prepared after discovery.
+            </p>
+          </div>
         </motion.div>
 
         <div className="rule-divider my-10" />
@@ -139,7 +150,7 @@ export default function SolutionSprint() {
         {/* CTA */}
         <motion.div {...fadeUp} className="mb-14">
           <p className="text-base text-slate-dim leading-relaxed mb-5">
-            Ready to get one system working properly? Book a strategy call to discuss your workflows and see if the sprint format fits your situation.
+            Start with the workflow, not the package. Discovery will determine whether the sprint format is appropriate and what a responsible implementation should include.
           </p>
           <a
             href="https://calendly.com/ikramrana15"
@@ -147,7 +158,7 @@ export default function SolutionSprint() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-electric text-white font-semibold text-sm no-underline hover:translate-y-[-2px] hover:shadow-lg transition-all"
           >
-            Start an AI Sprint <ArrowRight size={14} />
+            Find the Workflow AI Should Fix First <ArrowRight size={14} />
           </a>
         </motion.div>
 

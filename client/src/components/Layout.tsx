@@ -1,19 +1,19 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint , Light Theme
  * Layout wrapper with persistent top navigation and footer.
- * Nav: Home / Solutions / Case Studies / Framework / Insights / Blog / AI Knowledge Hub / About / Contact
- * All legacy content pages remain at their own URLs — nav points to hubs.
+ * Nav: Home / Solutions / Illustrative Use Cases / Framework / Insights / Blog / AI Knowledge Hub / About / Contact
+ * All legacy content pages remain at their own URLs , nav points to hubs.
  */
 
 import { Link, useLocation } from "wouter";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { href: "/ai-adoption-framework-for-small-businesses", label: "AI Framework" },
   { href: "/solutions", label: "Solutions" },
-  { href: "/case-studies", label: "Case Studies" },
+  { href: "/case-studies", label: "Use Cases" },
   { href: "/blog", label: "Blog" },
   { href: "/ai-knowledge-hub", label: "AI Knowledge Hub" },
   { href: "/industries", label: "Industries" },
@@ -58,7 +58,7 @@ function isActive(href: string, location: string): boolean {
   if (href === "/solutions") {
     return location === "/solutions" || location.startsWith("/solutions/");
   }
-  // Case Studies is active when on /case-studies or any case study page
+  // Illustrative Use Cases is active on the use-case index and detail pages
   if (href === "/case-studies") {
     return location === "/case-studies" || location.startsWith("/case-studies/");
   }
@@ -72,14 +72,43 @@ function isActive(href: string, location: string): boolean {
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const mobileToggleRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
     setMobileOpen(false);
+
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    const normalizedPath = location === "/" ? "/" : location.replace(/\/$/, "");
+    canonical.href = `https://ikramrana.com${normalizedPath}`;
   }, [location]);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      setMobileOpen(false);
+      mobileToggleRef.current?.focus();
+    };
+
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [mobileOpen]);
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-background focus:px-4 focus:py-3 focus:text-electric focus:shadow-lg"
+      >
+        Skip to main content
+      </a>
       {/* Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/60 backdrop-blur-md bg-background/90">
         <div className="container flex items-center justify-between h-16">
@@ -91,13 +120,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 Ikram Rana
               </span>
               <span className="hidden sm:inline text-[11px] text-slate-dim tracking-wide leading-tight">
-                Decision Architecture in AI Adoption
+                Practical AI Adoption for Businesses
               </span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1" aria-label="Primary navigation">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -107,12 +136,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     ? "text-electric bg-electric/10"
                     : "text-slate-text hover:text-foreground hover:bg-foreground/5"
                 }`}
+                aria-current={isActive(link.href, location) ? "page" : undefined}
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/contact"
+              aria-current={location === "/contact" ? "page" : undefined}
               className={`ml-2 px-4 py-1.5 text-[13px] font-sans rounded-lg border transition-colors duration-200 no-underline ${
                 location === "/contact"
                   ? "text-electric border-electric/30 bg-electric/10"
@@ -125,9 +156,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Mobile toggle */}
           <button
+            ref={mobileToggleRef}
             className="lg:hidden p-2 text-slate-text hover:text-foreground transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle navigation"
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation"
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -137,6 +171,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <AnimatePresence>
           {mobileOpen && (
             <motion.nav
+              id="mobile-navigation"
+              aria-label="Mobile navigation"
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
@@ -152,6 +188,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                       : "text-slate-text hover:text-foreground"
                   }`}
                   onClick={() => setMobileOpen(false)}
+                  aria-current={location === "/" ? "page" : undefined}
                 >
                   Home
                 </Link>
@@ -165,12 +202,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                         : "text-slate-text hover:text-foreground"
                     }`}
                     onClick={() => setMobileOpen(false)}
+                    aria-current={isActive(link.href, location) ? "page" : undefined}
                   >
                     {link.label}
                   </Link>
                 ))}
                 <Link
                   href="/contact"
+                  aria-current={location === "/contact" ? "page" : undefined}
                   className={`px-3 py-2 text-sm font-sans no-underline transition-colors rounded-lg ${
                     location === "/contact"
                       ? "text-electric bg-electric/10"
@@ -187,19 +226,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Main content */}
-      <main className="flex-1 pt-16">
+      <main id="main-content" tabIndex={-1} className="flex-1 pt-16">
         {children}
       </main>
 
       {/* Footer */}
       <footer className="border-t border-border/40 bg-navy">
         <div className="container py-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-8">
             {/* Brand column */}
             <div className="sm:col-span-1">
               <h4 className="font-serif text-base font-semibold text-foreground">Ikram Rana</h4>
               <p className="text-sm text-slate-dim mt-1 leading-relaxed max-w-sm">
-                Decision architecture, governance-by-design, and operational coherence in AI adoption.
+                Critical, practical guidance on where AI helps businesses, where it does not, and how to implement it responsibly.
               </p>
               <div className="flex gap-3 mt-4">
                 <a
@@ -229,7 +268,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link href="/framework" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Framework</Link>
                 <Link href="/insights" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Insights</Link>
                 <Link href="/blog" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Blog</Link>
-                <Link href="/case-studies" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Case Studies</Link>
+                <Link href="/case-studies" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Illustrative Use Cases</Link>
                 <Link href="/contact" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Contact</Link>
               </div>
             </div>
@@ -244,7 +283,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link href="/ai-knowledge-hub/what-is-ai-adoption-for-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Adoption</Link>
                 <Link href="/ai-knowledge-hub/what-is-ai-workflow-automation" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Workflow Automation</Link>
                 <Link href="/ai-knowledge-hub/what-are-ai-agents-for-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Agents</Link>
-                <Link href="/ai-knowledge-hub/ai-for-small-businesses-guide" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI for Small Businesses</Link>
+                <Link href="/ai-knowledge-hub/ai-for-small-businesses-guide" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI for Businesses</Link>
                 <Link href="/ai-knowledge-hub/ai-decision-systems-for-business" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Decision Systems</Link>
                 <Link href="/ai-knowledge-hub/ai-governance-for-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">AI Governance</Link>
               </div>
@@ -267,10 +306,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
 
-            {/* Case Studies links */}
+            {/* Illustrative use-case links */}
             <div>
               <p className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric mb-4">
-                <Link href="/case-studies" className="hover:text-electric/80 transition-colors no-underline">Case Studies</Link>
+                <Link href="/case-studies" className="hover:text-electric/80 transition-colors no-underline">Illustrative Use Cases</Link>
               </p>
               <div className="flex flex-col gap-2">
                 <Link href="/case-studies/ai-automation-case-study-insurance-brokerage" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline leading-snug">Insurance Brokerage</Link>
@@ -314,7 +353,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-border/30 flex items-center justify-between">
+          <div className="mt-10 pt-6 border-t border-border/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
             <p className="font-mono text-[11px] tracking-wider text-slate-dim">
               &copy; {new Date().getFullYear()} Ikram Rana
             </p>

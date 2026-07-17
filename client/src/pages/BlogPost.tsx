@@ -1,5 +1,5 @@
 /**
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * Individual Blog Post template at /blog/:slug
  *
  * Design philosophy: Matches the site's architectural blueprint aesthetic exactly.
@@ -24,6 +24,7 @@ import NotFound from './NotFound';
 import BlogProblemDiagram from '@/components/diagrams/BlogProblemDiagram';
 import BlogFrameworkDiagram from '@/components/diagrams/BlogFrameworkDiagram';
 import BlogTacticsDiagram from '@/components/diagrams/BlogTacticsDiagram';
+import AuthorAuthorityCard from '@/components/AuthorAuthorityCard';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
@@ -74,8 +75,8 @@ function firstSentence(text: string, maxLen = 72): string {
  */
 function extractFrameworkName(heading: string): string {
   return heading
-    .replace(/^The Framework[:\s—–-]+/i, '')
-    .replace(/^Framework[:\s—–-]+/i, '')
+    .replace(/^The Framework[:\s, –-]+/i, '')
+    .replace(/^Framework[:\s, –-]+/i, '')
     .trim();
 }
 
@@ -103,15 +104,35 @@ export default function BlogPost() {
     headline: post.title,
     description: post.metaDescription,
     author: {
+      '@id': 'https://ikramrana.com/about#ikram-rana',
       '@type': 'Person',
       name: 'Ikram Rana',
-      url: 'https://ikramrana.com',
-      jobTitle: 'AI Automation Strategist',
-      worksFor: { '@type': 'Organization', name: 'Barrana.ai', url: 'https://barrana.ai' },
+      url: 'https://ikramrana.com/about',
+      jobTitle: 'AI Adoption and Workflow Implementation Specialist',
+      homeLocation: {
+        '@type': 'Place',
+        name: 'Vaughan, Ontario, Canada',
+      },
+      sameAs: [
+        'https://www.linkedin.com/in/ikramrana/',
+        'https://ikramrana.substack.com',
+      ],
+      worksFor: {
+        '@id': 'https://barrana.ai/#organization',
+        '@type': 'Organization',
+        name: 'Barrana',
+        url: 'https://barrana.ai',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Vaughan',
+          addressRegion: 'Ontario',
+          addressCountry: 'CA',
+        },
+      },
     },
     publisher: { '@type': 'Organization', name: 'IkramRana.com', url: 'https://ikramrana.com' },
     datePublished: post.publishDate,
-    dateModified: post.publishDate,
+    dateModified: '2026-07-16',
   };
 
   const faqSchema = {
@@ -129,7 +150,7 @@ export default function BlogPost() {
   const s1 = post.sections[1];
   const s2 = post.sections[2];
 
-  // Problem diagram props — expectation vs reality
+  // Problem diagram props: expectation vs reality
   const problemProps = s0 ? {
     expectLabel: 'Expected Outcome',
     expectSub: firstSentence(post.intro[0] ?? '', 80),
@@ -138,7 +159,7 @@ export default function BlogPost() {
     gapLabel: 'The Gap',
   } : undefined;
 
-  // Framework diagram props — three-tier principle stack
+  // Framework diagram props: three-tier principle stack
   const fwName = s1 ? extractFrameworkName(s1.heading) : 'The Framework';
   const fwSentences = s1 ? s1.content.split(/[.!?]/).filter(s => s.trim()).slice(0, 3) : [];
   const frameworkProps = s1 ? {
@@ -165,7 +186,7 @@ export default function BlogPost() {
     ],
   } : undefined;
 
-  // Tactics diagram props — three-step action sequence
+  // Tactics diagram props: three-step action sequence
   const tacSentences = s2 ? s2.content.split(/[.!?]/).filter(s => s.trim()) : [];
   const tacticSteps = [
     {
@@ -254,6 +275,15 @@ export default function BlogPost() {
               </p>
             </motion.div>
 
+            <div className="mb-10 border border-electric/25 bg-electric/5 p-5">
+              <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-electric mb-2">
+                Editorial standard
+              </p>
+              <p className="text-sm text-slate-text leading-relaxed">
+                This article presents Ikram Rana's analysis and practical position. General statements are arguments to test against the facts of a specific workflow, not universal statistics. Scenarios are illustrative unless the article links to identified evidence.
+              </p>
+            </div>
+
             {/* Intro paragraphs */}
             <motion.div
               initial="hidden"
@@ -268,7 +298,7 @@ export default function BlogPost() {
               ))}
             </motion.div>
 
-            {/* Sections — with diagrams injected after each */}
+            {/* Sections: with diagrams injected after each */}
             {post.sections.map((section, i) => (
               <div key={i}>
                 <motion.section
@@ -315,7 +345,9 @@ export default function BlogPost() {
               </div>
             ))}
 
-            {/* ── CTA Block ─────────────────────────────────────────── */}
+            <AuthorAuthorityCard />
+
+            {/* CTA Block */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -327,10 +359,10 @@ export default function BlogPost() {
                 READY TO APPLY THIS?
               </p>
               <h3 className="font-serif text-xl font-bold text-foreground mb-3">
-                Book a Strategy Call
+                Find the Workflow AI Should Fix First
               </h3>
               <p className="text-slate-text leading-relaxed text-[15px] mb-6">
-                Businesses looking to implement AI automation or structured AI adoption can book a strategy call with Ikram Rana to evaluate their workflows and identify the right automation opportunities.
+                Businesses looking to implement AI automation or structured AI adoption can start with a workflow discovery with Ikram Rana to evaluate their workflows and identify the right automation opportunities.
               </p>
               <a
                 href="https://calendly.com/ikramrana15"
@@ -338,7 +370,7 @@ export default function BlogPost() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-electric text-white px-7 py-3 font-sans font-medium text-sm hover:bg-electric-dim transition-colors"
               >
-                Book a Strategy Call
+                Find the Workflow AI Should Fix First
                 <ArrowRight size={15} />
               </a>
             </motion.div>

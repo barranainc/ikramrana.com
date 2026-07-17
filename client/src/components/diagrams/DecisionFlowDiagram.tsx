@@ -75,7 +75,7 @@ export default function DecisionFlowDiagram() {
       </div>
 
       <p className="text-center font-mono text-[10px] text-slate-dim tracking-wider mt-4 uppercase">
-        Decision Architecture Flow — Every step is traceable
+        Decision Architecture Flow: Every step is traceable
       </p>
     </motion.div>
   );

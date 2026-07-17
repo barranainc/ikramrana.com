@@ -1,5 +1,5 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * ESSAY: Who Owns the Exception?
  */
 import { Link } from "wouter";
@@ -25,7 +25,7 @@ export default function EssayException() {
             Who Owns the Exception?
           </h1>
           <p className="text-lg text-slate-text leading-relaxed mb-2">
-            Every workflow has exceptions. The question isn't whether they will occur — it's whether your system has a defined path for them. Most AI workflows handle the standard case well and route exceptions to "someone will deal with it." That someone is usually the most senior person available.
+            Every workflow has exceptions. The question isn't whether they will occur: it's whether your system has a defined path for them. Most AI workflows handle the standard case well and route exceptions to "someone will deal with it." That someone is usually the most senior person available.
           </p>
           <span className="font-mono text-xs text-slate-dim">7 min read</span>
         </motion.div>
@@ -38,7 +38,7 @@ export default function EssayException() {
             When an AI system encounters a case it can't handle with confidence, it escalates. This is correct behavior. The problem is where it escalates to. In most organizations, the answer is: whoever is most senior and available.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            This means your most expensive resource — the person with the most experience, the highest salary, and the most competing demands on their time — is spending their day handling unstructured exceptions that arrive without context, without classification, and without a clear decision framework.
+            This means your most expensive resource: the person with the most experience, the highest salary, and the most competing demands on their time: is spending their day handling unstructured exceptions that arrive without context, without classification, and without a clear decision framework.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
             The senior person becomes a catch-all. They are not doing their highest-value work. They are doing the work that nobody designed a path for.
@@ -48,7 +48,7 @@ export default function EssayException() {
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Why This Happens</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            Exception handling is unglamorous design work. When organizations implement AI systems, they focus on the standard case — the 80% of volume that flows cleanly through the automated process. The standard case is where the efficiency gains are. The standard case is what gets demonstrated in vendor presentations.
+            Exception handling is unglamorous design work. When organizations implement AI systems, they focus on the standard case: the 80% of volume that flows cleanly through the automated process. The standard case is where the efficiency gains are. The standard case is what gets demonstrated in vendor presentations.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
             Exceptions are treated as edge cases that will be rare and manageable. They are neither. In a high-volume AI workflow, even a 5% exception rate generates significant volume. And because exceptions are by definition the cases that don't fit the standard pattern, they tend to be more complex, more time-sensitive, and more consequential than the standard case.
@@ -92,7 +92,7 @@ export default function EssayException() {
             Once exception types are classified, the escalation architecture can be designed. Each exception type needs a defined owner, a defined response time, a defined decision framework, and a defined logging requirement.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The escalation architecture should be tiered. Not every exception needs to go to the most senior person. Most exceptions should be handled at the lowest appropriate level — the person with the right expertise and authority for that specific type of exception, without the overhead of senior involvement.
+            The escalation architecture should be tiered. Not every exception needs to go to the most senior person. Most exceptions should be handled at the lowest appropriate level: the person with the right expertise and authority for that specific type of exception, without the overhead of senior involvement.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
             Senior escalation should be reserved for cases that genuinely require it: novel situations, high-stakes decisions, or cases where the defined path has failed. When senior escalation is rare and structured, it is effective. When it is the default, it is neither.

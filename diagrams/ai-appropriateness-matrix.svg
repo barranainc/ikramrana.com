@@ -8,7 +8,7 @@
   <!-- Title -->
   <rect width="800" height="55" rx="12" fill="#0a1628"/>
   <rect y="43" width="800" height="12" fill="#0a1628"/>
-  <text x="400" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">AI Appropriateness Matrix — Where Should AI Be Applied?</text>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">AI Appropriateness Matrix: Where Should AI Be Applied?</text>
   
   <!-- Axis labels -->
   <text x="400" y="610" text-anchor="middle" fill="#0a1628" font-size="14" font-weight="700">PREDICTABILITY →</text>

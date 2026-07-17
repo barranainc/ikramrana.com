@@ -1,0 +1,145 @@
+name: Website content request
+description: Request a new article, use case, industry guide, FAQ, commentary page, or update to existing website content.
+title: "[Website content] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to add or update website content without editing source files. Start with the business question and Ikram Rana's position. Claims marked Needs verification must not be published as facts.
+
+  - type: dropdown
+    id: content_type
+    attributes:
+      label: Content type
+      description: Choose the closest format. The final format may change after editorial review.
+      options:
+        - Critical AI adoption analysis
+        - Practical business use case
+        - Industry guide
+        - AI landscape commentary
+        - FAQ or glossary entry
+        - Existing page update
+        - Framework or cornerstone page update
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_question
+    attributes:
+      label: Business question
+      description: What real question should this content answer for a business owner, founder, or decision-maker?
+      placeholder: What should a business automate first when its team is already using several disconnected AI tools?
+    validations:
+      required: true
+
+  - type: textarea
+    id: observation
+    attributes:
+      label: What prompted this request?
+      description: Describe the trend, client question, operational problem, news, research, or recurring misunderstanding behind the topic.
+    validations:
+      required: true
+
+  - type: textarea
+    id: ikram_position
+    attributes:
+      label: Ikram Rana's position
+      description: State the practical or critical view. Explain what is useful, what is overstated, what is missing, and what should remain human.
+      placeholder: The problem is not a lack of AI tools. It is the absence of one governed workflow that people can understand and operate.
+    validations:
+      required: true
+
+  - type: textarea
+    id: audience
+    attributes:
+      label: Intended audience
+      description: Identify the businesses, roles, industries, or operating situation this should address.
+      placeholder: Business owners and decision-makers managing repeated administrative work, disconnected tools, or low staff adoption.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: claim_status
+    attributes:
+      label: Claim status
+      description: Choose the strongest status that is currently supported.
+      options:
+        - Verified public
+        - Owner confirmed, evidence private
+        - Illustrative scenario
+        - Needs verification
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and sources
+      description: Add public links, private evidence references, research, screenshots, notes, or the basis for an illustrative scenario. Write "None yet" when verification is still required.
+      placeholder: |
+        Public source:
+        Private evidence retained:
+        Illustrative assumptions:
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow details
+      description: For practical content, describe the trigger, steps, decisions, exceptions, systems, owners, risks, and desired outcome.
+      placeholder: |
+        Trigger:
+        Current steps:
+        Decisions:
+        Exceptions:
+        Systems:
+        Human owner:
+        Desired outcome:
+
+  - type: textarea
+    id: human_boundaries
+    attributes:
+      label: What must remain human?
+      description: Identify judgment, approval, relationship, legal, clinical, financial, ethical, or high-impact decisions that should not be delegated.
+    validations:
+      required: true
+
+  - type: textarea
+    id: target_pages
+    attributes:
+      label: Related or affected pages
+      description: Add existing URLs that should be updated or linked. Leave blank if this is a new standalone topic.
+      placeholder: |
+        https://ikramrana.com/...
+        https://ikramrana.com/...
+
+  - type: textarea
+    id: measurement
+    attributes:
+      label: What should be measured?
+      description: List the baseline and post-implementation measures that would show whether the workflow actually improved.
+      placeholder: Staff time, correction work, exception rate, response quality, adoption, operating cost, and customer impact.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Normal editorial queue
+        - Time-sensitive within two weeks
+        - Urgent response to a material change
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Publication safeguards
+      options:
+        - label: I understand that illustrative scenarios must be visibly labelled and cannot be presented as client results.
+          required: true
+        - label: I understand that claims marked Needs verification will not be published as facts.
+          required: true
+        - label: I have not included confidential client information that is not authorized for publication.
+          required: true

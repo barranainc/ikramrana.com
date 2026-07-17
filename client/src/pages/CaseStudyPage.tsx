@@ -1,9 +1,9 @@
 /**
  * DESIGN: The Architect's Blueprint
- * CASE STUDY PAGE TEMPLATE — /case-studies/:slug
+ * ILLUSTRATIVE USE CASE TEMPLATE /case-studies/:slug
  * Blueprint aesthetic: dark navy bg, electric blue accents, mono labels, serif headings
  * Schema: Article
- * Key: Results highlight box is the highest-priority AEO element
+ * Key: Every page must be clearly labelled as an illustrative scenario
  * Layout: Two-column (content + sticky sidebar)
  */
 
@@ -25,28 +25,28 @@ const fadeUp = {
 const sectionAccents = [
   { key: 'businessContext', label: 'Business Context', color: '#60a5fa' },
   { key: 'operationalProblem', label: 'Operational Problem', color: '#fb7185' },
-  { key: 'automationSystem', label: 'Automation System Implemented', color: '#2dd4bf' },
-  { key: 'results', label: 'Results', color: '#34d399' },
-  { key: 'lessonsLearned', label: 'Lessons Learned', color: '#f59e0b' },
+  { key: 'automationSystem', label: 'Possible Workflow Design', color: '#2dd4bf' },
+  { key: 'results', label: 'Illustrative Outcome', color: '#34d399' },
+  { key: 'lessonsLearned', label: 'Scenario Design Lessons', color: '#f59e0b' },
   { key: 'expertPerspective', label: 'Expert Perspective: Ikram Rana', color: '#a78bfa' },
 ];
 
 // Hub cross-link mapping for internal links
 const hubSlugMap: Record<string, string> = {
-  'What Is AI Automation for Small Businesses?': 'what-is-ai-automation-for-small-businesses',
+  'What Is AI Automation for Businesses?': 'what-is-ai-automation-for-small-businesses',
   'What Is AI Workflow Automation?': 'what-is-ai-workflow-automation',
   'What Are AI Agents for Businesses?': 'what-are-ai-agents-for-businesses',
   'What Is AI Adoption for Businesses?': 'what-is-ai-adoption-for-businesses',
   'AI Governance for Businesses': 'ai-governance-for-businesses',
   'AI Decision Systems for Business': 'ai-decision-systems-for-business',
-  'AI for Small Businesses: A Practical Guide': 'ai-for-small-businesses-guide',
+  'AI for Businesses: A Practical Guide': 'ai-for-small-businesses-guide',
 };
 
 // Blog cross-link mapping
 const blogSlugMap: Record<string, string> = {
-  'Cognitive Load Is the Real Productivity Tax': 'cognitive-load-productivity-tax',
+  'Cognitive Load Is the Real Productivity Tax': 'cognitive-load-productivity',
   'Why Most People Automate the Wrong Step': 'automate-wrong-step',
-  'The Hidden Cost of Manual Processes': 'hidden-cost-manual-processes',
+  'The Hidden Cost of Manual Processes': 'automate-before-understanding',
 };
 
 export default function CaseStudyPage() {
@@ -54,7 +54,12 @@ export default function CaseStudyPage() {
   const slug = params.slug || '';
   const cs = getCaseStudy(slug);
 
-  useHead(cs?.title || '', cs?.metaDescription);
+  const displayTitle = cs?.title.replace("AI Automation Case Study:", "Illustrative AI Use Case:") || "";
+  const pageDescription = cs
+    ? `A hypothetical ${cs.industry.toLowerCase()} scenario showing how AI automation could be applied. Figures are examples, not measured client results.`
+    : "";
+
+  useHead(displayTitle, pageDescription);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -63,9 +68,9 @@ export default function CaseStudyPage() {
   if (!cs) {
     return (
       <div className="container py-32 text-center">
-        <p className="font-mono text-sm text-muted-foreground mb-4">Case study not found.</p>
+        <p className="font-mono text-sm text-muted-foreground mb-4">Use case not found.</p>
         <Link href="/case-studies" className="text-electric font-mono text-xs hover:underline">
-          ← Back to Case Studies
+          ← Back to Illustrative Use Cases
         </Link>
       </div>
     );
@@ -73,26 +78,26 @@ export default function CaseStudyPage() {
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": cs.title,
-    "description": cs.metaDescription,
-    "articleSection": "Case Studies",
+    "@type": "CreativeWork",
+    "headline": displayTitle,
+    "description": pageDescription,
+    "articleSection": "Illustrative AI Use Cases",
     "author": {
       "@type": "Person",
       "name": "Ikram Rana",
       "url": "https://ikramrana.com",
-      "jobTitle": "AI Automation Strategist",
+      "jobTitle": "AI Adoption and Workflow Implementation Specialist",
       "worksFor": { "@type": "Organization", "name": "Barrana.ai", "url": "https://barrana.ai" }
     },
     "publisher": { "@type": "Organization", "name": "IkramRana.com" },
     "about": { "@type": "Thing", "name": `AI Automation for ${cs.industry}` },
-    "datePublished": "2026-03-01"
+    "dateModified": "2026-07-15"
   };
 
   // TOC entries
   const tocEntries = sectionAccents.map(s => ({ id: s.key, label: s.label, color: s.color }));
 
-  // Other case studies for sidebar
+  // Other illustrative use cases for sidebar
   const otherStudies = caseStudies.filter(c => c.slug !== slug).slice(0, 4);
 
   return (
@@ -113,7 +118,7 @@ export default function CaseStudyPage() {
             {/* Breadcrumb */}
             <div className="flex items-center gap-2 mb-6">
               <Link href="/case-studies" className="font-mono text-[10px] tracking-[0.15em] uppercase text-white/35 hover:text-electric transition-colors">
-                Case Studies
+                Illustrative Use Cases
               </Link>
               <span className="text-white/20 font-mono text-[10px]">/</span>
               <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-electric truncate max-w-[200px]">
@@ -125,12 +130,12 @@ export default function CaseStudyPage() {
             <div className="flex items-center gap-2 mb-4">
               <TrendingUp size={13} className="text-electric" />
               <span className="font-mono text-xs tracking-[0.15em] uppercase text-electric">
-                {cs.industry} · AI Automation Case Study
+                {cs.industry} · Illustrative AI Use Case
               </span>
             </div>
 
             <h1 className="font-serif text-2xl md:text-3xl lg:text-[38px] font-bold text-white leading-[1.15] tracking-tight mb-3 max-w-3xl">
-              {cs.title}
+              {displayTitle}
             </h1>
             <p className="font-mono text-xs text-white/40">
               By Ikram Rana, Founder of Barrana.ai
@@ -143,10 +148,18 @@ export default function CaseStudyPage() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-10 lg:gap-14 items-start">
 
-          {/* ── Main content column ── */}
+          {/* Main content column */}
           <div>
+            <div className="mb-8 border border-amber-500/35 bg-amber-500/5 p-5">
+              <div className="font-mono text-[10px] tracking-[0.16em] uppercase text-amber-700 mb-2">
+                Illustrative scenario
+              </div>
+              <p className="text-sm text-slate-text leading-relaxed">
+                This page is a demonstration of how an AI-enabled workflow could be designed for this type of business. The company, implementation, and figures are hypothetical examples. They are not presented as a client engagement or as measured results.
+              </p>
+            </div>
 
-            {/* ── RESULTS HIGHLIGHT BOX — highest priority AEO element ── */}
+            {/* Example outcome box */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -163,13 +176,13 @@ export default function CaseStudyPage() {
                 }}
               >
                 <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-green-400 mb-3">
-                  Headline Result
+                  Example Outcome to Measure
                 </div>
                 <p className="font-serif text-2xl md:text-3xl font-bold text-foreground leading-snug mb-2">
                   {cs.metric}
                 </p>
-                <p className="font-mono text-xs text-white/45">
-                  {cs.industry} · AI Automation Implementation
+                <p className="font-mono text-xs text-slate-dim">
+                  {cs.industry} · Hypothetical Workflow Scenario
                 </p>
               </div>
             </motion.div>
@@ -203,7 +216,7 @@ export default function CaseStudyPage() {
                   id={key}
                   {...fadeUp}
                   transition={{ ...fadeUp.transition, delay: idx * 0.05 }}
-                  className="mb-10"
+                  className="mb-10 scroll-mt-24"
                 >
                   {/* Section label */}
                   <div className="flex items-center gap-3 mb-4">
@@ -254,7 +267,7 @@ export default function CaseStudyPage() {
                       );
                     }
                     return (
-                      <span key={i} className="font-mono text-xs text-white/35">{link}</span>
+                      <span key={i} className="font-mono text-xs text-slate-dim">{link}</span>
                     );
                   })}
                 </div>
@@ -287,13 +300,13 @@ export default function CaseStudyPage() {
               className="p-6 md:p-8 border border-electric/25 bg-[#070f1e]"
             >
               <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric mb-3">
-                Book a strategy call
+                Find the Workflow AI Should Fix First
               </div>
               <h3 className="font-serif text-xl md:text-2xl font-bold text-white mb-3 leading-snug">
-                Ready to achieve similar results?
+                Find the workflow AI should improve first
               </h3>
               <p className="text-sm text-white/60 leading-relaxed mb-5 max-w-xl">
-                Businesses looking to implement AI automation can book a strategy call with Ikram Rana to evaluate their workflows and identify automation opportunities.
+                Start with discovery. We will examine the workflow, the people involved, the risks, and whether AI is the right intervention before defining an implementation.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
@@ -302,13 +315,13 @@ export default function CaseStudyPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-electric text-white font-mono text-xs tracking-wide hover:opacity-90 transition-opacity"
                 >
-                  Book a strategy call <ArrowRight size={12} />
+                  Find the Workflow AI Should Fix First <ArrowRight size={12} />
                 </a>
                 <Link
                   href="/case-studies"
                   className="inline-flex items-center gap-2 px-5 py-2.5 border border-white/20 text-white/60 font-mono text-xs tracking-wide hover:border-white/40 hover:text-white/80 transition-colors no-underline"
                 >
-                  <ArrowLeft size={12} /> All case studies
+                  <ArrowLeft size={12} /> All illustrative use cases
                 </Link>
               </div>
             </motion.div>
@@ -325,14 +338,14 @@ export default function CaseStudyPage() {
                   On This Page
                 </div>
                 <nav className="flex flex-col gap-1">
-                  <a href="#results" className="font-mono text-[11px] text-green-400/80 hover:text-green-400 transition-colors py-1 border-l-2 border-green-400/40 pl-3">
+                  <a href="#results" className="font-mono text-[11px] text-green-700 hover:text-green-800 transition-colors py-1 border-l-2 border-green-600/40 pl-3">
                     Results
                   </a>
                   {tocEntries.filter(t => t.id !== 'results').map(entry => (
                     <a
                       key={entry.id}
                       href={`#${entry.id}`}
-                      className="font-mono text-[11px] text-white/40 hover:text-electric transition-colors py-1 border-l-2 border-white/10 hover:border-electric/40 pl-3"
+                      className="font-mono text-[11px] text-slate-dim hover:text-electric transition-colors py-1 border-l-2 border-border hover:border-electric/40 pl-3"
                     >
                       {entry.label}
                     </a>
@@ -340,10 +353,10 @@ export default function CaseStudyPage() {
                 </nav>
               </div>
 
-              {/* Other case studies */}
+              {/* Other illustrative use cases */}
               <div className="border border-border/40 p-5">
                 <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric mb-4">
-                  Other Case Studies
+                  Other Illustrative Use Cases
                 </div>
                 <div className="flex flex-col gap-3">
                   {otherStudies.map(other => (
@@ -352,7 +365,7 @@ export default function CaseStudyPage() {
                       href={`/case-studies/${other.slug}`}
                       className="group flex flex-col gap-1 no-underline"
                     >
-                      <span className="font-mono text-[10px] text-white/35">{other.industry}</span>
+                      <span className="font-mono text-[10px] text-slate-dim">{other.industry}</span>
                       <span className="font-serif text-xs text-muted-foreground group-hover:text-electric transition-colors leading-snug">
                         {other.metric}
                       </span>
@@ -366,8 +379,8 @@ export default function CaseStudyPage() {
                 <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric mb-3">
                   Get started
                 </div>
-                <p className="text-xs text-white/50 leading-relaxed mb-4">
-                  Book a strategy call to evaluate your workflows.
+                <p className="text-xs text-slate-text leading-relaxed mb-4">
+                  Find the Workflow AI Should Fix First to evaluate your workflows.
                 </p>
                 <a
                   href="https://calendly.com/ikramrana15"
@@ -375,7 +388,7 @@ export default function CaseStudyPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 font-mono text-[11px] text-electric hover:opacity-80 transition-opacity"
                 >
-                  Book a call <ArrowRight size={11} />
+                  Find the Workflow AI Should Fix First <ArrowRight size={11} />
                 </a>
               </div>
 

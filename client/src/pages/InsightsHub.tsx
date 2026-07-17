@@ -1,8 +1,8 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
- * INSIGHTS HUB PAGE — /insights/
+ * DESIGN: The Architect's Blueprint: Light Theme
+ * INSIGHTS HUB PAGE: /insights/
  * Hub linking to: Essays (/essays/) and Insight (/insight/)
- * Each has its own layout and URL — this page routes users cleanly.
+ * Each has its own layout and URL: this page routes users cleanly.
  */
 
 import { Link } from "wouter";
@@ -23,7 +23,7 @@ const insightTypes = [
     label: "Essays",
     meta: "Long-form writing",
     title: "Essays",
-    desc: "Structured arguments on AI adoption, governance, and decision architecture. Each essay develops a single idea in full — from premise to implication. Written for practitioners who need to think clearly, not just move fast.",
+    desc: "Structured arguments on AI adoption, governance, and decision architecture. Each essay develops a single idea in full: from premise to implication. Written for practitioners who need to think clearly, not just move fast.",
     href: "/essays",
     highlights: [
       "Why Buying More Software Makes Your Team Slower",
@@ -42,7 +42,7 @@ const insightTypes = [
     label: "Insight",
     meta: "Shorter observations",
     title: "Insight",
-    desc: "Shorter observations, patterns, and practical notes from the work. Less structured than essays — more immediate. These are the things worth saying before they become a full argument.",
+    desc: "Shorter observations, patterns, and practical notes from the work. Less structured than essays: more immediate. These are the things worth saying before they become a full argument.",
     href: "/insight",
     highlights: [
       "Operational patterns in AI adoption",
@@ -162,7 +162,7 @@ export default function InsightsHub() {
               New to this work?
             </h3>
             <p className="text-slate-text text-sm leading-relaxed mb-6">
-              The Foundational Essay is the best entry point. It covers the core argument in full — why AI adoption is fundamentally a governance problem, and what to do about it.
+              The Foundational Essay is the best entry point. It covers the core argument in full: why AI adoption is fundamentally a governance problem, and what to do about it.
             </p>
             <Link
               href="/foundational-essay"

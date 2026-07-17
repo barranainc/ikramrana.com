@@ -1,5 +1,5 @@
 /*
- * SOLUTION PAGE — /solutions/ai-for-growth/
+ * SOLUTION PAGE: /solutions/ai-for-growth/
  * Exact content per master implementation prompt
  */
 
@@ -113,18 +113,18 @@ export default function SolutionGrowth() {
 
         {/* Example Implementation */}
         <motion.div {...fadeUp} className="mb-12">
-          <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">Example Implementation</h2>
+          <h2 className="font-serif text-2xl font-semibold text-foreground mb-6">Illustrative Workflow Scenario</h2>
           <div className="rounded-2xl border border-border bg-card p-7">
             <p className="text-foreground/85 leading-relaxed mb-5">
-              A B2B services company had 3-day average lead response time and no qualification logic.
+              Consider a hypothetical B2B services company with delayed lead responses and no consistent qualification logic.
             </p>
             <p className="text-foreground/85 leading-relaxed mb-6">
-              We implemented AI-powered scoring, CRM-triggered follow-ups, and structured proposal drafting.
+              A possible design would introduce transparent qualification rules, CRM-triggered follow-ups, and structured proposal drafting with human review.
             </p>
             <div>
-              <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-emerald-600 block mb-3">Result</span>
+              <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-emerald-600 block mb-3">Measures to Establish</span>
               <ul className="space-y-2">
-                {["Response time reduced to under 2 hours", "22 percent increase in booked meetings", "Sales admin reduced by 9 hours weekly"].map((r, i) => (
+                {["Lead response time before and after implementation", "Qualified meetings booked from comparable lead volume", "Staff time spent on sales administration"].map((r, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-foreground/85">
                     <span className="w-1 h-1 rounded-full bg-emerald-500 mt-2 shrink-0" />
                     {r}
@@ -143,7 +143,7 @@ export default function SolutionGrowth() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-emerald-600 text-white font-semibold text-sm no-underline hover:translate-y-[-2px] hover:shadow-lg transition-all"
           >
-            Schedule a Growth Strategy Call <ArrowRight size={14} />
+            Find the Workflow AI Should Fix First <ArrowRight size={14} />
           </a>
         </motion.div>
 

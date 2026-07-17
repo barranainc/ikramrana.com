@@ -1,5 +1,5 @@
 /*
- * DESIGN: The Architect's Blueprint — Light Theme
+ * DESIGN: The Architect's Blueprint: Light Theme
  * ESSAY: The Meeting That Replaced the System
  */
 import { Link } from "wouter";
@@ -35,10 +35,10 @@ export default function EssayMeeting() {
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5">The Diagnostic Value of Meetings</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            When I map an organization's workflows, I pay close attention to their recurring meetings. Not because meetings are inherently problematic — some are genuinely valuable — but because certain types of meetings are diagnostic. They reveal where the system has failed to do what systems are supposed to do.
+            When I map an organization's workflows, I pay close attention to their recurring meetings. Not because meetings are inherently problematic: some are genuinely valuable: but because certain types of meetings are diagnostic. They reveal where the system has failed to do what systems are supposed to do.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The coordination meeting is the most common example. It appears in almost every organization I work with. It has different names — the weekly sync, the status update, the alignment call — but it serves the same function: it is where people manually do what the system should do automatically.
+            The coordination meeting is the most common example. It appears in almost every organization I work with. It has different names: the weekly sync, the status update, the alignment call: but it serves the same function: it is where people manually do what the system should do automatically.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
             When I see a recurring coordination meeting, I see a system design failure. The meeting is the workaround.
@@ -78,7 +78,7 @@ export default function EssayMeeting() {
         <motion.div {...fadeUp}>
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-5 mt-14">Why AI Doesn't Automatically Fix This</h2>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            Many organizations believe that adding AI tools will eliminate coordination overhead. Sometimes it does. More often, it doesn't — because the coordination overhead exists due to structural gaps in the system, and AI tools don't automatically fill structural gaps.
+            Many organizations believe that adding AI tools will eliminate coordination overhead. Sometimes it does. More often, it doesn't: because the coordination overhead exists due to structural gaps in the system, and AI tools don't automatically fill structural gaps.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
             An AI tool that generates a status report doesn't eliminate the meeting if the meeting exists because people don't trust the status report. An AI tool that assigns tasks doesn't eliminate the meeting if the meeting exists because ownership is genuinely ambiguous. An AI tool that surfaces conflicts doesn't eliminate the meeting if the meeting exists because conflicts require human negotiation to resolve.
@@ -94,10 +94,10 @@ export default function EssayMeeting() {
             Before implementing AI in any workflow, audit the meetings that surround it. For each recurring meeting, ask: what function is this meeting performing? Then ask: why isn't the system performing that function?
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            The answers will reveal the structural gaps that need to be addressed before — or alongside — any AI implementation. If information isn't visible, the system needs better data flows. If ownership is ambiguous, the system needs clearer decision architecture. If conflicts are frequent, the system needs better constraint design.
+            The answers will reveal the structural gaps that need to be addressed before: or alongside: any AI implementation. If information isn't visible, the system needs better data flows. If ownership is ambiguous, the system needs clearer decision architecture. If conflicts are frequent, the system needs better constraint design.
           </p>
           <p className="text-foreground/85 leading-relaxed mb-5">
-            When the structural gaps are addressed, the coordination meeting either disappears or transforms. Instead of a workaround, it becomes what meetings should be: a space for genuinely collaborative work that requires human presence — not a substitute for a system that doesn't work.
+            When the structural gaps are addressed, the coordination meeting either disappears or transforms. Instead of a workaround, it becomes what meetings should be: a space for genuinely collaborative work that requires human presence: not a substitute for a system that doesn't work.
           </p>
         </motion.div>
 
