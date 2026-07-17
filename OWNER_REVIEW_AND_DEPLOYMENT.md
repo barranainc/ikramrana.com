@@ -4,10 +4,11 @@ Last updated: 2026-07-16
 
 ## Current status
 
-- Pull request: https://github.com/barranainc/ikramrana.com/pull/4
+- Website foundation pull request: https://github.com/barranainc/ikramrana.com/pull/4
+- Canadian AI privacy package pull request: https://github.com/barranainc/ikramrana.com/pull/14
 - Branch merged into: `main`
-- Pull request state: merged on 2026-07-16
-- Merge commit: `8fb7fdb1f2a448e2315725ed33d3dc0164122fc3`
+- Canadian AI privacy package state: merged on 2026-07-16
+- Canadian AI privacy package merge commit: `669a63546f02013cc4bc0e726f47f8057f658c75`
 - Final GitHub Site check: passed
 - Live deployment: not completed
 - Deployment owner: Ikram Rana's hosting team
@@ -16,7 +17,16 @@ Last updated: 2026-07-16
 - Live asset pattern confirmed: the live site serves the hashed JavaScript and CSS referenced by the repository-root static export
 - Repository-root static export: reconciled with the validated production build, but not uploaded to Hostinger
 
-The approved website source is merged and ready for the hosting team. The merge did not change the live website.
+The approved website source, including both new authority articles, is merged and ready for the hosting team. The merge did not change the live website.
+
+## Authority article release
+
+This release includes both approved articles:
+
+- `/knowledge/canada-ai-adoption-2026`
+- `/knowledge/privacy-review-before-ai-pilot-canada`
+
+The generated site bundle, sitemap, and `llms.txt` include both articles. The production build and repository-root static export were checked before packaging.
 
 ## Final owner review
 
@@ -92,7 +102,7 @@ Use this only after the Hostinger path and access method are confirmed.
 
 The final authorization should explicitly confirm both decisions:
 
-- Approved to mark pull request 4 ready and merge into `main`.
+- Approved to merge pull request 14 into `main`.
 - Approved to deploy the identified commit through the confirmed Hostinger process.
 
 Do not treat approval to merge as approval to deploy.
@@ -106,14 +116,18 @@ Do not treat approval to merge as approval to deploy.
 - The editable and root-export versions of `robots.txt` and `sitemap.xml` now match.
 - The new portrait, `llms.txt`, diagrams, and hashed frontend assets are included in the root export.
 - Previous hashed assets remain available for rollback.
+- Both authority article routes are present in the generated JavaScript bundle.
+- `sitemap.xml` is valid XML and contains 131 URLs.
 
 ## Local deployment packages
 
 These packages are stored outside the Git repository in the sibling `deployment-packages/` folder.
 
-- Release: `ikramrana-cbeab8d-static-release.zip`
-- Release SHA-256: `1fa422695a19c73ac928ea5829f5254a76460189a4e932b9e23135b73b965651`
+- Current release: `ikramrana-669a635-static-release.zip`
+- Current release SHA-256: `a73dba138aa6a661c4e6a8cbf65baf5771488f8c91a86c31ed4728a1aceef2a8`
+- Previous release: `ikramrana-cbeab8d-static-release.zip`
+- Previous release SHA-256: `1fa422695a19c73ac928ea5829f5254a76460189a4e932b9e23135b73b965651`
 - Rollback: `ikramrana-b883a42-rollback.zip`
 - Rollback SHA-256: `af16913d3ab0f7e88d8eb501a1ed3acaa5b7a30f29434b89013c787a8f4307bc`
 
-Both archives passed compressed-file integrity checks. The release archive intentionally excludes `.htaccess`, `ops-kit/`, protected downloads, and unrelated production files so extracting it does not replace those items. The rollback archive contains the previous `index.html`, hashed frontend assets, robots file, and sitemap.
+All archives passed compressed-file integrity checks. The current release archive intentionally excludes `.htaccess`, `ops-kit/`, protected downloads, and unrelated production files so extracting it does not replace those items. The rollback archive contains the previous `index.html`, hashed frontend assets, robots file, and sitemap.
