@@ -6,7 +6,7 @@
  */
 
 import { Link, useLocation } from "wouter";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -72,6 +72,7 @@ function isActive(href: string, location: string): boolean {
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const mobileToggleRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
@@ -86,6 +87,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     const normalizedPath = location === "/" ? "/" : location.replace(/\/$/, "");
     canonical.href = `https://ikramrana.com${normalizedPath}`;
   }, [location]);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      setMobileOpen(false);
+      mobileToggleRef.current?.focus();
+    };
+
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [mobileOpen]);
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
@@ -142,6 +156,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Mobile toggle */}
           <button
+            ref={mobileToggleRef}
             className="lg:hidden p-2 text-slate-text hover:text-foreground transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle navigation"
@@ -211,7 +226,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Main content */}
-      <main id="main-content" className="flex-1 pt-16">
+      <main id="main-content" tabIndex={-1} className="flex-1 pt-16">
         {children}
       </main>
 

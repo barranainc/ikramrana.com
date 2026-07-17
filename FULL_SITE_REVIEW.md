@@ -158,7 +158,9 @@ Desktop and mobile visual review of the draft is in progress. A local browser pr
 - The industry opportunity diagram now stacks at mobile widths and asks readers to measure time, corrections, and exceptions instead of displaying unsupported generic time-saving ranges.
 - Browser zoom is no longer restricted. The main navigation now exposes expanded, controlled, current-page, landmark, and skip-link information. Reduced-motion preferences are respected, and the seven-column footer now has an intentional responsive grid.
 - The initial 390-pixel headless capture was discarded because the installed Chrome build enforced a wider minimum layout viewport and cropped the result. It was not treated as evidence of a website defect.
-- A real-device or interactive browser pass is still required for keyboard focus, Escape behaviour in the mobile menu, full-page footer placement, and manual LinkedIn navigation before the visual and interaction gate can be marked complete.
+- An interactive Chrome pass was completed on 2026-07-16 at 390-pixel mobile and 1440-pixel desktop viewports. It verified menu expansion, Escape-to-close with focus return, skip-link focus, current-page navigation state, route-change menu closure, CTA anchor behavior, use-case disclosure contrast, industry-page overflow, FAQ anchor offset, and the seven-column desktop footer. No runtime exceptions were recorded.
+- Automated interaction checks found and corrected two final defects: Escape did not close the mobile menu, and the skip link did not transfer focus to the main content.
+- Manual LinkedIn navigation remains the only external-destination check that automation could not complete because LinkedIn returns HTTP 999 to automated requests.
 - This representative review does not claim that every one of the 129 sitemap URLs was individually captured.
 
 ### External destinations
@@ -186,9 +188,8 @@ Do not mark this pull request ready or deploy it until all of the following are 
 
 ## Next work order
 
-1. Complete the final interactive desktop and mobile pass for keyboard focus, mobile-menu behaviour, full-page footer placement, and manual LinkedIn navigation.
-2. Recheck forms, navigation, and primary calls to action in that interactive pass. Calendly already resolves and the broken router-based external CTAs have been corrected.
-3. Present the final owner review list.
-4. Confirm Hostinger deployment and rollback steps.
-5. Reconcile the stale root static export with the confirmed deployment path.
-6. Only then consider marking the pull request ready.
+1. Complete the final owner review list in `OWNER_REVIEW_AND_DEPLOYMENT.md`.
+2. Manually open the LinkedIn profile destination in a normal browser session.
+3. Confirm the exact Hostinger deployment method, web-root path, backup method, and rollback access.
+4. Reconcile the stale root static export with the confirmed deployment path.
+5. Only then consider marking the pull request ready, merging, and deploying.
