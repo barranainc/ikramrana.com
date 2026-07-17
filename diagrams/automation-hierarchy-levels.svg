@@ -8,7 +8,7 @@
   <!-- Title -->
   <rect width="900" height="55" rx="12" fill="#0a1628"/>
   <rect y="43" width="900" height="12" fill="#0a1628"/>
-  <text x="450" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">The Automation Hierarchy — Start at Level 1, Advance Through Proven Accuracy</text>
+  <text x="450" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">The Automation Hierarchy: Start at Level 1, Advance Through Proven Accuracy</text>
   
   <!-- Level 4 (top) -->
   <rect x="180" y="80" width="540" height="75" rx="10" fill="white" stroke="#7c3aed" stroke-width="2" filter="url(#shadow)"/>

@@ -17,7 +17,7 @@
   <!-- Title -->
   <rect width="900" height="55" rx="12" fill="#0a1628"/>
   <rect y="43" width="900" height="12" fill="#0a1628"/>
-  <text x="450" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">Client Intake Workflow Template — Automated End-to-End</text>
+  <text x="450" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">Client Intake Workflow Template: Automated End-to-End</text>
   
   <!-- TRIGGER -->
   <rect x="340" y="80" width="220" height="50" rx="25" fill="#0066cc" filter="url(#shadow)"/>

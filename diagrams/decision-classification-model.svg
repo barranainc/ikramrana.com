@@ -8,7 +8,7 @@
   <!-- Title -->
   <rect width="900" height="55" rx="12" fill="#0a1628"/>
   <rect y="43" width="900" height="12" fill="#0a1628"/>
-  <text x="450" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">Decision Classification Model — Which Decisions Should AI Handle?</text>
+  <text x="450" y="36" text-anchor="middle" fill="white" font-size="18" font-weight="700">Decision Classification Model: Which Decisions Should AI Handle?</text>
   
   <!-- Category A -->
   <rect x="30" y="80" width="200" height="340" rx="10" fill="white" stroke="#16a34a" stroke-width="2" filter="url(#shadow)"/>
@@ -108,7 +108,7 @@
   
   <rect x="695" y="360" width="160" height="44" rx="6" fill="#fee2e2"/>
   <text x="775" y="378" text-anchor="middle" fill="#dc2626" font-size="10" font-weight="600">HUMAN INVOLVEMENT:</text>
-  <text x="775" y="394" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="700">100% — AI not appropriate</text>
+  <text x="775" y="394" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="700">100%: AI not appropriate</text>
   
   <!-- Bottom -->
   <rect x="30" y="435" width="845" height="45" rx="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>

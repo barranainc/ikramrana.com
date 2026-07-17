@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /ops-kit/
-Disallow: /assets/opskit-a8f3k1/
 
 Sitemap: https://ikramrana.com/sitemap.xml

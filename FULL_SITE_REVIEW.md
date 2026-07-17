@@ -171,7 +171,9 @@ The live domain, Barrana, and Real Life AI resolved during the review. The Calen
 
 The live website still showed the previous "AI Automation Strategist for Businesses" title when checked. This confirms that the draft branch is not deployed. Merging GitHub changes and publishing through Hostinger are separate operations.
 
-The editable sitemap at `client/public/sitemap.xml` contains 129 URLs. The root static export sitemap contains 128 URLs and is not identical. This is part of the known stale-root-export risk and must be reconciled only after the Hostinger deployment path is confirmed.
+Live response headers and asset filenames confirmed on 2026-07-16 that Hostinger hPanel and hCDN serve the repository-root static export pattern. The root export has now been reconciled with the validated production build. Its sitemap and robots files match the editable public versions, and it includes the current portrait, `llms.txt`, diagrams, and hashed assets. The reconciled export has not been uploaded to Hostinger.
+
+The build source now preserves the Google Analytics measurement ID, Microsoft Clarity project, and Google site verification used by the live site. Unresolved analytics environment placeholders were removed before the root export was generated.
 
 ## Merge gate
 
@@ -190,6 +192,5 @@ Do not mark this pull request ready or deploy it until all of the following are 
 
 1. Complete the final owner review list in `OWNER_REVIEW_AND_DEPLOYMENT.md`.
 2. Manually open the LinkedIn profile destination in a normal browser session.
-3. Confirm the exact Hostinger deployment method, web-root path, backup method, and rollback access.
-4. Reconcile the stale root static export with the confirmed deployment path.
-5. Only then consider marking the pull request ready, merging, and deploying.
+3. Confirm the exact Hostinger upload method, web-root path, backup method, and rollback access.
+4. Only then consider marking the pull request ready, merging, and deploying the reconciled root export.

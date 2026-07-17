@@ -11,6 +11,9 @@ Last updated: 2026-07-16
 - Latest inspected GitHub Site check: passed
 - Live deployment: not completed
 - Hostinger deployment automation: not present in this repository
+- Live platform confirmed from response headers: Hostinger hPanel with hCDN
+- Live asset pattern confirmed: the live site serves the hashed JavaScript and CSS referenced by the repository-root static export
+- Repository-root static export: reconciled with the validated production build, but not uploaded to Hostinger
 
 The website source is ready for final owner review. Merging and deployment remain separate actions and should not occur until the hosting and rollback details below are confirmed.
 
@@ -53,10 +56,10 @@ Previously approved positioning, audience, Barrana identity, primary CTA, biogra
 
 ## Deployment facts still required
 
-Confirm these items from the Hostinger account before deployment:
+The public platform and static-export pattern are now confirmed. Confirm these remaining items from the Hostinger account before deployment:
 
 - The production web-root path, commonly `public_html`, but it must not be assumed.
-- Whether the current site is uploaded manually, through Git, through a Hostinger deployment feature, or through another process.
+- Whether the root static export is uploaded manually, through Git, through a Hostinger deployment feature, or through another process.
 - Whether a staging domain or staging folder is available.
 - How the current production files will be backed up and downloaded.
 - Who has permission to restore the backup if deployment fails.
@@ -92,3 +95,13 @@ The final authorization should explicitly confirm both decisions:
 - Approved to deploy the identified commit through the confirmed Hostinger process.
 
 Do not treat approval to merge as approval to deploy.
+
+## Release preservation checks completed
+
+- Google Analytics measurement ID `G-1EVHTVWK2L` is preserved in the production build.
+- Microsoft Clarity project `w0upr4yih0` is preserved in the production build.
+- Google site verification is preserved in the production build.
+- Unresolved analytics environment placeholders were removed.
+- The editable and root-export versions of `robots.txt` and `sitemap.xml` now match.
+- The new portrait, `llms.txt`, diagrams, and hashed frontend assets are included in the root export.
+- Previous hashed assets remain available for rollback.
