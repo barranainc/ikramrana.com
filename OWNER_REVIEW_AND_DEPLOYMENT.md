@@ -105,3 +105,14 @@ Do not treat approval to merge as approval to deploy.
 - The editable and root-export versions of `robots.txt` and `sitemap.xml` now match.
 - The new portrait, `llms.txt`, diagrams, and hashed frontend assets are included in the root export.
 - Previous hashed assets remain available for rollback.
+
+## Local deployment packages
+
+These packages are stored outside the Git repository in the sibling `deployment-packages/` folder.
+
+- Release: `ikramrana-cbeab8d-static-release.zip`
+- Release SHA-256: `1fa422695a19c73ac928ea5829f5254a76460189a4e932b9e23135b73b965651`
+- Rollback: `ikramrana-b883a42-rollback.zip`
+- Rollback SHA-256: `af16913d3ab0f7e88d8eb501a1ed3acaa5b7a30f29434b89013c787a8f4307bc`
+
+Both archives passed compressed-file integrity checks. The release archive intentionally excludes `.htaccess`, `ops-kit/`, protected downloads, and unrelated production files so extracting it does not replace those items. The rollback archive contains the previous `index.html`, hashed frontend assets, robots file, and sitemap.

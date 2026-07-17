@@ -175,6 +175,8 @@ Live response headers and asset filenames confirmed on 2026-07-16 that Hostinger
 
 The build source now preserves the Google Analytics measurement ID, Microsoft Clarity project, and Google site verification used by the live site. Unresolved analytics environment placeholders were removed before the root export was generated.
 
+A static upload archive for commit `cbeab8d` and a rollback archive for the preceding production export were created in the local sibling `deployment-packages/` folder. Both archives passed integrity checks. They have not been uploaded or deployed.
+
 ## Merge gate
 
 Do not mark this pull request ready or deploy it until all of the following are complete:
