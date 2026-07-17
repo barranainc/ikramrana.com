@@ -210,7 +210,7 @@ export default function LocationPage() {
                   {...fadeUp}
                   transition={{ ...fadeUp.transition, delay: idx * 0.06 }}
                   id={`section-${idx}`}
-                  className="mb-12"
+                  className="mb-12 scroll-mt-24"
                 >
                   {/* Section label */}
                   <div className="flex items-center gap-3 mb-4">
@@ -272,7 +272,7 @@ export default function LocationPage() {
             )}
 
             {/* FAQ Section */}
-            <motion.div {...fadeUp} className="mb-12">
+            <motion.div id="faq" {...fadeUp} className="mb-12 scroll-mt-24">
               <div className="flex items-center gap-3 mb-6">
                 <span className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric px-2 py-1 border border-electric/30 bg-electric/5">
                   FAQ

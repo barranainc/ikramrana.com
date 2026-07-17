@@ -150,11 +150,11 @@ export default function CaseStudyPage() {
 
           {/* Main content column */}
           <div>
-            <div className="mb-8 border border-amber-400/35 bg-amber-400/5 p-5">
-              <div className="font-mono text-[10px] tracking-[0.16em] uppercase text-amber-300 mb-2">
+            <div className="mb-8 border border-amber-500/35 bg-amber-500/5 p-5">
+              <div className="font-mono text-[10px] tracking-[0.16em] uppercase text-amber-700 mb-2">
                 Illustrative scenario
               </div>
-              <p className="text-sm text-white/70 leading-relaxed">
+              <p className="text-sm text-slate-text leading-relaxed">
                 This page is a demonstration of how an AI-enabled workflow could be designed for this type of business. The company, implementation, and figures are hypothetical examples. They are not presented as a client engagement or as measured results.
               </p>
             </div>
@@ -181,7 +181,7 @@ export default function CaseStudyPage() {
                 <p className="font-serif text-2xl md:text-3xl font-bold text-foreground leading-snug mb-2">
                   {cs.metric}
                 </p>
-                <p className="font-mono text-xs text-white/45">
+                <p className="font-mono text-xs text-slate-dim">
                   {cs.industry} · Hypothetical Workflow Scenario
                 </p>
               </div>
@@ -216,7 +216,7 @@ export default function CaseStudyPage() {
                   id={key}
                   {...fadeUp}
                   transition={{ ...fadeUp.transition, delay: idx * 0.05 }}
-                  className="mb-10"
+                  className="mb-10 scroll-mt-24"
                 >
                   {/* Section label */}
                   <div className="flex items-center gap-3 mb-4">
@@ -267,7 +267,7 @@ export default function CaseStudyPage() {
                       );
                     }
                     return (
-                      <span key={i} className="font-mono text-xs text-white/35">{link}</span>
+                      <span key={i} className="font-mono text-xs text-slate-dim">{link}</span>
                     );
                   })}
                 </div>
@@ -338,14 +338,14 @@ export default function CaseStudyPage() {
                   On This Page
                 </div>
                 <nav className="flex flex-col gap-1">
-                  <a href="#results" className="font-mono text-[11px] text-green-400/80 hover:text-green-400 transition-colors py-1 border-l-2 border-green-400/40 pl-3">
+                  <a href="#results" className="font-mono text-[11px] text-green-700 hover:text-green-800 transition-colors py-1 border-l-2 border-green-600/40 pl-3">
                     Results
                   </a>
                   {tocEntries.filter(t => t.id !== 'results').map(entry => (
                     <a
                       key={entry.id}
                       href={`#${entry.id}`}
-                      className="font-mono text-[11px] text-white/40 hover:text-electric transition-colors py-1 border-l-2 border-white/10 hover:border-electric/40 pl-3"
+                      className="font-mono text-[11px] text-slate-dim hover:text-electric transition-colors py-1 border-l-2 border-border hover:border-electric/40 pl-3"
                     >
                       {entry.label}
                     </a>
@@ -365,7 +365,7 @@ export default function CaseStudyPage() {
                       href={`/case-studies/${other.slug}`}
                       className="group flex flex-col gap-1 no-underline"
                     >
-                      <span className="font-mono text-[10px] text-white/35">{other.industry}</span>
+                      <span className="font-mono text-[10px] text-slate-dim">{other.industry}</span>
                       <span className="font-serif text-xs text-muted-foreground group-hover:text-electric transition-colors leading-snug">
                         {other.metric}
                       </span>
@@ -379,7 +379,7 @@ export default function CaseStudyPage() {
                 <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-electric mb-3">
                   Get started
                 </div>
-                <p className="text-xs text-white/50 leading-relaxed mb-4">
+                <p className="text-xs text-slate-text leading-relaxed mb-4">
                   Find the Workflow AI Should Fix First to evaluate your workflows.
                 </p>
                 <a
@@ -388,7 +388,7 @@ export default function CaseStudyPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 font-mono text-[11px] text-electric hover:opacity-80 transition-opacity"
                 >
-                  Book a call <ArrowRight size={11} />
+                  Find the Workflow AI Should Fix First <ArrowRight size={11} />
                 </a>
               </div>
 

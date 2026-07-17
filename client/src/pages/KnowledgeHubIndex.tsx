@@ -172,13 +172,15 @@ export default function KnowledgeHubIndex() {
             <p className="font-sans text-[15px] text-slate-text leading-relaxed mb-8">
               Each page follows a consistent structure: a precise definition, business context, a practical example, a named framework, common mistakes, and an expert perspective from Ikram Rana.
             </p>
-            <Link
+            <a
               href="https://calendly.com/ikramrana15"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-electric text-white px-7 py-3 font-sans font-medium text-sm hover:bg-electric-dim transition-colors no-underline"
             >
               Find the Workflow AI Should Fix First
               <ArrowRight size={15} />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

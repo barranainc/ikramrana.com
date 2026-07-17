@@ -100,6 +100,7 @@ A passing build does not mean this objective is complete.
 - Static preview artifact generated successfully for commit `1b9eeda76a5bda35767f9a232f30d4bc01044d45`
 - Local TypeScript check passed after the qualitative-claim audit on 2026-07-16.
 - Local production build passed after the qualitative-claim audit on 2026-07-16.
+- Local TypeScript, frontend production build, and server bundle passed after the representative visual-review fixes on 2026-07-16.
 - Route audit found 50 route patterns, 106 literal internal links, and no broken literal internal routes.
 - The editable client sitemap contains 129 URLs and covers all literal internal destinations found by the audit.
 - GitHub Site checks passed for qualitative-claim audit commit `450bac486f429af67d227ecfc25ef7566056ebcd`: https://github.com/barranainc/ikramrana.com/actions/runs/29537752407
@@ -148,9 +149,17 @@ Desktop and mobile visual review of the draft is in progress. A local browser pr
 
 - The homepage hero was reviewed at desktop width. Its remote portrait failed to render because the CDN returned the WebP file as `application/octet-stream` with `nosniff`. The existing portrait is now served from `client/public/images/ikram-rana-hero.webp`, and the corrected desktop hero was visually verified.
 - The contact page was reviewed at mobile width. The header, mobile menu control, page copy, Calendly option, and LinkedIn option render without visible overflow in the captured viewport.
+- Representative browser captures were completed for the About page, AI Adoption Framework, automation solution, blog article, knowledge guide, industry guide, Vaughan location guide, and illustrative-use-case detail at desktop or mobile widths.
+- The About, framework, solution, blog, industry, and location captures showed no blocking first-viewport layout defect.
+- The illustrative-use-case detail template used low-contrast white text on the light content background. Its hypothetical disclosure, scenario caption, sidebar, and supporting labels were corrected, and the mobile result was visually verified. The corresponding use-case index labels were also corrected.
+- Knowledge and industry page and index templates used internal-router links for external Calendly destinations. These were replaced with normal external links so the CTA can leave the site correctly.
+- Knowledge-guide text now handles both stored newline formats instead of collapsing intended paragraphs.
+- The location FAQ table-of-contents link now reaches a real target. Fixed-header offsets were added for in-page navigation.
+- The industry opportunity diagram now stacks at mobile widths and asks readers to measure time, corrections, and exceptions instead of displaying unsupported generic time-saving ranges.
+- Browser zoom is no longer restricted. The main navigation now exposes expanded, controlled, current-page, landmark, and skip-link information. Reduced-motion preferences are respected, and the seven-column footer now has an intentional responsive grid.
 - The initial 390-pixel headless capture was discarded because the installed Chrome build enforced a wider minimum layout viewport and cropped the result. It was not treated as evidence of a website defect.
-- Representative checks of the About, framework, solution, illustrative-use-case, blog, knowledge, industry, and location templates are still required before desktop or mobile review can pass.
-- Menu interaction, link destinations, forms, typography, and full-page regressions remain part of the open review gate.
+- A real-device or interactive browser pass is still required for keyboard focus, Escape behaviour in the mobile menu, full-page footer placement, and manual LinkedIn navigation before the visual and interaction gate can be marked complete.
+- This representative review does not claim that every one of the 129 sitemap URLs was individually captured.
 
 ### External destinations
 
@@ -177,8 +186,8 @@ Do not mark this pull request ready or deploy it until all of the following are 
 
 ## Next work order
 
-1. Complete desktop and mobile visual review.
-2. Recheck LinkedIn, Calendly, forms, navigation, and primary calls to action in a browser.
+1. Complete the final interactive desktop and mobile pass for keyboard focus, mobile-menu behaviour, full-page footer placement, and manual LinkedIn navigation.
+2. Recheck forms, navigation, and primary calls to action in that interactive pass. Calendly already resolves and the broken router-based external CTAs have been corrected.
 3. Present the final owner review list.
 4. Confirm Hostinger deployment and rollback steps.
 5. Reconcile the stale root static export with the confirmed deployment path.

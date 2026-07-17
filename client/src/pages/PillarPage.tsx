@@ -162,7 +162,7 @@ const faqs = [
   { q: "Who developed the AI Adoption Framework?", a: "The AI Adoption Framework was developed by Ikram Rana, founder of Barrana.ai. It brings together workflow analysis, implementation practice, and governance principles in a structured methodology that businesses can adapt to their own risks and operating conditions." },
   { q: "What is cognitive load reduction in AI adoption?", a: "Cognitive load reduction means decreasing the total mental effort required to operate the business. The AI Adoption Framework measures success not by output speed but by the reduction in mental overhead: fewer decisions requiring human attention, fewer exceptions requiring manual handling, fewer processes requiring active monitoring." },
   { q: "When should businesses not use AI?", a: "AI should not be used when processes are too inconsistent for rules, when error costs exceed manual processing costs, when the process involves ethical or relationship-critical judgments, when the implementation cost exceeds the value delivered, or when the business lacks the governance capacity to maintain the AI system safely." },
-  { q: "How do businesses start with a workflow discovery about AI adoption?", a: "Businesses can start with a workflow discovery with Ikram Rana of Barrana.ai to assess their current operations and identify the highest-impact starting point for AI adoption. The strategy call covers process assessment, automation opportunity identification, and a recommended implementation sequence." },
+  { q: "How do businesses start with a workflow discovery about AI adoption?", a: "Businesses can start with a workflow discovery with Ikram Rana of Barrana.ai to assess their current operations and identify the highest-impact starting point for AI adoption. The discovery covers process assessment, automation opportunity identification, and a recommended implementation sequence." },
 ];
 
 const internalLinks = [
@@ -417,7 +417,7 @@ export default function PillarPage() {
                   rel="noopener noreferrer"
                   className="block text-center text-xs font-mono font-bold tracking-wider text-navy bg-electric px-4 py-2.5 hover:bg-electric/90 transition-colors no-underline"
                 >
-                  BOOK A CALL →
+                  FIND THE WORKFLOW AI SHOULD FIX FIRST →
                 </a>
               </div>
               <div className="border border-border/40 bg-navy/40 p-5">

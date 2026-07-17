@@ -274,7 +274,7 @@ export default function IndustryIndex() {
             </svg>
             <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <div>
-                <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric mb-2">STRATEGY CALL</p>
+                <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric mb-2">WORKFLOW DISCOVERY</p>
                 <h3 className="font-serif text-xl font-bold text-foreground mb-2">
                   Ready to implement AI in your industry?
                 </h3>
@@ -282,13 +282,15 @@ export default function IndustryIndex() {
                   Find the Workflow AI Should Fix First with Ikram Rana to evaluate your workflows and identify the right automation opportunities for your specific industry.
                 </p>
               </div>
-              <Link
+              <a
                 href="https://calendly.com/ikramrana15"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="shrink-0 inline-flex items-center gap-2 bg-electric text-white px-6 py-3 font-sans font-medium text-sm hover:bg-electric/90 transition-colors no-underline"
               >
                 Find the Workflow AI Should Fix First
                 <ArrowRight size={14} />
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

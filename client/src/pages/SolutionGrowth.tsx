@@ -143,7 +143,7 @@ export default function SolutionGrowth() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-emerald-600 text-white font-semibold text-sm no-underline hover:translate-y-[-2px] hover:shadow-lg transition-all"
           >
-            Schedule a Growth Strategy Call <ArrowRight size={14} />
+            Find the Workflow AI Should Fix First <ArrowRight size={14} />
           </a>
         </motion.div>
 

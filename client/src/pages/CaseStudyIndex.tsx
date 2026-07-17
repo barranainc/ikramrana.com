@@ -116,7 +116,7 @@ export default function CaseStudyIndex() {
                           >
                             {cs.industry}
                           </span>
-                          <span className="font-mono text-[10px] text-white/25">
+                          <span className="font-mono text-[10px] text-slate-dim">
                             Illustrative Scenario
                           </span>
                         </div>
@@ -132,7 +132,7 @@ export default function CaseStudyIndex() {
                           <p className="font-serif text-xl font-bold text-foreground leading-snug">
                             {cs.metric}
                           </p>
-                          <p className="font-mono text-[10px] text-white/40 mt-1">
+                          <p className="font-mono text-[10px] text-slate-dim mt-1">
                             Example outcome to measure
                           </p>
                         </div>

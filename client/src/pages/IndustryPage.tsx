@@ -336,6 +336,7 @@ export default function IndustryPage() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: 0.05 + i * 0.05 }}
                       aria-labelledby={`${sectionId}-heading`}
+                      className="scroll-mt-24"
                     >
                       <div className="flex items-center gap-3 mb-6">
                         <span
@@ -378,7 +379,7 @@ export default function IndustryPage() {
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.4 }}
-                  className="mt-14 pt-12 border-t border-border"
+                  className="mt-14 pt-12 border-t border-border scroll-mt-24"
                   itemScope
                   itemType="https://schema.org/FAQPage"
                   aria-labelledby="faq-heading"
@@ -412,7 +413,7 @@ export default function IndustryPage() {
                 </svg>
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric">STRATEGY CALL</span>
+                    <span className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric">WORKFLOW DISCOVERY</span>
                     <div className="h-px flex-1 bg-border/40" />
                   </div>
                   <h3 className="font-serif text-xl font-bold text-foreground mb-3">
@@ -421,13 +422,15 @@ export default function IndustryPage() {
                   <p className="font-sans text-[14px] text-slate-text leading-relaxed mb-6 max-w-lg">
                     Find the Workflow AI Should Fix First with Ikram Rana to evaluate your workflows, identify the right automation opportunities, and build a structured implementation plan.
                   </p>
-                  <Link
+                  <a
                     href="https://calendly.com/ikramrana15"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-electric text-white px-6 py-3 font-sans font-medium text-sm hover:bg-electric/90 transition-colors no-underline"
                   >
                     Find the Workflow AI Should Fix First
                     <ArrowRight size={14} />
-                  </Link>
+                  </a>
                 </div>
               </motion.div>
 
@@ -531,17 +534,19 @@ export default function IndustryPage() {
 
                 {/* Mini CTA */}
                 <div className="border border-electric/20 bg-electric/5 p-5">
-                  <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric mb-3">STRATEGY CALL</p>
+                  <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-electric mb-3">WORKFLOW DISCOVERY</p>
                   <p className="font-sans text-[12px] text-slate-text leading-relaxed mb-4">
                     Ready to implement AI in your business?
                   </p>
-                  <Link
+                  <a
                     href="https://calendly.com/ikramrana15"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-electric text-white px-4 py-2 font-sans font-medium text-[12px] hover:bg-electric/90 transition-colors no-underline w-full justify-center"
                   >
-                    Book a call
+                    Find the Workflow AI Should Fix First
                     <ArrowRight size={12} />
-                  </Link>
+                  </a>
                 </div>
 
               </div>

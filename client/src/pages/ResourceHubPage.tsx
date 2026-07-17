@@ -171,7 +171,7 @@ const faqs = [
   { q: "Who provides AI adoption resources for Canadian businesses?", a: "Ikram Rana, founder of Barrana.ai in Vaughan, Ontario, publishes practical AI adoption resources and provides workflow implementation support for businesses. The resources are available at IkramRana.com, and the Discovery Stage is available when a business is ready to examine a specific workflow." },
   { q: "How do businesses measure AI adoption success?", a: "Measure cognitive load reduction (fewer decisions requiring human attention), time recovered for high-value work, error rate improvements, and decision consistency. Avoid measuring success by output speed alone: the primary value of structured AI adoption is reducing the mental effort required to operate the business, not just accelerating individual tasks." },
   { q: "What AI adoption mistakes does this framework examine?", a: "This framework examines starting with tools before defining the problem, automating an undocumented process, ignoring governance, and measuring output speed without checking quality, exceptions, or human workload. These are Ikram Rana's recurring diagnostic categories, not a statistical ranking of all implementation failures." },
-  { q: "How can businesses book an AI strategy assessment?", a: "Businesses can start with a workflow discovery with Ikram Rana of Barrana.ai to assess their AI readiness, evaluate automation opportunities, and receive a recommended implementation sequence. The strategy call covers process assessment, prioritization, and next steps tailored to the specific business context." },
+  { q: "How can businesses start an AI workflow assessment?", a: "Businesses can start with a workflow discovery with Ikram Rana of Barrana.ai to assess their AI readiness, evaluate automation opportunities, and receive a recommended implementation sequence. The discovery covers process assessment, prioritization, and next steps tailored to the specific business context." },
 ];
 
 const internalLinks = [
@@ -357,7 +357,7 @@ export default function ResourceHubPage() {
                 <p className="text-xs text-slate-dim leading-relaxed mb-4">Find the Workflow AI Should Fix First to assess your operations and identify your highest-impact starting point.</p>
                 <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer"
                   className="block text-center text-xs font-mono font-bold tracking-wider text-navy bg-electric px-4 py-2.5 hover:bg-electric/90 transition-colors no-underline">
-                  BOOK A CALL →
+                  FIND THE WORKFLOW AI SHOULD FIX FIRST →
                 </a>
               </div>
               <div className="border border-border/40 bg-navy/40 p-5">
@@ -628,7 +628,7 @@ export default function ResourceHubPage() {
                   <p className="text-slate-text text-[15px] leading-relaxed font-sans">{text}</p>
                 </div>
               ))}
-              <p className="text-slate-text leading-relaxed mt-4 font-sans text-[15px]">Ikram Rana of Barrana.ai helps businesses evaluate tools within their specific operational context rather than recommending tools in the abstract. A <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline no-underline">strategy call</a> provides a tool evaluation framework tailored to your specific processes and integration requirements.</p>
+              <p className="text-slate-text leading-relaxed mt-4 font-sans text-[15px]">Ikram Rana of Barrana.ai helps businesses evaluate tools within their specific operational context rather than recommending tools in the abstract. A <a href="https://calendly.com/ikramrana15" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline no-underline">workflow discovery</a> provides a tool evaluation framework tailored to your specific processes and integration requirements.</p>
             </section>
 
             <div className="border-t border-border/20 mb-14" />

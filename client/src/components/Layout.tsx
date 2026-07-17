@@ -89,6 +89,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-background focus:px-4 focus:py-3 focus:text-electric focus:shadow-lg"
+      >
+        Skip to main content
+      </a>
       {/* Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/60 backdrop-blur-md bg-background/90">
         <div className="container flex items-center justify-between h-16">
@@ -106,7 +112,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1" aria-label="Primary navigation">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -116,12 +122,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     ? "text-electric bg-electric/10"
                     : "text-slate-text hover:text-foreground hover:bg-foreground/5"
                 }`}
+                aria-current={isActive(link.href, location) ? "page" : undefined}
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/contact"
+              aria-current={location === "/contact" ? "page" : undefined}
               className={`ml-2 px-4 py-1.5 text-[13px] font-sans rounded-lg border transition-colors duration-200 no-underline ${
                 location === "/contact"
                   ? "text-electric border-electric/30 bg-electric/10"
@@ -137,6 +145,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             className="lg:hidden p-2 text-slate-text hover:text-foreground transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle navigation"
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation"
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -146,6 +156,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <AnimatePresence>
           {mobileOpen && (
             <motion.nav
+              id="mobile-navigation"
+              aria-label="Mobile navigation"
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
@@ -161,6 +173,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                       : "text-slate-text hover:text-foreground"
                   }`}
                   onClick={() => setMobileOpen(false)}
+                  aria-current={location === "/" ? "page" : undefined}
                 >
                   Home
                 </Link>
@@ -174,12 +187,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                         : "text-slate-text hover:text-foreground"
                     }`}
                     onClick={() => setMobileOpen(false)}
+                    aria-current={isActive(link.href, location) ? "page" : undefined}
                   >
                     {link.label}
                   </Link>
                 ))}
                 <Link
                   href="/contact"
+                  aria-current={location === "/contact" ? "page" : undefined}
                   className={`px-3 py-2 text-sm font-sans no-underline transition-colors rounded-lg ${
                     location === "/contact"
                       ? "text-electric bg-electric/10"
@@ -196,14 +211,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Main content */}
-      <main className="flex-1 pt-16">
+      <main id="main-content" className="flex-1 pt-16">
         {children}
       </main>
 
       {/* Footer */}
       <footer className="border-t border-border/40 bg-navy">
         <div className="container py-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-8">
             {/* Brand column */}
             <div className="sm:col-span-1">
               <h4 className="font-serif text-base font-semibold text-foreground">Ikram Rana</h4>
@@ -323,7 +338,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-border/30 flex items-center justify-between">
+          <div className="mt-10 pt-6 border-t border-border/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
             <p className="font-mono text-[11px] tracking-wider text-slate-dim">
               &copy; {new Date().getFullYear()} Ikram Rana
             </p>
