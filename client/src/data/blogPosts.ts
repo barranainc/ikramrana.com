@@ -32,6 +32,93 @@ interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "privacy-review-before-ai-pilot-canada",
+    title: "The Privacy Review Belongs Before the AI Pilot, Not After It",
+    metaDescription: "A practical Canadian business checklist for deciding what information an AI workflow may use, where it goes, and what must remain human.",
+    publishDate: "2026-07-16",
+    reviewedDate: "2026-07-16",
+    showDiagrams: false,
+    tags: ["AI Privacy", "Canada", "AI Governance", "AI Adoption"],
+    intro: [
+      "A harmless-looking AI demonstration can change character as soon as a business connects real customer, employee, prospect, patient, financial, or operational information. The question is no longer whether the tool can produce an impressive output. The question is whether the organization can explain and control the collection, use, disclosure, retention, accuracy, access, and protection of the information involved.",
+      "The Office of the Privacy Commissioner of Canada advises organizations using generative AI to address legal authority, meaningful consent where applicable, transparency, explainability, safeguards, limits on sharing personal or confidential information, and privacy by design. These are not questions to postpone until the pilot succeeds.",
+      "My practical position is that privacy review belongs before real information enters the AI workflow. This article is educational, not legal advice. Applicable requirements depend on the organization, jurisdiction, sector, information, individuals affected, and proposed activity.",
+    ],
+    sections: [
+      {
+        heading: "Why the privacy review must happen before the demonstration becomes a workflow",
+        content: "A demonstration often uses fictional or sanitized information. An operational workflow usually does not. It may read messages, summarize records, classify requests, recommend actions, create documents, update systems, or communicate with people. Each connection can change what information is collected, why it is used, who receives it, how long it remains available, and what consequences follow from an error.\nThe 2026 joint investigation by Canadian privacy regulators into early ChatGPT models identified concerns involving overcollection, valid consent and transparency, factual accuracy involving personal information, access and correction, deletion, and accountability. That investigation concerned the provider's development and deployment practices. It also gives organizations a useful warning against treating privacy as a vendor checkbox.\nA business remains responsible for understanding its own use. A tool's availability, popularity, security page, Canadian server option, or contractual promise does not answer whether a particular workflow and information use is appropriate and lawful.",
+      },
+      {
+        heading: "The ten questions to answer before real information enters AI",
+        content: "**1. What exact business purpose requires AI?** Name the workflow, the problem, the intended result, and why AI is necessary or proportionate. Potential usefulness is not enough for a high-impact use.\n**2. What information will enter or be created?** List the fields, documents, prompts, recordings, images, system data, outputs, and inferences. Identify personal, sensitive, confidential, privileged, regulated, or children's information.\n**3. What is the authority for each collection, use, and disclosure?** Document the applicable purpose and legal authority. If consent is relied upon, determine whether a person can reasonably understand the nature, purpose, and consequences. Exceptions and sector-specific rules require qualified review.\n**4. Can the same outcome be achieved with less information?** Remove unnecessary fields. Prefer anonymous, de-identified, synthetic, or fictional information when it is sufficient. Do not place personal information in a prompt simply because it is available.\n**5. Where does the information go?** Identify the provider, hosting and processing locations, subprocessors, integrations, logs, support access, model-improvement settings, retention, deletion, and export paths. Data residency is one question, not the complete privacy analysis.\n**6. What is the provider allowed to do?** Review the contract and settings for training, secondary uses, disclosure, security, breach notification, deletion, audit, portability, subcontracting, and changes to terms. The business should know what it can enforce, not only what the marketing page promises.\n**7. Who can access or act on the information?** Apply the minimum access required for the workflow. Define user roles, system permissions, prohibited actions, approvals, logs, and a way to remove access promptly.\n**8. What will affected people be told?** Explain when AI is used, what information is involved, why, what the system does, important risks, available choices, and how to ask questions or challenge a consequential outcome.\n**9. How will accuracy, security, and human review work?** Test realistic failure cases. Address inaccurate personal information, prompt injection, unintended disclosure, excessive output, weak authentication, misuse, and vendor failure. Name the decisions that require human review.\n**10. Who owns the workflow after launch?** Assign responsibility for monitoring, complaints, access or correction requests, incidents, vendor changes, deletion, suspension, and periodic review. A pilot without an accountable owner is not ready for real information.",
+      },
+      {
+        heading: "Canadian hosting is not the same as Canadian compliance",
+        content: "Keeping information in Canada may be relevant to risk, customer expectations, contracts, or sector requirements. It does not establish that the complete workflow complies with applicable privacy law.\nThe business still needs an appropriate purpose, authority for the information use, collection limits, safeguards, retention rules, transparency, accountability, and processes for individual rights. It must also understand every place where information travels through integrations, logs, backups, support systems, subprocessors, and model services.\nWhen personal information is transferred to a third party for processing, PIPEDA's accountability principle states that the organization remains responsible and must use contractual or other means to provide a comparable level of protection. The Office of the Privacy Commissioner also advises organizations to assess cross-border processing risks, limit the third party to specified purposes, and be transparent about processing in another jurisdiction.",
+      },
+      {
+        heading: "What must remain human",
+        content: "A human must determine whether the proposed purpose and information use are appropriate for the organization. A human must approve access, risk tolerance, vendor terms, and the decisions the system may influence.\nConsequential decisions affecting a person's rights, employment, finances, health, housing, immigration, access to services, professional advice, or other important interests require particular care. The organization should identify where a qualified professional, privacy lead, security lead, legal reviewer, or senior accountable owner must become involved.\nHuman review cannot be a vague sentence in a policy. It must be attached to named decisions, realistic authority, sufficient information, a documented escalation path, and enough time to intervene.",
+      },
+      {
+        heading: "A privacy policy is not an operating control",
+        content: "Updating a website privacy policy may be necessary, but it does not configure access, prevent unnecessary data from entering a prompt, restrict provider training, test for unintended disclosure, correct inaccurate information, delete retained data, or respond to an incident.\nThe operating controls live inside the workflow: approved tools, information rules, role-based access, contract settings, testing, logs, review thresholds, retention schedules, complaint handling, incident response, and an accountable owner. The public explanation should accurately describe those practices. It should not be used to create an appearance of control that the workflow does not have.\nPrivacy by design means making these decisions while the workflow can still be changed easily, not after staff and customers have become dependent on it.",
+      },
+      {
+        heading: "The direct answer",
+        content: "Before AI enters a business workflow, identify the purpose, information, authority, minimum necessary data, provider and processing path, contractual controls, access, transparency, testing, human decisions, retention, and accountable owner.\nIf the organization cannot answer those questions, it should not place real personal, sensitive, or confidential information into the pilot. It can continue with fictional or appropriately de-identified test information while the privacy, security, operational, and legal questions are resolved.\nThe objective is not to stop useful AI. It is to prevent a convenient demonstration from becoming an uncontrolled information practice.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is generative AI compliant with PIPEDA?",
+        answer: "There is no universal yes or no answer for every tool and workflow. Compliance depends on the organization, applicable law, purpose, information, legal authority, consent where required, provider terms, safeguards, transparency, retention, individual rights, and actual operation of the system.",
+      },
+      {
+        question: "Can employees paste customer information into an AI tool?",
+        answer: "Employees should not enter customer information merely because the tool is available. The organization must determine whether the use is authorized, necessary, appropriately protected, covered by approved provider terms and settings, and consistent with applicable privacy obligations and internal policy.",
+      },
+      {
+        question: "Does Canadian data hosting make an AI workflow PIPEDA-compliant?",
+        answer: "No. Canadian hosting may address one risk or requirement, but it does not establish an appropriate purpose, authority, consent, collection limits, safeguards, transparency, retention, access rights, accuracy, accountability, or proper operation of the complete workflow.",
+      },
+      {
+        question: "Is consent always required before using personal information with AI?",
+        answer: "Consent is a central principle, but privacy laws contain specific exceptions and different regimes may apply. An organization should document its legal authority for each collection, use, and disclosure and obtain qualified advice where the answer is uncertain or the consequences are significant.",
+      },
+      {
+        question: "What is a privacy impact assessment for an AI workflow?",
+        answer: "A privacy impact assessment is a structured process for identifying personal-information flows, purposes, authority, risks, safeguards, affected people, and mitigation before a new or changed activity proceeds. The Office of the Privacy Commissioner recommends privacy impact and threat assessments within an effective privacy management program. Whether a specific assessment is legally required depends on the applicable regime and activity.",
+      },
+      {
+        question: "What should a business ask an AI vendor about privacy?",
+        answer: "Ask about processing and hosting locations, subprocessors, model training, secondary use, retention, deletion, security, encryption, access, logs, breach notification, audit evidence, portability, support access, contract changes, and what happens to information when the service ends.",
+      },
+      {
+        question: "Who is responsible when an AI vendor processes customer information?",
+        answer: "Under PIPEDA's accountability principle, an organization remains responsible for personal information transferred to a third party for processing and must use contractual or other means to provide a comparable level of protection.",
+      },
+      {
+        question: "Is updating the privacy policy enough for an AI pilot?",
+        answer: "No. A privacy policy is an explanation, not the full control system. The workflow also needs approved tools, data limits, access controls, provider settings, testing, human review, retention, complaint handling, incident response, and an accountable owner.",
+      },
+    ],
+    sources: [
+      { label: "Office of the Privacy Commissioner of Canada: AI, privacy, and your business", href: "https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/ai_business/" },
+      { label: "Canadian privacy regulators: Principles for responsible, trustworthy and privacy-protective generative AI technologies", href: "https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/gd_principles_ai/" },
+      { label: "Justice Laws Website: Personal Information Protection and Electronic Documents Act", href: "https://laws-lois.justice.gc.ca/ENG/ACTS/P-8.6/FullText.html" },
+      { label: "Office of the Privacy Commissioner of Canada: PIPEDA accountability principle", href: "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/principles/p_accountability/" },
+      { label: "Canadian privacy regulators: Summary of the 2026 joint ChatGPT investigation", href: "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/bg-info_openai_260506/" },
+    ],
+    relatedLinks: [
+      { label: "AI Governance for Businesses", href: "/ai-knowledge-hub/ai-governance-for-businesses" },
+      { label: "AI Adoption Framework for Businesses", href: "/ai-adoption-framework-for-small-businesses" },
+      { label: "What Are AI Agents for Businesses", href: "/ai-knowledge-hub/what-are-ai-agents-for-businesses" },
+      { label: "AI Adoption Checklist", href: "/ai-adoption-checklist" },
+    ],
+  },
+  {
     slug: "canada-ai-adoption-2026",
     title: "Canada's AI Adoption Is Accelerating. Operational Readiness Is Not Automatic",
     metaDescription: "Canada's 2026 business AI figures show faster use, but tools alone do not create a reliable workflow, trained team, or measurable result.",
