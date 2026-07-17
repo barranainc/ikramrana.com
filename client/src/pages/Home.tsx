@@ -227,7 +227,7 @@ export default function Home() {
                 <div className="absolute -bottom-3 -right-3 w-8 h-8 border-b-2 border-r-2 border-electric/60" />
                 <div className="absolute inset-0 blur-3xl bg-electric/10 scale-110" />
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032635202/6MeXVwmXXP9dCLsRyeqL5e/ikram_hero_fa300380.webp"
+                  src="/images/ikram-rana-hero.webp"
                   alt="Ikram Rana, AI adoption and workflow implementation specialist"
                   className="relative w-full max-w-[420px] h-auto object-cover"
                   style={{

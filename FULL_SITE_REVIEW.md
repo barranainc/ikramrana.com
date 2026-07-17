@@ -144,11 +144,17 @@ No public credential-verification page or private evidence register was inspecte
 
 ### Visual and interaction review
 
-Desktop and mobile visual review of the draft has not been completed. The current environment could not connect a browser to the draft preview. This means layout, overflow, menu behaviour, typography, images, forms, and page-level visual regressions are still unverified.
+Desktop and mobile visual review of the draft is in progress. A local browser preview was connected on 2026-07-16.
+
+- The homepage hero was reviewed at desktop width. Its remote portrait failed to render because the CDN returned the WebP file as `application/octet-stream` with `nosniff`. The existing portrait is now served from `client/public/images/ikram-rana-hero.webp`, and the corrected desktop hero was visually verified.
+- The contact page was reviewed at mobile width. The header, mobile menu control, page copy, Calendly option, and LinkedIn option render without visible overflow in the captured viewport.
+- The initial 390-pixel headless capture was discarded because the installed Chrome build enforced a wider minimum layout viewport and cropped the result. It was not treated as evidence of a website defect.
+- Representative checks of the About, framework, solution, illustrative-use-case, blog, knowledge, industry, and location templates are still required before desktop or mobile review can pass.
+- Menu interaction, link destinations, forms, typography, and full-page regressions remain part of the open review gate.
 
 ### External destinations
 
-The live domain, Barrana, and Real Life AI resolved during the review. LinkedIn returned a rate limit, and the automated request could not verify Calendly. These destinations still require a final browser check.
+The live domain, Barrana, and Real Life AI resolved during the review. The Calendly contact destination returned HTTP 200 on 2026-07-16. LinkedIn returned its non-standard HTTP 999 automated-access response, so the LinkedIn profile destination still requires a manual browser check.
 
 ### Deployment
 
