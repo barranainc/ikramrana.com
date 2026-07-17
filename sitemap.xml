@@ -20,9 +20,21 @@
   </url>
   <url>
     <loc>https://ikramrana.com/blog</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ikramrana.com/blog/canada-ai-adoption-2026</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ikramrana.com/blog/privacy-review-before-ai-pilot-canada</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ikramrana.com/ai-knowledge-hub</loc>
@@ -654,7 +666,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-</urlset>
   <!-- New Pillar Pages (V2.7) -->
   <url>
     <loc>https://ikramrana.com/ai-automation-for-business</loc>
