@@ -15,8 +15,8 @@ The objective is not to publish generic AI news. The objective is to answer the 
 - Website positioning and authority foundation: merged into GitHub `main`.
 - Hostinger deployment: owned by Ikram's team and not completed through this repository workflow.
 - 90-day editorial queue: planned in this document.
-- First four content briefs: to be opened as GitHub issues.
-- Article drafts: not yet written.
+- First four content briefs: open as GitHub issues 9, 10, 11, and 12.
+- Article drafts: the first package on Canada's 2026 business AI adoption data is drafted and pending Ikram's review.
 - Publication: not yet completed.
 - Search and LLM performance: baseline must be recorded after the new site is live.
 
@@ -65,7 +65,7 @@ The website is the long-term authority source. Social channels create discovery 
 
 | Week | Primary question | Content lane | Original position | Website action | Evidence status | Production status |
 |---|---|---|---|---|---|---|
-| 1 | Is business AI adoption actually accelerating in Canada? | AI landscape commentary | Usage is rising, but adoption should be judged by operational use, training, controls, and measurable outcomes, not tool accounts. | New evidence-led article | Verified public sources | Brief ready for issue |
+| 1 | Is business AI adoption actually accelerating in Canada? | AI landscape commentary | Usage is rising, but adoption should be judged by operational use, training, controls, and measurable outcomes, not tool accounts. | New evidence-led article | Verified public sources | Drafted, pending Ikram review |
 | 2 | What privacy checks should happen before AI enters a workflow? | Critical AI adoption analysis | Privacy review must happen before data enters the system, not after a successful demo. | New practical checklist article | Verified public sources | Brief ready for issue |
 | 3 | What should an AI agent be allowed to access or approve? | Critical AI adoption analysis | An agent should receive the minimum access required, with explicit approval points, limits, logs, and an owner. | New article linked to the AI Adoption Framework | Verified public sources | Brief ready for issue |
 | 4 | How should a business calculate whether an AI workflow is worthwhile? | Practical business use case | Saved minutes are not ROI if the workflow creates review work, errors, exceptions, or customer risk elsewhere. | New measurement guide | Public framework plus illustrative example | Brief ready for issue |
@@ -153,4 +153,3 @@ Do not treat ranking movement or LLM mentions as proof of business impact. Conne
 - Gate 3: The first four content briefs are approved.
 - Gate 4: The first website article and coordinated social package are reviewed before publication.
 - Gate 5: Results are reviewed after 30 days before increasing publishing volume.
-
