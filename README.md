@@ -97,6 +97,8 @@ For a static deployment, publish the contents of `dist/public/` to the web root 
 
 Do not blindly delete or replace the entire web root. Back it up first and verify `/`, a client-side route, `/robots.txt`, `/sitemap.xml`, and `/ops-kit/` after deployment.
 
+For the current approved release, use `WEBSITE_CHANGES_AND_LIVE_DEPLOYMENT_GUIDE.md`. It contains the complete change register, production archive checksum, Hostinger procedure, verification checklist, and rollback instructions.
+
 ## Environment variables and secrets
 
 Environment files are ignored by Git. Never commit passwords, API keys, access tokens, cookie-signing keys, or production `.env` files.

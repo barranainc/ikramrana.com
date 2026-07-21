@@ -1,10 +1,11 @@
 # Full-Site Review Status
 
-Last updated: 2026-07-16
+Last updated: 2026-07-21
 Merged branch: `codex/phase-2-authority-content-system`
 Pull request: https://github.com/barranainc/ikramrana.com/pull/4
 Merge commit: `8fb7fdb1f2a448e2315725ed33d3dc0164122fc3`
-Status: Merged into `main` on 2026-07-16. Hostinger deployment remains with Ikram Rana's hosting team.
+Status: Merged into `main` on 2026-07-16 and deployed to Hostinger. Live smoke test passed on 2026-07-21.
+Latest release merge: pull request 15 at `63969ad81da89395211341cf68719c833f8f6fa6`.
 
 ## Objective
 
@@ -22,7 +23,7 @@ A passing build does not mean this objective is complete.
 - 5 location guides
 - 22 dictionary entries
 - 8 illustrative AI use cases
-- 129 sitemap URLs after reconciliation
+- 131 sitemap URLs after the two authority articles were added
 
 ## Completed and verified in the source
 
@@ -170,13 +171,17 @@ The live domain, Barrana, and Real Life AI resolved during the review. The Calen
 
 ### Deployment
 
-The live website still showed the previous "AI Automation Strategist for Businesses" title when checked. This confirms that the draft branch is not deployed. Merging GitHub changes and publishing through Hostinger are separate operations.
+The approved website is live on Hostinger. An independent smoke test on 2026-07-21 confirmed the new `Ikram Rana | AI Adoption and Workflow Implementation` title, the new positioning, both authority articles, valid crawl files, analytics identifiers, mobile menu behavior, and Ops Kit preservation.
 
-Live response headers and asset filenames confirmed on 2026-07-16 that Hostinger hPanel and hCDN serve the repository-root static export pattern. The root export has now been reconciled with the validated production build. Its sitemap and robots files match the editable public versions, and it includes the current portrait, `llms.txt`, diagrams, and hashed assets. The reconciled export has not been uploaded to Hostinger.
+The deployed build serves `/assets/index-Bg5ZwFJ_.js` and `/assets/index-CN8oirhh.css`. These hashes differ from the earlier local release archive because the hosting team produced a fresh build. The live JavaScript contains both new article slugs. This is acceptable, but the hosting team should retain a dated backup of the accepted live web root as the authoritative rollback source.
 
-The build source now preserves the Google Analytics measurement ID, Microsoft Clarity project, and Google site verification used by the live site. Unresolved analytics environment placeholders were removed before the root export was generated.
+Live response headers confirm that Hostinger hPanel and hCDN continue to serve the website. `sitemap.xml` is valid XML with 131 URLs. `robots.txt` points to the sitemap. `llms.txt` and the sitemap contain both new authority article URLs.
 
-A static upload archive for commit `cbeab8d` and a rollback archive for the preceding production export were created in the local sibling `deployment-packages/` folder. Both archives passed integrity checks. They have not been uploaded or deployed.
+The live source preserves Google Analytics `G-1EVHTVWK2L`, Microsoft Clarity `w0upr4yih0`, and Google site verification. No unresolved environment placeholders or site-origin runtime errors were observed.
+
+Ops Kit remains live and the already-authorized browser session reached its dashboard. PDF and ZIP download links were present. This verifies preservation, not the separate security remediation for embedded secrets or access controls.
+
+The complete change register and developer procedure are in `WEBSITE_CHANGES_AND_LIVE_DEPLOYMENT_GUIDE.md`.
 
 ## Completed merge gate
 
@@ -193,7 +198,8 @@ The following checks were completed before pull request 4 was merged:
 
 ## Next work order
 
-1. The hosting team backs up the production web root and deploys the prepared static release.
-2. The hosting team verifies the homepage, one client-side route, analytics, mobile navigation, Calendly, LinkedIn, `robots.txt`, `sitemap.xml`, `llms.txt`, and `ops-kit/`.
-3. Record the deployed commit, deployment time, and post-deployment verification result.
-4. Begin the ongoing authority-content publishing cycle after the live release is accepted.
+1. The hosting team records the confirmed web root, deployment method, deployment time, deployed-by name, and current full-backup location.
+2. Connect Google Analytics and Google Search Console, submit the sitemap, request indexing for both new articles, and record the post-launch baseline.
+3. Publish the coordinated LinkedIn posts, Substack Notes, and LinkedIn articles with FAQs for the two live website articles.
+4. Begin GitHub issue 10, the AI Agent Access and Approval Map.
+5. Review search, engagement, CTA, and qualified-enquiry results after 30 days.
