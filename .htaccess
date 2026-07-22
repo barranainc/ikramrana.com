@@ -4,6 +4,12 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Permanent redirects for retired URLs reported in Google Search Console.
+  RewriteRule ^how-to-protect-client-data-while-using-ai-automation-in-law-firms-and-small-businesses/?$ /blog/privacy-review-before-ai-pilot-canada [R=301,L]
+  RewriteRule ^why-i-believe-easy-ai-breaks-and-what-openais-agent-builder-gets-right/?$ /ai-knowledge-hub/what-are-ai-agents-for-businesses [R=301,L]
+  RewriteRule ^insight/page/2/?$ /blog [R=301,L]
+
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d

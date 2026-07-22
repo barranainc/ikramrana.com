@@ -9,6 +9,8 @@ import { Link, useLocation } from "wouter";
 import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { trackCalendlyLead, trackPageView } from "@/lib/analytics";
+import { ConsentBanner, OPEN_PRIVACY_CHOICES_EVENT } from "@/components/ConsentBanner";
 
 const navLinks = [
   { href: "/ai-adoption-framework-for-small-businesses", label: "AI Framework" },
@@ -86,7 +88,25 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     }
     const normalizedPath = location === "/" ? "/" : location.replace(/\/$/, "");
     canonical.href = `https://ikramrana.com${normalizedPath}`;
+    trackPageView(normalizedPath);
   }, [location]);
+
+  useEffect(() => {
+    const trackCalendlyClick = (event: MouseEvent) => {
+      if (!(event.target instanceof Element)) return;
+
+      const link = event.target.closest<HTMLAnchorElement>("a[href]");
+      if (!link) return;
+
+      const targetUrl = new URL(link.href, window.location.href);
+      if (targetUrl.hostname === "calendly.com" && targetUrl.pathname.startsWith("/ikramrana15")) {
+        trackCalendlyLead(targetUrl.href);
+      }
+    };
+
+    document.addEventListener("click", trackCalendlyClick);
+    return () => document.removeEventListener("click", trackCalendlyClick);
+  }, []);
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -353,16 +373,26 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-border/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+          <div className="mt-10 pt-6 border-t border-border/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="font-mono text-[11px] tracking-wider text-slate-dim">
               &copy; {new Date().getFullYear()} Ikram Rana
             </p>
-            <p className="font-mono text-[10px] tracking-wide text-slate-dim/60 italic">
-              Built for operators. Not for everyone.
-            </p>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new Event(OPEN_PRIVACY_CHOICES_EVENT))}
+                className="font-mono text-[10px] tracking-wide text-slate-dim underline decoration-border underline-offset-4 transition-colors hover:text-electric focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-electric"
+              >
+                Privacy choices
+              </button>
+              <p className="font-mono text-[10px] tracking-wide text-slate-dim/60 italic">
+                Built for operators. Not for everyone.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
+      <ConsentBanner />
     </div>
   );
 }

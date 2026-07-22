@@ -2,20 +2,38 @@
 <html lang="en">
 
   <head>
-    <!-- Preserve the measurement services currently used on the live website. -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EVHTVWK2L"></script>
+    <!-- Consent defaults must be set before optional analytics tags load. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-1EVHTVWK2L');
-    </script>
-    <script>
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "w0upr4yih0");
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        functionality_storage: 'granted',
+        security_storage: 'granted'
+      });
+
+      try {
+        if (window.localStorage.getItem('ikramrana_consent_v1') === 'analytics') {
+          gtag('consent', 'update', {
+            analytics_storage: 'granted',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied'
+          });
+          window.__ikramAnalyticsLoaded = true;
+          var analyticsScript = document.createElement('script');
+          analyticsScript.async = true;
+          analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-J21TS9MFJ7';
+          document.head.appendChild(analyticsScript);
+          gtag('js', new Date());
+          gtag('config', 'G-J21TS9MFJ7', { send_page_view: false });
+        }
+      } catch (error) {
+        // The visitor can still choose for the current page if storage is unavailable.
+      }
     </script>
     <meta charset="UTF-8" />
     <meta
