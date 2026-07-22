@@ -2,38 +2,20 @@
 <html lang="en">
 
   <head>
-    <!-- Consent defaults must be set before optional analytics tags load. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      gtag('js', new Date());
       gtag('consent', 'default', {
         analytics_storage: 'denied',
         ad_storage: 'denied',
         ad_user_data: 'denied',
         ad_personalization: 'denied',
         functionality_storage: 'granted',
-        security_storage: 'granted'
+        security_storage: 'granted',
+        wait_for_update: 500
       });
-
-      try {
-        if (window.localStorage.getItem('ikramrana_consent_v1') === 'analytics') {
-          gtag('consent', 'update', {
-            analytics_storage: 'granted',
-            ad_storage: 'denied',
-            ad_user_data: 'denied',
-            ad_personalization: 'denied'
-          });
-          window.__ikramAnalyticsLoaded = true;
-          var analyticsScript = document.createElement('script');
-          analyticsScript.async = true;
-          analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-J21TS9MFJ7';
-          document.head.appendChild(analyticsScript);
-          gtag('js', new Date());
-          gtag('config', 'G-J21TS9MFJ7', { send_page_view: false });
-        }
-      } catch (error) {
-        // The visitor can still choose for the current page if storage is unavailable.
-      }
     </script>
     <meta charset="UTF-8" />
     <meta
@@ -41,15 +23,19 @@
       content="width=device-width, initial-scale=1.0" />
     <title>Ikram Rana | AI Adoption and Workflow Implementation</title>
     <meta name="description" content="Helping businesses move from scattered AI experiments to working systems their teams actually use. Critical, practical guidance from Ikram Rana." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://ikramrana.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Ikram Rana" />
     <meta property="og:title" content="Ikram Rana | AI Adoption and Workflow Implementation" />
     <meta property="og:description" content="Helping businesses move from scattered AI experiments to working systems their teams actually use. Critical, practical guidance from Ikram Rana." />
     <meta property="og:url" content="https://ikramrana.com/" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://ikramrana.com/images/ikram-rana-hero.webp" />
+    <meta property="og:image:alt" content="Ikram Rana, AI adoption and workflow implementation specialist" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Ikram Rana | AI Adoption and Workflow Implementation" />
     <meta name="twitter:description" content="Helping businesses move from scattered AI experiments to working systems their teams actually use. Critical, practical guidance from Ikram Rana." />
+    <meta name="twitter:image" content="https://ikramrana.com/images/ikram-rana-hero.webp" />
     <meta name="google-site-verification" content="PqkRc0JIRilTPOp5Aorp_CYnc6fSSQgY7146z7wXkr0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -2,7 +2,7 @@
  * DESIGN: The Architect's Blueprint , LIGHT THEME
  * HOME PAGE V2.9
  * Narrative order: Hero, Problem, Framework, Improvements, Decision Flow
- *                  How I Work, Use Cases, Essay, Testimonials, Final CTA
+ *                  How I Work, Use Cases, Essay, Evidence Policy, Final CTA
  * GEO/AEO: Person + Org schema, entity relationships, internal linking
  * No self-wrapping Layout , wrapped by App.tsx
  */
@@ -10,12 +10,9 @@
 import { useHead } from "@/hooks/useHead";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, Zap, TrendingUp, Shield, CheckCircle2, Quote } from "lucide-react";
+import { ArrowRight, Zap, TrendingUp, Shield, CheckCircle2 } from "lucide-react";
 import ThreeLayerDiagram from "@/components/diagrams/ThreeLayerDiagram";
 import { FragmentedSystemDiagram, CoherentSystemDiagram } from "@/components/diagrams/OperationalSystemDiagrams";
-
-const HERO_BG =
-  "https://private-us-east-1.manuscdn.com/sessionFile/UThcyylsqhlZAXIM9HOrSw/sandbox/cn98qOf0FLpUJbBpsfsKnM-img-1_1770868360000_na1fn_aGVyby1ibHVlcHJpbnQtYmc.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvVVRoY3l5bHNxaGxaQVhJTTlIT3JTdy9zYW5kYm94L2NuOThxT2YwRkxwVUpiQnBzZnNLbk0taW1nLTFfMTc3MDg2ODM2MDAwMF9uYTFmbl9hR1Z5YnkxaWJIVmxjSEpwYm5RdFltYy5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=JAVK1~GkUUJYd8kaXeSmu665I1XOvmvjjgH0vNmb6PwhEC9~xlK2yxoW7H3B410cNrGCGz15b~FqSGDd6l48cGDhPmc6FEVNMViRZTFLX1VMrWoEzbTYyK~NmJFFkGq9fd0XjYdkaRW8H8V3KUJrcLbZe6m2LmjFdGweRTUQdKBvq~qQEhzbT1pT5jwxXRWIUurJcsVCsq6JCAsZlYx1tVwQjGrko559KcH-iMCxyc12js~ImpOWmuhSVbho9E-5dshg4m4TvPBchkmarrD74I2qKJGAMVkdfWgPj80JcO6lxEaRc7Hm6JraupqX8V4NUe2s74-P5RIQmqtkAdwlwg__";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -55,41 +52,18 @@ const caseStudyPreviews = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Ikram didn't just automate a few tasks. He rebuilt how our team makes decisions. We went from constant firefighting to a system that actually runs itself.",
-    name: "Operations Director",
-    company: "Professional Services Firm",
-  },
-  {
-    quote:
-      "The sprint was the most structured engagement we've had. We had a working system in two weeks, not a slide deck.",
-    name: "Founder",
-    company: "Immigration Consultancy",
-  },
-  {
-    quote:
-      "What I appreciated most was that Ikram protected our judgment. AI handles the routine, while our team still owns the decisions that matter.",
-    name: "Managing Partner",
-    company: "Accounting Firm",
-  },
-];
-
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://ikramrana.com/#person",
   name: "Ikram Rana",
-  url: "https://ikramrana.com",
+  url: "https://ikramrana.com/about",
   jobTitle: "AI Adoption and Workflow Implementation Specialist",
   description:
     "Ikram Rana helps businesses move from scattered AI experiments to working systems their teams actually use. Founder of Barrana.ai.",
-  sameAs: ["https://barrana.ai", "https://www.linkedin.com/in/ikramrana"],
+  sameAs: ["https://www.linkedin.com/in/ikramrana/", "https://ikramrana.substack.com/"],
   worksFor: {
-    "@type": "Organization",
-    name: "Barrana.ai",
-    url: "https://barrana.ai",
-    description: "Canadian AI automation company connecting the tools businesses already use so routine work gets done reliably.",
+    "@id": "https://barrana.ai/#organization",
   },
   knowsAbout: [
     "AI adoption",
@@ -105,9 +79,10 @@ const personSchema = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Barrana.ai",
+  "@id": "https://barrana.ai/#organization",
+  name: "Barrana",
   url: "https://barrana.ai",
-  founder: { "@type": "Person", name: "Ikram Rana" },
+  founder: { "@id": "https://ikramrana.com/#person" },
   description:
     "Canadian AI automation company connecting existing business tools so routine work gets done reliably.",
   areaServed: ["Canada", "United States"],
@@ -121,13 +96,12 @@ const orgSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  "@id": "https://ikramrana.com/solutions#ai-adoption-service",
   name: "AI Adoption and Workflow Implementation",
   description:
     "Practical AI adoption and workflow implementation for businesses, including process documentation, automation, human oversight, and governance design.",
   provider: {
-    "@type": "Organization",
-    name: "Barrana.ai",
-    url: "https://barrana.ai",
+    "@id": "https://barrana.ai/#organization",
   },
   areaServed: [
     { "@type": "Country", name: "Canada" },
@@ -164,8 +138,8 @@ export default function Home() {
 
       {/* ── SECTION 1: HERO ────────────────────────────────────────── */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={HERO_BG} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0" aria-hidden="true">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_35%,rgba(59,130,246,0.22),transparent_34%),linear-gradient(135deg,#07101f_0%,#0b1e38_55%,#07101f_100%)]" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#070f1e]/95 via-[#070f1e]/85 to-[#070f1e]/40" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#070f1e]/30 via-transparent to-[#070f1e]/60" />
         </div>
@@ -183,6 +157,7 @@ export default function Home() {
               <h1 className="font-serif text-4xl sm:text-5xl md:text-[56px] font-bold text-white leading-[1.1] tracking-tight mb-6">
                 Turn Scattered AI Experiments Into
                 <br />
+                {" "}
                 <span className="text-blue-300">Systems Your Team Actually Uses.</span>
               </h1>
               <p className="text-lg md:text-xl text-white/75 leading-relaxed max-w-xl mb-4">
@@ -335,7 +310,7 @@ export default function Home() {
                 <div className="absolute -bottom-3 -right-3 w-8 h-8 border-b-2 border-r-2 border-electric/50" />
                 <div className="absolute inset-0 blur-3xl bg-electric/8 scale-110" />
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663032635202/6MeXVwmXXP9dCLsRyeqL5e/ikram_hero_fa300380.webp"
+                  src="/images/ikram-rana-hero.webp"
                   alt="Ikram Rana , AI Adoption and Workflow Implementation Specialist"
                   className="relative w-full max-w-[380px] h-auto object-cover rounded-xl"
                   style={{
@@ -428,7 +403,7 @@ export default function Home() {
                 The Structure Behind Every AI System
               </h2>
               <p className="text-slate-text leading-relaxed mb-8">
-                AI fails when execution outruns accountability. Every AI automation system and workflow system Ikram Rana builds for businesses follows three non-negotiable layers. Without this structure, AI adoption creates chaos rather than clarity.
+                AI fails when execution outruns accountability. The framework used on this site separates execution, judgment, and compliance so ownership and safeguards can be designed explicitly. Without that structure, AI adoption can create confusion rather than clarity.
               </p>
               <div className="space-y-4 mb-8">
                 {[
@@ -536,7 +511,7 @@ export default function Home() {
                   "Integrate with your CRM",
                   "Track conversion patterns",
                 ],
-                result: "Faster response. More booked calls. Better close rates.",
+                result: "Faster response. Consistent qualification. Clear conversion measurement.",
                 cta: "See AI workflow systems",
                 href: "/ai-workflow-systems",
                 accent: "text-emerald-600",
@@ -635,7 +610,7 @@ export default function Home() {
                 How AI Decisions Should Flow
               </h2>
               <p className="text-slate-text leading-relaxed">
-                Every AI automation system Ikram Rana builds for businesses follows a structured decision flow. This ensures AI recommendations are evaluated, validated, and logged , protecting human judgment and maintaining operational integrity.
+                This site uses a structured decision flow to show how AI recommendations can be evaluated, validated, and logged while preserving human judgment and accountability.
               </p>
             </motion.div>
 
@@ -725,16 +700,16 @@ export default function Home() {
                 AI Implementation Sprint
               </h2>
               <p className="text-slate-text leading-relaxed mb-6">
-                A focused two-week engagement designed to move from workflow chaos to a working AI system. Not a strategy deck , a production-grade implementation with governance built in from day one.
+                A focused engagement that starts with discovery and works toward one bounded AI workflow. The timeline and deliverable depend on process clarity, data, integrations, security, exceptions, and the agreed scope.
               </p>
               <p className="text-slate-text leading-relaxed mb-8">
-                Ikram Rana of Barrana.ai audits your existing workflows, identifies the highest-impact automation opportunities, and delivers one complete AI workflow system , with escalation logic, logging, and documentation , ready to run.
+                The work can include a workflow audit, opportunity mapping, implementation design, escalation logic, logging, documentation, and a pilot or deployment when the discovery findings support it.
               </p>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-electric text-white font-semibold text-sm no-underline hover:translate-y-[-2px] hover:shadow-lg transition-all"
               >
-                Start an AI Sprint <ArrowRight size={15} />
+                Discuss the Implementation Scope <ArrowRight size={15} />
               </Link>
             </motion.div>
 
@@ -760,7 +735,7 @@ export default function Home() {
               </ul>
               <div className="rounded-xl border border-border bg-background px-5 py-4">
                 <p className="text-sm font-semibold text-foreground">
-                  You leave with a working system , built correctly.
+                  You leave with the agreed workflow, controls, documentation, and next steps defined for the actual scope.
                 </p>
               </div>
             </motion.div>
@@ -876,39 +851,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECTION 9: TESTIMONIALS ────────────────────────────────── */}
+      {/* ── SECTION 9: EVIDENCE POLICY ─────────────────────────────── */}
       <section className="py-20 md:py-24 bg-navy border-b border-border">
         <div className="container">
-          <motion.div {...fadeUp} className="mb-14 text-center">
+          <motion.div {...fadeUp} className="mx-auto max-w-3xl text-center">
             <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-electric block mb-3">
-              Client Perspectives
+              Evidence Policy
             </span>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground leading-tight">
-              What Operators Say
+              Claims Should Be Verifiable
             </h2>
+            <p className="mt-6 text-slate-text leading-relaxed">
+              Client outcomes are not published as proof without permission and a clear measurement basis. The use cases on this site are explicitly labelled as illustrative, and example figures are not presented as measured client results. Compliance and performance claims are scoped to the actual workflow, evidence, and obligations involved.
+            </p>
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
+              <Link href="/case-studies" className="rounded-lg border border-electric/30 px-5 py-3 text-sm font-semibold text-electric no-underline hover:bg-electric/10">
+                Review illustrative use cases
+              </Link>
+              <Link href="/ai-adoption-framework-for-small-businesses" className="rounded-lg border border-border px-5 py-3 text-sm font-semibold text-foreground no-underline hover:bg-card">
+                Review the methodology
+              </Link>
+            </div>
           </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-10%" }}
-                transition={{ duration: 0.4, delay: i * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="rounded-2xl border border-border bg-card p-8 flex flex-col"
-              >
-                <Quote size={20} className="text-electric/40 mb-4 shrink-0" />
-                <p className="text-slate-text leading-relaxed italic flex-1 mb-6">"{t.quote}"</p>
-                <div>
-                  <p className="font-semibold text-foreground text-sm">{t.name}</p>
-                  <p className="font-mono text-[10px] tracking-[0.1em] text-slate-dim uppercase mt-0.5">
-                    {t.company}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 

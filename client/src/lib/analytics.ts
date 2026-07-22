@@ -1,161 +1,168 @@
-export const GA_MEASUREMENT_ID = "G-J21TS9MFJ7";
-export const CONSENT_STORAGE_KEY = "ikramrana_consent_v1";
-export const CLARITY_PROJECT_ID = "w0upr4yih0";
+const CONSENT_STORAGE_KEY = "ikramrana-consent-v1";
+const LEGACY_CONSENT_STORAGE_KEY = "ikramrana_consent_v1";
+const GA_MEASUREMENT_ID = "G-1EVHTVWK2L";
+const CLARITY_PROJECT_ID = "w0upr4yih0";
 
-export type ConsentPreference = "analytics" | "essential";
+export type ConsentPreferences = {
+  analytics: boolean;
+  updatedAt: string;
+};
 
 declare global {
   interface Window {
-    dataLayer?: unknown[];
+    dataLayer: unknown[];
     gtag?: (...args: unknown[]) => void;
     clarity?: (...args: unknown[]) => void;
-    __ikramAnalyticsLoaded?: boolean;
-    __ikramClarityLoaded?: boolean;
   }
 }
 
-export function getConsentPreference(): ConsentPreference | null {
-  if (typeof window === "undefined") return null;
+let analyticsInitialized = false;
+let lastTrackedLocation = "";
 
+function readStoredPreferences(): ConsentPreferences | null {
   try {
-    const preference = window.localStorage.getItem(CONSENT_STORAGE_KEY);
-    return preference === "analytics" || preference === "essential" ? preference : null;
+    const value = window.localStorage.getItem(CONSENT_STORAGE_KEY);
+    if (value) {
+      const parsed = JSON.parse(value) as Partial<ConsentPreferences>;
+      if (typeof parsed.analytics === "boolean") {
+        return {
+          analytics: parsed.analytics,
+          updatedAt: typeof parsed.updatedAt === "string" ? parsed.updatedAt : "",
+        };
+      }
+    }
+
+    const legacyValue = window.localStorage.getItem(LEGACY_CONSENT_STORAGE_KEY);
+    if (legacyValue === "analytics" || legacyValue === "essential") {
+      return { analytics: legacyValue === "analytics", updatedAt: "" };
+    }
+    return null;
   } catch {
     return null;
   }
 }
 
-function updateGoogleConsent(preference: ConsentPreference) {
-  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
-
-  window.gtag("consent", "update", {
-    analytics_storage: preference === "analytics" ? "granted" : "denied",
-    ad_storage: "denied",
-    ad_user_data: "denied",
-    ad_personalization: "denied",
-  });
-}
-
-function initializeGoogleAnalytics() {
-  if (
-    typeof window === "undefined" ||
-    typeof document === "undefined" ||
-    window.__ikramAnalyticsLoaded
-  ) {
-    return;
-  }
-
-  window.__ikramAnalyticsLoaded = true;
+function loadScript(src: string, id: string) {
+  if (document.getElementById(id)) return;
   const script = document.createElement("script");
+  script.id = id;
   script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+  script.src = src;
   document.head.appendChild(script);
-
-  window.gtag?.("js", new Date());
-  window.gtag?.("config", GA_MEASUREMENT_ID, { send_page_view: false });
 }
 
-function initializeClarity() {
-  if (
-    typeof window === "undefined" ||
-    typeof document === "undefined" ||
-    window.__ikramClarityLoaded
-  ) {
-    return;
-  }
-
-  window.__ikramClarityLoaded = true;
-  window.clarity =
-    window.clarity ||
-    function (...args: unknown[]) {
-      const clarityWithQueue = window.clarity as ((...queuedArgs: unknown[]) => void) & {
-        q?: unknown[][];
-      };
-      clarityWithQueue.q = clarityWithQueue.q || [];
-      clarityWithQueue.q.push(args);
-    };
-
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://www.clarity.ms/tag/${CLARITY_PROJECT_ID}`;
-  const firstScript = document.getElementsByTagName("script")[0];
-  firstScript?.parentNode?.insertBefore(script, firstScript);
+function ensureGtag() {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function gtag(...args: unknown[]) {
+    window.dataLayer.push(args);
+  };
 }
 
 function expireAnalyticsCookies() {
-  if (typeof document === "undefined") return;
-
-  const cookieNames = document.cookie
+  const names = document.cookie
     .split(";")
     .map((cookie) => cookie.trim().split("=")[0])
     .filter((name) => name === "_ga" || name.startsWith("_ga_") || name === "_clck" || name === "_clsk");
 
-  for (const name of cookieNames) {
+  for (const name of names) {
     document.cookie = `${name}=; Max-Age=0; path=/; SameSite=Lax`;
     document.cookie = `${name}=; Max-Age=0; path=/; domain=.ikramrana.com; SameSite=Lax`;
   }
 }
 
-export function setConsentPreference(preference: ConsentPreference) {
-  if (typeof window === "undefined") return;
+export function getConsentPreferences() {
+  return readStoredPreferences();
+}
 
-  try {
-    window.localStorage.setItem(CONSENT_STORAGE_KEY, preference);
-  } catch {
-    // The consent update still applies for the current page if storage is unavailable.
-  }
+export function analyticsAllowed() {
+  return readStoredPreferences()?.analytics === true;
+}
 
-  updateGoogleConsent(preference);
+export function initializeAnalytics() {
+  if (analyticsInitialized || !analyticsAllowed()) return false;
 
-  if (preference === "analytics") {
-    initializeGoogleAnalytics();
-    initializeClarity();
+  ensureGtag();
+  window.gtag?.("consent", "update", {
+    analytics_storage: "granted",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+  });
+  window.gtag?.("config", GA_MEASUREMENT_ID, {
+    send_page_view: false,
+    anonymize_ip: true,
+  });
+  loadScript(
+    `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_MEASUREMENT_ID)}`,
+    "ikramrana-google-analytics",
+  );
+
+  window.clarity = window.clarity || function clarity(...args: unknown[]) {
+    (window.clarity as unknown as { q?: unknown[] }).q =
+      (window.clarity as unknown as { q?: unknown[] }).q || [];
+    (window.clarity as unknown as { q: unknown[] }).q.push(args);
+  };
+  loadScript(`https://www.clarity.ms/tag/${CLARITY_PROJECT_ID}`, "ikramrana-clarity");
+
+  analyticsInitialized = true;
+  return true;
+}
+
+export function saveConsentPreferences(analytics: boolean) {
+  const preferences: ConsentPreferences = {
+    analytics,
+    updatedAt: new Date().toISOString(),
+  };
+  window.localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(preferences));
+  window.localStorage.removeItem(LEGACY_CONSENT_STORAGE_KEY);
+
+  ensureGtag();
+  window.gtag?.("consent", "update", {
+    analytics_storage: analytics ? "granted" : "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+  });
+
+  if (analytics) {
+    initializeAnalytics();
   } else {
     expireAnalyticsCookies();
   }
+  window.dispatchEvent(new CustomEvent("ikramrana-consent-changed", { detail: preferences }));
+  return preferences;
 }
 
-export function initializeStoredAnalytics() {
-  if (getConsentPreference() !== "analytics") return;
+export function trackPageView(pathname = window.location.pathname) {
+  if (!analyticsAllowed()) return;
+  initializeAnalytics();
 
-  updateGoogleConsent("analytics");
-  initializeGoogleAnalytics();
-  initializeClarity();
-}
+  const normalizedPath = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
+  const pageLocation = `${window.location.origin}${normalizedPath}${window.location.search}`;
+  if (lastTrackedLocation === pageLocation) return;
+  lastTrackedLocation = pageLocation;
 
-function sendEvent(eventName: string, parameters: Record<string, unknown>) {
-  if (
-    typeof window === "undefined" ||
-    typeof window.gtag !== "function" ||
-    getConsentPreference() !== "analytics"
-  ) {
-    return;
-  }
-
-  window.gtag("event", eventName, {
-    ...parameters,
+  window.gtag?.("event", "page_view", {
+    page_title: document.title,
+    page_location: pageLocation,
+    page_path: normalizedPath,
+    site_hostname: window.location.hostname,
     send_to: GA_MEASUREMENT_ID,
   });
 }
 
-export function trackPageView(path: string) {
-  if (typeof window === "undefined" || typeof document === "undefined") return;
-
-  const normalizedPath = path === "/" ? "/" : path.replace(/\/$/, "");
-
-  sendEvent("page_view", {
-    page_title: document.title,
-    page_location: `${window.location.origin}${normalizedPath}`,
-    page_path: normalizedPath,
+export function trackCalendlyLead(linkUrl: string) {
+  if (!analyticsAllowed()) return;
+  initializeAnalytics();
+  window.gtag?.("event", "generate_lead", {
+    lead_source: "calendly",
+    link_url: linkUrl,
+    page_location: window.location.href,
+    site_hostname: window.location.hostname,
+    send_to: GA_MEASUREMENT_ID,
   });
 }
 
-export function trackCalendlyLead(linkUrl: string) {
-  if (typeof window === "undefined") return;
-
-  sendEvent("generate_lead", {
-    method: "calendly",
-    link_url: linkUrl,
-    page_location: window.location.href,
-  });
+export function openCookieSettings() {
+  window.dispatchEvent(new Event("ikramrana-open-cookie-settings"));
 }

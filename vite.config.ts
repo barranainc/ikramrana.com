@@ -150,10 +150,19 @@ function vitePluginManusDebugCollector(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
+const productionPlugins = [react(), tailwindcss()];
+const developmentPlugins = [
+  react(),
+  tailwindcss(),
+  jsxLocPlugin(),
+  vitePluginManusRuntime(),
+  vitePluginManusDebugCollector(),
+];
 
 export default defineConfig({
-  plugins,
+  // Manus instrumentation is useful during local authoring, but it previously
+  // inflated the production HTML and JavaScript. Keep it out of releases.
+  plugins: process.env.NODE_ENV === "production" ? productionPlugins : developmentPlugins,
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -166,6 +175,17 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules/framer-motion")) return "motion";
+          if (id.includes("node_modules/lucide-react")) return "icons";
+          if (id.includes("node_modules/react") || id.includes("node_modules/wouter")) return "react";
+          if (id.includes("node_modules/@radix-ui")) return "ui";
+        },
+      },
+    },
   },
   server: {
     port: 3000,

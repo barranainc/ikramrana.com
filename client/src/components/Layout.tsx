@@ -9,8 +9,13 @@ import { Link, useLocation } from "wouter";
 import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { trackCalendlyLead, trackPageView } from "@/lib/analytics";
-import { ConsentBanner, OPEN_PRIVACY_CHOICES_EVENT } from "@/components/ConsentBanner";
+import ConsentBanner from "./ConsentBanner";
+import {
+  initializeAnalytics,
+  openCookieSettings,
+  trackCalendlyLead,
+  trackPageView,
+} from "@/lib/analytics";
 
 const navLinks = [
   { href: "/ai-adoption-framework-for-small-businesses", label: "AI Framework" },
@@ -80,21 +85,33 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
     setMobileOpen(false);
 
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
     const normalizedPath = location === "/" ? "/" : location.replace(/\/$/, "");
-    canonical.href = `https://ikramrana.com${normalizedPath}`;
-    trackPageView(normalizedPath);
+    initializeAnalytics();
+    // Page components update title/robots in an effect. Defer canonical and
+    // analytics work so a client-rendered 404 can remove its canonical and
+    // remain excluded from page-view reporting.
+    const headTimer = window.setTimeout(() => {
+      const robots = document.querySelector('meta[name="robots"]')?.getAttribute("content") || "";
+      let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+      if (robots.includes("noindex")) {
+        canonical?.remove();
+        return;
+      }
+      if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.rel = "canonical";
+        document.head.appendChild(canonical);
+      }
+      canonical.href = `https://ikramrana.com${normalizedPath}`;
+      trackPageView(normalizedPath);
+    }, 0);
+
+    return () => window.clearTimeout(headTimer);
   }, [location]);
 
   useEffect(() => {
-    const trackCalendlyClick = (event: MouseEvent) => {
+    const trackLeadIntent = (event: MouseEvent) => {
       if (!(event.target instanceof Element)) return;
-
       const link = event.target.closest<HTMLAnchorElement>("a[href]");
       if (!link) return;
 
@@ -103,9 +120,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         trackCalendlyLead(targetUrl.href);
       }
     };
-
-    document.addEventListener("click", trackCalendlyClick);
-    return () => document.removeEventListener("click", trackCalendlyClick);
+    document.addEventListener("click", trackLeadIntent);
+    return () => document.removeEventListener("click", trackLeadIntent);
   }, []);
 
   useEffect(() => {
@@ -377,17 +393,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <p className="font-mono text-[11px] tracking-wider text-slate-dim">
               &copy; {new Date().getFullYear()} Ikram Rana
             </p>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <div className="flex flex-wrap items-center gap-4 font-mono text-[10px] tracking-wide text-slate-dim/70">
+              <Link href="/privacy" className="no-underline hover:text-electric focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-electric">Privacy &amp; cookies</Link>
               <button
                 type="button"
-                onClick={() => window.dispatchEvent(new Event(OPEN_PRIVACY_CHOICES_EVENT))}
-                className="font-mono text-[10px] tracking-wide text-slate-dim underline decoration-border underline-offset-4 transition-colors hover:text-electric focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-electric"
+                onClick={openCookieSettings}
+                className="underline decoration-border underline-offset-4 hover:text-electric focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-electric"
               >
-                Privacy choices
+                Cookie settings
               </button>
-              <p className="font-mono text-[10px] tracking-wide text-slate-dim/60 italic">
-                Built for operators. Not for everyone.
-              </p>
+              <span className="italic">Built for operators. Not for everyone.</span>
             </div>
           </div>
         </div>

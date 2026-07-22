@@ -2,70 +2,71 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
+import { lazy, Suspense } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Layout from "./components/Layout";
 
-// Core pages
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Speaking from "./pages/Speaking";
+// Route-level code splitting keeps the initial bundle focused on the page that
+// was requested. Static release HTML still supplies crawlable fallback content.
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const Speaking = lazy(() => import("./pages/Speaking"));
+const SolutionsHub = lazy(() => import("./pages/SolutionsHub"));
+const FrameworkHub = lazy(() => import("./pages/FrameworkHub"));
+const InsightsHub = lazy(() => import("./pages/InsightsHub"));
+const SolutionAutomation = lazy(() => import("./pages/SolutionAutomation"));
+const SolutionGrowth = lazy(() => import("./pages/SolutionGrowth"));
+const SolutionGovernance = lazy(() => import("./pages/SolutionGovernance"));
+const SolutionSprint = lazy(() => import("./pages/SolutionSprint"));
+const FoundationalEssay = lazy(() => import("./pages/FoundationalEssay"));
+const ThreeLayerModel = lazy(() => import("./pages/ThreeLayerModel"));
+const GovernanceByDesign = lazy(() => import("./pages/GovernanceByDesign"));
+const Dictionary = lazy(() => import("./pages/Dictionary"));
+const Essays = lazy(() => import("./pages/Essays"));
+const EssayEntropy = lazy(() => import("./pages/EssayEntropy"));
+const EssayJudgment = lazy(() => import("./pages/EssayJudgment"));
+const EssayGovernance = lazy(() => import("./pages/EssayGovernance"));
+const EssayTuesday = lazy(() => import("./pages/EssayTuesday"));
+const Insight = lazy(() => import("./pages/Insight"));
+const EssayApproval = lazy(() => import("./pages/EssayApproval"));
+const EssayEightyPercent = lazy(() => import("./pages/EssayEightyPercent"));
+const EssayException = lazy(() => import("./pages/EssayException"));
+const EssayMeeting = lazy(() => import("./pages/EssayMeeting"));
+const EssayProcessDebt = lazy(() => import("./pages/EssayProcessDebt"));
+const EssayJudgmentBackup = lazy(() => import("./pages/EssayJudgmentBackup"));
+const EssayClarity = lazy(() => import("./pages/EssayClarity"));
+const BlogIndex = lazy(() => import("./pages/BlogIndex"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const KnowledgeHubIndex = lazy(() => import("./pages/KnowledgeHubIndex"));
+const KnowledgeHubPage = lazy(() => import("./pages/KnowledgeHubPage"));
+const IndustryIndex = lazy(() => import("./pages/IndustryIndex"));
+const IndustryPage = lazy(() => import("./pages/IndustryPage"));
+const LocationIndex = lazy(() => import("./pages/LocationIndex"));
+const LocationPage = lazy(() => import("./pages/LocationPage"));
+const DictionaryIndex = lazy(() => import("./pages/DictionaryIndex"));
+const DictionaryEntry = lazy(() => import("./pages/DictionaryEntry"));
+const CaseStudyIndex = lazy(() => import("./pages/CaseStudyIndex"));
+const CaseStudyPage = lazy(() => import("./pages/CaseStudyPage"));
+const PillarPage = lazy(() => import("./pages/PillarPage"));
+const ResourceHubPage = lazy(() => import("./pages/ResourceHubPage"));
+const AiAutomationForBusiness = lazy(() => import("./pages/AiAutomationForBusiness"));
+const AiWorkflowSystems = lazy(() => import("./pages/AiWorkflowSystems"));
+const AiAdoptionFaq = lazy(() => import("./pages/AiAdoptionFaq"));
+const AiAutomationFaq = lazy(() => import("./pages/AiAutomationFaq"));
+const AiForSmallBusinessFaq = lazy(() => import("./pages/AiForSmallBusinessFaq"));
+const AiAutomationExamples = lazy(() => import("./pages/AiAutomationExamples"));
+const AiAdoptionChecklist = lazy(() => import("./pages/AiAdoptionChecklist"));
 
-// Hub pages
-import SolutionsHub from "./pages/SolutionsHub";
-import FrameworkHub from "./pages/FrameworkHub";
-import InsightsHub from "./pages/InsightsHub";
-
-// Solution sub-pages
-import SolutionAutomation from "./pages/SolutionAutomation";
-import SolutionGrowth from "./pages/SolutionGrowth";
-import SolutionGovernance from "./pages/SolutionGovernance";
-import SolutionSprint from "./pages/SolutionSprint";
-
-// Framework content pages: keep their own URLs and layouts
-import FoundationalEssay from "./pages/FoundationalEssay";
-import ThreeLayerModel from "./pages/ThreeLayerModel";
-import GovernanceByDesign from "./pages/GovernanceByDesign";
-import Dictionary from "./pages/Dictionary";
-
-// Essays: keep their own URLs and layouts
-import Essays from "./pages/Essays";
-import EssayEntropy from "./pages/EssayEntropy";
-import EssayJudgment from "./pages/EssayJudgment";
-import EssayGovernance from "./pages/EssayGovernance";
-import EssayTuesday from "./pages/EssayTuesday";
-import Insight from "./pages/Insight";
-import EssayApproval from "./pages/EssayApproval";
-import EssayEightyPercent from "./pages/EssayEightyPercent";
-import EssayException from "./pages/EssayException";
-import EssayMeeting from "./pages/EssayMeeting";
-import EssayProcessDebt from "./pages/EssayProcessDebt";
-import EssayJudgmentBackup from "./pages/EssayJudgmentBackup";
-import EssayClarity from "./pages/EssayClarity";
-import BlogIndex from "./pages/BlogIndex";
-import BlogPost from "./pages/BlogPost";
-import KnowledgeHubIndex from "./pages/KnowledgeHubIndex";
-import KnowledgeHubPage from "./pages/KnowledgeHubPage";
-import IndustryIndex from "./pages/IndustryIndex";
-import IndustryPage from "./pages/IndustryPage";
-import LocationIndex from "./pages/LocationIndex";
-import LocationPage from "./pages/LocationPage";
-import DictionaryIndex from "./pages/DictionaryIndex";
-import DictionaryEntry from "./pages/DictionaryEntry";
-import CaseStudyIndex from "./pages/CaseStudyIndex";
-import CaseStudyPage from "./pages/CaseStudyPage";
-import PillarPage from "./pages/PillarPage";
-import ResourceHubPage from "./pages/ResourceHubPage";
-
-// New GEO/AEO authority pages
-import AiAutomationForBusiness from "./pages/AiAutomationForBusiness";
-import AiWorkflowSystems from "./pages/AiWorkflowSystems";
-import AiAdoptionFaq from "./pages/AiAdoptionFaq";
-import AiAutomationFaq from "./pages/AiAutomationFaq";
-import AiForSmallBusinessFaq from "./pages/AiForSmallBusinessFaq";
-import AiAutomationExamples from "./pages/AiAutomationExamples";
-import AiAdoptionChecklist from "./pages/AiAdoptionChecklist";
+function RouteFallback() {
+  return (
+    <div className="container py-24" role="status" aria-live="polite">
+      <p className="text-sm text-slate-text">Loading page…</p>
+    </div>
+  );
+}
 
 function Router() {
   return (
@@ -75,6 +76,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/privacy" component={Privacy} />
         <Route path="/speaking" component={Speaking} />
 
         {/* Hub pages */}
@@ -162,7 +164,9 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <Suspense fallback={<RouteFallback />}>
+            <Router />
+          </Suspense>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

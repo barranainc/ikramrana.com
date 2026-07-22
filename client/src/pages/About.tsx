@@ -16,9 +16,11 @@ const fadeUp = {
 const profileSchema = {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
+  "@id": "https://ikramrana.com/about#webpage",
+  url: "https://ikramrana.com/about",
   dateModified: "2026-07-16",
   mainEntity: {
-    "@id": "https://ikramrana.com/about#ikram-rana",
+    "@id": "https://ikramrana.com/#person",
     "@type": "Person",
     name: "Ikram Rana",
     url: "https://ikramrana.com/about",
