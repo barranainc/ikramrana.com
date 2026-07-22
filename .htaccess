@@ -14,6 +14,11 @@ ErrorDocument 404 /404.html
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://ikramrana.com%{REQUEST_URI} [R=301,L,NE]
 
+  # Retired URLs retained from the preceding production rules.
+  RewriteRule ^how-to-protect-client-data-while-using-ai-automation-in-law-firms-and-small-businesses/?$ /blog/privacy-review-before-ai-pilot-canada [R=301,L]
+  RewriteRule ^why-i-believe-easy-ai-breaks-and-what-openais-agent-builder-gets-right/?$ /ai-knowledge-hub/what-are-ai-agents-for-businesses [R=301,L]
+  RewriteRule ^insight/page/2/?$ /blog [R=301,L]
+
   RewriteCond %{REQUEST_URI} !^/$
   RewriteRule ^(.+?)/+$ /$1 [R=301,L,NE]
 

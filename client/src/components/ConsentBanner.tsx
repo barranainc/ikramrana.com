@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import {
   getConsentPreferences,
@@ -10,6 +10,7 @@ export default function ConsentBanner() {
   const [open, setOpen] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
   const [analytics, setAnalytics] = useState(false);
+  const headingRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
     const stored = getConsentPreferences();
@@ -29,12 +30,21 @@ export default function ConsentBanner() {
     return () => window.removeEventListener("ikramrana-open-cookie-settings", openSettings);
   }, []);
 
+  useEffect(() => {
+    if (open && showDetails) headingRef.current?.focus();
+  }, [open, showDetails]);
+
   const save = (allowAnalytics: boolean) => {
+    const wasAllowed = getConsentPreferences()?.analytics === true;
     saveConsentPreferences(allowAnalytics);
     setAnalytics(allowAnalytics);
     setOpen(false);
     setShowDetails(false);
-    if (allowAnalytics) window.setTimeout(() => trackPageView(), 0);
+    if (allowAnalytics) {
+      window.setTimeout(() => trackPageView(), 0);
+    } else if (wasAllowed) {
+      window.location.reload();
+    }
   };
 
   if (!open) return null;
@@ -48,7 +58,12 @@ export default function ConsentBanner() {
     >
       <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
         <div className="max-w-xl">
-          <h2 id="cookie-consent-title" className="font-serif text-xl font-semibold text-foreground">
+          <h2
+            ref={headingRef}
+            id="cookie-consent-title"
+            tabIndex={-1}
+            className="font-serif text-xl font-semibold text-foreground outline-none"
+          >
             Your privacy choices
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-slate-text">
@@ -121,4 +136,3 @@ export default function ConsentBanner() {
     </aside>
   );
 }
-

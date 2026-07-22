@@ -1,4 +1,5 @@
 const CONSENT_STORAGE_KEY = "ikramrana-consent-v1";
+const LEGACY_CONSENT_STORAGE_KEY = "ikramrana_consent_v1";
 const GA_MEASUREMENT_ID = "G-1EVHTVWK2L";
 const CLARITY_PROJECT_ID = "w0upr4yih0";
 
@@ -21,13 +22,21 @@ let lastTrackedLocation = "";
 function readStoredPreferences(): ConsentPreferences | null {
   try {
     const value = window.localStorage.getItem(CONSENT_STORAGE_KEY);
-    if (!value) return null;
-    const parsed = JSON.parse(value) as Partial<ConsentPreferences>;
-    if (typeof parsed.analytics !== "boolean") return null;
-    return {
-      analytics: parsed.analytics,
-      updatedAt: typeof parsed.updatedAt === "string" ? parsed.updatedAt : "",
-    };
+    if (value) {
+      const parsed = JSON.parse(value) as Partial<ConsentPreferences>;
+      if (typeof parsed.analytics === "boolean") {
+        return {
+          analytics: parsed.analytics,
+          updatedAt: typeof parsed.updatedAt === "string" ? parsed.updatedAt : "",
+        };
+      }
+    }
+
+    const legacyValue = window.localStorage.getItem(LEGACY_CONSENT_STORAGE_KEY);
+    if (legacyValue === "analytics" || legacyValue === "essential") {
+      return { analytics: legacyValue === "analytics", updatedAt: "" };
+    }
+    return null;
   } catch {
     return null;
   }
@@ -47,6 +56,18 @@ function ensureGtag() {
   window.gtag = window.gtag || function gtag(...args: unknown[]) {
     window.dataLayer.push(args);
   };
+}
+
+function expireAnalyticsCookies() {
+  const names = document.cookie
+    .split(";")
+    .map((cookie) => cookie.trim().split("=")[0])
+    .filter((name) => name === "_ga" || name.startsWith("_ga_") || name === "_clck" || name === "_clsk");
+
+  for (const name of names) {
+    document.cookie = `${name}=; Max-Age=0; path=/; SameSite=Lax`;
+    document.cookie = `${name}=; Max-Age=0; path=/; domain=.ikramrana.com; SameSite=Lax`;
+  }
 }
 
 export function getConsentPreferences() {
@@ -93,6 +114,7 @@ export function saveConsentPreferences(analytics: boolean) {
     updatedAt: new Date().toISOString(),
   };
   window.localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(preferences));
+  window.localStorage.removeItem(LEGACY_CONSENT_STORAGE_KEY);
 
   ensureGtag();
   window.gtag?.("consent", "update", {
@@ -102,7 +124,11 @@ export function saveConsentPreferences(analytics: boolean) {
     ad_personalization: "denied",
   });
 
-  if (analytics) initializeAnalytics();
+  if (analytics) {
+    initializeAnalytics();
+  } else {
+    expireAnalyticsCookies();
+  }
   window.dispatchEvent(new CustomEvent("ikramrana-consent-changed", { detail: preferences }));
   return preferences;
 }
@@ -121,6 +147,7 @@ export function trackPageView(pathname = window.location.pathname) {
     page_location: pageLocation,
     page_path: normalizedPath,
     site_hostname: window.location.hostname,
+    send_to: GA_MEASUREMENT_ID,
   });
 }
 
@@ -130,11 +157,12 @@ export function trackCalendlyLead(linkUrl: string) {
   window.gtag?.("event", "generate_lead", {
     lead_source: "calendly",
     link_url: linkUrl,
+    page_location: window.location.href,
     site_hostname: window.location.hostname,
+    send_to: GA_MEASUREMENT_ID,
   });
 }
 
 export function openCookieSettings() {
   window.dispatchEvent(new Event("ikramrana-open-cookie-settings"));
 }
-

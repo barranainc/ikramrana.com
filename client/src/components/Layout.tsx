@@ -111,9 +111,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const trackLeadIntent = (event: MouseEvent) => {
-      const target = event.target as Element | null;
-      const link = target?.closest<HTMLAnchorElement>('a[href*="calendly.com/ikramrana15"]');
-      if (link) trackCalendlyLead(link.href);
+      if (!(event.target instanceof Element)) return;
+      const link = event.target.closest<HTMLAnchorElement>("a[href]");
+      if (!link) return;
+
+      const targetUrl = new URL(link.href, window.location.href);
+      if (targetUrl.hostname === "calendly.com" && targetUrl.pathname.startsWith("/ikramrana15")) {
+        trackCalendlyLead(targetUrl.href);
+      }
     };
     document.addEventListener("click", trackLeadIntent);
     return () => document.removeEventListener("click", trackLeadIntent);
@@ -384,13 +389,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-border/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+          <div className="mt-10 pt-6 border-t border-border/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="font-mono text-[11px] tracking-wider text-slate-dim">
               &copy; {new Date().getFullYear()} Ikram Rana
             </p>
             <div className="flex flex-wrap items-center gap-4 font-mono text-[10px] tracking-wide text-slate-dim/70">
-              <Link href="/privacy" className="no-underline hover:text-electric">Privacy &amp; cookies</Link>
-              <button type="button" onClick={openCookieSettings} className="hover:text-electric">Cookie settings</button>
+              <Link href="/privacy" className="no-underline hover:text-electric focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-electric">Privacy &amp; cookies</Link>
+              <button
+                type="button"
+                onClick={openCookieSettings}
+                className="underline decoration-border underline-offset-4 hover:text-electric focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-electric"
+              >
+                Cookie settings
+              </button>
               <span className="italic">Built for operators. Not for everyone.</span>
             </div>
           </div>
