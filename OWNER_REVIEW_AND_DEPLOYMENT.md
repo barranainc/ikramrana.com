@@ -1,6 +1,22 @@
 # Owner Review and Deployment Handoff
 
-Last updated: 2026-07-16
+## Consent, redirects, Analytics, and Search Console release, 2026-07-22
+
+- The live website now uses Google Analytics measurement ID `G-J21TS9MFJ7` for the Personal Website stream.
+- Route-aware `page_view` tracking and Calendly `generate_lead` tracking are included.
+- A privacy choice panel implements Google Consent Mode with analytics and advertising-related storage denied by default.
+- Google Analytics and Microsoft Clarity do not load until the visitor selects `Allow analytics`.
+- Visitors can reopen the panel from the footer and return to essential-only use.
+- Three retired routes now return server-side HTTP 301 responses to their intended replacements.
+- TypeScript validation, the Vite production build, desktop checks, and mobile checks passed before deployment.
+- The static overlay was deployed through the official Hostinger MCP and server-side and CDN caches were purged.
+- The deployment overlay contained only `.htaccess`, `index.html`, and the new hashed JavaScript and CSS assets. It did not contain or replace Ops Kit files.
+- All 45 obsolete sitemap submissions from 2020 were removed from Search Console.
+- Search Console now contains exactly one submitted sitemap: `https://ikramrana.com/sitemap.xml`, status Success, with 131 discovered pages.
+- Validation for the corrected seven-URL `Soft 404` group was started on 2026-07-22.
+- Google now needs time to recrawl the corrected URLs and refresh the indexing report.
+
+Last updated: 2026-07-22
 
 ## Current status
 
@@ -10,14 +26,14 @@ Last updated: 2026-07-16
 - Canadian AI privacy package state: merged on 2026-07-16
 - Canadian AI privacy package merge commit: `669a63546f02013cc4bc0e726f47f8057f658c75`
 - Final GitHub Site check: passed
-- Live deployment: not completed
-- Deployment owner: Ikram Rana's hosting team
-- Hostinger deployment automation: not present in this repository
+- Live deployment: completed on 2026-07-22
+- Deployment owner: Ikram Rana, supported through the official Hostinger MCP
+- Hostinger deployment automation: available through the connected Hostinger MCP, but not stored in this repository
 - Live platform confirmed from response headers: Hostinger hPanel with hCDN
 - Live asset pattern confirmed: the live site serves the hashed JavaScript and CSS referenced by the repository-root static export
-- Repository-root static export: reconciled with the validated production build, but not uploaded to Hostinger
+- Repository-root static export: synchronized with the current live release
 
-The approved website source, including both new authority articles, is merged and ready for the hosting team. The merge did not change the live website.
+The approved website foundation and authority articles are live. The consent, redirect, Analytics, and Search Console release is now being synchronized back to GitHub so the repository and production website remain aligned.
 
 ## Authority article release
 
