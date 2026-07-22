@@ -54,7 +54,7 @@ const solutions = [
     icon: Rocket,
     number: "04",
     label: "AI Implementation Sprint",
-    desc: "Fast. Structured. Controlled. Two-week focused engagement. One production-grade AI workflow, built correctly.",
+    desc: "A focused implementation format for one bounded workflow. Discovery confirms whether the two-week format is appropriate and defines the responsible scope.",
     href: "/solutions/ai-sprint",
     accent: "text-slate-600",
     border: "border-border",
@@ -64,7 +64,7 @@ const solutions = [
 ];
 
 export default function SolutionsHub() {
-  useHead("AI Solutions for Business Operators", "Structured AI implementation tied to measurable outcomes. No hype, no generic roadmaps. Systems built for operators who need results.");
+  useHead("AI Solutions for Business Operators", "Workflow-first AI implementation tied to defined baselines, safeguards, and measurable outcomes.");
 
   return (
     <div>

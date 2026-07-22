@@ -9,7 +9,11 @@ const DEFAULT_DESCRIPTION =
  * Sets document.title and meta description on mount.
  * Restores defaults on unmount so navigating away never leaves stale metadata.
  */
-export function useHead(title: string, description?: string) {
+type HeadOptions = {
+  noindex?: boolean;
+};
+
+export function useHead(title: string, description?: string, options: HeadOptions = {}) {
   useEffect(() => {
     // Set title with brand suffix if not already present
     document.title = title.includes("Ikram Rana")
@@ -18,6 +22,23 @@ export function useHead(title: string, description?: string) {
 
     const pageTitle = document.title;
     const pageUrl = `https://ikramrana.com${window.location.pathname === "/" ? "/" : window.location.pathname.replace(/\/$/, "")}`;
+
+    let robots = document.querySelector('meta[name="robots"]') as HTMLMetaElement | null;
+    if (!robots) {
+      robots = document.createElement("meta");
+      robots.name = "robots";
+      document.head.appendChild(robots);
+    }
+    robots.content = options.noindex
+      ? "noindex,nofollow"
+      : "index,follow,max-image-preview:large";
+
+    const canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (options.noindex) {
+      canonical?.remove();
+    } else if (canonical) {
+      canonical.href = pageUrl;
+    }
 
     document.querySelector('meta[property="og:title"]')?.setAttribute("content", pageTitle);
     document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", pageTitle);
@@ -36,6 +57,7 @@ export function useHead(title: string, description?: string) {
       document.querySelector('meta[property="og:description"]')?.setAttribute("content", DEFAULT_DESCRIPTION);
       document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", DEFAULT_TITLE);
       document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", DEFAULT_DESCRIPTION);
+      document.querySelector('meta[name="robots"]')?.setAttribute("content", "index,follow,max-image-preview:large");
     };
-  }, [title, description]);
+  }, [title, description, options.noindex]);
 }

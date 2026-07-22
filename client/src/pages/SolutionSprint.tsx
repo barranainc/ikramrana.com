@@ -32,7 +32,7 @@ const whoFor = [
 
 const howItWorks = [
   { week: "Week 1", title: "Audit and design", desc: "We document your top workflows, identify the single highest-impact automation target, and design the system architecture. No guesswork. Every decision is based on your actual process data." },
-  { week: "Week 2", title: "Build and deploy", desc: "We build the workflow, connect it to your existing tools, configure exception handling, and deploy to production with monitoring in place. You end the week with a system that runs." },
+  { week: "Week 2", title: "Build and validate", desc: "When the discovery findings support implementation, we build the agreed workflow, connect the approved tools, configure exception handling, and validate it against the agreed acceptance criteria. Production deployment depends on access, security review, testing, and scope." },
 ];
 
 const related = [
@@ -42,7 +42,7 @@ const related = [
 ];
 
 export default function SolutionSprint() {
-  useHead("AI Sprint: Two-Week Implementation", "Two-week focused AI engagement for teams already using AI but lacking structural clarity. Fast, structured, controlled.");
+  useHead("AI Sprint: Focused Workflow Implementation", "A focused AI workflow engagement whose scope, timeline, safeguards, and deployment criteria are confirmed through discovery.");
 
   return (
     <div className="py-16 md:py-24">
@@ -66,12 +66,10 @@ export default function SolutionSprint() {
             Fast. Structured. Controlled.
           </h1>
           <p className="text-lg text-slate-text leading-relaxed mb-3">
-            A two-week focused engagement that takes you from scattered AI usage to one working, governed system.
+            A focused implementation format designed around one bounded workflow. Discovery determines whether the two-week format is appropriate and what can be delivered responsibly.
           </p>
           <p className="text-base text-slate-dim leading-relaxed">
-            Designed for teams already using AI but lacking structural clarity. Most businesses do not need a six-month
-            transformation programme. They need one system that works, built properly, so they can see what good looks like
-            before committing to more.
+            Designed for teams already using AI but lacking structural clarity. The goal is to define, build, and validate the agreed workflow without treating a short timeline as a substitute for security review, testing, or adoption work.
           </p>
           <div className="mt-7 border border-electric/25 bg-electric/5 p-6 rounded-xl">
             <span className="font-mono text-[10px] tracking-[0.16em] uppercase text-electric block mb-2">
@@ -141,8 +139,7 @@ export default function SolutionSprint() {
         <motion.div {...fadeUp} className="mb-12">
           <div className="rounded-2xl border border-electric/20 bg-electric/5 p-7">
             <p className="font-serif text-lg text-foreground font-medium leading-relaxed">
-              You leave with a working system, built correctly. Not a slide deck. Not a recommendations document.
-              A production workflow that runs, with governance built in from the start.
+              You leave with the deliverables agreed after discovery: a documented workflow, defined ownership and controls, validation evidence, and a clear deployment or remediation path. A production launch is claimed only when its acceptance criteria are met.
             </p>
           </div>
         </motion.div>

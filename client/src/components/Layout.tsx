@@ -9,6 +9,13 @@ import { Link, useLocation } from "wouter";
 import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import ConsentBanner from "./ConsentBanner";
+import {
+  initializeAnalytics,
+  openCookieSettings,
+  trackCalendlyLead,
+  trackPageView,
+} from "@/lib/analytics";
 
 const navLinks = [
   { href: "/ai-adoption-framework-for-small-businesses", label: "AI Framework" },
@@ -78,15 +85,39 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
     setMobileOpen(false);
 
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
     const normalizedPath = location === "/" ? "/" : location.replace(/\/$/, "");
-    canonical.href = `https://ikramrana.com${normalizedPath}`;
+    initializeAnalytics();
+    // Page components update title/robots in an effect. Defer canonical and
+    // analytics work so a client-rendered 404 can remove its canonical and
+    // remain excluded from page-view reporting.
+    const headTimer = window.setTimeout(() => {
+      const robots = document.querySelector('meta[name="robots"]')?.getAttribute("content") || "";
+      let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+      if (robots.includes("noindex")) {
+        canonical?.remove();
+        return;
+      }
+      if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.rel = "canonical";
+        document.head.appendChild(canonical);
+      }
+      canonical.href = `https://ikramrana.com${normalizedPath}`;
+      trackPageView(normalizedPath);
+    }, 0);
+
+    return () => window.clearTimeout(headTimer);
   }, [location]);
+
+  useEffect(() => {
+    const trackLeadIntent = (event: MouseEvent) => {
+      const target = event.target as Element | null;
+      const link = target?.closest<HTMLAnchorElement>('a[href*="calendly.com/ikramrana15"]');
+      if (link) trackCalendlyLead(link.href);
+    };
+    document.addEventListener("click", trackLeadIntent);
+    return () => document.removeEventListener("click", trackLeadIntent);
+  }, []);
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -357,12 +388,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <p className="font-mono text-[11px] tracking-wider text-slate-dim">
               &copy; {new Date().getFullYear()} Ikram Rana
             </p>
-            <p className="font-mono text-[10px] tracking-wide text-slate-dim/60 italic">
-              Built for operators. Not for everyone.
-            </p>
+            <div className="flex flex-wrap items-center gap-4 font-mono text-[10px] tracking-wide text-slate-dim/70">
+              <Link href="/privacy" className="no-underline hover:text-electric">Privacy &amp; cookies</Link>
+              <button type="button" onClick={openCookieSettings} className="hover:text-electric">Cookie settings</button>
+              <span className="italic">Built for operators. Not for everyone.</span>
+            </div>
           </div>
         </div>
       </footer>
+      <ConsentBanner />
     </div>
   );
 }

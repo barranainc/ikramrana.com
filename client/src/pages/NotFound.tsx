@@ -6,7 +6,7 @@ import { useHead } from "@/hooks/useHead";
 
 export default function NotFound() {
   const [, setLocation] = useLocation();
-  useHead("Page Not Found");
+  useHead("Page Not Found", "The requested page could not be found.", { noindex: true });
 
   const handleGoHome = () => {
     setLocation("/");

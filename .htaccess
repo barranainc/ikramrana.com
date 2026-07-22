@@ -1,11 +1,25 @@
-# SPA fallback for ikramrana.com (Vite single-page app on Hostinger/LiteSpeed)
-# Serves real files (assets, sitemap.xml, robots.txt) directly;
-# every other path falls back to index.html so client-side routes resolve.
+# Source safeguard only.
+# `pnpm build:static` generates the deployable, exact-route version at
+# dist/public/.htaccess from client/public/sitemap.xml. Deploy dist/public,
+# never the repository root.
+
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
+
+  RewriteCond %{HTTP_HOST} !^ikramrana\.com$ [NC,OR]
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://ikramrana.com%{REQUEST_URI} [R=301,L,NE]
+
+  RewriteCond %{REQUEST_URI} !^/$
+  RewriteRule ^(.+?)/+$ /$1 [R=301,L,NE]
+
+  RewriteRule ^index\.html$ / [R=301,L]
+
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
 </IfModule>
