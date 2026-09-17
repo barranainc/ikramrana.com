@@ -39,18 +39,18 @@ const priorityPages = {
   },
   "/media-kit": {
     title: "Brand partnerships for @ikramrana.ai | Ikram Rana",
-    description: "Public media kit for @ikramrana.ai - 29K followers, ~2.1M views / 30 days. AI tool and automation Reels for founders and builders. Email ir@ikramrana.com for the private rate card.",
+    description: "Public media kit for @ikramrana.ai - 29K followers, ~2.1M views / 30 days. AI tool and automation Reels for founders and builders. Email ir@ikramrana.com for partnership options and pricing.",
     heading: "Media kit for @ikramrana.ai",
     eyebrow: "Instagram brand partnerships",
     paragraphs: [
       "@ikramrana.ai is an Instagram channel for practical AI tools and automation. Brands and AI tool teams use it when they want educational, demo-led Reels that reach founders, operators, and builders - people who try software, not AI entertainment.",
-      "This page is the public overview. For packages and commercial terms, email ir@ikramrana.com and you will receive the private rate card.",
+      "This page is the public overview. For packages and commercial terms, email ir@ikramrana.com and you will receive the partnership options and pricing.",
     ],
     ctaHref: "mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership",
-    ctaLabel: "Email for the private rate card",
+    ctaLabel: "Email ir@ikramrana.com",
     faq: [
       ["Same as booking a consult?", "No. Partnerships via ir@; consults separate."],
-      ["Where are rates?", "Private rate card after you email."],
+      ["Where are the rates?", "In the partnership options and pricing overview, sent after you email with product and timing."],
       ["What to include?", "Product URL, job-to-be-done, launch window, one-off vs monthly."],
     ],
   },

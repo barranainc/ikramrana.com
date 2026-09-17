@@ -4,7 +4,7 @@ import { useHead } from "@/hooks/useHead";
 
 const title = "Brand partnerships for @ikramrana.ai | Ikram Rana";
 const description =
-  "Public media kit for @ikramrana.ai - 29K followers, ~2.1M views / 30 days. AI tool and automation Reels for founders and builders. Email ir@ikramrana.com for the private rate card.";
+  "Public media kit for @ikramrana.ai - 29K followers, ~2.1M views / 30 days. AI tool and automation Reels for founders and builders. Email ir@ikramrana.com for partnership options and pricing.";
 const partnershipEmail =
   "mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership";
 
@@ -32,8 +32,8 @@ const faqs = [
     answer: "No. Partnerships via ir@; consults separate.",
   },
   {
-    question: "Where are rates?",
-    answer: "Private rate card after you email.",
+    question: "Where are the rates?",
+    answer: "In the partnership options and pricing overview, sent after you email with product and timing.",
   },
   {
     question: "What to include?",
@@ -88,7 +88,7 @@ export default function MediaKit() {
               Media kit for <span className="text-[#B9EB38]">@ikramrana.ai</span>
             </h1>
             <p className="mt-8 max-w-[790px] text-lg leading-[1.75] text-[#C9C9C3] sm:text-xl">
-              @ikramrana.ai is an Instagram channel for practical AI tools and automation. Brands and AI tool teams use it when they want educational, demo-led Reels that reach founders, operators, and builders - people who try software, not AI entertainment. This page is the public overview. For packages and commercial terms, email ir@ikramrana.com and you will receive the private rate card.
+              @ikramrana.ai is an Instagram channel for practical AI tools and automation. Brands and AI tool teams use it when they want educational, demo-led Reels that reach founders, operators, and builders - people who try software, not AI entertainment. This page is the public overview. For packages and commercial terms, email ir@ikramrana.com and you will receive the partnership options and pricing.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
@@ -96,7 +96,7 @@ export default function MediaKit() {
                 className="inline-flex min-h-12 items-center justify-center gap-2 bg-[#B9EB38] px-5 py-3 text-sm font-semibold text-[#080808] no-underline transition-colors hover:bg-[#C8F65A] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B9EB38]"
               >
                 <Mail size={17} aria-hidden="true" />
-                Request the private rate card
+                Email ir@ikramrana.com
               </a>
               <Link
                 href="/contact"
@@ -194,7 +194,7 @@ export default function MediaKit() {
                 ))}
               </ol>
               <p className="mt-5 text-sm leading-relaxed text-[#6A6A64]">
-                Organic unless usage purchased (private card).
+                Organic unless paid usage rights are included in the partnership options and pricing.
               </p>
             </section>
           </div>
@@ -205,10 +205,10 @@ export default function MediaKit() {
             <div>
               <Eyebrow>What you will not find</Eyebrow>
               <h2 id="rates-heading" className="mt-4 max-w-[700px] font-serif text-4xl font-medium leading-[1.05] tracking-[-0.025em] md:text-5xl">
-                Rates are not listed publicly.
+                Pricing is not listed publicly.
               </h2>
               <p className="mt-6 max-w-[650px] text-lg leading-relaxed text-[#C9C9C3]">
-                Email ir@ikramrana.com with product URL, one-line use case, launch timing, one-off vs monthly.
+                Serious partners receive partnership options and pricing by email after a short reply.
               </p>
             </div>
             <a
@@ -216,7 +216,7 @@ export default function MediaKit() {
               className="inline-flex min-h-12 items-center justify-center gap-2 bg-[#B9EB38] px-5 py-3 text-sm font-semibold text-[#080808] no-underline transition-colors hover:bg-[#C8F65A] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B9EB38]"
             >
               <Mail size={17} aria-hidden="true" />
-              Email for the private rate card
+              Email ir@ikramrana.com
             </a>
           </div>
         </section>

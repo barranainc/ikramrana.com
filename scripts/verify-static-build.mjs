@@ -81,6 +81,8 @@ if (mediaKitRoute) {
   const mediaKit = read(mediaKitRoute.file.replace(/^\//, "")).toString("utf8");
   assert(mediaKit.includes("Brand partnerships for @ikramrana.ai | Ikram Rana"), "Media kit title is missing");
   assert(mediaKit.includes("Public media kit for @ikramrana.ai - 29K followers, ~2.1M views / 30 days."), "Media kit description is missing");
+  assert(mediaKit.includes("partnership options and pricing"), "Media kit partnership pricing language is missing");
+  assert(mediaKit.includes("Email ir@ikramrana.com"), "Media kit email CTA label is missing");
   assert(mediaKit.includes('href="https://ikramrana.com/media-kit"'), "Media kit canonical is missing");
   assert(mediaKit.includes("mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership"), "Media kit rate-card email is missing");
   assert(mediaKit.includes('"@type":"WebPage"'), "Media kit WebPage schema is missing");
@@ -93,6 +95,7 @@ if (mediaKitRoute) {
   assert(mediaKit.includes("'JetBrains Mono'"), "Media kit JetBrains Mono prerender font is missing");
   assert(!mediaKit.includes("background:#f8fafc"), "Media kit prerender still uses the old light background");
   assert(!mediaKit.includes("background:#2563eb"), "Media kit prerender still uses the old blue CTA");
+  assert(!/private rate card|private card/i.test(mediaKit), "Media kit still uses private rate card terminology");
 }
 
 const home = read("index.html").toString("utf8");
