@@ -80,6 +80,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const mobileToggleRef = useRef<HTMLButtonElement>(null);
+  const isMediaKit = location === "/media-kit";
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
@@ -138,7 +139,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   }, [mobileOpen]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className={`min-h-screen flex flex-col bg-background text-foreground ${isMediaKit ? "media-kit-chrome" : ""}`}>
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-background focus:px-4 focus:py-3 focus:text-electric focus:shadow-lg"

@@ -75,6 +75,26 @@ for (const route of manifest) {
   assert(html.includes("data-static-prerender=\"true\""), `Missing static content for ${route.pathname}`);
 }
 
+const mediaKitRoute = manifest.find((route) => route.pathname === "/media-kit");
+assert(Boolean(mediaKitRoute), "Media kit prerender is missing");
+if (mediaKitRoute) {
+  const mediaKit = read(mediaKitRoute.file.replace(/^\//, "")).toString("utf8");
+  assert(mediaKit.includes("Brand partnerships for @ikramrana.ai | Ikram Rana"), "Media kit title is missing");
+  assert(mediaKit.includes("Public media kit for @ikramrana.ai - 29K followers, ~2.1M views / 30 days."), "Media kit description is missing");
+  assert(mediaKit.includes('href="https://ikramrana.com/media-kit"'), "Media kit canonical is missing");
+  assert(mediaKit.includes("mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership"), "Media kit rate-card email is missing");
+  assert(mediaKit.includes('"@type":"WebPage"'), "Media kit WebPage schema is missing");
+  assert(mediaKit.includes('"@type":"FAQPage"'), "Media kit FAQPage schema is missing");
+  assert(mediaKit.includes('data-media-kit-prerender="true"'), "Media kit dark prerender is missing");
+  assert(mediaKit.includes("#B9EB38"), "Media kit lime accent is missing");
+  assert(mediaKit.includes("#080808"), "Media kit dark background is missing");
+  assert(mediaKit.includes("'Playfair Display'"), "Media kit Playfair Display prerender font is missing");
+  assert(mediaKit.includes("'Source Sans 3'"), "Media kit Source Sans 3 prerender font is missing");
+  assert(mediaKit.includes("'JetBrains Mono'"), "Media kit JetBrains Mono prerender font is missing");
+  assert(!mediaKit.includes("background:#f8fafc"), "Media kit prerender still uses the old light background");
+  assert(!mediaKit.includes("background:#2563eb"), "Media kit prerender still uses the old blue CTA");
+}
+
 const home = read("index.html").toString("utf8");
 assert(home.includes('href="https://ikramrana.com/"'), "Homepage canonical is missing");
 assert(home.includes("data-static-prerender=\"true\""), "Homepage static content is missing");

@@ -129,6 +129,134 @@
 }
 
 @layer components {
+  /* The live site uses dark chrome with a lime accent. Scope these tokens to
+     the media-kit route so legacy pages keep their existing theme. */
+  .media-kit-chrome {
+    --background: #080808;
+    --foreground: #f5f5f2;
+    --card: #11110f;
+    --card-foreground: #f5f5f2;
+    --popover: #11110f;
+    --popover-foreground: #f5f5f2;
+    --primary: #b9eb38;
+    --primary-foreground: #080808;
+    --secondary: #171715;
+    --secondary-foreground: #c9c9c3;
+    --muted: #171715;
+    --muted-foreground: #adada6;
+    --accent: #b9eb38;
+    --accent-foreground: #080808;
+    --border: #2b2b28;
+    --input: #343430;
+    --ring: #b9eb38;
+    --color-navy-deep: #080808;
+    --color-navy: #080808;
+    --color-navy-light: #171715;
+    --color-navy-surface: #11110f;
+    --color-electric: #b9eb38;
+    --color-electric-dim: #a8d632;
+    --color-slate-text: #c9c9c3;
+    --color-slate-dim: #adada6;
+  }
+
+  .media-kit-chrome > header {
+    background: rgb(8 8 8 / 94%);
+    border-color: #2b2b28;
+  }
+
+  .media-kit-chrome .bg-electric {
+    background-color: #b9eb38 !important;
+    box-shadow: 0 0 12px rgb(185 235 56 / 34%) !important;
+  }
+
+  .media-kit-chrome .bg-electric.text-white {
+    color: #080808 !important;
+  }
+
+  .media-kit-chrome .text-electric {
+    color: #b9eb38 !important;
+  }
+
+  .media-kit-chrome [class*="hover:text-electric"]:hover {
+    color: #b9eb38 !important;
+  }
+
+  .media-kit-chrome [class*="hover:border-electric"]:hover {
+    border-color: #b9eb38 !important;
+  }
+
+  .media-kit-chrome [class*="focus-visible:outline-electric"]:focus-visible {
+    outline-color: #b9eb38 !important;
+  }
+
+  .media-kit-chrome input[type="checkbox"] {
+    accent-color: #b9eb38;
+  }
+
+  .media-kit-chrome > header .text-slate-text {
+    color: #c9c9c3 !important;
+  }
+
+  .media-kit-chrome > header .text-slate-dim {
+    color: #adada6 !important;
+  }
+
+  .media-kit-chrome > footer {
+    background: #080808;
+    border-color: #2b2b28;
+  }
+
+  .media-kit-chrome > footer .text-electric {
+    color: #b9eb38 !important;
+  }
+
+  .media-kit-chrome > footer .text-foreground {
+    color: #f5f5f2 !important;
+  }
+
+  .media-kit-chrome > footer .text-slate-dim {
+    color: #adada6 !important;
+  }
+
+  .media-kit-chrome ::selection {
+    background: rgb(185 235 56 / 28%);
+    color: #f5f5f2;
+  }
+
+  .media-kit-grid {
+    background-image:
+      linear-gradient(rgb(185 235 56 / 6%) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(185 235 56 / 6%) 1px, transparent 1px);
+    background-size: 46px 46px;
+  }
+
+  .media-kit-orbit {
+    position: absolute;
+    width: clamp(22rem, 46vw, 42rem);
+    aspect-ratio: 1;
+    right: clamp(-19rem, -13vw, -6rem);
+    top: 5rem;
+    border: 1px solid rgb(185 235 56 / 28%);
+    border-radius: 9999px;
+    pointer-events: none;
+  }
+
+  .media-kit-orbit::before,
+  .media-kit-orbit::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgb(185 235 56 / 18%);
+    border-radius: inherit;
+  }
+
+  .media-kit-orbit::before {
+    inset: 12%;
+  }
+
+  .media-kit-orbit::after {
+    inset: 26%;
+  }
+
   .container {
     width: 100%;
     margin-left: auto;
