@@ -25,6 +25,7 @@ const navLinks = [
   { href: "/ai-knowledge-hub", label: "AI Knowledge Hub" },
   { href: "/industries", label: "Industries" },
   { href: "/about", label: "About" },
+  { href: "/media-kit", label: "Media kit" },
 ];
 
 // Helper: check if a link is "active" given the current location
@@ -72,6 +73,10 @@ function isActive(href: string, location: string): boolean {
   // AI Adoption Framework pillar page
   if (href === "/ai-adoption-framework-for-small-businesses") {
     return location === "/ai-adoption-framework-for-small-businesses";
+  }
+  // Media kit page
+  if (href === "/media-kit") {
+    return location === "/media-kit" || location === "/work-with-me";
   }
   return location === href || location.startsWith(href + "/");
 }

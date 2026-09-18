@@ -59,6 +59,7 @@ const AiAutomationFaq = lazy(() => import("./pages/AiAutomationFaq"));
 const AiForSmallBusinessFaq = lazy(() => import("./pages/AiForSmallBusinessFaq"));
 const AiAutomationExamples = lazy(() => import("./pages/AiAutomationExamples"));
 const AiAdoptionChecklist = lazy(() => import("./pages/AiAdoptionChecklist"));
+const MediaKit = lazy(() => import("./pages/MediaKit"));
 
 function RouteFallback() {
   return (
@@ -78,6 +79,13 @@ function Router() {
         <Route path="/contact" component={Contact} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/speaking" component={Speaking} />
+        <Route path="/media-kit" component={MediaKit} />
+        <Route path="/work-with-me">
+          {() => {
+            window.location.replace("/media-kit");
+            return null;
+          }}
+        </Route>
 
         {/* Hub pages */}
         <Route path="/solutions" component={SolutionsHub} />
