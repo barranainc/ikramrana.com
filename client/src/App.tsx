@@ -12,6 +12,7 @@ import Layout from "./components/Layout";
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
+const MediaKit = lazy(() => import("./pages/MediaKit"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Speaking = lazy(() => import("./pages/Speaking"));
 const SolutionsHub = lazy(() => import("./pages/SolutionsHub"));
@@ -76,6 +77,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/media-kit" component={MediaKit} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/speaking" component={Speaking} />
 

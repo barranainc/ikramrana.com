@@ -37,6 +37,23 @@ const priorityPages = {
       "Use the contact page to examine whether AI belongs in that workflow, discuss speaking, or propose a collaboration.",
     ],
   },
+  "/media-kit": {
+    title: "Brand partnerships for @ikramrana.ai | Ikram Rana",
+    description: "Public media kit for @ikramrana.ai — ~29K followers, ~2.1M views / 30 days. AI tool and automation Reels for founders and builders. Email ir@ikramrana.com for partnership options and pricing.",
+    heading: "Media kit for @ikramrana.ai",
+    eyebrow: "Instagram brand partnerships",
+    paragraphs: [
+      "@ikramrana.ai is an Instagram channel for practical AI tools and automation. Brands and AI tool teams use it when they want educational, demo-led Reels that reach founders, operators, and builders — people who try software, not AI entertainment.",
+      "This page is the public overview. For packages and commercial terms, email ir@ikramrana.com and you will receive the partnership options and pricing.",
+    ],
+    ctaHref: "mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership",
+    ctaLabel: "Email ir@ikramrana.com",
+    faq: [
+      ["Is this the same as booking a consult?", "No. Partnerships via ir@ikramrana.com. AI consults are separate."],
+      ["Where are the rates?", "In the partnership options and pricing overview, sent after you email with product and timing."],
+      ["What should I include?", "Product URL, job-to-be-done, launch window, one-off or monthly."],
+    ],
+  },
   "/privacy": {
     title: "Privacy and Cookie Choices | Ikram Rana",
     description: "How ikramrana.com uses consent storage, optional analytics, and external services.",
@@ -180,6 +197,16 @@ function schemaFor(canonicalUrl, details) {
         inLanguage: "en-CA",
         isPartOf: { "@id": `${canonicalOrigin}/#website` },
         about: { "@id": `${canonicalOrigin}/#person` },
+        ...(details.faq ? {
+          mainEntity: {
+            "@type": "FAQPage",
+            mainEntity: details.faq.map(([question, answer]) => ({
+              "@type": "Question",
+              name: question,
+              acceptedAnswer: { "@type": "Answer", text: answer },
+            })),
+          },
+        } : {}),
       },
       {
         "@type": "Person",
@@ -202,10 +229,24 @@ function schemaFor(canonicalUrl, details) {
 }
 
 function staticShell(details, canonicalUrl) {
+  const isMediaKit = canonicalUrl === `${canonicalOrigin}/media-kit`;
   const paragraphs = details.paragraphs.map((paragraph) => `<p style="font-size:1.08rem;line-height:1.75;color:#475569">${escapeHtml(paragraph)}</p>`).join("");
+  const eyebrow = details.eyebrow || "AI adoption and workflow implementation";
+  const ctaHref = details.ctaHref || (canonicalUrl === `${canonicalOrigin}/contact` ? "https://calendly.com/ikramrana15" : "/contact");
+  const ctaLabel = details.ctaLabel || (canonicalUrl === `${canonicalOrigin}/contact` ? "Open booking page" : "Discuss a workflow");
+  if (isMediaKit) {
+    const mediaParagraphs = details.paragraphs
+      .map((paragraph) => `<p style="max-width:790px;font-size:1.18rem;line-height:1.75;color:#C9C9C3">${escapeHtml(paragraph)}</p>`)
+      .join("");
+    return `<div data-static-prerender="true" data-media-kit-prerender="true" style="min-height:100vh;background:#080808;color:#F5F5F2;font-family:'Source Sans 3',system-ui,sans-serif">
+      <header style="border-bottom:1px solid #2B2B28;background:#080808"><nav aria-label="Primary navigation" style="max-width:1120px;margin:auto;padding:20px;display:flex;gap:22px;flex-wrap:wrap;align-items:center"><a href="/" style="font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;font-weight:600;color:#F5F5F2;text-decoration:none;margin-right:auto">Ikram Rana</a><a href="/solutions" style="color:#C9C9C3">Solutions</a><a href="/blog" style="color:#C9C9C3">Blog</a><a href="/about" style="color:#C9C9C3">About</a><a href="/contact" style="color:#C9C9C3">Contact</a></nav></header>
+      <main id="main-content" style="max-width:1120px;margin:auto;padding:clamp(64px,9vw,112px) 20px"><p style="font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.2em;color:#B9EB38;font-size:.7rem">${escapeHtml(eyebrow)}</p><h1 style="max-width:880px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(3rem,8vw,6.8rem);font-weight:500;line-height:.96;letter-spacing:-.04em;margin:24px 0 32px">${escapeHtml(details.heading)}</h1>${mediaParagraphs}<p style="margin-top:36px"><a href="${escapeHtml(ctaHref)}" style="display:inline-block;background:#B9EB38;color:#080808;padding:14px 20px;text-decoration:none;font-weight:700">${escapeHtml(ctaLabel)}</a></p><div style="margin-top:72px;border-top:1px solid #343430;border-bottom:1px solid #343430;padding:22px 0;color:#ADADA6;font-family:'JetBrains Mono',monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em">~29K followers · ~2.1M views / 30 days · walkthrough Reels · founders / operators / builders</div></main>
+      <footer style="max-width:1120px;margin:auto;padding:28px 20px;border-top:1px solid #2B2B28"><a href="/privacy" style="color:#ADADA6">Privacy and cookie choices</a></footer>
+    </div>`;
+  }
   return `<div data-static-prerender="true" style="min-height:100vh;background:#f8fafc;color:#0f172a;font-family:Arial,sans-serif">
     <header style="border-bottom:1px solid #dbe3ec;background:#fff"><nav aria-label="Primary navigation" style="max-width:1120px;margin:auto;padding:20px;display:flex;gap:20px;flex-wrap:wrap;align-items:center"><a href="/" style="font-weight:700;color:#0f172a;text-decoration:none">Ikram Rana</a><a href="/ai-adoption-framework-for-small-businesses">AI Framework</a><a href="/solutions">Solutions</a><a href="/blog">Blog</a><a href="/about">About</a><a href="/contact">Contact</a></nav></header>
-    <main id="main-content" style="max-width:820px;margin:auto;padding:72px 20px"><p style="text-transform:uppercase;letter-spacing:.15em;color:#2563eb;font-size:.75rem">AI adoption and workflow implementation</p><h1 style="font-family:Georgia,serif;font-size:clamp(2.25rem,6vw,4.25rem);line-height:1.08;margin:18px 0 28px">${escapeHtml(details.heading)}</h1>${paragraphs}<p style="margin-top:32px"><a href="${escapeHtml(canonicalUrl === `${canonicalOrigin}/contact` ? "https://calendly.com/ikramrana15" : "/contact")}" style="display:inline-block;background:#2563eb;color:white;padding:13px 18px;border-radius:8px;text-decoration:none;font-weight:700">${canonicalUrl === `${canonicalOrigin}/contact` ? "Open booking page" : "Discuss a workflow"}</a></p></main>
+    <main id="main-content" style="max-width:820px;margin:auto;padding:72px 20px"><p style="text-transform:uppercase;letter-spacing:.15em;color:#2563eb;font-size:.75rem">${escapeHtml(eyebrow)}</p><h1 style="font-family:Georgia,serif;font-size:clamp(2.25rem,6vw,4.25rem);line-height:1.08;margin:18px 0 28px">${escapeHtml(details.heading)}</h1>${paragraphs}<p style="margin-top:32px"><a href="${escapeHtml(ctaHref)}" style="display:inline-block;background:#2563eb;color:white;padding:13px 18px;border-radius:8px;text-decoration:none;font-weight:700">${escapeHtml(ctaLabel)}</a></p></main>
     <footer style="max-width:1120px;margin:auto;padding:28px 20px;border-top:1px solid #dbe3ec"><a href="/privacy">Privacy and cookie choices</a></footer>
   </div>`;
 }
@@ -275,9 +316,15 @@ const rewriteRules = manifest.map(({ pathname, file }) => {
   return `  RewriteRule ^${escapedRoute}$ ${file} [END]`;
 }).join("\n");
 
-const htaccess = `# Generated by scripts/finalize-static-build.mjs. Do not edit the deployed copy.\nOptions -Indexes\nDirectoryIndex index.html\nErrorDocument 404 /404.html\n\n<IfModule mod_rewrite.c>\n  RewriteEngine On\n\n  # One canonical HTTPS host. Path and query string are preserved.\n  RewriteCond %{HTTP_HOST} !^ikramrana\\.com$ [NC,OR]\n  RewriteCond %{HTTPS} !=on\n  RewriteRule ^ https://ikramrana.com%{REQUEST_URI} [R=301,L,NE]\n\n  # Canonical paths have no trailing slash, except the root URL.\n  RewriteCond %{REQUEST_URI} !^/$\n  RewriteRule ^(.+?)/+$ /$1 [R=301,L,NE]\n\n  RewriteRule ^index\\.html$ / [R=301,L]\n\n  # Real files and directories always bypass application routing.\n  RewriteCond %{REQUEST_FILENAME} -f [OR]\n  RewriteCond %{REQUEST_FILENAME} -d\n  RewriteRule ^ - [L]\n\n  # Only sitemap-approved application routes receive a 200 response.\n${rewriteRules}\n</IfModule>\n\n<IfModule mod_mime.c>\n  AddType text/plain .txt\n  AddType application/xml .xml\n  AddType application/pdf .pdf\n  AddType image/webp .webp\n</IfModule>\n\n<IfModule mod_headers.c>\n  Header always set X-Content-Type-Options \"nosniff\"\n  Header always set Referrer-Policy \"strict-origin-when-cross-origin\"\n  Header always set X-Frame-Options \"SAMEORIGIN\"\n  Header always set Permissions-Policy \"camera=(), microphone=(), geolocation=()\"\n</IfModule>\n`;
+const htaccess = `# Generated by scripts/finalize-static-build.mjs. Do not edit the deployed copy.\nOptions -Indexes\nDirectoryIndex index.html\nErrorDocument 404 /404.html\n\n<IfModule mod_rewrite.c>\n  RewriteEngine On\n\n  # One canonical HTTPS host. Path and query string are preserved.\n  RewriteCond %{HTTP_HOST} !^ikramrana\\.com$ [NC,OR]\n  RewriteCond %{HTTPS} !=on\n  RewriteRule ^ https://ikramrana.com%{REQUEST_URI} [R=301,L,NE]\n\n  # Canonical paths have no trailing slash, except the root URL.\n  RewriteCond %{REQUEST_URI} !^/$\n  RewriteCond %{REQUEST_URI} !^/ops-kit/$\n  RewriteRule ^(.+?)/+$ /$1 [R=301,L,NE]\n\n  RewriteRule ^index\\.html$ / [R=301,L]\n\n  # Real files and directories always bypass application routing.\n  RewriteCond %{REQUEST_FILENAME} -f [OR]\n  RewriteCond %{REQUEST_FILENAME} -d\n  RewriteRule ^ - [L]\n\n  # Only sitemap-approved application routes receive a 200 response.\n${rewriteRules}\n</IfModule>\n\n<IfModule mod_mime.c>\n  AddType text/plain .txt\n  AddType application/xml .xml\n  AddType application/pdf .pdf\n  AddType image/webp .webp\n</IfModule>\n\n<IfModule mod_headers.c>\n  Header always set X-Content-Type-Options \"nosniff\"\n  Header always set Referrer-Policy \"strict-origin-when-cross-origin\"\n  Header always set X-Frame-Options \"SAMEORIGIN\"\n  Header always set Permissions-Policy \"camera=(), microphone=(), geolocation=()\"\n</IfModule>\n`;
 const retiredRedirectRules = `  # Retired URLs retained from the preceding production rules.\n  RewriteRule ^how-to-protect-client-data-while-using-ai-automation-in-law-firms-and-small-businesses/?$ /blog/privacy-review-before-ai-pilot-canada [R=301,L]\n  RewriteRule ^why-i-believe-easy-ai-breaks-and-what-openais-agent-builder-gets-right/?$ /ai-knowledge-hub/what-are-ai-agents-for-businesses [R=301,L]\n  RewriteRule ^insight/page/2/?$ /blog [R=301,L]\n\n`;
-const deployedHtaccess = htaccess.replace(
+const htaccessWithServerRoutes = htaccess
+  .replace("DirectoryIndex index.html", "DirectoryIndex index.php index.html")
+  .replace(
+    "  # Canonical paths have no trailing slash, except the root URL.\n",
+    "  RewriteRule ^work-with-me/?$ /media-kit [R=301,L]\n\n  # Canonical paths have no trailing slash, except the root URL.\n",
+  );
+const deployedHtaccess = htaccessWithServerRoutes.replace(
   "  # Canonical paths have no trailing slash, except the root URL.\n",
   `${retiredRedirectRules}  # Canonical paths have no trailing slash, except the root URL.\n`,
 );
