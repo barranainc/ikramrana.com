@@ -1,7 +1,7 @@
 /*
  * DESIGN: The Architect's Blueprint , Light Theme
  * Layout wrapper with persistent top navigation and footer.
- * Nav: Home / Solutions / Illustrative Use Cases / Framework / Insights / Blog / AI Knowledge Hub / About / Contact
+ * Nav: Home / Solutions / Illustrative Use Cases / Framework / Insights / Blog / AI Knowledge Hub / About / Media kit / Contact
  * All legacy content pages remain at their own URLs , nav points to hubs.
  */
 
@@ -25,6 +25,7 @@ const navLinks = [
   { href: "/ai-knowledge-hub", label: "AI Knowledge Hub" },
   { href: "/industries", label: "Industries" },
   { href: "/about", label: "About" },
+  { href: "/media-kit", label: "Media kit" },
 ];
 
 // Helper: check if a link is "active" given the current location

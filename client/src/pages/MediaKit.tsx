@@ -4,40 +4,47 @@ import { useHead } from "@/hooks/useHead";
 
 const title = "Brand partnerships for @ikramrana.ai | Ikram Rana";
 const description =
-  "Public media kit for @ikramrana.ai - 29K followers, ~2.1M views / 30 days. AI tool and automation Reels for founders and builders. Email ir@ikramrana.com for partnership options and pricing.";
+  "Public media kit for @ikramrana.ai — ~29K followers, ~2.1M views / 30 days. AI tool and automation Reels for founders and builders. Email ir@ikramrana.com for partnership options and pricing.";
 const partnershipEmail =
   "mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership";
 
 const snapshot = [
   ["Instagram", "@ikramrana.ai (verified)"],
   ["Followers", "~29K"],
-  ["Views (last 30 days)", "~2.1M (Instagram Insights)"],
+  ["Views last 30 days", "~2.1M (Instagram Insights)"],
   ["Format", "Educational walkthrough Reels + Stories CTAs"],
   ["Audience", "Founders, operators, builders, tech-curious professionals"],
   ["Geography", "South Asia + North America dominant · based Vaughan, Ontario"],
-  ["Audience mix", "Mostly men · peak ages 18-44"],
+  ["Audience mix", "Mostly men · peak ages 18–44"],
 ] as const;
 
 const campaignSteps = [
-  "Brief + product access",
-  "Native Reel (hook → demo → CTA)",
-  "Factual review draft",
-  "Publish + Stories CTA",
-  "Insights report",
+  { title: "Brief", detail: "Product access and campaign context." },
+  { title: "Native Reel", detail: "Hook, demonstration, and CTA." },
+  { title: "Factual review", detail: "A draft for product accuracy." },
+  { title: "Publish", detail: "Reel plus Stories CTA." },
+  { title: "Report", detail: "Instagram Insights after publication." },
+] as const;
+
+const inquiryDetails = [
+  "Product URL",
+  "One-line use case or job-to-be-done",
+  "Launch timing",
+  "One-off campaign or monthly collaboration",
 ] as const;
 
 const faqs = [
   {
-    question: "Same as booking a consult?",
-    answer: "No. Partnerships via ir@; consults separate.",
+    question: "Is this the same as booking a consult?",
+    answer: "No. Partnerships via ir@ikramrana.com. AI consults are separate.",
   },
   {
     question: "Where are the rates?",
     answer: "In the partnership options and pricing overview, sent after you email with product and timing.",
   },
   {
-    question: "What to include?",
-    answer: "Product URL, job-to-be-done, launch window, one-off vs monthly.",
+    question: "What should I include?",
+    answer: "Product URL, job-to-be-done, launch window, one-off or monthly.",
   },
 ] as const;
 
@@ -87,9 +94,14 @@ export default function MediaKit() {
             <h1 className="mt-6 max-w-[820px] font-serif text-[clamp(3rem,8vw,6.8rem)] font-medium leading-[0.94] tracking-[-0.045em] text-[#F5F5F2]">
               Media kit for <span className="text-[#B9EB38]">@ikramrana.ai</span>
             </h1>
-            <p className="mt-8 max-w-[790px] text-lg leading-[1.75] text-[#C9C9C3] sm:text-xl">
-              @ikramrana.ai is an Instagram channel for practical AI tools and automation. Brands and AI tool teams use it when they want educational, demo-led Reels that reach founders, operators, and builders - people who try software, not AI entertainment. This page is the public overview. For packages and commercial terms, email ir@ikramrana.com and you will receive the partnership options and pricing.
-            </p>
+            <div className="mt-8 max-w-[790px] space-y-5 text-lg leading-[1.75] text-[#C9C9C3] sm:text-xl">
+              <p>
+                @ikramrana.ai is an Instagram channel for practical AI tools and automation. Brands and AI tool teams use it when they want educational, demo-led Reels that reach founders, operators, and builders — people who try software, not AI entertainment.
+              </p>
+              <p>
+                This page is the public overview. For packages and commercial terms, email ir@ikramrana.com and you will receive the partnership options and pricing.
+              </p>
+            </div>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
                 href={partnershipEmail}
@@ -133,7 +145,7 @@ export default function MediaKit() {
             <div>
               <Eyebrow dark>Channel snapshot</Eyebrow>
               <h2 id="snapshot-heading" className="mt-4 max-w-[420px] font-serif text-4xl font-medium leading-[1.05] tracking-[-0.025em] md:text-5xl">
-                Audience and recent reach
+                Reach people who evaluate and use software.
               </h2>
               <p className="mt-6 max-w-[48ch] leading-relaxed text-[#54544F]">
                 Public figures are rounded. The 30-day view count is based on Instagram Insights.
@@ -165,31 +177,38 @@ export default function MediaKit() {
             <section aria-labelledby="channel-fit-heading" className="px-4 py-16 sm:px-6 md:py-20 lg:border-r lg:border-[#D1D1CA] lg:px-8 lg:pr-16">
               <Eyebrow dark>Why this channel</Eyebrow>
               <h2 id="channel-fit-heading" className="mt-4 font-serif text-3xl font-medium leading-tight tracking-[-0.02em] md:text-4xl">
-                AI tools shown working
+                The product is shown working.
               </h2>
               <p className="mt-6 max-w-[56ch] text-lg leading-[1.7] text-[#383834]">
                 Hook-first Reels that show AI tools working. High comment velocity on tool posts; large share of views from non-followers. Fits AI, automation, developer, B2B SaaS products that need a clear demo.
               </p>
               <div className="mt-10 border-l-2 border-[#B9EB38] pl-5">
                 <h3 className="font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-[#526B13]">Best-fit</h3>
-                <p className="mt-3 leading-[1.7] text-[#383834]">
-                  AI/LLM/agents · automation/workflow · developer tools · productivity · B2B SaaS for founders/operators
-                </p>
+                <ul className="mt-3 space-y-2 leading-[1.7] text-[#383834]">
+                  <li>AI, LLMs, and agents</li>
+                  <li>Automation and workflow tools</li>
+                  <li>Developer tools</li>
+                  <li>Productivity products</li>
+                  <li>B2B SaaS for founders and operators</li>
+                </ul>
               </div>
             </section>
 
             <section aria-labelledby="campaign-heading" className="border-t border-[#D1D1CA] px-4 py-16 sm:px-6 md:py-20 lg:border-t-0 lg:px-8 lg:pl-16">
               <Eyebrow dark>How campaigns run</Eyebrow>
               <h2 id="campaign-heading" className="mt-4 font-serif text-3xl font-medium leading-tight tracking-[-0.02em] md:text-4xl">
-                Five steps, then reporting
+                How campaigns run
               </h2>
               <ol className="mt-7 border-t border-[#BABAB2]">
                 {campaignSteps.map((step, index) => (
-                  <li key={step} className="grid grid-cols-[2.5rem_1fr] border-b border-[#D1D1CA] py-4">
+                  <li key={step.title} className="grid grid-cols-[2.5rem_1fr] border-b border-[#D1D1CA] py-4">
                     <span className="font-mono text-xs text-[#526B13]" aria-hidden="true">
                       0{index + 1}
                     </span>
-                    <span className="font-semibold text-[#20201D]">{step}</span>
+                    <span>
+                      <strong className="block font-semibold text-[#20201D]">{step.title}</strong>
+                      <span className="mt-1 block text-sm leading-relaxed text-[#6A6A64]">{step.detail}</span>
+                    </span>
                   </li>
                 ))}
               </ol>
@@ -197,6 +216,27 @@ export default function MediaKit() {
                 Organic unless paid usage rights are included in the partnership options and pricing.
               </p>
             </section>
+          </div>
+        </section>
+
+        <section aria-labelledby="inquire-heading" className="border-t border-[#D1D1CA]">
+          <div className="mx-auto max-w-[1120px] px-4 py-16 sm:px-6 md:py-24 lg:px-8">
+            <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
+              <div>
+                <Eyebrow dark>Inquire</Eyebrow>
+                <h2 id="inquire-heading" className="mt-4 font-serif text-4xl font-medium tracking-[-0.025em] md:text-5xl">
+                  Send the product and timing.
+                </h2>
+                <p className="mt-6 text-lg leading-relaxed text-[#54544F]">Email ir@ikramrana.com with:</p>
+              </div>
+              <ul className="border-t border-[#BABAB2]">
+                {inquiryDetails.map((detail) => (
+                  <li key={detail} className="border-b border-[#D1D1CA] py-4 font-semibold text-[#20201D] sm:py-5">
+                    {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
 

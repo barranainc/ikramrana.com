@@ -80,7 +80,7 @@ assert(Boolean(mediaKitRoute), "Media kit prerender is missing");
 if (mediaKitRoute) {
   const mediaKit = read(mediaKitRoute.file.replace(/^\//, "")).toString("utf8");
   assert(mediaKit.includes("Brand partnerships for @ikramrana.ai | Ikram Rana"), "Media kit title is missing");
-  assert(mediaKit.includes("Public media kit for @ikramrana.ai - 29K followers, ~2.1M views / 30 days."), "Media kit description is missing");
+  assert(mediaKit.includes("Public media kit for @ikramrana.ai — ~29K followers, ~2.1M views / 30 days."), "Media kit description is missing");
   assert(mediaKit.includes("partnership options and pricing"), "Media kit partnership pricing language is missing");
   assert(mediaKit.includes("Email ir@ikramrana.com"), "Media kit email CTA label is missing");
   assert(mediaKit.includes('href="https://ikramrana.com/media-kit"'), "Media kit canonical is missing");
@@ -109,6 +109,9 @@ assert(read("images/ikram-rana-hero.webp").subarray(0, 4).toString() === "RIFF",
 const htaccess = read(".htaccess").toString("utf8");
 assert(htaccess.includes("ErrorDocument 404 /404.html"), "True 404 handler is missing");
 assert(htaccess.includes("Only sitemap-approved application routes"), "Exact-route fallback is missing");
+assert(htaccess.includes("RewriteRule ^work-with-me/?$ /media-kit [R=301,L]"), "Work-with-me redirect is missing");
+assert(htaccess.includes("DirectoryIndex index.php index.html"), "PHP directory index support is missing");
+assert(htaccess.includes("RewriteCond %{REQUEST_URI} !^/ops-kit/$"), "Ops-kit trailing-slash exception is missing");
 assert(!htaccess.includes("RewriteRule . /index.html"), "Unsafe catch-all fallback remains");
 
 const notFound = read("404.html").toString("utf8");
