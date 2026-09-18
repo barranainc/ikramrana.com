@@ -28,22 +28,22 @@ const campaignSteps = [
 
 const inquiryDetails = [
   "Product URL",
-  "One-line use case or job-to-be-done",
+  "One-line use case",
   "Launch timing",
-  "One-off campaign or monthly collaboration",
+  "One-off or monthly",
 ] as const;
 
 const faqs = [
   {
-    question: "Is this the same as booking a consult?",
-    answer: "No. Partnerships via ir@ikramrana.com. AI consults are separate.",
+    question: "Same as booking a consult?",
+    answer: "No. Partnerships via ir@ikramrana.com. Consults separate.",
   },
   {
     question: "Where are the rates?",
-    answer: "In the partnership options and pricing overview, sent after you email with product and timing.",
+    answer: "Partnership options and pricing overview, emailed after product + timing.",
   },
   {
-    question: "What should I include?",
+    question: "What to include?",
     answer: "Product URL, job-to-be-done, launch window, one-off or monthly.",
   },
 ] as const;
@@ -110,13 +110,15 @@ export default function MediaKit() {
                 <Mail size={17} aria-hidden="true" />
                 Email ir@ikramrana.com
               </a>
-              <Link
-                href="/contact"
+              <a
+                href="https://v2.stan.store/ikramrana"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-h-12 items-center justify-center gap-2 border border-[#565650] px-5 py-3 text-sm font-semibold text-[#F5F5F2] no-underline transition-colors hover:border-[#B9EB38] hover:text-[#B9EB38] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B9EB38]"
               >
-                Contact Ikram Rana
+                AI consult (separate)
                 <ArrowUpRight size={16} aria-hidden="true" />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -183,13 +185,13 @@ export default function MediaKit() {
                 Hook-first Reels that show AI tools working. High comment velocity on tool posts; large share of views from non-followers. Fits AI, automation, developer, B2B SaaS products that need a clear demo.
               </p>
               <div className="mt-10 border-l-2 border-[#B9EB38] pl-5">
-                <h3 className="font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-[#526B13]">Best-fit</h3>
+                <h3 className="font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-[#526B13]">Best fit</h3>
                 <ul className="mt-3 space-y-2 leading-[1.7] text-[#383834]">
-                  <li>AI, LLMs, and agents</li>
-                  <li>Automation and workflow tools</li>
+                  <li>AI/LLMs/agents</li>
+                  <li>Automation</li>
                   <li>Developer tools</li>
-                  <li>Productivity products</li>
-                  <li>B2B SaaS for founders and operators</li>
+                  <li>Productivity</li>
+                  <li>B2B SaaS for founders/operators</li>
                 </ul>
               </div>
             </section>
