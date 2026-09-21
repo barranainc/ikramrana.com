@@ -4,14 +4,14 @@ import { useHead } from "@/hooks/useHead";
 
 const title = "Brand partnerships for @ikramrana.ai | Ikram Rana";
 const description =
-  "Public media kit for @ikramrana.ai — ~29K followers, ~2.1M views / 30 days. AI tool and automation Reels for founders and builders. Email ir@ikramrana.com for partnership options and pricing.";
+  "Public media kit for @ikramrana.ai — ~30K followers, ~2.3M views / 30 days. AI tool and automation Reels for founders and builders. Email ir@ikramrana.com for partnership options and pricing.";
 const partnershipEmail =
   "mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership";
 
 const snapshot = [
   ["Instagram", "@ikramrana.ai (verified)"],
-  ["Followers", "~29K"],
-  ["Views last 30 days", "~2.1M (Instagram Insights)"],
+  ["Followers", "~30K"],
+  ["Views last 30 days", "~2.3M (Instagram Insights)"],
   ["Format", "Educational walkthrough Reels + Stories CTAs"],
   ["Audience", "Founders, operators, builders, tech-curious professionals"],
   ["Geography", "South Asia + North America dominant · based Vaughan, Ontario"],
@@ -124,8 +124,8 @@ export default function MediaKit() {
 
           <div className="mt-14 grid border-y border-[#343430] sm:grid-cols-2 lg:mt-20 lg:grid-cols-4">
             {[
-              ["~29K", "followers"],
-              ["~2.1M", "views / 30 days"],
+              ["~30K", "followers"],
+              ["~2.3M", "views / 30 days"],
               ["Reels", "educational walkthroughs"],
               ["18-44", "peak audience ages"],
             ].map(([value, label], index) => (
