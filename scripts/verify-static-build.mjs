@@ -80,7 +80,7 @@ assert(Boolean(mediaKitRoute), "Media kit prerender is missing");
 if (mediaKitRoute) {
   const mediaKit = read(mediaKitRoute.file.replace(/^\//, "")).toString("utf8");
   assert(mediaKit.includes("Brand partnerships for @ikramrana.ai | Ikram Rana"), "Media kit title is missing");
-  assert(mediaKit.includes("Public media kit for @ikramrana.ai — ~29K followers, ~2.1M views / 30 days."), "Media kit description is missing");
+  assert(mediaKit.includes("Public media kit for @ikramrana.ai — ~30K followers, ~2.3M views / 30 days."), "Media kit description is missing");
   assert(mediaKit.includes("partnership options and pricing"), "Media kit partnership pricing language is missing");
   assert(mediaKit.includes("Email ir@ikramrana.com"), "Media kit email CTA label is missing");
   assert(mediaKit.includes("AI consult (separate)"), "Media kit separate consult link is missing");
