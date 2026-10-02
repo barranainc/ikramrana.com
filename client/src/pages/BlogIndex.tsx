@@ -52,6 +52,7 @@ export default function BlogIndex() {
     <div className="min-h-screen bg-background text-foreground">
       <title>Critical AI Adoption Analysis | Ikram Rana</title>
 
+      <aside className="container py-6 border-b border-border"><Link href="/oracles-of-modern-times" className="text-electric underline underline-offset-4">Oracles of Modern Times with Ikram Rana</Link><p className="text-slate-text mt-2">When does an answer become an authority? Explore the series.</p></aside>
       {/* ── Page Header ─────────────────────────────────────────────── */}
       <section className="bg-navy border-b border-border pt-24 pb-16">
         <div className="container">

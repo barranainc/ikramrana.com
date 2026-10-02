@@ -8,6 +8,9 @@ const publicDirectory = path.join(projectRoot, "dist", "public");
 const sitemapPath = path.join(projectRoot, "client", "public", "sitemap.xml");
 const canonicalOrigin = "https://ikramrana.com";
 
+const oracleSeries = JSON.parse(fs.readFileSync(path.join(projectRoot, "client/src/data/oracles.json"), "utf8"));
+const oracleBase = "/oracles-of-modern-times";
+
 const priorityPages = {
   "/": {
     title: "Ikram Rana | AI Adoption and Workflow Implementation",
@@ -157,6 +160,16 @@ function titleCaseSlug(slug) {
 }
 
 function pageDetails(pathname) {
+  if (pathname === oracleBase || pathname.startsWith(`${oracleBase}/`)) {
+    const article = oracleSeries.articles.find(item => pathname === `${oracleBase}/${item.slug}`);
+    return {
+      title: `${article?.title || oracleSeries.title} | Ikram Rana`,
+      heading: article?.title || oracleSeries.question,
+      description: article?.description || "A series by Ikram Rana about AI advice and human judgment. When does an answer become an authority?",
+      paragraphs: article?.paragraphs || ["We keep calling AI a tool. Then we ask it to tell us how to live.", "I believe AI chatbots are becoming the oracles of modern times. This series explores the authority we give their answers, through everyday situations, research and practical questions."],
+      type: article ? "Article" : "CollectionPage", oracle: true, article,
+    };
+  }
   if (priorityPages[pathname]) return priorityPages[pathname];
   const heading = indexNames[pathname] || titleCaseSlug(pathname.split("/").filter(Boolean).at(-1) || "Ikram Rana");
   const description = categoryDefaults.find(([prefix]) => pathname.startsWith(prefix))?.[1]
@@ -175,6 +188,13 @@ function pageDetails(pathname) {
 }
 
 function schemaFor(canonicalUrl, details) {
+  if (details.oracle) return {
+    "@context": "https://schema.org", "@type": details.type,
+    headline: details.heading, name: details.heading, description: details.description, url: canonicalUrl,
+    author: { "@type": "Person", name: "Ikram Rana", url: `${canonicalOrigin}/about` },
+    ...(oracleSeries.publishedDate ? { datePublished: oracleSeries.publishedDate } : {}),
+    ...(details.article ? { articleBody: details.article.paragraphs.join("\n\n"), citation: details.article.sources.map(source => source.url), isPartOf: { "@type": "CreativeWorkSeries", name: oracleSeries.title, url: `${canonicalOrigin}${oracleBase}` } } : {})
+  };
   const pageId = `${canonicalUrl}#webpage`;
   const pageType = details.type || "WebPage";
   return {
@@ -229,6 +249,12 @@ function schemaFor(canonicalUrl, details) {
 }
 
 function staticShell(details, canonicalUrl) {
+  if (details.oracle) {
+    const article = details.article;
+    const body = details.paragraphs.map(text => `<p>${escapeHtml(text).replace(/\[S(\d+)\]/g, '<a href="#source-S$1">[S$1]</a>')}</p>`).join("");
+    const sources = article ? `<section><h2>Sources and context</h2><ul>${article.sources.map(source => `<li id="source-${source.id}"><a href="${escapeHtml(source.url)}">[${source.id}] ${escapeHtml(source.title)}</a><p>${escapeHtml(source.note)}</p></li>`).join("")}</ul></section>` : `<section><h2>Read the essays</h2>${oracleSeries.articles.map(item => `<h3><a href="${oracleBase}/${item.slug}">${escapeHtml(item.title)}</a></h3><p>${escapeHtml(item.description)}</p>`).join("")}</section><p>The AI-oracle comparison has earlier uses. This is Ikram Rana’s series and interpretation. See the opening essay for sources.</p>`;
+    return `<div data-static-prerender="true" style="max-width:820px;margin:auto;padding:40px 24px;font:18px/1.8 system-ui;color:#0f172a"><nav><a href="/">Ikram Rana</a> · <a href="${oracleBase}">Oracles of Modern Times</a> · <a href="/blog">Blog</a></nav><main><header><p>Oracles of Modern Times</p><h1>${escapeHtml(details.heading)}</h1><p>By <a href="/about">Ikram Rana</a> · Creator and host of Oracles of Modern Times</p><p>${oracleSeries.publishedDate ? `Published ${escapeHtml(oracleSeries.publishedDate)} · ` : ''}Reviewed ${oracleSeries.reviewedDate}</p></header><article>${body}</article>${sources}<p><a href="${oracleBase}">Explore the series</a> · <a href="https://www.instagram.com/ikramranaa/">Follow @ikramranaa</a> · <a href="https://ikramrana.substack.com/">Real Life How to AI</a></p><p>Keep your judgment.</p></main></div>`;
+  }
   const isMediaKit = canonicalUrl === `${canonicalOrigin}/media-kit`;
   const paragraphs = details.paragraphs.map((paragraph) => `<p style="font-size:1.08rem;line-height:1.75;color:#475569">${escapeHtml(paragraph)}</p>`).join("");
   const eyebrow = details.eyebrow || "AI adoption and workflow implementation";
@@ -264,7 +290,7 @@ function renderRoute(template, pathname) {
   html = html.replace(/(<meta\s+name=["']twitter:title["']\s+content=["'])[^"']*(["']\s*\/?>)/i, `$1${escapeHtml(details.title)}$2`);
   html = html.replace(/(<meta\s+name=["']twitter:description["']\s+content=["'])[^"']*(["']\s*\/?>)/i, `$1${escapeHtml(details.description)}$2`);
   const schema = JSON.stringify(schemaFor(canonicalUrl, details)).replaceAll("<", "\\u003c");
-  html = html.replace("</head>", `    <script type="application/ld+json">${schema}</script>\n  </head>`);
+  html = html.replace("</head>", `    <script${details.oracle ? ' id="oracles-static-schema"' : ''} type="application/ld+json">${schema}</script>\n  </head>`);
   html = html.replace(/<div id=["']root["']><\/div>/i, `<div id="root">${staticShell(details, canonicalUrl)}</div>`);
   return html;
 }

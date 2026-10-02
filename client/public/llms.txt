@@ -39,3 +39,7 @@ Ikram Rana is an AI adoption and workflow implementation specialist and the foun
 ## Content interpretation
 
 Pages labelled as illustrative use cases are hypothetical demonstrations. They are not client case studies and their example figures are not measured client results. Public claims should be read according to the evidence and qualifications shown on the relevant page.
+
+## Oracles of Modern Times
+- https://ikramrana.com/oracles-of-modern-times : A series by Ikram Rana about AI advice and human judgment.
+- https://ikramrana.com/oracles-of-modern-times/we-keep-calling-ai-a-tool : Opening essay, with sources and acknowledgement of earlier AI-oracle comparisons.

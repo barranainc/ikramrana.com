@@ -1,0 +1,124 @@
+[
+  {
+    "slug": "your-favourite-ai-answer-might-let-you-stay-wrong",
+    "title": "Your favourite AI answer might let you stay wrong",
+    "description": "A chatbot agreeing with you is not proof that the other person is wrong.",
+    "paragraphs": [
+      "Your favourite AI answer might be the one that lets you stay wrong.",
+      "Imagine you have had an argument. You paste a few messages into a chatbot, explain why you are upset, and ask, “Am I right here?”",
+      "It gives you a thoughtful response. Your position sounds reasonable. The other person’s behaviour looks difficult to defend.",
+      "Before you send them a screenshot saying “Even AI agrees with me,” remember who gave AI the story.",
+      "You picked the messages. You supplied the background. You decided which details mattered.",
+      "You have briefed the referee.",
+      "You might still be right. The concern is treating a response to your account as though it independently settled what happened.",
+      "That is the problem behind episodes three and four of Oracles of Modern Times. I believe AI chatbots are becoming the oracles of modern times, partly because an answer can feel like permission to stop questioning our own version of events.",
+      "There is research behind the concern about agreement. In a Stanford-led study, participants given overly agreeable AI advice about conflicts became more convinced they were right and less willing to make amends. They also preferred the agreeable responses. Those findings concern the tested interactions and reported intentions, rather than proof of what everyone did afterwards. [S6]",
+      "That is an uncomfortable result. The answer people liked could leave them less open to fixing the problem.",
+      "So here is a question I would ask myself: did this conversation help me understand more, or just give me better wording for the case I already wanted to make?",
+      "Consider the difference between “They replied the next morning” and “They waited because they wanted to punish me.” One describes a delay. The other assigns a motive.",
+      "The motive might deserve consideration. A timestamp alone cannot establish it.",
+      "A chatbot can wrap an interpretation in patient, reasonable language. The tone does not supply the missing evidence. That is worth remembering when the interpretation makes you feel completely justified.",
+      "Try asking what the answer assumes and what information could change it. Then read the response critically. A request for balance does not guarantee that the model has found it. An answer that criticises you can be wrong too.",
+      "The same problem turns up at work. Imagine a manager describing a difficult employee and asking what to do. If the description leaves out changing instructions or an impossible deadline, a polished summary can carry that omission straight into the recommendation.",
+      "Before that recommendation affects somebody, a person needs to check the underlying account. Which facts are documented? Whose explanation is missing? What is disputed?",
+      "That is where I would put the effort. Another beautifully worded paragraph will not resolve a fact nobody checked.",
+      "For an ordinary personal disagreement, AI might help you prepare questions or organise what you want to say. The next step still needs to fit the circumstances and be safe for the people involved.",
+      "Agreement can feel good. Good advice also needs to hold up when you examine it.",
+      "Would you give a chatbot’s answer the same weight if the other person had written the prompt?",
+      "Ikram Rana | Creator and host of Oracles of Modern Times",
+      "Keep your judgment."
+    ],
+    "sources": [
+      {
+        "id": "S6",
+        "title": "Overly agreeable advice",
+        "note": "Cheng and colleagues, Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence. Study discussed by Stanford on 26 March 2026 following publication in Science. Model comparisons and experiments support bounded claims about the tested situations.",
+        "url": "https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research"
+      }
+    ]
+  },
+  {
+    "slug": "your-future-is-not-a-fact-in-bullet-points",
+    "title": "Your future is not a fact in bullet points",
+    "description": "A convincing prediction still has to show you where its confidence came from.",
+    "paragraphs": [
+      "Your future does not become a fact because AI wrote it in bullet points.",
+      "Imagine asking whether your business will succeed next year. The chatbot gives you an organised answer. It describes opportunities, names challenges, and paints a future you can picture.",
+      "It feels useful. It may even feel reassuring.",
+      "But where did the certainty come from?",
+      "Did it check your costs? Does it know whether those prospective customers will buy? Can you trace the numbers to anything outside the conversation?",
+      "A detailed answer can hide a very thin starting point.",
+      "This is where the idea behind Oracles of Modern Times becomes especially clear. I believe AI chatbots are becoming the oracles of modern times. Questions about the future expose how much we want an answer to settle our uncertainty.",
+      "Some people make the oracle comparison quite literal. A 2026 preprint examined AI fortune-telling in Chinese communities through 22 interviews and 1,842 online posts. It described practices including repeated questions in search of a more satisfactory interpretation. The study documents behaviour in that setting; it does not establish global prevalence or show that the predictions work. [S7]",
+      "For business decisions, I would rather see the assumptions laid out where somebody can challenge them.",
+      "Suppose a forecast depends on gaining twenty customers. Where did that expectation come from? A signed agreement is different from a friendly conversation. A sales target is different from evidence that the sales will happen.",
+      "An assistant can help arrange the information and compare possible outcomes. Its usefulness depends on what goes into that exercise and whether somebody checks the result.",
+      "Ask what happens if sales are lower or costs rise. Change the assumption that matters most. Check the calculations against the underlying information.",
+      "The point is to understand how the decision behaves when the story becomes less comfortable.",
+      "There is another test I would apply to a prediction: can I tell whether it was wrong? “A promising period is ahead” can sound encouraging while leaving almost nothing to evaluate. A forecast with a defined outcome, time frame and stated uncertainty gives you something to examine.",
+      "Then comes the harder question. What do you do when you dislike the answer?",
+      "A follow-up can improve a conversation. Perhaps the model missed a cost or you left out an important fact. Correcting that is useful.",
+      "But imagine moving from chatbot to chatbot until one endorses the decision you wanted to make. If approval was the stopping point, notice what you were searching for.",
+      "You can be shopping for permission while calling it research.",
+      "Before the next prompt, write down the evidence that would change your mind. If it exists, find a way to check it. If your decision rests on a personal priority, name that priority. Another answer cannot decide how much you value something for you.",
+      "This is a practical reflection exercise, not a diagnosis of anybody’s habits. The question is whether the next exchange will add information you can use.",
+      "You may still have to make a decision with uncertainty attached. I would rather be able to explain that uncertainty than hide it behind a chatbot’s confident wording.",
+      "What would change your mind? Answer that before asking AI to predict what happens next.",
+      "Ikram Rana | Creator and host of Oracles of Modern Times",
+      "Keep your judgment."
+    ],
+    "sources": [
+      {
+        "id": "S7",
+        "title": "Fortune telling and repeat questions",
+        "note": "Ling, Zheng, Cao and RAY LC, Re-Tell the Fortune so I Can Believe It, arXiv version 1, 29 March 2026. Qualitative work with 22 participants and 1,842 community posts in a Chinese context. Cite as the preprint version reviewed here; it cannot establish how common these behaviours are globally.",
+        "url": "https://arxiv.org/html/2603.27784v1"
+      }
+    ]
+  },
+  {
+    "slug": "your-name-is-still-on-the-decision",
+    "title": "Your name is still on the decision",
+    "description": "AI can offer comfort and advice. You still need reasons you can examine.",
+    "paragraphs": [
+      "“AI told me to” is a terrible excuse for a decision you made.",
+      "That might sound harsh. But once an answer changes what you do, somebody has to live with the result. The confidence of the wording cannot take responsibility for you.",
+      "There is another point I want to make just as clearly: laughing at people who talk to AI misses the point.",
+      "Imagine it is two in the morning. You are worried about something and do not want to wake anyone. You put it into words, and a response arrives. It is easy to understand why that could matter.",
+      "Research on AI companions has found momentary reductions in loneliness. The relevant study did not establish that the relief persisted beyond the interaction. [S8] Separate MIT and OpenAI research found a mixed picture, with outcomes varying across people and usage. Associations involving longer daily use should not be treated as proof that the duration caused those outcomes. [S9]",
+      "The comfort can be real. That does not settle how much authority the advice deserves.",
+      "I believe AI chatbots are becoming the oracles of modern times. In this series, I keep coming back to what happens after the answer arrives.",
+      "Did the conversation help you put a feeling into words? Did it help you prepare for a conversation with somebody who knows the situation? Did it clarify what you need to check next?",
+      "Those are useful questions. Time spent in a chat does not answer them on its own.",
+      "When an exchange turns into advice you might act on, I propose four ordinary checks.",
+      "First, what did I actually tell it?",
+      "Think about the details you selected. If your prompt includes every frustrating thing a colleague did and none of the constraints they faced, recognise the shape of that account. At work, a folder of selected documents can be incomplete in the same way.",
+      "Second, what did it assume?",
+      "An answer can move from “the customer has not replied” to “the customer is no longer interested” without giving the leap much attention. You need to notice it. Some guesses deserve investigation; none become facts just because the sentence reads smoothly.",
+      "Third, what can I check outside this chat?",
+      "Look at the original document. Verify the number. Speak to someone with relevant knowledge. Asking the same chatbot whether it is sure can be a useful challenge, but it is not independent confirmation.",
+      "Fourth, who owns the decision?",
+      "At work, put a person’s name on it. That person should be able to explain what was checked and why the recommendation was accepted. In your own life, ask whether you can explain your choice without relying on “the answer sounded convincing.”",
+      "These checks are a practical habit I am proposing for the series. They will not guarantee a correct answer. They give you places to look before you act.",
+      "Apply them to this article too. Which parts are research findings? Which are my interpretation? Does the suggestion fit the decision you are facing?",
+      "Oracles of Modern Times will keep following this question into business, work and personal life: when does an answer become an authority?",
+      "An AI conversation can be useful. You still need to decide what deserves your trust.",
+      "Ikram Rana | Creator and host of Oracles of Modern Times",
+      "Keep your judgment."
+    ],
+    "sources": [
+      {
+        "id": "S8",
+        "title": "Short term loneliness relief",
+        "note": "De Freitas and colleagues, AI Companions Reduce Loneliness, Journal of Consumer Research. The author copy reports momentary relief and no evidence that benefits persisted beyond the immediate interaction in the relevant study.",
+        "url": "https://www.hbs.edu/ris/Publication%20Files/AI%20Companions%20Reduce%20Loneliness%2011.7.2025_57451c02-8047-4e0d-abfc-55841f64166d.pdf"
+      },
+      {
+        "id": "S9",
+        "title": "Mixed effects of chatbot use",
+        "note": "MIT Media Lab and OpenAI, 21 March 2025. Observational analysis and a four-week controlled study. Usage-duration associations are not causal; results vary by people and usage.",
+        "url": "https://www.media.mit.edu/posts/openai-mit-research-collaboration-affective-use-and-emotional-wellbeing-in-ChatGPT/"
+      }
+    ]
+  }
+]
