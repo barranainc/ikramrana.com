@@ -4,14 +4,21 @@ import { useHead } from "@/hooks/useHead";
 
 const title = "Brand partnerships for @ikramrana.ai | Ikram Rana";
 const description =
-  "Public media kit for @ikramrana.ai — ~29K followers, ~2.1M views / 30 days. AI tool and automation Reels for founders and builders. Email ir@ikramrana.com for partnership options and pricing.";
+  "Public media kit for @ikramrana.ai — ~31K followers, ~2.5M views/month average. Multi-platform AI content reach: Instagram, Facebook, LinkedIn, Substack. Email ir@ikramrana.com for partnership options and pricing.";
 const partnershipEmail =
   "mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership";
 
 const snapshot = [
-  ["Instagram", "@ikramrana.ai (verified)"],
-  ["Followers", "~29K"],
-  ["Views last 30 days", "~2.1M (Instagram Insights)"],
+  ["Instagram", "@ikramrana.ai (verified) — https://www.instagram.com/ikramrana.ai/"],
+  ["Instagram Followers", "~31K"],
+  ["Instagram Views", "~2.5 million per month on average"],
+  ["Facebook", "Ikram Rana - AI Automation — https://www.facebook.com/IkramRana.aiautomation"],
+  ["Facebook Followers", "~21K"],
+  ["Facebook Views", "~2.4M views / month"],
+  ["LinkedIn", "Ikram Rana — https://www.linkedin.com/in/ikramrana/"],
+  ["LinkedIn Followers", "~14K"],
+  ["Substack", "Real Life AI — https://ikramrana.substack.com"],
+  ["Substack Subscribers", "Over 6,000"],
   ["Format", "Educational walkthrough Reels + Stories CTAs"],
   ["Audience", "Founders, operators, builders, tech-curious professionals"],
   ["Geography", "South Asia + North America dominant · based Vaughan, Ontario"],
@@ -96,7 +103,7 @@ export default function MediaKit() {
             </h1>
             <div className="mt-8 max-w-[790px] space-y-5 text-lg leading-[1.75] text-[#C9C9C3] sm:text-xl">
               <p>
-                @ikramrana.ai is an Instagram channel for practical AI tools and automation. Brands and AI tool teams use it when they want educational, demo-led Reels that reach founders, operators, and builders — people who try software, not AI entertainment.
+                @ikramrana.ai is a multi-platform AI content channel featuring Instagram, Facebook, LinkedIn, and Substack. Brands and AI tool teams use it when they want educational, demo-led content that reaches founders, operators, and builders — people who try software, not AI entertainment.
               </p>
               <p>
                 This page is the public overview. For packages and commercial terms, email ir@ikramrana.com and you will receive the partnership options and pricing.
@@ -124,10 +131,10 @@ export default function MediaKit() {
 
           <div className="mt-14 grid border-y border-[#343430] sm:grid-cols-2 lg:mt-20 lg:grid-cols-4">
             {[
-              ["~29K", "followers"],
-              ["~2.1M", "views / 30 days"],
-              ["Reels", "educational walkthroughs"],
-              ["18-44", "peak audience ages"],
+              ["~31K", "Instagram followers"],
+              ["~2.5M", "views/month average"],
+              ["~21K", "Facebook followers"],
+              ["~2.4M", "Facebook views/month"],
             ].map(([value, label], index) => (
               <div
                 key={label}
@@ -145,12 +152,12 @@ export default function MediaKit() {
         <section aria-labelledby="snapshot-heading" className="mx-auto max-w-[1120px] px-4 py-16 sm:px-6 md:py-24 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-20">
             <div>
-              <Eyebrow dark>Channel snapshot</Eyebrow>
+              <Eyebrow dark>Multi-platform reach</Eyebrow>
               <h2 id="snapshot-heading" className="mt-4 max-w-[420px] font-serif text-4xl font-medium leading-[1.05] tracking-[-0.025em] md:text-5xl">
                 Reach people who evaluate and use software.
               </h2>
               <p className="mt-6 max-w-[48ch] leading-relaxed text-[#54544F]">
-                Public figures are rounded. The 30-day view count is based on Instagram Insights.
+                Public figures are rounded. View counts reflect platform-specific averaging periods.
               </p>
             </div>
 
