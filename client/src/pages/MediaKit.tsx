@@ -13,7 +13,7 @@ const snapshot = [
   ["Instagram Followers", "~31K"],
   ["Instagram Views", "~2.5 million per month on average"],
   ["Facebook", "Ikram Rana - AI Automation — https://www.facebook.com/IkramRana.aiautomation"],
-  ["Facebook Followers", "~20K"],
+  ["Facebook Followers", "~21K"],
   ["Facebook Views", "~2.4M views / month"],
   ["LinkedIn", "Ikram Rana — https://www.linkedin.com/in/ikramrana/"],
   ["LinkedIn Followers", "~14K"],
@@ -133,7 +133,7 @@ export default function MediaKit() {
             {[
               ["~31K", "Instagram followers"],
               ["~2.5M", "views/month average"],
-              ["~20K", "Facebook followers"],
+              ["~21K", "Facebook followers"],
               ["~2.4M", "Facebook views/month"],
             ].map(([value, label], index) => (
               <div
