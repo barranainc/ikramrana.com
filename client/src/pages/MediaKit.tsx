@@ -4,16 +4,17 @@ import { useHead } from "@/hooks/useHead";
 
 const title = "Brand partnerships for @ikramrana.ai | Ikram Rana";
 const description =
-  "Public media kit for @ikramrana.ai — ~31K followers, ~2.5M views/month average. Multi-platform AI content reach: Instagram, Facebook, LinkedIn, Substack. Email ir@ikramrana.com for partnership options and pricing.";
+  "Public media kit for @ikramrana.ai — ~31.9K followers, ~2.5M views/month average. Multi-platform AI content reach: Instagram, Facebook, LinkedIn, Substack. Email ir@ikramrana.com for partnership options and pricing.";
 const partnershipEmail =
   "mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership";
 
 const snapshot = [
   ["Instagram", "@ikramrana.ai (verified) — https://www.instagram.com/ikramrana.ai/"],
-  ["Instagram Followers", "~31K"],
+  ["Instagram Followers", "~31.9K"],
+  ["Instagram Posts", "304"],
   ["Instagram Views", "~2.5 million per month on average"],
   ["Facebook", "Ikram Rana - AI Automation — https://www.facebook.com/IkramRana.aiautomation"],
-  ["Facebook Followers", "~21K"],
+  ["Facebook Followers", "~23K"],
   ["Facebook Views", "~2.4M views / month"],
   ["LinkedIn", "Ikram Rana — https://www.linkedin.com/in/ikramrana/"],
   ["LinkedIn Followers", "~14K"],
@@ -131,9 +132,9 @@ export default function MediaKit() {
 
           <div className="mt-14 grid border-y border-[#343430] sm:grid-cols-2 lg:mt-20 lg:grid-cols-4">
             {[
-              ["~31K", "Instagram followers"],
+              ["~31.9K", "Instagram followers"],
               ["~2.5M", "views/month average"],
-              ["~21K", "Facebook followers"],
+              ["~23K", "Facebook followers"],
               ["~2.4M", "Facebook views/month"],
             ].map(([value, label], index) => (
               <div
