@@ -39,7 +39,7 @@ const priorityPages = {
   },
   "/media-kit": {
     title: "Brand partnerships for @ikramrana.ai | Ikram Rana",
-    description: "Public media kit for @ikramrana.ai — ~32.1K followers, ~2.5M views/month average. Multi-platform AI content reach: Instagram, Facebook, LinkedIn, Substack. Email ir@ikramrana.com for partnership options and pricing.",
+    description: "Public media kit for @ikramrana.ai - ~32.1K followers, ~2.5M views/month average. Multi-platform AI content reach: Instagram, Facebook, LinkedIn, Substack. Email ir@ikramrana.com for partnership options and pricing.",
     heading: "Media kit for @ikramrana.ai",
     eyebrow: "Instagram brand partnerships",
     paragraphs: [

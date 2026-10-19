@@ -4,7 +4,7 @@ import { useHead } from "@/hooks/useHead";
 
 const title = "Brand partnerships for @ikramrana.ai | Ikram Rana";
 const description =
-  "Public media kit for @ikramrana.ai — ~32.1K followers, ~2.5M views/month average. Multi-platform AI content reach: Instagram, Facebook, LinkedIn, Substack. Email ir@ikramrana.com for partnership options and pricing.";
+  "Public media kit for @ikramrana.ai - ~32.1K followers, ~2.5M views/month average. Multi-platform AI content reach: Instagram, Facebook, LinkedIn, Substack. Email ir@ikramrana.com for partnership options and pricing.";
 const partnershipEmail =
   "mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership";
 
@@ -13,12 +13,12 @@ const snapshot = [
   ["Instagram Followers", "~32.1K"],
   ["Instagram Posts", "304"],
   ["Instagram Views", "~2.5 million per month on average"],
-  ["Facebook", "Ikram Rana - AI Automation — https://www.facebook.com/IkramRana.aiautomation"],
-  ["Facebook Followers", "~23K"],
+  ["Facebook", "Ikram Rana - AI Automation - https://www.facebook.com/IkramRana.aiautomation"],
+  ["Facebook Followers", "~25K"],
   ["Facebook Views", "~2.4M views / month"],
-  ["LinkedIn", "Ikram Rana — https://www.linkedin.com/in/ikramrana/"],
+  ["LinkedIn", "Ikram Rana - https://www.linkedin.com/in/ikramrana/"],
   ["LinkedIn Followers", "~14K"],
-  ["Substack", "Real Life AI — https://ikramrana.substack.com"],
+  ["Substack", "Real Life AI - https://ikramrana.substack.com"],
   ["Substack Subscribers", "Over 6,000"],
   ["Format", "Educational walkthrough Reels + Stories CTAs"],
   ["Audience", "Founders, operators, builders, tech-curious professionals"],
@@ -104,7 +104,7 @@ export default function MediaKit() {
             </h1>
             <div className="mt-8 max-w-[790px] space-y-5 text-lg leading-[1.75] text-[#C9C9C3] sm:text-xl">
               <p>
-                @ikramrana.ai is a multi-platform AI content channel featuring Instagram, Facebook, LinkedIn, and Substack. Brands and AI tool teams use it when they want educational, demo-led content that reaches founders, operators, and builders — people who try software, not AI entertainment.
+                @ikramrana.ai is a multi-platform AI content channel featuring Instagram, Facebook, LinkedIn, and Substack. Brands and AI tool teams use it when they want educational, demo-led content that reaches founders, operators, and builders - people who try software, not AI entertainment.
               </p>
               <p>
                 This page is the public overview. For packages and commercial terms, email ir@ikramrana.com and you will receive the partnership options and pricing.
@@ -134,7 +134,7 @@ export default function MediaKit() {
             {[
               ["~32.1K", "Instagram followers"],
               ["~2.5M", "views/month average"],
-              ["~23K", "Facebook followers"],
+              ["~25K", "Facebook followers"],
               ["~2.4M", "Facebook views/month"],
             ].map(([value, label], index) => (
               <div
