@@ -4,18 +4,17 @@ import { useHead } from "@/hooks/useHead";
 
 const title = "Brand partnerships for @ikramrana.ai | Ikram Rana";
 const description =
-  "Public media kit for @ikramrana.ai - ~32.1K followers, ~2.5M views/month average. Multi-platform AI content reach: Instagram, Facebook, LinkedIn, Substack. Email ir@ikramrana.com for partnership options and pricing.";
+  "Public media kit for @ikramrana.ai - ~33.2K Instagram followers, ~1.6M views / 30 days, ~27K Facebook followers. Multi-platform AI content reach: Instagram, Facebook, LinkedIn, Substack. Email ir@ikramrana.com for partnership options and pricing.";
 const partnershipEmail =
   "mailto:ir@ikramrana.com?subject=%40ikramrana.ai%20brand%20partnership";
 
 const snapshot = [
-  ["Instagram", "@ikramrana.ai (verified) — https://www.instagram.com/ikramrana.ai/"],
-  ["Instagram Followers", "~32.1K"],
-  ["Instagram Posts", "304"],
-  ["Instagram Views", "~2.5 million per month on average"],
+  ["Instagram", "@ikramrana.ai (verified): https://www.instagram.com/ikramrana.ai/"],
+  ["Instagram Followers", "~33.2K"],
+  ["Instagram Posts", "308"],
+  ["Instagram Views", "~1.6M views / 30 days (Instagram Insights)"],
   ["Facebook", "Ikram Rana - AI Automation - https://www.facebook.com/IkramRana.aiautomation"],
-  ["Facebook Followers", "~25K"],
-  ["Facebook Views", "~2.4M views / month"],
+  ["Facebook Followers", "~27K"],
   ["LinkedIn", "Ikram Rana - https://www.linkedin.com/in/ikramrana/"],
   ["LinkedIn Followers", "~14K"],
   ["Substack", "Real Life AI - https://ikramrana.substack.com"],
@@ -132,10 +131,10 @@ export default function MediaKit() {
 
           <div className="mt-14 grid border-y border-[#343430] sm:grid-cols-2 lg:mt-20 lg:grid-cols-4">
             {[
-              ["~32.1K", "Instagram followers"],
-              ["~2.5M", "views/month average"],
-              ["~25K", "Facebook followers"],
-              ["~2.4M", "Facebook views/month"],
+              ["~33.2K", "Instagram followers"],
+              ["~1.6M", "Instagram views / 30 days"],
+              ["~27K", "Facebook followers"],
+              ["308", "Instagram posts"],
             ].map(([value, label], index) => (
               <div
                 key={label}
