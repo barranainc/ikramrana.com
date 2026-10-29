@@ -1,0 +1,59 @@
+{
+  "title": "Oracles of Modern Times",
+  "author": "Ikram Rana",
+  "question": "When does an answer become an authority?",
+  "reviewedDate": "2026-10-01",
+  "publishedDate": null,
+  "articles": [
+    {
+      "slug": "we-keep-calling-ai-a-tool",
+      "title": "We keep calling AI a tool",
+      "description": "Then we ask it to tell us how to live. Introducing Oracles of Modern Times.",
+      "paragraphs": [
+        "We keep calling AI a tool. Then we ask it to tell us how to live.",
+        "Imagine opening a chatbot after a bad day at work. You explain what your manager said, how exhausted you feel, and why you think you deserve better. Then you ask, “Should I quit?”",
+        "The reply arrives in seconds. It sounds patient. It puts your frustration into words. It even gives you a plan.",
+        "Now comes the decision that interests me: how much authority are you about to give that answer?",
+        "I’m Ikram Rana. I believe AI chatbots are becoming the oracles of modern times.",
+        "That is the idea behind this series. In ancient Greece, people went to the Oracle of Delphi for guidance they believed came from the gods. [S2] Today, the setting can be a phone screen and a question we are struggling to answer ourselves.",
+        "I am interested in the role we give the response. We can begin by asking for help and end up waiting for permission.",
+        "The AI-oracle comparison has earlier uses. DonSurya used “oracle of modern times” for AI in a July 2025 essay. [S1] My contribution is this series: everyday situations, research, and questions about the decisions we are handing over.",
+        "There is evidence that people bring personal decisions to chatbots. Anthropic’s research found guidance conversations about work, relationships and other parts of life. That tells us something about use on one platform; it does not tell us what everybody does. [S5]",
+        "The appeal is easy to understand. You can ask an embarrassing question without looking someone in the eye. You can explain the same problem again. You can get a response while everyone else is asleep.",
+        "But convenience does not tell you whether the advice fits your life.",
+        "Think about how a conversation can shift. “What does this message mean?” becomes “Why did my colleague say that?” Then comes “Was I right to send that angry reply?”",
+        "Those questions ask the answer to do different jobs. A definition needs checking. A claim about somebody’s motive needs evidence. A decision about what to do next needs your circumstances and your priorities.",
+        "The same smooth writing can appear in all three replies. That is why I want us to notice the shift.",
+        "A chatbot can also write an explanation of your personality that feels deeply accurate. Before accepting it, ask what you actually showed it. Your work complaints and late-night worries are a very edited version of you.",
+        "There is a business version of this too. Imagine a founder asking whether to enter a new market. If the model gets a hopeful sales estimate and a pitch for expansion, its polished recommendation has not checked whether customers will buy.",
+        "The next useful step could be a customer conversation, a verified number, or a question for someone who knows the situation.",
+        "That is what I want Oracles of Modern Times to make visible: the work between receiving an answer and acting on it.",
+        "We will explore relationships, identity, predictions, agreeable advice and AI companionship. Business decisions belong in this conversation too. The title stays the same as the settings change.",
+        "When does an answer become an authority?",
+        "Keep that question close, especially when the answer sounds reassuring.",
+        "Ikram Rana is the creator and host of Oracles of Modern Times, a series from Real Life How to AI.",
+        "Keep your judgment."
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "title": "Earlier use of the oracle comparison",
+          "note": "DonSurya, Medium, 10 July 2025. The article applies “oracle of modern times” to AI. Evidence of prior use, not an endorsement of its other claims.",
+          "url": "https://medium.com/@sdskavinda/if-youre-stupid-your-ai-acts-stupid-a-mirror-you-can-t-fool-edc6554ba5ea"
+        },
+        {
+          "id": "S2",
+          "title": "The historical reference",
+          "note": "UNESCO, Archaeological Site of Delphi. The relevant setting is ancient Greece.",
+          "url": "https://whc.unesco.org/en/list/393/"
+        },
+        {
+          "id": "S5",
+          "title": "Personal guidance in Claude",
+          "note": "Anthropic, 30 April 2026. Analysis of roughly 38,000 guidance conversations after sampling and deduplication. Provider research using automated classifications; not a population survey.",
+          "url": "https://www.anthropic.com/research/claude-personal-guidance"
+        }
+      ]
+    }
+  ]
+}

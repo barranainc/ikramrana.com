@@ -92,6 +92,7 @@ export default function Essays() {
   return (
     <div className="py-16 md:py-24">
       <div className="max-w-[760px] mx-auto px-4 sm:px-6">
+      <aside className="container py-6 border-b border-border"><Link href="/oracles-of-modern-times" className="text-electric underline underline-offset-4">Oracles of Modern Times with Ikram Rana</Link><p className="text-slate-text mt-2">When does an answer become an authority? Explore the series.</p></aside>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-electric block mb-4">Essays</span>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-[44px] font-bold text-foreground leading-[1.15] tracking-tight mb-6">Essays</h1>
