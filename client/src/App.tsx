@@ -9,6 +9,7 @@ import Layout from "./components/Layout";
 
 // Route-level code splitting keeps the initial bundle focused on the page that
 // was requested. Static release HTML still supplies crawlable fallback content.
+const Oracles = lazy(() => import("./pages/Oracles"));
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -153,6 +154,8 @@ function Router() {
         <Route path="/ai-automation-examples" component={AiAutomationExamples} />
         <Route path="/ai-adoption-checklist" component={AiAdoptionChecklist} />
 
+        <Route path="/oracles-of-modern-times/:slug" component={Oracles} />
+        <Route path="/oracles-of-modern-times" component={Oracles} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

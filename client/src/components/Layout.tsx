@@ -305,6 +305,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link href="/ai-adoption-framework-for-small-businesses" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">AI Adoption Framework</Link>
                 <Link href="/framework" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Framework</Link>
                 <Link href="/insights" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Insights</Link>
+                <Link href="/oracles-of-modern-times" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Oracles of Modern Times</Link>
                 <Link href="/blog" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Blog</Link>
                 <Link href="/case-studies" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Illustrative Use Cases</Link>
                 <Link href="/contact" className="text-xs text-slate-dim hover:text-electric transition-colors no-underline">Contact</Link>
